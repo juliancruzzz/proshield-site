@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProShield Epoxy — Pre-Launch Website Audit</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #e2e8f0; line-height: 1.6; }
+  .container { max-width: 960px; margin: 0 auto; padding: 24px; }
+  h1 { font-size: 2rem; margin-bottom: 8px; color: #fff; }
+  h2 { font-size: 1.4rem; margin: 40px 0 16px; color: #fff; border-bottom: 2px solid #334155; padding-bottom: 8px; }
+  h3 { font-size: 1.1rem; margin: 24px 0 8px; color: #94a3b8; }
+  .subtitle { color: #94a3b8; margin-bottom: 32px; }
+  .score-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
+  .score-card { flex: 1; min-width: 140px; background: #1e293b; border-radius: 12px; padding: 20px; text-align: center; }
+  .score-card .label { font-size: 0.8rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; }
+  .score-card .num { font-size: 2.2rem; font-weight: 700; margin: 4px 0; }
+  .score-card .num.red { color: #f87171; }
+  .score-card .num.amber { color: #fbbf24; }
+  .score-card .num.green { color: #4ade80; }
+  .badge { display: inline-block; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; vertical-align: middle; margin-right: 6px; }
+  .badge.critical { background: #991b1b; color: #fecaca; }
+  .badge.high { background: #92400e; color: #fde68a; }
+  .badge.medium { background: #1e3a5f; color: #93c5fd; }
+  .badge.low { background: #1a3328; color: #86efac; }
+  .badge.pass { background: #166534; color: #bbf7d0; }
+  .finding { background: #1e293b; border-radius: 10px; padding: 16px 20px; margin-bottom: 12px; border-left: 4px solid #334155; }
+  .finding.critical { border-left-color: #ef4444; }
+  .finding.high { border-left-color: #f59e0b; }
+  .finding.medium { border-left-color: #3b82f6; }
+  .finding.low { border-left-color: #22c55e; }
+  .finding .title { font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .finding .detail { color: #94a3b8; font-size: 0.9rem; }
+  .finding code { background: #0f172a; padding: 2px 6px; border-radius: 4px; font-size: 0.85rem; color: #7dd3fc; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+  th, td { text-align: left; padding: 8px 12px; font-size: 0.9rem; }
+  th { background: #1e293b; color: #94a3b8; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.5px; }
+  td { border-bottom: 1px solid #1e293b; }
+  .checklist { list-style: none; padding: 0; }
+  .checklist li { padding: 6px 0; font-size: 0.9rem; }
+  .checklist li::before { content: ''; display: inline-block; width: 18px; height: 18px; border-radius: 4px; margin-right: 8px; vertical-align: middle; }
+  .checklist li.fail::before { background: #ef4444; content: '✕'; color: #fff; text-align: center; line-height: 18px; font-size: 12px; }
+  .checklist li.warn::before { background: #f59e0b; content: '!'; color: #fff; text-align: center; line-height: 18px; font-size: 12px; font-weight: 700; }
+  .checklist li.ok::before { background: #22c55e; content: '✓'; color: #fff; text-align: center; line-height: 18px; font-size: 12px; }
+  .summary-box { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 12px; padding: 24px; margin: 24px 0; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 16px 0; }
+  .stat { background: #0f172a; border-radius: 8px; padding: 12px 16px; }
+  .stat .val { font-size: 1.5rem; font-weight: 700; color: #fff; }
+  .stat .lbl { font-size: 0.8rem; color: #64748b; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>ProShield Epoxy — Pre-Launch Audit</h1>
+<p class="subtitle">Full website review — April 5, 2026 &middot; Next.js 16 + Tailwind 4 + Static Export</p>
+
+<!-- ============ SCORECARD ============ -->
+<div class="score-row">
+  <div class="score-card"><div class="label">Critical</div><div class="num red">8</div></div>
+  <div class="score-card"><div class="label">High</div><div class="num amber">9</div></div>
+  <div class="score-card"><div class="label">Medium</div><div class="num" style="color:#60a5fa">6</div></div>
+  <div class="score-card"><div class="label">Low / Pass</div><div class="num green">8</div></div>
+</div>
+
+<!-- ============ SECTION 1: LAUNCH BLOCKERS ============ -->
+<h2>1. Launch Blockers (Fix Before Going Live)</h2>
+
+<div class="finding critical">
+  <div class="title"><span class="badge critical">Critical</span> Contact form doesn't actually submit</div>
+  <div class="detail">The quote form in <code>quote-form.tsx</code> fakes a submission with <code>setTimeout</code> and shows "Success" — but never sends data anywhere. The comment in code says <em>"replace with Formspree, Resend, or API route."</em> Every lead is lost.</div>
+</div>
+
+<div class="finding critical">
+  <div class="title"><span class="badge critical">Critical</span> Phone number conflicts across site</div>
+  <div class="detail"><code>.env.local</code> has <code>(702) 555-0199</code> (placeholder). The airplane hangar page hardcodes <code>(702) 728-5484</code>. CTA components show <code>(555) 123-4567</code>. Pick the real number and use the env var everywhere.</div>
+</div>
+
+<div class="finding critical">
+  <div class="title"><span class="badge critical">Critical</span> Google Place ID is a placeholder</div>
+  <div class="detail"><code>NEXT_PUBLIC_GOOGLE_PLACE_ID=REPLACE_WITH_YOUR_GOOGLE_PLACE_ID</code> — the Google Reviews section will not load real reviews. Get your actual Place ID from Google Business Profile.</div>
+</div>
+
+<div class="finding critical">
+  <div class="title"><span class="badge critical">Critical</span> OG image missing</div>
+  <div class="detail">Layout references <code>/og-image.jpg</code> for social sharing (Facebook, LinkedIn, Twitter). The file does not exist in <code>/public/</code>. Create a 1200×630px branded image.</div>
+</div>
+
+<div class="finding critical">
+  <div class="title"><span class="badge critical">Critical</span> Console.log exposes customer PII</div>
+  <div class="detail"><code>chatbot.tsx:316</code> logs <code>"Lead captured:"</code> plus name, phone, email, service interest to the browser console. Anyone can open DevTools and see it. Remove this line.</div>
+</div>
+
+<div class="finding critical">
+  <div class="title"><span class="badge critical">Critical</span> Sitemap lists pages that don't exist</div>
+  <div class="detail"><code>/blog/paver-sealing-las-vegas-guide</code> and <code>/blog/how-long-does-epoxy-flooring-last</code> are in the sitemap but have no corresponding page directories. Google will crawl these and get 404s.</div>
+</div>
+
+<!-- ============ SECTION 2: SEO ============ -->
+<h2>2. SEO</h2>
+
+<div class="finding critical">
+  <div class="title"><span class="badge critical">Critical</span> Homepage has no unique metadata</div>
+  <div class="detail">The root <code>page.tsx</code> doesn't export a <code>metadata</code> object. It falls back to the generic layout title. The homepage should have a unique, keyword-rich title and description.</div>
+</div>
+
+<div class="finding high">
+  <div class="title"><span class="badge high">High</span> 3 existing pages missing from sitemap</div>
+  <div class="detail">Blog posts <code>epoxy-garage-floor-cost-las-vegas</code>, <code>hot-tire-pickup-prevention-garage-floor</code>, and <code>polished-concrete-vs-epoxy</code> exist but aren't in <code>sitemap.xml</code>. The <code>/concrete-overlay</code> page is also missing.</div>
+</div>
+
+<div class="finding high">
+  <div class="title"><span class="badge high">High</span> Gallery page can't have metadata (client component)</div>
+  <div class="detail">The gallery page uses <code>"use client"</code> which prevents exporting metadata. Consider extracting the client logic into a child component so the page itself stays a server component.</div>
+</div>
+
+<div class="finding medium">
+  <div class="title"><span class="badge medium">Medium</span> No canonical URLs set</div>
+  <div class="detail">No pages set canonical URLs. Not critical for a single-domain site today, but implement for best practice.</div>
+</div>
+
+<div class="finding low">
+  <div class="title"><span class="badge pass">Pass</span> Heading hierarchy is solid</div>
+  <div class="detail">All service pages use the PageHero component with proper <code>&lt;h1&gt;</code> tags. Blog posts have correct heading hierarchy. Good work.</div>
+</div>
+
+<div class="finding low">
+  <div class="title"><span class="badge pass">Pass</span> LocalBusiness + FAQPage schema on 12 service pages</div>
+  <div class="detail">Root layout has LocalBusiness JSON-LD. Blog posts use BlogPosting schema. Service pages have FAQPage schema. Could add Service schema for richer results.</div>
+</div>
+
+<!-- ============ SECTION 3: IMAGES ============ -->
+<h2>3. Images (Biggest Performance Issue)</h2>
+
+<div class="summary-box">
+  <h3 style="margin-top:0">Image Stats</h3>
+  <div class="stat-grid">
+    <div class="stat"><div class="val">189</div><div class="lbl">Total image files</div></div>
+    <div class="stat"><div class="val">51</div><div class="lbl">Bare &lt;img&gt; tags (no Next Image)</div></div>
+    <div class="stat"><div class="val">52</div><div class="lbl">Images missing alt text</div></div>
+    <div class="stat"><div class="val">24</div><div class="lbl">Unused images (~42 MB)</div></div>
+    <div class="stat"><div class="val">11</div><div class="lbl">Images over 5 MB each</div></div>
+    <div class="stat"><div class="val">~387 MB</div><div class="lbl">Total oversized image data</div></div>
+  </div>
+</div>
+
+<div class="finding critical">
+  <div class="title"><span class="badge critical">Critical</span> 11 images are 5–22 MB each</div>
+  <div class="detail">Worst offenders: <code>vubastone-patio-turf-border.jpg</code> (22 MB), <code>hangar-floor-drone.jpg</code> (22 MB), <code>cool-deck-pool-turf.jpg</code> (18 MB). These will destroy page load times. Compress to under 300 KB each using WebP format.</div>
+</div>
+
+<div class="finding high">
+  <div class="title"><span class="badge high">High</span> Image optimization disabled in config</div>
+  <div class="detail"><code>next.config.ts</code> sets <code>images: { unoptimized: true }</code>. Even when you use the Next Image component, no resizing/compression happens. This is required for static export but means you must compress images manually before adding them.</div>
+</div>
+
+<div class="finding high">
+  <div class="title"><span class="badge high">High</span> 52 images have no alt text</div>
+  <div class="detail">4 images have empty <code>alt=""</code> and ~48 use bare <code>&lt;img&gt;</code> without alt attributes at all. Screen readers can't describe them, and Google can't index them — this was one of your concerns and it's a real problem.</div>
+</div>
+
+<div class="finding high">
+  <div class="title"><span class="badge high">High</span> 24 unused images wasting 42 MB</div>
+  <div class="detail">Images like <code>metallic-epoxy-showroom-chopshop.jpg</code> (13 MB), <code>flake-garage-paver-border.jpg</code> (9.7 MB) are in /public but never referenced in any component. Delete them to shrink your deployment.</div>
+</div>
+
+<div class="finding high">
+  <div class="title"><span class="badge high">High</span> Duplicate paver images (JPG + PNG of same photo)</div>
+  <div class="detail"><code>paver-walkway-before.jpg</code> (4.6 MB) and <code>paver-walkway-before.png</code> (2.5 MB) — same photo in two formats. Same for the "after" images. Pick one format and delete the other.</div>
+</div>
+
+<div class="finding high">
+  <div class="title"><span class="badge high">High</span> 9 PNG files that should be JPG/WebP</div>
+  <div class="detail">Photo-type images like <code>coral-springs.png</code> (5.5 MB), <code>juneau.png</code> (5.8 MB), <code>flake-garage-before-concrete.png</code> (8.5 MB) are full-color photos saved as PNG. Converting to WebP would cut 50–70% off file size.</div>
+</div>
+
+<!-- ============ SECTION 4: PERFORMANCE ============ -->
+<h2>4. Performance</h2>
+
+<div class="finding high">
+  <div class="title"><span class="badge high">High</span> GSAP animation library installed but never used</div>
+  <div class="detail"><code>gsap</code> and <code>@gsap/react</code> are in package.json (~100 KB). The site exclusively uses Framer Motion (56 imports). Remove GSAP to cut bundle size.</div>
+</div>
+
+<div class="finding high">
+  <div class="title"><span class="badge high">High</span> 32 unused component files (20% of codebase)</div>
+  <div class="detail">Components like <code>animated-counter</code>, <code>magnetic-button</code>, <code>particle-field</code>, <code>scroll-progress</code>, <code>tilt-card</code>, <code>cta-v1</code>, <code>cta-v2</code>, <code>warranty-section</code>, <code>trust-bar</code> are never imported. Dead code increases bundle and developer confusion.</div>
+</div>
+
+<div class="finding medium">
+  <div class="title"><span class="badge medium">Medium</span> 80% of components are client-side</div>
+  <div class="detail">122 of 152 component files have <code>"use client"</code>. This means heavy JavaScript hydration. Many presentational components (stats, intros, text sections) could be server components.</div>
+</div>
+
+<div class="finding medium">
+  <div class="title"><span class="badge medium">Medium</span> No WebM fallback for hero video</div>
+  <div class="detail"><code>metallic-hero-bg.mp4</code> is 13 MB. Adding a WebM version would improve browser compatibility and typically smaller file size.</div>
+</div>
+
+<div class="finding low">
+  <div class="title"><span class="badge pass">Pass</span> Good lazy loading on images</div>
+  <div class="detail">20+ images below the fold use <code>loading="lazy"</code>. CSS is lean at 12 KB / 384 lines.</div>
+</div>
+
+<!-- ============ SECTION 5: ACCESSIBILITY ============ -->
+<h2>5. Accessibility</h2>
+
+<div class="finding medium">
+  <div class="title"><span class="badge medium">Medium</span> No skip-to-content link</div>
+  <div class="detail">Screen reader users must tab through the entire navigation menu on every page load. Add <code>&lt;a href="#main" class="sr-only"&gt;Skip to main content&lt;/a&gt;</code> at the top of the layout.</div>
+</div>
+
+<div class="finding medium">
+  <div class="title"><span class="badge medium">Medium</span> Low semantic HTML ratio (12%)</div>
+  <div class="detail">~150 semantic elements vs ~1,242 generic divs. More sections, articles, and nav elements would improve screen reader navigation.</div>
+</div>
+
+<div class="finding medium">
+  <div class="title"><span class="badge medium">Medium</span> Limited ARIA attributes (20 total)</div>
+  <div class="detail">Accordions, tabs, and dropdown menus could use more ARIA roles, states, and properties for better assistive tech support.</div>
+</div>
+
+<div class="finding low">
+  <div class="title"><span class="badge pass">Pass</span> Forms have proper labels and required fields</div>
+  <div class="detail">Quote form uses correct input types (tel, email), label associations, and focus states. Good job here.</div>
+</div>
+
+<div class="finding low">
+  <div class="title"><span class="badge pass">Pass</span> Color contrast meets WCAG AA</div>
+  <div class="detail">Main color combinations pass contrast requirements. Navbar and chatbot have appropriate aria-labels.</div>
+</div>
+
+<!-- ============ SECTION 6: CONTENT & UX ============ -->
+<h2>6. Content & UX</h2>
+
+<div class="finding medium">
+  <div class="title"><span class="badge medium">Medium</span> No custom 404 page</div>
+  <div class="detail">No <code>not-found.tsx</code> exists. Users hitting a dead link will see the default Next.js 404 page, not a branded one with navigation back to your services.</div>
+</div>
+
+<div class="finding low">
+  <div class="title"><span class="badge low">Low</span> No analytics or tracking installed</div>
+  <div class="detail">No Google Analytics, Google Tag Manager, or Meta Pixel. You won't know where your traffic comes from or which pages convert best. Set this up before launch.</div>
+</div>
+
+<div class="finding low">
+  <div class="title"><span class="badge low">Low</span> Missing apple-touch-icon and web manifest</div>
+  <div class="detail">Favicon exists but no apple-touch-icon or manifest.json for mobile home screen pinning.</div>
+</div>
+
+<div class="finding low">
+  <div class="title"><span class="badge pass">Pass</span> All internal navigation links work</div>
+  <div class="detail">Navbar and footer links all point to existing pages. No broken internal links found.</div>
+</div>
+
+<div class="finding low">
+  <div class="title"><span class="badge pass">Pass</span> Gallery is fully populated (51 images with filters)</div>
+  <div class="detail">Filter system works across categories. Lightbox modal implemented. No placeholder content.</div>
+</div>
+
+<div class="finding low">
+  <div class="title"><span class="badge pass">Pass</span> Footer has dynamic copyright year and complete info</div>
+  <div class="detail">Hours, service area, and email all present. Copyright auto-updates.</div>
+</div>
+
+<!-- ============ SECTION 7: CODE QUALITY ============ -->
+<h2>7. Code Quality</h2>
+
+<div class="finding low">
+  <div class="title"><span class="badge pass">Pass</span> Strong TypeScript — zero "any" types</div>
+  <div class="detail">Clean type safety across the codebase.</div>
+</div>
+
+<div class="finding low">
+  <div class="title"><span class="badge pass">Pass</span> No hardcoded API keys or secrets</div>
+  <div class="detail">Env vars are properly used and <code>.env.local</code> is in <code>.gitignore</code>.</div>
+</div>
+
+<div class="finding low">
+  <div class="title"><span class="badge pass">Pass</span> No TODO/FIXME/HACK comments (except the form)</div>
+  <div class="detail">Codebase is clean. Only the quote-form has a "replace with" comment.</div>
+</div>
+
+<!-- ============ PRIORITY ACTION PLAN ============ -->
+<h2>Priority Action Plan</h2>
+
+<h3>Do Before Launch (Blockers)</h3>
+<ul class="checklist">
+  <li class="fail">Wire up the contact form to a real backend (Formspree, Resend, or API route)</li>
+  <li class="fail">Set the real phone number in <code>.env.local</code> and remove all hardcoded phone numbers</li>
+  <li class="fail">Get your Google Place ID and update <code>.env.local</code></li>
+  <li class="fail">Create and add <code>/public/og-image.jpg</code> (1200×630px)</li>
+  <li class="fail">Remove the <code>console.log("Lead captured:")</code> line from chatbot.tsx</li>
+  <li class="fail">Fix sitemap: remove the 2 broken blog URLs, add 4 missing pages</li>
+  <li class="fail">Add unique metadata to the homepage <code>page.tsx</code></li>
+</ul>
+
+<h3>Do Within First Week</h3>
+<ul class="checklist">
+  <li class="warn">Compress all images over 500 KB (especially the 11 images over 5 MB)</li>
+  <li class="warn">Add descriptive alt text to all 52 images missing it</li>
+  <li class="warn">Delete the 24 unused images (saves 42 MB)</li>
+  <li class="warn">Remove duplicate paver sealing images</li>
+  <li class="warn">Convert PNG photos to WebP format</li>
+  <li class="warn">Remove GSAP from package.json</li>
+  <li class="warn">Delete 32 unused component files</li>
+  <li class="warn">Set up Google Analytics or Tag Manager</li>
+  <li class="warn">Create a custom 404 page</li>
+</ul>
+
+<h3>Nice-to-Have Improvements</h3>
+<ul class="checklist">
+  <li class="ok">Add skip-to-content link for accessibility</li>
+  <li class="ok">Improve semantic HTML (replace divs with section/article)</li>
+  <li class="ok">Add canonical URLs to all pages</li>
+  <li class="ok">Expand ARIA attributes on interactive components</li>
+  <li class="ok">Add apple-touch-icon and web manifest</li>
+  <li class="ok">Add WebM fallback for hero video</li>
+  <li class="ok">Convert more client components to server components</li>
+</ul>
+
+<p style="margin-top:48px; color:#475569; font-size:0.8rem; text-align:center;">Generated by Claude &middot; April 5, 2026</p>
+
+</div>
+</body>
+</html>
