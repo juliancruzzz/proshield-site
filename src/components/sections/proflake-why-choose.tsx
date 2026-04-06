@@ -103,7 +103,7 @@ export function ProFlakeWhyChoose() {
                         {item.icon}
                       </div>
                       <ChevronDown
-                        className={`h-5 w-5 text-gray-400 transition-transform duration-300 ${
+                        className={`h-5 w-5 text-gray-500 transition-transform duration-300 ${
                           isOpen ? "rotate-180" : ""
                         }`}
                       />

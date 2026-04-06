@@ -38,7 +38,7 @@ export function ServiceCard({ title, bestFor, description, href, index = 0, imag
               />
             ) : (
               <div className="h-full w-full bg-gradient-to-br from-gray-200 to-gray-100 flex items-center justify-center">
-                <span className="text-gray-400 text-xs font-medium">{title}</span>
+                <span className="text-gray-500 text-xs font-medium">{title}</span>
               </div>
             )}
           </div>
@@ -52,7 +52,7 @@ export function ServiceCard({ title, bestFor, description, href, index = 0, imag
             {title}
           </h3>
           <p className="mt-2 text-sm text-gray-500 leading-relaxed">{description}</p>
-          <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+          <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-accent-text opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             Learn More <ArrowRight className="h-3.5 w-3.5" />
           </div>
         </div>

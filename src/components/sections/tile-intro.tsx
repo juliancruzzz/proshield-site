@@ -18,7 +18,7 @@ export function TileIntro() {
           {/* Image */}
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/tile/tile-install.jpg"
+              src="/images/tile/tile-install.webp"
               alt="Professional tile installation — laying tile with thinset and levelers"
               fill
               className="object-cover"

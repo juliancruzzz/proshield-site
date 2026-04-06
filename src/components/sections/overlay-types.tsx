@@ -24,7 +24,7 @@ const overlayTypes = [
       { value: "10–15", label: "Year lifespan" },
       { value: "24hr", label: "Walk-on time" },
     ],
-    image: "/images/concrete-overlay/micro-topping-flooring.png",
+    image: "/images/concrete-overlay/micro-topping-flooring.webp",
   },
   {
     icon: <Stamp className="h-5 w-5" />,
@@ -44,7 +44,7 @@ const overlayTypes = [
       { value: "50%+", label: "Less vs. real stone" },
       { value: "1–2 Day", label: "Typical install" },
     ],
-    image: "/images/concrete-overlay/concrete-overlay-commercial-palms.jpg",
+    image: "/images/concrete-overlay/concrete-overlay-commercial-palms.webp",
   },
   {
     icon: <AlignHorizontalDistributeCenter className="h-5 w-5" />,
@@ -64,7 +64,7 @@ const overlayTypes = [
       { value: "No", label: "Tear-out needed" },
       { value: "15–20", label: "Year lifespan" },
     ],
-    image: "/images/concrete-overlay/polishable-overlay.jpg",
+    image: "/images/concrete-overlay/polishable-overlay.webp",
   },
   {
     icon: <Palette className="h-5 w-5" />,
@@ -84,7 +84,7 @@ const overlayTypes = [
       { value: "Custom", label: "Logo embedding" },
       { value: "10–15", label: "Year lifespan" },
     ],
-    image: "/images/concrete-overlay/stamped-patio.jpg",
+    image: "/images/concrete-overlay/stamped-patio.webp",
   },
 ]
 
@@ -135,7 +135,7 @@ export function OverlayTypes() {
                     className={`h-10 w-10 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${
                       isOpen
                         ? "bg-gray-900 text-white"
-                        : "bg-gray-100 text-gray-400 group-hover:bg-gray-200 group-hover:text-gray-600"
+                        : "bg-gray-100 text-gray-600 group-hover:bg-gray-200 group-hover:text-gray-600"
                     }`}
                   >
                     {overlay.icon}
@@ -150,7 +150,7 @@ export function OverlayTypes() {
                       {overlay.title}
                     </h3>
                     {!isOpen && (
-                      <p className="mt-0.5 text-sm text-gray-400 truncate hidden sm:block">
+                      <p className="mt-0.5 text-sm text-gray-500 truncate hidden sm:block">
                         {overlay.tagline}
                       </p>
                     )}
@@ -162,7 +162,7 @@ export function OverlayTypes() {
                       {overlay.tags.slice(0, 2).map((tag) => (
                         <span
                           key={tag}
-                          className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-gray-100 text-gray-500"
+                          className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-gray-100 text-gray-600"
                         >
                           {tag}
                         </span>
@@ -235,7 +235,7 @@ export function OverlayTypes() {
                                   <div className="font-heading font-bold text-lg sm:text-xl text-gray-900 leading-tight">
                                     {stat.value}
                                   </div>
-                                  <div className="text-[10px] sm:text-[11px] font-medium uppercase tracking-wider text-gray-400 mt-0.5">
+                                  <div className="text-[10px] sm:text-[11px] font-medium uppercase tracking-wider text-gray-500 mt-0.5">
                                     {stat.label}
                                   </div>
                                 </div>

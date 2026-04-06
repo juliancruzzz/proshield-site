@@ -48,7 +48,7 @@ function PaverBeforeAfter() {
     >
       {/* After — sealed pavers (full bg, right side) */}
       <img
-        src="/images/paver-sealing/paver-walkway-after.png"
+        src="/images/paver-sealing/paver-walkway-after.webp"
         alt="After — sealed and color-enhanced paver walkway"
         className="absolute inset-0 h-full w-full object-cover"
       />
@@ -58,7 +58,7 @@ function PaverBeforeAfter() {
         style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
       >
         <img
-          src="/images/paver-sealing/paver-walkway-before.png"
+          src="/images/paver-sealing/paver-walkway-before.webp"
           alt="Before — faded, unsealed paver walkway"
           className="absolute inset-0 h-full w-full object-cover"
         />

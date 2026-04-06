@@ -18,7 +18,7 @@ const posts = [
       "Professional epoxy garage floor coating in Las Vegas typically costs $3.50–$12 per square foot. See 2026 pricing by system type, garage size, DIY vs. pro comparison, and what drives the final number.",
     date: "April 3, 2026",
     category: "Pricing Guide",
-    image: "/images/proflake/flake-garage-residential.jpg",
+    image: "/images/proflake/flake-garage-residential.webp",
   },
   {
     slug: "epoxy-garage-floor-vs-polyaspartic",
@@ -27,7 +27,7 @@ const posts = [
       "Both go on garage floors. Both look great. But epoxy and polyaspartic are different chemistries with different strengths. Here's what actually matters when choosing between them for your Las Vegas garage.",
     date: "April 1, 2026",
     category: "Garage Floors",
-    image: "/images/proflake/flake-garage-porsche-bikes.jpg",
+    image: "/images/proflake/flake-garage-porsche-bikes.webp",
   },
   {
     slug: "hot-tire-pickup-prevention-garage-floor",
@@ -36,7 +36,7 @@ const posts = [
       "Hot tire pickup is the #1 reason garage floor coatings fail in Las Vegas. Learn what causes it, which coatings are vulnerable, and how the right system prevents it permanently.",
     date: "April 3, 2026",
     category: "Garage Floors",
-    image: "/images/proflake/flake-garage-porsche-bikes.jpg",
+    image: "/images/proflake/flake-garage-porsche-bikes.webp",
   },
   {
     slug: "polished-concrete-vs-epoxy",
@@ -45,7 +45,7 @@ const posts = [
       "Both are excellent commercial flooring solutions, but they solve different problems. Compare cost, lifespan, maintenance, and 25-year total cost of ownership to find the right fit.",
     date: "April 4, 2026",
     category: "Flooring Comparison",
-    image: "/images/metallic/metallic-epoxy-garage.jpg",
+    image: "/images/metallic/metallic-epoxy-garage.webp",
   },
 ]
 
@@ -81,7 +81,7 @@ export default function BlogPage() {
                     <span className="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
                       {post.category}
                     </span>
-                    <span className="flex items-center gap-1 text-xs text-gray-400">
+                    <span className="flex items-center gap-1 text-xs text-gray-500">
                       <Calendar className="h-3 w-3" />
                       {post.date}
                     </span>

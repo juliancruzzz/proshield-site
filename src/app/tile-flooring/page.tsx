@@ -61,7 +61,7 @@ export default function TileFlooringPage() {
         title="Professional"
         highlight="Tile Flooring"
         subtitle="Porcelain, ceramic, and natural stone tile — professionally installed for kitchens, bathrooms, entryways, and commercial spaces throughout Las Vegas."
-        backgroundImage="/images/tile/tile-luxury-interior.jpg"
+        backgroundImage="/images/tile/tile-luxury-interior.webp"
         backgroundAlt="Luxury marble tile flooring in a modern bathroom interior"
       />
 

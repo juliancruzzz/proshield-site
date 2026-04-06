@@ -11,7 +11,7 @@ import { submitForm } from "@/lib/submit-form"
 
 const COMPANY = {
   phone: "702-728-5484",
-  email: "Info@ProshieldEpoxy.com",
+  email: "info@proshieldepoxy.com",
   area: "Las Vegas metro area including Henderson, North Las Vegas, Summerlin, and surrounding areas. Extended service to Mesquite and Pahrump.",
 }
 
@@ -24,7 +24,7 @@ interface Service {
 const SERVICES: Record<string, Service> = {
   proflake: {
     name: "ProFlake Epoxy System",
-    desc: "Signature garage floor coating — epoxy base with full flake broadcast and polyaspartic topcoat. Often 1-day install for qualifying residential garages. Walk on same day/next day, drive on in 24-72hrs. Limited lifetime warranty on qualifying residential.",
+    desc: "Signature garage floor coating — polyurea base with full flake broadcast and polyaspartic topcoat. Often 1-day install for qualifying residential garages. Walk on in 24 hrs, drive on in 48 hrs. Limited lifetime warranty on qualifying residential.",
     best: "garages, workshops, utility rooms",
   },
   metallic: {
@@ -111,7 +111,7 @@ const FAQ_PATTERNS: [RegExp, string, boolean?][] = [
   ],
   [
     /walk|drive|cure|dry|ready to use/i,
-    "For ProFlake, you can typically walk on it the same day or next day, and drive on it in 24-72 hours. Other systems have different cure times — we provide specific instructions with every installation.",
+    "For ProFlake, you can walk on it after 24 hours and drive on it after 48 hours. Other systems have different cure times — we provide specific instructions with every installation.",
   ],
   [
     /contact|call|reach|phone|email|talk|speak|schedule/i,

@@ -74,8 +74,8 @@ export const CONTACT_ITEMS: ContactItem[] = [
   {
     icon: "Mail",
     label: "Email",
-    value: "juliancruz@proshieldepoxy.com",
-    href: "mailto:juliancruz@proshieldepoxy.com",
+    value: "info@proshieldepoxy.com",
+    href: "mailto:info@proshieldepoxy.com",
   },
   {
     icon: "MapPin",

@@ -1,15 +1,12 @@
 "use client"
 
-import { useState, useRef } from "react"
+import { useState } from "react"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import {
   ArrowRight,
-  CookingPot,
-  Sofa,
-  Building2,
-  Warehouse,
   Check,
+  ChevronDown,
 } from "lucide-react"
 
 /* ------------------------------------------------------------------ */
@@ -23,148 +20,87 @@ interface System {
   href: string
   image: string
   tag?: string
+  tagColor?: string
+  categories: string[]
 }
 
-interface Area {
-  id: string
-  label: string
-  icon: React.ReactNode
-  tagline: string
-  systems: System[]
-}
-
-const areas: Area[] = [
+const systems: System[] = [
   {
-    id: "kitchen-bathroom",
-    label: "Kitchen & Bathroom",
-    icon: <CookingPot className="h-5 w-5" />,
-    tagline: "Water-resistant surfaces that look stunning and last.",
-    systems: [
-      {
-        name: "Tile Flooring",
-        description:
-          "Porcelain, ceramic, and natural stone. Scratch-resistant, water-resistant, and available in endless patterns. Premium finishes for high-traffic wet areas.",
-        highlights: [
-          "Water & scratch resistant",
-          "Endless design options",
-          "Premium stone & porcelain",
-        ],
-        href: "/tile-flooring",
-        image: "/images/tile/tile-luxury-interior.jpg",
-        tag: "Most Popular",
-      },
-      {
-        name: "Metallic Epoxy",
-        description:
-          "Seamless, waterproof floor with stunning visual depth. A showpiece finish for modern kitchens and master baths.",
-        highlights: [
-          "Seamless & waterproof",
-          "Unique 3D depth",
-          "Easy to clean",
-        ],
-        href: "/metallic-epoxy",
-        image: "/images/metallic/metallic-epoxy-red-black-swirl.jpg",
-      },
+    name: "Metallic Epoxy",
+    description:
+      "Seamless, waterproof floor with stunning visual depth. Flowing pearlescent finishes that turn floors into art — every installation is unique.",
+    highlights: [
+      "Seamless & waterproof",
+      "Unique 3D depth",
+      "Easy to clean",
+      "One-of-a-kind design",
+      "Protective topcoat",
     ],
+    href: "/metallic-epoxy",
+    image: "/images/metallic/metallic-epoxy-red-black-swirl.webp",
+    tag: "Most Popular",
+    tagColor: "bg-accent",
+    categories: ["Showrooms", "Kitchens & Baths"],
   },
   {
-    id: "living-bedroom",
-    label: "Living & Bedroom",
-    icon: <Sofa className="h-5 w-5" />,
-    tagline: "Comfort and style for the rooms you live in most.",
-    systems: [
-      {
-        name: "Plank Flooring",
-        description:
-          "LVP, SPC, WPC, and engineered hardwood. Realistic wood-grain looks with waterproof cores. Comfortable underfoot and low maintenance.",
-        highlights: [
-          "Realistic wood look",
-          "Waterproof core",
-          "Click-lock install",
-        ],
-        href: "/plank-flooring",
-        image: "/images/plank/plank-room.jpg",
-        tag: "Most Popular",
-      },
-      {
-        name: "Tile Flooring",
-        description:
-          "Large-format porcelain or natural stone for a sleek, modern look. Durable enough for high-traffic living spaces.",
-        highlights: [
-          "Large format options",
-          "Timeless style",
-          "Extremely durable",
-        ],
-        href: "/tile-flooring",
-        image: "/images/tile/tile-hexagon.jpg",
-      },
+    name: "Concrete Polishing",
+    description:
+      "Mechanical refinement for a sleek, modern industrial look. Low maintenance with a professional finish — no coatings to wear off. Levels 1–4.",
+    highlights: [
+      "Modern industrial look",
+      "Ultra-low maintenance",
+      "No coatings to wear off",
+      "Multiple sheen levels",
+      "Highly durable",
     ],
+    href: "/concrete-polishing",
+    image: "/images/concrete-polishing/polished-concrete-aci.webp",
+    categories: ["Showrooms & Offices", "Modern Spaces"],
   },
   {
-    id: "showroom-office",
-    label: "Showroom & Office",
-    icon: <Building2 className="h-5 w-5" />,
-    tagline: "Make a lasting impression with every step.",
-    systems: [
-      {
-        name: "Metallic Epoxy",
-        description:
-          "Flowing pearlescent finishes that turn floors into art. Every installation is unique — perfect for spaces that need to impress.",
-        highlights: [
-          "One-of-a-kind design",
-          "Professional aesthetic",
-          "Protective topcoat",
-        ],
-        href: "/metallic-epoxy",
-        image: "/images/metallic/metallic-epoxy-red-black-swirl.jpg",
-        tag: "Premium",
-      },
-      {
-        name: "Concrete Polishing",
-        description:
-          "Mechanical refinement for a sleek, modern industrial look. Low maintenance with a professional finish. Levels 1–4.",
-        highlights: [
-          "Modern industrial look",
-          "Ultra-low maintenance",
-          "No coatings to wear off",
-        ],
-        href: "/concrete-polishing",
-        image: "/images/concrete-polishing/polished-concrete-aci.jpg",
-      },
+    name: "Decorative Overlays",
+    description:
+      "Thin-section coatings over existing concrete. Cover imperfections and create beautiful finishes — microtoppings, stampable overlays, and polishable systems.",
+    highlights: [
+      "Covers imperfections",
+      "Multiple finish styles",
+      "10–20+ year lifespan",
+      "Microtoppings available",
+      "Stampable options",
     ],
+    href: "/concrete-overlay",
+    image: "/images/concrete-overlay/micro-topping-flooring.webp",
+    categories: ["Utility Rooms", "Any Interior"],
   },
   {
-    id: "utility-bonus",
-    label: "Utility & Bonus Rooms",
-    icon: <Warehouse className="h-5 w-5" />,
-    tagline: "Upgrade underused spaces into finished, functional rooms.",
-    systems: [
-      {
-        name: "Decorative Overlays",
-        description:
-          "Thin-section coatings over existing concrete. Cover imperfections and create beautiful finishes — microtoppings, stampable overlays, and polishable systems.",
-        highlights: [
-          "Covers imperfections",
-          "Multiple finish styles",
-          "10–20+ year lifespan",
-        ],
-        href: "/concrete-overlay",
-        image: "/images/concrete-overlay/concrete-overlay-commercial-palms.jpg",
-        tag: "Most Versatile",
-      },
-      {
-        name: "Plank Flooring",
-        description:
-          "Waterproof luxury vinyl or SPC plank with click-lock install. Fast installation over existing concrete with a warm, comfortable feel.",
-        highlights: [
-          "100% waterproof",
-          "Click-lock install",
-          "Warm & comfortable",
-        ],
-        href: "/plank-flooring",
-        image: "/images/plank/plank-luxury.jpg",
-      },
+    name: "Tile Flooring",
+    description:
+      "Porcelain, ceramic, and natural stone. Scratch-resistant, water-resistant, and available in endless patterns. Premium finishes for high-traffic wet areas.",
+    highlights: [
+      "Water & scratch resistant",
+      "Endless design options",
+      "Premium stone & porcelain",
+      "Large format available",
+      "Extremely durable",
     ],
+    href: "/tile-flooring",
+    image: "/images/tile/tile-luxury-interior.webp",
+    categories: ["Kitchens & Baths", "Living Spaces"],
+  },
+  {
+    name: "Plank Flooring",
+    description:
+      "LVP, SPC, WPC, and engineered hardwood. Realistic wood-grain looks with waterproof cores. Comfortable underfoot and low maintenance with click-lock install.",
+    highlights: [
+      "Realistic wood look",
+      "Waterproof core",
+      "Click-lock install",
+      "Comfortable underfoot",
+      "Low maintenance",
+    ],
+    href: "/plank-flooring",
+    image: "/images/plank/plank-room.webp",
+    categories: ["Living & Bedroom", "Bonus Rooms"],
   },
 ]
 
@@ -173,141 +109,151 @@ const areas: Area[] = [
 /* ------------------------------------------------------------------ */
 
 export function InteriorAreas() {
-  const [activeArea, setActiveArea] = useState<string>("kitchen-bathroom")
-  const sectionRef = useRef<HTMLDivElement>(null)
-  const current = areas.find((a) => a.id === activeArea)!
+  const [openIndex, setOpenIndex] = useState<number>(0)
+
+  const toggle = (index: number) => {
+    setOpenIndex(openIndex === index ? -1 : index)
+  }
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative bg-white py-20 lg:py-28 overflow-hidden"
-    >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-white py-20 lg:py-28 overflow-hidden">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-sm font-semibold tracking-widest uppercase text-teal">
             Find Your System
           </span>
           <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900 tracking-tight">
-            What Room Are You Transforming?
+            Interior Flooring Systems
           </h2>
           <p className="mt-4 text-gray-500 text-lg leading-relaxed">
-            Select your space and we&apos;ll recommend the right flooring system.
+            Five flooring systems for every room — tap any to see the details.
           </p>
         </div>
 
-        {/* Area selector pills */}
-        <div className="flex flex-wrap justify-center gap-3 mb-14">
-          {areas.map((area) => {
-            const isActive = area.id === activeArea
+        {/* Accordion */}
+        <div className="space-y-3">
+          {systems.map((system, i) => {
+            const isOpen = openIndex === i
             return (
-              <button
-                key={area.id}
-                onClick={() => setActiveArea(area.id)}
+              <div
+                key={system.name}
                 className={`
-                  group relative flex items-center gap-2 rounded-full px-5 py-2.5
-                  text-sm font-semibold transition-all duration-300 cursor-pointer
-                  ${
-                    isActive
-                      ? "bg-accent text-white shadow-lg shadow-accent/20"
-                      : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900"
+                  rounded-2xl border overflow-hidden transition-all duration-300
+                  ${isOpen
+                    ? "border-accent/30 shadow-lg shadow-accent/5"
+                    : "border-gray-200 hover:border-gray-300"
                   }
                 `}
               >
-                <span
-                  className={`transition-colors duration-300 ${
-                    isActive ? "text-white" : "text-gray-400 group-hover:text-gray-600"
-                  }`}
+                {/* Collapsed header — always visible */}
+                <button
+                  onClick={() => toggle(i)}
+                  className="w-full flex items-center gap-4 p-4 sm:p-5 text-left cursor-pointer bg-white hover:bg-gray-50/50 transition-colors duration-200"
                 >
-                  {area.icon}
-                </span>
-                {area.label}
-              </button>
-            )
-          })}
-        </div>
-
-        {/* Tagline for active area */}
-        <AnimatePresence mode="wait">
-          <motion.p
-            key={current.id + "-tagline"}
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.3 }}
-            className="text-center text-gray-500 text-base mb-10 max-w-lg mx-auto"
-          >
-            {current.tagline}
-          </motion.p>
-        </AnimatePresence>
-
-        {/* Systems for selected area */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={current.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -12 }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
-            className={`grid gap-6 ${
-              current.systems.length === 1
-                ? "max-w-xl mx-auto"
-                : current.systems.length === 2
-                  ? "grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto"
-                  : current.systems.length === 4
-                    ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
-                    : "grid-cols-1 md:grid-cols-3"
-            }`}
-          >
-            {current.systems.map((system, i) => (
-              <Link key={system.name + current.id} href={system.href} className="group block">
-                <div className="h-full rounded-2xl border border-gray-200 bg-white overflow-hidden transition-all duration-300 hover:border-accent/30 hover:shadow-xl hover:shadow-accent/5 hover:-translate-y-1">
-                  {/* Image */}
-                  <div className="relative h-48 bg-gray-100 overflow-hidden">
+                  {/* Thumbnail */}
+                  <div className="relative h-[67px] w-[67px] sm:h-[77px] sm:w-[77px] rounded-xl overflow-hidden shrink-0 bg-gray-100">
                     <img
                       src={system.image}
                       alt={system.name}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="h-full w-full object-cover object-center"
                       loading="lazy"
                     />
-                    {system.tag && (
-                      <span className="absolute top-3 right-3 rounded-full bg-accent px-3 py-1 text-xs font-bold text-white shadow-md">
-                        {system.tag}
-                      </span>
+                  </div>
+
+                  {/* Name + Tag */}
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <h3 className="font-heading font-semibold text-base sm:text-lg text-gray-900 truncate">
+                        {system.name}
+                      </h3>
+                      {system.tag && (
+                        <span className={`${system.tagColor} text-white text-[11px] font-bold uppercase tracking-wide px-2.5 py-0.5 rounded-full shrink-0`}>
+                          {system.tag}
+                        </span>
+                      )}
+                    </div>
+                    {/* Category pills — visible when collapsed */}
+                    {!isOpen && (
+                      <div className="flex flex-wrap gap-1.5 mt-1.5">
+                        {system.categories.map((cat) => (
+                          <span
+                            key={cat}
+                            className="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-600 uppercase tracking-wide"
+                          >
+                            {cat}
+                          </span>
+                        ))}
+                      </div>
                     )}
                   </div>
 
-                  {/* Content */}
-                  <div className="p-6">
-                    <h3 className="font-heading font-semibold text-lg text-gray-900 group-hover:text-accent transition-colors duration-200">
-                      {system.name}
-                    </h3>
-                    <p className="mt-2 text-sm text-gray-500 leading-relaxed">
-                      {system.description}
-                    </p>
+                  {/* Chevron */}
+                  <ChevronDown
+                    className={`h-5 w-5 text-gray-500 shrink-0 transition-transform duration-300 ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
 
-                    {/* Highlights */}
-                    <ul className="mt-4 space-y-2">
-                      {system.highlights.map((h) => (
-                        <li
-                          key={h}
-                          className="flex items-start gap-2 text-sm text-gray-600"
+                {/* Expanded content */}
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-4 sm:px-5 pb-5">
+                        {/* Divider */}
+                        <div className="border-t border-gray-100 mb-5" />
+
+                        {/* Image */}
+                        <div className="relative rounded-xl overflow-hidden h-48 sm:h-56 mb-5 bg-gray-100">
+                          <img
+                            src={system.image}
+                            alt={system.name}
+                            className="h-full w-full object-cover object-center"
+                            loading="lazy"
+                          />
+                        </div>
+
+                        {/* Description */}
+                        <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-5">
+                          {system.description}
+                        </p>
+
+                        {/* Highlights */}
+                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
+                          {system.highlights.map((h) => (
+                            <li
+                              key={h}
+                              className="flex items-start gap-2 text-sm text-gray-600"
+                            >
+                              <Check className="h-4 w-4 text-teal shrink-0 mt-0.5" />
+                              {h}
+                            </li>
+                          ))}
+                        </ul>
+
+                        {/* CTA */}
+                        <Link
+                          href={system.href}
+                          className="inline-flex items-center gap-2 text-sm font-semibold text-accent-text hover:text-accent/80 transition-colors duration-200"
                         >
-                          <Check className="h-4 w-4 text-teal shrink-0 mt-0.5" />
-                          {h}
-                        </li>
-                      ))}
-                    </ul>
-
-                    <div className="mt-5 flex items-center gap-1.5 text-sm font-medium text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                      Learn More <ArrowRight className="h-3.5 w-3.5" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </motion.div>
-        </AnimatePresence>
+                          Learn More About {system.name}
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            )
+          })}
+        </div>
       </div>
     </section>
   )

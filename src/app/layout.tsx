@@ -1,19 +1,63 @@
 import type { Metadata } from "next"
-import "@fontsource/space-grotesk/600.css"
-import "@fontsource/space-grotesk/700.css"
-import "@fontsource/inter/400.css"
-import "@fontsource/inter/500.css"
-import "@fontsource/inter/600.css"
+import localFont from "next/font/local"
 import "./globals.css"
 import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
 import { StickyCta } from "@/components/layout/sticky-cta"
-import { Chatbot } from "@/components/ui/chatbot"
+import { ChatbotWrapper } from "@/components/ui/chatbot-wrapper"
+import { Analytics } from "@vercel/analytics/next"
+
+const spaceGrotesk = localFont({
+  src: [
+    {
+      path: "../../node_modules/@fontsource/space-grotesk/files/space-grotesk-latin-600-normal.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../node_modules/@fontsource/space-grotesk/files/space-grotesk-latin-700-normal.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  variable: "--font-space-grotesk",
+})
+
+const inter = localFont({
+  src: [
+    {
+      path: "../../node_modules/@fontsource/inter/files/inter-latin-400-normal.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../node_modules/@fontsource/inter/files/inter-latin-500-normal.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../node_modules/@fontsource/inter/files/inter-latin-600-normal.woff2",
+      weight: "600",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  variable: "--font-inter",
+})
 
 export const metadata: Metadata = {
   title: "ProShield Epoxy | Premium Epoxy Flooring",
   description:
     "Professional floor coatings for garages, commercial spaces, and more. Metallic epoxy, flake systems, VubaStone, concrete polishing, and specialty services. Free quotes in the Las Vegas metro.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   keywords: [
     "epoxy flooring",
     "garage floor coating",
@@ -31,7 +75,7 @@ export const metadata: Metadata = {
     title: "ProShield Epoxy | Premium Epoxy Flooring Las Vegas",
     description:
       "Professional floor coatings for garages, commercial spaces, and more. Metallic epoxy, flake systems, VubaStone, and specialty services in Las Vegas.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.webp"],
     type: "website",
   },
   twitter: {
@@ -39,7 +83,7 @@ export const metadata: Metadata = {
     title: "ProShield Epoxy | Premium Epoxy Flooring Las Vegas",
     description:
       "Professional floor coatings for garages, commercial spaces, and more. Metallic epoxy, flake systems, VubaStone, and specialty services in Las Vegas.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.webp"],
   },
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || "https://proshieldepoxy.com"
@@ -53,10 +97,10 @@ const structuredData = {
   description:
     "Professional floor coatings for residential and commercial spaces in the Las Vegas metro. Metallic epoxy, flake systems, VubaStone, concrete polishing, airplane hangar flooring, and more.",
   telephone: process.env.NEXT_PUBLIC_PHONE || "",
-  email: "juliancruz@proshieldepoxy.com",
+  email: "info@proshieldepoxy.com",
   areaServed: process.env.NEXT_PUBLIC_CITY || "",
   priceRange: "$$",
-  image: `${process.env.NEXT_PUBLIC_SITE_URL || "https://proshieldepoxy.com"}/og-image.jpg`,
+  image: `${process.env.NEXT_PUBLIC_SITE_URL || "https://proshieldepoxy.com"}/og-image.webp`,
   address: {
     "@type": "PostalAddress",
     addressLocality: process.env.NEXT_PUBLIC_CITY || "",
@@ -72,9 +116,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="h-full"
+      className={`h-full ${spaceGrotesk.variable} ${inter.variable}`}
+      suppressHydrationWarning
     >
       <head>
+        <meta name="theme-color" content="#111C2E" />
+        <link rel="preconnect" href="https://web3forms.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -87,7 +134,8 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <StickyCta />
-        <Chatbot />
+        <ChatbotWrapper />
+        <Analytics />
       </body>
     </html>
   )

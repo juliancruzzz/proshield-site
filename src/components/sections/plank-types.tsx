@@ -79,7 +79,7 @@ export function PlankTypes() {
                       <motion.div
                         animate={{ rotate: isOpen ? 180 : 0 }}
                         transition={{ duration: 0.2 }}
-                        className={`shrink-0 ${isOpen ? "text-accent" : "text-gray-400"}`}
+                        className={`shrink-0 ${isOpen ? "text-accent" : "text-gray-500"}`}
                       >
                         <ChevronDown className="h-5 w-5" />
                       </motion.div>
@@ -119,7 +119,7 @@ export function PlankTypes() {
           {/* Image side */}
           <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/plank/plank-luxury.jpg"
+              src="/images/plank/plank-luxury.webp"
               alt="Close-up of light wood-grain plank flooring showing natural texture"
               fill
               className="object-cover"

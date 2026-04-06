@@ -3,7 +3,7 @@
 import { Shield, Layers, Lightbulb, Wrench } from "lucide-react"
 
 const stats = [
-  { icon: Shield, value: "20–30 yr", label: "Lifespan" },
+  { icon: Shield, value: "25–40 yr", label: "Lifespan" },
   { icon: Layers, value: "Levels 1–4", label: "Finish Options" },
   { icon: Lightbulb, value: "Up to 90%", label: "Light Reflectivity" },
   { icon: Wrench, value: "No Coating", label: "To Peel or Fail" },

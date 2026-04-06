@@ -7,6 +7,7 @@ import { BeforeAfterSlider } from "@/components/sections/before-after-slider"
 import { ProcessTimeline } from "@/components/sections/process-timeline"
 import { GoogleReviews } from "@/components/sections/google-reviews"
 import { CtaV3 as CtaSection } from "@/components/sections/cta-v3"
+import { Credentials } from "@/components/sections/credentials"
 
 export const metadata: Metadata = {
   title:
@@ -31,6 +32,7 @@ export default function Home() {
       <BeforeAfterSlider />
       <ProcessTimeline />
       <GoogleReviews />
+      <Credentials />
       <CtaSection />
     </>
   )

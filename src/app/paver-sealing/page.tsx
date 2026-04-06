@@ -92,7 +92,7 @@ export default function PaverSealingPage() {
         title="Your Pavers Deserve"
         highlight="Better Protection."
         subtitle="Professional sealing, restoration, and joint stabilization — UV-stable, non-yellowing, and engineered for Las Vegas desert heat."
-        backgroundImage="/images/paver-sealing/paver-driveway-sealed.jpg"
+        backgroundImage="/images/paver-sealing/paver-driveway-sealed.webp"
         backgroundAlt="Professional sealed paver driveway"
       />
 

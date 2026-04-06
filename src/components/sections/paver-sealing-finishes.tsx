@@ -47,7 +47,7 @@ export function PaverSealingFinishes() {
           {/* Natural Look Panel */}
           <div className="relative h-full min-h-[360px] sm:min-h-[420px]">
             <Image
-              src="/images/vubastone/vubastone-steps-contrast.jpg"
+              src="/images/vubastone/vubastone-steps-contrast.webp"
               alt="Natural matte finish on paver steps"
               fill
               className="object-cover"

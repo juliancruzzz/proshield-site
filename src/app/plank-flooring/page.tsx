@@ -65,7 +65,7 @@ export default function PlankFlooringPage() {
         title="Wood-Look Floors."
         highlight="Modern Durability."
         subtitle="LVP, SPC, WPC, and Engineered Hardwood — professionally installed. Realistic wood-grain finishes with waterproof cores and click-lock convenience."
-        backgroundImage="/images/plank/plank-room.jpg"
+        backgroundImage="/images/plank/plank-room.webp"
         backgroundAlt="Living room with luxury vinyl plank flooring showcasing natural wood grain"
       />
 

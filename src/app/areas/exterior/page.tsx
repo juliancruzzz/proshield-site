@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const exteriorFaqs = [
   {
     q: "Can epoxy flooring be installed outdoors?",
-    a: "Yes — our ProFlake system (epoxy base + polyaspartic topcoat) can be applied to any exterior concrete surface, including patios, pool decks, driveways, and walkways. It provides a durable, decorative finish that holds up to the elements.",
+    a: "Yes — our ProFlake system (polyurea base + polyaspartic topcoat) can be applied to any exterior concrete surface, including patios, pool decks, driveways, and walkways. It provides a durable, decorative finish that holds up to the elements.",
   },
   {
     q: "What's the best option for a pool deck in Las Vegas?",
@@ -20,7 +20,7 @@ const exteriorFaqs = [
   },
   {
     q: "How long does VubaStone last?",
-    a: "VubaStone is built to last 20–25 years. It's a polyurethane resin-bound natural stone system — not an epoxy or paint — designed to handle UV exposure, foot traffic, and vehicle traffic depending on the application.",
+    a: "VubaStone is built to last 15–20 years with regular maintenance. It's a polyurethane resin-bound natural stone system — not an epoxy or paint — designed to handle UV exposure, foot traffic, and vehicle traffic depending on the application.",
   },
   {
     q: "Is Cool Deck the same as epoxy?",

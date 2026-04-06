@@ -10,7 +10,7 @@ export function BeforeAfterSlider() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const [sliderPos, setSliderPos] = useState(50)
   const [isDragging, setIsDragging] = useState(false)
-  const [selectedBlend, setSelectedBlend] = useState<number | null>(null)
+  const [selectedBlend, setSelectedBlend] = useState<number | null>(0)
 
   const featuredBlends = [
     { name: "Waxwing", code: "FB-968", image: "/images/flake/signature/waxwing.jpg" },
@@ -45,7 +45,7 @@ export function BeforeAfterSlider() {
   )
 
   return (
-    <section ref={sectionRef} className="relative bg-gray-50 py-24 lg:py-32 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-white py-24 lg:py-32 overflow-hidden">
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Two-column layout: left = text + stats, right = slider */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -76,7 +76,7 @@ export function BeforeAfterSlider() {
                   <div className="text-xl font-heading font-bold text-accent">
                     {s.val}
                   </div>
-                  <div className="text-sm text-gray-400 mt-0.5">
+                  <div className="text-sm text-gray-500 mt-0.5">
                     {s.label}
                   </div>
                 </div>
@@ -108,7 +108,7 @@ export function BeforeAfterSlider() {
             >
               {/* "After" image — full background (finished floor) */}
               <img
-                src="/images/proflake/flake-garage-after-coated.jpg"
+                src="/images/proflake/flake-garage-after-coated.webp"
                 alt=""
                 className="absolute inset-0 h-full w-full object-cover"
               />
@@ -119,7 +119,7 @@ export function BeforeAfterSlider() {
                 style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
               >
                 <img
-                  src="/images/proflake/flake-garage-before-concrete.png"
+                  src="/images/proflake/flake-garage-before-concrete.webp"
                   alt=""
                   className="absolute inset-0 h-full w-full object-cover"
                 />
@@ -175,7 +175,7 @@ export function BeforeAfterSlider() {
             </h3>
             <Link
               href="/proflake"
-              className="text-sm font-medium text-gray-400 hover:text-accent transition-colors flex items-center gap-1.5"
+              className="text-sm font-medium text-gray-500 hover:text-accent transition-colors flex items-center gap-1.5"
             >
               See all 150+ colors <ArrowRight className="h-3.5 w-3.5" />
             </Link>
@@ -191,7 +191,7 @@ export function BeforeAfterSlider() {
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="overflow-hidden mb-5"
               >
-                <div className="flex items-center gap-6 rounded-2xl bg-white border border-gray-200 p-4 shadow-sm">
+                <div className="flex items-center gap-6 rounded-2xl bg-gray-50 border border-gray-200 p-4 shadow-sm">
                   <div className="h-28 w-28 sm:h-36 sm:w-36 shrink-0 rounded-xl overflow-hidden">
                     <img
                       src={featuredBlends[selectedBlend].image}
@@ -200,14 +200,14 @@ export function BeforeAfterSlider() {
                     />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-gray-400 uppercase tracking-wide">
+                    <p className="text-sm font-medium text-gray-500 uppercase tracking-wide">
                       {featuredBlends[selectedBlend].code}
                     </p>
                     <h4 className="mt-1 font-heading font-bold text-xl text-gray-900">
                       {featuredBlends[selectedBlend].name}
                     </h4>
                     <p className="mt-2 text-sm text-gray-500">
-                      Torginol full-flake blend. Available in 1/4&quot; chip size for seamless broadcast coverage.
+                      Full-flake blend. Available in 1/4&quot; chip size.
                     </p>
                     <Link
                       href="/proflake"
@@ -218,7 +218,7 @@ export function BeforeAfterSlider() {
                   </div>
                   <button
                     onClick={() => setSelectedBlend(null)}
-                    className="shrink-0 h-8 w-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-200 transition-colors self-start"
+                    className="shrink-0 h-8 w-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-gray-600 hover:bg-gray-200 transition-colors self-start"
                     aria-label="Close preview"
                   >
                     <X className="h-4 w-4" />
@@ -233,11 +233,13 @@ export function BeforeAfterSlider() {
               <div key={blend.code}>
                 <button
                   onClick={() => setSelectedBlend(selectedBlend === i ? null : i)}
-                  className={`group w-full text-left transition-all duration-200 ${
-                    selectedBlend === i ? "ring-2 ring-accent ring-offset-2 rounded-xl" : ""
+                  className={`group w-full text-left transition-all duration-200 rounded-xl ${
+                    selectedBlend === i ? "ring-2 ring-accent ring-offset-2 scale-105" : "opacity-85 hover:opacity-100"
                   }`}
                 >
-                  <div className="aspect-square rounded-xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-200 group-hover:shadow-md cursor-pointer">
+                  <div className={`aspect-square rounded-xl overflow-hidden border-2 shadow-sm transition-all duration-200 cursor-pointer ${
+                    selectedBlend === i ? "border-accent shadow-md" : "border-gray-200 group-hover:shadow-md"
+                  }`}>
                     <img
                       src={blend.image}
                       alt={`${blend.name} flake blend`}
@@ -245,8 +247,8 @@ export function BeforeAfterSlider() {
                       loading="lazy"
                     />
                   </div>
-                  <p className={`mt-2 text-center text-xs font-medium transition-colors ${
-                    selectedBlend === i ? "text-accent" : "text-gray-500 group-hover:text-gray-700"
+                  <p className={`mt-2 text-center text-xs font-semibold transition-colors ${
+                    selectedBlend === i ? "text-accent" : "text-gray-600 group-hover:text-gray-800"
                   }`}>
                     {blend.name}
                   </p>

@@ -37,7 +37,7 @@ const serviceTypes = [
     ],
     timeline: "3–5 Day Install",
     cost: "Higher Upfront",
-    durability: "20–30 Year Life",
+    durability: "25–40 Year Life",
   },
 ]
 
@@ -93,7 +93,7 @@ export function PolishingServiceTypes() {
                         </span>
                       </div>
                       <ChevronDown
-                        className={`h-5 w-5 text-gray-400 transition-transform duration-300 ${
+                        className={`h-5 w-5 text-gray-500 transition-transform duration-300 ${
                           isOpen ? "rotate-180" : ""
                         }`}
                       />

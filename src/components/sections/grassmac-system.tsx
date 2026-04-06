@@ -118,12 +118,12 @@ export function GrassMacSystem() {
                     }`}
                   >
                     <div className={`flex h-10 w-10 items-center justify-center rounded-lg ${
-                      isActive ? `bg-white shadow-sm ${c.icon}` : "bg-white text-gray-400"
+                      isActive ? `bg-white shadow-sm ${c.icon}` : "bg-white text-gray-500"
                     }`}>
                       <Icon className="h-5 w-5" />
                     </div>
                     <span className={`text-xs font-semibold text-center leading-tight ${
-                      isActive ? "text-gray-900" : "text-gray-400"
+                      isActive ? "text-gray-900" : "text-gray-500"
                     }`}>
                       {layer.title.split(" ").slice(-2).join(" ")}
                     </span>

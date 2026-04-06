@@ -6,37 +6,37 @@ import { ArrowRight, Expand, X } from "lucide-react"
 
 const photos = [
   {
-    src: "/images/proflake/flake-garage-porsche-bikes.jpg",
+    src: "/images/proflake/flake-garage-porsche-bikes.webp",
     alt: "ProFlake epoxy motorcycle showroom garage",
     label: "Motorcycle Showroom",
     tag: "Garage",
   },
   {
-    src: "/images/proflake/flake-garage-dark-grey.jpg",
+    src: "/images/proflake/flake-garage-dark-grey.webp",
     alt: "ProFlake dark grey residential garage floor",
     label: "Dark Grey Residential",
     tag: "Garage",
   },
   {
-    src: "/images/proflake/flake-garage-blue-paver-border.jpg",
+    src: "/images/proflake/flake-garage-blue-paver-border.webp",
     alt: "ProFlake garage with blue paver border",
     label: "Blue Paver Border",
     tag: "Garage",
   },
   {
-    src: "/images/proflake/flake-garage-sunlight-paver.jpg",
+    src: "/images/proflake/flake-garage-sunlight-paver.webp",
     alt: "ProFlake garage with sunlit paver design",
     label: "Sunlight Paver",
     tag: "Garage",
   },
   {
-    src: "/images/proflake/flake-garage-wide-clean.jpg",
+    src: "/images/proflake/flake-garage-wide-clean.webp",
     alt: "ProFlake wide clean garage installation",
     label: "Wide Clean Finish",
     tag: "Garage",
   },
   {
-    src: "/images/proflake/flake-garage-open-door-shelving.jpg",
+    src: "/images/proflake/flake-garage-open-door-shelving.webp",
     alt: "ProFlake garage with open door and shelving",
     label: "Open Door Display",
     tag: "Garage",

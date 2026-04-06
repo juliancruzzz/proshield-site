@@ -20,11 +20,11 @@ const systems = [
       "Chemical resistant",
     ],
     stats: [
-      { value: "20–30", label: "Year lifespan" },
+      { value: "25–40", label: "Year lifespan" },
       { value: "2–3 Day", label: "Install time" },
       { value: "100%", label: "Seamless surface" },
     ],
-    image: "/images/commercial/commercial-resin-quartz.jpg",
+    image: "/images/commercial/commercial-resin-quartz.webp",
   },
   {
     icon: <Shield className="h-5 w-5" />,
@@ -64,7 +64,7 @@ const systems = [
       { value: "Extreme", label: "Chemical resistance" },
       { value: "12hr", label: "Return to service" },
     ],
-    image: "/images/commercial/commercial-urethane-cement.jpg",
+    image: "/images/commercial/commercial-urethane-cement.webp",
   },
   {
     icon: <Layers className="h-5 w-5" />,
@@ -72,7 +72,7 @@ const systems = [
     tagline: "Decorative durability, fastest cure",
     tags: ["Showrooms", "Retail", "Commercial Garages"],
     description:
-      "Our signature epoxy flake system adapted for commercial environments. Epoxy base coat with decorative chip broadcast and polyaspartic topcoat in 150+ Torginol color blends.",
+      "Our signature polyurea flake system adapted for commercial environments. Polyurea base coat with decorative chip broadcast and polyaspartic topcoat in 150+ Torginol color blends.",
     benefits: [
       "150+ color options",
       "Polyaspartic topcoat",
@@ -84,7 +84,7 @@ const systems = [
       { value: "Next Day", label: "Walk-on ready" },
       { value: "1 Day", label: "Typical install" },
     ],
-    image: "/images/commercial/commercial-warehouse-flake.jpg",
+    image: "/images/commercial/commercial-warehouse-flake.webp",
   },
 ]
 
@@ -135,7 +135,7 @@ export function CommercialSystems() {
                     className={`h-10 w-10 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 font-heading font-bold text-sm ${
                       isOpen
                         ? "bg-gray-900 text-white"
-                        : "bg-gray-100 text-gray-400 group-hover:bg-gray-200 group-hover:text-gray-600"
+                        : "bg-gray-100 text-gray-600 group-hover:bg-gray-200 group-hover:text-gray-600"
                     }`}
                   >
                     {system.icon}
@@ -150,7 +150,7 @@ export function CommercialSystems() {
                       {system.title}
                     </h3>
                     {!isOpen && (
-                      <p className="mt-0.5 text-sm text-gray-400 truncate hidden sm:block">
+                      <p className="mt-0.5 text-sm text-gray-500 truncate hidden sm:block">
                         {system.tagline}
                       </p>
                     )}
@@ -162,7 +162,7 @@ export function CommercialSystems() {
                       {system.tags.slice(0, 2).map((tag) => (
                         <span
                           key={tag}
-                          className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-gray-100 text-gray-500"
+                          className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-gray-100 text-gray-600"
                         >
                           {tag}
                         </span>
@@ -235,7 +235,7 @@ export function CommercialSystems() {
                                   <div className="font-heading font-bold text-lg sm:text-xl text-gray-900 leading-tight">
                                     {stat.value}
                                   </div>
-                                  <div className="text-[10px] sm:text-[11px] font-medium uppercase tracking-wider text-gray-400 mt-0.5">
+                                  <div className="text-[10px] sm:text-[11px] font-medium uppercase tracking-wider text-gray-500 mt-0.5">
                                     {stat.label}
                                   </div>
                                 </div>

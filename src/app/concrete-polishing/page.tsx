@@ -81,7 +81,7 @@ export default function ConcretePolishingPage() {
         title="Concrete"
         highlight="Polishing"
         subtitle="Transform your existing concrete slab into a high-performance, mirror-finish floor. From industrial warehouses to sleek retail showrooms — no coatings, no overlays, just refined concrete built to last decades."
-        backgroundImage="/images/concrete-polishing/polished-concrete-aci.jpg"
+        backgroundImage="/images/concrete-polishing/polished-concrete-aci.webp"
         backgroundAlt="Polished commercial warehouse floor with high-gloss finish"
       />
 

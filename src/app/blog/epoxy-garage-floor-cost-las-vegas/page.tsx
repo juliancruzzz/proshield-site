@@ -135,9 +135,9 @@ export default function EpoxyGarageFloorCostPost() {
                     <td className="px-5 py-3 text-gray-700 font-medium">
                       Polished Concrete
                     </td>
-                    <td className="px-5 py-3 text-gray-600">$3&ndash;$8</td>
+                    <td className="px-5 py-3 text-gray-600">$6&ndash;$12</td>
                     <td className="px-5 py-3 text-gray-600">
-                      $1,500&ndash;$4,000
+                      $3,000&ndash;$6,000
                     </td>
                     <td className="px-5 py-3 text-gray-600">2&ndash;4 days</td>
                   </tr>
@@ -180,7 +180,7 @@ export default function EpoxyGarageFloorCostPost() {
             </p>
             <p className="text-gray-600 leading-relaxed">
               <strong>Number of coats and topcoat type</strong> also play a
-              role. Our ProFlake system includes an epoxy base coat, full
+              role. Our ProFlake system includes a polyurea base coat, full
               decorative flake broadcast, and a polyaspartic topcoat. Systems
               with additional coats or premium topcoat options will be at the
               higher end of the range.
@@ -198,7 +198,7 @@ export default function EpoxyGarageFloorCostPost() {
               DIY kits use water-based or thin-film epoxies that typically last
               1&ndash;3 years before peeling, especially in Las Vegas garages
               where surface temperatures can exceed 150&deg;F on hot summer
-              days. Professional systems use 100% solids epoxy bases
+              days. Professional systems use 100% solids polyurea bases
               (significantly thicker) with commercial-grade topcoats engineered
               for UV exposure and thermal cycling.
             </p>
@@ -362,8 +362,8 @@ export default function EpoxyGarageFloorCostPost() {
               Our standard residential ProFlake flake garage floor systems are
               often completed in 1 day, subject to substrate condition, weather,
               and repair requirements. Metallic systems typically require
-              2&ndash;3 days. You can walk on a ProFlake floor the same day or
-              next day, and park on it within 24&ndash;72 hours.
+              2&ndash;3 days. You can walk on a ProFlake floor after 24 hours
+              and park on it after 48 hours.
             </p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">

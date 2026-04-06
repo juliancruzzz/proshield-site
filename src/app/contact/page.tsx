@@ -51,14 +51,14 @@ export default function ContactPage() {
                   </div>
                 </a>
 
-                <a href="mailto:juliancruz@proshieldepoxy.com" className="flex items-start gap-4 group">
+                <a href="mailto:info@proshieldepoxy.com" className="flex items-start gap-4 group">
                   <div className="h-11 w-11 rounded-xl bg-accent/10 flex items-center justify-center text-accent shrink-0 group-hover:bg-accent group-hover:text-white transition-colors duration-200">
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
                     <div className="text-sm font-semibold text-gray-900">Email</div>
                     <div className="text-sm text-gray-500 group-hover:text-accent transition-colors">
-                      juliancruz@proshieldepoxy.com
+                      info@proshieldepoxy.com
                     </div>
                   </div>
                 </a>

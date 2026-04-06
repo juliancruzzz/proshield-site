@@ -8,19 +8,19 @@ const applications = [
     icon: Droplets,
     title: "Pool Decks",
     description: "The most popular application. Knockdown texture provides slip resistance around water while lighter colors keep the surface walkable in Las Vegas heat.",
-    image: "/images/cool-deck/pool-deck-lounge.jpg",
+    image: "/images/cool-deck/pool-deck-lounge.webp",
   },
   {
     icon: Sun,
     title: "Patios & Porches",
     description: "Protect outdoor entertaining areas from UV, rain, and seasonal wear. The acrylic formula resists cracking and maintains its color under direct sunlight.",
-    image: "/images/cool-deck/patio-backyard.jpg",
+    image: "/images/cool-deck/patio-backyard.webp",
   },
   {
     icon: Footprints,
     title: "Walkways",
     description: "Add safety and curb appeal to high-traffic concrete paths. The textured finish reduces slip risk and the sealer protects against staining and water damage.",
-    image: "/images/cool-deck/pool-deck-spa.jpg",
+    image: "/images/cool-deck/pool-deck-spa.webp",
   },
 ]
 

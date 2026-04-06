@@ -18,7 +18,7 @@ export function OverlayIntro() {
           <div className="relative">
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10">
               <img
-                src="/images/concrete-overlay/stamped-patio.jpg"
+                src="/images/concrete-overlay/stamped-patio.webp"
                 alt="Stamped concrete overlay patio transformation before and after"
                 className="h-full w-full object-cover"
               />

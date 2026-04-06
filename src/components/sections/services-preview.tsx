@@ -75,7 +75,7 @@ export function ServicesPreview() {
                     {/* Placeholder for project photo */}
                     <div className="h-40 rounded-xl bg-gray-100 mb-5 overflow-hidden">
                       <div className="h-full w-full bg-gradient-to-br from-gray-200 to-gray-100 flex items-center justify-center">
-                        <span className="text-gray-400 text-xs font-medium">Photo</span>
+                        <span className="text-gray-500 text-xs font-medium">Photo</span>
                       </div>
                     </div>
 
@@ -85,7 +85,7 @@ export function ServicesPreview() {
                     <p className="mt-2 text-sm text-gray-500 leading-relaxed">
                       {service.description}
                     </p>
-                    <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-accent-text opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                       Learn More
                       <ArrowRight className="h-3.5 w-3.5" />
                     </div>

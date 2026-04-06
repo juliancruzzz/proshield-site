@@ -30,6 +30,8 @@ export function Hero() {
           muted
           loop
           playsInline
+          poster="/images/metallic-hero-poster.jpg"
+          preload="auto"
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/images/metallic-hero-bg.mp4" type="video/mp4" />

@@ -9,8 +9,8 @@ const services = [
     title: "Garage Floor Coatings",
     subtitle: "ProFlake System",
     description:
-      "Epoxy base coat, full flake broadcast, and polyaspartic topcoat. 150+ Torginol color blends. Often completed in 1 day.",
-    image: "/images/proflake/flake-garage-porsche-bikes.jpg",
+      "Polyurea base coat, full flake broadcast, and polyaspartic topcoat. 150+ Torginol color blends. Often completed in 1 day.",
+    image: "/images/proflake/flake-garage-porsche-bikes.webp",
     href: "/proflake",
     tags: ["1-day install*", "Hot tire resistant", "150+ colors"],
   },
@@ -19,7 +19,7 @@ const services = [
     subtitle: "Flowing Metallic Finishes",
     description:
       "One-of-a-kind pearlescent depth with 3D liquid-metal effect. Every floor is unique. 2–3 day installation.",
-    image: "/images/metallic/metallic-epoxy-blue-ocean.jpg",
+    image: "/images/metallic/metallic-epoxy-blue-ocean.webp",
     href: "/metallic-epoxy",
     tags: ["Unique every time", "3D depth", "Custom combos"],
   },
@@ -27,17 +27,17 @@ const services = [
     title: "VubaStone",
     subtitle: "Resin-Bound Natural Stone",
     description:
-      "Polyurethane resin-bound crushed Spanish marble. Fully permeable at 850 L/min. 20–25 year lifespan.",
+      "Polyurethane resin-bound crushed Spanish marble. Fully permeable at 850 L/min. 15–20 year lifespan with regular maintenance.",
     image: "/images/vubastone/vubastone-driveway-landscaping.webp",
     href: "/vubastone",
-    tags: ["Fully permeable", "Natural stone", "20–25 years"],
+    tags: ["Fully permeable", "Natural stone", "15–20 years"],
   },
   {
     title: "Commercial Flooring",
     subtitle: "Resinous Systems",
     description:
       "Resin quartz, urethane cement, and ProFlake for commercial environments. Engineered for heavy traffic and chemical exposure.",
-    image: "/images/commercial/commercial-warehouse-flake.jpg",
+    image: "/images/commercial/commercial-warehouse-flake.webp",
     href: "/commercial-flooring",
     tags: ["Resin quartz", "Urethane cement", "Chemical rated"],
   },
@@ -46,7 +46,7 @@ const services = [
     subtitle: "Porcelain, Ceramic & Stone",
     description:
       "Professional installation of porcelain, ceramic, and natural stone. Scratch and water resistant.",
-    image: "/images/tile/tile-luxury-interior.jpg",
+    image: "/images/tile/tile-luxury-interior.webp",
     href: "/tile-flooring",
     tags: ["Porcelain & ceramic", "Natural stone", "Water resistant"],
   },
@@ -55,7 +55,7 @@ const services = [
     subtitle: "LVP, SPC & Engineered Hardwood",
     description:
       "Realistic wood-grain finishes with waterproof cores and click-lock installation. Low maintenance.",
-    image: "/images/plank/plank-luxury.jpg",
+    image: "/images/plank/plank-luxury.webp",
     href: "/plank-flooring",
     tags: ["LVP / SPC / WPC", "Waterproof core", "Click-lock"],
   },
@@ -64,7 +64,7 @@ const services = [
     subtitle: "Specialty Chemical-Resistant",
     description:
       "Systems built to resist Skydrol, jet fuel, oils, and rolling loads. Chemical-resistant polyurethane topcoat.",
-    image: "/images/commercial/commercial-floor-solid.jpg",
+    image: "/images/commercial/commercial-floor-solid.webp",
     href: "/airplane-hangar",
     tags: ["Skydrol resistant", "Impact rated", "Non-slip"],
   },
@@ -73,7 +73,7 @@ const services = [
     subtitle: "Mechanical Refinement",
     description:
       "Not a coating — a mechanical refinement process. Levels 1–4, Classes A–D. Low maintenance, professional finish.",
-    image: "/images/concrete-polishing/polished-floor-showroom.jpg",
+    image: "/images/concrete-polishing/polished-floor-showroom.webp",
     href: "/concrete-polishing",
     tags: ["Not a coating", "Multiple levels", "Low maintenance"],
   },
@@ -138,7 +138,7 @@ export function ServicesGrid() {
                         </span>
                       ))}
                     </div>
-                    <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-accent-text opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                       Learn More{" "}
                       <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
                     </div>
@@ -172,13 +172,13 @@ export function ServicesGrid() {
                     <h3 className="font-heading font-semibold text-gray-900 text-base group-hover:text-accent transition-colors duration-200">
                       {service.title}
                     </h3>
-                    <p className="mt-1 text-xs text-gray-400 font-medium">
+                    <p className="mt-1 text-xs text-gray-500 font-medium">
                       {service.subtitle}
                     </p>
                     <p className="mt-2 text-sm text-gray-500 leading-relaxed line-clamp-2">
                       {service.description}
                     </p>
-                    <div className="mt-3 flex items-center gap-1.5 text-sm font-medium text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <div className="mt-3 flex items-center gap-1.5 text-sm font-medium text-accent-text opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                       Learn More{" "}
                       <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
                     </div>

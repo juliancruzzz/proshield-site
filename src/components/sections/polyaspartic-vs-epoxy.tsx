@@ -12,7 +12,7 @@ const comparisons = [
   {
     feature: "Cure Time",
     epoxy: "24–72 hours",
-    pro: "Same-day return to service",
+    pro: "24-hour return to foot traffic",
   },
   {
     feature: "UV Resistance",

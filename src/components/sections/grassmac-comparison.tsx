@@ -35,7 +35,7 @@ export function GrassMacComparison() {
               <div className="p-4 lg:p-5 text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 Feature
               </div>
-              <div className="p-4 lg:p-5 text-xs font-semibold text-gray-400 uppercase tracking-wider text-center border-l border-gray-200">
+              <div className="p-4 lg:p-5 text-xs font-semibold text-gray-500 uppercase tracking-wider text-center border-l border-gray-200">
                 Traditional Base
               </div>
               <div className="p-4 lg:p-5 text-xs font-semibold text-teal uppercase tracking-wider text-center border-l border-gray-200 bg-teal/[0.03]">
@@ -51,7 +51,7 @@ export function GrassMacComparison() {
                 }`}
               >
                 <div className="p-4 lg:p-5 text-sm font-semibold text-gray-900">{row.feature}</div>
-                <div className="p-4 lg:p-5 flex items-center justify-center gap-2 text-sm text-gray-400 border-l border-gray-100">
+                <div className="p-4 lg:p-5 flex items-center justify-center gap-2 text-sm text-gray-500 border-l border-gray-100">
                   <X className="h-4 w-4 text-red-400/60 shrink-0" />
                   <span>{row.trad}</span>
                 </div>
@@ -75,7 +75,7 @@ export function GrassMacComparison() {
                 <div className="px-4 py-3 flex items-start gap-2.5">
                   <X className="h-4 w-4 text-red-400/60 shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-0.5">
+                    <div className="text-[10px] font-semibold text-gray-500 uppercase tracking-wider mb-0.5">
                       Traditional
                     </div>
                     <div className="text-sm text-gray-500">{row.trad}</div>

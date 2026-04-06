@@ -16,7 +16,7 @@ const applications = [
     title: "Pool Decks",
     description:
       "Slip-resistant finish with chlorine and splash-out protection. Sealer prevents salt damage and keeps joints stable around water features.",
-    image: "/images/cool-deck/pool-deck-spa.jpg",
+    image: "/images/cool-deck/pool-deck-spa.webp",
   },
   {
     icon: Armchair,

@@ -18,7 +18,7 @@ export function CommercialIntro() {
           <div className="relative">
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10">
               <img
-                src="/images/commercial/commercial-garage-epoxy.jpg"
+                src="/images/commercial/commercial-garage-epoxy.webp"
                 alt="Commercial warehouse floor with seamless industrial coating"
                 className="h-full w-full object-cover"
               />

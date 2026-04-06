@@ -46,7 +46,7 @@ export function ProFlakeComparison() {
             <div className="grid grid-cols-[1.2fr_1fr_1fr]">
               <div className="px-4 py-3 sm:px-5 sm:py-3.5 bg-gray-50 border-b border-gray-200" />
               <div className="px-3 py-3 sm:px-5 sm:py-3.5 text-center bg-gray-100 border-b border-gray-200 border-l border-gray-200">
-                <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">Std. Epoxy</span>
+                <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">Std. Epoxy</span>
               </div>
               <div className="px-3 py-3 sm:px-5 sm:py-3.5 text-center bg-accent/8 border-b border-accent/15 border-l border-gray-200">
                 <span className="text-xs font-bold text-accent uppercase tracking-wider">ProFlake</span>
@@ -68,7 +68,7 @@ export function ProFlakeComparison() {
                   {row.epoxy === "No" ? (
                     <XIcon className="h-4 w-4 text-gray-300" />
                   ) : (
-                    <span className="text-sm text-gray-400 text-center">{row.epoxy}</span>
+                    <span className="text-sm text-gray-500 text-center">{row.epoxy}</span>
                   )}
                 </div>
                 <div className="px-3 py-3 sm:px-5 flex items-center justify-center border-l border-gray-100 bg-accent/[0.02]">
@@ -93,7 +93,7 @@ export function ProFlakeComparison() {
             {showAll && (
               <button
                 onClick={() => setShowAll(false)}
-                className="w-full px-4 py-3 text-sm font-medium text-gray-400 hover:bg-gray-50 transition-colors cursor-pointer text-center"
+                className="w-full px-4 py-3 text-sm font-medium text-gray-500 hover:bg-gray-50 transition-colors cursor-pointer text-center"
               >
                 Show less
               </button>

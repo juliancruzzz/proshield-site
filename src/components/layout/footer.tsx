@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 
 const systemLinks = [
@@ -41,13 +42,14 @@ export function Footer() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-4">
             {/* Brand */}
             <div className="space-y-4">
-              <Link href="/" className="flex items-center gap-2.5">
-                <div className="h-9 w-9 rounded-lg bg-accent flex items-center justify-center">
-                  <span className="text-white font-heading font-bold text-sm">PS</span>
-                </div>
-                <span className="font-heading font-bold text-lg text-gray-900 tracking-tight">
-                  ProShield Epoxy
-                </span>
+              <Link href="/" className="flex items-center">
+                <Image
+                  src="/images/logos/proshield-logo-orange-dark.png"
+                  alt="ProShield Epoxy"
+                  width={200}
+                  height={32}
+                  className="h-8 w-auto"
+                />
               </Link>
               <p className="text-sm text-gray-500 leading-relaxed max-w-xs">
                 Professional-grade floor coatings for residential and commercial spaces.
@@ -62,11 +64,11 @@ export function Footer() {
                   <span>{process.env.NEXT_PUBLIC_PHONE || "Call Us"}</span>
                 </a>
                 <a
-                  href="mailto:juliancruz@proshieldepoxy.com"
+                  href="mailto:info@proshieldepoxy.com"
                   className="flex items-center gap-2.5 text-sm text-gray-500 hover:text-accent transition-colors duration-150"
                 >
                   <Mail className="h-4 w-4 shrink-0" />
-                  <span>juliancruz@proshieldepoxy.com</span>
+                  <span>info@proshieldepoxy.com</span>
                 </a>
                 <div className="flex items-center gap-2.5 text-sm text-gray-500">
                   <MapPin className="h-4 w-4 shrink-0" />
@@ -81,7 +83,7 @@ export function Footer() {
 
             {/* Systems */}
             <div>
-              <h3 className="font-heading font-semibold text-xs text-gray-400 mb-4 tracking-widest uppercase">
+              <h3 className="font-heading font-semibold text-xs text-gray-600 mb-4 tracking-widest uppercase">
                 Our Systems
               </h3>
               <ul className="space-y-2.5">
@@ -100,7 +102,7 @@ export function Footer() {
 
             {/* Areas + Company */}
             <div>
-              <h3 className="font-heading font-semibold text-xs text-gray-400 mb-4 tracking-widest uppercase">
+              <h3 className="font-heading font-semibold text-xs text-gray-600 mb-4 tracking-widest uppercase">
                 By Area
               </h3>
               <ul className="space-y-2.5">
@@ -135,7 +137,7 @@ export function Footer() {
 
             {/* CTA */}
             <div className="space-y-4">
-              <h3 className="font-heading font-semibold text-xs text-gray-400 mb-4 tracking-widest uppercase">
+              <h3 className="font-heading font-semibold text-xs text-gray-600 mb-4 tracking-widest uppercase">
                 Ready to Start?
               </h3>
               <p className="text-sm text-gray-500 leading-relaxed">

@@ -46,7 +46,7 @@ export default function PolishedConcreteVsEpoxyPost() {
             <span className="text-gray-300">|</span>
             <time dateTime="2026-03-18">March 18, 2026</time>
           </div>
-          <div className="flex items-center gap-4 mt-6 text-sm text-gray-400">
+          <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
               <Calendar className="h-3.5 w-3.5" /> April 4, 2026
             </span>
@@ -99,7 +99,7 @@ export default function PolishedConcreteVsEpoxyPost() {
               primer coat bonds to the concrete, followed by one or more body
               coats for thickness and color, and a topcoat for protection and
               aesthetics. A residential garage system like our ProFlake includes
-              an epoxy base coat with decorative flakes and a polyaspartic
+              a polyurea base coat with decorative flakes and a polyaspartic
               topcoat for UV stability and fast cure. All layers work together
               to create a durable, sealed surface.
             </p>
@@ -141,10 +141,10 @@ export default function PolishedConcreteVsEpoxyPost() {
                       Upfront Cost
                     </td>
                     <td className="px-5 py-3 text-gray-600">
-                      $2–$4 per sq ft
+                      $6–$12 per sq ft
                     </td>
                     <td className="px-5 py-3 text-gray-600">
-                      $2–$6+ per sq ft
+                      $3.50–$6+ per sq ft
                     </td>
                   </tr>
                   <tr>
@@ -280,7 +280,7 @@ export default function PolishedConcreteVsEpoxyPost() {
             <ul className="list-disc list-inside text-gray-600 leading-relaxed space-y-2">
               <li>
                 <strong>Residential garages</strong>—our ProFlake system combines
-                beauty, durability, and one-day installation with epoxy base and
+                beauty, durability, and one-day installation with polyurea base and
                 polyaspartic topcoat
               </li>
               <li>
@@ -315,11 +315,11 @@ export default function PolishedConcreteVsEpoxyPost() {
               Polished Concrete Example (10,000 sq ft warehouse)
             </h3>
             <ul className="list-disc list-inside text-gray-600 leading-relaxed space-y-2">
-              <li>Initial installation: $3/sq ft × 10,000 = $30,000</li>
+              <li>Initial installation: $6/sq ft × 10,000 = $60,000</li>
               <li>Maintenance (25 years): periodic sweeping, wet mopping = ~$2,000</li>
               <li>Recoating: None required</li>
               <li className="font-semibold text-gray-900">
-                25-Year Total: ~$32,000
+                25-Year Total: ~$62,000
               </li>
             </ul>
 
@@ -340,9 +340,11 @@ export default function PolishedConcreteVsEpoxyPost() {
             </ul>
 
             <p className="text-gray-600 leading-relaxed mt-6">
-              The difference: polished concrete saves roughly $33,000 over a
-              25-year period—in this example. The gap widens with facility size.
-              For smaller spaces or shorter timelines, epoxy remains competitive.
+              The difference: polished concrete costs roughly $3,000 less over a
+              25-year period in this example—but the real savings is in
+              zero recoating cycles and near-zero maintenance. For smaller spaces
+              or shorter timelines, epoxy&apos;s lower upfront cost makes it very
+              competitive.
             </p>
 
             <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
@@ -427,8 +429,8 @@ export default function PolishedConcreteVsEpoxyPost() {
               Which is cheaper: polished concrete or epoxy?
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Upfront, they&apos;re comparable ($2–$4/sq ft for polished
-              concrete vs. $2–$6+/sq ft for epoxy). Over 25 years, polished
+              Upfront, polished concrete runs $6–$12/sq ft compared to
+              $3.50–$6+/sq ft for epoxy. Over 25 years, polished
               concrete is cheaper because you never pay for recoats. For garages
               and smaller residential projects, epoxy&apos;s faster installation
               and design options often win despite higher total cost.

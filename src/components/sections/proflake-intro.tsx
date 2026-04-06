@@ -1,19 +1,31 @@
 "use client"
 
-import { useState, useRef, useCallback } from "react"
+import { useState, useRef, useCallback, useEffect } from "react"
 import { Check, GripVertical } from "lucide-react"
 
 const highlights = [
   "Polyaspartic topcoat — the only residential system that features it",
   "UV-stable, chemical resistant, and hot tire resistant",
   "150+ Torginol color blends for unmatched customization",
-  "Walk-on same day — drive-on in 24–72 hours",
+  "Walk-on in 24 hours — drive-on in 48 hours",
 ]
 
 export function ProFlakeIntro() {
   const [sliderPos, setSliderPos] = useState(50)
   const [isDragging, setIsDragging] = useState(false)
+  const [containerWidth, setContainerWidth] = useState<number | null>(null)
   const sliderRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const updateWidth = () => {
+      if (sliderRef.current) {
+        setContainerWidth(sliderRef.current.offsetWidth)
+      }
+    }
+    updateWidth()
+    window.addEventListener("resize", updateWidth)
+    return () => window.removeEventListener("resize", updateWidth)
+  }, [])
 
   const updatePosition = useCallback((clientX: number) => {
     if (!sliderRef.current) return
@@ -53,7 +65,7 @@ export function ProFlakeIntro() {
             >
               {/* After image (full, underneath) */}
               <img
-                src="/images/proflake/flake-garage-after-coated.jpg"
+                src="/images/proflake/flake-garage-after-coated.webp"
                 alt=""
                 className="absolute inset-0 w-full h-full object-cover"
                 draggable={false}
@@ -65,13 +77,13 @@ export function ProFlakeIntro() {
                 style={{ width: `${sliderPos}%` }}
               >
                 <img
-                  src="/images/proflake/flake-garage-before-concrete.png"
+                  src="/images/proflake/flake-garage-before-concrete.webp"
                   alt=""
                   className="absolute inset-0 w-full h-full object-cover"
                   style={{
-                    width: sliderRef.current
-                      ? `${sliderRef.current.offsetWidth}px`
-                      : "100vw",
+                    width: containerWidth
+                      ? `${containerWidth}px`
+                      : "100%",
                     maxWidth: "none",
                   }}
                   draggable={false}

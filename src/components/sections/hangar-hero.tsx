@@ -10,7 +10,7 @@ export function HangarHero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="/hangar/hero-hangar.jpg"
+          src="/hangar/hero-hangar.webp"
           alt="Private jets in a clean airplane hangar with glossy coated floor"
           className="h-full w-full object-cover"
         />

@@ -78,7 +78,7 @@ export default function CoolDeckPage() {
         title="Cool Deck."
         highlight="Built for the Heat."
         subtitle="Acrylic-based knockdown texture coating for pool decks, patios, and walkways. Slip-resistant, heat-reflective, and designed to handle Las Vegas summers. This is not epoxy."
-        backgroundImage="/images/cool-deck/pool-deck-spa.jpg"
+        backgroundImage="/images/cool-deck/pool-deck-spa.webp"
         backgroundAlt="Pool deck with cool deck knockdown texture coating around pool and spa"
       />
 

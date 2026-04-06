@@ -7,7 +7,7 @@ export function HangarPhotoBreak() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10">
           <img
-            src="/hangar/hangar-detail.jpg"
+            src="/hangar/hangar-detail.webp"
             alt="Private jet on a high-gloss coated hangar floor showing reflection quality"
             className="h-full w-full object-cover"
           />

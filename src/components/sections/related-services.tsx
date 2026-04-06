@@ -166,7 +166,7 @@ export function RelatedServices({
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-6">
-          <p className="text-sm font-medium text-gray-400 uppercase tracking-wider">
+          <p className="text-sm font-medium text-gray-500 uppercase tracking-wider">
             Related Services
           </p>
         </div>
@@ -181,7 +181,7 @@ export function RelatedServices({
                     <h3 className="font-medium text-sm text-gray-900 group-hover:text-accent transition-colors duration-200">
                       {service.title}
                     </h3>
-                    <p className="text-xs text-gray-400 truncate mt-0.5">
+                    <p className="text-xs text-gray-500 truncate mt-0.5">
                       {service.description}
                     </p>
                   </div>

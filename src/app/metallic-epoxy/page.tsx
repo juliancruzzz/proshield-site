@@ -22,27 +22,27 @@ const idealSpaces = [
   {
     title: "Luxury Showrooms",
     description: "Automotive, retail, and product display spaces where the floor becomes part of the brand experience.",
-    image: "/images/metallic/metallic-epoxy-chopshop-porsche.jpg",
+    image: "/images/metallic/metallic-epoxy-chopshop-porsche.webp",
   },
   {
     title: "High-End Residences",
     description: "Living rooms, entertainment spaces, and custom home builds that demand flooring as distinctive as the home itself.",
-    image: "/images/metallic/metallic-epoxy-silver-kitchen-real.jpg",
+    image: "/images/metallic/metallic-epoxy-silver-kitchen-real.webp",
   },
   {
     title: "Designer Garages",
     description: "Collector garages and personal showrooms — where your vehicles deserve a floor that matches.",
-    image: "/images/metallic/metallic-epoxy-red-black-swirl.jpg",
+    image: "/images/metallic/metallic-epoxy-red-black-swirl.webp",
   },
 ]
 
 const metallicGallery = [
-  { src: "/images/metallic/metallic-epoxy-red-black-swirl.jpg", alt: "Metallic epoxy garage — red and black swirl custom pour", span: "md:col-span-2 md:row-span-2" },
-  { src: "/images/metallic/metallic-epoxy-red-black-angle2.jpg", alt: "Metallic epoxy — red and black angle view detail", span: "" },
-  { src: "/images/metallic/metallic-epoxy-silver-kitchen-real.jpg", alt: "Metallic epoxy kitchen — silver finish residential application", span: "" },
-  { src: "/images/metallic/metallic-epoxy-blue-ocean-garage.jpg", alt: "Metallic epoxy garage — deep blue ocean wave design", span: "md:col-span-2" },
-  { src: "/images/metallic/metallic-epoxy-chopshop-porsche.jpg", alt: "Metallic epoxy showroom — Porsche collector showroom space", span: "" },
-  { src: "/images/metallic/metallic-epoxy-pink-magenta-salon.jpg", alt: "Metallic epoxy salon — custom pink and magenta commercial floor", span: "" },
+  { src: "/images/metallic/metallic-epoxy-red-black-swirl.webp", alt: "Metallic epoxy garage — red and black swirl custom pour", span: "md:col-span-2 md:row-span-2" },
+  { src: "/images/metallic/metallic-epoxy-red-black-angle2.webp", alt: "Metallic epoxy — red and black angle view detail", span: "" },
+  { src: "/images/metallic/metallic-epoxy-silver-kitchen-real.webp", alt: "Metallic epoxy kitchen — silver finish residential application", span: "" },
+  { src: "/images/metallic/metallic-epoxy-blue-ocean-garage.webp", alt: "Metallic epoxy garage — deep blue ocean wave design", span: "md:col-span-2" },
+  { src: "/images/metallic/metallic-epoxy-chopshop-porsche.webp", alt: "Metallic epoxy showroom — Porsche collector showroom space", span: "" },
+  { src: "/images/metallic/metallic-epoxy-pink-magenta-salon.webp", alt: "Metallic epoxy salon — custom pink and magenta commercial floor", span: "" },
 ]
 
 const faqs = [

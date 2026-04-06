@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "When can I use my garage after installation?",
-    a: "Walk-on traffic is allowed the same day or next day. Drive-on is recommended 24–72 hours after installation depending on conditions and expected traffic. We'll provide specific guidelines based on weather and curing conditions.",
+    a: "Walk-on traffic is allowed after 24 hours. Drive-on is recommended after 48 hours. We'll provide specific guidelines based on weather and curing conditions.",
   },
   {
     q: "What is the warranty on ProFlake?",
@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     q: "What does the installation process involve?",
-    a: "Concrete prep → epoxy primer → epoxy base coat → chip broadcast → polyaspartic topcoat. Total time depends on substrate condition and environmental factors. We handle surface grinding, patching, and sealing.",
+    a: "Concrete prep → polyurea primer → polyurea base coat → chip broadcast → polyaspartic topcoat. Total time depends on substrate condition and environmental factors. We handle surface grinding, patching, and sealing.",
   },
 ]
 
@@ -77,7 +77,7 @@ export default function ProFlakePage() {
         title="ProFlake."
         highlight="Customizable Durability."
         subtitle="The ultimate garage floor system. 150+ Torginol color blends, polyaspartic topcoat, and 1-day installation for qualifying residential garages in Las Vegas."
-        backgroundImage="/images/proflake/flake-garage-porsche-bikes.jpg"
+        backgroundImage="/images/proflake/flake-garage-porsche-bikes.webp"
         backgroundAlt="Garage with ProFlake epoxy flake floor coating and motorcycles"
       />
 

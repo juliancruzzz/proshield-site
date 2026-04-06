@@ -84,7 +84,7 @@ export function PolishingAggregate() {
                     </span>
                   </div>
                   <ChevronDown
-                    className={`shrink-0 h-5 w-5 text-gray-400 transition-transform duration-300 ${
+                    className={`shrink-0 h-5 w-5 text-gray-500 transition-transform duration-300 ${
                       isOpen ? "rotate-180" : ""
                     }`}
                   />
@@ -103,7 +103,7 @@ export function PolishingAggregate() {
                           {agg.description}
                         </p>
                         <div className="mt-3 inline-flex items-center gap-2 text-xs font-medium text-gray-600 bg-gray-50 rounded-lg px-3 py-1.5">
-                          <span className="text-gray-400">Composition:</span> {agg.composition}
+                          <span className="text-gray-500">Composition:</span> {agg.composition}
                         </div>
                       </div>
                     </motion.div>

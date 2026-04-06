@@ -18,7 +18,7 @@ export function CoolDeckIntro() {
           {/* Image */}
           <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
             <Image
-              src="/images/cool-deck/pool-deck-hero.jpg"
+              src="/images/cool-deck/pool-deck-hero.webp"
               alt="Beautiful pool deck with cool deck coating in a residential backyard"
               fill
               className="object-cover"

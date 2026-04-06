@@ -18,7 +18,7 @@ export function HangarIntro() {
           <div className="relative">
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10">
               <img
-                src="/hangar/hangar-intro.jpg"
+                src="/hangar/hangar-intro.webp"
                 alt="Turboprop aircraft parked on a glossy white coated hangar floor"
                 className="h-full w-full object-cover"
               />

@@ -49,7 +49,7 @@ export default function CommercialFlooringPage() {
         title="Engineered for"
         highlight="Your Environment"
         subtitle="Seamless resinous flooring systems matched to your facility's specific demands — from thermal shock resistance to chemical exposure to heavy rolling loads."
-        backgroundImage="/images/commercial/commercial-grey-yellow-stripe.jpg"
+        backgroundImage="/images/commercial/commercial-grey-yellow-stripe.webp"
         backgroundAlt="Commercial warehouse with solid color epoxy floor and safety line markings"
       />
 

@@ -77,7 +77,7 @@ export default function GrassMacPage() {
         title="Premium Turf."
         highlight="Engineered Base."
         subtitle="The next generation of artificial turf installation. Eco-friendly, resin-bound base that never shifts, never sinks, and drains instantly — including pet waste."
-        backgroundImage="/images/grassmac/turf-backyard-pool.jpg"
+        backgroundImage="/images/grassmac/turf-backyard-pool.webp"
         backgroundAlt="Lush artificial turf backyard with pool and GrassMac engineered base"
       />
 

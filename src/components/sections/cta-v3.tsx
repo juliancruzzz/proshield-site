@@ -26,7 +26,7 @@ const steps = [
 
 const contactItems = [
   { icon: Phone, label: "Phone", value: process.env.NEXT_PUBLIC_PHONE || "(702) 555-0199", href: `tel:${process.env.NEXT_PUBLIC_PHONE || ""}` },
-  { icon: Mail, label: "Email", value: "juliancruz@proshieldepoxy.com", href: "mailto:juliancruz@proshieldepoxy.com" },
+  { icon: Mail, label: "Email", value: "info@proshieldepoxy.com", href: "mailto:info@proshieldepoxy.com" },
   { icon: MapPin, label: "Area", value: "Las Vegas metro + 20 mi" },
   { icon: Clock, label: "Hours", value: "Mon–Sat 7 AM–6 PM" },
 ]

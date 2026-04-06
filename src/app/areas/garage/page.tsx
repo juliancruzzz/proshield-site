@@ -18,7 +18,7 @@ const garageFaqs = [
   },
   {
     q: "When can I park on my new garage floor?",
-    a: "Walk-on traffic is allowed the same day or next day. Drive-on is recommended 24\u201372 hours after installation depending on conditions and expected traffic. We\u2019ll provide specific guidelines based on weather and curing conditions.",
+    a: "Walk-on traffic is allowed after 24 hours. Drive-on is recommended after 48 hours. We\u2019ll provide specific guidelines based on weather and curing conditions.",
   },
   {
     q: "Will epoxy stick to my old, cracked garage floor?",

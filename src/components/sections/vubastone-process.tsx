@@ -98,7 +98,7 @@ export function VubaStoneProcess() {
                     </div>
                   </div>
                   <span className={`mt-2 text-xs font-bold uppercase tracking-wider transition-colors duration-300 ${
-                    isActive ? "text-accent" : "text-gray-400"
+                    isActive ? "text-accent" : "text-gray-500"
                   }`}>
                     Step {step.number}
                   </span>

@@ -22,20 +22,20 @@ const projects: Project[] = [
     system: "Cool Deck",
     location: "Henderson, NV",
     before: "/images/vubastone/vubastone-pool-deck-closeup.webp",
-    after: "/images/cool-deck/cool-deck-pool-spa-vegas.jpg",
+    after: "/images/cool-deck/cool-deck-pool-spa-vegas.webp",
   },
   {
     label: "Driveway Transformation",
     system: "VubaStone",
     location: "Summerlin, NV",
-    before: "/images/cool-deck/cool-deck-patio-turf-border.jpg",
-    after: "/images/vubastone/vubastone-driveway-stone-columns.jpg",
+    before: "/images/cool-deck/cool-deck-patio-turf-border.webp",
+    after: "/images/vubastone/vubastone-driveway-stone-columns.webp",
   },
   {
     label: "Patio Upgrade",
     system: "VubaStone",
     location: "Las Vegas, NV",
-    before: "/images/vubastone/vubastone-steps-contrast.jpg",
+    before: "/images/vubastone/vubastone-steps-contrast.webp",
     after: "/images/vubastone/vubastone-patio-firepit.webp",
   },
 ]
@@ -128,7 +128,7 @@ export function ExteriorBeforeAfter() {
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.2, ease: "easeInOut" }}
-                      className="text-xs text-gray-400 mt-0.5 overflow-hidden"
+                      className="text-xs text-gray-500 mt-0.5 overflow-hidden"
                     >
                       {p.label} &middot; {p.location}
                     </motion.span>

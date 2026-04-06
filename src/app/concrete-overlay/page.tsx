@@ -67,7 +67,7 @@ export default function ConcreteOverlayPage() {
         title="Transform Your"
         highlight="Existing Concrete"
         subtitle="No demolition required. Stamped, stenciled, or smooth finishes sealed with polyaspartic topcoat. For driveways, patios, pool decks, walkways, and more."
-        backgroundImage="/images/cool-deck/pool-deck-hero.jpg"
+        backgroundImage="/images/cool-deck/pool-deck-hero.webp"
         backgroundAlt="Stamped concrete overlay around pool deck and patio area"
       />
 

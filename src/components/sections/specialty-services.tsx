@@ -10,7 +10,7 @@ const specialties = [
     badge: "Resurfacing",
     description:
       "Stamped and textured overlays that transform existing concrete. Custom patterns and colors — no tear-out required.",
-    image: "/images/concrete-overlay/stamped-patio.jpg",
+    image: "/images/concrete-overlay/stamped-patio.webp",
     href: "/concrete-overlay",
   },
   {
@@ -18,7 +18,7 @@ const specialties = [
     badge: "Exterior",
     description:
       "Cool-to-the-touch acrylic coatings for pool decks, patios, and walkways. Slip-resistant and UV-stable.",
-    image: "/images/cool-deck/pool-deck-hero.jpg",
+    image: "/images/cool-deck/pool-deck-hero.webp",
     href: "/cool-deck",
   },
   {
@@ -26,7 +26,7 @@ const specialties = [
     badge: "Maintenance",
     description:
       "Professional sealing, stripping, re-sanding, and color enhancement. UV-stable, non-yellowing sealer built for desert heat.",
-    image: "/images/paver-sealing/paver-driveway-sealed.jpg",
+    image: "/images/paver-sealing/paver-driveway-sealed.webp",
     href: "/paver-sealing",
   },
   {
@@ -34,7 +34,7 @@ const specialties = [
     badge: "Turf",
     description:
       "Premium artificial turf for yards, pet areas, putting greens, and commercial landscapes. Low maintenance, year-round green.",
-    image: "/images/grassmac/turf-backyard-pool.jpg",
+    image: "/images/grassmac/turf-backyard-pool.webp",
     href: "/grassmac",
   },
 ]
@@ -87,7 +87,7 @@ export function SpecialtyServices() {
                     <p className="mt-2 text-sm text-gray-500 leading-relaxed">
                       {item.description}
                     </p>
-                    <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-accent-text opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                       Learn More{" "}
                       <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
                     </div>

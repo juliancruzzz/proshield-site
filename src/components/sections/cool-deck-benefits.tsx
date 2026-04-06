@@ -77,7 +77,7 @@ export function CoolDeckBenefits() {
                       <motion.div
                         animate={{ rotate: isOpen ? 180 : 0 }}
                         transition={{ duration: 0.2 }}
-                        className={`shrink-0 ${isOpen ? "text-accent" : "text-gray-400"}`}
+                        className={`shrink-0 ${isOpen ? "text-accent" : "text-gray-500"}`}
                       >
                         <ChevronDown className="h-5 w-5" />
                       </motion.div>
@@ -107,7 +107,7 @@ export function CoolDeckBenefits() {
           {/* Image side */}
           <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/cool-deck/cool-deck-knockdown-pool.jpg"
+              src="/images/cool-deck/cool-deck-knockdown-pool.webp"
               alt="Cool deck knockdown texture coating around pool in Las Vegas"
               fill
               className="object-cover"

@@ -18,7 +18,7 @@ export function MetallicIntro() {
           {/* Image */}
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/metallic/metallic-epoxy-red-black-swirl.jpg"
+              src="/images/metallic/metallic-epoxy-red-black-swirl.webp"
               alt="Metallic epoxy floor with red and black custom swirl finish — 3D liquid metal effect"
               fill
               className="object-cover"

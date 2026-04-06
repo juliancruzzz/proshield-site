@@ -84,11 +84,11 @@ export function PolishingLevels() {
                     </span>
                   </div>
                   <div className="shrink-0 flex items-center gap-3">
-                    <span className="hidden sm:inline text-xs font-medium text-gray-400 bg-gray-50 rounded-full px-3 py-1">
+                    <span className="hidden sm:inline text-xs font-medium text-gray-500 bg-gray-50 rounded-full px-3 py-1">
                       {lvl.grit}
                     </span>
                     <ChevronDown
-                      className={`h-5 w-5 text-gray-400 transition-transform duration-300 ${
+                      className={`h-5 w-5 text-gray-500 transition-transform duration-300 ${
                         isOpen ? "rotate-180" : ""
                       }`}
                     />
@@ -108,7 +108,7 @@ export function PolishingLevels() {
                           {lvl.description}
                         </p>
                         <div className="mt-3 inline-flex items-center gap-2 text-xs font-medium text-gray-600 bg-gray-50 rounded-lg px-3 py-1.5 sm:hidden">
-                          <span className="text-gray-400">Grit:</span> {lvl.grit}
+                          <span className="text-gray-500">Grit:</span> {lvl.grit}
                         </div>
                       </div>
                     </motion.div>

@@ -100,13 +100,13 @@ export function PaverSealingServices() {
                       {item.title}
                     </h3>
                     {!isOpen && (
-                      <p className="mt-0.5 text-sm text-gray-400 hidden sm:block">
+                      <p className="mt-0.5 text-sm text-gray-500 hidden sm:block">
                         {item.stat}
                       </p>
                     )}
                   </div>
                   <ChevronDown
-                    className={`h-5 w-5 text-gray-400 shrink-0 transition-transform duration-300 ${
+                    className={`h-5 w-5 text-gray-500 shrink-0 transition-transform duration-300 ${
                       isOpen ? "rotate-180 text-accent" : "group-hover:text-accent"
                     }`}
                   />

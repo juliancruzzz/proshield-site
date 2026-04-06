@@ -117,7 +117,7 @@ function ReviewCard({ review }: { review: Review }) {
             {review.name}
           </span>
         </div>
-        <span className="text-xs text-gray-400">{review.date}</span>
+        <span className="text-xs text-gray-500">{review.date}</span>
       </div>
     </div>
   )
@@ -131,7 +131,7 @@ export function GoogleReviews() {
   const mounted = useMounted()
 
   return (
-    <section className="relative bg-gray-50 py-24 lg:py-32 overflow-hidden">
+    <section className="relative bg-white py-24 lg:py-32 overflow-hidden">
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header — with large rating display */}
         <div className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 mb-14">
@@ -173,7 +173,7 @@ export function GoogleReviews() {
             </div>
             <div className="border-l border-gray-200 pl-5">
               <Stars count={5} />
-              <span className="text-sm text-gray-400 mt-1 block">
+              <span className="text-sm text-gray-500 mt-1 block">
                 {totalReviews} reviews
               </span>
             </div>
@@ -216,7 +216,7 @@ export function GoogleReviews() {
             }`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium text-gray-400 hover:text-accent transition-colors duration-150"
+            className="text-sm font-medium text-gray-500 hover:text-accent transition-colors duration-150"
           >
             See all reviews on Google &rarr;
           </a>

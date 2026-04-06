@@ -72,7 +72,7 @@ export function TileTypes() {
                       <motion.div
                         animate={{ rotate: isOpen ? 180 : 0 }}
                         transition={{ duration: 0.2 }}
-                        className={`shrink-0 ${isOpen ? "text-accent" : "text-gray-400"}`}
+                        className={`shrink-0 ${isOpen ? "text-accent" : "text-gray-500"}`}
                       >
                         <ChevronDown className="h-5 w-5" />
                       </motion.div>
@@ -107,7 +107,7 @@ export function TileTypes() {
           {/* Image side */}
           <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/tile/tile-luxury-interior.jpg"
+              src="/images/tile/tile-luxury-interior.webp"
               alt="Modern open-plan living space with luxury dark tile flooring"
               fill
               className="object-cover"

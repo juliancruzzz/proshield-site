@@ -9,6 +9,7 @@ import { VubaStoneStats } from "@/components/sections/vubastone-stats"
 import { VubaStoneIntro } from "@/components/sections/vubastone-intro"
 import { VubaStoneColorShowcase } from "@/components/sections/vubastone-color-showcase"
 import { VubaStoneProcess } from "@/components/sections/vubastone-process"
+import { VubaStoneApplications } from "@/components/sections/vubastone-applications"
 import { ServiceGallery } from "@/components/sections/service-gallery"
 import { ScrollReveal } from "@/components/ui/scroll-reveal"
 import { ArrowRight } from "lucide-react"
@@ -18,29 +19,6 @@ export const metadata: Metadata = {
   description: "VubaStone certified installers in Las Vegas. Resin-bound Spanish marble for driveways, patios, and pool decks. 850 L/min drainage, UV-stable. Free estimates.",
 }
 
-const applications = [
-  {
-    title: "Driveways",
-    description: "Vehicle-rated, fully permeable, and built to handle Las Vegas heat without cracking or fading.",
-    image: "/images/vubastone/vubastone-driveway-stone-columns.jpg",
-  },
-  {
-    title: "Patios & Terraces",
-    description: "A seamless, low-maintenance surface that elevates outdoor living and entertaining areas.",
-    image: "/images/vubastone/vubastone-patio-firepit.webp",
-  },
-  {
-    title: "Walkways & Paths",
-    description: "Non-slip, weed-resistant, and permeable. Designed to complement your landscape architecture.",
-    image: "/images/vubastone/vubastone-walkway-wood-inlay.jpg",
-  },
-  {
-    title: "Pool Surrounds",
-    description: "Fast-draining and slip-resistant. The ideal surface around water — cool, safe, and beautiful.",
-    image: "/images/cool-deck/cool-deck-pool-spa-vegas.jpg",
-  },
-]
-
 const depths = [
   { use: "Pedestrian Areas", depth: "3/8\"", detail: "Walkways, paths, patios" },
   { use: "Driveways", depth: "5/8\"", detail: "Light vehicle access" },
@@ -48,10 +26,10 @@ const depths = [
 ]
 
 const galleryImages = [
-  { src: "/images/vubastone/vubastone-driveway-stone-columns.jpg", alt: "VubaStone driveway with grand stone column entrance", span: "md:col-span-2 md:row-span-2" },
-  { src: "/images/vubastone/vubastone-pool-deck-pergola.jpg", alt: "VubaStone pool deck with pergola shade structure", span: "" },
+  { src: "/images/vubastone/vubastone-driveway-stone-columns.webp", alt: "VubaStone driveway with grand stone column entrance", span: "md:col-span-2 md:row-span-2" },
+  { src: "/images/vubastone/vubastone-pool-deck-pergola.webp", alt: "VubaStone pool deck with pergola shade structure", span: "" },
   { src: "/images/vubastone/vubastone-patio-firepit.webp", alt: "VubaStone patio surrounding a fire pit", span: "" },
-  { src: "/images/vubastone/vubastone-steps-contrast.jpg", alt: "VubaStone steps with contrast color borders", span: "md:col-span-2" },
+  { src: "/images/vubastone/vubastone-steps-contrast.webp", alt: "VubaStone steps with contrast color borders", span: "md:col-span-2" },
   { src: "/images/vubastone/vubastone-pool-deck-closeup.webp", alt: "VubaStone surface close-up — natural marble texture detail", span: "" },
   { src: "/images/vubastone/vubastone-driveway-landscaping.webp", alt: "VubaStone driveway integrated with landscaping", span: "" },
 ]
@@ -119,7 +97,7 @@ export default function VubaStonePage() {
         title="Resin-Bound"
         highlight="Stone Surfaces"
         subtitle="Natural Spanish marble bound in UV-stable polyurethane resin. Fully permeable, color-stable, and engineered to last. The premium outdoor surface for driveways, patios, pool decks, and walkways."
-        backgroundImage="/images/vubastone/vubastone-driveway-stone-columns.jpg"
+        backgroundImage="/images/vubastone/vubastone-driveway-stone-columns.webp"
         backgroundAlt="VubaStone resin-bound stone driveway with grand stone column entrance"
       />
 
@@ -131,55 +109,8 @@ export default function VubaStonePage() {
       {/* Intro — two-column with image + highlights */}
       <VubaStoneIntro />
 
-      {/* Applications — image overlay cards */}
-      <section className="section-gray py-10 sm:py-16 lg:py-24 border-t border-gray-200">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <ScrollReveal direction="up" delay={0}>
-            <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-              <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-                Applications
-              </span>
-              <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-                Driveways, Patios, Pool Decks & More
-              </h2>
-              <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-                VubaStone is designed for any outdoor surface that needs to look premium, drain properly, and hold up to real use.
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 max-w-5xl mx-auto">
-            {applications.map((app, i) => (
-              <ScrollReveal key={app.title} delay={i * 0.1}>
-                <div className="group relative rounded-xl sm:rounded-2xl overflow-hidden border border-gray-200 hover:border-accent/30 transition-colors duration-300">
-                  <div className="aspect-[16/10] overflow-hidden">
-                    <img
-                      src={app.image}
-                      alt={`VubaStone ${app.title}`}
-                      className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
-                    <h3 className="font-heading font-semibold text-lg text-white">{app.title}</h3>
-                    <p className="mt-1.5 text-sm text-white/70 leading-relaxed">{app.description}</p>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-
-          <div className="text-center mt-8 sm:mt-10">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-white hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
-            >
-              Get a Free Quote <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Applications — expandable accordion cards */}
+      <VubaStoneApplications />
 
       {/* Color Blends — grid with clickable detail panel */}
       <VubaStoneColorShowcase />
@@ -201,18 +132,20 @@ export default function VubaStonePage() {
             </div>
           </ScrollReveal>
 
-          {/* Specs row — 5 equal cards */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5 max-w-5xl mx-auto mt-8 sm:mt-10">
+          {/* Specs row — responsive grid: 1 col mobile, 3 tablet, 5 desktop */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 max-w-5xl mx-auto mt-8 sm:mt-10">
             {[
               ...depths.map((d) => ({ label: d.use, detail: d.detail, value: d.depth })),
               { label: "Binding Quartz", detail: "Increases surface strength", value: "30%" },
               { label: "UV-Stable Resin", detail: "Won\u2019t yellow or discolor", value: "\u2713" },
             ].map((item) => (
               <ScrollReveal key={item.label} delay={0.2}>
-                <div className="rounded-xl sm:rounded-2xl border border-white/[0.08] bg-white/[0.04] p-5 sm:p-6 text-center hover:border-accent/20 hover:bg-white/[0.06] transition-all duration-300 h-full">
-                  <span className="font-heading font-bold text-2xl sm:text-3xl text-accent">{item.value}</span>
-                  <p className="mt-3 text-sm font-medium text-white/80">{item.label}</p>
-                  <p className="mt-1 text-xs text-white/35">{item.detail}</p>
+                <div className="rounded-xl sm:rounded-2xl border border-white/[0.08] bg-white/[0.04] p-4 sm:p-5 lg:p-6 flex sm:flex-col items-center sm:items-center gap-4 sm:gap-0 sm:text-center hover:border-accent/20 hover:bg-white/[0.06] transition-all duration-300 h-full">
+                  <span className="font-heading font-bold text-2xl sm:text-3xl text-accent shrink-0">{item.value}</span>
+                  <div className="sm:mt-3">
+                    <p className="text-sm font-medium text-white/80">{item.label}</p>
+                    <p className="mt-0.5 sm:mt-1 text-xs text-white/35">{item.detail}</p>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}
@@ -256,7 +189,7 @@ export default function VubaStonePage() {
           <ScrollReveal direction="up" delay={0}>
             <div className="rounded-xl sm:rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 lg:p-10 flex flex-col md:flex-row items-center gap-6 md:gap-10">
               <img
-                src="/images/logos/vubastone-logo-teal-bg.png"
+                src="/images/logos/vubastone-logo-teal-bg.webp"
                 alt="VubaStone Certified Installer"
                 className="h-24 sm:h-28 md:h-32 rounded-xl shrink-0"
               />

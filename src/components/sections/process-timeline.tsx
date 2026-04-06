@@ -29,7 +29,7 @@ const steps = [
 
 export function ProcessTimeline() {
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-orange-50/40 py-10 sm:py-16 lg:py-24">
+    <section className="bg-gradient-to-b from-gray-50 to-gray-50 py-10 sm:py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left — header + CTA */}

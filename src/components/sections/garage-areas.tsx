@@ -1,15 +1,12 @@
 "use client"
 
-import { useState, useRef } from "react"
+import { useState } from "react"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import {
   ArrowRight,
-  Sparkles,
-  Crown,
-  Shield,
-  CircleDollarSign,
   Check,
+  ChevronDown,
 } from "lucide-react"
 
 /* ------------------------------------------------------------------ */
@@ -23,124 +20,65 @@ interface System {
   href: string
   image: string
   tag?: string
+  tagColor?: string
+  categories: string[]
+  stat: string
+  statLabel: string
 }
 
-interface Area {
-  id: string
-  label: string
-  icon: React.ReactNode
-  tagline: string
-  systems: System[]
-}
-
-const areas: Area[] = [
+const systems: System[] = [
   {
-    id: "durability-style",
-    label: "Durability & Style",
-    icon: <Sparkles className="h-5 w-5" />,
-    tagline: "The most popular choice — beautiful, durable, and fast.",
-    systems: [
-      {
-        name: "ProFlake System",
-        description:
-          "Premium multi-layer system with 150+ Torginol color blends. Epoxy base, full decorative flake broadcast, and polyaspartic topcoat. Walk-on same/next day.",
-        highlights: [
-          "150+ color blends",
-          "Polyaspartic topcoat",
-          "1-day install for qualifying garages",
-        ],
-        href: "/proflake",
-        image: "/images/proflake/flake-garage-porsche-bikes.jpg",
-        tag: "Most Popular",
-      },
+    name: "ProFlake System",
+    description:
+      "Premium multi-layer system with 150+ Torginol color blends. Polyurea base, full decorative flake broadcast, and polyaspartic topcoat. Walk-on in 24 hours.",
+    highlights: [
+      "150+ color blends",
+      "Polyaspartic topcoat",
+      "1-day install for qualifying garages",
+      "Chemical & hot tire resistant",
+      "UV-stable finish",
     ],
+    href: "/proflake",
+    image: "/images/proflake/flake-garage-porsche-bikes.webp",
+    tag: "Best Value",
+    tagColor: "bg-accent",
+    categories: ["1-Day Install", "150+ Colors"],
+    stat: "150+",
+    statLabel: "Color Blends",
   },
   {
-    id: "showroom-floor",
-    label: "Showroom Floor",
-    icon: <Crown className="h-5 w-5" />,
-    tagline: "A one-of-a-kind floor that makes a statement.",
-    systems: [
-      {
-        name: "Metallic Epoxy",
-        description:
-          "Flowing, pearlescent finish — every floor is unique. Metallic pigments create a 3D liquid-metal effect with stunning depth. 2–3 day installation.",
-        highlights: [
-          "One-of-a-kind design",
-          "3D liquid-metal depth",
-          "Protective topcoat",
-        ],
-        href: "/metallic-epoxy",
-        image: "/images/metallic/metallic-epoxy-red-black-swirl.jpg",
-        tag: "Premium",
-      },
+    name: "Metallic Epoxy",
+    description:
+      "Flowing, pearlescent finish — every floor is unique. Metallic pigments create a 3D liquid-metal effect with stunning depth. 2–3 day installation.",
+    highlights: [
+      "One-of-a-kind design",
+      "3D liquid-metal depth",
+      "Protective topcoat",
+      "Pearlescent flowing finish",
+      "Stunning visual depth",
     ],
+    href: "/metallic-epoxy",
+    image: "/images/metallic/metallic-epoxy-red-black-swirl.webp",
+    categories: ["One-of-a-Kind", "2–3 Day Install"],
+    stat: "Unique",
+    statLabel: "Every Floor",
   },
   {
-    id: "maximum-protection",
-    label: "Maximum Protection",
-    icon: <Shield className="h-5 w-5" />,
-    tagline: "Built to handle the toughest garage conditions.",
-    systems: [
-      {
-        name: "ProFlake System",
-        description:
-          "The polyaspartic topcoat makes ProFlake our most chemically resistant residential system. UV-stable, hot tire resistant, and easy to clean.",
-        highlights: [
-          "Chemical resistant",
-          "Hot tire resistant",
-          "UV-stable topcoat",
-        ],
-        href: "/proflake",
-        image: "/images/proflake/flake-garage-porsche-bikes.jpg",
-        tag: "Best Protection",
-      },
-      {
-        name: "Solid Color Coating",
-        description:
-          "Professional-grade solid color coating for utility garages and workspaces. Clean, uniform finish that's easy to maintain.",
-        highlights: [
-          "Clean uniform look",
-          "Easy to maintain",
-          "Budget-friendly option",
-        ],
-        href: "/services",
-        image: "/images/commercial/commercial-solid-grey-epoxy.jpg",
-      },
+    name: "Solid Color Coating",
+    description:
+      "Professional-grade solid color coating for utility garages and workspaces. Clean, uniform finish that's easy to maintain. Great for basic protection at an affordable price.",
+    highlights: [
+      "Most affordable option",
+      "Clean professional finish",
+      "Protects your concrete",
+      "Easy to maintain",
+      "Fast installation",
     ],
-  },
-  {
-    id: "budget-friendly",
-    label: "Budget-Friendly",
-    icon: <CircleDollarSign className="h-5 w-5" />,
-    tagline: "Professional results without breaking the bank.",
-    systems: [
-      {
-        name: "Solid Color Coating",
-        description:
-          "Single-color professional coating that transforms your garage at a fraction of the cost. Great for utility spaces and basic protection.",
-        highlights: [
-          "Most affordable option",
-          "Clean professional finish",
-          "Protects your concrete",
-        ],
-        href: "/services",
-        image: "/images/commercial/commercial-solid-grey-epoxy.jpg",
-      },
-      {
-        name: "ProFlake System",
-        description:
-          "Our standard flake system delivers premium results at a competitive price point. The best value in garage floor coatings.",
-        highlights: [
-          "Best value for money",
-          "150+ color options",
-          "Limited lifetime warranty",
-        ],
-        href: "/proflake",
-        image: "/images/proflake/flake-garage-porsche-bikes.jpg",
-        tag: "Best Value",
-      },
-    ],
+    href: "/services",
+    image: "/images/commercial/commercial-solid-grey-epoxy.jpg",
+    categories: ["Budget-Friendly", "Fast Install"],
+    stat: "Simple",
+    statLabel: "Coverage",
   },
 ]
 
@@ -149,141 +87,151 @@ const areas: Area[] = [
 /* ------------------------------------------------------------------ */
 
 export function GarageAreas() {
-  const [activeArea, setActiveArea] = useState<string>("durability-style")
-  const sectionRef = useRef<HTMLDivElement>(null)
-  const current = areas.find((a) => a.id === activeArea)!
+  const [openIndex, setOpenIndex] = useState<number>(0)
+
+  const toggle = (index: number) => {
+    setOpenIndex(openIndex === index ? -1 : index)
+  }
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative bg-white py-20 lg:py-28 overflow-hidden"
-    >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-white py-20 lg:py-28 overflow-hidden">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-sm font-semibold tracking-widest uppercase text-teal">
             Find Your System
           </span>
           <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900 tracking-tight">
-            What Matters Most to You?
+            Garage Floor Systems
           </h2>
           <p className="mt-4 text-gray-500 text-lg leading-relaxed">
-            Select what you&apos;re looking for and we&apos;ll show you the right system.
+            Three proven systems — tap any to see the details.
           </p>
         </div>
 
-        {/* Area selector pills */}
-        <div className="flex flex-wrap justify-center gap-3 mb-14">
-          {areas.map((area) => {
-            const isActive = area.id === activeArea
+        {/* Accordion */}
+        <div className="space-y-3">
+          {systems.map((system, i) => {
+            const isOpen = openIndex === i
             return (
-              <button
-                key={area.id}
-                onClick={() => setActiveArea(area.id)}
+              <div
+                key={system.name}
                 className={`
-                  group relative flex items-center gap-2 rounded-full px-5 py-2.5
-                  text-sm font-semibold transition-all duration-300 cursor-pointer
-                  ${
-                    isActive
-                      ? "bg-accent text-white shadow-lg shadow-accent/20"
-                      : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900"
+                  rounded-2xl border overflow-hidden transition-all duration-300
+                  ${isOpen
+                    ? "border-accent/30 shadow-lg shadow-accent/5"
+                    : "border-gray-200 hover:border-gray-300"
                   }
                 `}
               >
-                <span
-                  className={`transition-colors duration-300 ${
-                    isActive ? "text-white" : "text-gray-400 group-hover:text-gray-600"
-                  }`}
+                {/* Collapsed header — always visible */}
+                <button
+                  onClick={() => toggle(i)}
+                  className="w-full flex items-center gap-4 p-4 sm:p-5 text-left cursor-pointer bg-white hover:bg-gray-50/50 transition-colors duration-200"
                 >
-                  {area.icon}
-                </span>
-                {area.label}
-              </button>
-            )
-          })}
-        </div>
-
-        {/* Tagline for active area */}
-        <AnimatePresence mode="wait">
-          <motion.p
-            key={current.id + "-tagline"}
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.3 }}
-            className="text-center text-gray-500 text-base mb-10 max-w-lg mx-auto"
-          >
-            {current.tagline}
-          </motion.p>
-        </AnimatePresence>
-
-        {/* Systems for selected area */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={current.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -12 }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
-            className={`grid gap-6 ${
-              current.systems.length === 1
-                ? "max-w-xl mx-auto"
-                : current.systems.length === 2
-                  ? "grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto"
-                  : current.systems.length === 4
-                    ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
-                    : "grid-cols-1 md:grid-cols-3"
-            }`}
-          >
-            {current.systems.map((system, i) => (
-              <Link key={system.name + current.id} href={system.href} className="group block">
-                <div className="h-full rounded-2xl border border-gray-200 bg-white overflow-hidden transition-all duration-300 hover:border-accent/30 hover:shadow-xl hover:shadow-accent/5 hover:-translate-y-1">
-                  {/* Image */}
-                  <div className="relative h-48 bg-gray-100 overflow-hidden">
+                  {/* Thumbnail */}
+                  <div className="relative h-[67px] w-[67px] sm:h-[77px] sm:w-[77px] rounded-xl overflow-hidden shrink-0 bg-gray-100">
                     <img
                       src={system.image}
                       alt={system.name}
-                      className={`h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 ${system.image.includes("proflake") ? "object-bottom" : "object-center"}`}
+                      className={`h-full w-full object-cover ${system.image.includes("proflake") ? "object-bottom" : "object-center"}`}
                       loading="lazy"
                     />
-                    {system.tag && (
-                      <span className="absolute top-3 right-3 rounded-full bg-accent px-3 py-1 text-xs font-bold text-white shadow-md">
-                        {system.tag}
-                      </span>
+                  </div>
+
+                  {/* Name + Tag */}
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <h3 className="font-heading font-semibold text-base sm:text-lg text-gray-900 truncate">
+                        {system.name}
+                      </h3>
+                      {system.tag && (
+                        <span className={`${system.tagColor} text-white text-[11px] font-bold uppercase tracking-wide px-2.5 py-0.5 rounded-full shrink-0`}>
+                          {system.tag}
+                        </span>
+                      )}
+                    </div>
+                    {/* Category pills — visible when collapsed */}
+                    {!isOpen && (
+                      <div className="flex flex-wrap gap-1.5 mt-1.5">
+                        {system.categories.map((cat) => (
+                          <span
+                            key={cat}
+                            className="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-600 uppercase tracking-wide"
+                          >
+                            {cat}
+                          </span>
+                        ))}
+                      </div>
                     )}
                   </div>
 
-                  {/* Content */}
-                  <div className="p-6">
-                    <h3 className="font-heading font-semibold text-lg text-gray-900 group-hover:text-accent transition-colors duration-200">
-                      {system.name}
-                    </h3>
-                    <p className="mt-2 text-sm text-gray-500 leading-relaxed">
-                      {system.description}
-                    </p>
+                  {/* Chevron */}
+                  <ChevronDown
+                    className={`h-5 w-5 text-gray-500 shrink-0 transition-transform duration-300 ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
 
-                    {/* Highlights */}
-                    <ul className="mt-4 space-y-2">
-                      {system.highlights.map((h) => (
-                        <li
-                          key={h}
-                          className="flex items-start gap-2 text-sm text-gray-600"
+                {/* Expanded content */}
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-4 sm:px-5 pb-5">
+                        {/* Divider */}
+                        <div className="border-t border-gray-100 mb-5" />
+
+                        {/* Image */}
+                        <div className="relative rounded-xl overflow-hidden h-48 sm:h-56 mb-5 bg-gray-100">
+                          <img
+                            src={system.image}
+                            alt={system.name}
+                            className={`h-full w-full object-cover ${system.image.includes("proflake") ? "object-bottom" : "object-center"}`}
+                            loading="lazy"
+                          />
+                        </div>
+
+                        {/* Description */}
+                        <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-5">
+                          {system.description}
+                        </p>
+
+                        {/* Highlights */}
+                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
+                          {system.highlights.map((h) => (
+                            <li
+                              key={h}
+                              className="flex items-start gap-2 text-sm text-gray-600"
+                            >
+                              <Check className="h-4 w-4 text-teal shrink-0 mt-0.5" />
+                              {h}
+                            </li>
+                          ))}
+                        </ul>
+
+                        {/* CTA */}
+                        <Link
+                          href={system.href}
+                          className="inline-flex items-center gap-2 text-sm font-semibold text-accent-text hover:text-accent/80 transition-colors duration-200"
                         >
-                          <Check className="h-4 w-4 text-teal shrink-0 mt-0.5" />
-                          {h}
-                        </li>
-                      ))}
-                    </ul>
-
-                    <div className="mt-5 flex items-center gap-1.5 text-sm font-medium text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                      Learn More <ArrowRight className="h-3.5 w-3.5" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </motion.div>
-        </AnimatePresence>
+                          Learn More About {system.name}
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            )
+          })}
+        </div>
       </div>
     </section>
   )

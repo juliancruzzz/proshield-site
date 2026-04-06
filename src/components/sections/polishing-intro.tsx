@@ -4,7 +4,7 @@ import { Check } from "lucide-react"
 
 const highlights = [
   "Densified & hardened at a molecular level",
-  "20–30 year performance with proper maintenance",
+  "25–40 year performance with regular maintenance",
   "Up to 70–90% light reflectance",
   "No coating to peel, chip, or delaminate",
 ]
@@ -18,7 +18,7 @@ export function PolishingIntro() {
           <div className="relative">
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10">
               <img
-                src="/images/concrete-polishing/polished-retail-floor.jpg"
+                src="/images/concrete-polishing/polished-retail-floor.webp"
                 alt="High-gloss polished concrete floor in a modern showroom with reflective mirror finish"
                 className="h-full w-full object-cover"
               />

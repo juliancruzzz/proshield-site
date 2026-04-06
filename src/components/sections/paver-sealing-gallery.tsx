@@ -6,33 +6,28 @@ import { ArrowRight } from "lucide-react"
 
 const galleryImages = [
   {
-    src: "/images/paver-sealing/paver-walkway-before.png",
+    src: "/images/paver-sealing/paver-walkway-after.webp",
     alt: "Sealed paver walkway — after color enhancement and joint stabilization",
     span: "col-span-2 row-span-2",
   },
   {
-    src: "/images/paver-sealing/paver-walkway-after.png",
-    alt: "Paver walkway before sealing — faded color and worn joints",
+    src: "/images/paver-sealing/glossy-brick-paver-sealed.webp",
+    alt: "Glossy sealed brick paver driveway with rich color enhancement",
     span: "",
   },
   {
-    src: "/images/cool-deck/pool-deck-lounge.jpg",
-    alt: "Pool deck pavers with lounge area",
+    src: "/images/paver-sealing/paver-sealing-before-after.jpg",
+    alt: "Paver sealing before and after — sealed vs unsealed color difference",
     span: "",
   },
   {
-    src: "/images/paver-sealing/paver-driveway-sealed.jpg",
-    alt: "Sealed paver driveway with restored color",
+    src: "/images/paver-sealing/paver-sealing-driveway-closeup.webp",
+    alt: "Sealed paver driveway with restored joints and color",
     span: "col-span-2",
   },
   {
-    src: "/images/cool-deck/pool-deck-hero.jpg",
-    alt: "Sealed pool deck with clean paver joints",
-    span: "",
-  },
-  {
-    src: "/images/paver-sealing/paver-walkway-sealed.jpg",
-    alt: "Paver walkway with fresh sealer application",
+    src: "/images/paver-sealing/paver-sealed-closeup.webp",
+    alt: "Close-up of freshly sealed pavers with enhanced color",
     span: "",
   },
 ]

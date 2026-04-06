@@ -54,7 +54,7 @@ function ExpandableItem({
           {app.title}
         </span>
         <ChevronDown
-          className={`h-4 w-4 text-gray-400 transition-transform duration-200 ${
+          className={`h-4 w-4 text-gray-500 transition-transform duration-200 ${
             open ? "rotate-180" : ""
           }`}
         />
@@ -86,7 +86,7 @@ export function PolishingApplications() {
           {/* Image */}
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10">
             <img
-              src="/images/concrete-polishing/polished-aggregate-closeup.jpg"
+              src="/images/concrete-polishing/polished-aggregate-closeup.webp"
               alt="Large warehouse with polished concrete flooring and reflective surface"
               className="h-full w-full object-cover"
             />

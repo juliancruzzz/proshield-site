@@ -1,6 +1,47 @@
 {
   "rating": 4.9,
   "totalReviews": 43,
-  "reviews": [],
-  "fetchedAt": ""
+  "reviews": [
+    {
+      "name": "Christopher G.",
+      "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocKrfVIcsDDFOne-K8KtM2-L9QYZwM7qQiYDc33AF7gRzegxw-FO=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "Proshield Epoxy did an awesome job! Julian, Gale and Winnie were excellent. I researched alot of companies in Vegas and they provided me with the BEST price for the polyurea blizzard coating for our garage. STOP looking anywhere else and hire this company!",
+      "date": "4 months ago",
+      "publishTime": "2025-12-02T22:46:14.849570295Z"
+    },
+    {
+      "name": "Dio R.",
+      "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocL08l9bHMpFcnNc0shKZPPdnWKvYaU923QG0UUWbGc6dyE3QA=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "Our new garage floor looks fantastic. I would recommend them if you are looking at doing your epoxy floor in Las Vegas. High class company with extremely knowledgeable employees. Gael did a fantastic job educating us on the entire process and their polyaspastic products. Sebastian and Bobby installed the floor and were extremely knowledgeable and professional.",
+      "date": "a year ago",
+      "publishTime": "2024-11-04T23:45:14.477216Z"
+    },
+    {
+      "name": "Chris Z.",
+      "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocJCojfVPk8jNzE5N2BbNOpGOMhcTRXz7mWqJvvu0QCxuglU5Q=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "Proshield Epoxy did a great job my garage looks amazing. Julian was great on communication and worked with me on my time line of when I needed it completed very professional will definitely recommend there services. Thank you",
+      "date": "a year ago",
+      "publishTime": "2025-01-28T15:05:47.300610Z"
+    },
+    {
+      "name": "Alexandra R.",
+      "profilePhoto": "https://lh3.googleusercontent.com/a-/ALV-UjXRi91lVhaiD5nWmGML7XvR0UqaeEXcn8h14SZhPbnEj2R7MwAM=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "Proshield Epoxy was the best choice for my interior remodeling. They were punctual and very professional. I am beyond happy with the results of my metallic floor. I get so many compliments when guest come over about the attention to detail and design. I would highly recommend Proshield Epoxy to anyone looking to upgrade their home in Las Vegas.",
+      "date": "a year ago",
+      "publishTime": "2024-11-01T05:05:43.532601Z"
+    },
+    {
+      "name": "Hiram A.",
+      "profilePhoto": "https://lh3.googleusercontent.com/a-/ALV-UjXSlgdRckX97MAVTPnikvXE0iiQWWwrljLxV5Ewn5BNcG7UyO9Y=s128-c0x00000000-cc-rp-mo-ba2",
+      "rating": 5,
+      "text": "Julian, who led the project, was amazing!! Every day, he gave me a break down of what they did and what was up for the next day. The design and quality of my new epoxy floor are incredible! You guys didn't just give me a new floor; you gave me a piece of art. Super impressed and would absolutely recommend.",
+      "date": "2 years ago",
+      "publishTime": "2024-04-24T17:49:48.317549Z"
+    }
+  ],
+  "fetchedAt": "2026-04-05T00:00:00.000Z"
 }

@@ -164,9 +164,9 @@ export default function HotTirePickupPost() {
               pulling force of hot, contracting tires.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              <strong>2. 100% solids epoxy base coat.</strong> Not water-based,
+              <strong>2. 100% solids polyurea base coat.</strong> Not water-based,
               not a thin-film &quot;epoxy paint.&quot; Professional-grade 100%
-              solids epoxy creates a thick, dense base layer that resists heat
+              solids polyurea creates a thick, dense base layer that resists heat
               transfer and provides structural integrity for the entire system.
             </p>
             <p className="text-gray-600 leading-relaxed">
@@ -206,7 +206,7 @@ export default function HotTirePickupPost() {
                 <tbody className="divide-y divide-gray-200">
                   <tr>
                     <td className="px-5 py-3 text-gray-700 font-medium">
-                      Epoxy base + polyaspartic top
+                      Polyurea base + polyaspartic top
                     </td>
                     <td className="px-5 py-3 text-gray-600">Excellent</td>
                     <td className="px-5 py-3 text-gray-600">Recommended</td>

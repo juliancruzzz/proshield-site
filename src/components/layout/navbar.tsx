@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, ChevronDown, Phone } from "lucide-react"
 
@@ -219,17 +220,15 @@ export function Navbar() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 shrink-0">
-            <div className="h-9 w-9 rounded-lg bg-accent flex items-center justify-center">
-              <span className="text-white font-heading font-bold text-sm">PS</span>
-            </div>
-            <span
-              className={`font-heading font-bold text-lg tracking-tight transition-colors duration-300 ${
-                scrolled ? "text-gray-900" : "text-white"
-              }`}
-            >
-              ProShield Epoxy
-            </span>
+          <Link href="/" className="flex items-center shrink-0">
+            <Image
+              src={scrolled ? "/images/logos/proshield-logo-orange-dark.png" : "/images/logos/proshield-logo-orange.png"}
+              alt="ProShield Epoxy"
+              width={200}
+              height={32}
+              className="h-8 w-auto lg:h-10 transition-opacity duration-300"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}

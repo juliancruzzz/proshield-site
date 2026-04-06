@@ -18,7 +18,7 @@ export function GrassMacIntro() {
           {/* Image */}
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/grassmac/modern-lawn.jpg"
+              src="/images/grassmac/modern-lawn.webp"
               alt="Modern home with pristine green lawn and patio area"
               fill
               className="object-cover"

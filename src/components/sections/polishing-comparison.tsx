@@ -5,8 +5,8 @@ import { Check, X } from "lucide-react"
 const comparisonRows = [
   {
     feature: "Lifespan",
-    polished: "20–30+ years",
-    grindSeal: "5–10 years",
+    polished: "25–40+ years",
+    grindSeal: "2–5 years",
   },
   {
     feature: "Maintenance",

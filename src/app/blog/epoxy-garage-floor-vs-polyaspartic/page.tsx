@@ -99,10 +99,10 @@ export default function EpoxyVsPolyasparticPost() {
             </p>
             <p className="text-gray-600 leading-relaxed">
               The fast cure time is the biggest practical advantage. A
-              polyaspartic topcoat over an epoxy base allows us to complete
+              polyaspartic topcoat over a polyurea base allows us to complete
               qualifying residential ProFlake garage floors in a single day
-              &mdash; you can walk on it within hours and park on it within
-              24&ndash;72 hours.*
+              &mdash; you can walk on it after 24 hours and park on it after
+              48 hours.*
             </p>
 
             <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
@@ -204,13 +204,13 @@ export default function EpoxyVsPolyasparticPost() {
               Why We Use Both — Together
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Our ProFlake system uses an epoxy base coat for its superior
+              Our ProFlake system uses a polyurea base coat for its superior
               bonding and build thickness, combined with a polyaspartic topcoat
               for UV stability, fast cure, and hot-tire resistance. You get the
               strengths of both chemistries in a single system.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              The epoxy base goes down first and gets the decorative flake
+              The polyurea base goes down first and gets the decorative flake
               broadcast. Then the polyaspartic topcoat locks everything in,
               creating a smooth, glossy, UV-stable surface that handles Las
               Vegas garage temperatures without yellowing or lifting.
@@ -237,9 +237,9 @@ export default function EpoxyVsPolyasparticPost() {
               The Bottom Line
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              For Las Vegas garages, the best system combines an epoxy base
+              For Las Vegas garages, the best system combines a polyurea base
               with a polyaspartic topcoat. You get the bonding strength and
-              build of epoxy plus the UV stability, fast cure, and hot-tire
+              build of polyurea plus the UV stability, fast cure, and hot-tire
               resistance of polyaspartic. That&apos;s what our ProFlake system
               delivers.
             </p>
@@ -261,7 +261,7 @@ export default function EpoxyVsPolyasparticPost() {
               different strengths. Epoxy provides superior bonding and build
               thickness. Polyaspartic offers faster cure times and better UV
               stability. The best garage floor systems use both together:
-              an epoxy base for adhesion and a polyaspartic topcoat for
+              a polyurea base for adhesion and a polyaspartic topcoat for
               protection.
             </p>
 
@@ -269,7 +269,7 @@ export default function EpoxyVsPolyasparticPost() {
               How long does a polyaspartic garage floor last?
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              A professionally installed epoxy base with polyaspartic topcoat
+              A professionally installed polyurea base with polyaspartic topcoat
               &mdash; like our ProFlake system &mdash; lasts 15&ndash;20+
               years in a residential garage. The key factors are surface
               preparation quality, coating thickness, and environmental
@@ -281,9 +281,9 @@ export default function EpoxyVsPolyasparticPost() {
             </h3>
             <p className="text-gray-600 leading-relaxed">
               Yes, polyaspartic-only systems exist. Some companies use them
-              for fast, single-day installs. However, an epoxy base provides
+              for fast, single-day installs. However, a polyurea base provides
               more build thickness and a stronger mechanical bond to the
-              concrete. The combination of epoxy base + polyaspartic topcoat
+              concrete. The combination of polyurea base + polyaspartic topcoat
               gives you the advantages of both chemistries.
             </p>
 

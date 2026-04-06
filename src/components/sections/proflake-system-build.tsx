@@ -13,9 +13,9 @@ const steps = [
   },
   {
     number: "2",
-    title: "Epoxy Base Coat",
+    title: "Polyurea Base Coat",
     description:
-      "A high-build epoxy primer and body coat are applied to the prepped surface. This two-part layer seals the concrete, creates a moisture barrier, and establishes the base color and structural foundation for the entire system.",
+      "A high-build polyurea primer and body coat are applied to the prepped surface. This two-part layer seals the concrete, creates a moisture barrier, and establishes the base color and structural foundation for the entire system.",
     icon: <PaintBucket className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
@@ -109,7 +109,7 @@ export function ProFlakeSystemBuild() {
                     </div>
                   </div>
                   <span className={`mt-2 text-xs font-bold uppercase tracking-wider transition-colors duration-300 ${
-                    isActive ? "text-accent" : "text-gray-400"
+                    isActive ? "text-accent" : "text-gray-500"
                   }`}>
                     Step {step.number}
                   </span>

@@ -39,22 +39,23 @@
   --color-text-light-secondary: #94A3B8;
 
   /* Accent — ProShield orange (CTAs & conversion elements ONLY) */
-  --color-accent: #E78427;
-  --color-accent-hover: #F09640;
-  --color-accent-dark: #CC6F1A;
-  --color-accent-subtle: rgba(231, 132, 39, 0.1);
-  --color-accent-subtle-light: rgba(231, 132, 39, 0.08);
+  --color-accent: #D47A1E;
+  --color-accent-hover: #E78427;
+  --color-accent-dark: #B8600E;
+  --color-accent-text: #AD620E;  /* Darker orange for small text on white — passes 4.5:1 WCAG AA */
+  --color-accent-subtle: rgba(212, 122, 30, 0.1);
+  --color-accent-subtle-light: rgba(212, 122, 30, 0.08);
 
-  /* CTA — same as accent */
+  /* CTA — button backgrounds (white text on orange, 3:1+ for large text) */
   --color-cta: #E78427;
   --color-cta-hover: #F09640;
 
-  /* Secondary accent — blue (info, labels, icons, structure) */
-  --color-teal: #5D9EE2;
-  --color-teal-hover: #74AEE8;
-  --color-teal-dark: #4A87C8;
-  --color-teal-subtle: rgba(93, 158, 226, 0.10);
-  --color-teal-subtle-light: rgba(93, 158, 226, 0.08);
+  /* Secondary accent — teal (info, labels, icons, structure) */
+  --color-teal: #3275AE;
+  --color-teal-hover: #5D9EE2;
+  --color-teal-dark: #2C6AA6;
+  --color-teal-subtle: rgba(52, 120, 178, 0.10);
+  --color-teal-subtle-light: rgba(52, 120, 178, 0.08);
 
   /* Star ratings — gold */
   --color-gold: #F59E0B;
@@ -67,9 +68,9 @@
   --color-border: #E5E7EB;
   --color-border-light: #F3F4F6;
 
-  /* Typography */
-  --font-heading: "Space Grotesk", system-ui, sans-serif;
-  --font-body: "Inter", system-ui, sans-serif;
+  /* Typography — next/font CSS variables referenced for automatic preloading */
+  --font-heading: var(--font-space-grotesk, "Space Grotesk"), system-ui, sans-serif;
+  --font-body: var(--font-inter, "Inter"), system-ui, sans-serif;
 }
 
 /* Base styles — light body, dark sections are opt-in */
@@ -92,7 +93,7 @@ p, li {
 }
 
 ::selection {
-  background-color: rgba(231, 132, 39, 0.25);
+  background-color: rgba(174, 93, 13, 0.25);
   color: #111827;
 }
 
@@ -125,8 +126,8 @@ p, li {
 /* Hero mesh gradient — dark navy with warm orange glow */
 .mesh-gradient {
   background:
-    radial-gradient(ellipse at 30% 60%, rgba(231, 132, 39, 0.10) 0%, transparent 55%),
-    radial-gradient(ellipse at 75% 25%, rgba(231, 132, 39, 0.06) 0%, transparent 45%),
+    radial-gradient(ellipse at 30% 60%, rgba(174, 93, 13, 0.10) 0%, transparent 55%),
+    radial-gradient(ellipse at 75% 25%, rgba(174, 93, 13, 0.06) 0%, transparent 45%),
     radial-gradient(ellipse at 50% 100%, rgba(19, 32, 64, 0.8) 0%, transparent 60%),
     var(--color-navy);
   color: var(--color-text-light);
@@ -135,15 +136,15 @@ p, li {
 /* Warm dark — softened charcoal with orange-tinted ambient light */
 .bg-warm-dark {
   background:
-    radial-gradient(ellipse at 20% 80%, rgba(231, 132, 39, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(93, 158, 226, 0.05) 0%, transparent 40%),
+    radial-gradient(ellipse at 20% 80%, rgba(174, 93, 13, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(46, 111, 175, 0.05) 0%, transparent 40%),
     #111c2e;
   color: var(--color-text-light);
 }
 
 /* Dot grid pattern overlay */
 .bg-dot-pattern {
-  background-image: radial-gradient(circle, rgba(231, 132, 39, 0.08) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(174, 93, 13, 0.08) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
@@ -169,8 +170,8 @@ p, li {
     -45deg,
     transparent,
     transparent 10px,
-    rgba(231, 132, 39, 0.02) 10px,
-    rgba(231, 132, 39, 0.02) 20px
+    rgba(174, 93, 13, 0.02) 10px,
+    rgba(174, 93, 13, 0.02) 20px
   );
 }
 
@@ -187,8 +188,8 @@ p, li {
 /* Metallic dark — softer dark with metallic undertones */
 .bg-metallic-dark {
   background:
-    radial-gradient(ellipse at 20% 80%, rgba(231, 132, 39, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(93, 158, 226, 0.04) 0%, transparent 40%),
+    radial-gradient(ellipse at 20% 80%, rgba(174, 93, 13, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(46, 111, 175, 0.04) 0%, transparent 40%),
     radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.02) 0%, transparent 60%),
     #111c2e;
   color: var(--color-text-light);
@@ -197,16 +198,16 @@ p, li {
 /* Grid lines background */
 .bg-grid-lines {
   background-image:
-    linear-gradient(rgba(231, 132, 39, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(231, 132, 39, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(174, 93, 13, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(174, 93, 13, 0.04) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
 /* Gradient mesh for light sections — subtle warmth */
 .bg-warm-mesh {
   background:
-    radial-gradient(ellipse at 0% 0%, rgba(231, 132, 39, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 100% 100%, rgba(93, 158, 226, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 0% 0%, rgba(174, 93, 13, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 100%, rgba(46, 111, 175, 0.04) 0%, transparent 50%),
     var(--color-white);
 }
 
@@ -214,8 +215,8 @@ p, li {
 .bg-deep-space {
   background:
     radial-gradient(ellipse at 50% 0%, rgba(26, 45, 84, 0.6) 0%, transparent 50%),
-    radial-gradient(ellipse at 0% 100%, rgba(231, 132, 39, 0.06) 0%, transparent 40%),
-    radial-gradient(ellipse at 100% 50%, rgba(93, 158, 226, 0.04) 0%, transparent 35%),
+    radial-gradient(ellipse at 0% 100%, rgba(174, 93, 13, 0.06) 0%, transparent 40%),
+    radial-gradient(ellipse at 100% 50%, rgba(46, 111, 175, 0.04) 0%, transparent 35%),
     var(--color-charcoal);
 }
 

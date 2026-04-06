@@ -39,7 +39,7 @@ export function FaqAccordion({ faqs }: { faqs: FaqItem[] }) {
                 className={`h-8 w-8 rounded-full shrink-0 flex items-center justify-center transition-all duration-200 ${
                   isOpen
                     ? "bg-accent text-white rotate-180"
-                    : "bg-gray-100 text-gray-400"
+                    : "bg-gray-100 text-gray-600"
                 }`}
               >
                 <ChevronDown className="h-4 w-4" />

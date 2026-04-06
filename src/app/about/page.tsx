@@ -170,7 +170,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               <div className="space-y-4">
                 <div>
-                  <div className="text-xs font-medium uppercase tracking-wider text-gray-400 mb-1">
+                  <div className="text-xs font-medium uppercase tracking-wider text-gray-500 mb-1">
                     Company
                   </div>
                   <div className="text-sm sm:text-base font-semibold text-gray-900">
@@ -178,13 +178,13 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div>
-                  <div className="text-xs font-medium uppercase tracking-wider text-gray-400 mb-1">
+                  <div className="text-xs font-medium uppercase tracking-wider text-gray-500 mb-1">
                     License #
                   </div>
                   <div className="text-sm sm:text-base font-semibold text-gray-900">0094652</div>
                 </div>
                 <div>
-                  <div className="text-xs font-medium uppercase tracking-wider text-gray-400 mb-1">
+                  <div className="text-xs font-medium uppercase tracking-wider text-gray-500 mb-1">
                     Classification
                   </div>
                   <div className="text-sm sm:text-base font-semibold text-gray-900">
@@ -195,7 +195,7 @@ export default function AboutPage() {
 
               <div className="space-y-4">
                 <div>
-                  <div className="text-xs font-medium uppercase tracking-wider text-gray-400 mb-1">
+                  <div className="text-xs font-medium uppercase tracking-wider text-gray-500 mb-1">
                     Status
                   </div>
                   <div className="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-600">
@@ -204,7 +204,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div>
-                  <div className="text-xs font-medium uppercase tracking-wider text-gray-400 mb-1">
+                  <div className="text-xs font-medium uppercase tracking-wider text-gray-500 mb-1">
                     Bid Limit
                   </div>
                   <div className="text-sm sm:text-base font-semibold text-gray-900">$200,000</div>

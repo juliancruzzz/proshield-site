@@ -18,7 +18,7 @@ export function PlankIntro() {
           {/* Image */}
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/plank/plank-room.jpg"
+              src="/images/plank/plank-room.webp"
               alt="Bright living room with warm wood plank flooring throughout"
               fill
               className="object-cover"
