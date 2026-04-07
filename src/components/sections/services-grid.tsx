@@ -104,7 +104,7 @@ export function ServicesGrid() {
               <Link href={service.href} className="group block h-full">
                 <div className="h-full rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-lg hover:border-accent/30 transition-all duration-300">
                   {/* Image */}
-                  <div className="relative aspect-[16/10] overflow-hidden">
+                  <div className="relative aspect-[16/9] sm:aspect-[16/10] overflow-hidden">
                     <Image
                       src={service.image}
                       alt={service.title}
@@ -121,14 +121,14 @@ export function ServicesGrid() {
                   </div>
 
                   {/* Content */}
-                  <div className="p-5 sm:p-6">
+                  <div className="p-4 sm:p-6">
                     <h3 className="font-heading font-semibold text-gray-900 text-lg sm:text-xl group-hover:text-accent transition-colors duration-200">
                       {service.title}
                     </h3>
-                    <p className="mt-2 text-sm text-gray-500 leading-relaxed">
+                    <p className="mt-1.5 sm:mt-2 text-sm text-gray-500 leading-relaxed">
                       {service.description}
                     </p>
-                    <div className="mt-4 flex flex-wrap gap-1.5">
+                    <div className="mt-3 sm:mt-4 flex flex-wrap gap-1.5">
                       {service.tags.map((tag) => (
                         <span
                           key={tag}
@@ -138,7 +138,7 @@ export function ServicesGrid() {
                         </span>
                       ))}
                     </div>
-                    <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-accent-text opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <div className="mt-3 sm:mt-4 flex items-center gap-1.5 text-sm font-medium text-accent-text opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                       Learn More{" "}
                       <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
                     </div>
@@ -156,7 +156,7 @@ export function ServicesGrid() {
               <Link href={service.href} className="group block h-full">
                 <div className="h-full rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-lg hover:border-accent/30 transition-all duration-300">
                   {/* Image */}
-                  <div className="relative aspect-[4/3] overflow-hidden">
+                  <div className="relative aspect-[16/9] sm:aspect-[4/3] overflow-hidden">
                     <Image
                       src={service.image}
                       alt={service.title}
