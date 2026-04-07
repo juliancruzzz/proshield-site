@@ -159,6 +159,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-KGDCHW6C');`,
           }}
         />
+        {/* Track phone link clicks */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.addEventListener('click',function(e){var a=e.target.closest('a[href^="tel:"]');if(a){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',phone_number:a.href.replace('tel:','')});}});`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

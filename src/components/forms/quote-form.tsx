@@ -44,6 +44,13 @@ export function QuoteForm() {
     setStatus("loading")
     const result = await submitForm(formData, "Quote Request")
     setStatus(result.ok ? "success" : "error")
+    if (result.ok && typeof window !== "undefined") {
+      ;(window as any).dataLayer?.push({
+        event: "form_submission",
+        form_name: "Quote Request",
+        project_type: formData.projectType,
+      })
+    }
   }
 
   if (status === "success") {

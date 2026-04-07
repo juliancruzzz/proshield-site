@@ -316,6 +316,11 @@ export function Chatbot() {
       // Send lead to email via Web3Forms (fire-and-forget)
       submitForm({ name, phone }, "Chatbot Lead")
 
+      ;(window as any).dataLayer?.push({
+        event: "form_submission",
+        form_name: "Chatbot Lead",
+      })
+
       setLeadCollected(true)
       setShowForm(false)
 
