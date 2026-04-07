@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: "GrassMac Turf System — Premium Drainable Artificial Turf Base | ProShield Epoxy",
   description:
     "Professional GrassMac artificial turf installation in Las Vegas. Vuba resin-bound base with instant drainage, pet-friendly design, and 100% recycled materials. No shifting, no sinking, no odor.",
+  alternates: {
+    canonical: "/grassmac",
+  },
 }
 
 const faqs = [

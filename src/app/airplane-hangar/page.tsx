@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Airplane Hangar Floor Coating | Las Vegas | ProShield Epoxy",
   description: "Aviation-grade hangar floor coating systems in Las Vegas. Resists Skydrol, jet fuel, hydraulic fluids. High-performance multi-layer systems with 24–48hr return to service. NFPA 409 compliant. Free estimate.",
   keywords: "airplane hangar floor coating Las Vegas, hangar floor coating near me, aircraft hangar floor coating, Skydrol resistant floor coating, hangar floor coating service Nevada, FBO floor coating",
+  alternates: {
+    canonical: "/airplane-hangar",
+  },
 }
 
 const faqs = [

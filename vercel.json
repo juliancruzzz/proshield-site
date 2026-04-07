@@ -1,4 +1,96 @@
 {
+  "redirects": [
+    {
+      "source": "/garage-floor-coating-services-las-vegas",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/garage-floor-coating-services-las-vegas/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/about-epoxy-flooring-company-las-vegas",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/about-epoxy-flooring-company-las-vegas/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/contact-proshield-epoxy-las-vegas",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact-proshield-epoxy-las-vegas/",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/garagefloorepoxy",
+      "destination": "/proflake",
+      "permanent": true
+    },
+    {
+      "source": "/garagefloorepoxy/",
+      "destination": "/proflake",
+      "permanent": true
+    },
+    {
+      "source": "/epoxy-flooring-las-vegas",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/epoxy-flooring-las-vegas/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/metallic-epoxy-flooring-las-vegas",
+      "destination": "/metallic-epoxy",
+      "permanent": true
+    },
+    {
+      "source": "/metallic-epoxy-flooring-las-vegas/",
+      "destination": "/metallic-epoxy",
+      "permanent": true
+    },
+    {
+      "source": "/concrete-polishing-las-vegas",
+      "destination": "/concrete-polishing",
+      "permanent": true
+    },
+    {
+      "source": "/concrete-polishing-las-vegas/",
+      "destination": "/concrete-polishing",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-flooring-las-vegas",
+      "destination": "/commercial-flooring",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-flooring-las-vegas/",
+      "destination": "/commercial-flooring",
+      "permanent": true
+    },
+    {
+      "source": "/gallery-epoxy-flooring-las-vegas",
+      "destination": "/gallery",
+      "permanent": true
+    },
+    {
+      "source": "/gallery-epoxy-flooring-las-vegas/",
+      "destination": "/gallery",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/images/(.*)",

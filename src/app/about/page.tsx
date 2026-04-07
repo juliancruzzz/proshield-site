@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   title: "About ProShield Epoxy | Professional Floor Coatings Las Vegas",
   description:
     "ProShield Epoxy delivers professional-grade floor coatings in Las Vegas. Founded by Julian Cruz — licensed, insured, and committed to quality craftsmanship.",
+  alternates: {
+    canonical: "/about",
+  },
 }
 
 const milestones = [

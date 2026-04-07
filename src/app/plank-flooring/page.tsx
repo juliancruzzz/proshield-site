@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   title: "Plank Flooring — LVP, SPC, WPC & Engineered Hardwood | ProShield Epoxy",
   description:
     "Professional plank flooring installation in Las Vegas — Luxury Vinyl Plank (LVP), SPC, WPC, and Engineered Hardwood. Waterproof, durable, and realistic wood-grain finishes.",
+  alternates: {
+    canonical: "/plank-flooring",
+  },
 }
 
 const faqs = [

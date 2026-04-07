@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     "Epoxy Garage Floor Cost in Las Vegas: 2026 Pricing Guide | ProShield Epoxy",
   description:
     "Professional epoxy garage floor coating in Las Vegas costs $3.50–$12 per sq ft. See 2026 pricing by system type, garage size, and what affects your total cost.",
+  alternates: {
+    canonical: "/blog/epoxy-garage-floor-cost-las-vegas",
+  },
 }
 
 export default function EpoxyGarageFloorCostPost() {

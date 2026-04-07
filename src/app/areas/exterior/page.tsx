@@ -7,6 +7,9 @@ import { CtaSection } from "@/components/sections/cta-section"
 export const metadata: Metadata = {
   title: "Exterior Surfaces Las Vegas | ProShield Epoxy",
   description: "Transform your outdoor spaces — driveways, patios, pool decks, walkways, and lawns. Cool deck textures, paver sealing, VubaStone, and GrassMac turf installations in Las Vegas.",
+  alternates: {
+    canonical: "/areas/exterior",
+  },
 }
 
 const exteriorFaqs = [

@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     "Epoxy vs. Polyaspartic Garage Floor Coatings — What's the Difference? | ProShield Epoxy Blog",
   description:
     "Comparing epoxy and polyaspartic garage floor coatings — cure times, durability, UV stability, cost, and which is better for Las Vegas garages. Honest breakdown from a professional installer.",
+  alternates: {
+    canonical: "/blog/epoxy-garage-floor-vs-polyaspartic",
+  },
 }
 
 export default function EpoxyVsPolyasparticPost() {

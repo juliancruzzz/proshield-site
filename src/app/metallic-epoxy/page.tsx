@@ -16,6 +16,9 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Metallic Epoxy Flooring Las Vegas | Custom Designer Floors | ProShield Epoxy",
   description: "Custom metallic epoxy floors in Las Vegas for luxury showrooms, residences, and designer spaces. One-of-a-kind 3D liquid-metal finishes. Free design consultation.",
+  alternates: {
+    canonical: "/metallic-epoxy",
+  },
 }
 
 const idealSpaces = [

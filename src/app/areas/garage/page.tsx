@@ -9,6 +9,9 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Garage Floor Coatings | ProShield Epoxy",
   description: "Premium garage floor coatings — ProFlake, metallic epoxy, and solid color systems. Our standard residential flake systems are often completed in 1 day. Limited lifetime warranty on qualifying residential systems.",
+  alternates: {
+    canonical: "/areas/garage",
+  },
 }
 
 const garageFaqs = [

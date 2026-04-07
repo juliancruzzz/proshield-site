@@ -15,6 +15,9 @@ import { CtaSection } from "@/components/sections/cta-section"
 export const metadata: Metadata = {
   title: "ProFlake Epoxy System Las Vegas | ProShield Epoxy",
   description: "ProFlake epoxy system with 150+ Torginol color blends. UV-stable, chemical and hot tire resistant. 1-day installation for qualifying residential garages. Las Vegas area.",
+  alternates: {
+    canonical: "/proflake",
+  },
 }
 
 const faqs = [

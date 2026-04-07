@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Blog — Flooring Tips, Guides & Industry Insights | ProShield Epoxy",
   description:
     "Expert flooring guides from ProShield Epoxy — epoxy vs. polyaspartic, garage floor coatings, pricing, and more. Las Vegas flooring tips from working professionals.",
+  alternates: {
+    canonical: "/blog",
+  },
 }
 
 const posts = [

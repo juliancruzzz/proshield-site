@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Floor Coating Services Las Vegas | ProShield Epoxy",
   description:
     "Professional floor coatings — metallic epoxy, flake systems, VubaStone, concrete polishing, airplane hangar flooring, GrassMac turf, paver sealing, and more in Las Vegas.",
+  alternates: {
+    canonical: "/services",
+  },
 }
 
 export default function ServicesPage() {

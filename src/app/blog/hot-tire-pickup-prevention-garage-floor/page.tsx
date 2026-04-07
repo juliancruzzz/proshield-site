@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     "How to Prevent Hot Tire Pickup on Your Garage Floor | ProShield Epoxy",
   description:
     "Hot tire pickup peels cheap garage floor coatings in Las Vegas heat. Learn what causes it, how to prevent it, and which coating systems resist it permanently.",
+  alternates: {
+    canonical: "/blog/hot-tire-pickup-prevention-garage-floor",
+  },
 }
 
 export default function HotTirePickupPost() {

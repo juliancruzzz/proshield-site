@@ -9,6 +9,9 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Commercial Flooring Las Vegas | ProShield Epoxy",
   description: "Heavy-duty commercial and industrial flooring for warehouses, retail, manufacturing, and more. Systems matched to your environment. 2\u20135 day typical installation.",
+  alternates: {
+    canonical: "/areas/commercial",
+  },
 }
 
 const commercialFaqs = [

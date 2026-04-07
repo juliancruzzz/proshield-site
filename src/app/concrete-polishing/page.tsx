@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     "concrete floor polishing",
     "polished concrete contractor Las Vegas",
   ],
+  alternates: {
+    canonical: "/concrete-polishing",
+  },
 }
 
 const faqs = [

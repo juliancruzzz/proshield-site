@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Interior Flooring Las Vegas | ProShield Epoxy",
   description:
     "Professional interior floor systems — metallic epoxy, concrete polishing, tile, plank flooring, and decorative overlays for homes, offices, showrooms, and retail spaces in Las Vegas.",
+  alternates: {
+    canonical: "/areas/interior",
+  },
 }
 
 const interiorFaqs = [

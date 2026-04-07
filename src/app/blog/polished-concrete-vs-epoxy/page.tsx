@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     "Polished Concrete vs. Epoxy Flooring: Which Is Right for Your Space? | ProShield Epoxy Blog",
   description:
     "Compare polished concrete and epoxy flooring — installation, durability, cost, maintenance, and long-term value. Which system wins for your warehouse, retail, garage, or office? Las Vegas flooring guide.",
+  alternates: {
+    canonical: "/blog/polished-concrete-vs-epoxy",
+  },
 }
 
 export default function PolishedConcreteVsEpoxyPost() {

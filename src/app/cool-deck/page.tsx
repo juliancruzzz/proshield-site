@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Cool Deck & Pool Deck Coatings | ProShield Epoxy",
   description:
     "Cool deck and knockdown texture coatings for pool decks, patios, and walkways in Las Vegas. Acrylic-based, slip-resistant, heat-reflective. Not epoxy — built for exterior concrete.",
+  alternates: {
+    canonical: "/cool-deck",
+  },
 }
 
 const faqs = [

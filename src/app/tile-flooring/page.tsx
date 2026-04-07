@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   title: "Tile Flooring Installation | ProShield Epoxy",
   description:
     "Professional tile flooring installation in Las Vegas — porcelain, ceramic, and natural stone tile for kitchens, bathrooms, entryways, and commercial spaces.",
+  alternates: {
+    canonical: "/tile-flooring",
+  },
 }
 
 const faqs = [

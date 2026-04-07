@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     "pool deck sealing Las Vegas",
     "driveway paver sealing",
   ],
+  alternates: {
+    canonical: "/paver-sealing",
+  },
 }
 
 const faqs = [

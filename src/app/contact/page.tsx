@@ -6,6 +6,9 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react"
 export const metadata: Metadata = {
   title: "Contact | Get a Free Quote | ProShield Epoxy",
   description: "Get a free quote for your floor coating project. Professional-grade systems for garages, commercial spaces, hangars, and more. Las Vegas metro area.",
+  alternates: {
+    canonical: "/contact",
+  },
 }
 
 export default function ContactPage() {

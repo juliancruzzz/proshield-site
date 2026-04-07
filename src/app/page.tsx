@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     "Epoxy Flooring Las Vegas | Garage, Commercial & Outdoor Coatings | ProShield Epoxy",
   description:
     "Las Vegas epoxy flooring by ProShield Epoxy. Metallic epoxy, flake systems, VubaStone, concrete polishing, cool deck, hangar floors & more. 1-day install, lifetime warranty. Free quotes — 702-728-5484.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title:
       "Epoxy Flooring Las Vegas | Garage, Commercial & Outdoor Coatings | ProShield Epoxy",

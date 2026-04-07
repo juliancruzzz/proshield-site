@@ -17,6 +17,9 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "VubaStone Resin-Bound Stone | Certified Installers Las Vegas | ProShield Epoxy",
   description: "VubaStone certified installers in Las Vegas. Resin-bound Spanish marble for driveways, patios, and pool decks. 850 L/min drainage, UV-stable. Free estimates.",
+  alternates: {
+    canonical: "/vubastone",
+  },
 }
 
 const depths = [

@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Commercial Resinous Flooring Systems | ProShield Epoxy",
   description:
     "Seamless commercial flooring — resin quartz, solid color urethane, urethane cement, and ProFlake systems. Built for warehouses, kitchens, manufacturing, healthcare, and retail in Las Vegas.",
+  alternates: {
+    canonical: "/commercial-flooring",
+  },
 }
 
 const faqs = [

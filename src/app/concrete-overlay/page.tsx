@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Concrete Overlay & Resurfacing | Las Vegas | ProShield Epoxy",
   description: "Concrete overlay and resurfacing in Las Vegas. Transform cracked, stained concrete without tear-out. Stamped, stenciled, and decorative overlays. Free estimates.",
   keywords: "concrete overlay Las Vegas, concrete resurfacing, stamped concrete overlay, decorative concrete overlay, concrete polishing",
+  alternates: {
+    canonical: "/concrete-overlay",
+  },
 }
 
 const faqs = [
