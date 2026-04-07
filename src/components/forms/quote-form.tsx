@@ -4,31 +4,15 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { Send, CheckCircle, Loader2 } from "lucide-react"
 import { submitForm } from "@/lib/submit-form"
-
-const projectTypes = [
-  "Garage Floor Coating",
-  "Metallic Epoxy",
-  "Flake System (ProFlake)",
-  "VubaStone",
-  "Concrete Polishing",
-  "Tile Flooring",
-  "Plank Flooring (LVP/SPC/Hardwood)",
-  "Decorative Overlay",
-  "Patio / Pool Deck",
-  "Paver Sealing",
-  "Commercial Resinous Flooring",
-  "Airplane Hangar",
-  "GrassMac & Turf",
-  "Other",
-]
+import { PROJECT_TYPE_GROUPS } from "@/lib/cta-data"
 
 export function QuoteForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+  const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     email: "",
-    projectType: "",
     sqft: "",
     message: "",
   })
@@ -39,16 +23,24 @@ export function QuoteForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
+  const toggleType = (type: string) => {
+    setSelectedTypes((prev) =>
+      prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type]
+    )
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    if (selectedTypes.length === 0) return
     setStatus("loading")
-    const result = await submitForm(formData, "Quote Request")
+    const projectType = selectedTypes.join(", ")
+    const result = await submitForm({ ...formData, projectType }, "Quote Request")
     setStatus(result.ok ? "success" : "error")
     if (result.ok && typeof window !== "undefined") {
       ;(window as any).dataLayer?.push({
         event: "form_submission",
         form_name: "Quote Request",
-        project_type: formData.projectType,
+        project_type: projectType,
       })
     }
   }
@@ -128,42 +120,70 @@ export function QuoteForm() {
         />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {/* Project Type */}
-        <div>
-          <label htmlFor="projectType" className="block text-sm font-medium text-gray-700 mb-1.5">
-            Project Type <span className="text-error">*</span>
-          </label>
-          <select
-            id="projectType"
-            name="projectType"
-            required
-            value={formData.projectType}
-            onChange={handleChange}
-            className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all duration-150 appearance-none"
-          >
-            <option value="">Select a project type</option>
-            {projectTypes.map((t) => (
-              <option key={t} value={t}>{t}</option>
-            ))}
-          </select>
+      {/* Project Type — multi-select */}
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-2">
+          Project Type <span className="text-error">*</span>{" "}
+          <span className="font-normal text-gray-400 text-xs">(select all that apply)</span>
+        </label>
+        <div className="space-y-3">
+          {PROJECT_TYPE_GROUPS.map((group) => (
+            <div key={group.label}>
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">{group.label}</p>
+              <div className="flex flex-wrap gap-2">
+                {group.types.map((type) => {
+                  const active = selectedTypes.includes(type)
+                  return (
+                    <button
+                      key={type}
+                      type="button"
+                      onClick={() => toggleType(type)}
+                      className={`rounded-full px-3.5 py-1.5 text-sm border transition-all duration-150 ${
+                        active
+                          ? "bg-accent text-white border-accent shadow-sm"
+                          : "bg-white text-gray-600 border-gray-300 hover:border-accent/50 hover:text-gray-900"
+                      }`}
+                    >
+                      {type}
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
+          ))}
+          {/* Other */}
+          <div>
+            <button
+              type="button"
+              onClick={() => toggleType("Other")}
+              className={`rounded-full px-3.5 py-1.5 text-sm border transition-all duration-150 ${
+                selectedTypes.includes("Other")
+                  ? "bg-accent text-white border-accent shadow-sm"
+                  : "bg-white text-gray-600 border-gray-300 hover:border-accent/50 hover:text-gray-900"
+              }`}
+            >
+              Other
+            </button>
+          </div>
         </div>
+        {/* Hidden input for form validation */}
+        <input type="hidden" name="projectType" value={selectedTypes.join(", ")} required={selectedTypes.length === 0} />
+      </div>
 
-        {/* Sqft */}
-        <div>
-          <label htmlFor="sqft" className="block text-sm font-medium text-gray-700 mb-1.5">
-            Approx. Square Footage
-          </label>
-          <input
-            type="text"
-            id="sqft"
-            name="sqft"
-            value={formData.sqft}
-            onChange={handleChange}
-            className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all duration-150"
-            placeholder="e.g. 500"
-          />
-        </div>
+      {/* Sqft */}
+      <div>
+        <label htmlFor="sqft" className="block text-sm font-medium text-gray-700 mb-1.5">
+          Approx. Square Footage
+        </label>
+        <input
+          type="text"
+          id="sqft"
+          name="sqft"
+          value={formData.sqft}
+          onChange={handleChange}
+          className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all duration-150"
+          placeholder="e.g. 500"
+        />
       </div>
 
       {/* Message */}

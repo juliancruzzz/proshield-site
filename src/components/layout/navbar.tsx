@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, ChevronDown, Phone } from "lucide-react"
+import { PHONE_HREF } from "@/lib/phone"
 
 const areaLinks = [
   { label: "Garage", href: "/areas/garage" },
@@ -280,7 +281,7 @@ export function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href={`tel:${process.env.NEXT_PUBLIC_PHONE || ""}`}
+              href={PHONE_HREF}
               className={`flex items-center gap-2 text-sm transition-colors duration-200 ${
                 scrolled ? "text-gray-500 hover:text-teal" : "text-white/70 hover:text-teal"
               }`}
@@ -402,7 +403,7 @@ export function Navbar() {
                   Get a Free Quote
                 </Link>
                 <a
-                  href={`tel:${process.env.NEXT_PUBLIC_PHONE || ""}`}
+                  href={PHONE_HREF}
                   className="flex items-center justify-center gap-2 w-full rounded-lg border border-gray-200 px-5 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-150"
                 >
                   <Phone className="h-4 w-4" />

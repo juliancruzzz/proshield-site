@@ -108,7 +108,7 @@ export default function EpoxyVsPolyasparticPost() {
           })
         }}
       />
-      <section className="section-white pt-32 pb-12 lg:pt-40 lg:pb-16">
+      <section className="bg-gray-900 pt-32 pb-12 lg:pt-40 lg:pb-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <Link
             href="/blog"
@@ -116,19 +116,19 @@ export default function EpoxyVsPolyasparticPost() {
           >
             <ArrowLeft className="h-3.5 w-3.5" /> Back to Blog
           </Link>
-          <span className="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent mb-4">
+          <span className="inline-block rounded-full bg-accent/15 px-3 py-1 text-xs font-semibold text-accent mb-4">
             Garage Floors
           </span>
-          <h1 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900 tracking-tight leading-tight">
+          <h1 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
             Epoxy vs. Polyaspartic Garage Floor Coatings — What&apos;s the
             Difference?
           </h1>
-          <div className="flex items-center gap-3 mt-4 text-sm text-gray-500">
-            <span>By <span className="font-medium text-gray-700">Julian Cruz</span></span>
-            <span className="text-gray-300">|</span>
+          <div className="flex items-center gap-3 mt-4 text-sm text-gray-400">
+            <span>By <span className="font-medium text-gray-200">Julian Cruz</span></span>
+            <span className="text-gray-600">|</span>
             <time dateTime="2026-04-01">April 1, 2026</time>
           </div>
-          <div className="flex items-center gap-4 mt-6 text-sm text-gray-400">
+          <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
               <Calendar className="h-3.5 w-3.5" /> April 1, 2026
             </span>

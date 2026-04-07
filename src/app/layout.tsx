@@ -147,6 +147,7 @@ export default function RootLayout({
     >
       <head>
         <meta name="theme-color" content="#111C2E" />
+        <meta name="google-site-verification" content="UA4h8q_W-9vCOyD1oK56Op2JrPFnBGf9OVRdrVZC9lg" />
         <link rel="preconnect" href="https://web3forms.com" />
         <link rel="preconnect" href="https://api.web3forms.com" />
         {/* Google Tag Manager */}
@@ -157,6 +158,21 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KGDCHW6C');`,
+          }}
+        />
+        {/* Meta Pixel Code */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','725509576183474');
+fbq('track','PageView');`,
           }}
         />
         {/* Track phone link clicks */}
@@ -180,6 +196,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+        {/* Meta Pixel (noscript) */}
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=725509576183474&ev=PageView&noscript=1"
+            alt=""
           />
         </noscript>
         <Navbar />

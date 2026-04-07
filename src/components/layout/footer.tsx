@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/phone"
 
 const systemLinks = [
   { label: "ProFlake Epoxy", href: "/proflake" },
@@ -24,10 +25,19 @@ const areaLinks = [
   { label: "Commercial", href: "/areas/commercial" },
 ]
 
+const serviceAreaLinks = [
+  { label: "Henderson", href: "/service-areas/henderson" },
+  { label: "Summerlin", href: "/service-areas/summerlin" },
+  { label: "North Las Vegas", href: "/service-areas/north-las-vegas" },
+  { label: "Boulder City", href: "/service-areas/boulder-city" },
+  { label: "Pahrump", href: "/service-areas/pahrump" },
+]
+
 const companyLinks = [
   { label: "About Us", href: "/about" },
   { label: "Gallery", href: "/gallery" },
   { label: "Blog", href: "/blog" },
+  { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ]
 
@@ -57,11 +67,11 @@ export function Footer() {
               </p>
               <div className="space-y-2.5 pt-2">
                 <a
-                  href={`tel:${process.env.NEXT_PUBLIC_PHONE || ""}`}
+                  href={PHONE_HREF}
                   className="flex items-center gap-2.5 text-sm text-gray-500 hover:text-accent transition-colors duration-150"
                 >
                   <Phone className="h-4 w-4 shrink-0" />
-                  <span>{process.env.NEXT_PUBLIC_PHONE || "Call Us"}</span>
+                  <span>{PHONE_DISPLAY}</span>
                 </a>
                 <a
                   href="mailto:info@proshieldepoxy.com"
@@ -107,6 +117,22 @@ export function Footer() {
               </h3>
               <ul className="space-y-2.5">
                 {areaLinks.map((link) => (
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-gray-600 hover:text-accent transition-colors duration-150"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+
+              <h3 className="font-heading font-semibold text-xs text-gray-400 mb-4 mt-8 tracking-widest uppercase">
+                Service Areas
+              </h3>
+              <ul className="space-y-2.5">
+                {serviceAreaLinks.map((link) => (
                   <li key={link.label}>
                     <Link
                       href={link.href}

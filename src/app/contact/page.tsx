@@ -3,6 +3,7 @@ import { PageHero } from "@/components/sections/page-hero"
 import { Breadcrumbs } from "@/components/sections/breadcrumbs"
 import { QuoteForm } from "@/components/forms/quote-form"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/phone"
 
 export const metadata: Metadata = {
   title: "Contact | Get a Free Quote | ProShield Epoxy",
@@ -47,7 +48,7 @@ export default function ContactPage() {
               </h2>
               <div className="space-y-6">
                 <a
-                  href={`tel:${process.env.NEXT_PUBLIC_PHONE || ""}`}
+                  href={PHONE_HREF}
                   className="flex items-start gap-4 group"
                 >
                   <div className="h-11 w-11 rounded-xl bg-accent/10 flex items-center justify-center text-accent shrink-0 group-hover:bg-accent group-hover:text-white transition-colors duration-200">
@@ -56,7 +57,7 @@ export default function ContactPage() {
                   <div>
                     <div className="text-sm font-semibold text-gray-900">Phone</div>
                     <div className="text-sm text-gray-500 group-hover:text-accent transition-colors">
-                      {process.env.NEXT_PUBLIC_PHONE || "Call us for a quote"}
+                      {PHONE_DISPLAY}
                     </div>
                   </div>
                 </a>

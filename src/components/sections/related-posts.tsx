@@ -14,6 +14,18 @@ interface RelatedPostsProps {
 
 // All blog posts with metadata
 const ALL_POSTS: Record<string, Omit<RelatedPost, 'href'> & { slug: string }> = {
+  'how-long-does-epoxy-flooring-last': {
+    slug: 'how-long-does-epoxy-flooring-last',
+    title: 'How Long Does Epoxy Flooring Last? Lifespan by System Type',
+    description: 'Professional epoxy systems last 15–20+ years depending on system type.',
+    date: 'April 7, 2026',
+  },
+  'epoxy-floor-maintenance-tips': {
+    slug: 'epoxy-floor-maintenance-tips',
+    title: 'Epoxy Floor Maintenance Tips: Keep Your Coating Looking New',
+    description: 'Simple cleaning routines and seasonal tips for Las Vegas floors.',
+    date: 'April 7, 2026',
+  },
   'best-pool-deck-coatings-las-vegas': {
     slug: 'best-pool-deck-coatings-las-vegas',
     title: 'Best Pool Deck Coatings for Las Vegas Heat: 2026 Guide',
@@ -52,6 +64,10 @@ const TOPIC_GROUPS = {
     'epoxy-garage-floor-cost-las-vegas',
     'epoxy-garage-floor-vs-polyaspartic',
     'hot-tire-pickup-prevention-garage-floor',
+  ],
+  epoxyGeneral: [
+    'how-long-does-epoxy-flooring-last',
+    'epoxy-floor-maintenance-tips',
   ],
   polishedConcrete: [
     'polished-concrete-vs-epoxy',

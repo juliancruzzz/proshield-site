@@ -5,6 +5,8 @@
  * process steps, and contact information.
  */
 
+import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/phone"
+
 export type StepData = {
   icon: string
   title: string
@@ -19,24 +21,43 @@ export type ContactItem = {
 }
 
 /**
- * List of project types available for quote requests
+ * Organized project type groups for quote request forms
  */
-export const PROJECT_TYPES = [
-  "Garage Floor Coating",
-  "Metallic Epoxy",
-  "Flake System (ProFlake)",
-  "VubaStone",
-  "Concrete Polishing",
-  "Tile Flooring",
-  "Plank Flooring (LVP/SPC/Hardwood)",
-  "Decorative Overlay",
-  "Patio / Pool Deck",
-  "Paver Sealing",
-  "Commercial Resinous Flooring",
-  "Airplane Hangar",
-  "GrassMac & Turf",
-  "Other",
-] as const
+export type ProjectTypeGroup = {
+  label: string
+  types: string[]
+}
+
+export const PROJECT_TYPE_GROUPS: ProjectTypeGroup[] = [
+  {
+    label: "Coatings & Epoxy",
+    types: [
+      "Garage Floor Coatings (ProFlake)",
+      "Metallic Epoxy",
+      "Concrete Polishing",
+      "Commercial Flooring",
+    ],
+  },
+  {
+    label: "Flooring",
+    types: [
+      "Tile Flooring",
+      "Plank Flooring (LVP/SPC/Hardwood)",
+    ],
+  },
+  {
+    label: "Outdoor & Hardscape",
+    types: [
+      "VubaStone",
+      "Patio / Pool Deck",
+      "Paver Sealing",
+      "Artificial Grass",
+    ],
+  },
+]
+
+/** Flat list of all project types (for validation, etc.) */
+export const PROJECT_TYPES = PROJECT_TYPE_GROUPS.flatMap((g) => g.types)
 
 /**
  * Steps in the quote request process
@@ -68,8 +89,8 @@ export const CONTACT_ITEMS: ContactItem[] = [
   {
     icon: "Phone",
     label: "Phone",
-    value: process.env.NEXT_PUBLIC_PHONE || "(702) 555-0199",
-    href: `tel:${process.env.NEXT_PUBLIC_PHONE || ""}`,
+    value: PHONE_DISPLAY,
+    href: PHONE_HREF,
   },
   {
     icon: "Mail",

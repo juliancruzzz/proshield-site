@@ -8,15 +8,8 @@ import {
 } from "lucide-react"
 import { useMounted } from "@/hooks/use-mounted"
 import { submitForm } from "@/lib/submit-form"
-
-/* ─── data ─── */
-
-const projectTypes = [
-  "Garage Floor Coating","Metallic Epoxy","Flake System (ProFlake)","VubaStone",
-  "Concrete Polishing","Tile Flooring","Plank Flooring (LVP/SPC/Hardwood)",
-  "Decorative Overlay","Patio / Pool Deck","Paver Sealing",
-  "Commercial Resinous Flooring","Airplane Hangar","GrassMac & Turf","Other",
-]
+import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/phone"
+import { PROJECT_TYPE_GROUPS } from "@/lib/cta-data"
 
 const steps = [
   { icon: Camera, title: "Send a Photo", description: "Snap a pic of your space — text, email, or right here." },
@@ -25,7 +18,7 @@ const steps = [
 ]
 
 const contactItems = [
-  { icon: Phone, label: "Phone", value: process.env.NEXT_PUBLIC_PHONE || "(702) 555-0199", href: `tel:${process.env.NEXT_PUBLIC_PHONE || ""}` },
+  { icon: Phone, label: "Phone", value: PHONE_DISPLAY, href: PHONE_HREF },
   { icon: Mail, label: "Email", value: "info@proshieldepoxy.com", href: "mailto:info@proshieldepoxy.com" },
   { icon: MapPin, label: "Area", value: "Las Vegas metro + 20 mi" },
   { icon: Clock, label: "Hours", value: "Mon–Sat 7 AM–6 PM" },
@@ -36,11 +29,13 @@ const contactItems = [
 function InlineCTAForm() {
   const [status, setStatus] = useState<"idle"|"loading"|"success"|"error">("idle")
   const [images, setImages] = useState<{name:string;preview:string}[]>([])
-  const [formData, setFormData] = useState({ name:"",phone:"",email:"",projectType:"",sqft:"",message:"" })
+  const [selectedTypes, setSelectedTypes] = useState<string[]>([])
+  const [formData, setFormData] = useState({ name:"",phone:"",email:"",sqft:"",message:"" })
   const handleChange = (e: React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement|HTMLSelectElement>) => setFormData({...formData,[e.target.name]:e.target.value})
+  const toggleType = (type: string) => setSelectedTypes(prev => prev.includes(type) ? prev.filter(t => t !== type) : [...prev, type])
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => { const f=e.target.files; if(!f)return; setImages(p=>[...p,...Array.from(f).map(f=>({name:f.name,preview:URL.createObjectURL(f)}))].slice(0,5)); e.target.value="" }
   const removeImage = (i:number) => setImages(p=>p.filter((_,idx)=>idx!==i))
-  const handleSubmit = async (e:React.FormEvent) => { e.preventDefault(); setStatus("loading"); const result = await submitForm(formData, "Quote Request"); setStatus(result.ok ? "success" : "error") }
+  const handleSubmit = async (e:React.FormEvent) => { e.preventDefault(); if(selectedTypes.length===0)return; setStatus("loading"); const projectType=selectedTypes.join(", "); const result = await submitForm({...formData,projectType}, "Quote Request"); setStatus(result.ok ? "success" : "error") }
 
   if (status === "success") return (
     <motion.div initial={{opacity:0,scale:0.95}} animate={{opacity:1,scale:1}} className="rounded-2xl border border-white/10 bg-white/[0.04] p-8 text-center">
@@ -59,10 +54,20 @@ function InlineCTAForm() {
         <div><label htmlFor="v3-phone" className="block text-xs font-medium text-white/80 mb-1.5">Phone <span className="text-accent">*</span></label><input type="tel" id="v3-phone" name="phone" required value={formData.phone} onChange={handleChange} className={inp} placeholder="(555) 123-4567"/></div>
       </div>
       <div><label htmlFor="v3-email" className="block text-xs font-medium text-white/80 mb-1.5">Email <span className="text-accent">*</span></label><input type="email" id="v3-email" name="email" required value={formData.email} onChange={handleChange} className={inp} placeholder="you@example.com"/></div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <div><label htmlFor="v3-pt" className="block text-xs font-medium text-white/80 mb-1.5">Project Type <span className="text-accent">*</span></label><select id="v3-pt" name="projectType" required value={formData.projectType} onChange={handleChange} className={`${inp} appearance-none`}><option value="" className="bg-[#111c2e] text-white/50">Select a project type</option>{projectTypes.map(t=><option key={t} value={t} className="bg-[#111c2e] text-white">{t}</option>)}</select></div>
-        <div><label htmlFor="v3-sqft" className="block text-xs font-medium text-white/80 mb-1.5">Approx. Sq Ft</label><input type="text" id="v3-sqft" name="sqft" value={formData.sqft} onChange={handleChange} className={inp} placeholder="e.g. 500"/></div>
+      {/* Project Type — multi-select pills */}
+      <div>
+        <label className="block text-xs font-medium text-white/80 mb-2">Project Type <span className="text-accent">*</span> <span className="text-white/30 font-normal">(select all that apply)</span></label>
+        <div className="space-y-2.5">
+          {PROJECT_TYPE_GROUPS.map(group=>(
+            <div key={group.label}>
+              <p className="text-[10px] font-semibold text-white/30 uppercase tracking-wider mb-1">{group.label}</p>
+              <div className="flex flex-wrap gap-1.5">{group.types.map(type=>{const active=selectedTypes.includes(type);return(<button key={type} type="button" onClick={()=>toggleType(type)} className={`rounded-full px-3 py-1.5 text-xs border transition-all duration-150 ${active?"bg-accent text-white border-accent":"bg-white/[0.06] text-white/60 border-white/12 hover:border-accent/40 hover:text-white/80"}`}>{type}</button>)})}</div>
+            </div>
+          ))}
+          <button type="button" onClick={()=>toggleType("Other")} className={`rounded-full px-3 py-1.5 text-xs border transition-all duration-150 ${selectedTypes.includes("Other")?"bg-accent text-white border-accent":"bg-white/[0.06] text-white/60 border-white/12 hover:border-accent/40 hover:text-white/80"}`}>Other</button>
+        </div>
       </div>
+      <div><label htmlFor="v3-sqft" className="block text-xs font-medium text-white/80 mb-1.5">Approx. Sq Ft</label><input type="text" id="v3-sqft" name="sqft" value={formData.sqft} onChange={handleChange} className={inp} placeholder="e.g. 500"/></div>
       <div><label htmlFor="v3-msg" className="block text-xs font-medium text-white/80 mb-1.5">Project Details</label><textarea id="v3-msg" name="message" rows={3} value={formData.message} onChange={handleChange} className={`${inp} resize-none`} placeholder="Tell us about your project..."/></div>
       <div>
         <label className="block text-xs font-medium text-white/80 mb-1.5">Photos <span className="text-white/30">(optional, up to 5)</span></label>
@@ -138,7 +143,7 @@ export function CtaV3() {
           <div className="lg:col-span-7">
             <div className="rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5 sm:p-7 md:p-8">
               <h3 className="font-heading font-semibold text-lg text-white mb-1">Request a Free Quote</h3>
-              <p className="text-sm text-white/35 mb-6">Fill out the form or text us a photo at <span className="text-white/55">{process.env.NEXT_PUBLIC_PHONE || "(702) 555-0199"}</span>.</p>
+              <p className="text-sm text-white/35 mb-6">Fill out the form or text us a photo at <span className="text-white/55">{PHONE_DISPLAY}</span>.</p>
               <InlineCTAForm />
             </div>
 

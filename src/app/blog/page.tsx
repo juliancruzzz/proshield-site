@@ -20,6 +20,24 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "how-long-does-epoxy-flooring-last",
+    title: "How Long Does Epoxy Flooring Last? Lifespan by System Type",
+    excerpt:
+      "Professional epoxy systems last 15–20+ years, but lifespan varies dramatically by system type, surface prep, and environment. See real numbers for ProFlake, metallic, polished concrete, and more.",
+    date: "April 7, 2026",
+    category: "Flooring Guide",
+    image: "/images/proflake/flake-garage-wide-clean.webp",
+  },
+  {
+    slug: "epoxy-floor-maintenance-tips",
+    title: "Epoxy Floor Maintenance Tips: Keep Your Coating Looking New",
+    excerpt:
+      "Simple cleaning routines, seasonal tips for Las Vegas heat, and what NOT to use on your epoxy floor. System-specific care for flake, metallic, and polished concrete.",
+    date: "April 7, 2026",
+    category: "Maintenance Guide",
+    image: "/images/proflake/flake-garage-residential.webp",
+  },
+  {
     slug: "best-pool-deck-coatings-las-vegas",
     title: "Best Pool Deck Coatings for Las Vegas Heat: 2026 Guide",
     excerpt:

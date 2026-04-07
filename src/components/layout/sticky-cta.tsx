@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Phone, MessageSquare } from "lucide-react"
+import { PHONE_HREF } from "@/lib/phone"
 
 export function StickyCta() {
   const [visible, setVisible] = useState(false)
@@ -28,7 +29,7 @@ export function StickyCta() {
           Get a Free Quote
         </Link>
         <a
-          href={`tel:${process.env.NEXT_PUBLIC_PHONE || ""}`}
+          href={PHONE_HREF}
           className="inline-flex items-center justify-center h-12 w-12 rounded-lg border border-gray-200 bg-white text-gray-600 hover:text-teal hover:border-teal/30 transition-colors shrink-0"
           aria-label="Call us"
         >
