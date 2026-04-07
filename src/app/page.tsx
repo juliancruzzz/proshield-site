@@ -11,17 +11,19 @@ import { Credentials } from "@/components/sections/credentials"
 
 export const metadata: Metadata = {
   title:
-    "Epoxy Flooring Las Vegas | Garage, Commercial & Outdoor Coatings | ProShield Epoxy",
+    "Epoxy Flooring Las Vegas | ProShield Epoxy",
   description:
-    "Las Vegas epoxy flooring by ProShield Epoxy. Metallic epoxy, flake systems, VubaStone, concrete polishing, cool deck, hangar floors & more. 1-day install, lifetime warranty. Free quotes — 702-728-5484.",
+    "Las Vegas epoxy flooring — metallic epoxy, flake systems, VubaStone, concrete polishing, cool deck & more. Free quotes. Call 702-728-5484.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title:
-      "Epoxy Flooring Las Vegas | Garage, Commercial & Outdoor Coatings | ProShield Epoxy",
+      "Epoxy Flooring Las Vegas | ProShield Epoxy",
     description:
-      "Las Vegas epoxy flooring by ProShield Epoxy. Metallic epoxy, flake systems, VubaStone, concrete polishing, cool deck, hangar floors & more. 1-day install, lifetime warranty. Free quotes.",
+      "Las Vegas epoxy flooring — metallic epoxy, flake systems, VubaStone, concrete polishing, cool deck & more. Free quotes. Call 702-728-5484.",
+    url: "https://proshieldepoxy.com/",
+    images: ["/og-image.webp"],
   },
 }
 

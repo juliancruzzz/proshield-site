@@ -7,11 +7,15 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "How to Prevent Hot Tire Pickup on Your Garage Floor | ProShield Epoxy",
+    "Hot Tire Pickup Prevention | Garage Floor Guide",
   description:
     "Hot tire pickup peels cheap garage floor coatings in Las Vegas heat. Learn what causes it, how to prevent it, and which coating systems resist it permanently.",
   alternates: {
     canonical: "/blog/hot-tire-pickup-prevention-garage-floor",
+  },
+  openGraph: {
+    url: "https://proshieldepoxy.com/blog/hot-tire-pickup-prevention-garage-floor",
+    images: ["/images/proflake/flake-garage-porsche-bikes.webp"],
   },
 }
 
@@ -21,13 +25,88 @@ export default function HotTirePickupPost() {
     description: "Hot tire pickup peels cheap garage floor coatings in Las Vegas heat. Learn what causes it, how to prevent it, and which coating systems resist it permanently.",
     slug: "hot-tire-pickup-prevention-garage-floor",
     datePublished: "2026-03-28",
+    image: "https://proshieldepoxy.com/images/proflake/flake-garage-porsche-bikes.webp",
   })
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I fix hot tire pickup with a new topcoat over the existing coating?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually not. If the base coating is already delaminating, adding a topcoat over it just gives you a thicker layer that peels off. The coating needs to be removed down to clean concrete, properly prepped, and a new system installed from scratch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will parking on mats or tire pads prevent hot tire pickup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tire mats can reduce direct contact, but they trap heat against the surface and can cause their own adhesion issues with some coatings. The better solution is a coating system that doesn't need protection — that's the point of using a polyaspartic topcoat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can hot tire pickup happen with a cheap coating?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In Las Vegas summer heat, we've seen water-based epoxy coatings show hot tire damage within weeks of installation. Most DIY kits start showing visible tire marks within the first summer season, and by the end of the second summer, significant peeling is common."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does hot tire pickup happen with polyaspartic coatings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Quality polyaspartic systems are formulated to resist hot tire pickup. The chemistry has a higher heat deflection temperature than epoxy, so it doesn't soften when hot tires park on it. This is why we use a polyaspartic topcoat on all our ProFlake garage floor systems."
+        }
+      }
+    ]
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://proshieldepoxy.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://proshieldepoxy.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": "Hot Tire Pickup Prevention", "item": "https://proshieldepoxy.com/blog/hot-tire-pickup-prevention-garage-floor" }
+    ]
+  }
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Julian Cruz",
+            "jobTitle": "Founder",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "ProShield Epoxy",
+              "url": "https://proshieldepoxy.com"
+            },
+            "url": "https://proshieldepoxy.com/about"
+          })
+        }}
       />
       <section className="section-white pt-32 pb-12 lg:pt-40 lg:pb-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -50,7 +129,7 @@ export default function HotTirePickupPost() {
           </div>
           <div className="flex items-center gap-4 mt-6 text-sm text-gray-400">
             <span className="flex items-center gap-1">
-              <Calendar className="h-3.5 w-3.5" /> April 3, 2026
+              <Calendar className="h-3.5 w-3.5" /> March 28, 2026
             </span>
             <span className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" /> 7 min read
@@ -73,7 +152,37 @@ export default function HotTirePickupPost() {
               permanently.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            {/* Table of Contents */}
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
+              <p className="font-heading font-semibold text-base text-gray-900 mb-3">In This Article</p>
+              <nav>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <a href="#what-exactly-is-hot-tire-pickup" className="text-accent hover:underline">What Exactly Is Hot Tire Pickup?</a>
+                  </li>
+                  <li>
+                    <a href="#why-its-worse-in-las-vegas" className="text-accent hover:underline">Why It's Worse in Las Vegas</a>
+                  </li>
+                  <li>
+                    <a href="#what-makes-a-coating-vulnerable" className="text-accent hover:underline">What Makes a Coating Vulnerable?</a>
+                  </li>
+                  <li>
+                    <a href="#how-to-prevent-it-the-right-system" className="text-accent hover:underline">How to Prevent It: The Right System</a>
+                  </li>
+                  <li>
+                    <a href="#coatings-ranked-by-hot-tire-resistance" className="text-accent hover:underline">Coatings Ranked by Hot Tire Resistance</a>
+                  </li>
+                  <li>
+                    <a href="#what-if-you-already-have-hot-tire-damage" className="text-accent hover:underline">What If You Already Have Hot Tire Damage?</a>
+                  </li>
+                  <li>
+                    <a href="#frequently-asked-questions" className="text-accent hover:underline">Frequently Asked Questions</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <h2 id="what-exactly-is-hot-tire-pickup" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               What Exactly Is Hot Tire Pickup?
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -97,8 +206,8 @@ export default function HotTirePickupPost() {
               park, progressively stripping the coating down to bare concrete.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
-              Why It&apos;s Worse in Las Vegas
+            <h2 id="why-its-worse-in-las-vegas" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+              Why It's Worse in Las Vegas
             </h2>
             <p className="text-gray-600 leading-relaxed">
               Las Vegas has a uniquely punishing combination of factors for
@@ -117,7 +226,7 @@ export default function HotTirePickupPost() {
               different category entirely.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="what-makes-a-coating-vulnerable" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               What Makes a Coating Vulnerable?
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -128,7 +237,7 @@ export default function HotTirePickupPost() {
               <strong>Coating chemistry.</strong> Water-based epoxies and acrylic
               sealers have the lowest heat resistance. They soften at much lower
               temperatures than 100% solids epoxy or polyaspartic systems.
-              Most big-box store DIY kits fall into this category.
+              Most big-box store DIY kits fall into this category. Professional <Link href="/areas/garage" className="text-accent hover:underline font-medium">garage floor coatings</Link> use commercial-grade chemistries.
             </p>
             <p className="text-gray-600 leading-relaxed">
               <strong>Topcoat type.</strong> The topcoat is the layer that
@@ -151,7 +260,7 @@ export default function HotTirePickupPost() {
               delamination far better than acid etching.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="how-to-prevent-it-the-right-system" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               How to Prevent It: The Right System
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -184,10 +293,10 @@ export default function HotTirePickupPost() {
               chemistry has a higher heat deflection temperature than standard
               epoxy topcoats, meaning it doesn&apos;t soften at the
               temperatures Las Vegas tires reach. It also resists plasticizer
-              migration from tire rubber.
+              migration from tire rubber. Our <Link href="/proflake" className="text-accent hover:underline font-medium">ProFlake system</Link> uses this proven topcoat chemistry.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="coatings-ranked-by-hot-tire-resistance" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Coatings Ranked by Hot Tire Resistance
             </h2>
 
@@ -246,7 +355,7 @@ export default function HotTirePickupPost() {
               </table>
             </div>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="what-if-you-already-have-hot-tire-damage" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               What If You Already Have Hot Tire Damage?
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -263,7 +372,7 @@ export default function HotTirePickupPost() {
               coating.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="frequently-asked-questions" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Frequently Asked Questions
             </h2>
 
@@ -329,6 +438,30 @@ export default function HotTirePickupPost() {
           </div>
         </div>
       </article>
+
+      {/* Author Bio */}
+      <section className="section-white pb-12 lg:pb-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center">
+                <span className="text-2xl font-bold text-accent">JC</span>
+              </div>
+              <div>
+                <h3 className="font-heading font-semibold text-lg text-gray-900">Julian Cruz</h3>
+                <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+                  Julian is the founder of ProShield Epoxy, a professional floor coating company
+                  serving the Las Vegas metro area. He specializes in residential garage coatings,
+                  commercial resinous flooring, and specialty systems including metallic epoxy,
+                  VubaStone, and concrete polishing. Every article is written from hands-on
+                  installation experience — not recycled from the internet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <RelatedPosts currentSlug="hot-tire-pickup-prevention-garage-floor" />
 

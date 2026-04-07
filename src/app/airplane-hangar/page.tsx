@@ -16,8 +16,12 @@ import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Airplane Hangar Floor Coating | Las Vegas | ProShield Epoxy",
-  description: "Aviation-grade hangar floor coating systems in Las Vegas. Resists Skydrol, jet fuel, hydraulic fluids. High-performance multi-layer systems with 24–48hr return to service. NFPA 409 compliant. Free estimate.",
+  description: "Airplane hangar floor coating in Las Vegas — Skydrol resistant, jet fuel resistant. Aviation-grade systems. 24-48hr return to service.",
   keywords: "airplane hangar floor coating Las Vegas, hangar floor coating near me, aircraft hangar floor coating, Skydrol resistant floor coating, hangar floor coating service Nevada, FBO floor coating",
+  openGraph: {
+    url: "https://proshieldepoxy.com/airplane-hangar",
+    images: ["/images/hangar/hangar-floor-drone-desert.webp"],
+  },
   alternates: {
     canonical: "/airplane-hangar",
   },
@@ -78,7 +82,7 @@ export default function AirplaneHangarPage() {
           })
         }}
       />
-      <HangarHero />
+      <HangarHero title="Airplane Hangar Floor Coating" highlight="Las Vegas" />
 
       <HangarStats />
 

@@ -12,9 +12,13 @@ import { PlankBenefits } from "@/components/sections/plank-benefits"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Plank Flooring — LVP, SPC, WPC & Engineered Hardwood | ProShield Epoxy",
+  title: "Plank Flooring Las Vegas | LVP & Hardwood | ProShield",
   description:
-    "Professional plank flooring installation in Las Vegas — Luxury Vinyl Plank (LVP), SPC, WPC, and Engineered Hardwood. Waterproof, durable, and realistic wood-grain finishes.",
+    "Professional plank flooring installation in Las Vegas — LVP, SPC, WPC, and Engineered Hardwood. Waterproof, durable, and realistic wood-grain finishes.",
+  openGraph: {
+    url: "https://proshieldepoxy.com/plank-flooring",
+    images: ["/images/plank/plank-luxury.webp"],
+  },
   alternates: {
     canonical: "/plank-flooring",
   },
@@ -65,8 +69,8 @@ export default function PlankFlooringPage() {
       />
       <PageHero
         badge="Plank Flooring"
-        title="Wood-Look Floors."
-        highlight="Modern Durability."
+        title="Plank Flooring"
+        highlight="Las Vegas"
         subtitle="LVP, SPC, WPC, and Engineered Hardwood — professionally installed. Realistic wood-grain finishes with waterproof cores and click-lock convenience."
         backgroundImage="/images/plank/plank-room.webp"
         backgroundAlt="Living room with luxury vinyl plank flooring showcasing natural wood grain"

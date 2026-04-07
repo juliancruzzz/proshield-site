@@ -7,11 +7,15 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "Epoxy vs. Polyaspartic Garage Floor Coatings — What's the Difference? | ProShield Epoxy Blog",
+    "Epoxy vs Polyaspartic Coatings | ProShield Epoxy",
   description:
-    "Comparing epoxy and polyaspartic garage floor coatings — cure times, durability, UV stability, cost, and which is better for Las Vegas garages. Honest breakdown from a professional installer.",
+    "Epoxy vs polyaspartic garage coatings — cure times, durability, UV stability, and cost comparison for Las Vegas garages. Professional breakdown.",
   alternates: {
     canonical: "/blog/epoxy-garage-floor-vs-polyaspartic",
+  },
+  openGraph: {
+    url: "https://proshieldepoxy.com/blog/epoxy-garage-floor-vs-polyaspartic",
+    images: ["/images/proflake/flake-garage-wide-clean.webp"],
   },
 }
 
@@ -21,13 +25,88 @@ export default function EpoxyVsPolyasparticPost() {
     description: "Comparing epoxy and polyaspartic garage floor coatings — cure times, durability, UV stability, cost, and which is better for Las Vegas garages. Honest breakdown from a professional installer.",
     slug: "epoxy-garage-floor-vs-polyaspartic",
     datePublished: "2026-04-01",
+    image: "https://proshieldepoxy.com/images/proflake/flake-garage-wide-clean.webp",
   })
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is polyaspartic better than epoxy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Neither is universally \"better\" — they have different strengths. Epoxy provides superior bonding and build thickness. Polyaspartic offers faster cure times and better UV stability. The best garage floor systems use both together: a polyurea base for adhesion and a polyaspartic topcoat for protection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a polyaspartic garage floor last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A professionally installed polyurea base with polyaspartic topcoat — like our ProFlake system — lasts 15–20+ years in a residential garage. The key factors are surface preparation quality, coating thickness, and environmental exposure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you apply polyaspartic without an epoxy base?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, polyaspartic-only systems exist. Some companies use them for fast, single-day installs. However, a polyurea base provides more build thickness and a stronger mechanical bond to the concrete. The combination of polyurea base + polyaspartic topcoat gives you the advantages of both chemistries."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do some \"one-day epoxy\" companies use polyaspartic instead?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "True epoxy requires 24–72 hours to cure, so it can't be completed in one day on its own. Companies advertising \"one-day epoxy\" are typically using polyaspartic or polyurea systems that cure in 2–6 hours. This isn't necessarily bad — just ask what products are actually being applied so you know what you're getting."
+        }
+      }
+    ]
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://proshieldepoxy.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://proshieldepoxy.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": "Epoxy vs. Polyaspartic", "item": "https://proshieldepoxy.com/blog/epoxy-garage-floor-vs-polyaspartic" }
+    ]
+  }
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Julian Cruz",
+            "jobTitle": "Founder",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "ProShield Epoxy",
+              "url": "https://proshieldepoxy.com"
+            },
+            "url": "https://proshieldepoxy.com/about"
+          })
+        }}
       />
       <section className="section-white pt-32 pb-12 lg:pt-40 lg:pb-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -72,7 +151,37 @@ export default function EpoxyVsPolyasparticPost() {
               actually matter.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            {/* Table of Contents */}
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
+              <p className="font-heading font-semibold text-base text-gray-900 mb-3">In This Article</p>
+              <nav>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <a href="#what-is-epoxy" className="text-accent hover:underline">What Is Epoxy?</a>
+                  </li>
+                  <li>
+                    <a href="#what-is-polyaspartic" className="text-accent hover:underline">What Is Polyaspartic?</a>
+                  </li>
+                  <li>
+                    <a href="#head-to-head-comparison" className="text-accent hover:underline">Head-to-Head Comparison</a>
+                  </li>
+                  <li>
+                    <a href="#why-we-use-both-together" className="text-accent hover:underline">Why We Use Both — Together</a>
+                  </li>
+                  <li>
+                    <a href="#what-about-one-day-epoxy-companies" className="text-accent hover:underline">What About "One-Day Epoxy" Companies?</a>
+                  </li>
+                  <li>
+                    <a href="#the-bottom-line" className="text-accent hover:underline">The Bottom Line</a>
+                  </li>
+                  <li>
+                    <a href="#frequently-asked-questions" className="text-accent hover:underline">Frequently Asked Questions</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <h2 id="what-is-epoxy" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               What Is Epoxy?
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -90,7 +199,7 @@ export default function EpoxyVsPolyasparticPost() {
               time but also narrows your working window during installation.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="what-is-polyaspartic" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               What Is Polyaspartic?
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -108,7 +217,7 @@ export default function EpoxyVsPolyasparticPost() {
               48 hours.*
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="head-to-head-comparison" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Head-to-Head Comparison
             </h2>
 
@@ -203,11 +312,11 @@ export default function EpoxyVsPolyasparticPost() {
               </table>
             </div>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="why-we-use-both-together" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Why We Use Both — Together
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Our ProFlake system uses a polyurea base coat for its superior
+              Our <Link href="/proflake" className="text-accent hover:underline font-medium">ProFlake system</Link> uses a polyurea base coat for its superior
               bonding and build thickness, combined with a polyaspartic topcoat
               for UV stability, fast cure, and hot-tire resistance. You get the
               strengths of both chemistries in a single system.
@@ -219,7 +328,7 @@ export default function EpoxyVsPolyasparticPost() {
               Vegas garage temperatures without yellowing or lifting.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="what-about-one-day-epoxy-companies" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               What About &quot;One-Day Epoxy&quot; Companies?
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -236,14 +345,14 @@ export default function EpoxyVsPolyasparticPost() {
               goes on your floor.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="the-bottom-line" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               The Bottom Line
             </h2>
             <p className="text-gray-600 leading-relaxed">
               For Las Vegas garages, the best system combines a polyurea base
               with a polyaspartic topcoat. You get the bonding strength and
               build of polyurea plus the UV stability, fast cure, and hot-tire
-              resistance of polyaspartic. That&apos;s what our ProFlake system
+              resistance of polyaspartic. That&apos;s what our <Link href="/proflake" className="text-accent hover:underline font-medium">ProFlake system</Link>
               delivers.
             </p>
 
@@ -252,7 +361,7 @@ export default function EpoxyVsPolyasparticPost() {
               requirements.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="frequently-asked-questions" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Frequently Asked Questions
             </h2>
 
@@ -321,6 +430,30 @@ export default function EpoxyVsPolyasparticPost() {
           </div>
         </div>
       </article>
+
+      {/* Author Bio */}
+      <section className="section-white pb-12 lg:pb-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center">
+                <span className="text-2xl font-bold text-accent">JC</span>
+              </div>
+              <div>
+                <h3 className="font-heading font-semibold text-lg text-gray-900">Julian Cruz</h3>
+                <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+                  Julian is the founder of ProShield Epoxy, a professional floor coating company
+                  serving the Las Vegas metro area. He specializes in residential garage coatings,
+                  commercial resinous flooring, and specialty systems including metallic epoxy,
+                  VubaStone, and concrete polishing. Every article is written from hands-on
+                  installation experience — not recycled from the internet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <RelatedPosts currentSlug="epoxy-garage-floor-vs-polyaspartic" />
 

@@ -10,7 +10,7 @@ import {
 
 export function Credentials() {
   return (
-    <section className="section-white py-14 sm:py-20 lg:py-28 border-t border-gray-200">
+    <section className="section-gray py-14 sm:py-20 lg:py-28 border-t border-gray-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 

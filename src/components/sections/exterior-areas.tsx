@@ -88,9 +88,9 @@ const systems: System[] = [
     categories: ["Driveways", "Walkways"],
   },
   {
-    name: "GrassMac & Turf Installation",
+    name: "Artificial Turf Installation",
     description:
-      "GrassMac engineered permeable base beneath premium artificial grass. Built with SRM, VubaMac resin, and recycled rubber + aggregate for proper drainage.",
+      "Premium artificial turf with engineered permeable base system. Built with recycled rubber + aggregate and resin binding for proper drainage.",
     highlights: [
       "Engineered drainage base",
       "Low maintenance",
@@ -98,7 +98,7 @@ const systems: System[] = [
       "No watering or mowing",
       "Perfect for Las Vegas climate",
     ],
-    href: "/grassmac",
+    href: "/artificial-turf",
     image: "/images/grassmac/dog-on-grass.webp",
     categories: ["Lawns", "Pet-Friendly"],
   },

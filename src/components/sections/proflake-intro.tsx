@@ -66,7 +66,7 @@ export function ProFlakeIntro() {
               {/* After image (full, underneath) */}
               <img
                 src="/images/proflake/flake-garage-after-coated.webp"
-                alt=""
+                alt="Finished garage floor with ProFlake polyurea coating and decorative flakes"
                 className="absolute inset-0 w-full h-full object-cover"
                 draggable={false}
               />
@@ -78,7 +78,7 @@ export function ProFlakeIntro() {
               >
                 <img
                   src="/images/proflake/flake-garage-before-concrete.webp"
-                  alt=""
+                  alt="Raw concrete garage floor before ProFlake coating installation"
                   className="absolute inset-0 w-full h-full object-cover"
                   style={{
                     width: containerWidth
@@ -118,13 +118,13 @@ export function ProFlakeIntro() {
           {/* Content side */}
           <div>
             <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-              Premium Epoxy System
+              Premium Garage Floor System
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight leading-tight">
               What Is ProFlake?
             </h2>
             <p className="mt-4 sm:mt-5 text-gray-600 text-base sm:text-lg leading-relaxed">
-              ProFlake is a premium, multi-layer epoxy system that combines durability, customization, and speed. Built with a polyaspartic topcoat, ProFlake delivers superior UV stability, chemical resistance, and hot tire resistance — everything you need in a garage floor.
+              ProFlake is a premium, multi-layer polyurea coating system that outperforms traditional epoxy in every way. Built with a polyurea basecoat and polyaspartic topcoat, ProFlake delivers superior UV stability, chemical resistance, and hot tire resistance — everything you need in a garage floor.
             </p>
 
             {/* Highlight checklist */}

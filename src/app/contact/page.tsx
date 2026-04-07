@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { PageHero } from "@/components/sections/page-hero"
+import { Breadcrumbs } from "@/components/sections/breadcrumbs"
 import { QuoteForm } from "@/components/forms/quote-form"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 
@@ -8,6 +9,10 @@ export const metadata: Metadata = {
   description: "Get a free quote for your floor coating project. Professional-grade systems for garages, commercial spaces, hangars, and more. Las Vegas metro area.",
   alternates: {
     canonical: "/contact",
+  },
+  openGraph: {
+    url: "https://proshieldepoxy.com/contact",
+    images: ["/og-image.webp"],
   },
 }
 
@@ -21,6 +26,8 @@ export default function ContactPage() {
         ctaText=""
         ctaHref=""
       />
+
+      <Breadcrumbs items={[{ label: "Contact" }]} />
 
       <section className="section-white py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

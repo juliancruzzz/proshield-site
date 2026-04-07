@@ -84,6 +84,8 @@ export function Hero() {
             Professional-Grade
             <br />
             <span className="text-accent">Floor Coatings</span>
+            <br />
+            <span className="text-sm sm:text-base md:text-lg lg:text-xl text-white/70">Las Vegas</span>
           </motion.h1>
 
           {/* Subheading */}

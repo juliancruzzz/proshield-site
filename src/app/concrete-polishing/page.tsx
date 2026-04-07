@@ -16,7 +16,7 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Concrete Polishing Las Vegas | Levels 1–4 | ProShield Epoxy",
   description:
-    "Concrete polishing in Las Vegas — Levels 1-4, Classes A-D. Grind & seal or full mechanical polish for commercial, retail, and residential. Free estimates.",
+    "Concrete polishing in Las Vegas — Levels 1-4 mechanical polish. Grind & seal or full polish for commercial, retail, and residential. Free estimates.",
   keywords: [
     "concrete polishing Las Vegas",
     "polished concrete floors",
@@ -26,6 +26,10 @@ export const metadata: Metadata = {
     "concrete floor polishing",
     "polished concrete contractor Las Vegas",
   ],
+  openGraph: {
+    url: "https://proshieldepoxy.com/concrete-polishing",
+    images: ["/images/concrete-polishing/polished-concrete-aci.webp"],
+  },
   alternates: {
     canonical: "/concrete-polishing",
   },
@@ -81,8 +85,8 @@ export default function ConcretePolishingPage() {
 
       <PageHero
         badge="Mechanical Refinement — Not a Coating"
-        title="Concrete"
-        highlight="Polishing"
+        title="Concrete Polishing"
+        highlight="Las Vegas"
         subtitle="Transform your existing concrete slab into a high-performance, mirror-finish floor. From industrial warehouses to sleek retail showrooms — no coatings, no overlays, just refined concrete built to last decades."
         backgroundImage="/images/concrete-polishing/polished-concrete-aci.webp"
         backgroundAlt="Polished commercial warehouse floor with high-gloss finish"

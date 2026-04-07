@@ -13,9 +13,13 @@ import { CommercialComparison } from "@/components/sections/commercial-compariso
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Commercial Resinous Flooring Systems | ProShield Epoxy",
+  title: "Commercial Flooring Las Vegas | ProShield Epoxy",
   description:
-    "Seamless commercial flooring — resin quartz, solid color urethane, urethane cement, and ProFlake systems. Built for warehouses, kitchens, manufacturing, healthcare, and retail in Las Vegas.",
+    "Commercial flooring systems in Las Vegas — resin quartz, urethane, ProFlake. Warehouses, kitchens, manufacturing, healthcare, retail.",
+  openGraph: {
+    url: "https://proshieldepoxy.com/commercial-flooring",
+    images: ["/images/commercial/commercial-floor-solid.webp"],
+  },
   alternates: {
     canonical: "/commercial-flooring",
   },
@@ -47,10 +51,27 @@ const faqs = [
 export default function CommercialFlooringPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.q,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.a
+              }
+            }))
+          })
+        }}
+      />
       <PageHero
         badge="Commercial Resinous Flooring"
-        title="Engineered for"
-        highlight="Your Environment"
+        title="Commercial Flooring"
+        highlight="Las Vegas"
         subtitle="Seamless resinous flooring systems matched to your facility's specific demands — from thermal shock resistance to chemical exposure to heavy rolling loads."
         backgroundImage="/images/commercial/commercial-grey-yellow-stripe.webp"
         backgroundAlt="Commercial warehouse with solid color epoxy floor and safety line markings"

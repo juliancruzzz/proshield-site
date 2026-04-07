@@ -14,7 +14,7 @@ const systemLinks = [
   { label: "Paver Sealing", href: "/paver-sealing" },
   { label: "Concrete Overlay", href: "/concrete-overlay" },
   { label: "Airplane Hangar", href: "/airplane-hangar" },
-  { label: "GrassMac & Turf", href: "/grassmac" },
+  { label: "Artificial Turf", href: "/artificial-turf" },
 ]
 
 const areaLinks = [

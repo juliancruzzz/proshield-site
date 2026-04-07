@@ -15,8 +15,12 @@ import { ScrollReveal } from "@/components/ui/scroll-reveal"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "VubaStone Resin-Bound Stone | Certified Installers Las Vegas | ProShield Epoxy",
+  title: "VubaStone Resin-Bound Stone Las Vegas | ProShield Epoxy",
   description: "VubaStone certified installers in Las Vegas. Resin-bound Spanish marble for driveways, patios, and pool decks. 850 L/min drainage, UV-stable. Free estimates.",
+  openGraph: {
+    url: "https://proshieldepoxy.com/vubastone",
+    images: ["/images/vubastone/vubastone-driveway-craftsman.webp"],
+  },
   alternates: {
     canonical: "/vubastone",
   },
@@ -97,8 +101,8 @@ export default function VubaStonePage() {
       {/* Hero — hangar-style image background */}
       <PageHero
         badge="Vuba Stone Certified Installers — Las Vegas"
-        title="Resin-Bound"
-        highlight="Stone Surfaces"
+        title="VubaStone Resin-Bound Stone"
+        highlight="Las Vegas"
         subtitle="Natural Spanish marble bound in UV-stable polyurethane resin. Fully permeable, color-stable, and engineered to last. The premium outdoor surface for driveways, patios, pool decks, and walkways."
         backgroundImage="/images/vubastone/vubastone-driveway-stone-columns.webp"
         backgroundAlt="VubaStone resin-bound stone driveway with grand stone column entrance"

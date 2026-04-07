@@ -13,8 +13,12 @@ import { RelatedServices } from "@/components/sections/related-services"
 import { CtaSection } from "@/components/sections/cta-section"
 
 export const metadata: Metadata = {
-  title: "ProFlake Epoxy System Las Vegas | ProShield Epoxy",
-  description: "ProFlake epoxy system with 150+ Torginol color blends. UV-stable, chemical and hot tire resistant. 1-day installation for qualifying residential garages. Las Vegas area.",
+  title: "ProFlake Garage Floor Coating Las Vegas | Epoxy Alternative | ProShield",
+  description: "ProFlake polyurea flake system — the upgrade from epoxy. 150+ Torginol color blends, UV-stable polyaspartic topcoat, hot tire & chemical resistant. 1-day install in Las Vegas.",
+  openGraph: {
+    url: "https://proshieldepoxy.com/proflake",
+    images: ["/images/proflake/flake-garage-residential.webp"],
+  },
   alternates: {
     canonical: "/proflake",
   },
@@ -22,8 +26,8 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "What makes ProFlake different from other epoxy systems?",
-    a: "ProFlake is the only system that uses a polyaspartic topcoat prominently, delivering UV stability and chemical resistance standard epoxy can't match. Combined with 150+ Torginol color options and decorative chip broadcast, it's our most customizable and durable residential garage solution.",
+    q: "What makes ProFlake different from epoxy?",
+    a: "ProFlake uses a polyurea basecoat instead of epoxy, topped with a polyaspartic clear coat — delivering UV stability, chemical resistance, and hot tire performance that standard epoxy can't match. Combined with 150+ Torginol color options and full-broadcast decorative chip, it's our most customizable and durable residential garage solution.",
   },
   {
     q: "What is polyaspartic topcoat and why does it matter?",
@@ -77,11 +81,11 @@ export default function ProFlakePage() {
       />
       <PageHero
         badge="Our Most Popular System"
-        title="ProFlake."
-        highlight="Customizable Durability."
-        subtitle="The ultimate garage floor system. 150+ Torginol color blends, polyaspartic topcoat, and 1-day installation for qualifying residential garages in Las Vegas."
+        title="ProFlake Floors."
+        highlight="Las Vegas Garage Coating"
+        subtitle="The upgrade from epoxy. Polyurea basecoat, polyaspartic topcoat, 150+ Torginol color blends, and 1-day installation for qualifying residential garages in Las Vegas."
         backgroundImage="/images/proflake/flake-garage-porsche-bikes.webp"
-        backgroundAlt="Garage with ProFlake epoxy flake floor coating and motorcycles"
+        backgroundAlt="Garage with ProFlake flake floor coating and motorcycles"
       />
 
       <ProFlakeStats />

@@ -40,7 +40,7 @@ export function PolishingProcess() {
   const current = steps[activeStep]
 
   return (
-    <section className="section-gray py-10 sm:py-16 lg:py-24">
+    <section className="section-white py-10 sm:py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-14">

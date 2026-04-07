@@ -2,12 +2,12 @@
   "redirects": [
     {
       "source": "/garage-floor-coating-services-las-vegas",
-      "destination": "/services",
+      "destination": "/areas/garage",
       "permanent": true
     },
     {
       "source": "/garage-floor-coating-services-las-vegas/",
-      "destination": "/services",
+      "destination": "/areas/garage",
       "permanent": true
     },
     {
@@ -88,6 +88,26 @@
     {
       "source": "/gallery-epoxy-flooring-las-vegas/",
       "destination": "/gallery",
+      "permanent": true
+    },
+    {
+      "source": "/turf",
+      "destination": "/artificial-turf",
+      "permanent": true
+    },
+    {
+      "source": "/turf/",
+      "destination": "/artificial-turf",
+      "permanent": true
+    },
+    {
+      "source": "/grassmac",
+      "destination": "/artificial-turf",
+      "permanent": true
+    },
+    {
+      "source": "/grassmac/",
+      "destination": "/artificial-turf",
       "permanent": true
     }
   ],

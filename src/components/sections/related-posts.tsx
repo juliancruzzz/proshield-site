@@ -14,6 +14,12 @@ interface RelatedPostsProps {
 
 // All blog posts with metadata
 const ALL_POSTS: Record<string, Omit<RelatedPost, 'href'> & { slug: string }> = {
+  'best-pool-deck-coatings-las-vegas': {
+    slug: 'best-pool-deck-coatings-las-vegas',
+    title: 'Best Pool Deck Coatings for Las Vegas Heat: 2026 Guide',
+    description: 'Compare cool deck, knockdown texture, and acrylic overlays with real costs.',
+    date: 'April 6, 2026',
+  },
   'epoxy-garage-floor-cost-las-vegas': {
     slug: 'epoxy-garage-floor-cost-las-vegas',
     title: 'Epoxy Garage Floor Cost in Las Vegas: 2026 Pricing Guide',
@@ -49,6 +55,9 @@ const TOPIC_GROUPS = {
   ],
   polishedConcrete: [
     'polished-concrete-vs-epoxy',
+  ],
+  poolDeck: [
+    'best-pool-deck-coatings-las-vegas',
   ],
 }
 

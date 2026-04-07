@@ -14,8 +14,12 @@ import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Concrete Overlay & Resurfacing | Las Vegas | ProShield Epoxy",
-  description: "Concrete overlay and resurfacing in Las Vegas. Transform cracked, stained concrete without tear-out. Stamped, stenciled, and decorative overlays. Free estimates.",
+  description: "Concrete overlay and resurfacing in Las Vegas. Transform cracked concrete without tear-out. Stamped, stenciled, and decorative overlays. Free estimates.",
   keywords: "concrete overlay Las Vegas, concrete resurfacing, stamped concrete overlay, decorative concrete overlay, concrete polishing",
+  openGraph: {
+    url: "https://proshieldepoxy.com/concrete-overlay",
+    images: ["/images/concrete-overlay/concrete-overlay-commercial-palms.webp"],
+  },
   alternates: {
     canonical: "/concrete-overlay",
   },
@@ -67,8 +71,8 @@ export default function ConcreteOverlayPage() {
 
       <PageHero
         badge="Concrete Overlay & Resurfacing"
-        title="Transform Your"
-        highlight="Existing Concrete"
+        title="Concrete Overlay & Resurfacing"
+        highlight="Las Vegas"
         subtitle="No demolition required. Stamped, stenciled, or smooth finishes sealed with polyaspartic topcoat. For driveways, patios, pool decks, walkways, and more."
         backgroundImage="/images/cool-deck/pool-deck-hero.webp"
         backgroundAlt="Stamped concrete overlay around pool deck and patio area"

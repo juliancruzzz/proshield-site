@@ -1,19 +1,33 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { PageHero } from "@/components/sections/page-hero"
+import { Breadcrumbs } from "@/components/sections/breadcrumbs"
 import { CtaSection } from "@/components/sections/cta-section"
 import { ArrowRight, Calendar } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Blog — Flooring Tips, Guides & Industry Insights | ProShield Epoxy",
+  title: "Flooring Blog | Tips & Guides | ProShield Epoxy",
   description:
-    "Expert flooring guides from ProShield Epoxy — epoxy vs. polyaspartic, garage floor coatings, pricing, and more. Las Vegas flooring tips from working professionals.",
+    "Flooring guides from ProShield Epoxy — epoxy vs. polyaspartic, garage coatings, pricing, and more. Las Vegas flooring tips from professionals.",
   alternates: {
     canonical: "/blog",
+  },
+  openGraph: {
+    url: "https://proshieldepoxy.com/blog",
+    images: ["/og-image.webp"],
   },
 }
 
 const posts = [
+  {
+    slug: "best-pool-deck-coatings-las-vegas",
+    title: "Best Pool Deck Coatings for Las Vegas Heat: 2026 Guide",
+    excerpt:
+      "Uncoated pool decks reach 170°F in Las Vegas summers. Compare cool deck, knockdown texture, acrylic overlays, and more — with real costs ($6–$15/sq ft), lifespan data, and maintenance schedules.",
+    date: "April 6, 2026",
+    category: "Pool Deck Coatings",
+    image: "/images/cool-deck/cool-deck-pool-spa-vegas.webp",
+  },
   {
     slug: "epoxy-garage-floor-cost-las-vegas",
     title: "Epoxy Garage Floor Cost in Las Vegas: 2026 Pricing Guide",
@@ -30,7 +44,7 @@ const posts = [
       "Both go on garage floors. Both look great. But epoxy and polyaspartic are different chemistries with different strengths. Here's what actually matters when choosing between them for your Las Vegas garage.",
     date: "April 1, 2026",
     category: "Garage Floors",
-    image: "/images/proflake/flake-garage-porsche-bikes.webp",
+    image: "/images/proflake/flake-garage-wide-clean.webp",
   },
   {
     slug: "hot-tire-pickup-prevention-garage-floor",
@@ -48,7 +62,7 @@ const posts = [
       "Both are excellent commercial flooring solutions, but they solve different problems. Compare cost, lifespan, maintenance, and 25-year total cost of ownership to find the right fit.",
     date: "April 4, 2026",
     category: "Flooring Comparison",
-    image: "/images/metallic/metallic-epoxy-garage.webp",
+    image: "/images/concrete-polishing/polished-floor-showroom.webp",
   },
 ]
 
@@ -61,6 +75,8 @@ export default function BlogPage() {
         highlight="Expert Guides"
         subtitle="Practical advice from the crew that installs floors every day. No fluff — just what you need to know before, during, and after your flooring project."
       />
+
+      <Breadcrumbs items={[{ label: "Blog" }]} />
 
       <section className="section-white py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

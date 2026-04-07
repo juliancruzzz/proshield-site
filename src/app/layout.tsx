@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/footer"
 import { StickyCta } from "@/components/layout/sticky-cta"
 import { ChatbotWrapper } from "@/components/ui/chatbot-wrapper"
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const spaceGrotesk = localFont({
   src: [
@@ -77,6 +78,7 @@ export const metadata: Metadata = {
       "Professional floor coatings for garages, commercial spaces, and more. Metallic epoxy, flake systems, VubaStone, and specialty services in Las Vegas.",
     images: ["/og-image.webp"],
     type: "website",
+    url: "https://proshieldepoxy.com",
   },
   twitter: {
     card: "summary_large_image",
@@ -96,16 +98,40 @@ const structuredData = {
   name: "ProShield Epoxy",
   description:
     "Professional floor coatings for residential and commercial spaces in the Las Vegas metro. Metallic epoxy, flake systems, VubaStone, concrete polishing, airplane hangar flooring, and more.",
-  telephone: process.env.NEXT_PUBLIC_PHONE || "",
+  telephone: "702-728-5484",
   email: "info@proshieldepoxy.com",
-  areaServed: process.env.NEXT_PUBLIC_CITY || "",
+  url: "https://proshieldepoxy.com",
   priceRange: "$$",
-  image: `${process.env.NEXT_PUBLIC_SITE_URL || "https://proshieldepoxy.com"}/og-image.webp`,
+  image: "https://proshieldepoxy.com/og-image.webp",
   address: {
     "@type": "PostalAddress",
-    addressLocality: process.env.NEXT_PUBLIC_CITY || "",
-    addressRegion: process.env.NEXT_PUBLIC_STATE || "",
+    addressLocality: "Las Vegas",
+    addressRegion: "NV",
   },
+  areaServed: "Las Vegas",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "43",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "17:00",
+    },
+  ],
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "36.1699",
+    longitude: "-115.1398",
+  },
+  sameAs: [
+    "https://www.facebook.com/p/ProShield-Epoxy-100089795168616/",
+    "https://www.instagram.com/proshieldepoxy/",
+    "https://www.yelp.com/biz/proshield-epoxy-las-vegas",
+  ],
 }
 
 export default function RootLayout({
@@ -122,6 +148,17 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#111C2E" />
         <link rel="preconnect" href="https://web3forms.com" />
+        <link rel="preconnect" href="https://api.web3forms.com" />
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KGDCHW6C');`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -130,12 +167,22 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-white text-text-primary antialiased">
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KGDCHW6C"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
         <StickyCta />
         <ChatbotWrapper />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

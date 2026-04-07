@@ -14,8 +14,12 @@ import { ScrollReveal } from "@/components/ui/scroll-reveal"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Metallic Epoxy Flooring Las Vegas | Custom Designer Floors | ProShield Epoxy",
-  description: "Custom metallic epoxy floors in Las Vegas for luxury showrooms, residences, and designer spaces. One-of-a-kind 3D liquid-metal finishes. Free design consultation.",
+  title: "Metallic Epoxy Flooring Las Vegas | ProShield Epoxy",
+  description: "Custom metallic epoxy floors for luxury showrooms, residences, and designer spaces. Unique 3D liquid-metal finishes in Las Vegas. Free design consultation.",
+  openGraph: {
+    url: "https://proshieldepoxy.com/metallic-epoxy",
+    images: ["/images/metallic/metallic-epoxy-blue-ocean-garage.webp"],
+  },
   alternates: {
     canonical: "/metallic-epoxy",
   },
@@ -100,8 +104,8 @@ export default function MetallicEpoxyPage() {
       {/* Hero with image background */}
       <PageHero
         badge="Custom Luxury Flooring"
-        title="Metallic Epoxy"
-        highlight="Floors"
+        title="Metallic Epoxy Floors"
+        highlight="Las Vegas"
         subtitle="Hand-crafted liquid-metal floors with real depth and movement. Every pour is an original — designed, blended, and installed specifically for your Las Vegas space."
         ctaText="Book a Design Consultation"
         backgroundImage="/images/gallery/metallic-epoxy-vegas-room.webp"

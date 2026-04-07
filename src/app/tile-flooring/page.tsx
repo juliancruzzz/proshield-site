@@ -12,9 +12,13 @@ import { TileBenefits } from "@/components/sections/tile-benefits"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Tile Flooring Installation | ProShield Epoxy",
+  title: "Tile Flooring Installation Las Vegas | ProShield Epoxy",
   description:
-    "Professional tile flooring installation in Las Vegas — porcelain, ceramic, and natural stone tile for kitchens, bathrooms, entryways, and commercial spaces.",
+    "Professional tile flooring installation in Las Vegas — porcelain, ceramic, and natural stone tile for kitchens, bathrooms, and commercial spaces.",
+  openGraph: {
+    url: "https://proshieldepoxy.com/tile-flooring",
+    images: ["/images/tile/tile-hexagon.webp"],
+  },
   alternates: {
     canonical: "/tile-flooring",
   },
@@ -61,8 +65,8 @@ export default function TileFlooringPage() {
       />
       <PageHero
         badge="Tile Installation"
-        title="Professional"
-        highlight="Tile Flooring"
+        title="Tile Flooring Installation"
+        highlight="Las Vegas"
         subtitle="Porcelain, ceramic, and natural stone tile — professionally installed for kitchens, bathrooms, entryways, and commercial spaces throughout Las Vegas."
         backgroundImage="/images/tile/tile-luxury-interior.webp"
         backgroundAlt="Luxury marble tile flooring in a modern bathroom interior"

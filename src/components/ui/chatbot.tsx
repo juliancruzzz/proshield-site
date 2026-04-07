@@ -58,8 +58,8 @@ const SERVICES: Record<string, Service> = {
     best: "private/commercial hangars, aviation facilities",
   },
   turf: {
-    name: "GrassMac & Turf Installation",
-    desc: "Engineered permeable base (GrassMac) beneath artificial grass + professional turf installation. Multi-day install.",
+    name: "Artificial Turf Installation",
+    desc: "Engineered permeable base system beneath premium artificial grass + professional installation. Multi-day install.",
     best: "backyards, pet areas, play areas, landscaping",
   },
   commercial: {

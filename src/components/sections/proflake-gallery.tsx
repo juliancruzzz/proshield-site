@@ -7,7 +7,7 @@ import { ArrowRight, Expand, X } from "lucide-react"
 const photos = [
   {
     src: "/images/proflake/flake-garage-porsche-bikes.webp",
-    alt: "ProFlake epoxy motorcycle showroom garage",
+    alt: "ProFlake motorcycle showroom garage floor",
     label: "Motorcycle Showroom",
     tag: "Garage",
   },

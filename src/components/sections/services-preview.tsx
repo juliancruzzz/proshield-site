@@ -29,9 +29,9 @@ const services = [
     gradient: "from-amber-600/20 to-yellow-700/10",
   },
   {
-    title: "GrassMac & Turf",
+    title: "Artificial Turf",
     description: "Engineered permeable base beneath premium artificial grass.",
-    href: "/grassmac",
+    href: "/artificial-turf",
     gradient: "from-green-600/20 to-emerald-700/10",
   },
   {

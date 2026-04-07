@@ -16,11 +16,15 @@ import { GrassMacProcess } from "@/components/sections/grassmac-process"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "GrassMac Turf System — Premium Drainable Artificial Turf Base | ProShield Epoxy",
+  title: "Artificial Turf Installation Las Vegas | ProShield Epoxy",
   description:
-    "Professional GrassMac artificial turf installation in Las Vegas. Vuba resin-bound base with instant drainage, pet-friendly design, and 100% recycled materials. No shifting, no sinking, no odor.",
+    "Professional artificial turf installation in Las Vegas with Vuba resin-bound base. Instant drainage, pet-friendly, 100% recycled materials, and odor control.",
+  openGraph: {
+    url: "https://proshieldepoxy.com/artificial-turf",
+    images: ["/images/grassmac/dog-on-grass.webp"],
+  },
   alternates: {
-    canonical: "/grassmac",
+    canonical: "/artificial-turf",
   },
 }
 
@@ -77,8 +81,8 @@ export default function GrassMacPage() {
       />
       <PageHero
         badge="Vuba GrassMac System"
-        title="Premium Turf."
-        highlight="Engineered Base."
+        title="Artificial Turf Installation"
+        highlight="Las Vegas"
         subtitle="The next generation of artificial turf installation. Eco-friendly, resin-bound base that never shifts, never sinks, and drains instantly — including pet waste."
         backgroundImage="/images/grassmac/turf-backyard-pool.webp"
         backgroundAlt="Lush artificial turf backyard with pool and GrassMac engineered base"
@@ -86,7 +90,7 @@ export default function GrassMacPage() {
 
       <GrassMacStats />
 
-      <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: "GrassMac" }]} />
+      <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: "Artificial Turf" }]} />
 
       <GrassMacIntro />
 
@@ -110,7 +114,7 @@ export default function GrassMacPage() {
               Common Questions
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              GrassMac FAQ
+              Artificial Turf FAQ
             </h2>
           </div>
           <div className="max-w-3xl mx-auto">
@@ -121,13 +125,13 @@ export default function GrassMacPage() {
               href="/contact"
               className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-white hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
             >
-              Get a GrassMac Quote <ArrowRight className="h-4 w-4" />
+              Get an Artificial Turf Quote <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>
       </section>
 
-      <RelatedServices variant="gray" currentService="grassmac" />
+      <RelatedServices variant="gray" currentService="artificial-turf" />
 
       <CtaSection />
     </>

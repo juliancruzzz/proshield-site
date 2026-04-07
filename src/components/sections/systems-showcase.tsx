@@ -48,10 +48,10 @@ const systems = [
     locations: ["Exterior"],
   },
   {
-    title: "Turf & GrassMac",
+    title: "Artificial Turf",
     description:
-      "Premium artificial turf and GrassMac resin-bound systems for lawns, pet areas, and putting greens.",
-    href: "/turf",
+      "Premium artificial turf with engineered resin-bound base systems for lawns, pet areas, and putting greens.",
+    href: "/artificial-turf",
     image: "/images/grassmac/dog-on-grass.webp",
     locations: ["Exterior"],
   },

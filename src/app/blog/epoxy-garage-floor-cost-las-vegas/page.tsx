@@ -7,11 +7,15 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "Epoxy Garage Floor Cost in Las Vegas: 2026 Pricing Guide | ProShield Epoxy",
+    "Epoxy Garage Floor Cost Las Vegas (2026) | ProShield",
   description:
     "Professional epoxy garage floor coating in Las Vegas costs $3.50–$12 per sq ft. See 2026 pricing by system type, garage size, and what affects your total cost.",
   alternates: {
     canonical: "/blog/epoxy-garage-floor-cost-las-vegas",
+  },
+  openGraph: {
+    url: "https://proshieldepoxy.com/blog/epoxy-garage-floor-cost-las-vegas",
+    images: ["/images/proflake/flake-garage-residential.webp"],
   },
 }
 
@@ -21,13 +25,88 @@ export default function EpoxyGarageFloorCostPost() {
     description: "Professional epoxy garage floor coating in Las Vegas costs $3.50–$12 per sq ft. See 2026 pricing by system type, garage size, and what affects your total cost.",
     slug: "epoxy-garage-floor-cost-las-vegas",
     datePublished: "2026-04-03",
+    image: "https://proshieldepoxy.com/images/proflake/flake-garage-residential.webp",
   })
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does it cost to epoxy a 2-car garage in Las Vegas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A professional flake epoxy system for a standard 2-car garage (400–500 sq ft) typically costs $1,800–$3,000 in Las Vegas. Metallic epoxy runs higher at $3,500–$5,500. Final price depends on concrete condition and repairs needed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is epoxy flooring worth the cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When you compare a professional system lasting 15–20+ years to a DIY kit lasting 1–3 years, the long-term cost per year is actually lower with professional installation. A $2,500 system that lasts 20 years costs $125 per year. A $200 kit you redo every 2 years costs $100 per year in materials alone — without accounting for your time and the inevitable frustration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does the installation take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our standard residential ProFlake flake garage floor systems are often completed in 1 day, subject to substrate condition, weather, and repair requirements. Metallic systems typically require 2–3 days. You can walk on a ProFlake floor after 24 hours and park on it after 48 hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the price include concrete repair?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Minor crack filling and small repairs are usually included in the base quote. Extensive damage, moisture mitigation, or removal of old coatings may be quoted separately. We'll identify everything during the on-site evaluation so there are no surprises."
+        }
+      }
+    ]
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://proshieldepoxy.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://proshieldepoxy.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": "Epoxy Garage Floor Cost in Las Vegas", "item": "https://proshieldepoxy.com/blog/epoxy-garage-floor-cost-las-vegas" }
+    ]
+  }
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Julian Cruz",
+            "jobTitle": "Founder",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "ProShield Epoxy",
+              "url": "https://proshieldepoxy.com"
+            },
+            "url": "https://proshieldepoxy.com/about"
+          })
+        }}
       />
       <section className="section-white pt-32 pb-12 lg:pt-40 lg:pb-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -74,7 +153,34 @@ export default function EpoxyGarageFloorCostPost() {
               requesting a quote.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            {/* Table of Contents */}
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
+              <p className="font-heading font-semibold text-base text-gray-900 mb-3">In This Article</p>
+              <nav>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <a href="#cost-by-coating-system" className="text-accent hover:underline">Cost by Coating System</a>
+                  </li>
+                  <li>
+                    <a href="#what-affects-your-total-price" className="text-accent hover:underline">What Affects Your Total Price?</a>
+                  </li>
+                  <li>
+                    <a href="#diy-kits-vs-professional-installation" className="text-accent hover:underline">DIY Kits vs. Professional Installation</a>
+                  </li>
+                  <li>
+                    <a href="#why-las-vegas-pricing-can-be-different" className="text-accent hover:underline">Why Las Vegas Pricing Can Be Different</a>
+                  </li>
+                  <li>
+                    <a href="#how-to-get-an-accurate-quote" className="text-accent hover:underline">How to Get an Accurate Quote</a>
+                  </li>
+                  <li>
+                    <a href="#frequently-asked-questions" className="text-accent hover:underline">Frequently Asked Questions</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <h2 id="cost-by-coating-system" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Cost by Coating System
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -104,7 +210,7 @@ export default function EpoxyGarageFloorCostPost() {
                 <tbody className="divide-y divide-gray-200">
                   <tr>
                     <td className="px-5 py-3 text-gray-700 font-medium">
-                      ProFlake (Epoxy + Polyaspartic)
+                      <Link href="/proflake" className="text-accent hover:underline font-medium">ProFlake</Link> (Epoxy + Polyaspartic)
                     </td>
                     <td className="px-5 py-3 text-gray-600">$3.50&ndash;$6</td>
                     <td className="px-5 py-3 text-gray-600">
@@ -114,7 +220,7 @@ export default function EpoxyGarageFloorCostPost() {
                   </tr>
                   <tr className="bg-gray-50/50">
                     <td className="px-5 py-3 text-gray-700 font-medium">
-                      Metallic Epoxy
+                      <Link href="/metallic-epoxy" className="text-accent hover:underline font-medium">Metallic Epoxy</Link>
                     </td>
                     <td className="px-5 py-3 text-gray-600">
                       $7&ndash;$12
@@ -136,7 +242,7 @@ export default function EpoxyGarageFloorCostPost() {
                   </tr>
                   <tr className="bg-gray-50/50">
                     <td className="px-5 py-3 text-gray-700 font-medium">
-                      Polished Concrete
+                      <Link href="/concrete-polishing" className="text-accent hover:underline font-medium">Polished Concrete</Link>
                     </td>
                     <td className="px-5 py-3 text-gray-600">$6&ndash;$12</td>
                     <td className="px-5 py-3 text-gray-600">
@@ -153,7 +259,7 @@ export default function EpoxyGarageFloorCostPost() {
               requirements.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="what-affects-your-total-price" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               What Affects Your Total Price?
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -183,13 +289,13 @@ export default function EpoxyGarageFloorCostPost() {
             </p>
             <p className="text-gray-600 leading-relaxed">
               <strong>Number of coats and topcoat type</strong> also play a
-              role. Our ProFlake system includes a polyurea base coat, full
+              role. Our <Link href="/proflake" className="text-accent hover:underline font-medium">ProFlake system</Link> includes a polyurea base coat, full
               decorative flake broadcast, and a polyaspartic topcoat. Systems
               with additional coats or premium topcoat options will be at the
               higher end of the range.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="diy-kits-vs-professional-installation" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               DIY Kits vs. Professional Installation
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -292,7 +398,7 @@ export default function EpoxyGarageFloorCostPost() {
               maintenance, and exclusions in the written warranty.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="why-las-vegas-pricing-can-be-different" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Why Las Vegas Pricing Can Be Different
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -313,7 +419,7 @@ export default function EpoxyGarageFloorCostPost() {
               topcoats.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="how-to-get-an-accurate-quote" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               How to Get an Accurate Quote
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -332,7 +438,7 @@ export default function EpoxyGarageFloorCostPost() {
               system with the shortest lifespan.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="frequently-asked-questions" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Frequently Asked Questions
             </h2>
 
@@ -397,6 +503,30 @@ export default function EpoxyGarageFloorCostPost() {
           </div>
         </div>
       </article>
+
+      {/* Author Bio */}
+      <section className="section-white pb-12 lg:pb-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center">
+                <span className="text-2xl font-bold text-accent">JC</span>
+              </div>
+              <div>
+                <h3 className="font-heading font-semibold text-lg text-gray-900">Julian Cruz</h3>
+                <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+                  Julian is the founder of ProShield Epoxy, a professional floor coating company
+                  serving the Las Vegas metro area. He specializes in residential garage coatings,
+                  commercial resinous flooring, and specialty systems including metallic epoxy,
+                  VubaStone, and concrete polishing. Every article is written from hands-on
+                  installation experience — not recycled from the internet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <RelatedPosts currentSlug="epoxy-garage-floor-cost-las-vegas" />
 

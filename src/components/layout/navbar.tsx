@@ -38,7 +38,7 @@ const systemGroups = [
       { label: "Cool Deck / Patio", href: "/cool-deck" },
       { label: "Paver Sealing", href: "/paver-sealing" },
       { label: "VubaStone", href: "/vubastone" },
-      { label: "GrassMac & Turf", href: "/grassmac" },
+      { label: "Artificial Turf", href: "/artificial-turf" },
     ],
   },
 ]

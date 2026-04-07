@@ -57,8 +57,13 @@ const allServices: Record<string, ServiceItem> = {
     description: "Protect and enhance pavers with professional sealing.",
   },
   grassmac: {
-    title: "GrassMac Turf",
-    href: "/grassmac",
+    title: "Artificial Turf",
+    href: "/artificial-turf",
+    description: "Engineered permeable base for artificial grass.",
+  },
+  "artificial-turf": {
+    title: "Artificial Turf",
+    href: "/artificial-turf",
     description: "Engineered permeable base for artificial grass.",
   },
   "plank-flooring": {
@@ -92,6 +97,7 @@ const serviceGroups = {
     "cool-deck",
     "paver-sealing",
     "grassmac",
+    "artificial-turf",
   ],
   specialty: [
     "airplane-hangar",

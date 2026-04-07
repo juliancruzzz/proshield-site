@@ -109,7 +109,7 @@ export function BeforeAfterSlider() {
               {/* "After" image — full background (finished floor) */}
               <img
                 src="/images/proflake/flake-garage-after-coated.webp"
-                alt=""
+                alt="Finished garage floor with ProFlake epoxy coating"
                 className="absolute inset-0 h-full w-full object-cover"
               />
 
@@ -120,7 +120,7 @@ export function BeforeAfterSlider() {
               >
                 <img
                   src="/images/proflake/flake-garage-before-concrete.webp"
-                  alt=""
+                  alt="Raw concrete garage floor before ProFlake epoxy installation"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
               </div>

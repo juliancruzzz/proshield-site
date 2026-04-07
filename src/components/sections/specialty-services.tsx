@@ -30,12 +30,12 @@ const specialties = [
     href: "/paver-sealing",
   },
   {
-    title: "GrassMac & Turf Installation",
+    title: "Artificial Turf Installation",
     badge: "Turf",
     description:
       "Premium artificial turf for yards, pet areas, putting greens, and commercial landscapes. Low maintenance, year-round green.",
     image: "/images/grassmac/turf-backyard-pool.webp",
-    href: "/grassmac",
+    href: "/artificial-turf",
   },
 ]
 

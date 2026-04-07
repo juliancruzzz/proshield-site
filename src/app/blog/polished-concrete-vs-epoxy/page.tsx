@@ -7,11 +7,15 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "Polished Concrete vs. Epoxy Flooring: Which Is Right for Your Space? | ProShield Epoxy Blog",
+    "Polished Concrete vs Epoxy Flooring | ProShield Epoxy",
   description:
-    "Compare polished concrete and epoxy flooring — installation, durability, cost, maintenance, and long-term value. Which system wins for your warehouse, retail, garage, or office? Las Vegas flooring guide.",
+    "Polished concrete vs epoxy flooring comparison — durability, cost, maintenance, and total cost of ownership. Las Vegas flooring guide from professional installer.",
   alternates: {
     canonical: "/blog/polished-concrete-vs-epoxy",
+  },
+  openGraph: {
+    url: "https://proshieldepoxy.com/blog/polished-concrete-vs-epoxy",
+    images: ["/images/concrete-polishing/polished-floor-showroom.webp"],
   },
 }
 
@@ -21,13 +25,104 @@ export default function PolishedConcreteVsEpoxyPost() {
     description: "Compare polished concrete and epoxy flooring — installation, durability, cost, maintenance, and long-term value. Which system wins for your warehouse, retail, garage, or office? Las Vegas flooring guide.",
     slug: "polished-concrete-vs-epoxy",
     datePublished: "2026-03-18",
+    image: "https://proshieldepoxy.com/images/concrete-polishing/polished-floor-showroom.webp",
   })
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which is more durable: polished concrete or epoxy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both are durable, but in different ways. Polished concrete is harder and lasts longer without maintenance (25–40+ years). Epoxy is more flexible and chemically protected but may need topcoat refresh after 10–15 years. Polished concrete is the more durable choice for permanence; epoxy is more resilient to chemical damage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is cheaper: polished concrete or epoxy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Upfront, polished concrete runs $6–$12/sq ft compared to $3.50–$6+/sq ft for epoxy. Over 25 years, polished concrete is cheaper because you never pay for recoats. For garages and smaller residential projects, epoxy's faster installation and design options often win despite higher total cost."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you polish over old epoxy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. If you want to switch from epoxy to polished concrete, you must remove the epoxy coating first through mechanical methods (grinding, shot blasting, scarification). Only then can polishing begin. This is why long-term planning is important—choose a system that fits your vision for the next 25 years."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is better for a garage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For residential garages, epoxy wins—specifically our ProFlake system. It installs in one day, comes in 150+ color blends, resists hot tire pickup, and won't yellow under the desert sun. The base coat is epoxy, the topcoat is polyaspartic, which gives you durability, beauty, and UV stability combined. All qualifying residential systems come with a limited lifetime warranty."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does polished concrete take to install?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Polished concrete is not a one-day process. Typical timelines are 3–7 days depending on concrete condition, square footage, and site accessibility. Each grinding stage takes time, and the densification chemical must be allowed to cure properly. Rushing the process compromises the final finish."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if my concrete has cracks or damage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For polished concrete, cracks in the concrete remain visible after polishing (though they're less pronounced). Epoxy systems can fill and hide cracks better because the coating builds up over the surface. If your concrete has significant damage, epoxy may be the better choice unless you're willing to repair the concrete before polishing."
+        }
+      }
+    ]
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://proshieldepoxy.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://proshieldepoxy.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": "Polished Concrete vs. Epoxy", "item": "https://proshieldepoxy.com/blog/polished-concrete-vs-epoxy" }
+    ]
+  }
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Julian Cruz",
+            "jobTitle": "Founder",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "ProShield Epoxy",
+              "url": "https://proshieldepoxy.com"
+            },
+            "url": "https://proshieldepoxy.com/about"
+          })
+        }}
       />
       <section className="section-white pt-32 pb-12 lg:pt-40 lg:pb-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -51,7 +146,7 @@ export default function PolishedConcreteVsEpoxyPost() {
           </div>
           <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
-              <Calendar className="h-3.5 w-3.5" /> April 4, 2026
+              <Calendar className="h-3.5 w-3.5" /> March 18, 2026
             </span>
             <span className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" /> 10 min read
@@ -74,12 +169,45 @@ export default function PolishedConcreteVsEpoxyPost() {
               system for your space.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            {/* Table of Contents */}
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
+              <p className="font-heading font-semibold text-base text-gray-900 mb-3">In This Article</p>
+              <nav>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <a href="#how-they-work-the-fundamental-difference" className="text-accent hover:underline">How They Work: The Fundamental Difference</a>
+                  </li>
+                  <li>
+                    <a href="#head-to-head-comparison" className="text-accent hover:underline">Head-to-Head Comparison</a>
+                  </li>
+                  <li>
+                    <a href="#when-to-choose-polished-concrete" className="text-accent hover:underline">When to Choose Polished Concrete</a>
+                  </li>
+                  <li>
+                    <a href="#when-to-choose-epoxy" className="text-accent hover:underline">When to Choose Epoxy</a>
+                  </li>
+                  <li>
+                    <a href="#the-cost-comparison-nobody-talks-about" className="text-accent hover:underline">The Cost Comparison Nobody Talks About</a>
+                  </li>
+                  <li>
+                    <a href="#can-you-have-both" className="text-accent hover:underline">Can You Have Both?</a>
+                  </li>
+                  <li>
+                    <a href="#las-vegas-considerations" className="text-accent hover:underline">Las Vegas Considerations</a>
+                  </li>
+                  <li>
+                    <a href="#frequently-asked-questions" className="text-accent hover:underline">Frequently Asked Questions</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <h2 id="how-they-work-the-fundamental-difference" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               How They Work: The Fundamental Difference
             </h2>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
-              Polished Concrete
+              <Link href="/concrete-polishing" className="text-accent hover:underline font-medium">Polished Concrete</Link>
             </h3>
             <p className="text-gray-600 leading-relaxed">
               Polished concrete is mechanical refinement of the concrete surface
@@ -101,13 +229,13 @@ export default function PolishedConcreteVsEpoxyPost() {
               preparation (grinding, shot blasting, or scarification). Then a
               primer coat bonds to the concrete, followed by one or more body
               coats for thickness and color, and a topcoat for protection and
-              aesthetics. A residential garage system like our ProFlake includes
+              aesthetics. A residential garage system like our <Link href="/proflake" className="text-accent hover:underline font-medium">ProFlake</Link> includes
               a polyurea base coat with decorative flakes and a polyaspartic
               topcoat for UV stability and fast cure. All layers work together
               to create a durable, sealed surface.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="head-to-head-comparison" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Head-to-Head Comparison
             </h2>
 
@@ -242,7 +370,7 @@ export default function PolishedConcreteVsEpoxyPost() {
               </table>
             </div>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="when-to-choose-polished-concrete" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               When to Choose Polished Concrete
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -273,7 +401,7 @@ export default function PolishedConcreteVsEpoxyPost() {
               </li>
             </ul>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="when-to-choose-epoxy" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               When to Choose Epoxy
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -282,7 +410,7 @@ export default function PolishedConcreteVsEpoxyPost() {
             </p>
             <ul className="list-disc list-inside text-gray-600 leading-relaxed space-y-2">
               <li>
-                <strong>Residential garages</strong>—our ProFlake system combines
+                <strong>Residential garages</strong>—our <Link href="/proflake" className="text-accent hover:underline font-medium">ProFlake system</Link> combines
                 beauty, durability, and one-day installation with polyurea base and
                 polyaspartic topcoat
               </li>
@@ -305,7 +433,7 @@ export default function PolishedConcreteVsEpoxyPost() {
               </li>
             </ul>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="the-cost-comparison-nobody-talks-about" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               The Cost Comparison Nobody Talks About
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -350,7 +478,7 @@ export default function PolishedConcreteVsEpoxyPost() {
               competitive.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="can-you-have-both" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Can You Have Both?
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -379,7 +507,7 @@ export default function PolishedConcreteVsEpoxyPost() {
               durability and performance for each zone of your facility.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="las-vegas-considerations" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Las Vegas Considerations
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -403,7 +531,7 @@ export default function PolishedConcreteVsEpoxyPost() {
               Epoxy Flooring
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              A polyaspartic topcoat (like the one in our ProFlake system)
+              A polyaspartic topcoat (like the one in our <Link href="/proflake" className="text-accent hover:underline font-medium">ProFlake system</Link>)
               excels in Las Vegas. Polyaspartic is UV-stable and won&apos;t
               yellow, making it perfect for the desert sun. It also resists hot
               tire pickup—important for garages and parking areas where hot
@@ -412,7 +540,7 @@ export default function PolishedConcreteVsEpoxyPost() {
               choice for outdoor or semi-outdoor facilities.
             </p>
 
-            <h2 className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
+            <h2 id="frequently-asked-questions" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Frequently Asked Questions
             </h2>
 
@@ -454,8 +582,8 @@ export default function PolishedConcreteVsEpoxyPost() {
               Which is better for a garage?
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              For residential garages, epoxy wins—specifically our ProFlake
-              system. It installs in one day, comes in 150+ color blends,
+              For residential garages, epoxy wins—specifically our <Link href="/proflake" className="text-accent hover:underline font-medium">ProFlake
+              system</Link>. It installs in one day, comes in 150+ color blends,
               resists hot tire pickup, and won&apos;t yellow under the desert
               sun. The base coat is epoxy, the topcoat is polyaspartic, which
               gives you durability, beauty, and UV stability combined. All
@@ -505,6 +633,30 @@ export default function PolishedConcreteVsEpoxyPost() {
           </div>
         </div>
       </article>
+
+      {/* Author Bio */}
+      <section className="section-white pb-12 lg:pb-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center">
+                <span className="text-2xl font-bold text-accent">JC</span>
+              </div>
+              <div>
+                <h3 className="font-heading font-semibold text-lg text-gray-900">Julian Cruz</h3>
+                <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+                  Julian is the founder of ProShield Epoxy, a professional floor coating company
+                  serving the Las Vegas metro area. He specializes in residential garage coatings,
+                  commercial resinous flooring, and specialty systems including metallic epoxy,
+                  VubaStone, and concrete polishing. Every article is written from hands-on
+                  installation experience — not recycled from the internet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <RelatedPosts currentSlug="polished-concrete-vs-epoxy" />
 

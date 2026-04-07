@@ -4,7 +4,12 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 
-export function HangarHero() {
+interface HangarHeroProps {
+  title?: string
+  highlight?: string
+}
+
+export function HangarHero({ title = "Airplane Hangar Floor Coating", highlight = "Las Vegas" }: HangarHeroProps) {
   return (
     <section className="relative pt-24 pb-14 sm:pt-28 sm:pb-16 lg:pt-40 lg:pb-28 overflow-hidden">
       {/* Background image */}
@@ -35,9 +40,9 @@ export function HangarHero() {
           transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           className="mt-3 font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[56px] tracking-tight leading-[1.08] max-w-4xl mx-auto text-text-light"
         >
-          Airplane Hangar
+          {title}
           <br />
-          <span className="text-accent">Floor Coating</span>
+          <span className="text-accent">{highlight}</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

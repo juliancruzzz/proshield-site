@@ -16,7 +16,7 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Paver Sealing & Restoration Las Vegas | ProShield Epoxy",
   description:
-    "Professional paver sealing and restoration in Las Vegas. UV-stable, non-yellowing sealer built for desert heat. Sealing, stripping, re-sanding, stain removal, and color enhancement.",
+    "Professional paver sealing and restoration in Las Vegas — UV-stable, non-yellowing sealer for desert heat. Sealing, re-sanding, color enhancement.",
   keywords: [
     "paver sealing Las Vegas",
     "paver restoration Las Vegas",
@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     "pool deck sealing Las Vegas",
     "driveway paver sealing",
   ],
+  openGraph: {
+    url: "https://proshieldepoxy.com/paver-sealing",
+    images: ["/images/paver-sealing/glossy-brick-paver-sealed.webp"],
+  },
   alternates: {
     canonical: "/paver-sealing",
   },
@@ -92,8 +96,8 @@ export default function PaverSealingPage() {
       {/* Hero */}
       <PageHero
         badge="Paver Sealing & Restoration"
-        title="Your Pavers Deserve"
-        highlight="Better Protection."
+        title="Paver Sealing & Restoration"
+        highlight="Las Vegas"
         subtitle="Professional sealing, restoration, and joint stabilization — UV-stable, non-yellowing, and engineered for Las Vegas desert heat."
         backgroundImage="/images/paver-sealing/paver-driveway-sealed.webp"
         backgroundAlt="Professional sealed paver driveway"

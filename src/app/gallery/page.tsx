@@ -4,6 +4,7 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { X } from "lucide-react"
 import { PageHero } from "@/components/sections/page-hero"
+import { Breadcrumbs } from "@/components/sections/breadcrumbs"
 import { CtaSection } from "@/components/sections/cta-section"
 
 const filters = ["All", "Garage", "Commercial", "Metallic", "Flake", "VubaStone", "Overlay", "Turf", "Hangar"]
@@ -81,6 +82,8 @@ export default function GalleryPage() {
         title="Project Gallery"
         subtitle="Browse completed ProShield installations. Real projects, real results."
       />
+
+      <Breadcrumbs items={[{ label: "Gallery" }]} />
 
       <section className="section-white py-14 sm:py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

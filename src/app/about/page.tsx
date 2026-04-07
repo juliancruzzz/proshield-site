@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { PageHero } from "@/components/sections/page-hero"
+import { Breadcrumbs } from "@/components/sections/breadcrumbs"
 import { CtaSection } from "@/components/sections/cta-section"
 import {
   ShieldCheck,
@@ -19,11 +20,15 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About ProShield Epoxy | Professional Floor Coatings Las Vegas",
+  title: "About ProShield Epoxy | Las Vegas Floor Coatings",
   description:
     "ProShield Epoxy delivers professional-grade floor coatings in Las Vegas. Founded by Julian Cruz — licensed, insured, and committed to quality craftsmanship.",
   alternates: {
     canonical: "/about",
+  },
+  openGraph: {
+    url: "https://proshieldepoxy.com/about",
+    images: ["/og-image.webp"],
   },
 }
 
@@ -66,6 +71,8 @@ export default function AboutPage() {
         highlight="Backed by Results"
         subtitle="ProShield Epoxy is a premium floor coating company founded by Julian Cruz. We prioritize professional-grade materials from trusted U.S. manufacturers where applicable."
       />
+
+      <Breadcrumbs items={[{ label: "About" }]} />
 
       {/* Story Section — no photo, text-forward layout */}
       <section className="section-white py-14 sm:py-20 lg:py-28">
