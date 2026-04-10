@@ -54,7 +54,7 @@ export function Footer() {
             <div className="space-y-4">
               <Link href="/" className="flex items-center">
                 <Image
-                  src="/images/logos/proshield-logo-orange-dark.png"
+                  src="/images/logos/proshield-logo-orange-dark.webp"
                   alt="ProShield Epoxy"
                   width={200}
                   height={32}
@@ -128,7 +128,7 @@ export function Footer() {
                 ))}
               </ul>
 
-              <h3 className="font-heading font-semibold text-xs text-gray-400 mb-4 mt-8 tracking-widest uppercase">
+              <h3 className="font-heading font-semibold text-xs text-gray-600 mb-4 mt-8 tracking-widest uppercase">
                 Service Areas
               </h3>
               <ul className="space-y-2.5">
@@ -144,7 +144,7 @@ export function Footer() {
                 ))}
               </ul>
 
-              <h3 className="font-heading font-semibold text-xs text-gray-400 mb-4 mt-8 tracking-widest uppercase">
+              <h3 className="font-heading font-semibold text-xs text-gray-600 mb-4 mt-8 tracking-widest uppercase">
                 Company
               </h3>
               <ul className="space-y-2.5">

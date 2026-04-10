@@ -4,10 +4,8 @@ import Link from "next/link"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { ArrowRight, MapPin } from "lucide-react"
 import { useRef } from "react"
-import { useMounted } from "@/hooks/use-mounted"
 
 export function Hero() {
-  const mounted = useMounted()
   const sectionRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -31,7 +29,7 @@ export function Hero() {
           loop
           playsInline
           poster="/images/metallic-hero-poster.jpg"
-          preload="auto"
+          preload="none"
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/images/metallic-hero-bg.mp4" type="video/mp4" />
@@ -50,7 +48,7 @@ export function Hero() {
           className="absolute inset-0"
           style={{
             background: `
-              radial-gradient(ellipse at 75% 70%, rgba(231,132,39,0.08) 0%, transparent 50%),
+              radial-gradient(ellipse at 75% 70%, rgba(247,148,29,0.08) 0%, transparent 50%),
               radial-gradient(ellipse at 15% 20%, rgba(93,158,226,0.05) 0%, transparent 40%)
             `,
           }}
@@ -68,43 +66,40 @@ export function Hero() {
         <div className="absolute top-[20%] right-[5%] w-96 h-96 bg-accent/5 rounded-full blur-[150px] animate-drift" />
       </div>
 
-      {/* Main content */}
+      {/* Main content — heading uses CSS animation so it's visible on SSR
+          (no opacity:0 initial state). This is critical for LCP because
+          the h1 is the largest contentful element. With framer-motion
+          initial={{ opacity: 0 }}, the heading was invisible until JS
+          hydrated (~2.5 s on desktop), destroying the LCP score. */}
       <motion.div
         className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-14 sm:pt-32 sm:pb-24 z-10 w-full"
         style={{ y: textY }}
       >
         <div className="max-w-3xl">
-          {/* Headline */}
-          <motion.h1
-            initial={{ opacity: 0, y: 25 }}
-            animate={mounted ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-            className="font-heading font-bold text-4xl sm:text-5xl md:text-7xl lg:text-[76px] text-white leading-[1.08] tracking-[-0.03em]"
+          {/* Headline — visible immediately via CSS animation (LCP-safe) */}
+          <h1
+            className="font-heading font-bold text-4xl sm:text-5xl md:text-7xl lg:text-[76px] text-white leading-[1.08] tracking-[-0.03em] animate-hero-fade-in"
           >
             Professional-Grade
             <br />
             <span className="text-accent">Floor Coatings</span>
             <br />
             <span className="text-sm sm:text-base md:text-lg lg:text-xl text-white/70">Las Vegas</span>
-          </motion.h1>
+          </h1>
 
           {/* Subheading */}
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            animate={mounted ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.25, ease: "easeOut" }}
-            className="mt-6 text-lg sm:text-xl text-white/60 max-w-lg leading-relaxed"
+          <p
+            className="mt-6 text-lg sm:text-xl text-white/60 max-w-lg leading-relaxed animate-hero-fade-in"
+            style={{ animationDelay: "0.15s" }}
           >
             Epoxy, metallic, VubaStone, and polished concrete systems for
             garages, commercial spaces, and beyond.
-          </motion.p>
+          </p>
 
           {/* CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={mounted ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-            className="mt-10 flex flex-col sm:flex-row items-start gap-4"
+          <div
+            className="mt-10 flex flex-col sm:flex-row items-start gap-4 animate-hero-fade-in"
+            style={{ animationDelay: "0.3s" }}
           >
             <Link
               href="/contact"
@@ -119,18 +114,16 @@ export function Hero() {
             >
               View Our Work
             </Link>
-          </motion.div>
+          </div>
 
           {/* Location */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={mounted ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.55, ease: "easeOut" }}
-            className="mt-8 inline-flex items-center gap-2 text-sm text-white/50"
+          <div
+            className="mt-8 inline-flex items-center gap-2 text-sm text-white/50 animate-hero-fade-in"
+            style={{ animationDelay: "0.45s" }}
           >
             <MapPin className="h-3.5 w-3.5 text-accent" />
             Las Vegas Metro &amp; Surrounding Areas
-          </motion.div>
+          </div>
 
         </div>
       </motion.div>

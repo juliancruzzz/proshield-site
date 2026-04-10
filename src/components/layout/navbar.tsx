@@ -223,7 +223,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
             <Image
-              src={scrolled ? "/images/logos/proshield-logo-orange-dark.png" : "/images/logos/proshield-logo-orange.png"}
+              src={scrolled ? "/images/logos/proshield-logo-orange-dark.webp" : "/images/logos/proshield-logo-orange.webp"}
               alt="ProShield Epoxy"
               width={200}
               height={32}

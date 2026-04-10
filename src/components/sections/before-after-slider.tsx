@@ -111,6 +111,10 @@ export function BeforeAfterSlider() {
                 src="/images/proflake/flake-garage-after-coated.webp"
                 alt="Finished garage floor with ProFlake epoxy coating"
                 className="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+                decoding="async"
+                width={1200}
+                height={1599}
               />
 
               {/* "Before" image — clipped overlay (raw concrete) */}
@@ -122,6 +126,10 @@ export function BeforeAfterSlider() {
                   src="/images/proflake/flake-garage-before-concrete.webp"
                   alt="Raw concrete garage floor before ProFlake epoxy installation"
                   className="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  width={1000}
+                  height={1791}
                 />
               </div>
 
@@ -191,7 +199,7 @@ export function BeforeAfterSlider() {
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="overflow-hidden mb-5"
               >
-                <div className="flex items-center gap-6 rounded-2xl bg-gray-50 border border-gray-200 p-4 shadow-sm">
+                <div className="flex items-center gap-6 rounded-2xl bg-white border border-gray-200 p-4 shadow-sm">
                   <div className="h-28 w-28 sm:h-36 sm:w-36 shrink-0 rounded-xl overflow-hidden">
                     <img
                       src={featuredBlends[selectedBlend].image}

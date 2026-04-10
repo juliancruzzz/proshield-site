@@ -55,7 +55,7 @@ export function MagneticButton({
         className="absolute -inset-1 rounded-lg opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-300"
         style={{
           background:
-            "linear-gradient(135deg, rgba(231,132,39,0.4), rgba(42,165,160,0.4))",
+            "linear-gradient(135deg, rgba(247,148,29,0.4), rgba(42,165,160,0.4))",
         }}
         animate={{
           scale: isHovered ? 1.05 : 1,

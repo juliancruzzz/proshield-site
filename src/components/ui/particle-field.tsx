@@ -18,7 +18,7 @@ export function ParticleField() {
   const particlesRef = useRef<Particle[]>([])
   const mouseRef = useRef({ x: -1000, y: -1000 })
 
-  const colors = ["rgba(231,132,39,", "rgba(42,165,160,", "rgba(255,255,255,"]
+  const colors = ["rgba(247,148,29,", "rgba(42,165,160,", "rgba(255,255,255,"]
 
   const initParticles = useCallback(
     (width: number, height: number) => {

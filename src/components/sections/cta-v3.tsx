@@ -95,8 +95,8 @@ export function CtaV3() {
       style={{ background: "linear-gradient(170deg, #111c2e 0%, #0e1826 50%, #0b1420 100%)" }}
     >
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute -top-40 right-0 w-[700px] h-[700px] rounded-full blur-[180px] opacity-[0.07]" style={{ background: "radial-gradient(circle, #e78427, transparent 70%)" }} />
-        <div className="absolute bottom-0 -left-40 w-[500px] h-[500px] rounded-full blur-[160px] opacity-[0.04]" style={{ background: "radial-gradient(circle, #e78427, transparent 70%)" }} />
+        <div className="absolute -top-40 right-0 w-[700px] h-[700px] rounded-full blur-[180px] opacity-[0.07]" style={{ background: "radial-gradient(circle, #F7941D, transparent 70%)" }} />
+        <div className="absolute bottom-0 -left-40 w-[500px] h-[500px] rounded-full blur-[160px] opacity-[0.04]" style={{ background: "radial-gradient(circle, #F7941D, transparent 70%)" }} />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24">
