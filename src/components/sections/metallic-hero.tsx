@@ -25,8 +25,8 @@ export function MetallicHero() {
           className="absolute inset-0"
           style={{
             background: `
-              radial-gradient(ellipse at 30% 60%, rgba(247,148,29,0.10) 0%, transparent 55%),
-              radial-gradient(ellipse at 75% 25%, rgba(247,148,29,0.06) 0%, transparent 45%),
+              radial-gradient(ellipse at 30% 60%, rgba(250,156,73,0.10) 0%, transparent 55%),
+              radial-gradient(ellipse at 75% 25%, rgba(250,156,73,0.06) 0%, transparent 45%),
               linear-gradient(180deg, rgba(17,28,46,0.85) 0%, rgba(17,28,46,0.75) 50%, rgba(17,28,46,0.88) 100%)
             `,
           }}

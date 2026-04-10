@@ -5,7 +5,7 @@
      ProShield Color Palette
      Dark navy for hero/CTA/dramatic sections
      White + gray for breathing room
-     Orange accent #F7941D + Teal secondary #2AA5A0 (bright #FFAB3D for dark-bg only)
+     Orange accent #FA9C49 + Teal secondary #2AA5A0 (bright #FDB97A for dark-bg only)
      ============================================ */
 
   /* Dark palette — navy-based */
@@ -39,18 +39,18 @@
   --color-text-light-secondary: #94A3B8;
 
   /* Accent — ProShield orange (CTAs & conversion elements ONLY)
-     #F7941D — bright, energetic orange  */
-  --color-accent: #F7941D;
-  --color-accent-hover: #F9A640;
-  --color-accent-dark: #D07A0A;
-  --color-accent-text: #C96D00;
-  --color-accent-bright: #FFAB3D; /* Decorative / large headings on dark bg only */
-  --color-accent-subtle: rgba(247, 148, 29, 0.1);
-  --color-accent-subtle-light: rgba(247, 148, 29, 0.08);
+     #FA9C49 — warm, inviting orange  */
+  --color-accent: #FA9C49;
+  --color-accent-hover: #FBB06A;
+  --color-accent-dark: #D8832A;
+  --color-accent-text: #C97520;
+  --color-accent-bright: #FDB97A; /* Decorative / large headings on dark bg only */
+  --color-accent-subtle: rgba(250, 156, 73, 0.1);
+  --color-accent-subtle-light: rgba(250, 156, 73, 0.08);
 
   /* CTA — button backgrounds */
-  --color-cta: #F7941D;
-  --color-cta-hover: #F9A640;
+  --color-cta: #FA9C49;
+  --color-cta-hover: #FBB06A;
 
   /* Secondary accent — teal (info, labels, icons, structure) */
   --color-teal: #3275AE;
@@ -95,7 +95,7 @@ p, li {
 }
 
 ::selection {
-  background-color: rgba(247, 148, 29, 0.25);
+  background-color: rgba(250, 156, 73, 0.25);
   color: #111827;
 }
 
@@ -128,8 +128,8 @@ p, li {
 /* Hero mesh gradient — dark navy with warm orange glow */
 .mesh-gradient {
   background:
-    radial-gradient(ellipse at 30% 60%, rgba(247, 148, 29, 0.10) 0%, transparent 55%),
-    radial-gradient(ellipse at 75% 25%, rgba(247, 148, 29, 0.06) 0%, transparent 45%),
+    radial-gradient(ellipse at 30% 60%, rgba(250, 156, 73, 0.10) 0%, transparent 55%),
+    radial-gradient(ellipse at 75% 25%, rgba(250, 156, 73, 0.06) 0%, transparent 45%),
     radial-gradient(ellipse at 50% 100%, rgba(19, 32, 64, 0.8) 0%, transparent 60%),
     var(--color-navy);
   color: var(--color-text-light);
@@ -138,7 +138,7 @@ p, li {
 /* Warm dark — softened charcoal with orange-tinted ambient light */
 .bg-warm-dark {
   background:
-    radial-gradient(ellipse at 20% 80%, rgba(247, 148, 29, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, rgba(250, 156, 73, 0.08) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 20%, rgba(46, 111, 175, 0.05) 0%, transparent 40%),
     #111c2e;
   color: var(--color-text-light);
@@ -146,7 +146,7 @@ p, li {
 
 /* Dot grid pattern overlay */
 .bg-dot-pattern {
-  background-image: radial-gradient(circle, rgba(247, 148, 29, 0.08) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(250, 156, 73, 0.08) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
@@ -172,8 +172,8 @@ p, li {
     -45deg,
     transparent,
     transparent 10px,
-    rgba(247, 148, 29, 0.02) 10px,
-    rgba(247, 148, 29, 0.02) 20px
+    rgba(250, 156, 73, 0.02) 10px,
+    rgba(250, 156, 73, 0.02) 20px
   );
 }
 
@@ -182,7 +182,7 @@ p, li {
   background:
     radial-gradient(ellipse at 20% 30%, rgba(255,255,255,0.06) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 70%, rgba(255,255,255,0.04) 0%, transparent 40%),
-    radial-gradient(ellipse at 50% 50%, rgba(247,148,29,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 50% 50%, rgba(250,156,73,0.06) 0%, transparent 60%),
     radial-gradient(ellipse at 35% 80%, rgba(42,165,160,0.04) 0%, transparent 45%),
     radial-gradient(ellipse at 70% 20%, rgba(255,255,255,0.03) 0%, transparent 35%);
 }
@@ -190,7 +190,7 @@ p, li {
 /* Metallic dark — softer dark with metallic undertones */
 .bg-metallic-dark {
   background:
-    radial-gradient(ellipse at 20% 80%, rgba(247, 148, 29, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, rgba(250, 156, 73, 0.06) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 20%, rgba(46, 111, 175, 0.04) 0%, transparent 40%),
     radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.02) 0%, transparent 60%),
     #111c2e;
@@ -200,15 +200,15 @@ p, li {
 /* Grid lines background */
 .bg-grid-lines {
   background-image:
-    linear-gradient(rgba(247, 148, 29, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(247, 148, 29, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(250, 156, 73, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(250, 156, 73, 0.04) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
 /* Gradient mesh for light sections — subtle warmth */
 .bg-warm-mesh {
   background:
-    radial-gradient(ellipse at 0% 0%, rgba(247, 148, 29, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 0% 0%, rgba(250, 156, 73, 0.06) 0%, transparent 50%),
     radial-gradient(ellipse at 100% 100%, rgba(46, 111, 175, 0.04) 0%, transparent 50%),
     var(--color-white);
 }
@@ -217,7 +217,7 @@ p, li {
 .bg-deep-space {
   background:
     radial-gradient(ellipse at 50% 0%, rgba(26, 45, 84, 0.6) 0%, transparent 50%),
-    radial-gradient(ellipse at 0% 100%, rgba(247, 148, 29, 0.06) 0%, transparent 40%),
+    radial-gradient(ellipse at 0% 100%, rgba(250, 156, 73, 0.06) 0%, transparent 40%),
     radial-gradient(ellipse at 100% 50%, rgba(46, 111, 175, 0.04) 0%, transparent 35%),
     var(--color-charcoal);
 }
