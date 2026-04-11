@@ -342,8 +342,8 @@ export function Chatbot() {
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-6 right-6 z-[9999] flex h-[62px] w-[62px] items-center justify-center rounded-full border-0 shadow-lg cursor-pointer"
         style={{
-          background: "linear-gradient(135deg, #FA9C49 0%, #D8832A 100%)",
-          boxShadow: "0 4px 20px rgba(250,156,73,0.4), 0 2px 8px rgba(0,0,0,0.2)",
+          background: "linear-gradient(135deg, #DE8614 0%, #B86E0A 100%)",
+          boxShadow: "0 4px 20px rgba(222,134,20,0.4), 0 2px 8px rgba(0,0,0,0.2)",
         }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
@@ -382,7 +382,7 @@ export function Chatbot() {
               height: "min(580px, calc(100vh - 140px))",
               background: "#0e1826",
               borderColor: "#1a2c48",
-              boxShadow: "0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(250,156,73,0.08)",
+              boxShadow: "0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(222,134,20,0.08)",
             }}
           >
             {/* Header */}
@@ -392,13 +392,13 @@ export function Chatbot() {
             >
               <div
                 className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-sm font-extrabold text-white"
-                style={{ background: "linear-gradient(135deg, #FA9C49, #E08A30)" }}
+                style={{ background: "linear-gradient(135deg, #DE8614, #C47712)" }}
               >
                 PS
               </div>
               <div className="min-w-0">
                 <h3 className="text-[15px] font-bold text-gray-50 tracking-wide">ProShield Assistant</h3>
-                <p className="flex items-center gap-1.5 text-xs mt-0.5" style={{ color: "#FA9C49" }}>
+                <p className="flex items-center gap-1.5 text-xs mt-0.5" style={{ color: "#DE8614" }}>
                   <span className="inline-block h-[7px] w-[7px] rounded-full bg-green-500" />
                   Online — replies instantly
                 </p>
@@ -430,7 +430,7 @@ export function Chatbot() {
                   style={
                     msg.role === "bot"
                       ? { background: "#111c2e", color: "#E0E0E0", border: "1px solid #1a2c48" }
-                      : { background: "linear-gradient(135deg, #FA9C49, #E08A30)" }
+                      : { background: "linear-gradient(135deg, #DE8614, #C47712)" }
                   }
                   dangerouslySetInnerHTML={{ __html: msg.text }}
                 />
@@ -449,7 +449,7 @@ export function Chatbot() {
                       key={i}
                       className="inline-block h-2 w-2 rounded-full"
                       style={{
-                        background: "#FA9C49",
+                        background: "#DE8614",
                         animation: `psBounce 1.4s infinite ease-in-out ${i * 0.16}s`,
                       }}
                     />
@@ -473,10 +473,10 @@ export function Chatbot() {
                       }}
                       className="rounded-full border px-4 py-2 text-[13px] transition-all cursor-pointer bg-transparent hover:translate-y-[-1px]"
                       style={{
-                        borderColor: "#FA9C49",
-                        color: "#FA9C49",
+                        borderColor: "#DE8614",
+                        color: "#DE8614",
                       }}
-                      onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(250,156,73,0.12)")}
+                      onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(222,134,20,0.12)")}
                       onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
                     >
                       {chip}
@@ -494,7 +494,7 @@ export function Chatbot() {
                   className="self-start max-w-[92%] rounded-2xl p-4 flex flex-col gap-2"
                   style={{ background: "#111c2e", border: "1px solid #1a2c48" }}
                 >
-                  <h4 className="text-sm font-semibold mb-1" style={{ color: "#FA9C49" }}>
+                  <h4 className="text-sm font-semibold mb-1" style={{ color: "#DE8614" }}>
                     Schedule Your Free Estimate
                   </h4>
                   <input
@@ -503,7 +503,7 @@ export function Chatbot() {
                     required
                     className="w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-colors"
                     style={{ background: "#0e1826", border: "1px solid #1a2c48", color: "#E0E0E0" }}
-                    onFocus={(e) => (e.currentTarget.style.borderColor = "#FA9C49")}
+                    onFocus={(e) => (e.currentTarget.style.borderColor = "#DE8614")}
                     onBlur={(e) => (e.currentTarget.style.borderColor = "#1a2c48")}
                   />
                   <input
@@ -513,7 +513,7 @@ export function Chatbot() {
                     required
                     className="w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-colors"
                     style={{ background: "#0e1826", border: "1px solid #1a2c48", color: "#E0E0E0" }}
-                    onFocus={(e) => (e.currentTarget.style.borderColor = "#FA9C49")}
+                    onFocus={(e) => (e.currentTarget.style.borderColor = "#DE8614")}
                     onBlur={(e) => (e.currentTarget.style.borderColor = "#1a2c48")}
                   />
                   <input
@@ -522,7 +522,7 @@ export function Chatbot() {
                     placeholder="Email (optional)"
                     className="w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-colors"
                     style={{ background: "#0e1826", border: "1px solid #1a2c48", color: "#E0E0E0" }}
-                    onFocus={(e) => (e.currentTarget.style.borderColor = "#FA9C49")}
+                    onFocus={(e) => (e.currentTarget.style.borderColor = "#DE8614")}
                     onBlur={(e) => (e.currentTarget.style.borderColor = "#1a2c48")}
                   />
                   <select
@@ -548,15 +548,15 @@ export function Chatbot() {
                     rows={2}
                     className="w-full rounded-lg px-3.5 py-2.5 text-sm outline-none resize-y"
                     style={{ background: "#0e1826", border: "1px solid #1a2c48", color: "#E0E0E0", minHeight: 50 }}
-                    onFocus={(e) => (e.currentTarget.style.borderColor = "#FA9C49")}
+                    onFocus={(e) => (e.currentTarget.style.borderColor = "#DE8614")}
                     onBlur={(e) => (e.currentTarget.style.borderColor = "#1a2c48")}
                   />
                   <button
                     type="submit"
                     className="w-full rounded-lg py-2.5 text-sm font-semibold text-white border-0 cursor-pointer transition-all hover:translate-y-[-1px]"
                     style={{
-                      background: "linear-gradient(135deg, #FA9C49, #E08A30)",
-                      boxShadow: "0 2px 10px rgba(250,156,73,0.25)",
+                      background: "linear-gradient(135deg, #DE8614, #C47712)",
+                      boxShadow: "0 2px 10px rgba(222,134,20,0.25)",
                     }}
                   >
                     Request Free Estimate
@@ -593,7 +593,7 @@ export function Chatbot() {
                   maxHeight: 100,
                   lineHeight: 1.4,
                 }}
-                onFocus={(e) => (e.currentTarget.style.borderColor = "#FA9C49")}
+                onFocus={(e) => (e.currentTarget.style.borderColor = "#DE8614")}
                 onBlur={(e) => (e.currentTarget.style.borderColor = "#1a2c48")}
               />
               <button
@@ -601,7 +601,7 @@ export function Chatbot() {
                 disabled={!input.trim()}
                 className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border-0 text-white cursor-pointer transition-all disabled:opacity-40 disabled:cursor-not-allowed"
                 style={{
-                  background: "linear-gradient(135deg, #FA9C49, #E08A30)",
+                  background: "linear-gradient(135deg, #DE8614, #C47712)",
                 }}
                 aria-label="Send message"
               >

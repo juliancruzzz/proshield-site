@@ -40,7 +40,7 @@ export function HangarChemicals() {
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full blur-[200px]"
           style={{
-            background: "radial-gradient(ellipse, rgba(250,156,73,0.06), transparent 70%)",
+            background: "radial-gradient(ellipse, rgba(222,134,20,0.06), transparent 70%)",
           }}
         />
       </div>
