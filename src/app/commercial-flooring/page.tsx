@@ -13,7 +13,7 @@ import { CommercialComparison } from "@/components/sections/commercial-compariso
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Commercial Flooring Las Vegas | ProShield Epoxy",
+  title: "Commercial Flooring Systems Las Vegas | Epoxy, Urethane, Quartz | ProShield",
   description:
     "Commercial flooring systems in Las Vegas — resin quartz, urethane, ProFlake. Warehouses, kitchens, manufacturing, healthcare, retail.",
   openGraph: {

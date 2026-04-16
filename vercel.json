@@ -109,6 +109,16 @@
       "source": "/grassmac/",
       "destination": "/artificial-turf",
       "permanent": true
+    },
+    {
+      "source": "/concrete-coatings-las-vegas-contact",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/concrete-coatings-las-vegas-contact/",
+      "destination": "/contact",
+      "permanent": true
     }
   ],
   "headers": [

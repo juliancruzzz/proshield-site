@@ -48,7 +48,7 @@ const inter = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "ProShield Epoxy | Premium Epoxy Flooring",
+  title: "ProShield Epoxy | Epoxy Flooring Las Vegas",
   description:
     "Professional floor coatings for garages, commercial spaces, and more. Metallic epoxy, flake systems, VubaStone, concrete polishing, and specialty services. Free quotes in the Las Vegas metro.",
   icons: {
@@ -108,7 +108,14 @@ const structuredData = {
     addressLocality: "Las Vegas",
     addressRegion: "NV",
   },
-  areaServed: "Las Vegas",
+  areaServed: [
+    { "@type": "City", name: "Las Vegas", containedInPlace: { "@type": "State", name: "Nevada" } },
+    { "@type": "City", name: "Henderson", containedInPlace: { "@type": "State", name: "Nevada" } },
+    { "@type": "City", name: "Summerlin", containedInPlace: { "@type": "State", name: "Nevada" } },
+    { "@type": "City", name: "North Las Vegas", containedInPlace: { "@type": "State", name: "Nevada" } },
+    { "@type": "City", name: "Boulder City", containedInPlace: { "@type": "State", name: "Nevada" } },
+    { "@type": "City", name: "Pahrump", containedInPlace: { "@type": "State", name: "Nevada" } },
+  ],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
@@ -117,9 +124,9 @@ const structuredData = {
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "08:00",
-      closes: "17:00",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "07:00",
+      closes: "18:00",
     },
   ],
   geo: {

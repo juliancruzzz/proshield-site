@@ -5,7 +5,7 @@ import { FaqAccordion } from "@/components/sections/faq-accordion"
 import { CtaSection } from "@/components/sections/cta-section"
 
 export const metadata: Metadata = {
-  title: "Commercial Flooring Las Vegas | ProShield Epoxy",
+  title: "Commercial & Industrial Floor Coatings Las Vegas | ProShield Epoxy",
   description: "Heavy-duty commercial and industrial flooring for warehouses, retail, manufacturing, and more. Systems matched to your environment. 2\u20135 day typical installation.",
   alternates: {
     canonical: "/areas/commercial",
