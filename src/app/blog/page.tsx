@@ -20,6 +20,24 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "rubber-patio-flooring-las-vegas",
+    title: "How to Cool Down a Hot Pool Deck in Las Vegas — Every Option Compared",
+    excerpt:
+      "Las Vegas pool decks hit 150°F+ in summer. Compare every cooling option — rubber surfacing, cool deck coatings, travertine, pavers — with real temperature data, costs, and lifespan in desert heat.",
+    date: "April 24, 2026",
+    category: "Pool Deck Coatings",
+    image: "/images/cool-deck/cool-deck-pool-spa-vegas.webp",
+  },
+  {
+    slug: "diy-epoxy-vs-professional-garage-floor",
+    title: "DIY Epoxy Garage Floor in Las Vegas — Why Most Kits Fail in Desert Heat",
+    excerpt:
+      "DIY epoxy garage floor kits cost $50–$300 but peel in 1–3 years in Las Vegas. See the real 15-year cost comparison, surface prep differences, and why thin coatings fail in 150°F garages.",
+    date: "April 23, 2026",
+    category: "Garage Floors",
+    image: "/images/proflake/flake-garage-wide-clean.webp",
+  },
+  {
     slug: "how-long-does-epoxy-flooring-last",
     title: "How Long Does Epoxy Flooring Last? Lifespan by System Type",
     excerpt:

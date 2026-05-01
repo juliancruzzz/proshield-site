@@ -119,6 +119,16 @@
       "source": "/concrete-coatings-las-vegas-contact/",
       "destination": "/contact",
       "permanent": true
+    },
+    {
+      "source": "/pebble-stone-las-vegas",
+      "destination": "/vubastone",
+      "permanent": true
+    },
+    {
+      "source": "/pebble-stone-las-vegas/",
+      "destination": "/vubastone",
+      "permanent": true
     }
   ],
   "headers": [
@@ -154,17 +164,4 @@
       "headers": [
         {
           "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        }
-      ]
-    }
-  ]
-}
+          "value": "nosni
