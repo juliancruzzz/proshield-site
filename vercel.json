@@ -1,167 +1,40 @@
 {
   "redirects": [
-    {
-      "source": "/garage-floor-coating-services-las-vegas",
-      "destination": "/areas/garage",
-      "permanent": true
-    },
-    {
-      "source": "/garage-floor-coating-services-las-vegas/",
-      "destination": "/areas/garage",
-      "permanent": true
-    },
-    {
-      "source": "/about-epoxy-flooring-company-las-vegas",
-      "destination": "/about",
-      "permanent": true
-    },
-    {
-      "source": "/about-epoxy-flooring-company-las-vegas/",
-      "destination": "/about",
-      "permanent": true
-    },
-    {
-      "source": "/contact-proshield-epoxy-las-vegas",
-      "destination": "/contact",
-      "permanent": true
-    },
-    {
-      "source": "/contact-proshield-epoxy-las-vegas/",
-      "destination": "/contact",
-      "permanent": true
-    },
-    {
-      "source": "/garagefloorepoxy",
-      "destination": "/proflake",
-      "permanent": true
-    },
-    {
-      "source": "/garagefloorepoxy/",
-      "destination": "/proflake",
-      "permanent": true
-    },
-    {
-      "source": "/epoxy-flooring-las-vegas",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/epoxy-flooring-las-vegas/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/metallic-epoxy-flooring-las-vegas",
-      "destination": "/metallic-epoxy",
-      "permanent": true
-    },
-    {
-      "source": "/metallic-epoxy-flooring-las-vegas/",
-      "destination": "/metallic-epoxy",
-      "permanent": true
-    },
-    {
-      "source": "/concrete-polishing-las-vegas",
-      "destination": "/concrete-polishing",
-      "permanent": true
-    },
-    {
-      "source": "/concrete-polishing-las-vegas/",
-      "destination": "/concrete-polishing",
-      "permanent": true
-    },
-    {
-      "source": "/commercial-flooring-las-vegas",
-      "destination": "/commercial-flooring",
-      "permanent": true
-    },
-    {
-      "source": "/commercial-flooring-las-vegas/",
-      "destination": "/commercial-flooring",
-      "permanent": true
-    },
-    {
-      "source": "/gallery-epoxy-flooring-las-vegas",
-      "destination": "/gallery",
-      "permanent": true
-    },
-    {
-      "source": "/gallery-epoxy-flooring-las-vegas/",
-      "destination": "/gallery",
-      "permanent": true
-    },
-    {
-      "source": "/turf",
-      "destination": "/artificial-turf",
-      "permanent": true
-    },
-    {
-      "source": "/turf/",
-      "destination": "/artificial-turf",
-      "permanent": true
-    },
-    {
-      "source": "/grassmac",
-      "destination": "/artificial-turf",
-      "permanent": true
-    },
-    {
-      "source": "/grassmac/",
-      "destination": "/artificial-turf",
-      "permanent": true
-    },
-    {
-      "source": "/concrete-coatings-las-vegas-contact",
-      "destination": "/contact",
-      "permanent": true
-    },
-    {
-      "source": "/concrete-coatings-las-vegas-contact/",
-      "destination": "/contact",
-      "permanent": true
-    },
-    {
-      "source": "/pebble-stone-las-vegas",
-      "destination": "/vubastone",
-      "permanent": true
-    },
-    {
-      "source": "/pebble-stone-las-vegas/",
-      "destination": "/vubastone",
-      "permanent": true
-    }
+    { "source": "/garage-floor-coating-services-las-vegas", "destination": "/areas/garage", "permanent": true },
+    { "source": "/garage-floor-coating-services-las-vegas/", "destination": "/areas/garage", "permanent": true },
+    { "source": "/about-epoxy-flooring-company-las-vegas", "destination": "/about", "permanent": true },
+    { "source": "/about-epoxy-flooring-company-las-vegas/", "destination": "/about", "permanent": true },
+    { "source": "/contact-proshield-epoxy-las-vegas", "destination": "/contact", "permanent": true },
+    { "source": "/contact-proshield-epoxy-las-vegas/", "destination": "/contact", "permanent": true },
+    { "source": "/garagefloorepoxy", "destination": "/proflake", "permanent": true },
+    { "source": "/garagefloorepoxy/", "destination": "/proflake", "permanent": true },
+    { "source": "/epoxy-flooring-las-vegas", "destination": "/", "permanent": true },
+    { "source": "/epoxy-flooring-las-vegas/", "destination": "/", "permanent": true },
+    { "source": "/metallic-epoxy-flooring-las-vegas", "destination": "/metallic-epoxy", "permanent": true },
+    { "source": "/metallic-epoxy-flooring-las-vegas/", "destination": "/metallic-epoxy", "permanent": true },
+    { "source": "/concrete-polishing-las-vegas", "destination": "/concrete-polishing", "permanent": true },
+    { "source": "/concrete-polishing-las-vegas/", "destination": "/concrete-polishing", "permanent": true },
+    { "source": "/commercial-flooring-las-vegas", "destination": "/commercial-flooring", "permanent": true },
+    { "source": "/commercial-flooring-las-vegas/", "destination": "/commercial-flooring", "permanent": true },
+    { "source": "/gallery-epoxy-flooring-las-vegas", "destination": "/gallery", "permanent": true },
+    { "source": "/gallery-epoxy-flooring-las-vegas/", "destination": "/gallery", "permanent": true },
+    { "source": "/turf", "destination": "/artificial-turf", "permanent": true },
+    { "source": "/turf/", "destination": "/artificial-turf", "permanent": true },
+    { "source": "/grassmac", "destination": "/artificial-turf", "permanent": true },
+    { "source": "/grassmac/", "destination": "/artificial-turf", "permanent": true },
+    { "source": "/concrete-coatings-las-vegas-contact", "destination": "/contact", "permanent": true },
+    { "source": "/concrete-coatings-las-vegas-contact/", "destination": "/contact", "permanent": true },
+    { "source": "/pebble-stone-las-vegas", "destination": "/vubastone", "permanent": true },
+    { "source": "/pebble-stone-las-vegas/", "destination": "/vubastone", "permanent": true }
   ],
   "headers": [
-    {
-      "source": "/images/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/(.*\\.webp)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/(.*\\.woff2?)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosni
+    { "source": "/images/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
+    { "source": "/(.*\\.webp)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
+    { "source": "/(.*\\.woff2?)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
+    { "source": "/(.*)", "headers": [
+      { "key": "X-Content-Type-Options", "value": "nosniff" },
+      { "key": "X-Frame-Options", "value": "DENY" },
+      { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+    ]}
+  ]
+}
