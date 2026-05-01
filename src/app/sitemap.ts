@@ -54,8 +54,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/service-areas/summerlin`, lastModified: today, priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/service-areas/north-las-vegas`, lastModified: today, priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/service-areas/boulder-city`, lastModified: today, priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/service-areas/pahrump`, lastModified: today, priority: 0.8, changeFrequency: "monthly" },
-  ]
-
-  return routes
-}
+    { url: `${BASE_URL}/service-areas/pahrump`, lastModified: today, priority: 0.8, changeFrequency: 
