@@ -1,12 +1,14 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { PageHero } from "@/components/sections/page-hero"
 import { GarageAreas } from "@/components/sections/garage-areas"
 import { FaqAccordion } from "@/components/sections/faq-accordion"
 import { CtaSection } from "@/components/sections/cta-section"
+import { Credentials } from "@/components/sections/credentials"
 
 export const metadata: Metadata = {
-  title: "Garage Floor Coatings Las Vegas | ProShield Epoxy",
-  description: "Professional garage floor coatings in Las Vegas — ProFlake, metallic epoxy, solid color. Often completed in 1 day. Limited lifetime warranty.",
+  title: "Epoxy Garage Floor Coatings Las Vegas | 1-Day Install | ProShield Epoxy",
+  description: "Epoxy garage floor coatings in Las Vegas — ProFlake, metallic & solid color systems. NV Licensed #0094652 · Limited lifetime warranty · Call 702-728-5484.",
   alternates: {
     canonical: "/areas/garage",
   },
@@ -49,6 +51,10 @@ const garageFaqs = [
     q: "Can you match my garage floor to my home\u2019s style?",
     a: "Yes! ProFlake offers 150+ Torginol color blends, and metallic epoxy comes in dozens of pearlescent tones. We provide color samples and digital mockups during your consultation to help you find the perfect match.",
   },
+  {
+    q: "Are you licensed to install epoxy flooring in Nevada?",
+    a: "Yes. ProShield Epoxy & Concrete LLC holds Nevada State Contractor's License #0094652 with a C-5 Concrete Contracting classification. We are fully bonded and insured, with a $200,000 bid limit. License status is verifiable at nvcontractorsboard.com.",
+  },
 ]
 
 export default function GaragePage() {
@@ -82,6 +88,36 @@ export default function GaragePage() {
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://proshieldepoxy.com/" },
               { "@type": "ListItem", "position": 2, "name": "Garage Floors", "item": "https://proshieldepoxy.com/areas/garage" }
             ]
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Garage Floor Coatings",
+            "description": "Epoxy garage floor coatings in Las Vegas — ProFlake, metallic epoxy, and solid color systems with 1-day installation available. Nevada licensed contractor.",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "ProShield Epoxy & Concrete LLC",
+              "telephone": "+1-702-728-5484",
+              "url": "https://proshieldepoxy.com",
+              "hasCredential": {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "license",
+                "name": "Nevada State Contractor's License #0094652 (C-5 Concrete Contracting)"
+              }
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Las Vegas", "addressRegion": "NV" },
+              { "@type": "City", "name": "Henderson", "addressRegion": "NV" },
+              { "@type": "City", "name": "North Las Vegas", "addressRegion": "NV" },
+              { "@type": "City", "name": "Summerlin", "addressRegion": "NV" }
+            ],
+            "url": "https://proshieldepoxy.com/areas/garage"
           })
         }}
       />
@@ -232,31 +268,43 @@ export default function GaragePage() {
               <div className="flex gap-3">
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
-                  <p className="font-semibold text-gray-900">Expert Installation & Warranty Support</p>
-                  <p className="text-gray-600 mt-1">Limited lifetime warranty on qualifying residential systems, backed by professional craftsmanship and genuine care.</p>
+                  <p className="font-semibold text-gray-900">Licensed Nevada Contractor</p>
+                  <p className="text-gray-600 mt-1">NV State License #0094652, C-5 Concrete Contracting. Fully bonded and insured. Verifiable at nvcontractorsboard.com.</p>
                 </div>
               </div>
               <div className="flex gap-3">
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
                   <p className="font-semibold text-gray-900">Proven Las Vegas Track Record</p>
-                  <p className="text-gray-600 mt-1">We've installed hundreds of garage floors across the Las Vegas valley, withstanding the harshest desert conditions.</p>
+                  <p className="text-gray-600 mt-1">5 years of garage floor installs across Las Vegas, Henderson, North LV, Summerlin and Spring Valley — withstanding the harshest desert conditions.</p>
                 </div>
               </div>
               <div className="flex gap-3">
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
                   <p className="font-semibold text-gray-900">Quick Turnaround</p>
-                  <p className="text-gray-600 mt-1">Our standard residential ProFlake systems are often completed in 1 day, so you're back to using your garage fast.</p>
+                  <p className="text-gray-600 mt-1">Our standard residential ProFlake systems are often completed in 1 day, so you&apos;re back to using your garage fast.</p>
                 </div>
               </div>
               <div className="flex gap-3">
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
-                  <p className="font-semibold text-gray-900">Customizable Aesthetics</p>
-                  <p className="text-gray-600 mt-1">150+ color blends to match your home's style. From modern minimalist to vibrant showroom, we've got you covered.</p>
+                  <p className="font-semibold text-gray-900">Limited Lifetime Warranty</p>
+                  <p className="text-gray-600 mt-1">On qualifying residential systems. 150+ color blends to match your home — modern minimalist to showroom-grade.</p>
                 </div>
               </div>
+            </div>
+
+            {/* Commercial cross-link */}
+            <div className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6">
+              <p className="text-sm sm:text-base text-gray-700">
+                <span className="font-semibold text-gray-900">Need a commercial garage floor?</span>{" "}
+                For warehouses, auto shops, aircraft hangars and retail spaces, see our{" "}
+                <Link href="/commercial-flooring" className="text-teal font-semibold underline-offset-2 hover:underline">
+                  commercial epoxy flooring services in Las Vegas
+                </Link>
+                {" "}— resin quartz, urethane cement, and ProFlake systems engineered for industrial use.
+              </p>
             </div>
           </div>
         </div>
@@ -276,6 +324,8 @@ export default function GaragePage() {
           <FaqAccordion faqs={garageFaqs} />
         </div>
       </section>
+
+      <Credentials />
 
       <CtaSection />
     </>

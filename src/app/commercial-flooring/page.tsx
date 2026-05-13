@@ -10,13 +10,16 @@ import { CommercialIntro } from "@/components/sections/commercial-intro"
 import { CommercialSystems } from "@/components/sections/commercial-systems"
 import { CommercialIndustries } from "@/components/sections/commercial-industries"
 import { CommercialComparison } from "@/components/sections/commercial-comparison"
+import { Credentials } from "@/components/sections/credentials"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Commercial Flooring Systems Las Vegas | Epoxy, Urethane, Quartz | ProShield",
+  title: "Commercial Epoxy Flooring Las Vegas | Warehouse, Retail & Industrial | ProShield",
   description:
-    "Commercial flooring systems in Las Vegas — resin quartz, urethane, ProFlake. Warehouses, kitchens, manufacturing, healthcare, retail.",
+    "Commercial epoxy flooring in Las Vegas — resin quartz, urethane cement & ProFlake for warehouses, kitchens, hangars & retail. NV Licensed #0094652. Call 702-728-5484.",
   openGraph: {
+    title: "Commercial Epoxy Flooring Las Vegas | Warehouse, Retail & Industrial | ProShield",
+    description: "Commercial epoxy flooring in Las Vegas — resin quartz, urethane cement & ProFlake for warehouses, kitchens, hangars & retail. NV Licensed #0094652. Call 702-728-5484.",
     url: "https://proshieldepoxy.com/commercial-flooring",
     images: ["/images/commercial/commercial-floor-solid.webp"],
   },
@@ -45,6 +48,10 @@ const faqs = [
   {
     q: "What kind of warranty do commercial systems carry?",
     a: "Commercial systems carry a system-specific warranty covering material defects and workmanship. Warranty terms vary by system type and environment — urethane cement systems have different parameters than decorative ProFlake systems. We'll detail your warranty coverage during the proposal.",
+  },
+  {
+    q: "Are you licensed to perform commercial work in Nevada?",
+    a: "Yes. ProShield Epoxy & Concrete LLC is a licensed Nevada contractor — License #0094652, C-5 Concrete Contracting classification — fully bonded and insured. Our $200,000 bid limit covers most commercial projects; for larger jobs we partner with licensed GCs. License is verifiable at nvcontractorsboard.com.",
   },
 ]
 
@@ -75,6 +82,36 @@ export default function CommercialFlooringPage() {
         subtitle="Seamless resinous flooring systems matched to your facility's specific demands — from thermal shock resistance to chemical exposure to heavy rolling loads."
         backgroundImage="/images/commercial/commercial-grey-yellow-stripe.webp"
         backgroundAlt="Commercial warehouse with solid color epoxy floor and safety line markings"
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Commercial Epoxy Flooring",
+            "description": "Commercial epoxy flooring systems for warehouses, retail, manufacturing, healthcare and industrial facilities in Las Vegas. Nevada licensed contractor.",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "ProShield Epoxy & Concrete LLC",
+              "telephone": "+1-702-728-5484",
+              "url": "https://proshieldepoxy.com",
+              "hasCredential": {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "license",
+                "name": "Nevada State Contractor's License #0094652 (C-5 Concrete Contracting)"
+              }
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Las Vegas", "addressRegion": "NV" },
+              { "@type": "City", "name": "Henderson", "addressRegion": "NV" },
+              { "@type": "City", "name": "North Las Vegas", "addressRegion": "NV" },
+              { "@type": "City", "name": "Summerlin", "addressRegion": "NV" }
+            ],
+            "url": "https://proshieldepoxy.com/commercial-flooring"
+          })
+        }}
       />
 
       <CommercialStats />
@@ -109,6 +146,23 @@ export default function CommercialFlooringPage() {
           </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://proshieldepoxy.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://proshieldepoxy.com/services" },
+              { "@type": "ListItem", "position": 3, "name": "Commercial Flooring", "item": "https://proshieldepoxy.com/commercial-flooring" }
+            ]
+          })
+        }}
+      />
+
+      <Credentials />
 
       <RelatedServices variant="gray" currentService="commercial-flooring" />
 

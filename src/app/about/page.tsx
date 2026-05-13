@@ -20,9 +20,9 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About ProShield Epoxy | Las Vegas Floor Coatings",
+  title: "About ProShield Epoxy | Las Vegas Epoxy Flooring Experts",
   description:
-    "ProShield Epoxy delivers professional-grade floor coatings in Las Vegas. Founded by Julian Cruz — licensed, insured, and committed to quality craftsmanship.",
+    "Las Vegas epoxy flooring company founded by Julian Cruz. Licensed, insured, 5-star rated — garage floors, commercial coatings & decorative epoxy. See why 100+ homeowners trust us.",
   alternates: {
     canonical: "/about",
   },
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
   },
 }
 
-const milestones = [
-  "Polyaspartic & epoxy garage floors",
-  "Commercial chemical-resistant systems",
-  "Airplane hangar coatings",
-  "Resin-bound VubaStone driveways",
-  "Concrete polishing & overlays",
-  "Cool deck & pool deck coatings",
+const milestones: { label: string; href?: string }[] = [
+  { label: "Polyaspartic & epoxy garage floors", href: "/areas/garage" },
+  { label: "Commercial chemical-resistant systems", href: "/commercial-flooring" },
+  { label: "Airplane hangar coatings", href: "/airplane-hangar" },
+  { label: "Resin-bound VubaStone driveways", href: "/vubastone" },
+  { label: "Concrete polishing & overlays", href: "/concrete-polishing" },
+  { label: "Cool deck & pool deck coatings", href: "/cool-deck" },
 ]
 
 const values = [
@@ -106,9 +106,18 @@ export default function AboutPage() {
             {/* What we do list */}
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
               {milestones.map((item) => (
-                <div key={item} className="flex items-center gap-3">
+                <div key={item.label} className="flex items-center gap-3">
                   <CheckCircle2 className="h-5 w-5 text-teal shrink-0" />
-                  <span className="text-sm sm:text-base text-gray-700 font-medium">{item}</span>
+                  {item.href ? (
+                    <Link
+                      href={item.href}
+                      className="text-sm sm:text-base text-gray-700 font-medium hover:text-teal transition-colors"
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <span className="text-sm sm:text-base text-gray-700 font-medium">{item.label}</span>
+                  )}
                 </div>
               ))}
             </div>

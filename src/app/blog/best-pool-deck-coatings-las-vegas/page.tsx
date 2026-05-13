@@ -623,10 +623,17 @@ export default function BestPoolDeckCoatingsPost() {
                 <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
                 <p className="mt-2 text-sm text-gray-600 leading-relaxed">
                   Julian is the founder of ProShield Epoxy, a professional floor coating company
-                  serving the Las Vegas metro area. He specializes in residential garage coatings,
-                  commercial resinous flooring, and specialty systems including metallic epoxy,
-                  VubaStone, and concrete polishing. Every article is written from hands-on
-                  installation experience — not recycled from the internet.
+                  serving the Las Vegas metro area. He specializes in{" "}
+                  <Link href="/areas/garage" className="text-accent font-medium hover:underline">
+                    residential garage floor coatings
+                  </Link>
+                  ,{" "}
+                  <Link href="/commercial-flooring" className="text-accent font-medium hover:underline">
+                    commercial resinous flooring
+                  </Link>
+                  , and specialty systems including metallic epoxy, VubaStone, and concrete polishing.
+                  Every article is written from hands-on installation experience — not recycled from
+                  the internet.
                 </p>
               </div>
             </div>
