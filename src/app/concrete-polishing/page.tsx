@@ -14,9 +14,9 @@ import { CtaSection } from "@/components/sections/cta-section"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Concrete Polishing Las Vegas | Levels 1–4 | ProShield Epoxy",
+  title: "Concrete Polishing Las Vegas | Grind & Seal, Full Polish | ProShield Epoxy",
   description:
-    "Concrete polishing in Las Vegas — Levels 1-4 mechanical polish. Grind & seal or full polish for commercial, retail, and residential. Free estimates.",
+    "Concrete polishing in Las Vegas — grind & seal or Levels 1-4 mechanical polish for commercial, retail & residential floors. Free estimates · 702-728-5484.",
   keywords: [
     "concrete polishing Las Vegas",
     "polished concrete floors",
@@ -80,6 +80,30 @@ export default function ConcretePolishingPage() {
               },
             })),
           }),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Concrete Polishing",
+            "description": "Concrete polishing services in Las Vegas — grind & seal or Levels 1-4 mechanical polish for commercial, retail, and residential floors.",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "ProShield Epoxy",
+              "telephone": "+1-702-728-5484",
+              "url": "https://proshieldepoxy.com"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Las Vegas",
+              "addressRegion": "NV"
+            },
+            "url": "https://proshieldepoxy.com/concrete-polishing"
+          })
         }}
       />
 

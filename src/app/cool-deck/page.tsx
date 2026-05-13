@@ -13,9 +13,9 @@ import { CtaSection } from "@/components/sections/cta-section"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Cool Deck & Pool Deck Coating Las Vegas | ProShield",
+  title: "Cool Deck Coating Las Vegas | Pool Deck Resurfacing | ProShield Epoxy",
   description:
-    "Cool deck and knockdown texture coatings for pool decks, patios, and walkways. Acrylic-based, slip-resistant, heat-reflective coating in Las Vegas.",
+    "Cool deck coating in Las Vegas — slip-resistant, heat-reflective pool deck resurfacing for patios & walkways. Free estimates · 702-728-5484.",
   openGraph: {
     url: "https://proshieldepoxy.com/cool-deck",
     images: ["/images/cool-deck/cool-deck-knockdown-pool.webp"],

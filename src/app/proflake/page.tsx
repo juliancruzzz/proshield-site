@@ -13,8 +13,8 @@ import { RelatedServices } from "@/components/sections/related-services"
 import { CtaSection } from "@/components/sections/cta-section"
 
 export const metadata: Metadata = {
-  title: "ProFlake Garage Floor Coating Las Vegas | Epoxy Alternative | ProShield",
-  description: "ProFlake polyurea flake system — the upgrade from epoxy. 150+ Torginol color blends, UV-stable polyaspartic topcoat, hot tire & chemical resistant. 1-day install in Las Vegas.",
+  title: "Epoxy Garage Floor Coating Las Vegas | ProFlake Flake System | ProShield",
+  description: "Epoxy garage floor coating in Las Vegas — ProFlake flake system with 150+ Torginol colors, UV-stable polyaspartic topcoat & 1-day install. Free quote · 702-728-5484.",
   openGraph: {
     url: "https://proshieldepoxy.com/proflake",
     images: ["/images/proflake/flake-garage-residential.webp"],
@@ -86,6 +86,30 @@ export default function ProFlakePage() {
         subtitle="The upgrade from epoxy. Polyurea basecoat, polyaspartic topcoat, 150+ Torginol color blends, and 1-day installation for qualifying residential garages in Las Vegas."
         backgroundImage="/images/proflake/flake-garage-porsche-bikes.webp"
         backgroundAlt="Garage with ProFlake flake floor coating and motorcycles"
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "ProFlake Garage Floor Coating",
+            "description": "ProFlake polyurea flake garage floor coating with 150+ Torginol color blends, polyaspartic topcoat, and 1-day installation in Las Vegas.",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "ProShield Epoxy",
+              "telephone": "+1-702-728-5484",
+              "url": "https://proshieldepoxy.com"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Las Vegas",
+              "addressRegion": "NV"
+            },
+            "url": "https://proshieldepoxy.com/proflake"
+          })
+        }}
       />
 
       <ProFlakeStats />

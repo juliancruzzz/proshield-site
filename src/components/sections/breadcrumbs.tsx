@@ -18,6 +18,8 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
     ...items,
   ]
 
+  const BASE_URL = "https://proshieldepoxy.com"
+
   // Build JSON-LD schema
   const jsonLdSchema = {
     "@context": "https://schema.org",
@@ -26,7 +28,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
       "@type": "ListItem",
       position: index + 1,
       name: item.label,
-      ...(item.href && { item: item.href }),
+      ...(item.href && { item: `${BASE_URL}${item.href}` }),
     })),
   }
 

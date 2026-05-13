@@ -14,12 +14,6 @@ interface RelatedPostsProps {
 
 // All blog posts with metadata
 const ALL_POSTS: Record<string, Omit<RelatedPost, 'href'> & { slug: string }> = {
-  'how-long-does-epoxy-flooring-last': {
-    slug: 'how-long-does-epoxy-flooring-last',
-    title: 'How Long Does Epoxy Flooring Last? Lifespan by System Type',
-    description: 'Professional epoxy systems last 15–20+ years depending on system type.',
-    date: 'April 7, 2026',
-  },
   'epoxy-floor-maintenance-tips': {
     slug: 'epoxy-floor-maintenance-tips',
     title: 'Epoxy Floor Maintenance Tips: Keep Your Coating Looking New',
@@ -56,6 +50,12 @@ const ALL_POSTS: Record<string, Omit<RelatedPost, 'href'> & { slug: string }> = 
     description: 'Which is right for your space? Cost and durability comparison.',
     date: 'March 18, 2026',
   },
+  'coolest-pool-deck-flooring-las-vegas': {
+    slug: 'coolest-pool-deck-flooring-las-vegas',
+    title: 'Coolest Pool Deck Flooring for Las Vegas: Why Rubber Deck Systems Win',
+    description: 'Rubber pool deck flooring stays 35% cooler than concrete. Full comparison.',
+    date: 'May 1, 2026',
+  },
 }
 
 // Topic grouping for smart related post selection
@@ -66,7 +66,6 @@ const TOPIC_GROUPS = {
     'hot-tire-pickup-prevention-garage-floor',
   ],
   epoxyGeneral: [
-    'how-long-does-epoxy-flooring-last',
     'epoxy-floor-maintenance-tips',
   ],
   polishedConcrete: [
@@ -74,6 +73,7 @@ const TOPIC_GROUPS = {
   ],
   poolDeck: [
     'best-pool-deck-coatings-las-vegas',
+    'coolest-pool-deck-flooring-las-vegas',
   ],
 }
 

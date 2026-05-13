@@ -51,6 +51,11 @@ const allServices: Record<string, ServiceItem> = {
     href: "/cool-deck",
     description: "Heat-reflective coatings for patios and pool decks.",
   },
+  "rubber-pool-deck": {
+    title: "Rubber Pool Deck",
+    href: "/rubber-pool-deck",
+    description: "Cushioned, slip-resistant rubber aggregate surfacing.",
+  },
   "paver-sealing": {
     title: "Paver Sealing",
     href: "/paver-sealing",
@@ -95,6 +100,7 @@ const serviceGroups = {
   exterior: [
     "vubastone",
     "cool-deck",
+    "rubber-pool-deck",
     "paver-sealing",
     "grassmac",
     "artificial-turf",

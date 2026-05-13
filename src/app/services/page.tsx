@@ -6,9 +6,9 @@ import { ServicesGrid } from "@/components/sections/services-grid"
 import { SpecialtyServices } from "@/components/sections/specialty-services"
 
 export const metadata: Metadata = {
-  title: "Floor Coating Services Las Vegas | ProShield Epoxy",
+  title: "Epoxy Flooring Services Las Vegas | Garage, Commercial & Pool Deck | ProShield",
   description:
-    "Professional floor coatings in Las Vegas — epoxy, metallic systems, VubaStone, polished concrete, hangar flooring, paver sealing, and more.",
+    "Epoxy flooring services in Las Vegas — garage coatings, metallic epoxy, commercial systems, polished concrete, pool deck & more. Free estimates · 702-728-5484.",
   alternates: {
     canonical: "/services",
   },

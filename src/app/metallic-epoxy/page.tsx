@@ -14,8 +14,8 @@ import { ScrollReveal } from "@/components/ui/scroll-reveal"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Metallic Epoxy Flooring Las Vegas | ProShield Epoxy",
-  description: "Custom metallic epoxy floors for luxury showrooms, residences, and designer spaces. Unique 3D liquid-metal finishes in Las Vegas. Free design consultation.",
+  title: "Metallic Epoxy Flooring Las Vegas | Stunning 3D Finishes | ProShield Epoxy",
+  description: "Metallic epoxy flooring in Las Vegas — custom 3D liquid-metal floors for showrooms, luxury homes & designer garages. Free design consultation · 702-728-5484.",
   openGraph: {
     url: "https://proshieldepoxy.com/metallic-epoxy",
     images: ["/images/metallic/metallic-epoxy-blue-ocean-garage.webp"],
@@ -110,6 +110,30 @@ export default function MetallicEpoxyPage() {
         ctaText="Book a Design Consultation"
         backgroundImage="/images/gallery/metallic-epoxy-vegas-room.webp"
         backgroundAlt="Metallic epoxy floor with 3D liquid-metal depth and swirl patterns"
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Metallic Epoxy Flooring",
+            "description": "Custom metallic epoxy floors with 3D liquid-metal finishes for luxury showrooms, residences, and designer spaces in Las Vegas.",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "ProShield Epoxy",
+              "telephone": "+1-702-728-5484",
+              "url": "https://proshieldepoxy.com"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Las Vegas",
+              "addressRegion": "NV"
+            },
+            "url": "https://proshieldepoxy.com/metallic-epoxy"
+          })
+        }}
       />
 
       {/* Stats bar */}

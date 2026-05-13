@@ -76,21 +76,6 @@ export default function PahrumpPage() {
         }}
       />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://proshieldepoxy.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://proshieldepoxy.com/service-areas" },
-              { "@type": "ListItem", "position": 3, "name": "Pahrump", "item": "https://proshieldepoxy.com/service-areas/pahrump" }
-            ]
-          })
-        }}
-      />
-
       <PageHero
         badge="Pahrump, NV"
         title="Epoxy Flooring &"
@@ -439,6 +424,19 @@ export default function PahrumpPage() {
             </h2>
           </div>
           <FaqAccordion faqs={pahrumpFaqs} />
+        </div>
+      </section>
+
+      {/* Internal links */}
+      <section className="section-gray py-8 sm:py-12 border-t border-gray-200">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gray-600 leading-relaxed">
+            Browse our full{" "}
+            <Link href="/services" className="text-accent hover:underline font-medium">flooring services</Link>{" "}
+            available in Pahrump, or{" "}
+            <Link href="/contact" className="text-accent hover:underline font-medium">get your free estimate</Link>{" "}
+            today.
+          </p>
         </div>
       </section>
 

@@ -10,6 +10,7 @@ const systemLinks = [
   { label: "Concrete Polishing", href: "/concrete-polishing" },
   { label: "Commercial Flooring", href: "/commercial-flooring" },
   { label: "Cool Deck / Patio", href: "/cool-deck" },
+  { label: "Rubber Pool Deck", href: "/rubber-pool-deck" },
   { label: "Tile Flooring", href: "/tile-flooring" },
   { label: "Plank Flooring", href: "/plank-flooring" },
   { label: "Paver Sealing", href: "/paver-sealing" },
@@ -26,6 +27,7 @@ const areaLinks = [
 ]
 
 const serviceAreaLinks = [
+  { label: "All Service Areas", href: "/service-areas" },
   { label: "Henderson", href: "/service-areas/henderson" },
   { label: "Summerlin", href: "/service-areas/summerlin" },
   { label: "North Las Vegas", href: "/service-areas/north-las-vegas" },

@@ -48,6 +48,14 @@ const systems = [
     locations: ["Exterior"],
   },
   {
+    title: "Rubber Pool Deck",
+    description:
+      "Poured-in-place EPDM rubber aggregate over existing concrete. Slip-resistant, cushioned, and crack-bridging.",
+    href: "/rubber-pool-deck",
+    image: "/images/blog/rubber-deck/rubber-deck-pool-wide.jpg",
+    locations: ["Exterior"],
+  },
+  {
     title: "Artificial Turf",
     description:
       "Premium artificial turf with engineered resin-bound base systems for lawns, pet areas, and putting greens.",

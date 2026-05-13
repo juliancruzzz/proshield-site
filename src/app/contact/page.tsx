@@ -6,8 +6,8 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react"
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/phone"
 
 export const metadata: Metadata = {
-  title: "Contact | Get a Free Quote | ProShield Epoxy",
-  description: "Get a free quote for your floor coating project. Professional-grade systems for garages, commercial spaces, hangars, and more. Las Vegas metro area.",
+  title: "Free Epoxy Flooring Estimate Las Vegas | Contact ProShield Epoxy",
+  description: "Get your free epoxy flooring estimate in Las Vegas. Garage floors, commercial coatings, pool decks & more. Same-week scheduling available. Call 702-728-5484.",
   alternates: {
     canonical: "/contact",
   },

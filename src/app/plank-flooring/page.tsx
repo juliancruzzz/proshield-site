@@ -85,6 +85,22 @@ export default function PlankFlooringPage() {
 
       <PlankBenefits />
 
+      {/* Internal link bridge */}
+      <section className="section-white py-8 sm:py-12">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gray-600 leading-relaxed">
+            Not sure if plank is the right fit?{" "}
+            <Link href="/blog/polished-concrete-vs-epoxy" className="text-accent hover:underline font-medium">
+              Compare polished concrete vs. epoxy
+            </Link>{" "}
+            for a different look. See finished installs in our{" "}
+            <Link href="/gallery" className="text-accent hover:underline font-medium">project gallery</Link>{" "}
+            or view all{" "}
+            <Link href="/services" className="text-accent hover:underline font-medium">flooring services</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="section-gray py-14 sm:py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

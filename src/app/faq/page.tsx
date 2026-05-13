@@ -6,14 +6,14 @@ import { FaqPageContent } from '@/components/sections/faq-page-content'
 import { faqCategories } from '@/data/faq-data'
 
 export const metadata: Metadata = {
-  title: 'FAQ | Epoxy Flooring Questions | ProShield Epoxy',
-  description: 'Answers to common questions about epoxy flooring, metallic coatings, VubaStone, concrete polishing, cool deck, and more. Las Vegas floor coating FAQ.',
+  title: 'Epoxy Flooring FAQ Las Vegas | Common Questions Answered | ProShield Epoxy',
+  description: 'Epoxy flooring FAQ — answers about garage coatings, metallic epoxy, VubaStone, concrete polishing, cool deck & more in Las Vegas. 702-728-5484.',
   alternates: {
     canonical: '/faq',
   },
   openGraph: {
-    title: 'FAQ | Epoxy Flooring Questions | ProShield Epoxy',
-    description: 'Answers to common questions about epoxy flooring, metallic coatings, VubaStone, concrete polishing, cool deck, and more. Las Vegas floor coating FAQ.',
+    title: 'Epoxy Flooring FAQ Las Vegas | Common Questions Answered | ProShield Epoxy',
+    description: 'Epoxy flooring FAQ — answers about garage coatings, metallic epoxy, VubaStone, concrete polishing, cool deck & more in Las Vegas. 702-728-5484.',
     url: 'https://proshieldepoxy.com/faq',
   },
 }

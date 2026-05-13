@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { ArrowRight, MapPin } from "lucide-react"
+import { ArrowRight, MapPin, Phone } from "lucide-react"
 import { useRef } from "react"
 
 export function Hero() {
@@ -19,7 +19,15 @@ export function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-[85vh] sm:min-h-screen flex items-end sm:items-center overflow-hidden"
+      className="relative min-h-[85vh] sm:min-h-screen flex items-end lg:items-center overflow-hidden"
+      style={{
+        backgroundImage: `
+          linear-gradient(160deg, rgba(17,28,46,0.88) 0%, rgba(14,24,38,0.78) 40%, rgba(11,20,32,0.85) 100%),
+          url(/images/metallic-hero-poster.jpg)
+        `,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       {/* Video Background */}
       <motion.div className="absolute inset-0" style={{ scale: bgScale }}>
@@ -29,21 +37,18 @@ export function Hero() {
           loop
           playsInline
           poster="/images/metallic-hero-poster.jpg"
-          preload="none"
+          preload="metadata"
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/images/metallic-hero-bg.mp4" type="video/mp4" />
         </video>
-        {/* Dark overlay so text remains readable */}
         <div
           className="absolute inset-0"
           style={{
-            background: `
-              linear-gradient(160deg, rgba(17,28,46,0.85) 0%, rgba(14,24,38,0.78) 40%, rgba(11,20,32,0.82) 100%)
-            `,
+            background:
+              "linear-gradient(160deg, rgba(17,28,46,0.88) 0%, rgba(14,24,38,0.78) 40%, rgba(11,20,32,0.85) 100%)",
           }}
         />
-        {/* Subtle warm glow — bottom right */}
         <div
           className="absolute inset-0"
           style={{
@@ -61,72 +66,88 @@ export function Hero() {
         style={{ opacity: overlayOpacity }}
       />
 
-      {/* Single soft ambient orb */}
+      {/* Ambient orbs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-[20%] right-[5%] w-96 h-96 bg-accent/5 rounded-full blur-[150px] animate-drift" />
+        <div className="absolute bottom-[15%] left-[10%] w-72 h-72 bg-teal/5 rounded-full blur-[120px] animate-drift-slow" />
       </div>
 
-      {/* Main content — heading uses CSS animation so it's visible on SSR
-          (no opacity:0 initial state). This is critical for LCP because
-          the h1 is the largest contentful element. With framer-motion
-          initial={{ opacity: 0 }}, the heading was invisible until JS
-          hydrated (~2.5 s on desktop), destroying the LCP score. */}
+      {/* Main content */}
       <motion.div
-        className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-14 sm:pt-32 sm:pb-24 z-10 w-full"
+        className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-20 sm:pt-32 sm:pb-28 lg:pt-36 lg:pb-32 z-10 w-full"
         style={{ y: textY }}
       >
         <div className="max-w-3xl">
-          {/* Headline — visible immediately via CSS animation (LCP-safe) */}
-          <h1
-            className="font-heading font-bold text-4xl sm:text-5xl md:text-7xl lg:text-[76px] text-white leading-[1.08] tracking-[-0.03em] animate-hero-fade-in"
+          {/* Location badge */}
+          <div
+            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 mb-6 animate-hero-fade-in"
           >
+            <MapPin className="h-3.5 w-3.5 text-accent" />
+            <span className="text-xs sm:text-sm font-medium text-white/60 tracking-wide uppercase">
+              Las Vegas, Nevada
+            </span>
+          </div>
+
+          {/* Headline */}
+          <h1 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-[68px] xl:text-[76px] text-white leading-[1.06] tracking-[-0.03em] animate-hero-fade-in">
             Professional-Grade
             <br />
             <span className="text-accent">Floor Coatings</span>
-            <br />
-            <span className="text-sm sm:text-base md:text-lg lg:text-xl text-white/70">Las Vegas</span>
           </h1>
 
           {/* Subheading */}
           <p
-            className="mt-6 text-lg sm:text-xl text-white/60 max-w-lg leading-relaxed animate-hero-fade-in"
+            className="mt-5 sm:mt-6 text-base sm:text-lg lg:text-xl text-white/70 max-w-xl leading-relaxed animate-hero-fade-in"
             style={{ animationDelay: "0.15s" }}
           >
-            Epoxy, metallic, VubaStone, and polished concrete systems for
-            garages, commercial spaces, and beyond.
+            Metallic epoxy, flake systems, VubaStone, polished concrete, and
+            specialty coatings for garages, commercial spaces, and beyond.
           </p>
 
           {/* CTAs */}
           <div
-            className="mt-10 flex flex-col sm:flex-row items-start gap-4 animate-hero-fade-in"
+            className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-start gap-3 sm:gap-4 animate-hero-fade-in"
             style={{ animationDelay: "0.3s" }}
           >
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-8 py-4 text-base font-semibold text-white hover:bg-accent-hover transition-colors duration-200 shadow-xl shadow-accent/20"
+              className="relative inline-flex items-center justify-center gap-2.5 rounded-lg bg-accent px-8 py-4 text-base font-semibold text-white hover:bg-accent-hover transition-colors duration-200 shadow-lg shadow-accent/20 cursor-pointer pulse-ring"
             >
               Get a Free Quote
               <ArrowRight className="h-4 w-4" />
             </Link>
-            <Link
-              href="/gallery"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/12 bg-white/[0.04] px-8 py-4 text-base font-semibold text-white/80 hover:bg-white/[0.08] hover:border-white/20 transition-all duration-200"
+            <a
+              href="tel:702-728-5484"
+              className="inline-flex items-center justify-center gap-2.5 rounded-lg border border-white/12 bg-white/[0.04] px-8 py-4 text-base font-semibold text-white/80 hover:bg-white/[0.08] hover:border-white/20 transition-all duration-200 cursor-pointer"
             >
-              View Our Work
-            </Link>
+              <Phone className="h-4 w-4 text-accent" />
+              (702) 728-5484
+            </a>
           </div>
-
-          {/* Location */}
-          <div
-            className="mt-8 inline-flex items-center gap-2 text-sm text-white/50 animate-hero-fade-in"
-            style={{ animationDelay: "0.45s" }}
-          >
-            <MapPin className="h-3.5 w-3.5 text-accent" />
-            Las Vegas Metro &amp; Surrounding Areas
-          </div>
-
         </div>
       </motion.div>
+
+      {/* Service Areas — bottom of hero */}
+      <div
+        className="absolute bottom-0 left-0 right-0 z-10 py-4 animate-hero-fade-in"
+        style={{ animationDelay: "0.5s" }}
+      >
+        <p className="text-center text-xs sm:text-sm text-white/40">
+          <MapPin className="inline h-3 w-3 text-accent mr-1 -mt-0.5" />
+          Serving{" "}
+          <Link href="/service-areas" className="text-white/50 hover:text-accent transition-colors">Las Vegas</Link>
+          {" · "}
+          <Link href="/service-areas/henderson" className="text-white/50 hover:text-accent transition-colors">Henderson</Link>
+          {" · "}
+          <Link href="/service-areas/summerlin" className="text-white/50 hover:text-accent transition-colors">Summerlin</Link>
+          {" · "}
+          <Link href="/service-areas/north-las-vegas" className="text-white/50 hover:text-accent transition-colors">North Las Vegas</Link>
+          {" · "}
+          <Link href="/service-areas/boulder-city" className="text-white/50 hover:text-accent transition-colors">Boulder City</Link>
+          {" · "}
+          <Link href="/service-areas/pahrump" className="text-white/50 hover:text-accent transition-colors">Pahrump</Link>
+        </p>
+      </div>
 
     </section>
   )

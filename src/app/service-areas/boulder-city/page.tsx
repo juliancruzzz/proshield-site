@@ -16,9 +16,9 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Epoxy Flooring Boulder City NV | ProShield Epoxy",
+  title: "Epoxy Flooring Boulder City NV | Garage & Driveway Coatings | ProShield",
   description:
-    "Professional epoxy flooring and coatings in Boulder City, NV. ProFlake, metallic epoxy, VubaStone driveways, concrete polishing. Near Hoover Dam and Lake Mead.",
+    "Boulder City epoxy flooring & coatings — garage floors, VubaStone driveways, metallic epoxy & concrete polishing. Serving Hoover Dam & Lake Mead areas. Free estimates: 702-728-5484.",
   alternates: {
     canonical: "/service-areas/boulder-city",
   },
@@ -72,21 +72,6 @@ export default function BoulderCityPage() {
                 "text": faq.a
               }
             }))
-          })
-        }}
-      />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://proshieldepoxy.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://proshieldepoxy.com/service-areas" },
-              { "@type": "ListItem", "position": 3, "name": "Boulder City", "item": "https://proshieldepoxy.com/service-areas/boulder-city" }
-            ]
           })
         }}
       />
@@ -439,6 +424,19 @@ export default function BoulderCityPage() {
             </h2>
           </div>
           <FaqAccordion faqs={boulderCityFaqs} />
+        </div>
+      </section>
+
+      {/* Internal links */}
+      <section className="section-gray py-8 sm:py-12 border-t border-gray-200">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gray-600 leading-relaxed">
+            See our full{" "}
+            <Link href="/services" className="text-accent hover:underline font-medium">flooring services</Link>{" "}
+            available in Boulder City, or{" "}
+            <Link href="/contact" className="text-accent hover:underline font-medium">get a free estimate</Link>{" "}
+            for your project.
+          </p>
         </div>
       </section>
 

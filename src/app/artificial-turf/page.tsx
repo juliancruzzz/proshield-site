@@ -106,6 +106,22 @@ export default function GrassMacPage() {
 
       <GrassMacProcess />
 
+      {/* Internal link bridge */}
+      <section className="section-gray py-8 sm:py-12">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gray-600 leading-relaxed">
+            Planning an outdoor space?{" "}
+            <Link href="/blog/coolest-pool-deck-flooring-las-vegas" className="text-accent hover:underline font-medium">
+              See the coolest pool deck flooring options for Las Vegas
+            </Link>.{" "}
+            Browse finished projects in our{" "}
+            <Link href="/gallery" className="text-accent hover:underline font-medium">gallery</Link>{" "}
+            or explore all{" "}
+            <Link href="/services" className="text-accent hover:underline font-medium">services</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="section-white py-14 sm:py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

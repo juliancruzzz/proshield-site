@@ -92,6 +92,18 @@ export const metadata: Metadata = {
   ),
 }
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "ProShield Epoxy",
+  url: "https://proshieldepoxy.com",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://proshieldepoxy.com/?s={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+}
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -158,7 +170,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://web3forms.com" />
         <link rel="preconnect" href="https://api.web3forms.com" />
         {/* Preload LCP hero poster so the browser discovers it before parsing JS */}
-        <link rel="preload" href="/images/metallic-hero-poster.jpg" as="image" />
+        <link rel="preload" href="/images/metallic-hero-poster.jpg" as="image" fetchPriority="high" />
         {/* Defer GTM until first user interaction (scroll/click/touch).
             FB Pixel removed — fbevents.js emits an AttributionReporting
             deprecation warning that tanks the Best-Practices score. Fire
@@ -192,6 +204,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(structuredData),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
           }}
         />
       </head>

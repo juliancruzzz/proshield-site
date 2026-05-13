@@ -219,6 +219,20 @@ export default function VubaStonePage() {
         </div>
       </section>
 
+      {/* Internal link bridge */}
+      <section className="section-white py-8 sm:py-12">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gray-600 leading-relaxed">
+            VubaStone is one of several outdoor coating options we install.{" "}
+            <Link href="/blog/best-pool-deck-coatings-las-vegas" className="text-accent hover:underline font-medium">
+              Compare pool deck coating options
+            </Link>{" "}
+            or explore our full{" "}
+            <Link href="/services" className="text-accent hover:underline font-medium">services lineup</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="section-white py-10 sm:py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

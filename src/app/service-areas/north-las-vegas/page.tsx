@@ -16,9 +16,9 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Epoxy Flooring North Las Vegas NV | ProShield Epoxy",
+  title: "Epoxy Flooring North Las Vegas NV | Commercial & Industrial | ProShield",
   description:
-    "Commercial epoxy flooring and coatings in North Las Vegas, NV. Warehouse, industrial, and commercial-grade systems. Aliante, Apex Industrial Park, chemical-resistant coatings.",
+    "North Las Vegas epoxy flooring — warehouse, industrial & commercial coatings. Chemical-resistant systems for Apex Industrial Park & Aliante. Free estimates: 702-728-5484.",
   alternates: {
     canonical: "/service-areas/north-las-vegas",
   },
@@ -72,21 +72,6 @@ export default function NorthLasVegasPage() {
                 "text": faq.a
               }
             }))
-          })
-        }}
-      />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://proshieldepoxy.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://proshieldepoxy.com/service-areas" },
-              { "@type": "ListItem", "position": 3, "name": "North Las Vegas", "item": "https://proshieldepoxy.com/service-areas/north-las-vegas" }
-            ]
           })
         }}
       />
@@ -433,6 +418,19 @@ export default function NorthLasVegasPage() {
             </h2>
           </div>
           <FaqAccordion faqs={northLasVegasFaqs} />
+        </div>
+      </section>
+
+      {/* Internal links */}
+      <section className="section-gray py-8 sm:py-12 border-t border-gray-200">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gray-600 leading-relaxed">
+            Explore our full{" "}
+            <Link href="/services" className="text-accent hover:underline font-medium">flooring services</Link>{" "}
+            in North Las Vegas, or{" "}
+            <Link href="/contact" className="text-accent hover:underline font-medium">request your free quote</Link>{" "}
+            today.
+          </p>
         </div>
       </section>
 

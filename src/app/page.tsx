@@ -11,9 +11,9 @@ import { Credentials } from "@/components/sections/credentials"
 
 export const metadata: Metadata = {
   title:
-    "Epoxy Flooring Las Vegas | ProShield Epoxy",
+    "Epoxy Flooring Las Vegas | Garage Floor Coatings | ProShield Epoxy",
   description:
-    "Las Vegas epoxy flooring — metallic epoxy, flake systems, VubaStone, concrete polishing, cool deck & more. Free quotes. Call 702-728-5484.",
+    "Las Vegas epoxy flooring pros — garage floors, metallic epoxy, commercial coatings & pool decks. Licensed, insured, 5-star rated. Same-week scheduling. Free estimates: 702-728-5484.",
   alternates: {
     canonical: "/",
   },

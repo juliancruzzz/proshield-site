@@ -16,9 +16,9 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Epoxy Flooring Henderson NV | ProShield Epoxy",
+  title: "Epoxy Flooring Henderson NV | Garage, Commercial & Pool Deck | ProShield",
   description:
-    "Professional epoxy flooring and coatings in Henderson, NV. ProFlake, metallic epoxy, VubaStone, cool deck, and airplane hangar coatings. Green Valley, Anthem, Lake Las Vegas.",
+    "Henderson's top-rated epoxy flooring company. Garage coatings, metallic epoxy, pool decks & hangar floors in Green Valley, Anthem & Lake Las Vegas. Free estimates: 702-728-5484.",
   alternates: {
     canonical: "/service-areas/henderson",
   },
@@ -72,21 +72,6 @@ export default function HendersonPage() {
                 "text": faq.a
               }
             }))
-          })
-        }}
-      />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://proshieldepoxy.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://proshieldepoxy.com/service-areas" },
-              { "@type": "ListItem", "position": 3, "name": "Henderson", "item": "https://proshieldepoxy.com/service-areas/henderson" }
-            ]
           })
         }}
       />
@@ -445,6 +430,19 @@ export default function HendersonPage() {
             </h2>
           </div>
           <FaqAccordion faqs={hendersonFaqs} />
+        </div>
+      </section>
+
+      {/* Internal links */}
+      <section className="section-gray py-8 sm:py-12 border-t border-gray-200">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gray-600 leading-relaxed">
+            View our full{" "}
+            <Link href="/services" className="text-accent hover:underline font-medium">list of flooring services</Link>{" "}
+            available in Henderson, or{" "}
+            <Link href="/contact" className="text-accent hover:underline font-medium">request your free estimate</Link>{" "}
+            today.
+          </p>
         </div>
       </section>
 

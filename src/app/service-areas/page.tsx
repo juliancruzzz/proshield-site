@@ -6,9 +6,9 @@ import { CtaSection } from "@/components/sections/cta-section"
 import { MapPin, Phone, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Service Areas | ProShield Epoxy - Las Vegas Valley",
+  title: "Epoxy Flooring Near Me Las Vegas | Henderson, Summerlin, NLV | ProShield Epoxy",
   description:
-    "ProShield Epoxy serves Henderson, Summerlin, North Las Vegas, Boulder City, and Pahrump. Professional epoxy flooring & coatings throughout Southern Nevada.",
+    "Epoxy flooring near you in Las Vegas — serving Henderson, Summerlin, North Las Vegas, Boulder City & Pahrump. Local contractor · Free estimates · 702-728-5484.",
   alternates: {
     canonical: "/service-areas",
   },

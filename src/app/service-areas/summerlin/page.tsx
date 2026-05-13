@@ -76,21 +76,6 @@ export default function SummerlinPage() {
         }}
       />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://proshieldepoxy.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://proshieldepoxy.com/service-areas" },
-              { "@type": "ListItem", "position": 3, "name": "Summerlin", "item": "https://proshieldepoxy.com/service-areas/summerlin" }
-            ]
-          })
-        }}
-      />
-
       <PageHero
         badge="Summerlin, NV"
         title="Premium Epoxy Flooring &"
@@ -439,6 +424,18 @@ export default function SummerlinPage() {
             </h2>
           </div>
           <FaqAccordion faqs={summerlinFaqs} />
+        </div>
+      </section>
+
+      {/* Internal links */}
+      <section className="section-gray py-8 sm:py-12 border-t border-gray-200">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gray-600 leading-relaxed">
+            View our complete{" "}
+            <Link href="/services" className="text-accent hover:underline font-medium">flooring services</Link>{" "}
+            available in Summerlin, or{" "}
+            <Link href="/contact" className="text-accent hover:underline font-medium">schedule your free estimate</Link>.
+          </p>
         </div>
       </section>
 

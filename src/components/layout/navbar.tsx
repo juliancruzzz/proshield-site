@@ -14,6 +14,14 @@ const areaLinks = [
   { label: "Commercial", href: "/areas/commercial" },
 ]
 
+const serviceAreaLinks = [
+  { label: "Henderson", href: "/service-areas/henderson" },
+  { label: "Summerlin", href: "/service-areas/summerlin" },
+  { label: "North Las Vegas", href: "/service-areas/north-las-vegas" },
+  { label: "Boulder City", href: "/service-areas/boulder-city" },
+  { label: "Pahrump", href: "/service-areas/pahrump" },
+]
+
 const systemGroups = [
   {
     heading: "Epoxy & Coatings",
@@ -37,6 +45,7 @@ const systemGroups = [
     items: [
       { label: "Concrete Overlay", href: "/concrete-overlay" },
       { label: "Cool Deck / Patio", href: "/cool-deck" },
+      { label: "Rubber Pool Deck", href: "/rubber-pool-deck" },
       { label: "Paver Sealing", href: "/paver-sealing" },
       { label: "VubaStone", href: "/vubastone" },
       { label: "Artificial Turf", href: "/artificial-turf" },
@@ -58,6 +67,7 @@ const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "Areas", href: "/areas/garage", children: areaLinks },
   { label: "Systems", href: "/services", children: systemLinks, groups: systemGroups },
+  { label: "Service Areas", href: "/service-areas", children: serviceAreaLinks },
   { label: "Gallery", href: "/gallery" },
   { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },

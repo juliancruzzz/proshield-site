@@ -58,6 +58,21 @@ const systems: System[] = [
     categories: ["Pool Decks", "Patios"],
   },
   {
+    name: "Rubber Pool Deck",
+    description:
+      "Poured-in-place EPDM rubber aggregate over existing concrete. Slip-resistant, cushioned, crack-bridging, and built for Las Vegas summers.",
+    highlights: [
+      "Exceeds ADA slip resistance",
+      "Cushioned fall protection",
+      "Bridges concrete cracks",
+      "UV & chemical resistant",
+      "Low maintenance",
+    ],
+    href: "/rubber-pool-deck",
+    image: "/images/blog/rubber-deck/rubber-deck-pool-wide.jpg",
+    categories: ["Pool Decks", "Patios"],
+  },
+  {
     name: "ProFlake Epoxy",
     description:
       "Polyurea base with full flake broadcast and polyaspartic topcoat. Works on any exterior concrete surface for a durable, decorative finish.",
