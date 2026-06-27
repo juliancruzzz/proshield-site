@@ -4,6 +4,7 @@ import { useRef, useState, useCallback } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { GripVertical, ArrowRight, Star, X } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function BeforeAfterSlider() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -107,14 +108,12 @@ export function BeforeAfterSlider() {
               onTouchEnd={() => setIsDragging(false)}
             >
               {/* "After" image — full background (finished floor) */}
-              <img
+              <Image
                 src="/images/proflake/flake-garage-after-coated.webp"
                 alt="Finished garage floor with ProFlake epoxy coating"
-                className="absolute inset-0 h-full w-full object-cover"
-                loading="lazy"
-                decoding="async"
-                width={1200}
-                height={1599}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
               />
 
               {/* "Before" image — clipped overlay (raw concrete) */}
@@ -122,14 +121,12 @@ export function BeforeAfterSlider() {
                 className="absolute inset-0"
                 style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
               >
-                <img
+                <Image
                   src="/images/proflake/flake-garage-before-concrete.webp"
                   alt="Raw concrete garage floor before ProFlake epoxy installation"
-                  className="absolute inset-0 h-full w-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                  width={1000}
-                  height={1791}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
 

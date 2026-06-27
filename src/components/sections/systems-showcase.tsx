@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
 import { useMounted } from "@/hooks/use-mounted"
 
@@ -99,11 +100,12 @@ function SystemCard({
         {/* Image */}
         <div className="relative w-full sm:w-[44%] h-[160px] sm:h-full shrink-0 overflow-hidden">
           {sys.image && !imgErrors[index] ? (
-            <img
+            <Image
               src={sys.image}
               alt={sys.title}
-              className="h-full w-full object-cover pointer-events-none"
-              loading="lazy"
+              fill
+              sizes="(max-width: 640px) 280px, 200px"
+              className="object-cover pointer-events-none"
               draggable={false}
               onError={() => onImgError(index)}
             />
