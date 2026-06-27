@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import {
   ArrowRight,
@@ -168,11 +169,12 @@ export function CommercialAreas() {
                 >
                   {/* Thumbnail */}
                   <div className="relative h-[67px] w-[67px] sm:h-[77px] sm:w-[77px] rounded-xl overflow-hidden shrink-0 bg-gray-100">
-                    <img
+                    <Image
                       src={system.image}
                       alt={system.name}
-                      className="h-full w-full object-cover object-center"
-                      loading="lazy"
+                      fill
+                      sizes="80px"
+                      className="object-cover object-center"
                     />
                   </div>
 
@@ -227,11 +229,12 @@ export function CommercialAreas() {
 
                         {/* Image */}
                         <div className="relative rounded-xl overflow-hidden h-48 sm:h-56 mb-5 bg-gray-100">
-                          <img
+                          <Image
                             src={system.image}
                             alt={system.name}
-                            className="h-full w-full object-cover object-center"
-                            loading="lazy"
+                            fill
+                            sizes="(max-width: 768px) 100vw, 700px"
+                            className="object-cover object-center"
                           />
                         </div>
 
