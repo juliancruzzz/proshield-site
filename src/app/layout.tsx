@@ -128,11 +128,6 @@ const structuredData = {
     { "@type": "City", name: "Boulder City", containedInPlace: { "@type": "State", name: "Nevada" } },
     { "@type": "City", name: "Pahrump", containedInPlace: { "@type": "State", name: "Nevada" } },
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "43",
-  },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
