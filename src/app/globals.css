@@ -377,12 +377,13 @@ p, li {
   border-top-left-radius: inherit;
 }
 
-/* Hero entrance — CSS-only so heading is visible on SSR (LCP-safe).
-   The h1 paints at full opacity in the first frame, so Lighthouse
-   counts it as the LCP immediately instead of waiting for JS hydration. */
+/* Hero entrance — CSS-only and transform-only so the headline paints at full
+   opacity in the first SSR frame. The h1 is the LCP text in some runs, so it
+   must never sit at opacity 0 (that would gate the largest contentful paint
+   behind JS hydration). Slide only. */
 @keyframes hero-fade-in {
-  from { opacity: 0; transform: translateY(15px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { transform: translateY(12px); }
+  to   { transform: translateY(0); }
 }
 
 .animate-hero-fade-in {
