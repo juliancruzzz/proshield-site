@@ -1,12 +1,10 @@
 "use client"
 
 import { useState } from "react"
-import { motion } from "framer-motion"
 import {
   Phone, Mail, MapPin, Clock, Send, CheckCircle,
   Loader2, ImagePlus, X, Camera, MessageSquare, FileText,
 } from "lucide-react"
-import { useMounted } from "@/hooks/use-mounted"
 import { submitForm } from "@/lib/submit-form"
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/phone"
 import { PROJECT_TYPE_GROUPS } from "@/lib/cta-data"
@@ -38,11 +36,11 @@ function InlineCTAForm() {
   const handleSubmit = async (e:React.FormEvent) => { e.preventDefault(); if(selectedTypes.length===0)return; setStatus("loading"); const projectType=selectedTypes.join(", "); const result = await submitForm({...formData,projectType}, "Quote Request"); setStatus(result.ok ? "success" : "error") }
 
   if (status === "success") return (
-    <motion.div initial={{opacity:0,scale:0.95}} animate={{opacity:1,scale:1}} className="rounded-2xl border border-white/10 bg-white/[0.04] p-8 text-center">
+    <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-8 text-center animate-reveal">
       <div className="mx-auto h-14 w-14 rounded-full bg-accent/15 flex items-center justify-center mb-4"><CheckCircle className="h-7 w-7 text-accent"/></div>
       <h3 className="font-heading font-semibold text-xl text-white">Quote Request Sent!</h3>
       <p className="mt-2 text-white/60 text-sm">We&apos;ll get back to you within 24 hours.</p>
-    </motion.div>
+    </div>
   )
 
   const inp = "w-full rounded-lg border border-white/12 bg-white/[0.06] px-4 py-3 text-sm text-white placeholder:text-white/35 focus:border-accent/50 focus:ring-2 focus:ring-accent/15 outline-none transition-all duration-150"
@@ -86,7 +84,6 @@ function InlineCTAForm() {
    ─────────────────────────────────────────────────────── */
 
 export function CtaV3() {
-  const mounted = useMounted()
 
   return (
     <section
@@ -160,9 +157,9 @@ export function CtaV3() {
           </div>
         </div>
 
-        <motion.p initial={{opacity:0}} animate={mounted?{opacity:1}:{}} transition={{duration:0.5,delay:0.7}} className="mt-14 text-center text-xs text-white/25">
+        <p className="mt-14 text-center text-xs text-white/25">
           Free estimates &bull; Licensed &amp; insured &bull; Las Vegas metro + 20-mile radius
-        </motion.p>
+        </p>
       </div>
     </section>
   )

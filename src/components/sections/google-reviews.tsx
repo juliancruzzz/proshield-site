@@ -1,9 +1,5 @@
-"use client"
-
-import { motion } from "framer-motion"
 import { Star, Quote } from "lucide-react"
 import { Marquee } from "@/components/ui/marquee"
-import { useMounted } from "@/hooks/use-mounted"
 import googleData from "@/data/google-reviews.json"
 
 /* ------------------------------------------------------------------ */
@@ -128,8 +124,6 @@ function ReviewCard({ review }: { review: Review }) {
 /* ------------------------------------------------------------------ */
 
 export function GoogleReviews() {
-  const mounted = useMounted()
-
   return (
     <section className="relative bg-white py-24 lg:py-32 overflow-hidden">
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -181,25 +175,16 @@ export function GoogleReviews() {
         </div>
 
         {/* Marquee reviews */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={mounted ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8, delay: 0.3 }}
-        >
+        <div>
           <Marquee speed={30} pauseOnHover direction="left">
             {reviews.map((review, i) => (
               <ReviewCard key={i} review={review} />
             ))}
           </Marquee>
-        </motion.div>
+        </div>
 
         {/* Actions */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={mounted ? { opacity: 1 } : {}}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
+        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href={`https://search.google.com/local/writereview?placeid=${
               process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID || "YOUR_PLACE_ID"
@@ -220,7 +205,7 @@ export function GoogleReviews() {
           >
             See all reviews on Google &rarr;
           </a>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

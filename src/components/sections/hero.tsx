@@ -1,15 +1,14 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, MapPin, Phone } from "lucide-react"
-import { HeroParallax } from "./hero-parallax"
 
 /**
- * Server component. The LCP element — the poster image — is a priority
- * next/image (NOT a CSS background-image, which paints late behind the
- * render-blocking stylesheet and isn't prioritized). It decodes and paints as
- * soon as it loads, served as AVIF/WebP at the right size. The headline renders
- * from the same SSR HTML. Video + scroll parallax are isolated in <HeroParallax>
- * (a client island) so framer-motion hydration never gates the paint.
+ * Fully server component — no client JS. The LCP element (priority next/image
+ * poster) decodes and paints fast as AVIF/WebP. The video + gradients are static
+ * server-rendered layers (autoplay/muted/loop are pure HTML, no JS needed); the
+ * old framer-motion scroll-parallax was dropped to keep framer-motion out of the
+ * homepage bundle (INP). The poster is the LCP; the video (preload="none") loads
+ * after and covers it seamlessly with the same frame.
  */
 export function Hero() {
   return (
@@ -25,7 +24,21 @@ export function Hero() {
         sizes="100vw"
         className="object-cover"
       />
-      {/* Darkening gradient over the poster for text contrast (pre-hydration) */}
+
+      {/* Video background (decorative, no JS). preload="none" keeps it off the LCP path. */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="none"
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/images/metallic-hero-bg.mp4" type="video/mp4" />
+      </video>
+
+      {/* Darkening gradient over poster/video for text contrast */}
       <div
         className="absolute inset-0"
         style={{
@@ -33,9 +46,16 @@ export function Hero() {
             "linear-gradient(160deg, rgba(17,28,46,0.88) 0%, rgba(14,24,38,0.78) 40%, rgba(11,20,32,0.85) 100%)",
         }}
       />
-
-      {/* Deferred decorative layer: video + scroll parallax */}
-      <HeroParallax />
+      {/* Radial accent glows */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: `
+            radial-gradient(ellipse at 75% 70%, rgba(222,134,20,0.08) 0%, transparent 50%),
+            radial-gradient(ellipse at 15% 20%, rgba(93,158,226,0.05) 0%, transparent 40%)
+          `,
+        }}
+      />
 
       {/* Ambient orbs (CSS-only, no JS) */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
