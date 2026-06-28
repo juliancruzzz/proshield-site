@@ -391,13 +391,16 @@ p, li {
 }
 
 /* Generic enter reveal — CSS replacement for framer-motion entrance fades, so
-   sections can stay server-rendered / drop the framer-motion bundle (INP). */
+   sections can stay server-rendered / drop the framer-motion bundle (INP).
+   Opacity-only ON PURPOSE: animating `transform` with `both` fill-mode would
+   clobber existing transform utilities (e.g. the dropdowns' `-translate-x-1/2`
+   centering), shifting them off-center. Fade only keeps those transforms intact. */
 @keyframes reveal {
-  from { opacity: 0; transform: translateY(-8px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 .animate-reveal {
-  animation: reveal 0.3s ease-in-out both;
+  animation: reveal 0.25s ease-in-out both;
 }
 
 /* Reduced motion */
