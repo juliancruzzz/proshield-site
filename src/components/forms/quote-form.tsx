@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { motion } from "framer-motion"
 import { Send, CheckCircle, Loader2 } from "lucide-react"
 import { submitForm } from "@/lib/submit-form"
 import { PROJECT_TYPE_GROUPS } from "@/lib/cta-data"
@@ -47,11 +46,7 @@ export function QuoteForm() {
 
   if (status === "success") {
     return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="rounded-2xl border border-gray-200 bg-white p-8 text-center"
-      >
+      <div className="rounded-2xl border border-gray-200 bg-white p-8 text-center animate-reveal">
         <div className="mx-auto h-14 w-14 rounded-full bg-success/10 flex items-center justify-center mb-4">
           <CheckCircle className="h-7 w-7 text-success" />
         </div>
@@ -61,7 +56,7 @@ export function QuoteForm() {
         <p className="mt-2 text-gray-500 text-sm">
           We&apos;ll get back to you within 24 hours. Thanks for choosing ProShield.
         </p>
-      </motion.div>
+      </div>
     )
   }
 
