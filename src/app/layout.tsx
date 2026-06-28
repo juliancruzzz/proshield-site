@@ -164,8 +164,9 @@ export default function RootLayout({
         <meta name="google-site-verification" content="UA4h8q_W-9vCOyD1oK56Op2JrPFnBGf9OVRdrVZC9lg" />
         <link rel="preconnect" href="https://web3forms.com" />
         <link rel="preconnect" href="https://api.web3forms.com" />
-        {/* Preload LCP hero poster so the browser discovers it before parsing JS */}
-        <link rel="preload" href="/images/metallic-hero-poster.jpg" as="image" fetchPriority="high" />
+        {/* The hero poster is now a priority next/image (see Hero), which emits
+            its own high-priority preload of the optimized AVIF/WebP — so the old
+            manual preload of the raw .jpg was removed to avoid a wasted download. */}
         {/* Defer GTM until first user interaction (scroll/click/touch).
             FB Pixel removed — fbevents.js emits an AttributionReporting
             deprecation warning that tanks the Best-Practices score. Fire

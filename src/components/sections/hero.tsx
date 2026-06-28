@@ -1,28 +1,39 @@
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, MapPin, Phone } from "lucide-react"
 import { HeroParallax } from "./hero-parallax"
 
 /**
- * Server component. The LCP layer — the darkened poster background and the
- * headline — renders from SSR HTML and paints without waiting on any client JS.
- * The video and scroll parallax are isolated in <HeroParallax> (a client island)
- * so framer-motion hydration never gates the largest contentful paint. The
- * section's own background-image (gradient + poster) carries text contrast
- * before the island hydrates.
+ * Server component. The LCP element — the poster image — is a priority
+ * next/image (NOT a CSS background-image, which paints late behind the
+ * render-blocking stylesheet and isn't prioritized). It decodes and paints as
+ * soon as it loads, served as AVIF/WebP at the right size. The headline renders
+ * from the same SSR HTML. Video + scroll parallax are isolated in <HeroParallax>
+ * (a client island) so framer-motion hydration never gates the paint.
  */
 export function Hero() {
   return (
     <section
-      className="relative min-h-[85vh] sm:min-h-screen flex items-end lg:items-center overflow-hidden"
-      style={{
-        backgroundImage: `
-          linear-gradient(160deg, rgba(17,28,46,0.88) 0%, rgba(14,24,38,0.78) 40%, rgba(11,20,32,0.85) 100%),
-          url(/images/metallic-hero-poster.jpg)
-        `,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="relative min-h-[85vh] sm:min-h-screen flex items-end lg:items-center overflow-hidden bg-[#0e1826]"
     >
+      {/* LCP element: priority poster. Paints fast; AVIF/WebP via next/image. */}
+      <Image
+        src="/images/metallic-hero-poster.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
+      {/* Darkening gradient over the poster for text contrast (pre-hydration) */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(160deg, rgba(17,28,46,0.88) 0%, rgba(14,24,38,0.78) 40%, rgba(11,20,32,0.85) 100%)",
+        }}
+      />
+
       {/* Deferred decorative layer: video + scroll parallax */}
       <HeroParallax />
 
