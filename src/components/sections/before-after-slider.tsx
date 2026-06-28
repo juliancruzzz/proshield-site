@@ -1,7 +1,6 @@
 "use client"
 
 import { useRef, useState, useCallback } from "react"
-import { motion, AnimatePresence } from "framer-motion"
 import { GripVertical, ArrowRight, Star, X } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
@@ -187,15 +186,8 @@ export function BeforeAfterSlider() {
           </div>
 
           {/* Expanded preview */}
-          <AnimatePresence>
-            {selectedBlend !== null && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="overflow-hidden mb-5"
-              >
+          {selectedBlend !== null && (
+              <div className="overflow-hidden mb-5 animate-reveal">
                 <div className="flex items-center gap-6 rounded-2xl bg-white border border-gray-200 p-4 shadow-sm">
                   <div className="h-28 w-28 sm:h-36 sm:w-36 shrink-0 rounded-xl overflow-hidden">
                     <img
@@ -229,9 +221,8 @@ export function BeforeAfterSlider() {
                     <X className="h-4 w-4" />
                   </button>
                 </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+              </div>
+          )}
 
           <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
             {featuredBlends.map((blend, i) => (

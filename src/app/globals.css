@@ -390,6 +390,16 @@ p, li {
   animation: hero-fade-in 0.7s ease-out both;
 }
 
+/* Generic enter reveal — CSS replacement for framer-motion entrance fades, so
+   sections can stay server-rendered / drop the framer-motion bundle (INP). */
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-reveal {
+  animation: reveal 0.3s ease-in-out both;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

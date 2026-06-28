@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, ChevronDown, Phone } from "lucide-react"
 import { PHONE_HREF } from "@/lib/phone"
 
@@ -85,38 +84,31 @@ function DropdownMenu({
   onClose: () => void
   scrolled: boolean
 }) {
+  if (!isOpen) return null
   return (
-    <AnimatePresence>
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 8 }}
-          transition={{ duration: 0.2, ease: "easeOut" }}
-          className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 max-h-[70vh] overflow-y-auto rounded-xl border shadow-2xl backdrop-blur-xl py-2 ${
+    <div
+      className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 max-h-[70vh] overflow-y-auto rounded-xl border shadow-2xl backdrop-blur-xl py-2 animate-reveal ${
+        scrolled
+          ? "bg-white/95 border-gray-200 shadow-gray-300/40"
+          : "bg-gray-900/95 border-white/10 shadow-black/50"
+      }`}
+      onMouseLeave={onClose}
+    >
+      {items.map((item) => (
+        <Link
+          key={item.label}
+          href={item.href}
+          onClick={onClose}
+          className={`block px-4 py-2.5 text-[14px] font-medium transition-colors duration-150 ${
             scrolled
-              ? "bg-white/95 border-gray-200 shadow-gray-300/40"
-              : "bg-gray-900/95 border-white/10 shadow-black/50"
+              ? "text-gray-600 hover:text-accent hover:bg-accent/5"
+              : "text-gray-300 hover:text-white hover:bg-white/10"
           }`}
-          onMouseLeave={onClose}
         >
-          {items.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              onClick={onClose}
-              className={`block px-4 py-2.5 text-[14px] font-medium transition-colors duration-150 ${
-                scrolled
-                  ? "text-gray-600 hover:text-accent hover:bg-accent/5"
-                  : "text-gray-300 hover:text-white hover:bg-white/10"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </motion.div>
-      )}
-    </AnimatePresence>
+          {item.label}
+        </Link>
+      ))}
+    </div>
   )
 }
 
@@ -131,15 +123,10 @@ function MegaDropdownMenu({
   onClose: () => void
   scrolled: boolean
 }) {
+  if (!isOpen) return null
   return (
-    <AnimatePresence>
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 8 }}
-          transition={{ duration: 0.2, ease: "easeOut" }}
-          className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 rounded-xl border shadow-2xl backdrop-blur-xl p-5 ${
+        <div
+          className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 rounded-xl border shadow-2xl backdrop-blur-xl p-5 animate-reveal ${
             scrolled
               ? "bg-white/95 border-gray-200 shadow-gray-300/40"
               : "bg-gray-900/95 border-white/10 shadow-black/50"
@@ -187,9 +174,7 @@ function MegaDropdownMenu({
               View All Systems →
             </Link>
           </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+        </div>
   )
 }
 
@@ -324,14 +309,9 @@ export function Navbar() {
       </nav>
 
       {/* Mobile Menu */}
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="lg:hidden overflow-hidden border-t border-gray-200 bg-white/95 backdrop-blur-xl"
+      {mobileOpen && (
+          <div
+            className="lg:hidden overflow-hidden border-t border-gray-200 bg-white/95 backdrop-blur-xl animate-reveal"
           >
             <div className="max-h-[calc(100vh-4rem)] overflow-y-auto px-4 py-4 space-y-1">
               {navLinks.map((link) => (
@@ -351,15 +331,8 @@ export function Navbar() {
                           }`}
                         />
                       </button>
-                      <AnimatePresence>
-                        {mobileExpanded === link.label && (
-                          <motion.div
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: "auto" }}
-                            exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.2 }}
-                            className="overflow-hidden pl-4"
-                          >
+                      {mobileExpanded === link.label && (
+                          <div className="overflow-hidden pl-4 animate-reveal">
                             {link.groups
                               ? link.groups.map((group) => (
                                   <div key={group.heading} className="mb-2">
@@ -388,9 +361,8 @@ export function Navbar() {
                                     {child.label}
                                   </Link>
                                 ))}
-                          </motion.div>
+                          </div>
                         )}
-                      </AnimatePresence>
                     </>
                   ) : (
                     <Link
@@ -421,9 +393,8 @@ export function Navbar() {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
     </header>
   )
 }
