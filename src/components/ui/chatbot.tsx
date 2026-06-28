@@ -221,8 +221,8 @@ interface Message {
   text: string
 }
 
-export function Chatbot() {
-  const [isOpen, setIsOpen] = useState(false)
+export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
+  const [isOpen, setIsOpen] = useState(startOpen)
   const [messages, setMessages] = useState<Message[]>([])
   const [chips, setChips] = useState<string[]>([])
   const [input, setInput] = useState("")

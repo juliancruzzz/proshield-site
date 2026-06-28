@@ -1,7 +1,4 @@
-"use client"
-
 import Link from "next/link"
-import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 
 interface PageHeroProps {
@@ -18,6 +15,11 @@ interface PageHeroProps {
   backgroundAlt?: string
 }
 
+/**
+ * Server component. Entrance animations are CSS (.animate-reveal, opacity-only)
+ * instead of framer-motion, so this hero — used across most pages — ships zero
+ * client JS and keeps framer-motion out of those bundles (INP).
+ */
 export function PageHero({
   badge,
   title,
@@ -48,21 +50,11 @@ export function PageHero({
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           {badge && (
-            <motion.span
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
-              className="inline-block text-xs font-semibold tracking-widest uppercase text-accent"
-            >
+            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-accent animate-reveal">
               {badge}
-            </motion.span>
+            </span>
           )}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-            className="mt-3 font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[56px] tracking-tight leading-[1.08] max-w-4xl mx-auto text-text-light"
-          >
+          <h1 className="mt-3 font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[56px] tracking-tight leading-[1.08] max-w-4xl mx-auto text-text-light animate-reveal">
             {title}
             {highlight && (
               <>
@@ -70,22 +62,12 @@ export function PageHero({
                 <span className="text-accent">{highlight}</span>
               </>
             )}
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-            className="mt-4 sm:mt-5 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed text-text-light-secondary"
-          >
+          </h1>
+          <p className="mt-4 sm:mt-5 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed text-text-light-secondary animate-reveal">
             {subtitle}
-          </motion.p>
+          </p>
           {ctaText && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
-              className="mt-6 sm:mt-8"
-            >
+            <div className="mt-6 sm:mt-8 animate-reveal">
               <Link
                 href={ctaHref}
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-white hover:bg-accent-hover transition-all duration-200 shadow-xl shadow-accent/25"
@@ -93,7 +75,7 @@ export function PageHero({
                 {ctaText}
                 <ArrowRight className="h-4 w-4" />
               </Link>
-            </motion.div>
+            </div>
           )}
         </div>
       </section>
@@ -115,20 +97,12 @@ export function PageHero({
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
         {badge && (
-          <motion.span
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
-            className="inline-block text-xs font-semibold tracking-widest uppercase text-accent"
-          >
+          <span className="inline-block text-xs font-semibold tracking-widest uppercase text-accent animate-reveal">
             {badge}
-          </motion.span>
+          </span>
         )}
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-          className={`mt-3 font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[56px] tracking-tight leading-[1.08] max-w-4xl mx-auto ${
+        <h1
+          className={`mt-3 font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[56px] tracking-tight leading-[1.08] max-w-4xl mx-auto animate-reveal ${
             dark ? "text-text-light" : "text-gray-900"
           }`}
         >
@@ -139,24 +113,16 @@ export function PageHero({
               <span className="text-accent">{highlight}</span>
             </>
           )}
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-          className={`mt-4 sm:mt-5 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed ${
+        </h1>
+        <p
+          className={`mt-4 sm:mt-5 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed animate-reveal ${
             dark ? "text-text-light-secondary" : "text-gray-500"
           }`}
         >
           {subtitle}
-        </motion.p>
+        </p>
         {ctaText && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
-            className="mt-6 sm:mt-8"
-          >
+          <div className="mt-6 sm:mt-8 animate-reveal">
             <Link
               href={ctaHref}
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-white hover:bg-accent-hover transition-all duration-200 shadow-xl shadow-accent/25"
@@ -164,7 +130,7 @@ export function PageHero({
               {ctaText}
               <ArrowRight className="h-4 w-4" />
             </Link>
-          </motion.div>
+          </div>
         )}
       </div>
     </section>
