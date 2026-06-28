@@ -1,5 +1,3 @@
-"use client"
-
 import { Star, Layers, Zap, ShieldCheck } from "lucide-react"
 
 const stats = [
