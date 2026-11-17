@@ -554,7 +554,7 @@ export default function CoolestPoolDeckFlooringPost() {
             </p>
             <p className="text-gray-600 leading-relaxed">
               Beyond temperature, rubber decking checks every other box:
-              excellent wet slip resistance (exceeds ADA standards),
+              a textured surface for traction,
               cushioned impact protection for falls, and crack bridging
               that spans hairline concrete cracks up to 1/8-inch. It costs{" "}
               <strong>$15&ndash;$18 per square foot</strong> installed and

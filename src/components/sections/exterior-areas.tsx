@@ -63,7 +63,7 @@ const systems: System[] = [
     description:
       "Poured-in-place EPDM rubber aggregate over existing concrete. Slip-resistant, cushioned, crack-bridging, and built for Las Vegas summers.",
     highlights: [
-      "Exceeds ADA slip resistance",
+      "Textured, slip-resistant surface",
       "Cushioned fall protection",
       "Bridges concrete cracks",
       "UV & chemical resistant",

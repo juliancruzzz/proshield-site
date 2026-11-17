@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Is rubber pool decking slippery when wet?",
-    a: "No — it's one of the most slip-resistant pool deck surfaces available. The textured rubber granules provide excellent traction even when wet from pool splash or rain. Our system exceeds ADA slip resistance requirements, making it a top choice for families with children and areas around spas.",
+    a: "Textured rubber provides traction, but wet surfaces can still be slippery. Keep the deck clean and assess the selected finish for the conditions around your pool. Slip resistance depends on the surface, use and maintenance.",
   },
   {
     q: "How long does rubber pool deck surfacing last?",

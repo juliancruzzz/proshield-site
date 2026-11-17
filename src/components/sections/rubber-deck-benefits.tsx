@@ -8,7 +8,7 @@ const benefits = [
     icon: ShieldCheck,
     title: "Slip-Resistant When Wet",
     description:
-      "Textured rubber granules provide built-in traction that stays grippy over time — the grip is in the material itself, not a topcoat that wears off. Exceeds ADA slip resistance standards.",
+      "Textured rubber provides traction, but wet surfaces can still be slippery. Keep the deck clean and assess the selected finish for the conditions around your pool. Slip resistance depends on the surface, use and maintenance.",
   },
   {
     icon: Footprints,
@@ -20,7 +20,7 @@ const benefits = [
     icon: Baby,
     title: "Cushioned Impact Protection",
     description:
-      "Same material principle used in commercial playground surfaces. A slip on rubber is a non-event — a slip on concrete can mean stitches. Critical for families with kids.",
+      "Rubber creates a cushioned walking surface. Cushioning does not prevent falls or guarantee protection from injury.",
   },
   {
     icon: Zap,
