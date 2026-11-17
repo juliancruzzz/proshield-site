@@ -11,7 +11,7 @@ const systems = [
     title: "ProFlake Epoxy",
     tag: "Most Popular",
     description:
-      "Polyurea base + full flake broadcast + polyaspartic topcoat. 150+ Torginol color blends. Often completed in 1 day.",
+      "Polyurea base + full flake broadcast + polyaspartic topcoat. 150+ Torginol color blends.",
     href: "/proflake",
     image: "/images/proflake/flake-garage-porsche-bikes.webp",
     locations: ["Garages", "Commercial"],
@@ -19,7 +19,7 @@ const systems = [
   {
     title: "Metallic Epoxy",
     description:
-      "One-of-a-kind flowing metallic finishes with stunning pearlescent depth. 2\u20133 day installation.",
+      "One-of-a-kind flowing metallic finishes with stunning pearlescent depth.",
     href: "/metallic-epoxy",
     image: "/images/metallic/metallic-epoxy-red-black-swirl.webp",
     locations: ["Garages", "Interior"],
@@ -113,7 +113,7 @@ function SystemCard({
             <div className="h-full w-full bg-gray-100" />
           )}
           {sys.tag && (
-            <span className="absolute top-3 left-3 rounded-full bg-accent px-3 py-1 text-xs font-bold text-white uppercase tracking-wider shadow-lg z-10">
+            <span className="absolute top-3 left-3 rounded-full bg-accent px-3 py-1 text-xs font-bold text-navy uppercase tracking-wider shadow-lg z-10">
               {sys.tag}
             </span>
           )}

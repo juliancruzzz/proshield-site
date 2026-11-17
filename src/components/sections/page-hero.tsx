@@ -70,7 +70,7 @@ export function PageHero({
             <div className="mt-6 sm:mt-8 animate-reveal">
               <Link
                 href={ctaHref}
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-white hover:bg-accent-hover transition-all duration-200 shadow-xl shadow-accent/25"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-navy hover:bg-accent-hover transition-all duration-200 shadow-xl shadow-accent/25"
               >
                 {ctaText}
                 <ArrowRight className="h-4 w-4" />
@@ -125,7 +125,7 @@ export function PageHero({
           <div className="mt-6 sm:mt-8 animate-reveal">
             <Link
               href={ctaHref}
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-white hover:bg-accent-hover transition-all duration-200 shadow-xl shadow-accent/25"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-navy hover:bg-accent-hover transition-all duration-200 shadow-xl shadow-accent/25"
             >
               {ctaText}
               <ArrowRight className="h-4 w-4" />

@@ -9,10 +9,10 @@ const services = [
     title: "Garage Floor Coatings",
     subtitle: "ProFlake System",
     description:
-      "Polyurea base coat, full flake broadcast, and polyaspartic topcoat. 150+ Torginol color blends. Often completed in 1 day.",
+      "Polyurea base coat, full flake broadcast, and polyaspartic topcoat. 150+ Torginol color blends.",
     image: "/images/proflake/flake-garage-porsche-bikes.webp",
     href: "/proflake",
-    tags: ["1-day install*", "Hot tire resistant", "150+ colors"],
+    tags: ["Peel-free guarantee", "Hot tire resistant", "150+ colors"],
   },
   {
     title: "Metallic Epoxy",

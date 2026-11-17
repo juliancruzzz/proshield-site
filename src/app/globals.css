@@ -43,7 +43,7 @@
   --color-accent: #DE8614;
   --color-accent-hover: #E99A38;
   --color-accent-dark: #B86E0A;
-  --color-accent-text: #A96300;
+  --color-accent-text: #9C5900;
   --color-accent-bright: #F0A74A; /* Decorative / large headings on dark bg only */
   --color-accent-subtle: rgba(222, 134, 20, 0.1);
   --color-accent-subtle-light: rgba(222, 134, 20, 0.08);
@@ -410,4 +410,9 @@ p, li {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Small orange text needs a darker tone on light sections; brand orange stays on buttons. */
+:is(.section-white, .section-gray, section.bg-white, section.bg-gray-50) .text-accent {
+  color: var(--color-accent-text);
 }

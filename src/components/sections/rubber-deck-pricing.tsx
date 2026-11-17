@@ -74,7 +74,7 @@ export function RubberDeckPricing() {
 
               <Link
                 href="/contact"
-                className="mt-6 w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-white hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
+                className="mt-6 w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
               >
                 Get Your Exact Price <ArrowRight className="h-4 w-4" />
               </Link>

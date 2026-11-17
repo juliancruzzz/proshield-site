@@ -174,7 +174,7 @@ export function Footer() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-hover transition-colors duration-200 shadow-lg shadow-accent/15"
+                className="inline-flex items-center justify-center rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-navy hover:bg-accent-hover transition-colors duration-200 shadow-lg shadow-accent/15"
               >
                 Get a Free Quote
               </Link>

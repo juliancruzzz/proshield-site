@@ -35,7 +35,7 @@ const systems: System[] = [
     highlights: [
       "150+ color blends",
       "Polyaspartic topcoat",
-      "1-day install for qualifying garages",
+      "Peel-free lifetime guarantee",
       "Chemical & hot tire resistant",
       "UV-stable finish",
     ],
@@ -43,7 +43,7 @@ const systems: System[] = [
     image: "/images/proflake/flake-garage-porsche-bikes.webp",
     tag: "Best Value",
     tagColor: "bg-accent",
-    categories: ["1-Day Install", "150+ Colors"],
+    categories: ["Peel-Free Guarantee", "150+ Colors"],
     stat: "150+",
     statLabel: "Color Blends",
   },

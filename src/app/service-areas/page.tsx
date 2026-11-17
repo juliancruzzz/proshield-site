@@ -198,13 +198,13 @@ export default function ServiceAreasPage() {
             </div>
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-heading font-bold text-accent mb-3">
-                24hr
+                Free
               </div>
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-2">
-                Fast Installation
+                Project Estimate
               </h3>
               <p className="text-gray-600 text-sm">
-                Many systems completed in 1 day, subject to conditions
+                For your floor, system and location
               </p>
             </div>
           </div>
@@ -224,7 +224,7 @@ export default function ServiceAreasPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="tel:+17027285484"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-accent text-white font-medium hover:bg-accent/90 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-accent text-navy font-medium hover:bg-accent/90 transition-colors"
               >
                 <Phone className="h-4 w-4 mr-2" />
                 Call 702-728-5484

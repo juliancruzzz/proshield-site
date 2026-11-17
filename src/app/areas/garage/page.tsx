@@ -7,7 +7,7 @@ import { CtaSection } from "@/components/sections/cta-section"
 import { Credentials } from "@/components/sections/credentials"
 
 export const metadata: Metadata = {
-  title: "Epoxy Garage Floor Coatings Las Vegas | 1-Day Install | ProShield Epoxy",
+  title: "Epoxy Garage Floor Coatings Las Vegas | ProShield Epoxy",
   description: "Epoxy garage floor coatings in Las Vegas — ProFlake, metallic & solid color systems. NV Licensed #0094652 · Limited lifetime warranty · Call 702-728-5484.",
   alternates: {
     canonical: "/areas/garage",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const garageFaqs = [
   {
     q: "How long does a garage floor coating take to install?",
-    a: "Our standard residential ProFlake system can often be completed in 1 day (subject to substrate condition, weather, and repair requirements). Metallic epoxy systems typically take 2\u20133 days due to the multi-layer application and curing process.",
+    a: "Timelines depend on substrate condition, weather, and how much repair the slab needs \u2014 we confirm the schedule for your garage during the consultation. Metallic epoxy systems typically take 2\u20133 days due to the multi-layer application and curing process.",
   },
   {
     q: "When can I park on my new garage floor?",
@@ -99,7 +99,7 @@ export default function GaragePage() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Garage Floor Coatings",
-            "description": "Epoxy garage floor coatings in Las Vegas — ProFlake, metallic epoxy, and solid color systems with 1-day installation available. Nevada licensed contractor.",
+            "description": "Epoxy garage floor coatings in Las Vegas — ProFlake, metallic epoxy, and solid color systems. Nevada licensed contractor.",
             "provider": {
               "@type": "LocalBusiness",
               "name": "ProShield Epoxy & Concrete LLC",
@@ -126,7 +126,7 @@ export default function GaragePage() {
         badge="Garage Floors"
         title="Garage Floor Coatings"
         highlight="Las Vegas"
-        subtitle="Turn your garage into a showroom-quality space. Our standard residential flake garage floor systems are often completed in 1 day, subject to substrate condition, weather, and repair requirements."
+        subtitle="Turn your garage into a showroom-quality space. Polyurea base, full flake broadcast, and a polyaspartic topcoat, backed by our peel-free lifetime guarantee."
       />
 
       <GarageAreas />
@@ -153,7 +153,7 @@ export default function GaragePage() {
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
-                  <span>Often completed in 1 day on qualifying systems</span>
+                  <span>Peel-free lifetime guarantee on qualifying systems</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
@@ -283,7 +283,7 @@ export default function GaragePage() {
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
                   <p className="font-semibold text-gray-900">Quick Turnaround</p>
-                  <p className="text-gray-600 mt-1">Our standard residential ProFlake systems are often completed in 1 day, so you&apos;re back to using your garage fast.</p>
+                  <p className="text-gray-600 mt-1">We confirm your schedule at the consultation, then work it in as few trips as the slab allows.</p>
                 </div>
               </div>
               <div className="flex gap-3">

@@ -140,7 +140,7 @@ export function CoolDeckProcess() {
               className="rounded-xl sm:rounded-2xl bg-gray-50 lg:bg-white border border-gray-200 p-5 sm:p-6 lg:p-8 shadow-sm"
             >
               <div className="flex items-center gap-3 mb-3">
-                <span className="inline-flex items-center justify-center h-7 w-7 rounded-full bg-accent text-white text-xs font-bold">
+                <span className="inline-flex items-center justify-center h-7 w-7 rounded-full bg-accent text-navy text-xs font-bold">
                   {current.number}
                 </span>
                 <h3 className="font-heading font-bold text-lg sm:text-xl text-gray-900">

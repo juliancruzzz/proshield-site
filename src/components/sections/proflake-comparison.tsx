@@ -12,7 +12,6 @@ interface Row {
 
 const rows: Row[] = [
   { feature: "Topcoat", epoxy: "Epoxy Clear", proflake: "Polyaspartic", epoxyPositive: false, proflakePositive: true },
-  { feature: "Strength", epoxy: "1×", proflake: "20× Stronger", epoxyPositive: false, proflakePositive: true },
   { feature: "UV Stability", epoxy: "Yellows", proflake: "UV-Stable", epoxyPositive: false, proflakePositive: true },
   { feature: "Hot Tire", epoxy: "No", proflake: "Yes", epoxyPositive: false, proflakePositive: true },
   { feature: "Chemical Resist", epoxy: "No", proflake: "Yes", epoxyPositive: false, proflakePositive: true },

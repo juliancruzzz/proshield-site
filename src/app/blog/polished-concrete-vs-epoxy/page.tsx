@@ -61,7 +61,7 @@ export default function PolishedConcreteVsEpoxyPost() {
         "name": "Which is better for a garage?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For residential garages, epoxy wins—specifically our ProFlake system. It installs in one day, comes in 150+ color blends, resists hot tire pickup, and won't yellow under the desert sun. The base coat is epoxy, the topcoat is polyaspartic, which gives you durability, beauty, and UV stability combined. All qualifying residential systems come with a limited lifetime warranty."
+          "text": "For residential garages, epoxy wins—specifically our ProFlake system. It comes in 150+ color blends, resists hot tire pickup, and won't yellow under the desert sun. The base coat is epoxy, the topcoat is polyaspartic, which gives you durability, beauty, and UV stability combined. All qualifying residential systems come with a limited lifetime warranty."
         }
       },
       {
@@ -410,8 +410,8 @@ export default function PolishedConcreteVsEpoxyPost() {
             </p>
             <ul className="list-disc list-inside text-gray-600 leading-relaxed space-y-2">
               <li>
-                <strong>Residential garages</strong>—our <Link href="/proflake" className="text-accent hover:underline font-medium">ProFlake system</Link> combines
-                beauty, durability, and one-day installation with polyurea base and
+                <strong>Residential garages</strong>—our <Link href="/proflake" className="text-accent-text hover:underline font-medium">ProFlake system</Link> combines
+                beauty and durability with a polyurea base and
                 polyaspartic topcoat
               </li>
               <li>
@@ -582,8 +582,8 @@ export default function PolishedConcreteVsEpoxyPost() {
               Which is better for a garage?
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              For residential garages, epoxy wins—specifically our <Link href="/proflake" className="text-accent hover:underline font-medium">ProFlake
-              system</Link>. It installs in one day, comes in 150+ color blends,
+              For residential garages, epoxy wins—specifically our <Link href="/proflake" className="text-accent-text hover:underline font-medium">ProFlake
+              system</Link>. It comes in 150+ color blends,
               resists hot tire pickup, and won&apos;t yellow under the desert
               sun. The base coat is epoxy, the topcoat is polyaspartic, which
               gives you durability, beauty, and UV stability combined. All
@@ -625,7 +625,7 @@ export default function PolishedConcreteVsEpoxyPost() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-white hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
+                className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
               >
                 Get a Free Consultation <ArrowRight className="h-4 w-4" />
               </Link>

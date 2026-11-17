@@ -51,7 +51,7 @@ const summerlinFaqs = [
   },
   {
     q: "How long does installation take in Summerlin?",
-    a: "Most residential ProFlake garage systems are completed in 1 day. Metallic epoxy typically takes 2–3 days due to multi-layer application and curing. We work around your schedule and minimize disruption to your luxury home.",
+    a: "Timelines depend on substrate condition, weather, and how much repair the slab needs. Metallic epoxy typically takes 2–3 days due to multi-layer application and curing. We work around your schedule and minimize disruption to your luxury home.",
   },
 ]
 
@@ -165,7 +165,7 @@ export default function SummerlinPage() {
                 ProFlake Garage Floors
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Elegant decorative chip system with 150+ premium color blends. Timeless aesthetic that enhances any Summerlin home style. Often completed in 1 day.
+                Elegant decorative chip system with 150+ premium color blends. Timeless aesthetic that enhances any Summerlin home style.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>

@@ -169,7 +169,7 @@ export default function EpoxyVsPolyasparticPost() {
                     <a href="#why-we-use-both-together" className="text-accent hover:underline">Why We Use Both — Together</a>
                   </li>
                   <li>
-                    <a href="#what-about-one-day-epoxy-companies" className="text-accent hover:underline">What About "One-Day Epoxy" Companies?</a>
+                    <a href="#what-about-one-day-epoxy-companies" className="text-accent-text hover:underline">What About "One-Day Epoxy" Companies?</a>
                   </li>
                   <li>
                     <a href="#the-bottom-line" className="text-accent hover:underline">The Bottom Line</a>
@@ -306,7 +306,7 @@ export default function EpoxyVsPolyasparticPost() {
                       Installation Time
                     </td>
                     <td className="px-5 py-3 text-gray-600">2–3 days</td>
-                    <td className="px-5 py-3 text-gray-600">1 day</td>
+                    <td className="px-5 py-3 text-gray-600">Varies by slab</td>
                   </tr>
                 </tbody>
               </table>
@@ -422,7 +422,7 @@ export default function EpoxyVsPolyasparticPost() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-white hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
+                className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
               >
                 Get a Free Quote <ArrowRight className="h-4 w-4" />
               </Link>

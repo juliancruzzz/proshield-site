@@ -54,7 +54,7 @@ export default function EpoxyGarageFloorCostPost() {
         "name": "How long does the installation take?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our standard residential ProFlake flake garage floor systems are often completed in 1 day, subject to substrate condition, weather, and repair requirements. Metallic systems typically require 2–3 days. You can walk on a ProFlake floor after 24 hours and park on it after 48 hours."
+          "text": "It depends on substrate condition, weather, and how much repair the slab needs — we'll give you the schedule for your garage during the consultation. Metallic systems typically require 2–3 days. You can walk on a ProFlake floor after 24 hours and park on it after 48 hours."
         }
       },
       {
@@ -248,7 +248,7 @@ export default function EpoxyGarageFloorCostPost() {
                     <td className="px-5 py-3 text-gray-600">
                       $1,800&ndash;$3,000
                     </td>
-                    <td className="px-5 py-3 text-gray-600">1 day*</td>
+                    <td className="px-5 py-3 text-gray-600">Varies by slab</td>
                   </tr>
                   <tr className="bg-gray-50/50">
                     <td className="px-5 py-3 text-gray-700 font-medium">
@@ -285,10 +285,10 @@ export default function EpoxyGarageFloorCostPost() {
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-gray-400 italic">
-              *Qualifying residential ProFlake systems are often completed in
-              1&nbsp;day, subject to substrate condition, weather, and repair
-              requirements.
+            <p className="text-sm text-gray-500 italic">
+              Install time depends on the slab. Substrate condition, weather,
+              and how much repair the concrete needs all move it, which is why
+              we quote the timeline after we have seen the floor.
             </p>
 
             <h2 id="what-affects-your-total-price" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
@@ -583,9 +583,9 @@ export default function EpoxyGarageFloorCostPost() {
               How long does the installation take?
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Our standard residential ProFlake flake garage floor systems are
-              often completed in 1 day, subject to substrate condition, weather,
-              and repair requirements. Metallic systems typically require
+              It depends on substrate condition, weather, and how much repair
+              the slab needs &mdash; we&rsquo;ll give you the schedule for your
+              garage during the consultation. Metallic systems typically require
               2&ndash;3 days. You can walk on a ProFlake floor after 24 hours
               and park on it after 48 hours.
             </p>
@@ -633,7 +633,7 @@ export default function EpoxyGarageFloorCostPost() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-white hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
+                className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
               >
                 Get a Free Quote <ArrowRight className="h-4 w-4" />
               </Link>

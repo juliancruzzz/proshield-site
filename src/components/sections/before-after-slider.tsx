@@ -61,14 +61,13 @@ export function BeforeAfterSlider() {
             </h2>
             <p className="mt-5 text-gray-500 text-lg leading-relaxed">
               Drag the slider to see a raw concrete floor transformed with our
-              Torginol ProFlake system. One day. One floor. Complete
-              transformation.
+              Torginol ProFlake system. One floor. Complete transformation.
             </p>
 
             {/* Stats row */}
             <div className="mt-8 flex items-center divide-x divide-gray-200">
               {[
-                { val: "1 Day", label: "Install Time" },
+                { val: "Polyaspartic", label: "UV-Stable Topcoat" },
                 { val: "150+", label: "Color Blends" },
                 { val: "Lifetime", label: "Warranty" },
               ].map((s, i) => (
@@ -87,7 +86,7 @@ export function BeforeAfterSlider() {
             <div className="mt-8 hidden lg:block">
               <Link
                 href="/proflake"
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-white hover:bg-accent-hover transition-all duration-200 shadow-lg shadow-accent/15"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover transition-all duration-200 shadow-lg shadow-accent/15"
               >
                 Explore the ProFlake System
                 <ArrowRight className="h-4 w-4" />
@@ -164,7 +163,7 @@ export function BeforeAfterSlider() {
         <div className="mt-8 lg:hidden text-center">
           <Link
             href="/proflake"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-white hover:bg-accent-hover transition-all duration-200 shadow-lg shadow-accent/15"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover transition-all duration-200 shadow-lg shadow-accent/15"
           >
             Explore the ProFlake System
             <ArrowRight className="h-4 w-4" />

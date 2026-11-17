@@ -187,7 +187,7 @@ export default function MetallicEpoxyPage() {
           <div className="text-center mt-8 sm:mt-10">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-white hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
+              className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-navy hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
             >
               Book a Design Consultation <ArrowRight className="h-4 w-4" />
             </Link>
@@ -251,7 +251,7 @@ export default function MetallicEpoxyPage() {
           <div className="text-center mt-8 sm:mt-10">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-white hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
+              className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-navy hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
             >
               Book Your Consultation <ArrowRight className="h-4 w-4" />
             </Link>

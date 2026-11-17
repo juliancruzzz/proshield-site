@@ -24,7 +24,7 @@ interface Service {
 const SERVICES: Record<string, Service> = {
   proflake: {
     name: "ProFlake Epoxy System",
-    desc: "Signature garage floor coating — polyurea base with full flake broadcast and polyaspartic topcoat. Often 1-day install for qualifying residential garages. Walk on in 24 hrs, drive on in 48 hrs. Limited lifetime warranty on qualifying residential.",
+    desc: "Signature garage floor coating — polyurea base with full flake broadcast and polyaspartic topcoat. Walk on in 24 hrs, drive on in 48 hrs. Limited lifetime warranty on qualifying residential.",
     best: "garages, workshops, utility rooms",
   },
   metallic: {
@@ -99,7 +99,7 @@ const FAQ_PATTERNS: [RegExp, string, boolean?][] = [
   ],
   [
     /how long|time|day|install|quick|fast|duration/i,
-    "It depends on the service! ProFlake garage floors can often be completed in 1 day for qualifying residential garages. Metallic epoxy takes 2-3 days. Other services are multi-day. We'll give you a clear timeline with your free estimate.",
+    "It depends on the service and the condition of your slab. Metallic epoxy takes 2-3 days. Other services are multi-day. We'll give you a clear timeline with your free estimate.",
   ],
   [
     /area|where|location|serve|service area|las vegas|henderson|summerlin|pahrump|mesquite/i,
@@ -120,7 +120,7 @@ const FAQ_PATTERNS: [RegExp, string, boolean?][] = [
   ],
   [
     /difference|compare|vs|versus|better|which/i,
-    "Great question! Each system has its strengths — ProFlake is our popular 1-day garage option. Metallic epoxy creates unique 3D reflective patterns (2-3 days). VubaStone is resin-bound stone for outdoor surfaces. Exterior coatings use acrylic texture for pool decks. Want details on a specific one?",
+    "Great question! Each system has its strengths — ProFlake is our most popular garage option, with 150+ color blends and a peel-free lifetime guarantee. Metallic epoxy creates unique 3D reflective patterns (2-3 days). VubaStone is resin-bound stone for outdoor surfaces. Exterior coatings use acrylic texture for pool decks. Want details on a specific one?",
   ],
   [
     /usa|american|domestic|made in/i,

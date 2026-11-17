@@ -1,10 +1,10 @@
 "use client"
 
-import { FlaskConical, Zap, ShieldCheck, Sparkles } from "lucide-react"
+import { FlaskConical, Palette, ShieldCheck, Sparkles } from "lucide-react"
 
 const stats = [
-  { icon: FlaskConical, value: "20×", label: "Stronger Than Epoxy" },
-  { icon: Zap, value: "1-Day", label: "Qualifying Install" },
+  { icon: FlaskConical, value: "Full", label: "Flake Coverage" },
+  { icon: Palette, value: "150+", label: "Torginol Color Blends" },
   { icon: ShieldCheck, value: "Lifetime", label: "Limited Warranty" },
   { icon: Sparkles, value: "Polyaspartic", label: "UV-Stable Topcoat" },
 ]

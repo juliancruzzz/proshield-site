@@ -47,7 +47,7 @@ const exteriorFaqs = [
   },
   {
     q: "How long does an exterior installation take?",
-    a: "It depends on the system and project size. ProFlake on a standard residential concrete surface can often be completed in 1 day. VubaStone, Cool Deck, and larger projects typically take 2–3 days or more. We'll give you a clear timeline in your proposal.",
+    a: "It depends on the system and project size. VubaStone, Cool Deck, and larger projects typically take 2–3 days or more. We'll give you a clear timeline in your proposal.",
   },
 ]
 
@@ -117,7 +117,7 @@ export default function ExteriorPage() {
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
-                  <span>Often completed in 1 day on residential concrete</span>
+                  <span>Peel-free lifetime guarantee on qualifying systems</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>

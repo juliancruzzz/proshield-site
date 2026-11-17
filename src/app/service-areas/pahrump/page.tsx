@@ -51,7 +51,7 @@ const pahrumpFaqs = [
   },
   {
     q: "What's the timeline for a Pahrump project?",
-    a: "Most ProFlake residential systems are completed in 1 day, subject to substrate condition, weather, and repair requirements. Metallic epoxy typically takes 2–3 days. We'll provide a detailed timeline during your free consultation and can coordinate scheduling to work with your schedule.",
+    a: "Timelines depend on substrate condition, weather, and how much repair the slab needs. Metallic epoxy typically takes 2–3 days. We'll provide a detailed timeline during your free consultation and can coordinate scheduling to work with your schedule.",
   },
 ]
 
@@ -146,7 +146,7 @@ export default function PahrumpPage() {
                 ProFlake Garage Floors
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Decorative, durable residential garage coatings with 150+ color blends. Perfect for Pahrump homes. Often completed in 1 day with limited lifetime warranty.
+                Decorative, durable residential garage coatings with 150+ color blends. Perfect for Pahrump homes, backed by a limited lifetime warranty.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>

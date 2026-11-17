@@ -94,7 +94,7 @@ export function Credentials() {
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-gray-900">Limited Lifetime Warranty</div>
-                  <div className="mt-0.5 text-xs text-gray-500">On qualifying residential systems</div>
+                  <div className="mt-0.5 text-xs text-gray-500">On qualifying residential systems. Moisture-driven failure is excluded; slabs flagged by moisture testing need a moisture vapor barrier first.</div>
                 </div>
               </div>
 

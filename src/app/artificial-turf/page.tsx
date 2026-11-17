@@ -139,7 +139,7 @@ export default function GrassMacPage() {
           <div className="text-center mt-10 sm:mt-12">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-white hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
+              className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
             >
               Get an Artificial Turf Quote <ArrowRight className="h-4 w-4" />
             </Link>

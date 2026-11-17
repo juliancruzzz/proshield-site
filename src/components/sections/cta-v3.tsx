@@ -1,16 +1,17 @@
 "use client"
 
-import { useState } from "react"
+import { useRef, useState } from "react"
 import {
   Phone, Mail, MapPin, Clock, Send, CheckCircle,
-  Loader2, ImagePlus, X, Camera, MessageSquare, FileText,
+  Loader2, MessageSquare, FileText,
 } from "lucide-react"
+import { useHydrated } from "@/hooks/use-hydrated"
 import { submitForm } from "@/lib/submit-form"
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/phone"
 import { PROJECT_TYPE_GROUPS } from "@/lib/cta-data"
 
 const steps = [
-  { icon: Camera, title: "Send a Photo", description: "Snap a pic of your space — text, email, or right here." },
+  { icon: MessageSquare, title: "Tell Us About Your Project", description: "Share your floor type, approximate size and what you need." },
   { icon: MessageSquare, title: "We Assess", description: "We evaluate the surface and recommend the right system." },
   { icon: FileText, title: "Get Your Quote", description: "Receive a detailed proposal with pricing and timeline." },
 ]
@@ -25,15 +26,32 @@ const contactItems = [
 /* ─── form ─── */
 
 function InlineCTAForm() {
+  const ready = useHydrated()
   const [status, setStatus] = useState<"idle"|"loading"|"success"|"error">("idle")
-  const [images, setImages] = useState<{name:string;preview:string}[]>([])
+  const sending = useRef(false)
+  const [error, setError] = useState<string | null>(null)
   const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [formData, setFormData] = useState({ name:"",phone:"",email:"",sqft:"",message:"" })
   const handleChange = (e: React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement|HTMLSelectElement>) => setFormData({...formData,[e.target.name]:e.target.value})
-  const toggleType = (type: string) => setSelectedTypes(prev => prev.includes(type) ? prev.filter(t => t !== type) : [...prev, type])
-  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => { const f=e.target.files; if(!f)return; setImages(p=>[...p,...Array.from(f).map(f=>({name:f.name,preview:URL.createObjectURL(f)}))].slice(0,5)); e.target.value="" }
-  const removeImage = (i:number) => setImages(p=>p.filter((_,idx)=>idx!==i))
-  const handleSubmit = async (e:React.FormEvent) => { e.preventDefault(); if(selectedTypes.length===0)return; setStatus("loading"); const projectType=selectedTypes.join(", "); const result = await submitForm({...formData,projectType}, "Quote Request"); setStatus(result.ok ? "success" : "error") }
+  const toggleType = (type: string) => { setError(null); setSelectedTypes(prev => prev.includes(type) ? prev.filter(t => t !== type) : [...prev, type]) }
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    if (!ready || sending.current) return
+    if (selectedTypes.length === 0) {
+      setError("Choose at least one Project Type.")
+      event.currentTarget.querySelector<HTMLButtonElement>('[data-project-type]')?.focus()
+      return
+    }
+    sending.current = true
+    setError(null)
+    setStatus("loading")
+    const projectType = selectedTypes.join(", ")
+    const result = await submitForm({ ...formData, projectType }, "Quote Request")
+    sending.current = false
+    setStatus(result.ok ? "success" : "error")
+    if (!result.ok) setError("We could not confirm delivery. Your details are still here. Call (702) 728-5484 before resending if you are unsure whether it arrived.")
+    if (result.ok) (window as Window & { dataLayer?: Record<string, unknown>[] }).dataLayer?.push({ event: "form_submission", form_name: "Quote Request", project_type: projectType })
+  }
 
   if (status === "success") return (
     <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-8 text-center animate-reveal">
@@ -46,12 +64,12 @@ function InlineCTAForm() {
   const inp = "w-full rounded-lg border border-white/12 bg-white/[0.06] px-4 py-3 text-sm text-white placeholder:text-white/35 focus:border-accent/50 focus:ring-2 focus:ring-accent/15 outline-none transition-all duration-150"
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form method="post" onSubmit={handleSubmit} aria-busy={!ready || status === "loading"} className="space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <div><label htmlFor="v3-name" className="block text-xs font-medium text-white/80 mb-1.5">Name <span className="text-accent">*</span></label><input type="text" id="v3-name" name="name" required value={formData.name} onChange={handleChange} className={inp} placeholder="Your name"/></div>
-        <div><label htmlFor="v3-phone" className="block text-xs font-medium text-white/80 mb-1.5">Phone <span className="text-accent">*</span></label><input type="tel" id="v3-phone" name="phone" required value={formData.phone} onChange={handleChange} className={inp} placeholder="(555) 123-4567"/></div>
+        <div><label htmlFor="v3-name" className="block text-xs font-medium text-white/80 mb-1.5">Name <span className="text-accent">*</span></label><input disabled={!ready || status === "loading"} type="text" id="v3-name" name="name" required value={formData.name} onChange={handleChange} className={inp} placeholder="Your name"/></div>
+        <div><label htmlFor="v3-phone" className="block text-xs font-medium text-white/80 mb-1.5">Phone <span className="text-accent">*</span></label><input disabled={!ready || status === "loading"} type="tel" id="v3-phone" name="phone" required value={formData.phone} onChange={handleChange} className={inp} placeholder="(555) 123-4567"/></div>
       </div>
-      <div><label htmlFor="v3-email" className="block text-xs font-medium text-white/80 mb-1.5">Email <span className="text-accent">*</span></label><input type="email" id="v3-email" name="email" required value={formData.email} onChange={handleChange} className={inp} placeholder="you@example.com"/></div>
+      <div><label htmlFor="v3-email" className="block text-xs font-medium text-white/80 mb-1.5">Email <span className="text-accent">*</span></label><input disabled={!ready || status === "loading"} type="email" id="v3-email" name="email" required value={formData.email} onChange={handleChange} className={inp} placeholder="you@example.com"/></div>
       {/* Project Type — multi-select pills */}
       <div>
         <label className="block text-xs font-medium text-white/80 mb-2">Project Type <span className="text-accent">*</span> <span className="text-white/30 font-normal">(select all that apply)</span></label>
@@ -59,20 +77,16 @@ function InlineCTAForm() {
           {PROJECT_TYPE_GROUPS.map(group=>(
             <div key={group.label}>
               <p className="text-[10px] font-semibold text-white/30 uppercase tracking-wider mb-1">{group.label}</p>
-              <div className="flex flex-wrap gap-1.5">{group.types.map(type=>{const active=selectedTypes.includes(type);return(<button key={type} type="button" onClick={()=>toggleType(type)} className={`rounded-full px-3 py-1.5 text-xs border transition-all duration-150 ${active?"bg-accent text-white border-accent":"bg-white/[0.06] text-white/60 border-white/12 hover:border-accent/40 hover:text-white/80"}`}>{type}</button>)})}</div>
+              <div className="flex flex-wrap gap-1.5">{group.types.map(type=>{const active=selectedTypes.includes(type);return(<button key={type} type="button" data-project-type disabled={!ready || status === "loading"} onClick={()=>toggleType(type)} className={`rounded-full px-3 py-1.5 text-xs border transition-all duration-150 ${active?"bg-accent text-navy border-accent":"bg-white/[0.06] text-white/60 border-white/12 hover:border-accent/40 hover:text-white/80"}`}>{type}</button>)})}</div>
             </div>
           ))}
-          <button type="button" onClick={()=>toggleType("Other")} className={`rounded-full px-3 py-1.5 text-xs border transition-all duration-150 ${selectedTypes.includes("Other")?"bg-accent text-white border-accent":"bg-white/[0.06] text-white/60 border-white/12 hover:border-accent/40 hover:text-white/80"}`}>Other</button>
+          <button type="button" data-project-type disabled={!ready || status === "loading"} onClick={()=>toggleType("Other")} className={`rounded-full px-3 py-1.5 text-xs border transition-all duration-150 ${selectedTypes.includes("Other")?"bg-accent text-navy border-accent":"bg-white/[0.06] text-white/60 border-white/12 hover:border-accent/40 hover:text-white/80"}`}>Other</button>
         </div>
       </div>
-      <div><label htmlFor="v3-sqft" className="block text-xs font-medium text-white/80 mb-1.5">Approx. Sq Ft</label><input type="text" id="v3-sqft" name="sqft" value={formData.sqft} onChange={handleChange} className={inp} placeholder="e.g. 500"/></div>
-      <div><label htmlFor="v3-msg" className="block text-xs font-medium text-white/80 mb-1.5">Project Details</label><textarea id="v3-msg" name="message" rows={3} value={formData.message} onChange={handleChange} className={`${inp} resize-none`} placeholder="Tell us about your project..."/></div>
-      <div>
-        <label className="block text-xs font-medium text-white/80 mb-1.5">Photos <span className="text-white/30">(optional, up to 5)</span></label>
-        {images.length>0&&<div className="flex flex-wrap gap-2 mb-3">{images.map((img,i)=><div key={i} className="relative h-16 w-16 rounded-lg overflow-hidden border border-white/10 group"><img src={img.preview} alt={img.name} className="h-full w-full object-cover"/><button type="button" onClick={()=>removeImage(i)} className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><X className="h-4 w-4 text-white"/></button></div>)}</div>}
-        {images.length<5&&<label className="flex items-center gap-2.5 rounded-lg border border-dashed border-white/12 bg-white/[0.03] px-4 py-3 cursor-pointer hover:border-accent/30 hover:bg-white/[0.05] transition-all"><ImagePlus className="h-5 w-5 text-accent/70"/><span className="text-sm text-white/45">{images.length===0?"Add photos of your floor or space":"Add more photos"}</span><input type="file" accept="image/*" multiple onChange={handleImageChange} className="hidden"/></label>}
-      </div>
-      <button type="submit" disabled={status==="loading"} className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-base font-semibold text-white hover:bg-accent-hover disabled:opacity-70 transition-all"><Send className="h-4 w-4"/>Send Quote Request</button>
+      <div><label htmlFor="v3-sqft" className="block text-xs font-medium text-white/80 mb-1.5">Approx. Sq Ft</label><input disabled={!ready || status === "loading"} type="text" id="v3-sqft" name="sqft" value={formData.sqft} onChange={handleChange} className={inp} placeholder="e.g. 500"/></div>
+      <div><label htmlFor="v3-msg" className="block text-xs font-medium text-white/80 mb-1.5">Project Details</label><textarea disabled={!ready || status === "loading"} id="v3-msg" name="message" rows={3} value={formData.message} onChange={handleChange} className={`${inp} resize-none`} placeholder="Tell us about your project..."/></div>
+      {error && <p role="alert" className="text-base text-red-200">{error}</p>}
+      <button type="submit" disabled={!ready || status==="loading"} className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover disabled:opacity-70 transition-all">{status === "loading" ? <><Loader2 className="h-4 w-4 animate-spin"/>Sending...</> : <><Send className="h-4 w-4"/>Send Quote Request</>}</button>
     </form>
   )
 }
@@ -106,12 +120,12 @@ export function CtaV3() {
               Not Sure Where<br className="hidden sm:block"/> to Start?
             </h2>
             <p className="mt-4 text-white/50 text-base sm:text-lg leading-relaxed max-w-md">
-              Send us a photo and we&apos;ll handle the rest — free estimate, no obligation.
+              Tell us about your project — free estimate, no obligation.
             </p>
 
             {/* Subtle slate cards with accent left border */}
             <div className="mt-10 space-y-3">
-              {steps.map((step, i) => {
+              {steps.map((step) => {
                 const Icon = step.icon
                 return (
                   <div key={step.title} className="flex items-center gap-4 rounded-xl border-l-[3px] border-l-white/60 px-5 py-4" style={{ background: "rgba(55, 63, 82, 0.7)", borderTop: "1px solid rgba(255,255,255,0.08)", borderRight: "1px solid rgba(255,255,255,0.08)", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
@@ -140,7 +154,7 @@ export function CtaV3() {
           <div className="lg:col-span-7">
             <div className="rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5 sm:p-7 md:p-8">
               <h3 className="font-heading font-semibold text-lg text-white mb-1">Request a Free Quote</h3>
-              <p className="text-sm text-white/35 mb-6">Fill out the form or text us a photo at <span className="text-white/55">{PHONE_DISPLAY}</span>.</p>
+              <p className="text-sm text-white/35 mb-6">Fill out the form or call <a href={PHONE_HREF} className="text-white/55">{PHONE_DISPLAY}</a>.</p>
               <InlineCTAForm />
             </div>
 

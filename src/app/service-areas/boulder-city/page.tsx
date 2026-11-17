@@ -47,7 +47,7 @@ const boulderCityFaqs = [
   },
   {
     q: "What's the timeline for a Boulder City project?",
-    a: "Most ProFlake residential systems are completed in 1 day, subject to substrate condition, weather, and repair requirements. Metallic epoxy typically takes 2–3 days. We'll provide a specific timeline during your free consultation and work with your schedule.",
+    a: "Timelines depend on substrate condition, weather, and how much repair the slab needs. Metallic epoxy typically takes 2–3 days. We'll provide a specific timeline during your free consultation and work with your schedule.",
   },
   {
     q: "Are you licensed to work in Boulder City?",
@@ -96,7 +96,7 @@ export default function BoulderCityPage() {
               Boulder City: Character & Heritage
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Boulder City is a unique small-town community with genuine character. Founded as a New Deal project during the construction of Hoover Dam, Boulder City has maintained its distinctive heritage while embracing modern amenities. We're proud to serve this community with the same professionalism and care we provide throughout Southern Nevada.
+              Boulder City is a unique small-town community with genuine character. Founded as a New Deal project during the construction of Hoover Dam, Boulder City has maintained its distinctive heritage while embracing modern amenities. We&apos;re proud to serve this community with the same professionalism and care we provide throughout Southern Nevada.
             </p>
           </div>
 
@@ -129,7 +129,7 @@ export default function BoulderCityPage() {
               Flooring Solutions for Boulder City
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              From residential garages to historic property restoration, we provide professional epoxy coatings customized for Boulder City's unique environment.
+              From residential garages to historic property restoration, we provide professional epoxy coatings customized for Boulder City&apos;s unique environment.
             </p>
           </div>
 
@@ -146,7 +146,7 @@ export default function BoulderCityPage() {
                 ProFlake Garage Floors
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Decorative, durable residential garage coatings. 150+ color options to match your home's style. Often completed in 1 day with limited lifetime warranty.
+                Decorative, durable residential garage coatings. 150+ color options to match your home&apos;s style, backed by a limited lifetime warranty.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -259,7 +259,7 @@ export default function BoulderCityPage() {
               Unique Boulder City Environmental Conditions
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Boulder City's location near Hoover Dam and Lake Mead creates unique environmental factors that affect concrete. Professional epoxy coatings protect against these specific challenges.
+              Boulder City&apos;s location near Hoover Dam and Lake Mead creates unique environmental factors that affect concrete. Professional epoxy coatings protect against these specific challenges.
             </p>
           </div>
 
@@ -269,7 +269,7 @@ export default function BoulderCityPage() {
                 Moisture & Mineral-Rich Groundwater
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Boulder City's proximity to Lake Mead and the Colorado River means mineral-rich groundwater can wick up through concrete, causing efflorescence (white salt deposits) and surface deterioration. Professional epoxy seals out this moisture and prevents damage.
+                Boulder City&apos;s proximity to Lake Mead and the Colorado River means mineral-rich groundwater can wick up through concrete, causing efflorescence (white salt deposits) and surface deterioration. Professional epoxy seals out this moisture and prevents damage.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -292,7 +292,7 @@ export default function BoulderCityPage() {
                 Temperature Fluctuations
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Hoover Dam's water management creates temperature variations that affect concrete expansion and contraction. Professional coatings prevent thermal cracking and spalling that bare concrete experiences.
+                Hoover Dam&apos;s water management creates temperature variations that affect concrete expansion and contraction. Professional coatings prevent thermal cracking and spalling that bare concrete experiences.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -338,7 +338,7 @@ export default function BoulderCityPage() {
                 Historic Property Preservation
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Boulder City's historic properties deserve care and respect. We work with property owners to recommend finishes that preserve character while providing modern protection.
+                Boulder City&apos;s historic properties deserve care and respect. We work with property owners to recommend finishes that preserve character while providing modern protection.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -375,7 +375,7 @@ export default function BoulderCityPage() {
                 Quick, Professional Service
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Most systems completed in 1 day. You're back to normal use fast without weeks of disruption.
+                Installation and return-to-use timing depend on your chosen system and slab. We confirm both before work begins.
               </p>
             </div>
 
@@ -395,7 +395,7 @@ export default function BoulderCityPage() {
                 Local Commitment
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We're proud to serve Boulder City. We show up on time, do the work right, and genuinely care about your satisfaction.
+                We&apos;re proud to serve Boulder City. We show up on time, do the work right, and genuinely care about your satisfaction.
               </p>
             </div>
 

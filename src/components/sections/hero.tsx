@@ -97,7 +97,7 @@ export function Hero() {
           >
             <Link
               href="/contact"
-              className="relative inline-flex items-center justify-center gap-2.5 rounded-lg bg-accent px-8 py-4 text-base font-semibold text-white hover:bg-accent-hover transition-colors duration-200 shadow-lg shadow-accent/20 cursor-pointer pulse-ring"
+              className="relative inline-flex items-center justify-center gap-2.5 rounded-lg bg-accent px-8 py-4 text-base font-semibold text-navy hover:bg-accent-hover transition-colors duration-200 shadow-lg shadow-accent/20 cursor-pointer pulse-ring"
             >
               Get a Free Quote
               <ArrowRight className="h-4 w-4" />

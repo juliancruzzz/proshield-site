@@ -286,7 +286,7 @@ export function Navbar() {
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-hover transition-colors duration-200 shadow-lg shadow-accent/20"
+              className="inline-flex items-center justify-center rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-navy hover:bg-accent-hover transition-colors duration-200 shadow-lg shadow-accent/20"
             >
               Get a Free Quote
             </Link>
@@ -380,7 +380,7 @@ export function Navbar() {
                 <Link
                   href="/contact"
                   onClick={() => setMobileOpen(false)}
-                  className="flex items-center justify-center w-full rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-white hover:bg-accent-hover transition-colors duration-200"
+                  className="flex items-center justify-center w-full rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-navy hover:bg-accent-hover transition-colors duration-200"
                 >
                   Get a Free Quote
                 </Link>

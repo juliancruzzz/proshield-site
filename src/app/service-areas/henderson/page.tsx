@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { PageHero } from "@/components/sections/page-hero"
 import { Breadcrumbs } from "@/components/sections/breadcrumbs"
 import { CtaSection } from "@/components/sections/cta-section"
@@ -35,7 +36,7 @@ const hendersonFaqs = [
   },
   {
     q: "Why does Henderson need professional epoxy coatings?",
-    a: "Henderson experiences extreme summer heat (115°F+), intense UV exposure, and occasional thermal shock from temperature swings. Professional epoxy and polyaspartic coatings protect concrete from UV yellowing, heat damage, moisture intrusion, and the harsh desert climate. Without proper coatings, concrete cracks, spalls, and deteriorates rapidly.",
+    a: "Henderson experiences extreme summer heat (115°F+), intense UV exposure, and occasional thermal shock from temperature swings. The right system depends on whether the surface is indoors or outdoors, its condition, and moisture in the slab. We assess those conditions before recommending a coating.",
   },
   {
     q: "What services do you offer in Henderson?",
@@ -43,7 +44,7 @@ const hendersonFaqs = [
   },
   {
     q: "How quickly can you complete a Henderson project?",
-    a: "Many ProFlake residential garage systems are completed in 1 day, subject to substrate condition, weather, and repair requirements. Metallic epoxy typically takes 2–3 days due to multi-layer application and curing. Commercial projects vary by scope. We'll provide a timeline during your free consultation.",
+    a: "Timelines depend on substrate condition, weather, and how much repair the slab needs. Metallic epoxy typically takes 2–3 days due to multi-layer application and curing. Commercial projects vary by scope. We'll provide a timeline during your free consultation.",
   },
   {
     q: "Are you licensed and bonded in Henderson?",
@@ -96,7 +97,7 @@ export default function HendersonPage() {
               Henderson & Surrounding Communities
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              From the premium neighborhoods of The Ridges to the family-friendly communities of Anthem, ProShield serves all of Henderson's diverse residential and commercial properties.
+              From MacDonald Highlands to the family-friendly communities of Anthem, ProShield serves all of Henderson&apos;s diverse residential and commercial properties.
             </p>
           </div>
 
@@ -109,7 +110,7 @@ export default function HendersonPage() {
               "Inspirada",
               "Meridian",
               "Seven Hills",
-              "Summerlin South (East)",
+              "Whitney Ranch",
               "Downtown Henderson",
             ].map((neighborhood) => (
               <div key={neighborhood} className="flex items-center gap-3 p-4 rounded-lg bg-gray-50 border border-gray-200">
@@ -117,6 +118,19 @@ export default function HendersonPage() {
                 <span className="font-medium text-gray-900">{neighborhood}</span>
               </div>
             ))}
+          </div>
+          <div className="mt-12">
+            <h3 className="font-heading font-semibold text-2xl text-gray-900">Henderson Garage Project</h3>
+            <p className="mt-3 text-gray-600">A ProFlake garage floor in Henderson, with a closer look at the flake finish.</p>
+            <div className="mt-6 grid sm:grid-cols-2 gap-4">
+              {[
+                { src: "/images/service-areas/henderson/henderson-proflake-garage.jpg", alt: "ProFlake garage floor in Henderson" },
+                { src: "/images/service-areas/henderson/henderson-proflake-flake-detail.jpg", alt: "Close-up of the flake finish on the Henderson garage floor" },
+              ].map(photo => <div key={photo.src} className="relative aspect-square overflow-hidden rounded-xl border border-gray-200">
+                <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" />
+              </div>)}
+            </div>
+            <Link href="/proflake" className="inline-block mt-5 text-accent-text font-medium underline">View the ProFlake garage system</Link>
           </div>
         </div>
       </section>
@@ -136,7 +150,7 @@ export default function HendersonPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* ProFlake Garage */}
             <Link
-              href="/areas/garage"
+              href="/proflake"
               className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all"
             >
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -146,7 +160,7 @@ export default function HendersonPage() {
                 ProFlake Garage Floors
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Decorative, durable residential garage coatings with 150+ color options. Often completed in 1 day with a limited lifetime warranty.
+                Decorative, durable residential garage coatings with 150+ color options, backed by a limited lifetime warranty.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -155,7 +169,7 @@ export default function HendersonPage() {
 
             {/* Metallic Epoxy */}
             <Link
-              href="/areas/garage"
+              href="/metallic-epoxy"
               className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all"
             >
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -174,7 +188,7 @@ export default function HendersonPage() {
 
             {/* VubaStone Driveways */}
             <Link
-              href="/areas/exterior"
+              href="/vubastone"
               className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all"
             >
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -193,7 +207,7 @@ export default function HendersonPage() {
 
             {/* Concrete Polishing */}
             <Link
-              href="/areas/commercial"
+              href="/concrete-polishing"
               className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all"
             >
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -203,7 +217,7 @@ export default function HendersonPage() {
                 Concrete Polishing
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Polished concrete flooring for retail, offices, and showrooms. High-tech and modern aesthetic for Henderson's commercial districts.
+                Polished concrete flooring for retail, offices, and showrooms. High-tech and modern aesthetic for Henderson&apos;s commercial districts.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -212,7 +226,7 @@ export default function HendersonPage() {
 
             {/* Cool Deck */}
             <Link
-              href="/areas/exterior"
+              href="/cool-deck"
               className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all"
             >
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -222,7 +236,7 @@ export default function HendersonPage() {
                 Cool Deck & Pool Decks
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Reflective, UV-resistant coatings for pool decks and patios. Keep surfaces cooler and safer in Henderson's extreme desert heat.
+                Reflective, UV-resistant coatings for pool decks and patios. Keep surfaces cooler and safer in Henderson&apos;s extreme desert heat.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -262,7 +276,7 @@ export default function HendersonPage() {
               Why Henderson Concrete Needs Protection
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Henderson's extreme desert climate poses unique challenges to unprotected concrete. Professional epoxy and polyaspartic coatings are essential.
+              Henderson&apos;s extreme desert climate poses unique challenges to unprotected concrete. Professional epoxy and polyaspartic coatings are essential.
             </p>
           </div>
 
@@ -272,7 +286,7 @@ export default function HendersonPage() {
                 Extreme Heat & UV Damage
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Henderson summers regularly exceed 115°F with intense UV radiation. Unprotected concrete absorbs this heat, expanding and contracting, which causes cracks and spalling. Professional coatings reflect UV light, prevent thermal damage, and keep your floors protected year-round.
+                Henderson summers regularly exceed 115°F with intense UV radiation. Unprotected concrete absorbs this heat, expanding and contracting, which causes cracks and spalling. System choice matters: outdoor surfaces need a finish suited to sunlight and heat, while garage coatings are selected for the conditions inside the space.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -285,7 +299,7 @@ export default function HendersonPage() {
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Eliminates thermal shock cracking</span>
+                  <span className="text-gray-700">System selected for the exposure</span>
                 </li>
               </ul>
             </div>
@@ -295,16 +309,16 @@ export default function HendersonPage() {
                 Moisture & Efflorescence
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Concrete wicks moisture from groundwater and subsurface sources. In Henderson's dry climate, this often leads to efflorescence—white salt deposits that degrade surface integrity. Professional sealers prevent moisture intrusion and stop this damaging process.
+                Concrete wicks moisture from groundwater and subsurface sources. In Henderson&apos;s dry climate, this often leads to efflorescence—white salt deposits that degrade surface integrity. We assess the slab before recommending a coating. Moisture-related conditions may require a moisture vapor barrier before installation.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Seals out groundwater and salts</span>
+                  <span className="text-gray-700">Moisture assessment before coating</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Eliminates white salt deposits</span>
+                  <span className="text-gray-700">Surface preparation matched to the slab</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
@@ -341,7 +355,7 @@ export default function HendersonPage() {
                 Long-Term Durability
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Properly coated concrete lasts decades in Henderson's climate. Unprotected concrete deteriorates rapidly. Professional-grade epoxy and polyaspartic systems withstand extreme conditions and come with real warranties.
+                Properly coated concrete lasts decades in Henderson&apos;s climate. Unprotected concrete deteriorates rapidly. Professional-grade epoxy and polyaspartic systems withstand extreme conditions and come with real warranties.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -381,7 +395,7 @@ export default function HendersonPage() {
                 Fast Turnaround
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Many ProFlake systems completed in 1 day. You're back to normal use fast, without weeks of disruption.
+                Installation and return-to-use timing depend on your chosen system and slab. We confirm both before work begins.
               </p>
             </div>
 
@@ -401,7 +415,7 @@ export default function HendersonPage() {
                 Local Business
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Founded by Julian Cruz. We're your neighbor. We show up on time and stand behind every floor.
+                Founded by Julian Cruz. We&apos;re your neighbor. We show up on time and stand behind every floor.
               </p>
             </div>
 

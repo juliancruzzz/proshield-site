@@ -82,7 +82,7 @@ const systems = [
     stats: [
       { value: "150+", label: "Color blends" },
       { value: "Next Day", label: "Walk-on ready" },
-      { value: "1 Day", label: "Typical install" },
+      { value: "Phased", label: "Install scheduling" },
     ],
     image: "/images/commercial/commercial-warehouse-flake.webp",
   },

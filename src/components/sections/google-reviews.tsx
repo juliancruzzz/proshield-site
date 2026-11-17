@@ -11,6 +11,7 @@ interface Review {
   rating: number
   text: string
   date: string
+  publishTime?: string
   profilePhoto?: string
 }
 
@@ -18,58 +19,15 @@ interface Review {
 /*  Fallback placeholder reviews (used when API data isn't available)  */
 /* ------------------------------------------------------------------ */
 
-const placeholderReviews: Review[] = [
-  {
-    name: "Michael R.",
-    rating: 5,
-    text: "ProShield transformed our garage floor. The flake finish looks incredible and the whole job was done in one day. Highly recommend.",
-    date: "2 weeks ago",
-  },
-  {
-    name: "Sarah T.",
-    rating: 5,
-    text: "We hired ProShield for our warehouse floor and couldn't be happier. The team was professional and the coating system is holding up perfectly under heavy forklift traffic.",
-    date: "1 month ago",
-  },
-  {
-    name: "David K.",
-    rating: 5,
-    text: "Julian and his crew did an amazing flake floor in our 3-car garage. The Creekbed color blend looks fantastic. Clean work, fair price, done on time.",
-    date: "3 weeks ago",
-  },
-  {
-    name: "Amanda L.",
-    rating: 5,
-    text: "Got quotes from 4 companies. ProShield was the most knowledgeable about the actual chemistry of what they use. They recommended the right system for our space. Our floor has been flawless for 6 months.",
-    date: "2 months ago",
-  },
-  {
-    name: "James W.",
-    rating: 5,
-    text: "Had them do our aircraft hangar floor. It handles jet fuel and hydraulic fluid with zero issues. Best investment we've made in the facility.",
-    date: "1 month ago",
-  },
-  {
-    name: "Lisa M.",
-    rating: 5,
-    text: "The before and after is unbelievable. Our old cracked concrete garage floor now looks like a showroom. ProShield is the real deal.",
-    date: "5 weeks ago",
-  },
-]
-
-/* ------------------------------------------------------------------ */
-/*  Resolve reviews: prefer fetched data, fall back to placeholders    */
-/* ------------------------------------------------------------------ */
-
 const hasRealReviews =
   Array.isArray(googleData.reviews) && googleData.reviews.length > 0
 
 const reviews: Review[] = hasRealReviews
   ? (googleData.reviews as Review[]).filter((r) => r.text && r.text.length > 0)
-  : placeholderReviews
+  : []
 
-const aggregateRating = googleData.rating || 4.9
-const totalReviews = googleData.totalReviews || 43
+const aggregateRating = googleData.rating
+const totalReviews = googleData.totalReviews
 
 /* ------------------------------------------------------------------ */
 /*  Sub-components                                                     */
@@ -113,7 +71,7 @@ function ReviewCard({ review }: { review: Review }) {
             {review.name}
           </span>
         </div>
-        <span className="text-xs text-gray-500">{review.date}</span>
+        <span className="text-xs text-gray-500">{review.publishTime ? new Intl.DateTimeFormat("en-US", { month: "short", year: "numeric", timeZone: "UTC" }).format(new Date(review.publishTime)) : ""}</span>
       </div>
     </div>
   )
@@ -191,7 +149,7 @@ export function GoogleReviews() {
             }`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-lg bg-accent px-6 py-2.5 text-sm font-semibold text-white hover:bg-accent-hover transition-colors duration-200 shadow-lg shadow-accent/15"
+            className="inline-flex items-center justify-center rounded-lg bg-accent px-6 py-2.5 text-sm font-semibold text-navy hover:bg-accent-hover transition-colors duration-200 shadow-lg shadow-accent/15"
           >
             Leave Us a Review
           </a>

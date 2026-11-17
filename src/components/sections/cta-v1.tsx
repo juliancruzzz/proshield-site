@@ -74,7 +74,7 @@ function InlineCTAForm() {
         {images.length>0&&<div className="flex flex-wrap gap-2 mb-3">{images.map((img,i)=><div key={i} className="relative h-16 w-16 rounded-lg overflow-hidden border border-white/10 group"><img src={img.preview} alt={img.name} className="h-full w-full object-cover"/><button type="button" onClick={()=>removeImage(i)} className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><X className="h-4 w-4 text-white"/></button></div>)}</div>}
         {images.length<5&&<label className="flex items-center gap-2.5 rounded-lg border border-dashed border-white/12 bg-white/[0.03] px-4 py-3 cursor-pointer hover:border-accent/30 hover:bg-white/[0.05] transition-all"><ImagePlus className="h-5 w-5 text-accent/70"/><span className="text-sm text-white/45">{images.length===0?"Add photos of your floor or space":"Add more photos"}</span><input type="file" accept="image/*" multiple onChange={handleImageChange} className="hidden"/></label>}
       </div>
-      <button type="submit" disabled={status==="loading"} className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-base font-semibold text-white hover:bg-accent-hover disabled:opacity-70 transition-all"><Send className="h-4 w-4"/>Send Quote Request</button>
+      <button type="submit" disabled={status==="loading"} className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover disabled:opacity-70 transition-all"><Send className="h-4 w-4"/>Send Quote Request</button>
     </form>
   )
 }
@@ -115,7 +115,7 @@ export function CtaV1() {
             <div className="mt-10 space-y-3">
               {steps.map((step, i) => (
                 <div key={step.title} className="flex items-center gap-4 rounded-xl bg-white px-5 py-4 shadow-lg shadow-black/15">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-white text-sm font-bold shrink-0">{i+1}</div>
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-navy text-sm font-bold shrink-0">{i+1}</div>
                   <div className="min-w-0">
                     <h3 className="font-heading font-semibold text-gray-900 text-sm">{step.title}</h3>
                     <p className="text-sm text-gray-500 leading-relaxed">{step.description}</p>
