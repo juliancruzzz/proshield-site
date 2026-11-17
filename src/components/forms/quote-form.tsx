@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Send, CheckCircle, Loader2 } from "lucide-react"
 import { useHydrated } from "@/hooks/use-hydrated"
 import { submitForm } from "@/lib/submit-form"
@@ -10,6 +10,10 @@ export function QuoteForm() {
   const ready = useHydrated()
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
   const sending = useRef(false)
+  const confirmation = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    if (status === "success") confirmation.current?.focus()
+  }, [status])
   const [error, setError] = useState<string | null>(null)
   const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [formData, setFormData] = useState({
@@ -60,7 +64,7 @@ export function QuoteForm() {
 
   if (status === "success") {
     return (
-      <div className="rounded-2xl border border-gray-200 bg-white p-8 text-center animate-reveal">
+      <div ref={confirmation} tabIndex={-1} className="rounded-2xl border border-gray-200 bg-white p-8 text-center animate-reveal focus:outline-none">
         <div className="mx-auto h-14 w-14 rounded-full bg-success/10 flex items-center justify-center mb-4">
           <CheckCircle className="h-7 w-7 text-success" />
         </div>

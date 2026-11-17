@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import {
   Phone, Mail, MapPin, Clock, Send, CheckCircle,
   Loader2, MessageSquare, FileText,
@@ -29,6 +29,10 @@ function InlineCTAForm() {
   const ready = useHydrated()
   const [status, setStatus] = useState<"idle"|"loading"|"success"|"error">("idle")
   const sending = useRef(false)
+  const confirmation = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    if (status === "success") confirmation.current?.focus()
+  }, [status])
   const [error, setError] = useState<string | null>(null)
   const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [formData, setFormData] = useState({ name:"",phone:"",email:"",sqft:"",message:"" })
@@ -54,7 +58,7 @@ function InlineCTAForm() {
   }
 
   if (status === "success") return (
-    <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-8 text-center animate-reveal">
+    <div ref={confirmation} tabIndex={-1} className="rounded-2xl border border-white/10 bg-white/[0.04] p-8 text-center animate-reveal focus:outline-none">
       <div className="mx-auto h-14 w-14 rounded-full bg-accent/15 flex items-center justify-center mb-4"><CheckCircle className="h-7 w-7 text-accent"/></div>
       <h3 className="font-heading font-semibold text-xl text-white">Quote Request Sent!</h3>
       <p className="mt-2 text-white/60 text-sm">We&apos;ll get back to you within 24 hours.</p>
