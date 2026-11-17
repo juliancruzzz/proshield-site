@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     title: 'Epoxy Flooring FAQ Las Vegas | Common Questions Answered | ProShield Epoxy',
     description: 'Epoxy flooring FAQ — answers about garage coatings, metallic epoxy, VubaStone, concrete polishing, cool deck & more in Las Vegas. 702-728-5484.',
     url: 'https://proshieldepoxy.com/faq',
+    images: ['/og-image.webp'],
   },
 }
 

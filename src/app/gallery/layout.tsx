@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: "https://proshieldepoxy.com/gallery",
+    images: ["/og-image.webp"],
   },
 }
 
