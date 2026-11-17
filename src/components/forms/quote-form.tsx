@@ -1,12 +1,16 @@
 "use client"
 
-import { useState } from "react"
+import { useRef, useState } from "react"
 import { Send, CheckCircle, Loader2 } from "lucide-react"
+import { useHydrated } from "@/hooks/use-hydrated"
 import { submitForm } from "@/lib/submit-form"
 import { PROJECT_TYPE_GROUPS } from "@/lib/cta-data"
 
 export function QuoteForm() {
+  const ready = useHydrated()
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+  const sending = useRef(false)
+  const [error, setError] = useState<string | null>(null)
   const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [formData, setFormData] = useState({
     name: "",
@@ -23,6 +27,7 @@ export function QuoteForm() {
   }
 
   const toggleType = (type: string) => {
+    setError(null)
     setSelectedTypes((prev) =>
       prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type]
     )
@@ -30,13 +35,22 @@ export function QuoteForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (selectedTypes.length === 0) return
+    if (!ready || sending.current) return
+    if (selectedTypes.length === 0) {
+      setError("Choose at least one Project Type.")
+      e.currentTarget.querySelector<HTMLButtonElement>('[data-project-type]')?.focus()
+      return
+    }
+    sending.current = true
+    setError(null)
     setStatus("loading")
     const projectType = selectedTypes.join(", ")
     const result = await submitForm({ ...formData, projectType }, "Quote Request")
+    sending.current = false
+    if (!result.ok) setError("We could not confirm delivery. Your details are still here. Call (702) 728-5484 before resending if you are unsure whether it arrived.")
     setStatus(result.ok ? "success" : "error")
     if (result.ok && typeof window !== "undefined") {
-      ;(window as any).dataLayer?.push({
+      ;(window as Window & { dataLayer?: Record<string, unknown>[] }).dataLayer?.push({
         event: "form_submission",
         form_name: "Quote Request",
         project_type: projectType,
@@ -61,7 +75,7 @@ export function QuoteForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form method="post" onSubmit={handleSubmit} aria-busy={!ready || status === "loading"} className="space-y-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {/* Name */}
         <div>
@@ -69,6 +83,7 @@ export function QuoteForm() {
             Name <span className="text-error">*</span>
           </label>
           <input
+            disabled={!ready || status === "loading"}
             type="text"
             id="name"
             name="name"
@@ -86,6 +101,7 @@ export function QuoteForm() {
             Phone <span className="text-error">*</span>
           </label>
           <input
+            disabled={!ready || status === "loading"}
             type="tel"
             id="phone"
             name="phone"
@@ -104,6 +120,7 @@ export function QuoteForm() {
           Email <span className="text-error">*</span>
         </label>
         <input
+            disabled={!ready || status === "loading"}
           type="email"
           id="email"
           name="email"
@@ -131,11 +148,11 @@ export function QuoteForm() {
                   return (
                     <button
                       key={type}
-                      type="button"
+                      type="button" data-project-type disabled={!ready || status === "loading"}
                       onClick={() => toggleType(type)}
                       className={`rounded-full px-3.5 py-1.5 text-sm border transition-all duration-150 ${
                         active
-                          ? "bg-accent text-white border-accent shadow-sm"
+                          ? "bg-accent text-navy border-accent shadow-sm"
                           : "bg-white text-gray-600 border-gray-300 hover:border-accent/50 hover:text-gray-900"
                       }`}
                     >
@@ -149,11 +166,11 @@ export function QuoteForm() {
           {/* Other */}
           <div>
             <button
-              type="button"
+              type="button" data-project-type disabled={!ready || status === "loading"}
               onClick={() => toggleType("Other")}
               className={`rounded-full px-3.5 py-1.5 text-sm border transition-all duration-150 ${
                 selectedTypes.includes("Other")
-                  ? "bg-accent text-white border-accent shadow-sm"
+                  ? "bg-accent text-navy border-accent shadow-sm"
                   : "bg-white text-gray-600 border-gray-300 hover:border-accent/50 hover:text-gray-900"
               }`}
             >
@@ -161,8 +178,7 @@ export function QuoteForm() {
             </button>
           </div>
         </div>
-        {/* Hidden input for form validation */}
-        <input type="hidden" name="projectType" value={selectedTypes.join(", ")} required={selectedTypes.length === 0} />
+
       </div>
 
       {/* Sqft */}
@@ -171,6 +187,7 @@ export function QuoteForm() {
           Approx. Square Footage
         </label>
         <input
+            disabled={!ready || status === "loading"}
           type="text"
           id="sqft"
           name="sqft"
@@ -187,6 +204,7 @@ export function QuoteForm() {
           Project Details
         </label>
         <textarea
+          disabled={!ready || status === "loading"}
           id="message"
           name="message"
           rows={4}
@@ -197,10 +215,12 @@ export function QuoteForm() {
         />
       </div>
 
+      {error && <p role="alert" className="text-base text-red-700">{error}</p>}
+
       <button
         type="submit"
-        disabled={status === "loading"}
-        className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-base font-semibold text-white hover:bg-accent-hover disabled:opacity-70 transition-all duration-200 shadow-lg shadow-accent/15"
+        disabled={!ready || status === "loading"}
+        className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover disabled:opacity-70 transition-all duration-200 shadow-lg shadow-accent/15"
       >
         {status === "loading" ? (
           <>
