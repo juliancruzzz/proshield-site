@@ -8,6 +8,7 @@ interface RubarocColor {
   name: string
   slug: string
   image: string | null
+  imageSize?: number
   tones: string
   recipe?: string
 }
@@ -22,7 +23,7 @@ const baseColors: RubarocColor[] = [
   { name: "Dark Grey", slug: "dark-grey", image: "/images/rubaroc/base/dark-grey.jpg", tones: "Charcoal with cool undertones" },
   { name: "Black", slug: "black", image: "/images/rubaroc/base/black.jpg", tones: "Deep matte black" },
   { name: "Light Blue", slug: "light-blue", image: "/images/rubaroc/base/light-blue.jpg", tones: "Sky blue — great for pool-adjacent areas" },
-  { name: "Medium Blue", slug: "medium-blue", image: null, tones: "Vivid cobalt blue" },
+  { name: "Medium Blue", slug: "medium-blue", image: "/images/rubaroc/base/medium-blue.png", imageSize: 264, tones: "Vivid cobalt blue" },
   { name: "Dark Blue", slug: "dark-blue", image: "/images/rubaroc/base/dark-blue.jpg", tones: "Deep navy" },
   { name: "Teal", slug: "teal", image: "/images/rubaroc/base/teal.jpg", tones: "Soft aqua-teal — coastal feel" },
   { name: "Light Green", slug: "light-green", image: "/images/rubaroc/base/light-green.jpg", tones: "Sage green" },
@@ -39,11 +40,11 @@ const blendColors: RubarocColor[] = [
   { name: "Sandstone", slug: "sandstone", image: "/images/rubaroc/blends/sandstone.jpg", tones: "Desert earth blend — classic Las Vegas choice", recipe: "33% Light Grey · 33% Beige · 33% Brown" },
   { name: "Limestone", slug: "limestone", image: "/images/rubaroc/blends/limestone.jpg", tones: "Warm cream and tan — soft natural palette", recipe: "33% Eggshell · 33% Beige · 33% Brown" },
   { name: "Sandalwood", slug: "sandalwood", image: "/images/rubaroc/blends/sandalwood.jpg", tones: "Warm beige-dominant with subtle brown accent", recipe: "75% Beige · 25% Brown" },
-  { name: "Mocha", slug: "mocha", image: null, tones: "Dark rich coffee blend — sophisticated accent", recipe: "33% Black · 33% Brown · 33% Beige" },
+  { name: "Mocha", slug: "mocha", image: "/images/rubaroc/blends/mocha.png", imageSize: 264, tones: "Dark rich coffee blend — sophisticated accent", recipe: "33% Black · 33% Brown · 33% Beige" },
   { name: "Terracotta", slug: "terracotta", image: "/images/rubaroc/blends/terracotta.jpg", tones: "Warm copper-red — Southwestern character", recipe: "50% Red · 50% Brown" },
   { name: "Santa Fe", slug: "santa-fe", image: "/images/rubaroc/blends/santa-fe.jpg", tones: "Adobe red-brown with cream — desert sunset", recipe: "33% Red · 33% Brown · 33% Beige" },
   { name: "Caspian", slug: "caspian", image: "/images/rubaroc/blends/caspian.jpg", tones: "Cool blue-gray — coastal pool deck favorite", recipe: "33% Light Blue · 33% Light Grey · 33% Eggshell" },
-  { name: "Lily Pad", slug: "lily-pad", image: null, tones: "Soft green and cream — garden-inspired", recipe: "50% Light Green · 50% Beige" },
+  { name: "Lily Pad", slug: "lily-pad", image: "/images/rubaroc/blends/lily-pad.png", imageSize: 264, tones: "Soft green and cream — garden-inspired", recipe: "50% Light Green · 50% Beige" },
 ]
 
 const collections = [
@@ -112,8 +113,8 @@ export function RubarocColorShowcase() {
                   <div className="sm:w-[240px] h-[200px] sm:h-auto shrink-0 overflow-hidden">
                     {selected.image ? (
                     <Image
-                      width={360}
-                      height={352}
+                      width={selected.imageSize ?? 360}
+                      height={selected.imageSize ?? 352}
                       sizes="(min-width: 640px) 240px, calc(100vw - 32px)"
                       src={selected.image}
                       alt={`${selected.name} rubber granule swatch`}
@@ -170,8 +171,8 @@ export function RubarocColorShowcase() {
                 >
                   {color.image ? (
                     <Image
-                      width={360}
-                      height={352}
+                      width={color.imageSize ?? 360}
+                      height={color.imageSize ?? 352}
                       sizes="(min-width: 1024px) 192px, (min-width: 768px) 20vw, (min-width: 640px) 25vw, 33vw"
                       src={color.image}
                       alt={`${color.name} rubber granule swatch`}

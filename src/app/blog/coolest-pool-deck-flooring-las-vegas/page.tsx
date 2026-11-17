@@ -204,7 +204,7 @@ export default function CoolestPoolDeckFlooringPost() {
       "Compare every pool deck surface for Las Vegas heat — cool deck, travertine, pavers, and rubber aggregate. Real surface temps, costs, lifespan, and maintenance from a crew that installs them all.",
     slug: "coolest-pool-deck-flooring-las-vegas",
     datePublished: "2026-05-01",
-    dateModified: "2026-05-03",
+    dateModified: "2026-11-17",
     image: "https://proshieldepoxy.com/images/blog/rubber-deck/rubber-deck-pool-wide.jpg",
   })
 
@@ -322,7 +322,7 @@ export default function CoolestPoolDeckFlooringPost() {
           </div>
           <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
-              <Calendar className="h-3.5 w-3.5" /> Updated May 3, 2026
+              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-17">November 17, 2026</time>
             </span>
             <span className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" /> 10 min read

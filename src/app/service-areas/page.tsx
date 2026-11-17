@@ -230,7 +230,7 @@ export default function ServiceAreasPage() {
                 Call 702-728-5484
               </a>
               <a
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-accent text-accent font-medium hover:bg-accent/5 transition-colors"
               >
                 Request a Quote

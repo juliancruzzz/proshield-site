@@ -25,6 +25,7 @@ export default function EpoxyVsPolyasparticPost() {
     description: "Comparing epoxy and polyaspartic garage floor coatings — cure times, durability, UV stability, cost, and which is better for Las Vegas garages. Honest breakdown from a professional installer.",
     slug: "epoxy-garage-floor-vs-polyaspartic",
     datePublished: "2026-04-01",
+    dateModified: "2026-11-17",
     image: "https://proshieldepoxy.com/images/proflake/flake-garage-wide-clean.webp",
   })
 
@@ -130,7 +131,7 @@ export default function EpoxyVsPolyasparticPost() {
           </div>
           <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
-              <Calendar className="h-3.5 w-3.5" /> April 1, 2026
+              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-17">November 17, 2026</time>
             </span>
             <span className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" /> 6 min read

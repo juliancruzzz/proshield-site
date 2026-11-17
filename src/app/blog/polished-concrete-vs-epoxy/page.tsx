@@ -25,6 +25,7 @@ export default function PolishedConcreteVsEpoxyPost() {
     description: "Compare polished concrete and epoxy flooring — installation, durability, cost, maintenance, and long-term value. Which system wins for your warehouse, retail, garage, or office? Las Vegas flooring guide.",
     slug: "polished-concrete-vs-epoxy",
     datePublished: "2026-03-18",
+    dateModified: "2026-11-17",
     image: "https://proshieldepoxy.com/images/concrete-polishing/polished-floor-showroom.webp",
   })
 
@@ -146,7 +147,7 @@ export default function PolishedConcreteVsEpoxyPost() {
           </div>
           <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
-              <Calendar className="h-3.5 w-3.5" /> March 18, 2026
+              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-17">November 17, 2026</time>
             </span>
             <span className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" /> 10 min read
