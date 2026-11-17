@@ -127,11 +127,6 @@ const structuredData = {
       closes: "18:00",
     },
   ],
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: "36.1699",
-    longitude: "-115.1398",
-  },
   sameAs: [
     "https://www.facebook.com/p/ProShield-Epoxy-100089795168616/",
     "https://www.instagram.com/proshieldepoxy/",
