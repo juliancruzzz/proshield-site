@@ -283,7 +283,7 @@ export default function GaragePage() {
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
                   <p className="font-semibold text-gray-900">Quick Turnaround</p>
-                  <p className="text-gray-600 mt-1">We confirm your schedule at the consultation, then work it in as few trips as the slab allows.</p>
+                  <p className="text-gray-600 mt-1">We confirm your schedule at the consultation.</p>
                 </div>
               </div>
               <div className="flex gap-3">

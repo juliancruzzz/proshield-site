@@ -1,12 +1,13 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { Check, X } from "lucide-react"
 
 const comparisons = [
   {
     feature: "Strength",
     epoxy: "Standard",
-    pro: "Polyurea Basecoat",
+    pro: "20x Stronger Than Epoxy",
   },
   {
     feature: "Cure Time",
@@ -35,6 +36,28 @@ const comparisons = [
   },
 ]
 
+function AnimatedCounter({ target }: { target: number }) {
+  const [count, setCount] = useState(1)
+
+  useEffect(() => {
+    const duration = 1500
+    const steps = 30
+    const increment = (target - 1) / steps
+    let current = 1
+    const interval = setInterval(() => {
+      current += increment
+      if (current >= target) {
+        setCount(target)
+        clearInterval(interval)
+      } else {
+        setCount(Math.floor(current))
+      }
+    }, duration / steps)
+    return () => clearInterval(interval)
+  }, [target])
+
+  return <span>{count}</span>
+}
 
 export function PolyasparticVsEpoxy() {
   return (
@@ -89,14 +112,14 @@ export function PolyasparticVsEpoxy() {
           </div>
         </div>
 
-        {/* Full-flake coverage */}
+        {/* Big "20x" callout */}
         <div className="mt-16 text-center">
           <div className="inline-flex flex-col items-center gap-2 rounded-2xl bg-accent/10 border border-accent/20 px-12 py-8">
             <div className="text-6xl sm:text-7xl lg:text-8xl font-heading font-bold text-accent tabular-nums">
-              <span>Full Flake</span>
+              <AnimatedCounter target={20} />x
             </div>
             <div className="text-sm sm:text-base font-semibold text-text-light uppercase tracking-widest">
-              Coverage
+              Stronger Than Epoxy
             </div>
           </div>
         </div>

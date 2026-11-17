@@ -30,7 +30,7 @@ const steps = [
     number: "4",
     title: "Color & Seal",
     description:
-      "Add color, texture, stamps, or stencils. Finish with polyaspartic topcoat for maximum durability, chemical resistance, and UV stability. This topcoat is 20x stronger than epoxy.",
+      "Add color, texture, stamps, or stencils. Finish with polyaspartic topcoat for maximum durability, chemical resistance, and UV stability.",
     icon: <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
 ]

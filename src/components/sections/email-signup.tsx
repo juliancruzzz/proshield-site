@@ -57,7 +57,7 @@ export function EmailSignup() {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-navy hover:bg-accent-hover disabled:opacity-70 transition-all duration-200 shadow-lg shadow-accent/15 shrink-0"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-accent-hover disabled:opacity-70 transition-all duration-200 shadow-lg shadow-accent/15 shrink-0"
               >
                 {status === "loading" ? (
                   <Loader2 className="h-4 w-4 animate-spin" />

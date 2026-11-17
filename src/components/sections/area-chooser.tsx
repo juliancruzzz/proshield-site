@@ -141,7 +141,7 @@ export function AreaChooser() {
                   </div>
 
                   {/* CTA */}
-                  <div className="flex items-center gap-1.5 text-sm font-semibold text-accent">
+                  <div className="flex items-center gap-1.5 text-sm font-semibold text-accent-bright">
                     See Systems
                     <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
                   </div>

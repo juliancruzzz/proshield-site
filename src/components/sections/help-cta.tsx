@@ -64,7 +64,7 @@ export function HelpCta({
             </p>
             <Link
               href="/contact"
-              className="mt-6 inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
+              className="mt-6 inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-white hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
             >
               {ctaText} <ArrowRight className="h-4 w-4" />
             </Link>
@@ -77,7 +77,7 @@ export function HelpCta({
               return (
                 <div key={step.title} className="relative rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:border-accent/30 hover:shadow-md transition-all duration-300 group">
                   {/* Step number badge */}
-                  <span className="absolute -top-3 -left-2 flex h-7 w-7 items-center justify-center rounded-full bg-accent text-navy text-xs font-bold shadow-md">
+                  <span className="absolute -top-3 -left-2 flex h-7 w-7 items-center justify-center rounded-full bg-accent text-white text-xs font-bold shadow-md">
                     {step.number}
                   </span>
 

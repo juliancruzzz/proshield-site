@@ -77,7 +77,7 @@ export function HangarSection() {
             <div className="mt-10">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-navy hover:bg-accent-hover transition-colors duration-200 shadow-lg shadow-accent/20"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-accent-hover transition-colors duration-200 shadow-lg shadow-accent/20"
               >
                 Get a Hangar Floor Quote
                 <ArrowRight className="h-4 w-4" />

@@ -210,11 +210,10 @@ export default function EpoxyVsPolyasparticPost() {
               better in environments with temperature swings.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              The fast cure time is the biggest practical advantage. A
-              polyaspartic topcoat over a polyurea base allows us to complete
-              qualifying residential ProFlake garage floors in a single day
-              &mdash; you can walk on it after 24 hours and park on it after
-              48 hours.*
+              Our ProFlake system combines a polyurea base with a polyaspartic
+              topcoat. Installation timing depends on the slab and site conditions.
+              Allow 24 hours before walking and 48 hours before parking, subject
+              to weather and curing conditions.*
             </p>
 
             <h2 id="head-to-head-comparison" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
