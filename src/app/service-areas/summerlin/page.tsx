@@ -35,15 +35,15 @@ const summerlinFaqs = [
   },
   {
     q: "What epoxy finishes work best for Summerlin luxury homes?",
-    a: "Metallic epoxy is our most popular choice for Summerlin's high-end residential properties. The flowing pearlescent finish complements modern architecture and creates stunning visual depth. For a more understated look, ProFlake with premium color blends offers timeless elegance. Both come with limited lifetime warranty coverage.",
+    a: "Metallic epoxy offers a decorative finish for Summerlin interiors. The flowing pearlescent finish complements modern architecture and creates stunning visual depth. For a more understated look, ProFlake with premium color blends offers timeless elegance. Limited lifetime warranty coverage applies to qualifying residential systems; moisture-related failures are excluded.",
   },
   {
     q: "How do you match epoxy to Summerlin architecture?",
-    a: "We provide color samples, digital mockups, and install-site consultations to ensure your coating matches your home's aesthetic. Whether your style is contemporary minimalist, Mediterranean villa, or traditional Summerlin luxury, we'll find the right system and finish.",
+    a: "We can discuss color samples and finish options during your consultation. The right choice depends on your home's style, the condition of the slab and how the space is used.",
   },
   {
     q: "Why should I choose professional coatings for my Summerlin home?",
-    a: "Summerlin homes represent significant investments. Professional epoxy protects that investment by preventing UV damage, heat deterioration, moisture intrusion, and staining. It also adds real curb appeal and can increase property value. A properly coated floor is a showroom-quality selling point.",
+    a: "A suitable coating can improve the appearance and cleanability of a garage or patio. The system depends on sun exposure, slab moisture and use. Coatings do not prevent underlying concrete movement or replace moisture treatment where required.",
   },
   {
     q: "Can you handle specialty projects like commercial spaces in Downtown Summerlin?",
@@ -259,17 +259,17 @@ export default function SummerlinPage() {
               Protect Your Summerlin Property Investment
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Summerlin properties represent significant investments in luxury and lifestyle. Professional epoxy coatings protect and enhance that investment for decades.
+              A coating can improve the appearance and cleanability of your floor. Preparation, the selected system and ongoing care determine how it performs.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 lg:p-8">
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">
-                Preserve Property Value
+                Appearance & Surface Care
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Professional coatings protect concrete from UV damage, heat deterioration, and moisture intrusion. A well-maintained, beautifully coated garage or driveway increases property value and appeal to buyers.
+                A finished garage or driveway can improve curb appeal and make routine cleaning easier. Choose a system for the intended use; a coating does not guarantee a higher resale value or prevent moisture-related failures.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -282,7 +282,7 @@ export default function SummerlinPage() {
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Attracts discerning buyers</span>
+                  <span className="text-gray-700">Finish selected for your home</span>
                 </li>
               </ul>
             </div>
@@ -301,7 +301,7 @@ export default function SummerlinPage() {
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Digital mockups for visualization</span>
+                  <span className="text-gray-700">Color samples for comparison</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
@@ -315,7 +315,7 @@ export default function SummerlinPage() {
                 Desert Climate Resilience
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Summerlin's proximity to Red Rock Canyon and open desert means intense UV exposure and heat. Professional coatings resist fading, yellowing, and thermal damage that unprotected concrete can't withstand.
+                Summerlin outdoor surfaces face desert sun and heat. UV resistance depends on the selected system and topcoat; choose an outdoor finish for exposed areas. Coatings do not stop slab movement or thermal cracking.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -328,7 +328,7 @@ export default function SummerlinPage() {
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">10+ years durability</span>
+                  <span className="text-gray-700">Care suited to the selected finish</span>
                 </li>
               </ul>
             </div>
@@ -405,7 +405,7 @@ export default function SummerlinPage() {
                 Design Expertise
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Professional color consultation, digital mockups, and design guidance to ensure perfect aesthetic match for your home.
+                Color consultation and finish options to help you choose a system for your home.
               </p>
             </div>
           </div>

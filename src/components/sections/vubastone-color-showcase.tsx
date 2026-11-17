@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image"
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -73,7 +74,10 @@ export function VubaStoneColorShowcase() {
                 <div className="flex flex-col sm:flex-row">
                   {/* Large swatch preview */}
                   <div className="sm:w-[240px] h-[200px] sm:h-auto shrink-0 overflow-hidden">
-                    <img
+                    <Image
+                      width={800}
+                      height={533}
+                      sizes="(min-width: 640px) 240px, calc(100vw - 32px)"
                       src={selectedBlend.image}
                       alt={`${selectedBlend.name} stone blend`}
                       className="h-full w-full object-cover"
@@ -119,7 +123,10 @@ export function VubaStoneColorShowcase() {
                       : "border-gray-200 group-hover:border-accent/30 group-hover:shadow-md group-hover:scale-[1.03]"
                   }`}
                 >
-                  <img
+                  <Image
+                    width={800}
+                    height={533}
+                    sizes="(min-width: 1024px) 128px, (min-width: 768px) 20vw, (min-width: 640px) 25vw, 33vw"
                     src={blend.image}
                     alt={`${blend.name} stone blend`}
                     className="h-full w-full object-cover"

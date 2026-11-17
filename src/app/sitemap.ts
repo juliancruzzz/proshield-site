@@ -17,12 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Service pages
     { url: `${BASE_URL}/proflake`, lastModified: "2026-11-17", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/metallic-epoxy`, lastModified: "2026-04-10", priority: 0.9, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/vubastone`, lastModified: "2026-04-10", priority: 0.9, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/vubastone`, lastModified: "2026-11-17", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/concrete-polishing`, lastModified: "2026-04-10", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/commercial-flooring`, lastModified: "2026-05-12", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/concrete-overlay`, lastModified: "2026-11-17", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/cool-deck`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/rubber-pool-deck`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/rubber-pool-deck`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/paver-sealing`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/airplane-hangar`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
 

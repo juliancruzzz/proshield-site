@@ -35,7 +35,7 @@ const boulderCityFaqs = [
   },
   {
     q: "Why would a Boulder City homeowner choose professional epoxy?",
-    a: "Boulder City's proximity to Hoover Dam and Lake Mead means unique environmental factors—moisture, mineral-rich groundwater, and temperature fluctuations from the dam's effects. Professional epoxy protects concrete from these specific conditions and the desert climate.",
+    a: "The right coating depends on your slab, sun exposure and how you use the space. Moisture and existing cracks need assessment before installation. Outdoor areas need a suitable UV-resistant finish.",
   },
   {
     q: "What services do you offer in Boulder City?",
@@ -259,30 +259,30 @@ export default function BoulderCityPage() {
               Unique Boulder City Environmental Conditions
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Boulder City&apos;s location near Hoover Dam and Lake Mead creates unique environmental factors that affect concrete. Professional epoxy coatings protect against these specific challenges.
+              Sun exposure, moisture and the condition of the slab help determine which coating and preparation are appropriate for a Boulder City property.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 lg:p-8">
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">
-                Moisture & Mineral-Rich Groundwater
+                Moisture Testing & Preparation
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Boulder City&apos;s proximity to Lake Mead and the Colorado River means mineral-rich groundwater can wick up through concrete, causing efflorescence (white salt deposits) and surface deterioration. Professional epoxy seals out this moisture and prevents damage.
+                Moisture can affect coating adhesion. The slab needs moisture testing and, where required, a compatible moisture vapor barrier. Moisture-related failures are excluded from the limited lifetime warranty.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Seals out groundwater</span>
+                  <span className="text-gray-700">Slab moisture testing</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Prevents salt deposits</span>
+                  <span className="text-gray-700">Moisture vapor barrier where required</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Protects long-term</span>
+                  <span className="text-gray-700">System chosen for slab conditions</span>
                 </li>
               </ul>
             </div>
@@ -292,16 +292,16 @@ export default function BoulderCityPage() {
                 Temperature Fluctuations
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Hoover Dam&apos;s water management creates temperature variations that affect concrete expansion and contraction. Professional coatings prevent thermal cracking and spalling that bare concrete experiences.
+                Concrete expands and contracts as temperatures change. Existing cracks and joints need assessment before coating. A coating does not prevent structural movement or guarantee that cracks will not return.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Prevents thermal cracking</span>
+                  <span className="text-gray-700">Crack and joint assessment</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Handles temperature swings</span>
+                  <span className="text-gray-700">Preparation for the selected system</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
@@ -315,7 +315,7 @@ export default function BoulderCityPage() {
                 Desert Climate & UV Exposure
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Boulder City still experiences desert heat and intense UV radiation. Professional epoxy resists UV yellowing and fading, keeping your floors looking great for years.
+                Boulder City outdoor surfaces face desert heat and sun. UV resistance depends on the selected system and topcoat. Choose a finish intended for outdoor exposure rather than assuming every epoxy is UV stable.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -324,11 +324,11 @@ export default function BoulderCityPage() {
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Prevents fading</span>
+                  <span className="text-gray-700">Finish chosen for sun exposure</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Maintains color integrity</span>
+                  <span className="text-gray-700">Care suited to the selected finish</span>
                 </li>
               </ul>
             </div>

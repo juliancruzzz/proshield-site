@@ -35,7 +35,7 @@ const northLasVegasFaqs = [
   },
   {
     q: "Do you work with warehouse and manufacturing facilities?",
-    a: "Yes. We have extensive experience with warehouse floors, manufacturing facilities, industrial operations, and heavy-commercial spaces in North Las Vegas. We understand the demands of facilities that require durability, chemical resistance, and minimal downtime.",
+    a: "We offer commercial floor coatings in North Las Vegas. The appropriate system depends on traffic, chemicals, slab condition and your operating schedule. Contact us to discuss the requirements of your facility.",
   },
   {
     q: "Can you customize coatings for chemical exposure?",
@@ -47,11 +47,11 @@ const northLasVegasFaqs = [
   },
   {
     q: "Are your commercial coatings compliant with industry standards?",
-    a: "Yes. Our commercial systems meet or exceed industry standards for chemical resistance, slip resistance, and durability. We use professional-grade materials and follow proper installation protocols for commercial applications.",
+    a: "Requirements vary by facility and industry. Identify the applicable specifications, chemical exposures and slip-resistance needs before selecting a system. A coating alone does not establish code or regulatory compliance.",
   },
   {
     q: "Do you serve the Apex Industrial Park area?",
-    a: "Yes, we regularly serve Apex Industrial Park and all industrial corridors in North Las Vegas. We have experience with the specific demands of that area's heavy manufacturing and logistics operations.",
+    a: "Apex Industrial Park is within our North Las Vegas service area. Contact us with the size, condition and operating requirements of your floor so we can assess the project.",
   },
 ]
 
@@ -299,17 +299,17 @@ export default function NorthLasVegasPage() {
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">10+ year durability</span>
+                  <span className="text-gray-700">Maintenance suited to facility use</span>
                 </li>
               </ul>
             </div>
 
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 lg:p-8">
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">
-                Safety Compliance
+                Facility Safety Requirements
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Many industrial operations require slip-resistant, cleanable, and durable flooring for employee safety and regulatory compliance. Professional coatings meet these standards and requirements.
+                Industrial facilities may need specific slip resistance, cleanability or chemical resistance. Review the applicable requirements and product specifications before selecting a coating. Compliance depends on the complete facility and installation, not a general coating claim.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -322,7 +322,7 @@ export default function NorthLasVegasPage() {
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Code compliant systems</span>
+                  <span className="text-gray-700">Project specifications reviewed</span>
                 </li>
               </ul>
             </div>

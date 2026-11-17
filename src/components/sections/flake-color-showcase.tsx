@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { X } from "lucide-react"
@@ -79,7 +80,7 @@ export function FlakeColorShowcase() {
               onClick={() => { setActiveTab(i); setSelectedBlend(null) }}
               className={`rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-200 cursor-pointer ${
                 activeTab === i
-                  ? "bg-accent text-white shadow-lg shadow-accent/20"
+                  ? "bg-accent text-navy shadow-lg shadow-accent/20"
                   : "bg-white text-gray-600 border border-gray-200 hover:border-gray-300"
               }`}
             >
@@ -104,7 +105,10 @@ export function FlakeColorShowcase() {
                 <div className="flex flex-col sm:flex-row">
                   {/* Large swatch preview */}
                   <div className="sm:w-[240px] h-[200px] sm:h-auto shrink-0 overflow-hidden">
-                    <img
+                    <Image
+                      width={380}
+                      height={380}
+                      sizes="(min-width: 640px) 240px, calc(100vw - 32px)"
                       src={selectedBlend.image}
                       alt={`${selectedBlend.name} flake blend`}
                       className="h-full w-full object-cover"
@@ -150,7 +154,10 @@ export function FlakeColorShowcase() {
                     ? "border-accent shadow-lg shadow-accent/10 scale-[1.05]"
                     : "border-gray-200 group-hover:border-accent/30 group-hover:shadow-md group-hover:scale-[1.03]"
                 }`}>
-                  <img
+                  <Image
+                    width={380}
+                    height={380}
+                    sizes="(min-width: 1024px) 192px, (min-width: 768px) 20vw, (min-width: 640px) 25vw, 33vw"
                     src={blend.image}
                     alt={`${blend.name} flake blend`}
                     className="h-full w-full object-cover"

@@ -31,11 +31,11 @@ export const metadata: Metadata = {
 const pahrumpFaqs = [
   {
     q: "Does ProShield serve Pahrump?",
-    a: "Yes, we serve all of Pahrump and Nye County. While Pahrump is about 60 miles from Las Vegas, we're committed to providing the same professional service and quality we deliver throughout Southern Nevada. We're one of the few local contractors willing to serve the entire region.",
+    a: "Yes, we serve all of Pahrump and Nye County. While Pahrump is about 60 miles from Las Vegas, we're committed to providing the same professional service and quality we deliver throughout Southern Nevada.",
   },
   {
     q: "Why should Pahrump homeowners choose professional epoxy?",
-    a: "Pahrump experiences extreme desert conditions—intense heat, low humidity, intense UV exposure, and mineral-rich soil. Professional epoxy protects concrete from UV damage, heat deterioration, and the unique environmental challenges of rural Nevada. It's an investment in your property's long-term health.",
+    a: "For Pahrump garages and outdoor areas, the right finish depends on sun exposure, slab condition and how the space is used. Outdoor systems need a suitable UV-resistant finish; coatings do not prevent underlying concrete from moving or cracking.",
   },
   {
     q: "What services do you offer in Pahrump?",
@@ -47,7 +47,7 @@ const pahrumpFaqs = [
   },
   {
     q: "Is Pahrump a good market for property improvements?",
-    a: "Absolutely. Pahrump is a growing retirement and relocation community. Property improvements like professional epoxy flooring increase home value and appeal to buyers. It's a smart investment for current enjoyment and future resale.",
+    a: "A finished garage or patio can improve appearance and make cleaning easier. Choose a finish for how you use the space. A coating does not guarantee a higher resale value.",
   },
   {
     q: "What's the timeline for a Pahrump project?",
@@ -80,7 +80,7 @@ export default function PahrumpPage() {
         badge="Pahrump, NV"
         title="Epoxy Flooring &"
         highlight="Coatings in Pahrump"
-        subtitle="Professional epoxy and resin systems for Pahrump and all of Nye County. Premium coatings for growing residential and commercial properties 60 miles south of Las Vegas."
+        subtitle="Professional epoxy and resin systems for Pahrump and all of Nye County. Premium coatings for growing residential and commercial properties 60 miles west of Las Vegas."
       />
 
       <Breadcrumbs items={[{ label: "Service Areas", href: "/service-areas" }, { label: "Pahrump" }]} />
@@ -96,7 +96,7 @@ export default function PahrumpPage() {
               Pahrump & Nye County: A Growing Community
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Pahrump is a thriving rural community about 60 miles south of Las Vegas. Known for its retirement community appeal, natural beauty, and growing commercial development, Pahrump is attracting families, retirees, and entrepreneurs seeking a quieter lifestyle while still being within reach of Las Vegas amenities. ProShield is proud to serve this dynamic community with professional-grade epoxy coatings.
+              Pahrump is a thriving rural community about 60 miles west of Las Vegas. Known for its retirement community appeal, natural beauty, and growing commercial development, Pahrump is attracting families, retirees, and entrepreneurs seeking a quieter lifestyle while still being within reach of Las Vegas amenities. ProShield is proud to serve this dynamic community with professional-grade epoxy coatings.
             </p>
           </div>
 
@@ -184,7 +184,7 @@ export default function PahrumpPage() {
                 VubaStone Resin Driveways
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Beautiful resin-bound stone driveways with natural stone appearance. Enhances curb appeal and property value.
+                Resin-bound stone driveways with a natural stone appearance and a choice of decorative blends.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Driveway System <span>→</span>
@@ -269,39 +269,39 @@ export default function PahrumpPage() {
                 Extreme Heat & UV Damage
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Pahrump experiences even more intense heat and UV exposure than Las Vegas. Unprotected concrete expands, cracks, and spalls rapidly. Professional coatings reflect UV light and protect against thermal damage.
+                Pahrump outdoor surfaces face desert sun and heat. UV resistance and surface temperature depend on the finish and color. A coating does not stop movement or cracking in the slab.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Prevents UV yellowing</span>
+                  <span className="text-gray-700">UV-resistant outdoor finishes</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Reduces surface heat</span>
+                  <span className="text-gray-700">Cool-deck options for exposed areas</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Prevents thermal cracking</span>
+                  <span className="text-gray-700">Slab repairs assessed before coating</span>
                 </li>
               </ul>
             </div>
 
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 lg:p-8">
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">
-                Dust & Mineral-Rich Soil
+                Dust & Surface Care
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Pahrump's rural location means heavy dust storms and mineral-rich soil. Unprotected concrete absorbs dust and minerals, leading to discoloration and damage. Professional sealers prevent this infiltration.
+                Dust collects on outdoor surfaces. A suitable finish and routine cleaning can help keep the surface easier to maintain. Cleaning products and care depend on the selected system.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Seals out dust</span>
+                  <span className="text-gray-700">Routine dust removal</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Blocks minerals</span>
+                  <span className="text-gray-700">Finish-specific cleaning guidance</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
@@ -312,19 +312,19 @@ export default function PahrumpPage() {
 
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 lg:p-8">
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">
-                Low Humidity & Thermal Shock
+                Concrete Movement & Repairs
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Pahrump's low humidity and extreme temperature swings create thermal shock conditions. Professional coatings prevent the concrete cracking and spalling that results from these rapid temperature changes.
+                Concrete can move as temperatures change. Existing cracks and joints need assessment before coating, and a finished surface can reflect later movement. The system and repair plan depend on the condition of the slab.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Handles thermal shock</span>
+                  <span className="text-gray-700">Existing joints assessed</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Prevents stress cracking</span>
+                  <span className="text-gray-700">Crack repairs planned for the slab</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
@@ -335,10 +335,10 @@ export default function PahrumpPage() {
 
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 lg:p-8">
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">
-                Property Value & Curb Appeal
+                Appearance & Curb Appeal
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Pahrump is a growing community with increasing property values. A professionally coated garage, driveway, or commercial space significantly increases curb appeal and resale value.
+                A finished garage, driveway or commercial floor can improve appearance and make cleaning easier. The right system depends on use and slab condition; a coating does not guarantee a higher resale value.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -347,11 +347,11 @@ export default function PahrumpPage() {
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Increases property value</span>
+                  <span className="text-gray-700">Easier routine cleaning</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Smart investment</span>
+                  <span className="text-gray-700">Finish selected for your space</span>
                 </li>
               </ul>
             </div>

@@ -189,7 +189,10 @@ export function BeforeAfterSlider() {
               <div className="overflow-hidden mb-5 animate-reveal">
                 <div className="flex items-center gap-6 rounded-2xl bg-white border border-gray-200 p-4 shadow-sm">
                   <div className="h-28 w-28 sm:h-36 sm:w-36 shrink-0 rounded-xl overflow-hidden">
-                    <img
+                    <Image
+                      width={380}
+                      height={380}
+                      sizes="(min-width: 640px) 144px, 112px"
                       src={featuredBlends[selectedBlend].image}
                       alt={featuredBlends[selectedBlend].name}
                       className="h-full w-full object-cover"
@@ -235,7 +238,10 @@ export function BeforeAfterSlider() {
                   <div className={`aspect-square rounded-xl overflow-hidden border-2 shadow-sm transition-all duration-200 cursor-pointer ${
                     selectedBlend === i ? "border-accent shadow-md" : "border-gray-200 group-hover:shadow-md"
                   }`}>
-                    <img
+                    <Image
+                      width={380}
+                      height={380}
+                      sizes="(min-width: 1024px) 88px, (min-width: 640px) 16vw, 33vw"
                       src={blend.image}
                       alt={`${blend.name} flake blend`}
                       className="h-full w-full object-cover"
