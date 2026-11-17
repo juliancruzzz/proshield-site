@@ -57,7 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/service-areas`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/service-areas/henderson`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/service-areas/summerlin`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/service-areas/north-las-vegas`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/service-areas/north-las-vegas`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/service-areas/boulder-city`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/service-areas/pahrump`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
   ]

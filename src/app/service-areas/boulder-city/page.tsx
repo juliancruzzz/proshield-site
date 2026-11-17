@@ -136,7 +136,7 @@ export default function BoulderCityPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* ProFlake */}
             <Link
-              href="/areas/garage"
+              href="/proflake"
               className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all"
             >
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -155,7 +155,7 @@ export default function BoulderCityPage() {
 
             {/* Metallic Epoxy */}
             <Link
-              href="/areas/garage"
+              href="/metallic-epoxy"
               className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all"
             >
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -174,7 +174,7 @@ export default function BoulderCityPage() {
 
             {/* VubaStone Driveways */}
             <Link
-              href="/areas/exterior"
+              href="/vubastone"
               className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all"
             >
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -193,7 +193,7 @@ export default function BoulderCityPage() {
 
             {/* Concrete Polishing */}
             <Link
-              href="/areas/commercial"
+              href="/concrete-polishing"
               className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all"
             >
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -212,7 +212,7 @@ export default function BoulderCityPage() {
 
             {/* Cool Deck */}
             <Link
-              href="/areas/exterior"
+              href="/cool-deck"
               className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all"
             >
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -230,7 +230,7 @@ export default function BoulderCityPage() {
             </Link>
 
             {/* Paver Sealing */}
-            <div className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all">
+            <Link href="/paver-sealing" className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all">
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
                 <Heart className="h-6 w-6 text-accent" />
               </div>
@@ -243,7 +243,7 @@ export default function BoulderCityPage() {
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Maintenance <span>→</span>
               </span>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

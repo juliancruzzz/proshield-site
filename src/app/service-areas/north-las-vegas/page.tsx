@@ -136,7 +136,7 @@ export default function NorthLasVegasPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Commercial Epoxy */}
             <Link
-              href="/areas/commercial"
+              href="/commercial-flooring"
               className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all"
             >
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -155,7 +155,7 @@ export default function NorthLasVegasPage() {
 
             {/* Concrete Polishing */}
             <Link
-              href="/areas/commercial"
+              href="/concrete-polishing"
               className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all"
             >
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -173,7 +173,7 @@ export default function NorthLasVegasPage() {
             </Link>
 
             {/* Chemical-Resistant Systems */}
-            <div className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all">
+            <Link href="/commercial-flooring" className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all">
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
                 <Shield className="h-6 w-6 text-accent" />
               </div>
@@ -186,10 +186,10 @@ export default function NorthLasVegasPage() {
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Consult <span>→</span>
               </span>
-            </div>
+            </Link>
 
             {/* Polyurethane Systems */}
-            <div className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all">
+            <Link href="/commercial-flooring" className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all">
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
                 <Warehouse className="h-6 w-6 text-accent" />
               </div>
@@ -202,10 +202,10 @@ export default function NorthLasVegasPage() {
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Industrial Grade <span>→</span>
               </span>
-            </div>
+            </Link>
 
             {/* Slip-Resistant Systems */}
-            <div className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all">
+            <Link href="/commercial-flooring" className="group rounded-xl border border-gray-200 bg-white p-6 lg:p-8 hover:shadow-lg hover:border-accent/50 transition-all">
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
                 <TrendingUp className="h-6 w-6 text-accent" />
               </div>
@@ -218,7 +218,7 @@ export default function NorthLasVegasPage() {
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Safety First <span>→</span>
               </span>
-            </div>
+            </Link>
 
             {/* Specialty Applications */}
             <Link
