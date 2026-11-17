@@ -22,7 +22,7 @@ import {
 export const metadata: Metadata = {
   title: "About ProShield Epoxy | Las Vegas Epoxy Flooring Experts",
   description:
-    "Las Vegas epoxy flooring company founded by Julian Cruz. Licensed, insured, 5-star rated — garage floors, commercial coatings & decorative epoxy. See why 100+ homeowners trust us.",
+    "ProShield Epoxy serves Las Vegas with garage floor coatings, metallic epoxy, commercial flooring and decorative concrete. Licensed and insured. Free estimates.",
   alternates: {
     canonical: "/about",
   },

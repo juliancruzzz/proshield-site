@@ -7,7 +7,7 @@ import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/phone"
 
 export const metadata: Metadata = {
   title: "Free Epoxy Flooring Estimate Las Vegas | Contact ProShield Epoxy",
-  description: "Get your free epoxy flooring estimate in Las Vegas. Garage floors, commercial coatings, pool decks & more. Same-week scheduling available. Call 702-728-5484.",
+  description: "Get your free epoxy flooring estimate in Las Vegas. Garage floors, metallic epoxy, commercial coatings and pool decks. Call 702-728-5484.",
   alternates: {
     canonical: "/contact",
   },

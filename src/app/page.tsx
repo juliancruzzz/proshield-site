@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title:
     "Epoxy Flooring Las Vegas | Garage Floor Coatings | ProShield Epoxy",
   description:
-    "Las Vegas epoxy flooring pros — garage floors, metallic epoxy, commercial coatings & pool decks. Licensed, insured, 5-star rated. Same-week scheduling. Free estimates: 702-728-5484.",
+    "Las Vegas epoxy flooring — garage floors, metallic epoxy, commercial coatings and pool decks. Licensed and insured. Free estimates: 702-728-5484.",
   alternates: {
     canonical: "/",
   },

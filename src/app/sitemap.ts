@@ -38,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Supporting pages
     { url: `${BASE_URL}/services`, lastModified: "2026-04-10", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/gallery`, lastModified: "2026-04-16", priority: 0.7, changeFrequency: "weekly" },
-    { url: `${BASE_URL}/about`, lastModified: "2026-05-12", priority: 0.6, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/about`, lastModified: "2026-11-17", priority: 0.6, changeFrequency: "monthly" },
     { url: `${BASE_URL}/faq`, lastModified: "2026-04-10", priority: 0.7, changeFrequency: "monthly" },
 
     // Blog (lastmod = the post's actual dateModified or datePublished from its schema)

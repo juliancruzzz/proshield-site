@@ -82,10 +82,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ProShield Epoxy | Premium Epoxy Flooring Las Vegas",
-    description:
-      "Professional floor coatings for garages, commercial spaces, and more. Metallic epoxy, flake systems, VubaStone, and specialty services in Las Vegas.",
-    images: ["/og-image.webp"],
   },
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || "https://proshieldepoxy.com"
@@ -97,11 +93,6 @@ const websiteSchema = {
   "@type": "WebSite",
   name: "ProShield Epoxy",
   url: "https://proshieldepoxy.com",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://proshieldepoxy.com/?s={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
 }
 
 const structuredData = {
