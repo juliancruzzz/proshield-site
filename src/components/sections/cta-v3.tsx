@@ -20,7 +20,7 @@ const contactItems = [
   { icon: Phone, label: "Phone", value: PHONE_DISPLAY, href: PHONE_HREF },
   { icon: Mail, label: "Email", value: "info@proshieldepoxy.com", href: "mailto:info@proshieldepoxy.com" },
   { icon: MapPin, label: "Area", value: "Las Vegas metro + 20 mi" },
-  { icon: Clock, label: "Hours", value: "Mon–Sat 7 AM–6 PM" },
+  { icon: Clock, label: "Hours", value: "Mon–Sat 8 AM–6 PM" },
 ]
 
 /* ─── form ─── */

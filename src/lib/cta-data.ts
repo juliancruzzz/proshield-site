@@ -106,6 +106,6 @@ export const CONTACT_ITEMS: ContactItem[] = [
   {
     icon: "Clock",
     label: "Hours",
-    value: "Mon–Sat 7 AM–6 PM",
+    value: "Mon–Sat 8 AM–6 PM",
   },
 ]
