@@ -223,6 +223,10 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
   const [isTyping, setIsTyping] = useState(false)
   const [showForm, setShowForm] = useState(false)
   const [leadCollected, setLeadCollected] = useState(false)
+  const [leadSubmitting, setLeadSubmitting] = useState(false)
+  const [leadError, setLeadError] = useState("")
+  const [leadDetails, setLeadDetails] = useState({ name: "", phone: "", email: "", service: "", notes: "" })
+  const leadInFlight = useRef(false)
   const [messageCount, setMessageCount] = useState(0)
   const [hasOpened, setHasOpened] = useState(false)
   const [showBadge, setShowBadge] = useState(true)
@@ -251,11 +255,20 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
     }
   }, [isOpen, hasOpened])
 
-  useEffect(scrollToBottom, [messages, isTyping, showForm, scrollToBottom])
+  useEffect(scrollToBottom, [messages, isTyping, showForm, leadError, isOpen, scrollToBottom])
+
+  useEffect(() => {
+    if (leadCollected && isOpen) inputRef.current?.focus()
+  }, [leadCollected, isOpen])
+
+  const updateLeadDetails = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.currentTarget
+    setLeadDetails((prev) => ({ ...prev, [name]: value }))
+  }
 
   const handleSend = useCallback(
     async (text: string) => {
-      if (!text.trim()) return
+      if (!text.trim() || leadInFlight.current) return
       const userMsg: Message = { id: nextId.current++, role: "user", text: text.trim() }
       setMessages((prev) => [...prev, userMsg])
       setChips([])
@@ -299,32 +312,52 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
   )
 
   const handleSubmitLead = useCallback(
-    (e: React.FormEvent<HTMLFormElement>) => {
+    async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault()
+      if (leadInFlight.current) return
       const formData = new FormData(e.currentTarget)
-      const name = formData.get("name") as string
-      const phone = formData.get("phone") as string
+      const name = String(formData.get("name") || "").trim()
+      const phone = String(formData.get("phone") || "").trim()
 
-      if (!name || !phone) return
-
-      // Send lead to email via Web3Forms (fire-and-forget)
-      submitForm({ name, phone }, "Chatbot Lead")
-
-      ;(window as any).dataLayer?.push({
-        event: "form_submission",
-        form_name: "Chatbot Lead",
-      })
-
-      setLeadCollected(true)
-      setShowForm(false)
-
-      const confirmMsg: Message = {
-        id: nextId.current++,
-        role: "bot",
-        text: `Thanks, <strong>${name}</strong>! Our team will reach out to you at <strong>${phone}</strong> to schedule your free estimate. In the meantime, feel free to ask me anything about our services!`,
+      if (!name || !phone) {
+        setLeadError("Enter your name and phone number.")
+        e.currentTarget.querySelector<HTMLInputElement>(`[name="${!name ? "name" : "phone"}"]`)?.focus()
+        return
       }
-      setMessages((prev) => [...prev, confirmMsg])
-      setChips(["Tell me about ProFlake", "What's your warranty?", "Service area?"])
+
+      leadInFlight.current = true
+      setLeadSubmitting(true)
+      setLeadError("")
+      try {
+        const result = await submitForm({
+          name,
+          phone,
+          email: String(formData.get("email") || "").trim(),
+          service: String(formData.get("service") || "").trim(),
+          notes: String(formData.get("notes") || "").trim(),
+        }, "Chatbot Lead")
+        if (!result.ok) {
+          setLeadError("We could not confirm delivery. Your details are still here. Call (702) 728-5484 before resending if you are unsure whether it arrived.")
+          return
+        }
+        setLeadCollected(true)
+        setShowForm(false)
+        setMessages((prev) => [...prev, {
+          id: nextId.current++,
+          role: "bot",
+          text: "Your estimate request was sent. We will contact you to discuss your project.",
+        }])
+        setChips(["Tell me about ProFlake", "What's your warranty?", "Service area?"])
+        ;(window as Window & { dataLayer?: Record<string, unknown>[] }).dataLayer?.push({
+          event: "form_submission",
+          form_name: "Chatbot Lead",
+        })
+      } catch {
+        setLeadError("We could not confirm delivery. Your details are still here. Call (702) 728-5484 before resending if you are unsure whether it arrived.")
+      } finally {
+        leadInFlight.current = false
+        setLeadSubmitting(false)
+      }
     },
     []
   )
@@ -426,8 +459,9 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
                       ? { background: "#111c2e", color: "#E0E0E0", border: "1px solid #1a2c48" }
                       : { background: "linear-gradient(135deg, #DE8614, #C47712)" }
                   }
-                  dangerouslySetInnerHTML={{ __html: msg.text }}
-                />
+                >
+                  {msg.role === "bot" ? <span dangerouslySetInnerHTML={{ __html: msg.text }} /> : msg.text}
+                </motion.div>
               ))}
 
               {/* Typing indicator */}
@@ -461,6 +495,7 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
                   {chips.map((chip) => (
                     <button
                       key={chip}
+                      disabled={leadSubmitting}
                       onClick={() => {
                         setChips([])
                         handleSend(chip)
@@ -482,6 +517,7 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
               {/* Lead form */}
               {showForm && !leadCollected && (
                 <motion.form
+                  method="post"
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   onSubmit={handleSubmitLead}
@@ -493,6 +529,9 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
                   </h4>
                   <input
                     name="name"
+                    value={leadDetails.name}
+                    onChange={updateLeadDetails}
+                    disabled={leadSubmitting}
                     placeholder="Your name"
                     required
                     className="w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-colors"
@@ -502,6 +541,9 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
                   />
                   <input
                     name="phone"
+                    value={leadDetails.phone}
+                    onChange={updateLeadDetails}
+                    disabled={leadSubmitting}
                     type="tel"
                     placeholder="Phone number"
                     required
@@ -512,6 +554,9 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
                   />
                   <input
                     name="email"
+                    value={leadDetails.email}
+                    onChange={updateLeadDetails}
+                    disabled={leadSubmitting}
                     type="email"
                     placeholder="Email (optional)"
                     className="w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-colors"
@@ -521,6 +566,10 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
                   />
                   <select
                     name="service"
+                    value={leadDetails.service}
+                    onChange={updateLeadDetails}
+                    disabled={leadSubmitting}
+                    aria-label="Service"
                     className="w-full rounded-lg px-3.5 py-2.5 text-sm outline-none cursor-pointer"
                     style={{ background: "#0e1826", border: "1px solid #1a2c48", color: "#94A3B8" }}
                   >
@@ -537,6 +586,9 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
                   </select>
                   <textarea
                     name="notes"
+                    value={leadDetails.notes}
+                    onChange={updateLeadDetails}
+                    disabled={leadSubmitting}
                     placeholder="Any details about your project? (optional)"
                     rows={2}
                     className="w-full rounded-lg px-3.5 py-2.5 text-sm outline-none resize-y"
@@ -546,17 +598,20 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
                   />
                   <button
                     type="submit"
-                    className="w-full rounded-lg py-2.5 text-sm font-semibold text-white border-0 cursor-pointer transition-all hover:translate-y-[-1px]"
+                    disabled={leadSubmitting}
+                    className="w-full rounded-lg py-2.5 text-sm font-semibold text-navy border-0 cursor-pointer transition-all hover:translate-y-[-1px] disabled:opacity-70 disabled:cursor-not-allowed"
                     style={{
                       background: "linear-gradient(135deg, #DE8614, #C47712)",
                       boxShadow: "0 2px 10px rgba(222,134,20,0.25)",
                     }}
                   >
-                    Request Free Estimate
+                    {leadSubmitting ? "Sending..." : "Request Free Estimate"}
                   </button>
+                  {leadError && <p role="alert" className="text-sm text-red-300">{leadError}</p>}
                 </motion.form>
               )}
 
+              <p role="status" className="sr-only">{leadCollected ? "Your estimate request was sent." : ""}</p>
               <div ref={messagesEnd} />
             </div>
 
@@ -564,6 +619,7 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
             <div className="flex items-end gap-2.5 px-4 pb-4 pt-3 shrink-0" style={{ borderTop: "1px solid #1a2c48" }}>
               <textarea
                 ref={inputRef}
+                disabled={leadSubmitting}
                 value={input}
                 onChange={(e) => {
                   setInput(e.target.value)
@@ -591,7 +647,7 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
               />
               <button
                 onClick={() => handleSend(input)}
-                disabled={!input.trim()}
+                disabled={leadSubmitting || !input.trim()}
                 className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border-0 text-white cursor-pointer transition-all disabled:opacity-40 disabled:cursor-not-allowed"
                 style={{
                   background: "linear-gradient(135deg, #DE8614, #C47712)",
