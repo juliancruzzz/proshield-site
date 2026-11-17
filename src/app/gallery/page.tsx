@@ -7,7 +7,7 @@ import { PageHero } from "@/components/sections/page-hero"
 import { Breadcrumbs } from "@/components/sections/breadcrumbs"
 import { CtaSection } from "@/components/sections/cta-section"
 
-const filters = ["All", "Garage", "Commercial", "Metallic", "Flake", "VubaStone", "Overlay", "Turf", "Hangar"]
+const filters = ["All", "Garage", "Commercial", "Metallic", "Flake", "VubaStone", "Overlay", "Hangar"]
 
 const projects = [
   // ── Metallic Epoxy ──────────────────────────────────────────

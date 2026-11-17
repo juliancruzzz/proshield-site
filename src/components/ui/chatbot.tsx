@@ -57,11 +57,6 @@ const SERVICES: Record<string, Service> = {
     desc: "Specialty commercial/industrial system. Resists Skydrol, jet fuel, oils, abrasion, heavy loads. Polyurethane or chemical-resistant topcoat. 2-5+ day phased install.",
     best: "private/commercial hangars, aviation facilities",
   },
-  turf: {
-    name: "Artificial Turf Installation",
-    desc: "Engineered permeable base system beneath premium artificial grass + professional installation. Multi-day install.",
-    best: "backyards, pet areas, play areas, landscaping",
-  },
   commercial: {
     name: "Commercial Flooring",
     desc: "Custom high-performance systems matched to each environment. Chemical resistant, slip-resistant textures, sanitation-friendly.",
@@ -82,7 +77,6 @@ const SERVICE_KEYWORDS: [RegExp, string][] = [
   [/pool|patio|deck|exterior|outdoor|cool.?deck|knockdown|driveway coating/i, "exterior"],
   [/paver|brick|hardscape|seal/i, "pavers"],
   [/hangar|airplane|aviation|skydrol|jet/i, "hangar"],
-  [/turf|grass|artificial|grassmac|lawn/i, "turf"],
   [/commercial|warehouse|restaurant|retail|industrial/i, "commercial"],
   [/landscap/i, "landscaping"],
 ]
@@ -538,7 +532,6 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
                     <option>Exterior / Pool Deck</option>
                     <option>Paver Sealing</option>
                     <option>Airplane Hangar</option>
-                    <option>GrassMac / Turf</option>
                     <option>Commercial Flooring</option>
                     <option>Not sure yet</option>
                   </select>

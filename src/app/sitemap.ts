@@ -23,20 +23,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/concrete-overlay`, lastModified: "2026-11-17", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/cool-deck`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/rubber-pool-deck`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/tile-flooring`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/plank-flooring`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/paver-sealing`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/airplane-hangar`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/artificial-turf`, lastModified: "2026-04-10", priority: 0.7, changeFrequency: "monthly" },
 
     // Area pages
     { url: `${BASE_URL}/areas/garage`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/areas/exterior`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/areas/interior`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/areas/interior`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/areas/commercial`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
 
     // Supporting pages
-    { url: `${BASE_URL}/services`, lastModified: "2026-04-10", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/services`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/gallery`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "weekly" },
     { url: `${BASE_URL}/about`, lastModified: "2026-11-17", priority: 0.6, changeFrequency: "monthly" },
     { url: `${BASE_URL}/faq`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" },

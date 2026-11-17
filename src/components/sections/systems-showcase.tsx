@@ -57,14 +57,6 @@ const systems = [
     locations: ["Exterior"],
   },
   {
-    title: "Artificial Turf",
-    description:
-      "Premium artificial turf with engineered resin-bound base systems for lawns, pet areas, and putting greens.",
-    href: "/artificial-turf",
-    image: "/images/grassmac/dog-on-grass.webp",
-    locations: ["Exterior"],
-  },
-  {
     title: "Airplane Hangar",
     description:
       "High-performance coatings engineered for aircraft hangars. Resists jet fuel, hydraulic fluid, and heavy loads.",

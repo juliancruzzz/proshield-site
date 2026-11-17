@@ -11,12 +11,9 @@ const systemLinks = [
   { label: "Commercial Flooring", href: "/commercial-flooring" },
   { label: "Cool Deck / Patio", href: "/cool-deck" },
   { label: "Rubber Pool Deck", href: "/rubber-pool-deck" },
-  { label: "Tile Flooring", href: "/tile-flooring" },
-  { label: "Plank Flooring", href: "/plank-flooring" },
   { label: "Paver Sealing", href: "/paver-sealing" },
   { label: "Concrete Overlay", href: "/concrete-overlay" },
   { label: "Airplane Hangar", href: "/airplane-hangar" },
-  { label: "Artificial Turf", href: "/artificial-turf" },
 ]
 
 const areaLinks = [

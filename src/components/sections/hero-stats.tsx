@@ -2,7 +2,7 @@ import { Star, Layers, Palette, ShieldCheck } from "lucide-react"
 
 const stats = [
   { icon: Star, value: "4.9", label: "Google Rating" },
-  { icon: Layers, value: "11+", label: "Professional Services" },
+  { icon: Layers, value: "10", label: "Floor Systems" },
   { icon: Palette, value: "150+", label: "Flake Colors" },
   { icon: ShieldCheck, value: "Lifetime", label: "Warranty†" },
 ]

@@ -7,7 +7,7 @@ import { CtaSection } from "@/components/sections/cta-section"
 export const metadata: Metadata = {
   title: "Interior Flooring Las Vegas | ProShield Epoxy",
   description:
-    "Interior flooring systems in Las Vegas — metallic epoxy, polished concrete, tile, and plank flooring for homes, offices, and retail spaces.",
+    "Interior flooring systems in Las Vegas — metallic epoxy, polished concrete and decorative overlays for homes, offices and retail spaces.",
   alternates: {
     canonical: "/areas/interior",
   },
@@ -20,15 +20,11 @@ export const metadata: Metadata = {
 const interiorFaqs = [
   {
     q: "What\u2019s the best flooring for a Las Vegas kitchen?",
-    a: "Tile and metallic epoxy are both excellent for kitchens. Tile offers classic water resistance and scratch protection. Metallic epoxy creates a seamless, stunning surface that\u2019s easy to clean. We\u2019ll help you decide based on your style, budget, and usage.",
+    a: "Metallic epoxy creates a seamless surface that is easy to clean. We recommend a system based on your style, budget, slab condition and usage.",
   },
   {
     q: "Can metallic epoxy be installed inside my home?",
     a: "Absolutely. Metallic epoxy is one of our most popular interior systems. It works beautifully in kitchens, bathrooms, living areas, and showrooms. The flowing pearlescent finish creates a truly unique look in any room.",
-  },
-  {
-    q: "What\u2019s the difference between LVP, SPC, and WPC plank flooring?",
-    a: "LVP (Luxury Vinyl Plank) is flexible and budget-friendly. SPC (Stone Polymer Composite) has a rigid core for extra stability and dent resistance. WPC (Wood Polymer Composite) adds a foam layer for a softer feel underfoot. All three are waterproof and look like real wood.",
   },
   {
     q: "Is concrete polishing a coating?",
@@ -83,7 +79,7 @@ export default function InteriorPage() {
         badge="Interior Spaces"
         title="Interior Flooring"
         highlight="Las Vegas"
-        subtitle="From metallic epoxy showpieces to hardwood-look plank flooring — we match the right system to your interior space, style, and budget."
+        subtitle="Metallic epoxy, polished concrete and decorative overlays matched to your interior space, style and budget."
       />
 
       <InteriorAreas />
@@ -96,7 +92,7 @@ export default function InteriorPage() {
               Interior Flooring Systems for Every Style
             </h2>
             <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-              From modern epoxy showpieces to classic plank flooring, ProShield offers flexible interior solutions for homes, offices, and retail spaces.
+              ProShield offers metallic epoxy, polished concrete and decorative overlays for homes, offices and retail spaces.
             </p>
           </div>
 
@@ -153,57 +149,6 @@ export default function InteriorPage() {
               </ul>
             </div>
 
-            {/* Tile Flooring */}
-            <div className="rounded-xl border border-gray-200 p-6 bg-gray-50">
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">Tile Flooring (Classic Durability)</h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Professional tile installation for kitchens, bathrooms, and living spaces. Water-resistant, scratch-resistant, timeless.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-teal font-bold">✓</span>
-                  <span>Superior water resistance in wet areas</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal font-bold">✓</span>
-                  <span>Scratch-resistant and durable</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal font-bold">✓</span>
-                  <span>Endless color and pattern options</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal font-bold">✓</span>
-                  <span>Easy to maintain and clean</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Plank Flooring */}
-            <div className="rounded-xl border border-gray-200 p-6 bg-gray-50">
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">Plank Flooring (Waterproof Wood-Look)</h3>
-              <p className="text-gray-600 text-sm mb-4">
-                LVP, SPC, or WPC plank in hardwood finishes. Warm, inviting aesthetic with waterproof and durable performance.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-teal font-bold">✓</span>
-                  <span>Realistic wood appearance without maintenance</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal font-bold">✓</span>
-                  <span>Fully waterproof and scratch-resistant</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal font-bold">✓</span>
-                  <span>Budget-friendly compared to real hardwood</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal font-bold">✓</span>
-                  <span>Works in any room, including kitchens and bathrooms</span>
-                </li>
-              </ul>
-            </div>
           </div>
 
           {/* Design Flexibility Section */}
@@ -224,19 +169,19 @@ export default function InteriorPage() {
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Classic & Timeless</h4>
                 <p className="text-gray-600 text-sm">
-                  Tile flooring in neutral tones never goes out of style. Plank flooring mimics traditional hardwood while offering superior durability and waterproofing.
+                  Neutral metallic finishes and polished concrete suit a wide range of interior styles.
                 </p>
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Budget-Conscious</h4>
                 <p className="text-gray-600 text-sm">
-                  Plank flooring and concrete polishing deliver premium aesthetics at a fraction of the cost of real hardwood or expensive tile.
+                  Concrete polishing refines the existing slab. The right option depends on its condition and your chosen finish.
                 </p>
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Wet Areas & Heavy Use</h4>
                 <p className="text-gray-600 text-sm">
-                  Tile and waterproof plank flooring handle kitchens and bathrooms flawlessly. Metallic epoxy can include protective topcoats for resilience.
+                  Metallic epoxy creates a seamless surface for kitchens and bathrooms. Protective topcoats are selected for the room and its use.
                 </p>
               </div>
             </div>

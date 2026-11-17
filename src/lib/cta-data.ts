@@ -39,19 +39,11 @@ export const PROJECT_TYPE_GROUPS: ProjectTypeGroup[] = [
     ],
   },
   {
-    label: "Flooring",
-    types: [
-      "Tile Flooring",
-      "Plank Flooring (LVP/SPC/Hardwood)",
-    ],
-  },
-  {
     label: "Outdoor & Hardscape",
     types: [
       "VubaStone",
       "Patio / Pool Deck",
       "Paver Sealing",
-      "Artificial Grass",
     ],
   },
 ]

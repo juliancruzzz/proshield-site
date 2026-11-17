@@ -68,7 +68,6 @@ export const metadata: Metadata = {
     "VubaStone",
     "flake epoxy",
     "airplane hangar flooring",
-    "GrassMac turf",
     "paver sealing",
     "Las Vegas",
   ],

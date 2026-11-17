@@ -103,21 +103,6 @@ const systems: System[] = [
     image: "/images/paver-sealing/paver-walkway-sealed.webp",
     categories: ["Driveways", "Walkways"],
   },
-  {
-    name: "Artificial Turf Installation",
-    description:
-      "Premium artificial turf with engineered permeable base system. Built with recycled rubber + aggregate and resin binding for proper drainage.",
-    highlights: [
-      "Engineered drainage base",
-      "Low maintenance",
-      "Great for pets & play areas",
-      "No watering or mowing",
-      "Perfect for Las Vegas climate",
-    ],
-    href: "/artificial-turf",
-    image: "/images/grassmac/dog-on-grass.webp",
-    categories: ["Lawns", "Pet-Friendly"],
-  },
 ]
 
 /* ------------------------------------------------------------------ */

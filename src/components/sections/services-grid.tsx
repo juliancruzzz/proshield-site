@@ -42,24 +42,6 @@ const services = [
     tags: ["Resin quartz", "Urethane cement", "Chemical rated"],
   },
   {
-    title: "Tile Flooring",
-    subtitle: "Porcelain, Ceramic & Stone",
-    description:
-      "Professional installation of porcelain, ceramic, and natural stone. Scratch and water resistant.",
-    image: "/images/tile/tile-luxury-interior.webp",
-    href: "/tile-flooring",
-    tags: ["Porcelain & ceramic", "Natural stone", "Water resistant"],
-  },
-  {
-    title: "Plank Flooring",
-    subtitle: "LVP, SPC & Engineered Hardwood",
-    description:
-      "Realistic wood-grain finishes with waterproof cores and click-lock installation. Low maintenance.",
-    image: "/images/plank/plank-luxury.webp",
-    href: "/plank-flooring",
-    tags: ["LVP / SPC / WPC", "Waterproof core", "Click-lock"],
-  },
-  {
     title: "Airplane Hangar",
     subtitle: "Specialty Chemical-Resistant",
     description:

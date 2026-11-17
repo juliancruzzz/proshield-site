@@ -29,14 +29,6 @@ const specialties = [
     image: "/images/paver-sealing/paver-driveway-sealed.webp",
     href: "/paver-sealing",
   },
-  {
-    title: "Artificial Turf Installation",
-    badge: "Turf",
-    description:
-      "Premium artificial turf for yards, pet areas, putting greens, and commercial landscapes. Low maintenance, year-round green.",
-    image: "/images/grassmac/turf-backyard-pool.webp",
-    href: "/artificial-turf",
-  },
 ]
 
 export function SpecialtyServices() {
@@ -52,7 +44,7 @@ export function SpecialtyServices() {
             Specialty Services
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Exterior coatings, hardscape maintenance, and turf — the full outdoor package.
+            Exterior coatings and hardscape maintenance.
           </p>
         </div>
 

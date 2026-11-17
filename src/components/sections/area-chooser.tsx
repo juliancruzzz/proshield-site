@@ -18,10 +18,10 @@ const areas = [
   {
     title: "Exterior",
     description:
-      "VubaStone, cool deck textures, paver sealing, and GrassMac turf systems.",
+      "VubaStone, cool deck textures and paver sealing for exterior spaces.",
     href: "/areas/exterior",
     icon: TreePine,
-    systems: ["VubaStone", "Cool Deck / Patio", "Paver Sealing", "GrassMac & Turf"],
+    systems: ["VubaStone", "Cool Deck / Patio", "Paver Sealing",],
     image: "/images/vubastone/vubastone-pool-deck-pergola.webp",
   },
   {

@@ -73,36 +73,6 @@ const systems: System[] = [
     image: "/images/concrete-overlay/micro-topping-flooring.webp",
     categories: ["Utility Rooms", "Any Interior"],
   },
-  {
-    name: "Tile Flooring",
-    description:
-      "Porcelain, ceramic, and natural stone. Scratch-resistant, water-resistant, and available in endless patterns. Premium finishes for high-traffic wet areas.",
-    highlights: [
-      "Water & scratch resistant",
-      "Endless design options",
-      "Premium stone & porcelain",
-      "Large format available",
-      "Extremely durable",
-    ],
-    href: "/tile-flooring",
-    image: "/images/tile/tile-luxury-interior.webp",
-    categories: ["Kitchens & Baths", "Living Spaces"],
-  },
-  {
-    name: "Plank Flooring",
-    description:
-      "LVP, SPC, WPC, and engineered hardwood. Realistic wood-grain looks with waterproof cores. Comfortable underfoot and low maintenance with click-lock install.",
-    highlights: [
-      "Realistic wood look",
-      "Waterproof core",
-      "Click-lock install",
-      "Comfortable underfoot",
-      "Low maintenance",
-    ],
-    href: "/plank-flooring",
-    image: "/images/plank/plank-room.webp",
-    categories: ["Living & Bedroom", "Bonus Rooms"],
-  },
 ]
 
 /* ------------------------------------------------------------------ */
@@ -128,7 +98,7 @@ export function InteriorAreas() {
             Interior Flooring Systems
           </h2>
           <p className="mt-4 text-gray-500 text-lg leading-relaxed">
-            Five flooring systems for every room — tap any to see the details.
+            Interior floor coatings and finishes — tap any to see the details.
           </p>
         </div>
 

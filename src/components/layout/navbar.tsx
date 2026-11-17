@@ -35,8 +35,6 @@ const systemGroups = [
     heading: "Flooring",
     items: [
       { label: "Concrete Polishing", href: "/concrete-polishing" },
-      { label: "Tile Flooring", href: "/tile-flooring" },
-      { label: "Plank Flooring", href: "/plank-flooring" },
     ],
   },
   {
@@ -47,7 +45,6 @@ const systemGroups = [
       { label: "Rubber Pool Deck", href: "/rubber-pool-deck" },
       { label: "Paver Sealing", href: "/paver-sealing" },
       { label: "VubaStone", href: "/vubastone" },
-      { label: "Artificial Turf", href: "/artificial-turf" },
     ],
   },
 ]

@@ -6,7 +6,7 @@ import { CtaSection } from "@/components/sections/cta-section"
 
 export const metadata: Metadata = {
   title: "Exterior Surfaces Las Vegas | ProShield Epoxy",
-  description: "Exterior coatings in Las Vegas — driveways, patios, pool decks, walkways. Cool deck, paver sealing, VubaStone, and artificial turf.",
+  description: "Exterior coatings in Las Vegas — driveways, patios, pool decks and walkways. Cool deck, paver sealing and VubaStone.",
   alternates: {
     canonical: "/areas/exterior",
   },
@@ -36,10 +36,6 @@ const exteriorFaqs = [
   {
     q: "Do I need to reseal my pavers?",
     a: "Paver sealer isn't permanent — it wears down over time from UV exposure, foot traffic, and weather. We recommend periodic maintenance reapplication to keep your pavers looking their best and protected from stains and fading.",
-  },
-  {
-    q: "How does GrassMac work under artificial turf?",
-    a: "GrassMac is an engineered permeable base layer installed beneath your artificial grass. It uses SRM, VubaMac resin, and a recycled rubber + aggregate blend to create proper drainage so water flows through instead of pooling under the turf.",
   },
   {
     q: "Can you install on existing concrete?",
@@ -90,7 +86,7 @@ export default function ExteriorPage() {
         badge="Exterior Surfaces"
         title="Exterior Coatings"
         highlight="Las Vegas"
-        subtitle="From driveways to patios to turf — ProShield transforms outdoor surfaces with durable, decorative systems built to handle the elements."
+        subtitle="From driveways to patios and pool decks — ProShield transforms outdoor surfaces with durable, decorative systems built to handle the elements."
       />
 
       <ExteriorAreas />
@@ -186,11 +182,11 @@ export default function ExteriorPage() {
               </ul>
             </div>
 
-            {/* Paver Sealing & GrassMac */}
+            {/* Paver Sealing */}
             <div className="rounded-xl border border-gray-200 p-6 bg-gray-50">
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">Paver Sealing & GrassMac Turf</h3>
+              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">Paver Sealing</h3>
               <p className="text-gray-600 text-sm mb-4">
-                Protect existing pavers and create permeable bases for artificial turf. Professional-grade systems for long-term aesthetics.
+                Protect existing pavers with professional sealing that enhances color and helps resist stains and fading.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
@@ -199,11 +195,11 @@ export default function ExteriorPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
-                  <span>GrassMac creates proper drainage under artificial turf</span>
+                  <span>Wet-look and natural-look sealer options</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
-                  <span>Eco-friendly, permeable options available</span>
+                  <span>Helps reduce weed growth between joints</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
@@ -237,7 +233,7 @@ export default function ExteriorPage() {
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Monsoon & Flash Flood Drainage</h4>
                 <p className="text-gray-600 text-sm">
-                  Summer monsoons bring sudden heavy rain. Permeable systems like VubaStone and GrassMac prevent water pooling and drainage problems, protecting your investment.
+                  Summer monsoons bring sudden heavy rain. VubaStone&apos;s permeable surface allows water to pass through. Drainage depends on the underlying base and site conditions.
                 </p>
               </div>
               <div>

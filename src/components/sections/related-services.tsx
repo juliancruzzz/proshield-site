@@ -61,26 +61,6 @@ const allServices: Record<string, ServiceItem> = {
     href: "/paver-sealing",
     description: "Protect and enhance pavers with professional sealing.",
   },
-  grassmac: {
-    title: "Artificial Turf",
-    href: "/artificial-turf",
-    description: "Engineered permeable base for artificial grass.",
-  },
-  "artificial-turf": {
-    title: "Artificial Turf",
-    href: "/artificial-turf",
-    description: "Engineered permeable base for artificial grass.",
-  },
-  "plank-flooring": {
-    title: "Plank Flooring",
-    href: "/plank-flooring",
-    description: "LVP, SPC, and engineered hardwood installation.",
-  },
-  "tile-flooring": {
-    title: "Tile Flooring",
-    href: "/tile-flooring",
-    description: "Porcelain, ceramic, and natural stone tile.",
-  },
   "commercial-flooring": {
     title: "Commercial Flooring",
     href: "/commercial-flooring",
@@ -94,16 +74,12 @@ const serviceGroups = {
     "proflake",
     "metallic-epoxy",
     "concrete-polishing",
-    "plank-flooring",
-    "tile-flooring",
   ],
   exterior: [
     "vubastone",
     "cool-deck",
     "rubber-pool-deck",
     "paver-sealing",
-    "grassmac",
-    "artificial-turf",
   ],
   specialty: [
     "airplane-hangar",
