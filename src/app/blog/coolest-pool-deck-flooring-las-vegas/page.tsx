@@ -25,45 +25,16 @@ export const metadata: Metadata = {
 /* ------------------------------------------------------------------ */
 
 function TempComparisonChart() {
-  const surfaces = [
-    { name: "Bare Concrete", temp: 170, color: "#dc2626", pct: 100 },
-    { name: "Pavers", temp: 155, color: "#ea580c", pct: 88 },
-    { name: "Travertine", temp: 140, color: "#f59e0b", pct: 76 },
-    { name: "Cool Deck", temp: 130, color: "#eab308", pct: 70 },
-    { name: "Rubber Deck", temp: 110, color: "#22c55e", pct: 56 },
-  ]
   return (
     <div className="my-10 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm">
       <h3 className="font-heading font-bold text-lg text-gray-900 mb-1 text-center">
-        Peak Surface Temperature by Material
+        Compare Temperatures Under the Same Conditions
       </h3>
-      <p className="text-sm text-gray-500 text-center mb-6">
-        Measured in direct Las Vegas sun, July afternoon (ambient 115&deg;F)
-      </p>
-      <div className="space-y-4">
-        {surfaces.map((s) => (
-          <div key={s.name} className="flex items-center gap-3">
-            <span className="w-28 sm:w-32 text-sm font-medium text-gray-700 text-right shrink-0">
-              {s.name}
-            </span>
-            <div className="flex-1 h-8 bg-gray-100 rounded-full overflow-hidden relative">
-              <div
-                className="h-full rounded-full flex items-center justify-end pr-3 transition-all duration-700"
-                style={{
-                  width: `${s.pct}%`,
-                  backgroundColor: s.color,
-                }}
-              >
-                <span className="text-xs font-bold text-white drop-shadow">
-                  {s.temp}&deg;F
-                </span>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <p className="text-xs text-gray-400 mt-4 text-center italic">
-        Data based on infrared surface readings. Actual temps vary by color, shade, and time of day.
+      <p className="text-sm text-gray-600 text-center mt-4">
+        Ask for test results for the proposed product and color. Compare
+        readings taken under the same sun exposure, air temperature and
+        time of day. A surface temperature alone does not establish that
+        a deck is safe to walk on barefoot.
       </p>
     </div>
   )
@@ -413,10 +384,10 @@ export default function CoolestPoolDeckFlooringPost() {
               Temperature Comparison: Every Pool Deck Material
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              We&apos;ve measured surface temperatures across dozens of
-              pool deck installations in the Las Vegas valley using
-              infrared thermometers during peak summer conditions.
-              Here&apos;s how the major materials stack up:
+              Surface temperature varies with the selected product,
+              color, weather and shade. Before choosing a surface, ask
+              for comparable test conditions rather than relying on a
+              single temperature figure.
             </p>
 
             <TempComparisonChart />
@@ -566,9 +537,8 @@ export default function CoolestPoolDeckFlooringPost() {
               deck&apos;s 1&ndash;2 year cycle.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              It&apos;s our most-requested premium pool deck system, and
-              for Las Vegas specifically, we think it&apos;s the best
-              all-around option. Goes directly over existing concrete in
+              Rubber surfacing is one of our pool deck options.
+              It can go directly over suitable existing concrete in
               2&ndash;3 days, no demolition needed.
             </p>
 
@@ -625,11 +595,7 @@ export default function CoolestPoolDeckFlooringPost() {
               Our Recommendation
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              We install cool deck and rubber aggregate pool decking across
-              the Las Vegas valley, so we don&apos;t have a reason to push
-              one over the other &mdash; we get paid either way. But after
-              installing hundreds of pool decks in this climate, our honest
-              recommendation for most homeowners is{" "}
+              Compare cool deck coatings with{" "}
               <Link href="/rubber-pool-deck" className="text-accent hover:underline font-semibold">rubber aggregate pool decking</Link>.
             </p>
             <p className="text-gray-600 leading-relaxed">
