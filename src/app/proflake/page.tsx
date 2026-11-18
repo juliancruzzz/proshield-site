@@ -1,3 +1,4 @@
+import { ProjectCards } from "@/components/sections/project-cards"
 import type { Metadata } from "next"
 import { PageHero } from "@/components/sections/page-hero"
 import { Breadcrumbs } from "@/components/sections/breadcrumbs"
@@ -117,6 +118,7 @@ export default function ProFlakePage() {
       <ProFlakeSystemBuild />
       <FlakeColorShowcase />
       <ProFlakeGallery />
+      <ProjectCards service="/proflake" />
 
       {/* FAQ */}
       <section className="section-white py-10 sm:py-16 lg:py-24">

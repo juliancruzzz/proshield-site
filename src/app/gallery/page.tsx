@@ -1,5 +1,6 @@
 "use client"
 
+import { ProjectCards } from "@/components/sections/project-cards"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { X } from "lucide-react"
@@ -78,15 +79,17 @@ export default function GalleryPage() {
   return (
     <>
       <PageHero
-        badge="Our Work"
+        badge="Floor Finishes"
         title="Project Gallery"
-        subtitle="Browse completed ProShield installations. Real projects, real results."
+        subtitle="Explore floor finishes for garages, homes and commercial spaces."
       />
 
       <Breadcrumbs items={[{ label: "Gallery" }]} />
+      <ProjectCards />
 
       <section className="section-white py-14 sm:py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="mb-8 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">Floor Finish Ideas</h2>
           {/* Filters */}
           <div className="flex flex-wrap items-center justify-center gap-2 mb-10 sm:mb-14">
             {filters.map((f) => (

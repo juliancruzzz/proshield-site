@@ -35,6 +35,7 @@ const serviceAreaLinks = [
 const companyLinks = [
   { label: "About Us", href: "/about" },
   { label: "Gallery", href: "/gallery" },
+  { label: "Projects", href: "/projects" },
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },

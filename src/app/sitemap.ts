@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Service pages
     { url: `${BASE_URL}/proflake`, lastModified: "2026-11-17", priority: 0.9, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/metallic-epoxy`, lastModified: "2026-04-10", priority: 0.9, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/metallic-epoxy`, lastModified: "2026-11-17", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/vubastone`, lastModified: "2026-11-17", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/concrete-polishing`, lastModified: "2026-04-10", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/commercial-flooring`, lastModified: "2026-05-12", priority: 0.9, changeFrequency: "monthly" },
@@ -31,6 +31,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/areas/exterior`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/areas/interior`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/areas/commercial`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
+
+    // Verified project pages
+    ...["projects", "projects/nightfall-garage-las-vegas", "projects/shoreline-garage-henderson", "projects/metallic-showroom-floor"].map(path => ({ url: `${BASE_URL}/${path}`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" as const })),
 
     // Supporting pages
     { url: `${BASE_URL}/services`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" },

@@ -1,3 +1,4 @@
+import { ProjectCards } from "@/components/sections/project-cards"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { PageHero } from "@/components/sections/page-hero"
@@ -233,6 +234,7 @@ export default function MetallicEpoxyPage() {
       </section>
 
       {/* FAQ */}
+      <ProjectCards service="/metallic-epoxy" />
       <section className="section-gray py-10 sm:py-16 lg:py-24 border-t border-gray-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <ScrollReveal direction="up" delay={0}>

@@ -48,6 +48,7 @@ const inter = localFont({
 })
 
 export const metadata: Metadata = {
+  verification: { other: { "msvalidate.01": "702013774A88FA8B92C987CD530F19CB" } },
   title: "ProShield Epoxy | Epoxy Flooring Las Vegas",
   description:
     "Professional floor coatings for garages, commercial spaces, and more. Metallic epoxy, flake systems, VubaStone, concrete polishing, and specialty services. Free quotes in the Las Vegas metro.",

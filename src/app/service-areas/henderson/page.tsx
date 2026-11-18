@@ -131,6 +131,7 @@ export default function HendersonPage() {
               </div>)}
             </div>
             <Link href="/proflake" className="inline-block mt-5 text-accent-text font-medium underline">View the ProFlake garage system</Link>
+            <Link href="/projects/shoreline-garage-henderson" className="block mt-4 text-accent-text font-medium underline">View the Henderson Garage Project</Link>
           </div>
         </div>
       </section>
