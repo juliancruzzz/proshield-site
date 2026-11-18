@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title:
     "Rubber Pool Deck Flooring in Las Vegas | Cost, Process & What to Expect | ProShield",
   description:
-    "Rubber pool deck flooring in Las Vegas costs $15–18/sq ft installed. See our installation process, color options, maintenance, and why it stays 60°F cooler than bare concrete — from a crew that installs them every week.",
+    "Rubber pool deck surfacing in Las Vegas: review installation steps, color options, maintenance and costs, plus questions to ask before resurfacing.",
   alternates: {
     canonical: "/blog/rubber-pool-deck-las-vegas",
   },
@@ -24,10 +24,10 @@ export default function RubberPoolDeckLasVegasPost() {
   const schema = blogPostingSchema({
     title: "Rubber Pool Deck Flooring in Las Vegas: What It Costs, How It's Installed & What to Expect",
     description:
-      "Rubber pool deck flooring in Las Vegas costs $15–18/sq ft installed. See our installation process, color options, maintenance, and why it stays 60°F cooler than bare concrete.",
+      "Rubber pool deck surfacing in Las Vegas: review installation steps, color options, maintenance and costs, plus questions to ask before resurfacing.",
     slug: "rubber-pool-deck-las-vegas",
     datePublished: "2026-05-03",
-    dateModified: "2026-11-17",
+    dateModified: "2026-11-18",
     image: "https://proshieldepoxy.com/images/blog/rubber-deck/rubber-deck-pool-wide.jpg",
   })
 
@@ -161,7 +161,7 @@ export default function RubberPoolDeckLasVegasPost() {
           </div>
           <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
-              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-17">November 17, 2026</time>
+              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-18">November 18, 2026</time>
             </span>
             <span className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" /> 10 min read
@@ -179,27 +179,30 @@ export default function RubberPoolDeckLasVegasPost() {
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden my-8 shadow-lg">
               <Image
                 src="/images/blog/rubber-deck/rubber-deck-pool-wide.jpg"
-                alt="Rubber aggregate pool deck flooring around a Las Vegas pool with landscaping and gazebo — installed by ProShield Epoxy"
+                alt="Example of rubber aggregate pool deck flooring around a pool with landscaping and a gazebo"
                 width={1200}
                 height={823}
                 className="w-full h-full object-cover"
                 priority
               />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p className="text-xs text-white/90">Surface example: rubber aggregate around a pool.</p>
+              </div>
             </div>
 
             <p className="text-lg text-gray-600 leading-relaxed">
               If you&apos;ve been looking into pool deck options for Las
-              Vegas, you&apos;ve probably run into the same problem we hear
-              about every week: your concrete is too hot to walk on, your
+              Vegas, you may be dealing with a familiar problem:
+              your concrete is too hot to walk on, your
               cool deck needs resealing again, or you&apos;re tired of the
               deck cracking every summer. Rubber pool deck flooring solves
               all three. It&apos;s the coolest surface you can stand on
               barefoot in July, it only needs resealing every 3&ndash;4
               years instead of every 1&ndash;2, and it
               flexes with your concrete instead of cracking on top of it.
-              We&apos;re ProShield Epoxy, and we install rubber pool decks
-              across the Las Vegas valley every week &mdash; here&apos;s
-              everything you need to know before you book.
+              ProShield Epoxy offers rubber pool deck surfacing across the
+              Las Vegas valley. This guide covers the installation process,
+              costs, color options and maintenance.
             </p>
 
             {/* TOC */}
@@ -249,14 +252,14 @@ export default function RubberPoolDeckLasVegasPost() {
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden my-8 shadow-lg">
               <Image
                 src="/images/blog/rubber-deck/rubber-deck-pool-hottub.jpg"
-                alt="Gray two-tone rubber aggregate pool deck around a pool and hot tub — installed by ProShield Epoxy in Las Vegas"
+                alt="Example of gray two-tone rubber aggregate surfacing around a pool and hot tub"
                 width={1200}
                 height={823}
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                 <p className="text-xs text-white/90">
-                  Two-tone gray rubber deck around a pool and spa &mdash; the textured granules provide built-in slip resistance even when wet
+                  Surface example: two-tone gray rubber around a pool and spa.
                 </p>
               </div>
             </div>
@@ -420,14 +423,14 @@ export default function RubberPoolDeckLasVegasPost() {
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden my-8 shadow-lg">
               <Image
                 src="/images/blog/rubber-deck/rubber-deck-installation.jpg"
-                alt="Installer hand-troweling rubber aggregate onto a pool deck surface — ProShield Epoxy installation in progress"
+                alt="Example of hand-troweling rubber aggregate onto a pool deck surface"
                 width={1200}
                 height={800}
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                 <p className="text-xs text-white/90">
-                  Hand-troweling the rubber aggregate mixture onto prepared concrete &mdash; this is where craftsmanship matters
+                  Application example: hand-troweling rubber aggregate.
                 </p>
               </div>
             </div>
@@ -463,14 +466,14 @@ export default function RubberPoolDeckLasVegasPost() {
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden my-8 shadow-lg">
               <Image
                 src="/images/blog/rubber-deck/rubber-deck-terracotta.jpg"
-                alt="Terracotta-colored rubber aggregate pool deck showing warm copper tones around a Las Vegas pool — installed by ProShield Epoxy"
+                alt="Example of terracotta-colored rubber aggregate with warm copper tones around a pool"
                 width={1200}
                 height={876}
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                 <p className="text-xs text-white/90">
-                  Terracotta/copper rubber deck &mdash; one of many color blends available
+                  Color example: terracotta and copper rubber aggregate.
                 </p>
               </div>
             </div>
@@ -478,14 +481,14 @@ export default function RubberPoolDeckLasVegasPost() {
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden my-8 shadow-lg">
               <Image
                 src="/images/blog/rubber-deck/rubber-deck-pool-slide.jpg"
-                alt="Completed gray rubber pool deck with slide and pergola in Las Vegas backyard — installed by ProShield Epoxy"
+                alt="Example of gray rubber pool deck surfacing beside a slide and pergola"
                 width={1200}
                 height={671}
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                 <p className="text-xs text-white/90">
-                  Finished rubber deck with slide and pergola &mdash; seamless coverage from pool edge to outdoor living area
+                  Surface example: rubber decking beside a slide and pergola.
                 </p>
               </div>
             </div>
@@ -523,20 +526,14 @@ export default function RubberPoolDeckLasVegasPost() {
               the ongoing maintenance.
             </p>
 
-            {/* -------- Customer Story -------- */}
+            {/* -------- Existing Deck Assessment -------- */}
             <div className="my-10 rounded-xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
               <p className="text-gray-700 leading-relaxed">
-                One of our customers had a textured spray deck that was
-                giving them nothing but problems &mdash; chipping,
-                constant resealing, and it still wasn&apos;t that cool.
-                His wife uses the pool every day and they spend a lot of
-                time outside, so the deck was a real pain point. We
-                installed rubber aggregate over the existing surface and
-                it made a huge difference. They loved how much cooler it
-                is, how cushy it feels underfoot, and the fact that they
-                aren&apos;t dealing with resealing every year. That&apos;s
-                the kind of feedback that tells you the system actually
-                delivers.
+                Before choosing rubber surfacing, check the condition of
+                your existing coating, drainage and the required
+                preparation. Compare the proposed system&apos;s maintenance
+                instructions and ask which repairs are included in the
+                estimate.
               </p>
             </div>
 
@@ -744,8 +741,7 @@ export default function RubberPoolDeckLasVegasPost() {
                   Julian is the founder of ProShield Epoxy, a professional floor coating company
                   serving the Las Vegas metro area. He specializes in residential garage coatings,
                   commercial resinous flooring, pool deck systems, and specialty surfaces including
-                  rubber aggregate, metallic epoxy, and concrete polishing. Every article is written
-                  from hands-on installation experience.
+                  rubber aggregate, metallic epoxy, and concrete polishing.
                 </p>
               </div>
             </div>

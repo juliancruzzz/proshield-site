@@ -50,8 +50,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/best-pool-deck-coatings-las-vegas`, lastModified: "2026-04-06", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/blog/epoxy-floor-maintenance-tips`, lastModified: "2026-04-07", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/blog/metallic-epoxy-flooring-las-vegas`, lastModified: "2026-05-03", priority: 0.7, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/blog/coolest-pool-deck-flooring-las-vegas`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/blog/rubber-pool-deck-las-vegas`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/blog/coolest-pool-deck-flooring-las-vegas`, lastModified: "2026-11-18", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/blog/rubber-pool-deck-las-vegas`, lastModified: "2026-11-18", priority: 0.7, changeFrequency: "monthly" },
 
     // Service areas
     { url: `${BASE_URL}/service-areas`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },

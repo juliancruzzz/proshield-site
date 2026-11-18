@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title:
     "Coolest Pool Deck Flooring for Las Vegas (2026) | Compare Every Option | ProShield",
   description:
-    "Compare every pool deck surface for Las Vegas heat — cool deck, travertine, pavers, and rubber aggregate. Real surface temps, costs ($6–30/sq ft), lifespan, slip ratings, and maintenance from a crew that installs them all.",
+    "Compare pool deck surfaces for Las Vegas: textured coatings, rubber surfacing, pavers and travertine. Review heat, costs, lifespan and maintenance.",
   alternates: {
     canonical: "/blog/coolest-pool-deck-flooring-las-vegas",
   },
@@ -201,10 +201,10 @@ export default function CoolestPoolDeckFlooringPost() {
   const schema = blogPostingSchema({
     title: "Coolest Pool Deck Flooring for Las Vegas: 2026 Comparison Guide",
     description:
-      "Compare every pool deck surface for Las Vegas heat — cool deck, travertine, pavers, and rubber aggregate. Real surface temps, costs, lifespan, and maintenance from a crew that installs them all.",
+      "Compare pool deck surfaces for Las Vegas: textured coatings, rubber surfacing, pavers and travertine. Review heat, costs, lifespan and maintenance.",
     slug: "coolest-pool-deck-flooring-las-vegas",
     datePublished: "2026-05-01",
-    dateModified: "2026-11-17",
+    dateModified: "2026-11-18",
     image: "https://proshieldepoxy.com/images/blog/rubber-deck/rubber-deck-pool-wide.jpg",
   })
 
@@ -322,7 +322,7 @@ export default function CoolestPoolDeckFlooringPost() {
           </div>
           <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
-              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-17">November 17, 2026</time>
+              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-18">November 18, 2026</time>
             </span>
             <span className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" /> 10 min read
@@ -340,12 +340,15 @@ export default function CoolestPoolDeckFlooringPost() {
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden my-8 shadow-lg">
               <Image
                 src="/images/blog/rubber-deck/rubber-deck-pool-wide.jpg"
-                alt="Gray rubber aggregate pool deck around a Las Vegas pool — one of several cool deck flooring options compared"
+                alt="Example of gray rubber aggregate around a pool — one of the pool deck surfaces compared"
                 width={1200}
                 height={823}
                 className="w-full h-full object-cover"
                 priority
               />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p className="text-xs text-white/90">Surface example: rubber aggregate around a pool.</p>
+              </div>
             </div>
 
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -354,13 +357,12 @@ export default function CoolestPoolDeckFlooringPost() {
               make it to the water before your feet blister. Bare concrete
               hits <strong>150&ndash;170&deg;F</strong> under direct sun.
               So what actually keeps a pool deck cool enough to walk on?
-              We install{" "}
-              <Link href="/cool-deck" className="text-accent hover:underline font-medium">cool deck</Link>,{" "}
-              <Link href="/rubber-pool-deck" className="text-accent hover:underline font-medium">rubber aggregate</Link>,
-              and coatings across the Las Vegas valley every week &mdash;
-              here&apos;s how every major pool deck surface stacks up on
-              temperature, cost, lifespan, and maintenance so you can pick
-              the right one for your backyard.
+              ProShield Epoxy offers{" "}
+              <Link href="/cool-deck" className="text-accent hover:underline font-medium">cool deck</Link>{" "}
+              and{" "}
+              <Link href="/rubber-pool-deck" className="text-accent hover:underline font-medium">rubber surfacing</Link>{" "}
+              in the Las Vegas area. This guide compares temperature, cost,
+              lifespan and maintenance across several pool deck materials.
             </p>
 
             {/* TOC */}
@@ -530,14 +532,14 @@ export default function CoolestPoolDeckFlooringPost() {
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden my-8 shadow-lg">
               <Image
                 src="/images/blog/rubber-deck/rubber-deck-pool-hottub.jpg"
-                alt="Close-up of gray two-tone rubber aggregate pool deck around a pool and hot tub"
+                alt="Example of gray two-tone rubber aggregate around a pool and hot tub"
                 width={1200}
                 height={823}
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                 <p className="text-xs text-white/90">
-                  Close-up of rubber pool deck texture &mdash; the aggregate finish provides built-in slip resistance
+                  Surface example: rubber aggregate texture around a pool.
                 </p>
               </div>
             </div>
@@ -573,14 +575,14 @@ export default function CoolestPoolDeckFlooringPost() {
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden my-8 shadow-lg">
               <Image
                 src="/images/blog/rubber-deck/rubber-deck-pool-slide.jpg"
-                alt="Completed rubber pool deck with slide and pergola in a Las Vegas backyard"
+                alt="Example of rubber pool deck surfacing beside a slide and pergola"
                 width={1200}
                 height={671}
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                 <p className="text-xs text-white/90">
-                  Completed rubber pool deck &mdash; seamless finish from pool edge to outdoor living area
+                  Surface example: rubber decking beside a slide and pergola.
                 </p>
               </div>
             </div>
@@ -780,8 +782,7 @@ export default function CoolestPoolDeckFlooringPost() {
                   Julian is the founder of ProShield Epoxy, a professional floor coating company
                   serving the Las Vegas metro area. He specializes in residential garage coatings,
                   commercial resinous flooring, pool deck systems, and specialty surfaces including
-                  rubber aggregate, metallic epoxy, and concrete polishing. Every article is written
-                  from hands-on installation experience.
+                  rubber aggregate, metallic epoxy, and concrete polishing.
                 </p>
               </div>
             </div>
