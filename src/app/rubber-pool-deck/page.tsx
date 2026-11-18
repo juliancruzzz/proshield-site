@@ -18,7 +18,7 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Rubber Pool Deck Surfacing Las Vegas | ProShield Epoxy",
   description:
-    "Rubber pool deck surfacing in Las Vegas. Slip-resistant, cushioned, crack-bridging EPDM aggregate over existing concrete. $15–18/sq ft installed. 10–15 year lifespan. Free estimates.",
+    "Rubber pool deck resurfacing in Las Vegas. Compare color blends, preparation and maintenance for your concrete. Request a free project estimate.",
   openGraph: {
     url: "https://proshieldepoxy.com/rubber-pool-deck",
     images: ["/images/blog/rubber-deck/rubber-deck-pool-wide.jpg"],
@@ -31,27 +31,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How much does rubber pool deck surfacing cost in Las Vegas?",
-    a: "$15–$18 per square foot installed. For a standard 600 sq ft pool deck, that's $9,000–$10,800. Price depends on concrete condition, color selection, and deck complexity. Every job gets a free on-site estimate with a flat quote — no hidden fees.",
+    a: "The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.",
   },
   {
     q: "Is rubber pool decking slippery when wet?",
-    a: "Textured rubber provides traction, but wet surfaces can still be slippery. Keep the deck clean and assess the selected finish for the conditions around your pool. Slip resistance depends on the surface, use and maintenance.",
+    a: "Texture can help provide traction, but wet surfaces can still be slippery. Compare the proposed finish’s slip-resistance information and keep the deck clean. Cushioning does not prevent falls or guarantee protection from injury.",
   },
   {
     q: "How long does rubber pool deck surfacing last?",
-    a: "10–15 years in Las Vegas conditions with minimal maintenance. The UV-stable polyurethane binder resists fading and degradation from desert sun, and the flexible rubber membrane handles daily thermal expansion and contraction that cracks rigid coatings.",
+    a: "Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.",
   },
   {
     q: "Can you install rubber decking over existing concrete or cool deck?",
-    a: "Yes. Rubber pool deck systems go directly over existing concrete — no demolition required. If there's an existing cool deck or acrylic coating, we remove any loose or delaminating material, but sound coatings can typically stay. The concrete needs to be structurally sound and properly prepped.",
+    a: "Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair.",
   },
   {
     q: "How do you maintain a rubber pool deck?",
-    a: "Blow or sweep debris weekly and rinse with a hose monthly. For deeper cleaning, mild soap and water with a soft brush handles sunscreen stains and pool chemical splatter. Reseal every 3–4 years — just pressure wash and roll on a clear coat.",
+    a: "Remove loose debris and follow the selected product’s cleaning instructions. Ask which cleaners and equipment are allowed and when the surface should be inspected or refreshed. Resealing needs vary by system and condition.",
   },
   {
     q: "Is rubber pool decking better than cool deck?",
-    a: "Rubber provides better slip resistance, cushions falls, and needs less maintenance — reseal every 3–4 years vs cool deck's 1–2 year cycle. Cool deck is more affordable at $6–9/sq ft and is a great option if budget is the top priority. We install both systems and recommend the one that fits your situation.",
+    a: "Compare the proposed products, texture, color, preparation, care requirements and written prices. Rubber and textured coatings have different finishes; neither is always cooler, safer or lower maintenance than the other.",
   },
 ]
 
@@ -86,7 +86,7 @@ export default function RubberPoolDeckPage() {
             "@type": "Service",
             name: "Rubber Pool Deck Surfacing",
             description:
-              "Poured-in-place EPDM rubber aggregate pool deck resurfacing over existing concrete. Slip-resistant, cushioned, UV-stable surface for Las Vegas pool decks.",
+              "Rubber aggregate pool deck resurfacing for suitable prepared concrete in Las Vegas. Product and preparation specified in the project estimate.",
             provider: {
               "@type": "LocalBusiness",
               name: "ProShield Epoxy",
@@ -103,15 +103,6 @@ export default function RubberPoolDeckPage() {
               name: "Las Vegas",
               addressRegion: "NV",
             },
-            offers: {
-              "@type": "Offer",
-              priceSpecification: {
-                "@type": "UnitPriceSpecification",
-                priceCurrency: "USD",
-                price: "15-18",
-                unitText: "sq ft",
-              },
-            },
           }),
         }}
       />
@@ -120,9 +111,9 @@ export default function RubberPoolDeckPage() {
         badge="Premium Pool Deck Surfacing"
         title="Rubber Pool Deck Surfacing"
         highlight="Las Vegas"
-        subtitle="Poured-in-place EPDM rubber aggregate over your existing concrete. Slip-resistant, cushioned, crack-bridging, and built for Las Vegas summers. 2–3 day install, no demolition."
+        subtitle="Rubber aggregate resurfacing for suitable concrete. Compare color blends, preparation and care requirements with a free project estimate."
         backgroundImage="/images/blog/rubber-deck/rubber-deck-pool-wide.jpg"
-        backgroundAlt="Rubber aggregate pool deck surfacing around a Las Vegas pool with landscaping and outdoor living area"
+        backgroundAlt="Surface example of rubber aggregate around a landscaped pool"
       />
 
       <RubberDeckStats />

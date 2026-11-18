@@ -8,27 +8,27 @@ import { Thermometer, ShieldCheck, Clock, Droplets, ChevronDown } from "lucide-r
 const benefits = [
   {
     icon: Thermometer,
-    title: "Heat Reflective",
+    title: "Surface Heat",
     description:
-      "Lighter colors reflect sunlight and reduce surface temperature by up to 30% compared to bare concrete — critical in Las Vegas where pool decks regularly hit 150°F+ in summer. Cool deck keeps surfaces walkable even in peak heat.",
+      "Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.",
   },
   {
     icon: ShieldCheck,
-    title: "Slip Resistant",
+    title: "Wet Traction",
     description:
-      "Knockdown texture creates a non-slip surface that's safe around pools, hot tubs, and wet areas even when water is present. The textured finish provides grip underfoot without being rough or abrasive on bare skin.",
+      "Texture can help provide traction, but wet surfaces can still be slippery. Compare the proposed finish’s slip-resistance information and keep the deck clean. Cushioning does not prevent falls or guarantee protection from injury.",
   },
   {
     icon: Droplets,
-    title: "Weather Resistant",
+    title: "Outdoor Exposure",
     description:
-      "Acrylic formula withstands UV exposure, rain, and seasonal temperature swings without cracking or peeling. Designed for desert climates where surfaces expand and contract daily — it flexes with the concrete instead of separating from it.",
+      "Confirm the product is specified for the site and exposure. Ask how existing cracks, substrate movement and the written product warranty apply to your project.",
   },
   {
     icon: Clock,
-    title: "Low Maintenance",
+    title: "Maintenance",
     description:
-      "Periodic resealing every 2–3 years keeps the coating looking fresh. Day-to-day, just hose it off or sweep debris. No special cleaners needed — and unlike pavers, there are no joints for weeds or ants to invade.",
+      "Remove loose debris and follow the selected product’s cleaning instructions. Ask which cleaners and equipment are allowed and when the surface should be inspected or refreshed. Resealing needs vary by system and condition.",
   },
 ]
 
@@ -50,9 +50,7 @@ export function CoolDeckBenefits() {
                 Built for Las Vegas<br className="hidden sm:block" /> Outdoor Living
               </h2>
               <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-                Bare concrete around a pool is a burn hazard six months out of the year in Vegas.
-                Cool deck coating drops surface temperature, adds grip, and protects the slab —
-                all in a single application that lasts for years.
+                Compare the selected product, color, texture and care requirements for your deck.
               </p>
             </div>
 

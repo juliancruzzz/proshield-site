@@ -8,18 +8,18 @@ import { ArrowRight } from "lucide-react"
 const gallery = [
   {
     src: "/images/blog/rubber-deck/rubber-deck-pool-hottub.jpg",
-    alt: "Two-tone gray rubber pool deck around pool and hot tub in Las Vegas",
-    label: "Two-Tone Gray",
+    alt: "Surface example: Two-tone gray rubber pool deck around pool and hot tub",
+    label: "Example: Two-Tone Gray",
   },
   {
     src: "/images/blog/rubber-deck/rubber-deck-terracotta.jpg",
-    alt: "Terracotta copper rubber aggregate pool deck showing warm tones around a Las Vegas pool",
-    label: "Terracotta / Copper",
+    alt: "Surface example: Terracotta copper rubber aggregate pool deck showing warm tones around a pool",
+    label: "Example: Terracotta / Copper",
   },
   {
     src: "/images/blog/rubber-deck/rubber-deck-pool-slide.jpg",
-    alt: "Gray rubber pool deck with slide and pergola in Las Vegas backyard",
-    label: "Classic Gray",
+    alt: "Surface example: Gray rubber pool deck with slide and pergola backyard",
+    label: "Example: Classic Gray",
   },
 ]
 

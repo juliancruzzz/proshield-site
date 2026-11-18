@@ -3,10 +3,10 @@
 import { Sun, ShieldCheck, Droplets, Paintbrush } from "lucide-react"
 
 const stats = [
-  { icon: Sun, label: "Heat-Reflective Finish", value: "Cooler Surface" },
-  { icon: ShieldCheck, label: "Slip-Resistant Texture", value: "Safe When Wet" },
-  { icon: Droplets, label: "Acrylic-Based Formula", value: "Not Epoxy" },
-  { icon: Paintbrush, label: "Multiple Color Options", value: "Custom Look" },
+  { icon: Sun, label: "Heat performance", value: "Product-specific" },
+  { icon: ShieldCheck, label: "Finish options", value: "Textured" },
+  { icon: Droplets, label: "Pool deck resurfacing", value: "Exterior finish" },
+  { icon: Paintbrush, label: "Design choices", value: "Color options" },
 ]
 
 export function CoolDeckStats() {
@@ -14,7 +14,7 @@ export function CoolDeckStats() {
     <section className="bg-gray-50 border-b border-gray-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-          {stats.map((stat, i) => {
+          {stats.map((stat) => {
             const Icon = stat.icon
             return (
               <div key={stat.label} className="flex items-center gap-3 sm:gap-4 group">

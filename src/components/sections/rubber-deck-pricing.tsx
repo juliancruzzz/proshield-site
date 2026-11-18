@@ -17,23 +17,9 @@ export function RubberDeckPricing() {
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
               What It Actually Costs
             </h2>
-            <p className="mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">
-              We&apos;re not going to make you fill out a form to get a ballpark. For most residential
-              pool decks in Las Vegas, rubber pool deck surfacing runs{" "}
-              <strong className="text-gray-900">$15 to $18 per square foot</strong>, installed. That
-              includes surface prep, primer, the full rubber aggregate system, and UV-stable topcoat.
-            </p>
-            <p className="mt-3 text-gray-600 text-base leading-relaxed">
-              For a standard 600 sq ft pool deck, expect{" "}
-              <strong className="text-gray-900">$9,000 to $10,800</strong> depending on concrete
-              condition, deck complexity, and color selection. Every job gets a free on-site estimate
-              with a flat quote — no hidden fees, no surprises.
-            </p>
-            <p className="mt-3 text-gray-500 text-sm leading-relaxed">
-              Concrete condition is the biggest variable. A clean, sound slab is straightforward.
-              A deck with significant cracks, old delaminating coatings, or drainage issues needs
-              more prep work before we pour.
-            </p>
+            <p className="mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.</p>
+            <p className="mt-3 text-gray-600 text-base leading-relaxed">Compare the same measured area and full preparation scope. Ask which repairs are included and how additional work would be priced.</p>
+            <p className="mt-3 text-gray-500 text-sm leading-relaxed">A deck with loose coatings, cracks or drainage problems needs assessment before a finish is selected.</p>
           </div>
 
           {/* Right — pricing card */}
@@ -46,25 +32,25 @@ export function RubberDeckPricing() {
           >
             <div className="rounded-2xl border border-gray-200 bg-gray-50 p-6 sm:p-8 shadow-sm">
               <div className="text-center mb-6">
-                <p className="text-sm font-medium text-gray-500 uppercase tracking-wider">Installed Price</p>
+                <p className="text-sm font-medium text-gray-500 uppercase tracking-wider">Project quote</p>
                 <div className="mt-2 font-heading font-bold text-4xl sm:text-5xl text-gray-900">
-                  $15–$18
-                  <span className="text-lg sm:text-xl text-gray-400 font-medium">/sq ft</span>
+                  Written quote
+                  <span className="text-lg sm:text-xl text-gray-400 font-medium"> for your deck</span>
                 </div>
               </div>
 
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between py-2.5 border-b border-gray-200">
-                  <span className="text-gray-600">Typical 600 sq ft deck</span>
-                  <span className="font-semibold text-gray-900">$9,000–$10,800</span>
+                  <span className="text-gray-600">Measured area</span>
+                  <span className="font-semibold text-gray-900">Confirmed on site</span>
                 </div>
                 <div className="flex justify-between py-2.5 border-b border-gray-200">
-                  <span className="text-gray-600">Includes</span>
-                  <span className="font-medium text-gray-700">Prep, primer, pour, topcoat</span>
+                  <span className="text-gray-600">Scope</span>
+                  <span className="font-medium text-gray-700">Listed in writing</span>
                 </div>
                 <div className="flex justify-between py-2.5 border-b border-gray-200">
-                  <span className="text-gray-600">Reseal cost (every 3–4 yrs)</span>
-                  <span className="font-medium text-gray-700">Pressure wash + clear coat</span>
+                  <span className="text-gray-600">Future care</span>
+                  <span className="font-medium text-gray-700">Product-specific</span>
                 </div>
                 <div className="flex justify-between py-2.5">
                   <span className="text-gray-600">Estimate</span>
@@ -82,12 +68,7 @@ export function RubberDeckPricing() {
 
             {/* Comparison callout */}
             <div className="mt-4 rounded-xl border border-gray-200 bg-white p-4 text-sm text-gray-500">
-              <p>
-                For comparison:{" "}
-                <Link href="/cool-deck" className="text-accent hover:underline font-medium">cool deck</Link>{" "}
-                runs $6–$9/sq ft, pavers $10–$20/sq ft, travertine $15–$27/sq ft. Rubber sits
-                in the middle on upfront cost with the lowest maintenance burden long-term.
-              </p>
+              <p>Compare <Link href="/cool-deck" className="text-accent hover:underline font-medium">cool deck resurfacing</Link> and rubber options for your actual site, including preparation and future care.</p>
             </div>
           </motion.div>
         </div>

@@ -3,10 +3,10 @@
 import { Shield, Clock, Footprints, Layers } from "lucide-react"
 
 const stats = [
-  { icon: Shield, value: "10–15 Years", label: "Expected Lifespan" },
-  { icon: Footprints, value: "Textured", label: "Slip Resistance" },
-  { icon: Layers, value: "3/8″–1/2″", label: "Rubber Thickness" },
-  { icon: Clock, value: "2–3 Days", label: "Typical Install" },
+  { icon: Shield, value: "Rubber aggregate", label: "Surface type" },
+  { icon: Footprints, value: "Textured", label: "Finish" },
+  { icon: Layers, value: "Color blends", label: "Design options" },
+  { icon: Clock, value: "Site assessment", label: "Project quote" },
 ]
 
 export function RubberDeckStats() {

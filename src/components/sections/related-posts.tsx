@@ -23,7 +23,7 @@ const ALL_POSTS: Record<string, Omit<RelatedPost, 'href'> & { slug: string }> = 
   'best-pool-deck-coatings-las-vegas': {
     slug: 'best-pool-deck-coatings-las-vegas',
     title: 'Best Pool Deck Coatings for Las Vegas Heat: 2026 Guide',
-    description: 'Compare cool deck, knockdown texture, and acrylic overlays with real costs.',
+    description: 'Compare pool deck finishes, preparation, project cost factors and care.',
     date: 'April 6, 2026',
   },
   'epoxy-garage-floor-cost-las-vegas': {
@@ -52,8 +52,8 @@ const ALL_POSTS: Record<string, Omit<RelatedPost, 'href'> & { slug: string }> = 
   },
   'coolest-pool-deck-flooring-las-vegas': {
     slug: 'coolest-pool-deck-flooring-las-vegas',
-    title: 'Coolest Pool Deck Flooring for Las Vegas: Why Rubber Deck Systems Win',
-    description: 'Rubber pool deck flooring stays 35% cooler than concrete. Full comparison.',
+    title: 'Pool Deck Flooring for Las Vegas: Compare Your Options',
+    description: 'Compare pool deck finishes, product test conditions, preparation and care.',
     date: 'May 1, 2026',
   },
 }
@@ -84,7 +84,7 @@ const TOPIC_GROUPS = {
 function getRelatedPosts(currentSlug: string): RelatedPost[] {
   // Find which group the current slug belongs to
   let currentGroup: keyof typeof TOPIC_GROUPS | null = null
-  let otherGroups: (keyof typeof TOPIC_GROUPS)[] = []
+  const otherGroups: (keyof typeof TOPIC_GROUPS)[] = []
 
   for (const [groupKey, slugs] of Object.entries(TOPIC_GROUPS)) {
     if (slugs.includes(currentSlug)) {

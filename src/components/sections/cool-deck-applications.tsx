@@ -7,19 +7,19 @@ const applications = [
   {
     icon: Droplets,
     title: "Pool Decks",
-    description: "The most popular application. Knockdown texture provides slip resistance around water while lighter colors keep the surface walkable in Las Vegas heat.",
+    description: "Textured resurfacing for suitable pool surrounds. Compare the product, color, wet traction and care requirements.",
     image: "/images/cool-deck/pool-deck-lounge.webp",
   },
   {
     icon: Sun,
     title: "Patios & Porches",
-    description: "Protect outdoor entertaining areas from UV, rain, and seasonal wear. The acrylic formula resists cracking and maintains its color under direct sunlight.",
+    description: "Choose a specified exterior finish for suitable prepared patio concrete. Assess wear, existing cracks and drainage first.",
     image: "/images/cool-deck/patio-backyard.webp",
   },
   {
     icon: Footprints,
     title: "Walkways",
-    description: "Add safety and curb appeal to high-traffic concrete paths. The textured finish reduces slip risk and the sealer protects against staining and water damage.",
+    description: "Consider texture, drainage, transitions and cleaning requirements for exterior concrete paths.",
     image: "/images/cool-deck/pool-deck-spa.webp",
   },
 ]
@@ -37,13 +37,13 @@ export function CoolDeckApplications() {
             Where Cool Deck Works Best
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Designed for exterior surfaces that need to stay safe, cool, and looking great year-round.
+            Textured finishes for suitable exterior concrete, with preparation specified for the site.
           </p>
         </div>
 
         {/* Cards with images */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          {applications.map((app, i) => {
+          {applications.map((app) => {
             const Icon = app.icon
             return (
               <div key={app.title} className="group rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-lg transition-shadow">

@@ -23,7 +23,7 @@ const posts = [
     slug: "rubber-pool-deck-las-vegas",
     title: "Rubber Pool Deck Flooring in Las Vegas: What It Costs, How It's Installed & What to Expect",
     excerpt:
-      "Rubber pool deck flooring in Las Vegas costs $15–18/sq ft installed. See our installation process, color options, maintenance, and why it stays 60°F cooler than bare concrete — from a crew that installs them every week.",
+      "Compare rubber pool deck preparation, color blends, project cost factors and product-specific care in Las Vegas.",
     date: "May 3, 2026",
     category: "Pool Deck Flooring",
     image: "/images/blog/rubber-deck/rubber-deck-pool-wide.jpg",
@@ -41,7 +41,7 @@ const posts = [
     slug: "coolest-pool-deck-flooring-las-vegas",
     title: "Coolest Pool Deck Flooring for Las Vegas: Every Option Compared",
     excerpt:
-      "Compare every pool deck surface for Las Vegas heat — cool deck, travertine, pavers, and rubber aggregate. Real surface temps, costs ($6–27/sq ft), slip ratings, and maintenance from a crew that installs them all.",
+      "Compare pool deck surfaces, product test conditions, preparation, project quotes and care requirements for Las Vegas.",
     date: "May 1, 2026",
     category: "Pool Deck Flooring",
     image: "/images/vubastone/vubastone-pool-deck-mansion.webp",
@@ -59,7 +59,7 @@ const posts = [
     slug: "best-pool-deck-coatings-las-vegas",
     title: "Best Pool Deck Coatings for Las Vegas Heat: 2026 Guide",
     excerpt:
-      "Uncoated pool decks reach 170°F in Las Vegas summers. Compare cool deck, knockdown texture, acrylic overlays, and more — with real costs ($6–$15/sq ft), lifespan data, and maintenance schedules.",
+      "Compare textured coatings, rubber surfacing, preparation and product-specific maintenance for your Las Vegas pool deck.",
     date: "April 6, 2026",
     category: "Pool Deck Coatings",
     image: "/images/cool-deck/cool-deck-pool-spa-vegas.webp",

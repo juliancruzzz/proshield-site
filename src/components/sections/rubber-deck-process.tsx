@@ -7,23 +7,23 @@ const steps = [
   {
     number: "01",
     title: "Surface Preparation",
-    time: "Day 1",
+    time: "Assess first",
     description:
-      "We grind the existing concrete to create a proper bonding profile, fill significant cracks with flexible filler, and clean the surface of all contaminants. If there's an existing cool deck or acrylic coating, we remove any loose or delaminating material — sound coatings can typically stay.",
+      "Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair.",
   },
   {
     number: "02",
     title: "Primer & Rubber Pour",
-    time: "Day 1–2",
+    time: "Product-specific",
     description:
-      "A polyurethane primer seals the concrete and creates the bond surface. Once it tacks, we mix EPDM rubber granules with polyurethane resin and hand-trowel the mixture onto the deck at the specified thickness. Around coping, drains, and expansion joints, we detail the material to create clean, waterproof edges.",
+      "Use the specified primer, rubber blend, binder and application thickness. Detail drains, edges and joints for the selected system and site.",
   },
   {
     number: "03",
     title: "Topcoat & Cure",
-    time: "Day 2–3",
+    time: "Confirm cure time",
     description:
-      "A UV-stable topcoat seals the rubber surface and locks the granules in place. Walk on it in 24 hours. Furniture and normal use after 48–72 hours. No weeks of construction disrupting your backyard.",
+      "Installation and return-to-use times depend on preparation, product, weather and curing conditions. The written project schedule should state when walking, furniture and normal pool use can resume.",
   },
 ]
 
@@ -50,7 +50,7 @@ export function RubberDeckProcess() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             <div className="absolute bottom-4 left-4 right-4">
               <p className="text-xs text-white/80">
-                Hand-troweling the rubber aggregate — this is where craftsmanship matters
+                Application example: hand-troweling rubber aggregate
               </p>
             </div>
           </motion.div>
@@ -61,12 +61,11 @@ export function RubberDeckProcess() {
               Installation Process
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              Done in 2–3 Days.<br className="hidden sm:block" />
-              <span className="text-accent">No Demolition.</span>
+              Prepare the Concrete.<br className="hidden sm:block" />
+              <span className="text-accent">Confirm the System.</span>
             </h2>
             <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-              Rubber pool deck surfacing goes directly over your existing concrete. No jackhammering,
-              no ripping out material, no weeks of construction in your backyard.
+              Assess the existing concrete and coatings before choosing a finish. Confirm preparation and return-to-use times in the project schedule.
             </p>
 
             <div className="mt-8 space-y-6">

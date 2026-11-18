@@ -9,35 +9,35 @@ const steps = [
     number: "1",
     title: "Surface Preparation",
     description:
-      "We thoroughly clean and degrease the existing concrete, then repair any cracks, spalling, or damaged areas. Proper prep is critical — adhesion depends entirely on substrate condition. This step also includes masking off areas that shouldn't be coated.",
+      "Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair.",
     icon: <Pickaxe className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "2",
     title: "Primer & Base Coat",
     description:
-      "An acrylic bonding primer is applied first to ensure strong adhesion. Once cured, we roll or spray the acrylic base coat in your selected color. Lighter tones are recommended for maximum heat reflection — popular choices include desert sand, light gray, and cream.",
+      "Use the primer and base layer required by the selected system. Confirm the product and color before application.",
     icon: <PaintBucket className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "3",
     title: "Knockdown Texture",
     description:
-      "While the coating is still tacky, we apply the signature knockdown texture by hand troweling. This creates the distinctive rippled pattern that provides slip resistance and visual depth. The texture is uniform but natural-looking — no two surfaces are exactly alike.",
+      "Create the specified texture using the selected product’s application method. Texture alone does not establish safe wet traction.",
     icon: <Hand className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "4",
     title: "Detail & Touch-Up",
     description:
-      "We carefully finish all edges, transitions to other surfaces (like coping and door thresholds), and touch up any areas that need attention. Clean lines and consistent texture across the entire surface are the mark of a professional install.",
+      "Finish edges, drains and transitions according to the project scope and product requirements.",
     icon: <Sparkles className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "5",
-    title: "Sealer Application",
+    title: "Finish & Cure",
     description:
-      "The final step is applying an acrylic or acrylic/urethane blend sealer. This protective topcoat enhances color, adds gloss (matte or semi-gloss available), and shields the coating from UV, water, and staining. Resealing every 2–3 years maintains the finish.",
+      "Apply a compatible finish only where the selected system specifies it. Confirm cure times, cleaning and future refresh requirements before use.",
     icon: <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
 ]
@@ -59,7 +59,7 @@ export function CoolDeckProcess() {
             How We Apply Cool Deck
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            A multi-step acrylic coating process built for Las Vegas heat and outdoor durability.
+            Preparation, application and curing follow the selected system and site requirements.
           </p>
         </div>
 

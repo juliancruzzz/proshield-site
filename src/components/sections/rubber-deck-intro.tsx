@@ -6,11 +6,11 @@ import { motion } from "framer-motion"
 import { Check, ArrowRight } from "lucide-react"
 
 const highlights = [
-  "EPDM rubber granules bound with UV-stable polyurethane resin",
-  "Poured in place over existing concrete — no demolition",
-  "Flexible membrane bridges cracks up to 1/8″",
-  "Cushioned surface absorbs impact from slips and falls",
-  "Chemically inert — resists chlorine, salt, and pool chemicals",
+  "Rubber granules and binder specified for the project",
+  "Prepared concrete assessed before resurfacing",
+  "Repairs and existing coating removal listed in the quote",
+  "Color and texture samples to compare",
+  "Product-specific care and return-to-use instructions"
 ]
 
 export function RubberDeckIntro() {
@@ -32,12 +32,7 @@ export function RubberDeckIntro() {
               A Premium Surface Built for{" "}
               <span className="text-accent">Las Vegas Pools</span>
             </h2>
-            <p className="mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">
-              Rubber pool deck surfacing is a poured-in-place system made from EPDM rubber granules
-              hand-troweled directly over your existing concrete. At 3/8″ to 1/2″ thick, it creates
-              a seamless, textured surface that insulates your feet from the hot slab below — delivering
-              genuine comfort, slip resistance, and crack bridging that rigid coatings can&apos;t match.
-            </p>
+            <p className="mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">Rubber pool deck surfacing combines rubber granules and a binder over a suitable prepared substrate. Confirm the proposed blend, thickness and finish in the estimate. The existing concrete, coatings and drainage need assessment first.</p>
 
             <ul className="mt-6 space-y-3">
               {highlights.map((item) => (
@@ -71,7 +66,7 @@ export function RubberDeckIntro() {
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
               <Image
                 src="/images/blog/rubber-deck/rubber-deck-pool-wide.jpg"
-                alt="Rubber aggregate pool deck surfacing around a Las Vegas pool with landscaping"
+                alt="Rubber aggregate pool deck surfacing example around a landscaped pool"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -81,7 +76,7 @@ export function RubberDeckIntro() {
             <div className="absolute -bottom-6 -left-4 sm:-left-6 w-36 sm:w-44 rounded-xl overflow-hidden shadow-2xl border-4 border-white">
               <Image
                 src="/images/blog/rubber-deck/rubber-deck-installation.jpg"
-                alt="Close-up of rubber aggregate being hand-troweled onto pool deck"
+                alt="Application example: rubber aggregate being hand-troweled onto pool deck"
                 width={176}
                 height={132}
                 className="w-full h-auto object-cover"

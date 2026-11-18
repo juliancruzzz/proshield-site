@@ -53,113 +53,22 @@ function MaterialComparisonTable() {
             <th className="text-center px-4 py-3.5 font-heading font-semibold text-gray-900">Rubber Deck</th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-gray-200">
-          <tr>
-            <td className="px-4 py-3 text-gray-700 font-medium">Surface Temp (peak)</td>
-            <td className="px-4 py-3 text-center text-yellow-600">~130&deg;F</td>
-            <td className="px-4 py-3 text-center text-orange-500">~140&deg;F</td>
-            <td className="px-4 py-3 text-center text-red-500">~155&deg;F</td>
-            <td className="px-4 py-3 text-center text-green-600 font-semibold">~110&deg;F</td>
-          </tr>
-          <tr className="bg-gray-50/50">
-            <td className="px-4 py-3 text-gray-700 font-medium">Slip Resistance (wet)</td>
-            <td className="px-4 py-3 text-center text-yellow-600">Good</td>
-            <td className="px-4 py-3 text-center text-orange-500">Fair</td>
-            <td className="px-4 py-3 text-center text-yellow-600">Good</td>
-            <td className="px-4 py-3 text-center text-green-600 font-semibold">Excellent</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-3 text-gray-700 font-medium">Comfort Underfoot</td>
-            <td className="px-4 py-3 text-center text-gray-500">Hard</td>
-            <td className="px-4 py-3 text-center text-gray-500">Hard</td>
-            <td className="px-4 py-3 text-center text-gray-500">Hard</td>
-            <td className="px-4 py-3 text-center text-green-600 font-semibold">Cushioned</td>
-          </tr>
-          <tr className="bg-gray-50/50">
-            <td className="px-4 py-3 text-gray-700 font-medium">Impact Safety</td>
-            <td className="px-4 py-3 text-center text-gray-500">Low</td>
-            <td className="px-4 py-3 text-center text-gray-500">Low</td>
-            <td className="px-4 py-3 text-center text-gray-500">Low</td>
-            <td className="px-4 py-3 text-center text-green-600 font-semibold">High</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-3 text-gray-700 font-medium">Lifespan</td>
-            <td className="px-4 py-3 text-center">10&ndash;15 yrs</td>
-            <td className="px-4 py-3 text-center">15&ndash;20 yrs</td>
-            <td className="px-4 py-3 text-center">15&ndash;20 yrs</td>
-            <td className="px-4 py-3 text-center font-medium">10&ndash;15 yrs</td>
-          </tr>
-          <tr className="bg-gray-50/50">
-            <td className="px-4 py-3 text-gray-700 font-medium">Cost / Sq Ft</td>
-            <td className="px-4 py-3 text-center">$6&ndash;$9</td>
-            <td className="px-4 py-3 text-center">$15&ndash;$27</td>
-            <td className="px-4 py-3 text-center">$10&ndash;$20</td>
-            <td className="px-4 py-3 text-center font-medium">$15&ndash;$18</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-3 text-gray-700 font-medium">Crack Bridging</td>
-            <td className="px-4 py-3 text-center text-red-500">No</td>
-            <td className="px-4 py-3 text-center text-red-500">No</td>
-            <td className="px-4 py-3 text-center text-yellow-600">Partial</td>
-            <td className="px-4 py-3 text-center text-green-600 font-semibold">Yes</td>
-          </tr>
-          <tr className="bg-gray-50/50">
-            <td className="px-4 py-3 text-gray-700 font-medium">Maintenance</td>
-            <td className="px-4 py-3 text-center text-orange-500">Reseal every 1&ndash;2 yrs</td>
-            <td className="px-4 py-3 text-center text-orange-500">Seal annually</td>
-            <td className="px-4 py-3 text-center text-orange-500">Re-sand joints</td>
-            <td className="px-4 py-3 text-center">Reseal every 3&ndash;4 yrs</td>
-          </tr>
-        </tbody>
+        <tbody className="divide-y divide-gray-200"><tr><td className="px-4 py-3 text-gray-700 font-medium">Surface format</td><td className="px-4 py-3 text-center">Textured coating or topping</td><td className="px-4 py-3 text-center">Natural stone units</td><td className="px-4 py-3 text-center">Individual paving units</td><td className="px-4 py-3 text-center">Troweled rubber aggregate</td></tr><tr className="bg-gray-50/50"><td className="px-4 py-3 text-gray-700 font-medium">Underfoot feel</td><td className="px-4 py-3 text-center">Hard finish</td><td className="px-4 py-3 text-center">Hard stone</td><td className="px-4 py-3 text-center">Hard units</td><td className="px-4 py-3 text-center">Softer rubber finish</td></tr><tr><td className="px-4 py-3 text-gray-700 font-medium">Preparation to confirm</td><td className="px-4 py-3 text-center">Existing coating and substrate</td><td className="px-4 py-3 text-center">Installation base</td><td className="px-4 py-3 text-center">Installation base</td><td className="px-4 py-3 text-center">Existing coating and substrate</td></tr><tr className="bg-gray-50/50"><td className="px-4 py-3 text-gray-700 font-medium">Joints to plan</td><td className="px-4 py-3 text-center">Existing joints and transitions</td><td className="px-4 py-3 text-center">Stone layout and joints</td><td className="px-4 py-3 text-center">Joint material and layout</td><td className="px-4 py-3 text-center">Existing joints and transitions</td></tr><tr><td className="px-4 py-3 text-gray-700 font-medium">Care to confirm</td><td className="px-4 py-3 text-center">Coating-specific instructions</td><td className="px-4 py-3 text-center">Stone-specific instructions</td><td className="px-4 py-3 text-center">Surface and joint care</td><td className="px-4 py-3 text-center">Binder and topcoat instructions</td></tr><tr className="bg-gray-50/50"><td className="px-4 py-3 text-gray-700 font-medium">Price to compare</td><td className="px-4 py-3 text-center">Written project quote</td><td className="px-4 py-3 text-center">Written project quote</td><td className="px-4 py-3 text-center">Written project quote</td><td className="px-4 py-3 text-center">Written project quote</td></tr></tbody>
       </table>
     </div>
   )
 }
 
 function CostBreakdownChart() {
-  const systems = [
-    { name: "Cool Deck", low: 6, high: 9, color: "#94a3b8" },
-    { name: "Rubber Deck", low: 15, high: 18, color: "#22c55e" },
-    { name: "Pavers", low: 10, high: 20, color: "#f59e0b" },
-    { name: "Travertine", low: 15, high: 27, color: "#ef4444" },
-  ]
-  const max = 30
   return (
     <div className="my-10 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm">
-      <h3 className="font-heading font-bold text-lg text-gray-900 mb-1 text-center">
-        Pool Deck Flooring Cost per Square Foot
-      </h3>
-      <p className="text-sm text-gray-500 text-center mb-6">
-        Installed price range, Las Vegas market (2026)
-      </p>
-      <div className="space-y-5">
-        {systems.map((s) => (
-          <div key={s.name}>
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-sm font-medium text-gray-700">{s.name}</span>
-              <span className="text-sm font-semibold text-gray-900">
-                ${s.low}&ndash;${s.high}/sq ft
-              </span>
-            </div>
-            <div className="h-6 bg-gray-100 rounded-full overflow-hidden relative">
-              <div
-                className="absolute h-full rounded-full opacity-90"
-                style={{
-                  left: `${(s.low / max) * 100}%`,
-                  width: `${((s.high - s.low) / max) * 100}%`,
-                  backgroundColor: s.color,
-                }}
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="flex justify-between mt-3 text-xs text-gray-400">
-        <span>$0</span>
-        <span>$10</span>
-        <span>$20</span>
-        <span>$30</span>
-      </div>
+      <h3 className="font-heading font-bold text-lg text-gray-900 mb-1 text-center">Compare the Full Project Price</h3>
+      <ul className="mt-6 space-y-3 text-sm text-gray-600">
+        <li>Measured area and selected finish</li>
+        <li>Existing coating removal and concrete preparation</li>
+        <li>Repairs, drainage, edges and access</li>
+        <li>Written inclusions, exclusions and future care</li>
+      </ul>
     </div>
   )
 }
@@ -188,7 +97,7 @@ export default function CoolestPoolDeckFlooringPost() {
         name: "What is the coolest pool deck surface for Las Vegas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Rubber aggregate pool deck systems stay the coolest in Las Vegas heat, reaching approximately 110°F in peak summer sun compared to 170°F for bare concrete. Cool deck coatings are also effective and more affordable at $6–9 per square foot. Travertine stays cooler than pavers but still reaches around 140°F. For maximum heat reduction, rubber decking is the top performer.",
+          text: "Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.",
         },
       },
       {
@@ -196,7 +105,7 @@ export default function CoolestPoolDeckFlooringPost() {
         name: "How much does pool deck resurfacing cost in Las Vegas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Pool deck resurfacing costs vary by material: cool deck coatings run $6–9 per square foot installed, rubber aggregate systems cost $15–18 per square foot, pavers run $10–20 per square foot, and travertine costs $15–27 per square foot. For a 600 sq ft pool deck, that's $3,600–$16,200+ depending on the material you choose.",
+          text: "The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.",
         },
       },
       {
@@ -204,7 +113,7 @@ export default function CoolestPoolDeckFlooringPost() {
         name: "How long does cool deck last in Las Vegas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "A properly maintained cool deck coating lasts 10–15 years in Las Vegas conditions. It does require resealing every 1–2 years due to the intense desert UV exposure, which adds to the long-term cost. Without regular resealing, the coating can fade, chalk, and lose its heat-reflective properties faster.",
+          text: "Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.",
         },
       },
       {
@@ -212,7 +121,7 @@ export default function CoolestPoolDeckFlooringPost() {
         name: "Is rubber pool decking worth the cost?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "For Las Vegas homeowners, rubber pool decking offers the best combination of heat reduction, slip resistance, cushioned comfort, and low maintenance. It costs more upfront than cool deck ($15–18 vs $6–9 per sq ft) but only needs resealing every 3–4 years compared to cool deck's 1–2 year cycle — and it's just a pressure wash and clear coat roll-on. It's the best overall value for homeowners who prioritize comfort and safety.",
+          text: "Compare the proposed products, texture, color, preparation, care requirements and written prices. Rubber and textured coatings have different finishes; neither is always cooler, safer or lower maintenance than the other.",
         },
       },
       {
@@ -220,7 +129,7 @@ export default function CoolestPoolDeckFlooringPost() {
         name: "Can you resurface a pool deck without removing existing concrete?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Cool deck coatings and rubber aggregate systems are both applied directly over existing concrete with no demolition required. The concrete needs to be structurally sound and properly prepped, but there's no need to rip out and repour your pool deck. This keeps costs down and reduces installation time to 2–3 days for most pool decks.",
+          text: "Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair. Installation and return-to-use times depend on preparation, product, weather and curing conditions. The written project schedule should state when walking, furniture and normal pool use can resume.",
         },
       },
       {
@@ -228,7 +137,7 @@ export default function CoolestPoolDeckFlooringPost() {
         name: "Does travertine get hot around a pool in Las Vegas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Travertine stays cooler than standard concrete or pavers thanks to its natural porosity and lighter color, but it still reaches around 140°F in peak Las Vegas summer sun. It's walkable for short periods but not truly comfortable barefoot during the hottest months. Cool deck and rubber aggregate both stay significantly cooler.",
+          text: "Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.",
         },
       },
     ],
@@ -296,7 +205,7 @@ export default function CoolestPoolDeckFlooringPost() {
               <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-18">November 18, 2026</time>
             </span>
             <span className="flex items-center gap-1">
-              <Clock className="h-3.5 w-3.5" /> 10 min read
+              <Clock className="h-3.5 w-3.5" /> 5 min read
             </span>
           </div>
         </div>
@@ -322,19 +231,7 @@ export default function CoolestPoolDeckFlooringPost() {
               </div>
             </div>
 
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Every Las Vegas homeowner with a pool knows the drill: walk
-              outside barefoot in July, sprint across the deck, and hope you
-              make it to the water before your feet blister. Bare concrete
-              hits <strong>150&ndash;170&deg;F</strong> under direct sun.
-              So what actually keeps a pool deck cool enough to walk on?
-              ProShield Epoxy offers{" "}
-              <Link href="/cool-deck" className="text-accent hover:underline font-medium">cool deck</Link>{" "}
-              and{" "}
-              <Link href="/rubber-pool-deck" className="text-accent hover:underline font-medium">rubber surfacing</Link>{" "}
-              in the Las Vegas area. This guide compares temperature, cost,
-              lifespan and maintenance across several pool deck materials.
-            </p>
+            <p className="text-lg text-gray-600 leading-relaxed">Looking for a cooler pool-deck surface in Las Vegas? Compare the actual product and color, not a material-wide temperature ranking. ProShield offers <Link href="/cool-deck" className="text-accent hover:underline font-medium">cool deck resurfacing</Link> and <Link href="/rubber-pool-deck" className="text-accent hover:underline font-medium">rubber surfacing</Link>. This guide covers preparation, cost factors and care requirements.</p>
 
             {/* TOC */}
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
@@ -359,25 +256,8 @@ export default function CoolestPoolDeckFlooringPost() {
             <h2 id="why-surface-temp-matters" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Why Surface Temperature Matters in Las Vegas
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Las Vegas averages <strong>110&ndash;117&deg;F</strong> air
-              temperatures from June through September. But air temp is
-              only half the story. Hard surfaces absorb solar radiation all
-              day and re-emit it as radiant heat, making the surface itself
-              significantly hotter than the surrounding air. Dark concrete
-              can exceed air temperature by 50&ndash;60&deg;F. That&apos;s
-              the difference between uncomfortable and dangerous.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Two things determine whether you can walk on a surface
-              barefoot: how hot the material gets, and how quickly it
-              transfers that heat to your skin. Materials with low thermal
-              conductivity (like rubber) transfer heat slowly, even when
-              the surface is warm. Materials with high thermal conductivity
-              (concrete, natural stone, pavers) dump heat into your skin
-              almost instantly. Both factors matter when you&apos;re
-              choosing a pool deck surface for Las Vegas.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Sun exposure, shade, surface color and weather affect how hot a deck gets. A product’s test conditions matter when comparing heat claims.</p>
+            <p className="text-gray-600 leading-relaxed">Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.</p>
 
             {/* -------- Temp Comparison -------- */}
             <h2 id="temperature-comparison" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
@@ -401,102 +281,31 @@ export default function CoolestPoolDeckFlooringPost() {
             <h2 id="cool-deck" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Cool Deck Coatings
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              <Link href="/cool-deck" className="text-accent hover:underline font-medium">Cool deck</Link>{" "}
-              is the most common pool deck resurfacing option in Las Vegas
-              and for good reason &mdash; it works, it&apos;s affordable,
-              and it can be applied over existing concrete without tearing
-              anything out. The spray-applied acrylic coating creates a
-              textured, light-colored surface that reflects sunlight and
-              reduces surface temps to around <strong>130&deg;F</strong>{" "}
-              in peak conditions.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              At <strong>$6&ndash;$9 per square foot</strong> installed,
-              it&apos;s the most budget-friendly option on this list. For a
-              standard 600 sq ft pool deck, you&apos;re looking at
-              $3,600&ndash;$5,400. The tradeoff is maintenance &mdash; Las
-              Vegas UV is brutal on acrylic coatings, so you&apos;ll need
-              to <strong>reseal every 1&ndash;2 years</strong> to keep the
-              coating protected and performing. With proper upkeep, a cool
-              deck coating lasts <strong>10&ndash;15 years</strong>.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Cool deck is a solid choice if budget is your top priority
-              and you&apos;re willing to stay on top of the resealing
-              schedule. We install cool deck across the valley and it&apos;s
-              a great system at its price point.
-            </p>
+            <p className="text-gray-600 leading-relaxed"><Link href="/cool-deck" className="text-accent hover:underline font-medium">Cool deck resurfacing</Link> covers a range of textured pool-deck finishes. Confirm the product name and application requirements; generic acrylic coatings and branded cement-based toppings are not the same system.</p>
+            <p className="text-gray-600 leading-relaxed">The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work. Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.</p>
+            <p className="text-gray-600 leading-relaxed">Ask whether the proposed coating suits the existing concrete and how it should be maintained.</p>
 
             {/* -------- Travertine -------- */}
             <h2 id="travertine" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Travertine
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Travertine is a natural stone that&apos;s popular around Las
-              Vegas pools for its upscale look. Its natural porosity and
-              lighter color help it stay cooler than concrete or pavers,
-              reaching around <strong>140&deg;F</strong> in peak sun. It
-              looks great and lasts <strong>15&ndash;20 years</strong> with
-              proper care.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              The downsides are cost and maintenance. Travertine runs{" "}
-              <strong>$15&ndash;$27 per square foot</strong> installed
-              &mdash; the most expensive option on this list. It also needs
-              annual sealing to prevent staining and water damage, and it
-              can be slippery when wet depending on the finish. The surface
-              is hard with no give, so falls on travertine hurt.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              If aesthetics are the top priority and budget isn&apos;t a
-              concern, travertine is a beautiful option. But it doesn&apos;t
-              solve the heat problem as well as cool deck or rubber, and
-              the ongoing sealing adds up over time.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Travertine is a natural stone finish. Compare the selected stone, color, texture, installation method and exterior-use guidance rather than assuming every travertine deck performs alike.</p>
+            <p className="text-gray-600 leading-relaxed">Ask a stone installer about substrate preparation, joints, cleaning and whether sealing is recommended for the selected stone. Wet traction depends on the finish and conditions.</p>
+            <p className="text-gray-600 leading-relaxed">Consider samples and a site-specific quote if you prefer a stone finish. ProShield’s resurfacing services should not be taken as an offer to install every material in this comparison.</p>
 
             {/* -------- Pavers -------- */}
             <h2 id="pavers" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Pavers
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Concrete and brick pavers are a common hardscape choice
-              around pools. They&apos;re durable, come in a variety of
-              styles, and last <strong>15&ndash;20 years</strong>. However,
-              they&apos;re one of the hotter surfaces you can choose,
-              reaching around <strong>155&deg;F</strong> in direct Las
-              Vegas sun &mdash; only bare concrete is worse.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Cost runs <strong>$10&ndash;$20 per square foot</strong>{" "}
-              installed depending on the style and whether you need a
-              concrete base. Maintenance is relatively low &mdash; you may
-              need to re-sand joints periodically and address any shifting
-              or settling. The surface is rigid with no cushion, and wet
-              pavers can be slippery depending on the texture.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Pavers are a solid choice if you want a traditional hardscape
-              look and heat isn&apos;t your primary concern. But if
-              barefoot comfort in summer is important, they&apos;re not the
-              best fit for Las Vegas.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Pavers form a surface from individual units. Product choice, installation base, drainage, joints and transitions all need consideration around a pool.</p>
+            <p className="text-gray-600 leading-relaxed">Ask the paver installer for the full installation scope, maintenance requirements and how movement or settlement would be addressed.</p>
+            <p className="text-gray-600 leading-relaxed">Compare the proposed paver color and texture in outdoor conditions. There is no single temperature or lifespan for every paver system.</p>
 
             {/* -------- Rubber Deck -------- */}
             <h2 id="rubber-deck" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Rubber Aggregate Pool Decking
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              <Link href="/rubber-pool-deck" className="text-accent hover:underline font-medium">Rubber pool decking</Link>{" "}
-              is a poured-in-place system made from EPDM rubber granules
-              bound with UV-stable polyurethane resin. It&apos;s hand-troweled
-              over existing concrete to create a seamless, textured surface
-              that&apos;s typically 3/8-inch to 1/2-inch thick. It&apos;s
-              the coolest surface on this list by a significant margin,
-              staying around <strong>110&deg;F</strong> in peak conditions
-              &mdash; roughly <strong>60&deg;F cooler</strong> than bare
-              concrete and <strong>20&deg;F cooler</strong> than cool deck.
-            </p>
+            <p className="text-gray-600 leading-relaxed"><Link href="/rubber-pool-deck" className="text-accent hover:underline font-medium">Rubber pool decking</Link> combines rubber granules and a binder over a prepared substrate. Confirm the selected system’s blend, application thickness and compatible finish.</p>
 
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden my-8 shadow-lg">
               <Image
@@ -513,32 +322,9 @@ export default function CoolestPoolDeckFlooringPost() {
               </div>
             </div>
 
-            <p className="text-gray-600 leading-relaxed">
-              The reason rubber stays so much cooler isn&apos;t just color
-              &mdash; it&apos;s physics. The rubber layer creates actual
-              insulation between your feet and the hot concrete below,
-              blocking heat transfer in a way that rigid coatings and hard
-              surfaces can&apos;t match. On top of that, rubber has low
-              thermal conductivity, so even when the surface is warm it
-              doesn&apos;t burn your skin the way concrete or stone does
-              at the same temperature.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Beyond temperature, rubber decking checks every other box:
-              a textured surface for traction,
-              cushioned impact protection for falls, and crack bridging
-              that spans hairline concrete cracks up to 1/8-inch. It costs{" "}
-              <strong>$15&ndash;$18 per square foot</strong> installed and
-              lasts <strong>10&ndash;15 years</strong> with minimal
-              maintenance &mdash; just reseal every 3&ndash;4 years with
-              a pressure wash and clear coat roll-on. Way less than cool
-              deck&apos;s 1&ndash;2 year cycle.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Rubber surfacing is one of our pool deck options.
-              It can go directly over suitable existing concrete in
-              2&ndash;3 days, no demolition needed.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.</p>
+            <p className="text-gray-600 leading-relaxed">Texture can help provide traction, but wet surfaces can still be slippery. Compare the proposed finish’s slip-resistance information and keep the deck clean. Cushioning does not prevent falls or guarantee protection from injury. Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.</p>
+            <p className="text-gray-600 leading-relaxed">Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair. Installation and return-to-use times depend on preparation, product, weather and curing conditions. The written project schedule should state when walking, furniture and normal pool use can resume.</p>
 
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden my-8 shadow-lg">
               <Image
@@ -559,11 +345,7 @@ export default function CoolestPoolDeckFlooringPost() {
             <h2 id="material-comparison" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Side-by-Side Comparison Table
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Here&apos;s every major factor that matters for a Las Vegas
-              pool deck, side by side. No single material wins every
-              category, but the overall picture is pretty clear:
-            </p>
+            <p className="text-gray-600 leading-relaxed">Use this checklist to compare the actual proposed products. These entries are questions to resolve, not tested performance rankings.</p>
 
             <MaterialComparisonTable />
 
@@ -571,22 +353,11 @@ export default function CoolestPoolDeckFlooringPost() {
             <h2 id="cost-comparison" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Cost Comparison
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Here&apos;s how all four options compare on installed cost
-              per square foot in the Las Vegas market. For a typical 600
-              sq ft pool deck, multiply these numbers to get your ballpark:
-            </p>
+            <p className="text-gray-600 leading-relaxed">A useful price comparison covers the same measured area and preparation scope for each suitable option.</p>
 
             <CostBreakdownChart />
 
-            <p className="text-gray-600 leading-relaxed">
-              Cool deck is the clear budget winner. Rubber sits in the
-              middle &mdash; more than cool deck, significantly less than
-              travertine or premium pavers. Keep in mind that ongoing
-              maintenance costs differ: cool deck needs resealing every
-              1&ndash;2 years, travertine needs annual sealing, while
-              rubber only needs a reseal every 3&ndash;4 years.
-            </p>
+            <p className="text-gray-600 leading-relaxed">The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.</p>
 
             {/* -------- Our Recommendation -------- */}
             <h2 id="our-recommendation" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
@@ -596,22 +367,8 @@ export default function CoolestPoolDeckFlooringPost() {
               Compare cool deck coatings with{" "}
               <Link href="/rubber-pool-deck" className="text-accent hover:underline font-semibold">rubber aggregate pool decking</Link>.
             </p>
-            <p className="text-gray-600 leading-relaxed">
-              It&apos;s the coolest surface you can stand on barefoot in
-              July. It&apos;s the safest if you have kids or elderly
-              family. It doesn&apos;t need resealing every year. And at
-              $15&ndash;$18 per square foot, it sits right in the middle of
-              the price range &mdash; more than cool deck, way less than
-              travertine. For most Las Vegas pools, it&apos;s the best
-              balance of comfort, safety, durability, and long-term value.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              If budget is the top priority,{" "}
-              <Link href="/cool-deck" className="text-accent hover:underline font-medium">cool deck</Link>{" "}
-              is an excellent starting point &mdash; it still drops surface
-              temps by 40&deg;F and it&apos;s the most affordable option.
-              Just stay on top of the resealing.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Compare the proposed products, texture, color, preparation, care requirements and written prices. Rubber and textured coatings have different finishes; neither is always cooler, safer or lower maintenance than the other.</p>
+            <p className="text-gray-600 leading-relaxed">For <Link href="/cool-deck" className="text-accent hover:underline font-medium">cool deck resurfacing</Link>, ask which finish is proposed, how the concrete will be prepared and what cleaning or future refresh work it needs.</p>
 
             {/* Mid-article CTA */}
             <div className="my-10 rounded-xl bg-accent/5 border border-accent/20 p-6 sm:p-8">
@@ -634,81 +391,32 @@ export default function CoolestPoolDeckFlooringPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               What is the coolest pool deck surface for Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Rubber aggregate pool decking is the coolest pool deck
-              surface available, reaching approximately{" "}
-              <strong>110&deg;F</strong> in peak summer sun compared to
-              170&deg;F for bare concrete.{" "}
-              <Link href="/cool-deck" className="text-accent hover:underline font-medium">Cool deck coatings</Link>{" "}
-              are also effective at around 130&deg;F and cost less
-              upfront. For maximum heat reduction, rubber decking is the
-              top performer thanks to the insulating rubber layer between
-              your feet and the concrete.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How much does pool deck resurfacing cost in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              It depends on the material: cool deck runs{" "}
-              <strong>$6&ndash;$9/sq ft</strong>, rubber aggregate{" "}
-              <strong>$15&ndash;$18/sq ft</strong>, pavers{" "}
-              <strong>$10&ndash;$20/sq ft</strong>, and travertine{" "}
-              <strong>$15&ndash;$27/sq ft</strong>. For a standard 600 sq
-              ft pool deck, that&apos;s anywhere from $3,600 to $16,200+
-              depending on the system.
-            </p>
+            <p className="text-gray-600 leading-relaxed">The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How long does cool deck last in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              With proper maintenance, a cool deck coating lasts{" "}
-              <strong>10&ndash;15 years</strong> in Las Vegas. The key is
-              staying on top of resealing &mdash; the desert UV is hard on
-              acrylic coatings, so you&apos;ll need to reseal every
-              1&ndash;2 years to keep it protected. Without regular
-              resealing, the coating will fade and lose its heat-reflective
-              properties faster.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Is rubber pool decking worth the cost?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              For Las Vegas, we think so. It&apos;s the coolest surface,
-              the safest (slip resistance + cushioned falls), and requires
-              minimal maintenance (reseal every 3&ndash;4 years) over
-              its 10&ndash;15 year lifespan.
-              It costs more than cool deck upfront but you&apos;re not
-              paying for resealing every year or two. For homeowners who
-              prioritize comfort and safety around the pool, it&apos;s the
-              best value overall.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Compare the proposed products, texture, color, preparation, care requirements and written prices. Rubber and textured coatings have different finishes; neither is always cooler, safer or lower maintenance than the other.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Can you resurface a pool deck without removing existing concrete?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Yes. Both cool deck coatings and rubber aggregate systems go
-              directly over existing concrete &mdash; no demolition, no
-              jackhammering. The concrete needs to be structurally sound
-              and properly prepped, but you don&apos;t need to rip
-              anything out. Most pool deck resurfacing jobs are done in
-              2&ndash;3 days.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair. Installation and return-to-use times depend on preparation, product, weather and curing conditions. The written project schedule should state when walking, furniture and normal pool use can resume.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Does travertine get hot around a pool in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Travertine stays cooler than regular concrete and pavers
-              thanks to its porosity and lighter color, but it still
-              reaches around <strong>140&deg;F</strong> in peak Las Vegas
-              summer. It&apos;s walkable for short stretches but not truly
-              comfortable barefoot during the hottest months. Cool deck
-              and rubber both stay meaningfully cooler.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.</p>
 
             {/* CTA Box */}
             <div className="mt-14 rounded-2xl bg-gray-50 border border-gray-200 p-8 text-center">

@@ -15,7 +15,7 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Cool Deck Coating Las Vegas | Pool Deck Resurfacing | ProShield Epoxy",
   description:
-    "Cool deck coating in Las Vegas — slip-resistant, heat-reflective pool deck resurfacing for patios & walkways. Free estimates · 702-728-5484.",
+    "Pool deck resurfacing in Las Vegas for suitable patios and walkways. Compare textured finishes, preparation and care. Free estimates · 702-728-5484.",
   openGraph: {
     url: "https://proshieldepoxy.com/cool-deck",
     images: ["/images/cool-deck/cool-deck-knockdown-pool.webp"],
@@ -28,35 +28,35 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What's the difference between cool deck and epoxy?",
-    a: "Cool deck is acrylic-based — designed specifically for exterior pool decks and patios. It's not epoxy. Epoxy systems like ProFlake are better suited for garage floors and interior spaces. Cool deck uses lighter colors to help reduce heat absorption and features a knockdown texture for slip resistance.",
+    a: "Pool-deck resurfacing can use acrylic coatings or cement-based toppings. Epoxy is a different material. Confirm the exact system, texture and exterior-use requirements in the estimate.",
   },
   {
     q: "Does cool deck actually keep the surface cold?",
-    a: "\"Cool deck\" doesn't mean the surface stays cold — especially in a Las Vegas summer. What it does is reflect more sunlight than bare concrete, which helps reduce surface temperature. The lighter the color you choose, the more heat it reflects. It won't be cold to the touch on a 115°F day, but it will be noticeably cooler than untreated dark concrete.",
+    a: "Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.",
   },
   {
     q: "Is the knockdown texture slippery when wet?",
-    a: "No. The knockdown texture is specifically designed to create a non-slip, textured surface. The troweled pattern provides traction even when wet, making it one of the safest options for pool decks and areas around water features.",
+    a: "Texture can help provide traction, but wet surfaces can still be slippery. Compare the proposed finish’s slip-resistance information and keep the deck clean. Cushioning does not prevent falls or guarantee protection from injury.",
   },
   {
     q: "How long does cool deck last?",
-    a: "With proper maintenance and periodic resealing (typically every 2–3 years), cool deck can last 5–10 years or longer depending on traffic, UV exposure, and maintenance. The sealer protects the underlying acrylic coating from wear and weather.",
+    a: "Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.",
   },
   {
     q: "How long does installation take?",
-    a: "A standard residential pool deck typically takes 2–3 days depending on surface condition, size, and weather. This includes surface prep, primer, base coat, knockdown texture, and sealer application. We'll provide a specific timeline during your consultation.",
+    a: "Installation and return-to-use times depend on preparation, product, weather and curing conditions. The written project schedule should state when walking, furniture and normal pool use can resume.",
   },
   {
     q: "Can cool deck be applied over existing concrete?",
-    a: "Yes, in most cases cool deck is applied directly over existing concrete substrates. The surface needs to be structurally sound, properly cleaned, and free of sealers or coatings that could prevent adhesion. We assess substrate condition during your free consultation.",
+    a: "Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair.",
   },
   {
     q: "What colors are available?",
-    a: "We offer a range of lighter tones designed to maximize heat reflection — including desert sand, cream, light gray, tan, and warm white. We recommend lighter colors for pool decks to get the most temperature benefit. Color samples are available during your consultation.",
+    a: "Ask about current product colors and compare samples outdoors. Color, shade and the selected product affect surface heat.",
   },
   {
     q: "Does cool deck need maintenance?",
-    a: "Day-to-day maintenance is simple — sweep debris and hose off as needed. The main ongoing maintenance is periodic resealing every 2–3 years with an acrylic or acrylic/urethane sealer to maintain the protective topcoat, color vibrancy, and gloss.",
+    a: "Remove loose debris and follow the selected product’s cleaning instructions. Ask which cleaners and equipment are allowed and when the surface should be inspected or refreshed. Resealing needs vary by system and condition.",
   },
 ]
 
@@ -84,7 +84,7 @@ export default function CoolDeckPage() {
         badge="Exterior Pool Deck Coating"
         title="Cool Deck & Pool Deck Coating"
         highlight="Las Vegas"
-        subtitle="Acrylic-based knockdown texture coating for pool decks, patios, and walkways. Slip-resistant, heat-reflective, and designed to handle Las Vegas summers. This is not epoxy."
+        subtitle="Textured resurfacing for suitable pool decks, patios and walkways. Compare the proposed finish, preparation and care requirements."
         backgroundImage="/images/cool-deck/pool-deck-spa.webp"
         backgroundAlt="Pool deck with cool deck knockdown texture coating around pool and spa"
       />

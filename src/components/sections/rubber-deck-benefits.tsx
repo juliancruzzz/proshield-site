@@ -6,39 +6,39 @@ import { ShieldCheck, Footprints, Wrench, Zap, Baby, FlaskConical } from "lucide
 const benefits = [
   {
     icon: ShieldCheck,
-    title: "Slip-Resistant When Wet",
+    title: "Wet Traction",
     description:
-      "Textured rubber provides traction, but wet surfaces can still be slippery. Keep the deck clean and assess the selected finish for the conditions around your pool. Slip resistance depends on the surface, use and maintenance.",
+      "Texture can help provide traction, but wet surfaces can still be slippery. Compare the proposed finish’s slip-resistance information and keep the deck clean. Cushioning does not prevent falls or guarantee protection from injury.",
   },
   {
     icon: Footprints,
-    title: "Comfortable Barefoot",
+    title: "Surface Heat",
     description:
-      "The rubber layer insulates your feet from hot concrete below. Low thermal conductivity means heat transfers to your skin slowly, even when the surface is warm.",
+      "Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.",
   },
   {
     icon: Baby,
-    title: "Cushioned Impact Protection",
+    title: "Underfoot Feel",
     description:
-      "Rubber creates a cushioned walking surface. Cushioning does not prevent falls or guarantee protection from injury.",
+      "Rubber has a softer underfoot feel than a hard finish. Cushioning does not guarantee protection from injury.",
   },
   {
     icon: Zap,
-    title: "Bridges Concrete Cracks",
+    title: "Existing Cracks",
     description:
-      "Las Vegas concrete moves daily with thermal cycling. The flexible elastomeric membrane spans cracks up to 1/8″ without breaking or showing through — rigid coatings can't do this.",
+      "Existing cracks and substrate movement need assessment. Resurfacing is not a structural repair and does not guarantee cracks stay hidden.",
   },
   {
     icon: Wrench,
-    title: "Low Maintenance",
+    title: "Product-Specific Care",
     description:
-      "Sweep weekly, hose monthly. Reseal every 3–4 years with a pressure wash and clear coat roll-on. Compare that to cool deck's 1–2 year reseal cycle.",
+      "Remove loose debris and follow the selected product’s cleaning instructions. Ask which cleaners and equipment are allowed and when the surface should be inspected or refreshed. Resealing needs vary by system and condition.",
   },
   {
     icon: FlaskConical,
-    title: "UV & Chemical Resistant",
+    title: "Sun & Pool Chemicals",
     description:
-      "The polyurethane binder is formulated for extended UV exposure. Rubber granules are chemically inert — resistant to chlorine, salt, muriatic acid, and pool chemical splatter.",
+      "Confirm the selected binder and topcoat’s exterior-use and chemical-exposure requirements. Follow product instructions for spills and cleaning.",
   },
 ]
 
@@ -54,10 +54,7 @@ export function RubberDeckBenefits() {
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
             Engineered for Las Vegas Pool Decks
           </h2>
-          <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            115°F+ summers, daily thermal cycling, and relentless UV — rubber pool deck surfacing
-            handles all of it while keeping your deck safe and comfortable.
-          </p>
+          <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">Compare the proposed finish against the sun exposure, wear and existing concrete at your pool.</p>
         </div>
 
         {/* Benefit grid — 3x2 cards */}
