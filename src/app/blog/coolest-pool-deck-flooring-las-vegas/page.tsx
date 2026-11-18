@@ -393,10 +393,8 @@ export default function CoolestPoolDeckFlooringPost() {
             <TempComparisonChart />
 
             <p className="text-gray-600 leading-relaxed">
-              The ranking is clear: rubber aggregate stays the coolest,
-              followed by cool deck coatings, then travertine, then pavers.
-              Bare concrete is the worst by a wide margin. But temperature
-              is only one factor &mdash; let&apos;s break down each option.
+              Temperature is one factor to compare alongside preparation,
+              cost and maintenance. Here are the main material options.
             </p>
 
             {/* -------- Cool Deck -------- */}
