@@ -11,13 +11,41 @@ interface Row {
 }
 
 const rows: Row[] = [
-  { feature: "Topcoat", epoxy: "Epoxy Clear", proflake: "Polyaspartic", epoxyPositive: false, proflakePositive: true },
-  { feature: "UV Stability", epoxy: "Yellows", proflake: "UV-Stable", epoxyPositive: false, proflakePositive: true },
-  { feature: "Hot Tire", epoxy: "No", proflake: "Yes", epoxyPositive: false, proflakePositive: true },
-  { feature: "Chemical Resist", epoxy: "No", proflake: "Yes", epoxyPositive: false, proflakePositive: true },
-  { feature: "Abrasion Resist", epoxy: "No", proflake: "Yes", epoxyPositive: false, proflakePositive: true },
-  { feature: "Lifespan", epoxy: "1–2 Yrs", proflake: "15+ Yrs", epoxyPositive: false, proflakePositive: true },
-  { feature: "Lifetime Warranty", epoxy: "No", proflake: "Yes", epoxyPositive: false, proflakePositive: true },
+  {
+    "feature": "System build",
+    "epoxy": "Specified epoxy layers",
+    "proflake": "Polyurea + flake + polyaspartic"
+  },
+  {
+    "feature": "Appearance",
+    "epoxy": "Specified color or finish",
+    "proflake": "Decorative Torginol blend"
+  },
+  {
+    "feature": "UV and chemicals",
+    "epoxy": "Named product data",
+    "proflake": "Named product data"
+  },
+  {
+    "feature": "Vehicle traffic",
+    "epoxy": "Product and cure instructions",
+    "proflake": "24h walk / 48h park, conditions apply"
+  },
+  {
+    "feature": "Care",
+    "epoxy": "Finish-specific instructions",
+    "proflake": "Topcoat-specific instructions"
+  },
+  {
+    "feature": "Warranty",
+    "epoxy": "Read proposed terms",
+    "proflake": "Qualifying systems; written moisture exclusions"
+  },
+  {
+    "feature": "Price",
+    "epoxy": "Written project quote",
+    "proflake": "Written project quote"
+  }
 ]
 
 export function ProFlakeComparison() {

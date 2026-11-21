@@ -5,7 +5,7 @@ import { Check, GripVertical } from "lucide-react"
 
 const highlights = [
   "Full pressure wash and surface prep before sealing",
-  "Polymeric sand joint stabilization included",
+  "Joint inspection and re-sanding options",
   "Wet-look, matte, and color-enhancing sealer options",
   "Stain removal and old sealer stripping available",
 ]
@@ -113,11 +113,9 @@ export function PaverSealingIntro() {
               <span className="text-accent">Your Pavers</span>
             </h2>
             <p className="mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">
-              Las Vegas heat, UV, and monsoon rains degrade unsealed pavers
-              fast &mdash; fading color, loosening joints, and letting weeds
-              take over. We handle the full process: pressure wash, stain
-              removal, polymeric sand stabilization, and professional sealer
-              application. Your pavers come back looking new and stay protected.
+              Paver care starts with the condition of the surface and any existing sealer.
+              The estimate can include cleaning, stain treatment, joint care and sealing
+              where suitable. The selected finish and preparation are set out in your quote.
             </p>
 
             <ul className="mt-6 space-y-3">

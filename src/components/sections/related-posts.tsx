@@ -17,7 +17,7 @@ const ALL_POSTS: Record<string, Omit<RelatedPost, 'href'> & { slug: string }> = 
   'epoxy-floor-maintenance-tips': {
     slug: 'epoxy-floor-maintenance-tips',
     title: 'Epoxy Floor Maintenance Tips: Keep Your Coating Looking New',
-    description: 'Simple cleaning routines and seasonal tips for Las Vegas floors.',
+    description: "Product-compatible cleaning, equipment and care for your installed finish.",
     date: 'April 7, 2026',
   },
   'best-pool-deck-coatings-las-vegas': {
@@ -29,25 +29,25 @@ const ALL_POSTS: Record<string, Omit<RelatedPost, 'href'> & { slug: string }> = 
   'epoxy-garage-floor-cost-las-vegas': {
     slug: 'epoxy-garage-floor-cost-las-vegas',
     title: 'Epoxy Garage Floor Cost in Las Vegas: 2026 Pricing Guide',
-    description: 'Professional epoxy costs $3.50-$12/sq ft depending on system.',
+    description: "Compare measured area, preparation, repairs and coating scope in a garage quote.",
     date: 'April 3, 2026',
   },
   'epoxy-garage-floor-vs-polyaspartic': {
     slug: 'epoxy-garage-floor-vs-polyaspartic',
     title: 'Epoxy vs. Polyaspartic Garage Floor Coatings',
-    description: 'The key differences between epoxy and polyaspartic coatings.',
+    description: "Compare named coating products, layer builds, cure requirements and intended use.",
     date: 'April 1, 2026',
   },
   'hot-tire-pickup-prevention-garage-floor': {
     slug: 'hot-tire-pickup-prevention-garage-floor',
     title: 'How to Prevent Hot Tire Pickup on Your Garage Floor',
-    description: 'The #1 reason garage floor coatings fail in Las Vegas.',
+    description: "Assess tire-related coating damage, preparation, cure and repair options.",
     date: 'March 28, 2026',
   },
   'polished-concrete-vs-epoxy': {
     slug: 'polished-concrete-vs-epoxy',
     title: 'Polished Concrete vs. Epoxy Flooring',
-    description: 'Which is right for your space? Cost and durability comparison.',
+    description: "Compare the slab, finish, traffic, care requirements and written project scope.",
     date: 'March 18, 2026',
   },
   'coolest-pool-deck-flooring-las-vegas': {

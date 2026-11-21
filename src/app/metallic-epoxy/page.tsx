@@ -56,27 +56,27 @@ const metallicGallery = [
 const faqs = [
   {
     q: "What makes metallic epoxy different from flake or standard epoxy?",
-    a: "Metallic epoxy uses specialized metallic pigments suspended in high-build epoxy. Rather than sitting on the surface like flakes, these pigments create genuine three-dimensional depth and movement — like looking into liquid metal. Each floor is completely unique.",
+    a: "Metallic epoxy uses pigments in resin to create flowing color and visual depth. Flake systems use decorative chips for a different finish. Samples and reference images show a direction; the installed pattern varies.",
   },
   {
     q: "Can I choose my exact colors and design?",
-    a: "Yes. We offer a full design consultation where you select from dozens of metallic pigment options — or we custom-blend to match your vision. We'll discuss color flow direction, intensity, and finish type (high-gloss, satin, or matte) to ensure the result is exactly what you want.",
+    a: "Discuss pigment colors, movement and clear-coat finish before installation. The final pattern is hand-worked and will not exactly duplicate a sample or reference photo.",
   },
   {
     q: "Is metallic epoxy suitable for high-traffic commercial spaces?",
-    a: "Yes. With the right topcoat system, metallic floors perform well in showrooms, retail spaces, and lobbies. We recommend polyaspartic or polyurethane topcoats for commercial applications — they provide superior abrasion and UV resistance.",
+    a: "Suitability depends on the intended traffic, slab and selected clear coat. Confirm the named products and their abrasion, chemical and traction information for the project.",
   },
   {
     q: "How long does installation take?",
-    a: "Typically 3–4 days for residential spaces and up to 5 days for larger commercial projects. Metallic epoxy requires precision — rushing the process compromises the result. We'll provide a detailed timeline during your consultation.",
+    a: "Application time and return-to-use time are different. Preparation, repairs, product selection and site conditions affect the schedule. Confirm when walking, furniture and vehicles are permitted before using the floor.",
   },
   {
     q: "What about UV stability and long-term care?",
-    a: "UV stability comes from the topcoat, not the metallic pigments themselves. We use UV-stable polyurethane or polyaspartic topcoats on all metallic installations. For maintenance, simple damp mopping is all you need.",
+    a: "Light exposure can affect coating appearance. Compare the selected base and topcoat’s published UV data and intended use; a UV-resistant topcoat is not a promise that the entire floor will never change color. Remove loose dirt and follow the installed finish’s cleaning instructions. Confirm the cleaner, dilution, equipment and stain-removal method before use. Do not assume every resin floor accepts the same products.",
   },
   {
     q: "What warranty is included?",
-    a: "All metallic epoxy installations include a limited lifetime warranty covering adhesion and installation integrity. We stand behind our craftsmanship.",
+    a: "The Peel-Free Lifetime Guarantee applies to qualifying systems under the written terms. Moisture-driven failure is excluded; a flagged moisture condition requires an appropriate moisture vapor barrier before coating. Confirm coverage for the proposed system.",
   },
 ]
 
@@ -208,7 +208,7 @@ export default function MetallicEpoxyPage() {
           <ScrollReveal direction="up" delay={0}>
             <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
               <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-                Our Work
+                Finish Ideas
               </span>
               <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
                 Metallic Installations

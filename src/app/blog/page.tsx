@@ -32,7 +32,7 @@ const posts = [
     slug: "metallic-epoxy-flooring-las-vegas",
     title: "Metallic Epoxy Flooring in Las Vegas: What It Costs, How It's Done & What to Expect",
     excerpt:
-      "What does metallic epoxy flooring really cost in Las Vegas? We break down real pricing ($10–$12/sq ft), our installation process, finish options, and what to expect — from a crew that installs them every week.",
+      "Compare metallic finishes, concrete preparation, project quotes and care.",
     date: "May 3, 2026",
     category: "Metallic Epoxy",
     image: "/images/metallic-hero-poster.jpg",
@@ -50,7 +50,7 @@ const posts = [
     slug: "epoxy-floor-maintenance-tips",
     title: "Epoxy Floor Maintenance Tips: Keep Your Coating Looking New",
     excerpt:
-      "Simple cleaning routines, seasonal tips for Las Vegas heat, and what NOT to use on your epoxy floor. System-specific care for flake, metallic, and polished concrete.",
+      "Product-compatible cleaning, equipment and care for your installed finish.",
     date: "April 7, 2026",
     category: "Maintenance Guide",
     image: "/images/proflake/flake-garage-residential.webp",
@@ -68,7 +68,7 @@ const posts = [
     slug: "epoxy-garage-floor-cost-las-vegas",
     title: "Epoxy Garage Floor Cost in Las Vegas: 2026 Pricing Guide",
     excerpt:
-      "Professional epoxy garage floor coating in Las Vegas typically costs $3.50–$12 per square foot. See 2026 pricing by system type, garage size, DIY vs. pro comparison, and what drives the final number.",
+      "Compare measured area, preparation, repairs and coating scope in a garage quote.",
     date: "April 3, 2026",
     category: "Pricing Guide",
     image: "/images/proflake/flake-garage-residential.webp",
@@ -77,7 +77,7 @@ const posts = [
     slug: "epoxy-garage-floor-vs-polyaspartic",
     title: "Epoxy vs. Polyaspartic Garage Floor Coatings — What's the Difference?",
     excerpt:
-      "Both go on garage floors. Both look great. But epoxy and polyaspartic are different chemistries with different strengths. Here's what actually matters when choosing between them for your Las Vegas garage.",
+      "Compare named coating products, layer builds, cure requirements and intended use.",
     date: "April 1, 2026",
     category: "Garage Floors",
     image: "/images/proflake/flake-garage-wide-clean.webp",
@@ -86,7 +86,7 @@ const posts = [
     slug: "hot-tire-pickup-prevention-garage-floor",
     title: "How to Prevent Hot Tire Pickup on Your Garage Floor",
     excerpt:
-      "Hot tire pickup is the #1 reason garage floor coatings fail in Las Vegas. Learn what causes it, which coatings are vulnerable, and how the right system prevents it permanently.",
+      "Assess tire-related coating damage, preparation, cure and repair options.",
     date: "April 3, 2026",
     category: "Garage Floors",
     image: "/images/proflake/flake-garage-porsche-bikes.webp",
@@ -95,7 +95,7 @@ const posts = [
     slug: "polished-concrete-vs-epoxy",
     title: "Polished Concrete vs. Epoxy Flooring: Which Is Right for Your Space?",
     excerpt:
-      "Both are excellent commercial flooring solutions, but they solve different problems. Compare cost, lifespan, maintenance, and 25-year total cost of ownership to find the right fit.",
+      "Compare the slab, finish, traffic, care requirements and written project scope.",
     date: "April 4, 2026",
     category: "Flooring Comparison",
     image: "/images/concrete-polishing/polished-floor-showroom.webp",

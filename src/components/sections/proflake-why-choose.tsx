@@ -8,47 +8,47 @@ const advantages = [
   {
     icon: <Sun className="h-5 w-5" />,
     title: "UV-Stable Finish",
-    badge: "100% UV Stable",
+    badge: "UV data",
     badgeStyle: "bg-teal-subtle text-teal border border-teal/20",
     activeBadgeStyle: "bg-teal text-white border border-teal",
     description:
-      "Polyaspartic topcoat won't yellow or fade under UV exposure. Your floor maintains its color and gloss over time — no chalking, no discoloration.",
+      "Light exposure can affect coating appearance. Compare the selected base and topcoat’s published UV data and intended use; a UV-resistant topcoat is not a promise that the entire floor will never change color.",
     features: [
-      "No yellowing or fading over time",
-      "Maintains gloss year after year",
-      "Zero chalking or discoloration",
-      "Ideal for sun-exposed garages",
-    ],
+  "Confirm the named topcoat",
+  "Check intended light exposure",
+  "Compare published product data",
+  "Follow the care requirements"
+],
   },
   {
     icon: <ThermometerSun className="h-5 w-5" />,
     title: "Hot Tire Resistant",
-    badge: "Zero Peel-Up",
+    badge: "Vehicle use",
     badgeStyle: "bg-accent-subtle text-accent border border-accent/20",
     activeBadgeStyle: "bg-accent text-white border border-accent",
     description:
-      "No tire marks from hot tires. The polyaspartic topcoat resists heat transfer that causes peel-up and staining on standard epoxy floors.",
+      "Confirm the selected topcoat’s vehicle-use requirements and follow the return-to-use instructions. Marks or coating damage need assessment; resistance is not immunity to every tire exposure.",
     features: [
-      "Resists heat transfer from tires",
-      "No peel-up or delamination",
-      "Zero staining from hot rubber",
-      "Built for daily driver use",
-    ],
+  "Confirm vehicle-use suitability",
+  "Allow the specified cure time",
+  "Assess substrate and moisture",
+  "Read warranty conditions"
+],
   },
   {
     icon: <Droplets className="h-5 w-5" />,
     title: "Chemical Resistant",
-    badge: "Oil · Gas · Brake Fluid",
+    badge: "Exposure limits",
     badgeStyle: "bg-teal-subtle text-teal border border-teal/20",
     activeBadgeStyle: "bg-teal text-white border border-teal",
     description:
-      "Stands up to oil, gasoline, brake fluid, and common garage chemicals. Easy to clean — just wipe and go. Built for real garage use.",
+      "Chemical resistance depends on the actual coating, chemical, concentration, temperature and contact time. Confirm compatibility for expected spills and follow the product’s cleanup instructions.",
     features: [
-      "Resists oil, gas, and brake fluid",
-      "Easy wipe-clean maintenance",
-      "No staining from household chemicals",
-      "Built for real garage use",
-    ],
+  "Identify expected chemicals",
+  "Check concentration and contact time",
+  "Use compatible cleaners",
+  "Follow spill procedures"
+],
   },
 ]
 
@@ -67,7 +67,7 @@ export function ProFlakeWhyChoose() {
             The Polyaspartic Advantage
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Standard epoxy topcoats yellow, chalk, and peel. Our polyaspartic topcoat is what sets ProFlake apart.
+            Compare the named coating products, intended use and care requirements. Our polyaspartic topcoat is what sets ProFlake apart.
           </p>
         </div>
 

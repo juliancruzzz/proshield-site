@@ -8,22 +8,22 @@ const applications = [
     icon: Car,
     title: "Driveways",
     description:
-      "Protect against oil, tire marks, and UV fade. Sealed pavers resist staining and maintain joint integrity under daily vehicle traffic.",
-    image: "/images/vubastone/vubastone-driveway-house-front.webp",
+      "For paver driveways, compare vehicle exposure, surface condition, stain treatment and the selected sealer’s return-to-traffic instructions.",
+    image: "/images/paver-sealing/paver-driveway-sealed.webp",
   },
   {
     icon: Waves,
     title: "Pool Decks",
     description:
-      "Slip-resistant finish with chlorine and splash-out protection. Sealer prevents salt damage and keeps joints stable around water features.",
-    image: "/images/cool-deck/pool-deck-spa.webp",
+      "For pavers around pools, assess wet traction, drainage and compatibility with pool chemicals before selecting a finish.",
+    image: "/images/paver-sealing/paver-sealed-closeup.webp",
   },
   {
     icon: Armchair,
     title: "Patios & Walkways",
     description:
-      "Enhance color and resist food, drink, and weather stains. Sealed surfaces stay vibrant through Las Vegas monsoon seasons and year-round UV.",
-    image: "/images/vubastone/vubastone-patio-firepit.webp",
+      "For paver patios and walkways, compare the desired appearance, foot traffic and cleaning requirements. Confirm a sample area before application.",
+    image: "/images/paver-sealing/paver-walkway-sealed.webp",
   },
 ]
 
@@ -37,10 +37,10 @@ export function PaverSealingApplications() {
             Applications
           </span>
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-            Where Paver Sealing Works Best
+            Paver Sealing Applications
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Engineered protection for every hardscape surface around your property.
+            The treatment depends on the existing pavers and how the space is used.
           </p>
         </div>
 

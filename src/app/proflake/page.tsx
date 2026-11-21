@@ -28,31 +28,31 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What makes ProFlake different from epoxy?",
-    a: "ProFlake uses a polyurea basecoat instead of epoxy, topped with a polyaspartic clear coat — delivering UV stability, chemical resistance, and hot tire performance that standard epoxy can't match. Combined with 150+ Torginol color options and full-broadcast decorative chip, it's our most customizable and durable residential garage solution.",
+    a: "ProFlake uses a polyurea base, decorative flake and a polyaspartic topcoat. Confirm the named products and preparation in the project quote. Compare its flake and clear-coat finish with the actual epoxy system proposed, not a generic chemistry ranking.",
   },
   {
     q: "What is polyaspartic topcoat and why does it matter?",
-    a: "Polyaspartic is a fast-curing, single-component topcoat that hardens quickly while remaining flexible and UV-stable. It resists chemicals, hot tire marks, and maintains its gloss better than standard epoxy topcoats over time.",
+    a: "Polyaspartic describes a coating chemistry used in floor systems. Component count, mixing, coverage, curing and intended use must follow the named product’s data sheet.",
   },
   {
     q: "When can I use my garage after installation?",
-    a: "Walk-on traffic is allowed after 24 hours. Drive-on is recommended after 48 hours. We'll provide specific guidelines based on weather and curing conditions.",
+    a: "For ProFlake, allow 24 hours before walking and 48 hours before parking, subject to actual weather and curing conditions. Other systems have different return-to-use requirements; follow the project instructions.",
   },
   {
     q: "What is the warranty on ProFlake?",
-    a: "ProFlake comes with a limited lifetime warranty on qualifying residential systems. This covers material defects and workmanship — not wear from abuse, neglect, or incompatible chemicals.",
+    a: "The Peel-Free Lifetime Guarantee applies to qualifying systems under the written terms. Moisture-driven failure is excluded; a flagged moisture condition requires an appropriate moisture vapor barrier before coating. Confirm coverage for the proposed system.",
   },
   {
     q: "How do I choose a color from 150+ options?",
-    a: "We provide color samples and digital mockups during your consultation. Many customers choose neutral tones (grays, blacks, tans) or vibrant colors that complement their home. Each blend can be customized with chip colors and ratios.",
+    a: "Compare the available Torginol blends and physical samples during the consultation. Confirm the selected blend, chip size and finish before installation.",
   },
   {
     q: "Is ProFlake resistant to hot tires and chemicals?",
-    a: "Yes. The polyaspartic topcoat resists tire marks from hot tires, oil stains, gasoline, and common garage chemicals. For spills, clean immediately — while ProFlake resists chemicals, prolonged exposure to harsh solvents can damage it.",
+    a: "Compare the named topcoat’s vehicle-use and chemical-resistance information for expected exposure. Resistance is not immunity; follow the curing and cleanup instructions.",
   },
   {
     q: "What does the installation process involve?",
-    a: "Concrete prep → polyurea primer → polyurea base coat → chip broadcast → polyaspartic topcoat. Total time depends on substrate condition and environmental factors. We handle surface grinding, patching, and sealing.",
+    a: "Assess the concrete, moisture, contamination and existing coatings before selecting a system. Diamond grinding is part of ProShield’s preparation process; the required profile and repairs depend on the proposed products and site. ProFlake uses a polyurea base, decorative flake and a polyaspartic topcoat. Confirm the named products and preparation in the project quote.",
   },
 ]
 

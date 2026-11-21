@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title:
     "Epoxy Floor Maintenance Tips: Keep Your Coating Looking New | ProShield",
   description:
-    "Complete epoxy floor maintenance guide. Daily cleaning, seasonal care for Las Vegas heat, handling spills, and when to refresh your topcoat.",
+    "Care for your garage floor coating with product-compatible cleaners, equipment and mats. Learn what to check before repair or a topcoat refresh.",
   alternates: {
     canonical: "/blog/epoxy-floor-maintenance-tips",
   },
@@ -22,9 +22,10 @@ export const metadata: Metadata = {
 export default function EpoxyMaintenancePost() {
   const schema = blogPostingSchema({
     title: "Epoxy Floor Maintenance Tips: Keep Your Coating Looking New",
-    description: "Complete epoxy floor maintenance guide. Daily cleaning, seasonal care for Las Vegas heat, handling spills, and when to refresh your topcoat.",
+    description: "Care for your garage floor coating with product-compatible cleaners, equipment and mats. Learn what to check before repair or a topcoat refresh.",
     slug: "epoxy-floor-maintenance-tips",
     datePublished: "2026-04-07",
+    dateModified: "2026-11-21",
     image: "https://proshieldepoxy.com/images/proflake/flake-garage-residential.webp",
   })
 
@@ -37,7 +38,7 @@ export default function EpoxyMaintenancePost() {
         "name": "What's the best way to clean epoxy flooring?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sweep or dust-mop regularly to remove dirt and debris, then clean with mild soap and warm water. Use a soft-bristled mop and avoid harsh chemicals, acid-based cleaners, or abrasive pads. For stubborn stains, use a pH-neutral cleaner specifically designed for epoxy. Citrus-based degreasers should be avoided on metallic finishes as they can dull the effect."
+          "text": "Remove loose dirt and follow the installed finish’s cleaning instructions. Confirm the cleaner, dilution, equipment and stain-removal method before use. Do not assume every resin floor accepts the same products."
         }
       },
       {
@@ -45,7 +46,7 @@ export default function EpoxyMaintenancePost() {
         "name": "Can I use bleach or vinegar on epoxy floors?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Bleach and vinegar are too acidic and can damage epoxy coatings over time. Stick to mild dish soap and water or pH-neutral epoxy-safe cleaners. Harsh chemicals, abrasive scrubbers, and acidic solutions weaken the topcoat and can cause discoloration or degradation."
+          "text": "Bleach and vinegar have different chemistry. Use a cleaner only where the installed coating’s instructions permit it, at the stated dilution, and never mix products."
         }
       },
       {
@@ -53,7 +54,7 @@ export default function EpoxyMaintenancePost() {
         "name": "How often do I need to reseal an epoxy floor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Professional epoxy systems don't require resealing during their normal lifespan of 15–20+ years. However, if the topcoat shows visible wear after 10–15 years in high-traffic areas, applying a fresh topcoat can extend the floor's life another 5–10 years. Most residential garages don't need topcoat refreshing for well over a decade."
+          "text": "Inspect the floor’s condition and follow the selected product’s maintenance plan. Ask whether a compatible refresh coat is needed; no fixed lifespan or extra years of service are promised."
         }
       },
       {
@@ -61,7 +62,7 @@ export default function EpoxyMaintenancePost() {
         "name": "What should I do about oil spills on epoxy?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Blot up fresh spills immediately with absorbent materials (paper towels, old rags). Don't let oil sit on the floor. Once absorbed, clean the area with mild soap and water or an epoxy-safe degreaser. Fresh epoxy is resistant to oil stains, but epoxy isn't completely impervious—quick cleanup prevents staining. In high-exposure areas (like under vehicles), consider using protective mats."
+          "text": "Follow the installed coating’s cleanup instructions for oil and compatible cleaners. For repeated exposure, confirm any protective mat is approved for both the finish and intended use."
         }
       }
     ]
@@ -129,7 +130,7 @@ export default function EpoxyMaintenancePost() {
           </div>
           <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
-              <Calendar className="h-3.5 w-3.5" /> April 7, 2026
+              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-21">November 21, 2026</time>
             </span>
             <span className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" /> 8 min read
@@ -141,9 +142,7 @@ export default function EpoxyMaintenancePost() {
       <article className="section-white pb-20 lg:pb-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-gray max-w-none">
-            <p className="text-lg text-gray-600 leading-relaxed">
-              A professional epoxy floor lasts 15–20+ years, but only if you maintain it properly. The good news: epoxy is actually easy to care for. Unlike tile that needs grout sealing or concrete that absorbs stains, epoxy floors require just regular sweeping, mild cleaning, and basic awareness of what to avoid. Below is everything you need to know about keeping your epoxy looking pristine, from daily maintenance to seasonal adjustments for Las Vegas's extreme heat, to knowing when (and if) you need to refresh the topcoat.
-            </p>
+            <p className="text-lg text-gray-600 leading-relaxed">A care plan should match the installed floor, topcoat, traffic and spills. This guide covers routine cleaning, compatible equipment and signs that need assessment; it does not assign a fixed lifespan or refresh interval to every epoxy floor.</p>
 
             {/* Table of Contents */}
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
@@ -181,65 +180,47 @@ export default function EpoxyMaintenancePost() {
             <h2 id="daily-and-weekly-cleaning" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Daily and Weekly Cleaning
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Epoxy is the lowest-maintenance floor you can install. Most of the time, you just need to keep it clean and dry.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Regular removal of loose dirt and compatible cleaning help maintain a resin floor. The texture, soil and product instructions determine the appropriate method.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Daily: Dust Mop or Sweep
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Use a soft-bristled broom or dust mop to remove dirt, dust, and debris. This takes 5 minutes and prevents particles from being ground into the finish by foot traffic or tires. Dirt particles become mini-abrasives that dull the surface over time.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Use compatible sweeping or vacuuming equipment to remove loose grit before cleaning. Keep wheels and cleaning tools free of trapped debris that could mark the finish.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
-              Weekly: Mild Soap and Water
+              Routine Cleaning: Compatible Products
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Once a week, mop with a soft-bristled mop using mild soap (a few drops of dish soap in warm water) or a pH-neutral epoxy-safe cleaner. Avoid soaking the floor—use a damp mop, not a wet one. Epoxy is sealed, so water doesn't penetrate, but excess moisture can settle in seams or edges.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Use the cleaner, dilution and cleaning equipment allowed for the installed finish. Textured floors may need a suitable brush or scrubber rather than mopping alone. Remove cleaner residue as directed.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
-              Monthly: Deeper Clean
+              Stains and Heavier Soil
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              For tougher scuffs or marks, use a soft microfiber mop with a small amount of epoxy-specific cleaner. Apply cleaner to the mop (not directly to the floor), mop the area, and rinse with a damp mop using clean water. Avoid letting cleaner sit on the floor for extended periods.
-            </p>
+            <p className="text-gray-600 leading-relaxed">For marks that routine cleaning does not remove, identify the type of soil and ask for a compatible stain-removal method. Test any permitted cleaner as directed before wider use.</p>
 
             <h2 id="what-not-to-use" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               What NOT to Use on Your Epoxy Floor
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Epoxy is tough, but some common household products will damage it. Avoid these entirely:
-            </p>
+            <p className="text-gray-600 leading-relaxed">Confirm compatibility before using a cleaner or tool; a household label alone does not establish that it suits the finish.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Harsh Chemicals &amp; Acid-Based Cleaners
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              <strong>Never use bleach, vinegar, or muriatic acid</strong> on epoxy. These are too acidic and will chemically attack the topcoat, causing discoloration and weakening adhesion. Even "safe" degreaser concentrates meant for concrete can be too strong. Stick to mild, pH-neutral products.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Do not treat bleach and vinegar as the same chemical. Use either only if the installed floor’s instructions allow it at the specified dilution. Never mix cleaning products.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Abrasive Scrubbing Pads &amp; Tools
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Don't use steel wool, wire brushes, or rough scouring pads. These scratch and dull the finish. If you need to scrub a spot, use a soft-bristled brush or microfiber pad with mild soap. For stubborn stains, apply cleaner and let it sit for a few minutes before wiping—don't scrub hard.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Choose the brush or pad specified for the finish. Aggressive scrubbing or abrasive tools can change its appearance; ask before using them for a difficult mark.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Citrus-Based Degreasers (On Metallic Finishes)
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Strong citrus cleaners (d-limonene based) can dull or discolor metallic epoxy finishes. If you have a metallic system and need to degrease, use a mild soap first. For serious grease, use an epoxy-safe, non-citrus degreaser, apply sparingly, and rinse thoroughly.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Check the actual cleaner and dilution for compatibility with the coating. Citrus, solvent or degreaser labels do not establish suitability for every metallic topcoat.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               High-Pressure Washers
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Pressure washers over 2,000 PSI can damage epoxy edges and seams. If you must pressure wash (for outdoor epoxy), stay below 1,500 PSI and keep the nozzle at least 12 inches away. Better option: stick to brooms and soft mopping for indoor garage floors.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Pressure-washing suitability depends on the installed system, substrate, equipment and technique. Follow the product’s limits; this guide does not provide a universal pressure or nozzle-distance setting.</p>
 
             <h2 id="handling-spills" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Handling Spills and Stains
@@ -251,44 +232,34 @@ export default function EpoxyMaintenancePost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Oil &amp; Grease Spills
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Blot up fresh oil spills immediately with paper towels or old rags. Don't smear it around. Once absorbed, clean the area with mild soap and water. For stubborn stains, use a pH-neutral, epoxy-safe degreaser applied to the mop (not directly on the floor), then rinse thoroughly. Fresh epoxy resists oil stains, but old spills left to set are harder to remove.
-            </p>
+            <p className="text-gray-600 leading-relaxed">For oil or grease, use the coating manufacturer’s permitted cleanup method and compatible absorbent or cleaner. Do not assume that an automotive-fluid-resistant finish cannot stain.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Chemical Spills
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Battery acid, gasoline, antifreeze, and other chemicals should be cleaned up immediately. Epoxy resists many chemicals, but prolonged exposure can stain or degrade the topcoat. Blot up immediately, then rinse with copious amounts of water. For serious chemical spills, consult with the product manufacturer or your installer for specific guidance.
-            </p>
+            <p className="text-gray-600 leading-relaxed">For a hazardous chemical spill, keep people away and follow the chemical’s safety instructions and site spill procedure. Confirm coating compatibility and cleanup with the relevant product guidance rather than diluting an unknown chemical.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Wine &amp; Food Spills
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Epoxy is easy to clean. Just wipe up spills with a damp cloth and mild soap. Food doesn't stain epoxy like it would stain concrete. This is one of the major advantages of epoxy for both garages and kitchens.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Clean food and drink spills using the compatible method for the installed finish. Stain resistance varies by product and contact time.</p>
 
             <h2 id="seasonal-maintenance-vegas" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Seasonal Maintenance for Las Vegas Heat
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Las Vegas's extreme heat creates specific maintenance considerations:
+              Plan care around the actual exposure and use of your floor:
             </p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Summer: Manage Garage Door Exposure
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              In summer, garage surface temperatures can exceed 150°F if the door is open frequently. If you have a garage door, manage it: open only when necessary, or consider a garage door insulation kit to reduce internal heat. UV-stable topcoats (polyaspartic) handle sun exposure, but continuous intense heat can accelerate wear on high-traffic areas.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Consider direct sun, water brought in by vehicles and changing conditions when planning cleaning. Keep the floor within the product’s use and care requirements.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Summer: Protect Hot Spots
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              In high-heat garages where tires sit on the same spot daily, consider using rubber mats or tire covers to distribute stress. This protects against hot tire pickup (rare with modern epoxy, but best to minimize risk) and reduces UV and thermal cycling on that specific area.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Check mat and floor-coating compatibility before use. Backing materials, trapped dirt or moisture can affect some finishes. A mat is not a substitute for a sound, properly cured coating.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Dust &amp; Debris Control
@@ -305,25 +276,19 @@ export default function EpoxyMaintenancePost() {
             </p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
-              <Link href="/proflake" className="text-accent hover:underline font-medium">ProFlake</Link> (Epoxy + Polyaspartic)
+              <Link href="/proflake" className="text-accent hover:underline font-medium">ProFlake</Link> (Polyurea + Flake + Polyaspartic)
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              ProFlake systems are the easiest to maintain. The decorative flake layer hides small dust and dirt, and the polyaspartic topcoat is UV-stable so it won't yellow. Regular sweeping and mild cleaning is all you need. Avoid abrasive pads and harsh chemicals, but otherwise, this system is highly forgiving.
-            </p>
+            <p className="text-gray-600 leading-relaxed">ProFlake’s flake and clear topcoat still require appropriate care. Confirm the actual product instructions, including cleaners and equipment suitable for its texture.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               <Link href="/metallic-epoxy" className="text-accent hover:underline font-medium">Metallic Epoxy</Link>
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Metallic systems show every footprint and dust particle while they're new, but this settles down with use. The finish is sensitive to harsh chemicals and strong citrus degreasers, which can dull the metallic effect. Use only mild soap and water or an epoxy-safe, non-citrus cleaner. The topcoat determines durability—polyaspartic is best for Las Vegas's UV exposure.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Metallic floors need care appropriate to the selected clear coat and texture. Ask which cleaners and equipment are permitted; do not assume all metallic floors use the same topcoat.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               <Link href="/concrete-polishing" className="text-accent hover:underline font-medium">Polished Concrete</Link>
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Polished concrete is NOT a coating and requires different care. It's more porous than sealed epoxy and can stain from oil and chemicals. Sweep regularly, clean with pH-neutral cleaner, and avoid harsh chemicals. Periodic light repolishing (every 3–5 years by professionals) maintains the gloss and helps prevent staining. Polished concrete is slicker than textured epoxy, especially when wet.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Polished concrete is a mechanically finished concrete surface, not the same as a resin coating. Follow the densifier or guard manufacturer’s care instructions and assess wear before scheduling repolishing.</p>
 
             <h2 id="signs-of-wear" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Signs That Your Epoxy Needs Attention
@@ -335,65 +300,43 @@ export default function EpoxyMaintenancePost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Minor Scuffs &amp; Wear Marks
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Light surface scuffs are cosmetic and don't affect performance. They're natural with any floor. If appearance bothers you, some scuffs can be buffed out with fine polishing compound (for metallic systems especially) or left to blend as the floor ages.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Assess visible scuffs before applying a polishing compound or buffing the floor. A treatment that suits one finish can change the gloss or texture of another.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
-              Yellowing or Chalking (Clear Epoxy Only)
+              Yellowing or Chalking (Assess the Cause)
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              If you have a clear epoxy topcoat (not recommended for Las Vegas) and it's yellowing or developing a white chalky appearance, it's UV damage. This happens in 2–5 years in Las Vegas's intense sun. Unfortunately, there's no cure except recoating with a UV-stable topcoat. This is why polyaspartic topcoats are standard for Las Vegas installations.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Discoloration or a change in gloss needs assessment. It may have more than one cause; do not assume a particular age or symptom establishes UV damage or that recoating is always the remedy.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Delamination or Peeling Edges
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Peeling that starts at edges or seams indicates moisture infiltration or improper surface prep (from a previous bad installation). This requires professional attention—don't ignore it as it can spread. Contact your installer or a professional for assessment.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Loose, peeling or blistered areas need assessment before repair. Their location alone does not establish the cause; moisture, contamination, preparation and other factors may need investigation.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               High-Traffic Wear Areas
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              After 12–15 years, high-traffic areas near garage entries or workbenches may show visible wear—the topcoat may look thinner or duller in spots. This is normal and doesn't mean the floor is failing. It just means that area is ready for a topcoat refresh.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Inspect worn areas and determine whether cleaning, local repair or a compatible refresh coat is appropriate. Age alone does not establish that the finish needs replacement.</p>
 
             <h2 id="when-to-reseal-refresh" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               When to Reseal or Refresh the Topcoat
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Professional epoxy systems don't need resealing during their normal 15–20+ year lifespan. But in very high-traffic areas, a topcoat refresh can extend life and restore appearance.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Refresh requirements depend on condition, use and the installed system. There is no universal resealing interval or guaranteed life extension for every epoxy floor.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               When a Topcoat Refresh Makes Sense
             </h3>
-            <ul className="list-disc pl-6 text-gray-600 leading-relaxed space-y-2 my-4">
-              <li>After 10–15 years in a commercial or very high-traffic garage</li>
-              <li>If high-traffic zones (entry, workbench area) show visible wear and dulling</li>
-              <li>If you want to restore gloss and appearance after years of use</li>
-              <li>If you're planning to sell and want the floor looking showroom-fresh</li>
-            </ul>
+            <ul className="list-disc pl-6 text-gray-600 leading-relaxed space-y-2 my-4"><li>Have worn, dull, loose or damaged areas assessed.</li><li>Confirm that any refresh product is compatible with the existing finish.</li><li>Ask which repairs and preparation are needed.</li></ul>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               When a Refresh Is NOT Necessary
             </h3>
-            <ul className="list-disc pl-6 text-gray-600 leading-relaxed space-y-2 my-4">
-              <li>For residential garages under 10 years old (still in great condition)</li>
-              <li>If the floor shows no signs of delamination or peeling</li>
-              <li>If you're happy with the appearance (light scuffs and wear are cosmetic)</li>
-              <li>If the topcoat hasn't shown major degradation from UV or chemicals</li>
-            </ul>
+            <ul className="list-disc pl-6 text-gray-600 leading-relaxed space-y-2 my-4"><li>Do not schedule a recoat based on age alone.</li><li>Confirm the cause of peeling or discoloration before treatment.</li><li>Use the installed finish’s care instructions.</li></ul>
 
             <div className="rounded-xl bg-amber-50 border border-amber-200 p-6 sm:p-8 my-8">
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
                 Pro Tip: Protective Mats in High-Wear Areas
               </h3>
-              <p className="text-gray-600 leading-relaxed">
-                In garages where you park the same vehicle in the same spot daily, a rubber mat under the tires distributes thermal stress and UV exposure, which can extend the life of that area by years. Same logic for workbenches or storage areas with heavy, stationary equipment.
-              </p>
+              <p className="text-gray-600 leading-relaxed">Check mat and floor-coating compatibility before use. Backing materials, trapped dirt or moisture can affect some finishes. A mat is not a substitute for a sound, properly cured coating.</p>
             </div>
 
             <h2 id="frequently-asked-questions" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
@@ -401,32 +344,24 @@ export default function EpoxyMaintenancePost() {
             </h2>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
-              What's the best way to clean epoxy flooring?
+              What&apos;s the best way to clean epoxy flooring?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Sweep or dust-mop regularly to remove dirt and debris. Clean weekly with mild soap and warm water using a soft-bristled mop. Avoid harsh chemicals, acid-based cleaners, or abrasive pads. For stubborn stains, use a pH-neutral cleaner specifically designed for epoxy. Citrus-based degreasers should be avoided on metallic finishes.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Remove loose dirt and follow the installed finish’s cleaning instructions. Confirm the cleaner, dilution, equipment and stain-removal method before use. Do not assume every resin floor accepts the same products.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Can I use bleach or vinegar on epoxy floors?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              No. Bleach and vinegar are too acidic and can damage epoxy coatings over time, causing discoloration and weakening adhesion. Stick to mild dish soap and water or pH-neutral epoxy-safe cleaners only.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Bleach and vinegar have different chemistry. Use a cleaner only where the installed coating’s instructions permit it, at the stated dilution, and never mix products.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How often do I need to reseal an epoxy floor?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Professional epoxy systems don't require resealing during their normal 15–20+ year lifespan. If the topcoat shows visible wear after 10–15 years in high-traffic areas, applying a fresh topcoat can extend the floor's life another 5–10 years. Most residential garages won't need refreshing for well over a decade.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Inspect the floor’s condition and follow the selected product’s maintenance plan. Ask whether a compatible refresh coat is needed; no fixed lifespan or extra years of service are promised.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               What should I do about oil spills on epoxy?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Blot up fresh spills immediately with absorbent materials (paper towels, old rags). Don't let oil sit. Once absorbed, clean the area with mild soap and water or an epoxy-safe degreaser. Fresh epoxy resists oil stains, but letting spills sit can cause staining. In high-exposure areas under vehicles, use protective mats to prevent repeat staining.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Follow the installed coating’s cleanup instructions for oil and compatible cleaners. For repeated exposure, confirm any protective mat is approved for both the finish and intended use.</p>
 
             <div className="mt-14 rounded-2xl bg-gray-50 border border-gray-200 p-8 text-center">
               <h3 className="font-heading font-bold text-xl text-gray-900 mb-3">
@@ -457,13 +392,7 @@ export default function EpoxyMaintenancePost() {
               <div>
                 <h3 className="font-heading font-semibold text-lg text-gray-900">Julian Cruz</h3>
                 <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">
-                  Julian is the founder of ProShield Epoxy, a professional floor coating company
-                  serving the Las Vegas metro area. He specializes in residential garage coatings,
-                  commercial resinous flooring, and specialty systems including metallic epoxy,
-                  VubaStone, and concrete polishing. Every article is written from hands-on
-                  installation experience — not recycled from the internet.
-                </p>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian is the founder of ProShield Epoxy, serving the Las Vegas metro area with garage coatings, commercial flooring and specialty surface services.</p>
               </div>
             </div>
           </div>

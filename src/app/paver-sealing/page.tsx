@@ -16,7 +16,7 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Paver Sealing & Restoration Las Vegas | ProShield Epoxy",
   description:
-    "Professional paver sealing and restoration in Las Vegas — UV-stable, non-yellowing sealer for desert heat. Sealing, re-sanding, color enhancement.",
+    "Paver sealing and restoration in Las Vegas. Compare cleaning, existing sealer removal, joint care and finish options with a free on-site estimate.",
   keywords: [
     "paver sealing Las Vegas",
     "paver restoration Las Vegas",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     url: "https://proshieldepoxy.com/paver-sealing",
-    images: ["/images/paver-sealing/glossy-brick-paver-sealed.webp"],
+    images: ["/images/paver-sealing/paver-driveway-sealed.webp"],
   },
   alternates: {
     canonical: "/paver-sealing",
@@ -39,35 +39,35 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How long does paver sealing last?",
-    a: "Paver sealer requires periodic reapplication. With a professional-grade, UV-stable sealer and proper maintenance, expect 3–5 years of protection in the Las Vegas climate. High-traffic areas and pool decks may need resealing sooner. We offer maintenance plans to keep your pavers protected long-term.",
+    a: "How often resealing is needed depends on the selected product, paver condition, traffic, exposure and care. Inspect the surface periodically and confirm the maintenance guidance for the installed sealer.",
   },
   {
     q: "What's the difference between wet-look and natural-look sealer?",
-    a: "Wet-look (gloss) deepens and enriches paver color with a reflective finish — colors pop and surfaces look freshly wet. Natural-look (matte) provides invisible protection without changing the paver's appearance. Both use the same professional-grade formula for the same level of UV, stain, and water protection.",
+    a: "Wet-look and color-enhancing products can deepen color or add sheen. Natural-look products aim for less visible change. Formulas and protection vary; compare the selected products and approve a sample area.",
   },
   {
     q: "Can you fix pavers that were sealed badly by someone else?",
-    a: "Yes — paver restoration is one of our most common jobs. We strip the old sealer, deep-clean the surface, treat stains, re-sand the joints with polymeric sand, and apply a fresh coat. The result is like-new pavers without the cost of replacement.",
+    a: "Existing sealer and stains need inspection first. Removal, cleaning and resealing may be possible, but the scope depends on compatibility and surface condition. Some stains or damage may remain visible.",
   },
   {
     q: "Do I need polymeric sand?",
-    a: "We strongly recommend it. Polymeric sand fills joints and hardens when activated with water. It prevents weed growth, ant hills, and erosion — and keeps pavers from shifting. Skipping re-sanding is the most common reason sealed pavers develop problems.",
+    a: "Joint sand needs to suit the paver system and proposed treatment. The quote should identify whether re-sanding is needed and which joint material will be used. It does not replace repairs to a moving or poorly supported surface.",
   },
   {
     q: "How long does the process take?",
-    a: "Most residential paver sealing jobs finish in 1–2 days. Restoration that requires stripping old sealer may take 2–3 days. We recommend staying off the sealed surface for 24 hours after application.",
+    a: "The schedule depends on area, cleaning, existing sealer removal, drying conditions and the selected product. Confirm the project schedule and separate walking and vehicle return times in writing.",
   },
   {
     q: "Why not use sealer from the hardware store?",
-    a: "Retail sealers are typically water-based acrylics that yellow within 6–12 months in Las Vegas heat and UV. They peel, haze, and require frequent reapplication. Professional-grade sealers are engineered for UV stability and extreme heat — they outperform consumer products significantly.",
+    a: "Compare compatibility, intended use, preparation, UV information, slip considerations and care requirements for the actual products. Where a product is sold does not establish how it will perform on your pavers.",
   },
   {
     q: "Is paver sealing the same as epoxy coating?",
-    a: "No. Paver sealing is hardscape maintenance — a protective sealer applied to existing pavers. It's not a resinous coating system. Sealer enhances and protects your current surface — it doesn't create a new one. Different product, different purpose entirely.",
+    a: "Paver sealing treats an existing paver surface. It differs from a layered decorative epoxy floor system. Confirm the selected sealer’s purpose and compatibility rather than assuming it has the same properties as a garage coating.",
   },
   {
     q: "Do you offer maintenance plans?",
-    a: "Yes. We offer annual maintenance that includes inspection, cleaning, and discounted resealing when needed. A maintenance plan extends the life of your sealer and keeps your pavers looking their best year-round.",
+    a: "Ask about current inspection, cleaning and resealing options when requesting an estimate. The written quote should identify what is included and any future maintenance work.",
   },
 ]
 
@@ -98,9 +98,9 @@ export default function PaverSealingPage() {
         badge="Paver Sealing & Restoration"
         title="Paver Sealing & Restoration"
         highlight="Las Vegas"
-        subtitle="Professional sealing, restoration, and joint stabilization — UV-stable, non-yellowing, and engineered for Las Vegas desert heat."
+        subtitle="Paver cleaning, restoration, joint care and sealing options for Las Vegas homes and businesses."
         backgroundImage="/images/paver-sealing/paver-driveway-sealed.webp"
-        backgroundAlt="Professional sealed paver driveway"
+        backgroundAlt="Paver walkway finish example"
       />
 
       <PaverSealingStats />

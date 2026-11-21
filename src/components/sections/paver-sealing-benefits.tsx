@@ -10,25 +10,25 @@ const benefits = [
     icon: Sun,
     title: "UV & Fade Protection",
     description:
-      "Professional-grade sealer blocks UV rays that bleach and dull paver color — critical in Las Vegas where surfaces take 300+ days of direct sun per year. Without sealer, pavers fade noticeably within 1–2 seasons.",
+      "Compare the selected sealer’s published UV and outdoor-use information. Sun exposure, the paver material and maintenance affect how the surface looks over time.",
   },
   {
     icon: ShieldCheck,
     title: "Stain & Spill Resistance",
     description:
-      "Sealed pavers repel oil, grease, rust, and food stains on contact. Spills wipe clean instead of soaking into the stone. Especially important for driveways and outdoor kitchens where staining is constant.",
+      "A compatible sealer may reduce absorption and make some spills easier to clean. Remove spills promptly and follow the selected product’s care instructions; sealing does not make pavers stain-proof.",
   },
   {
     icon: Bug,
-    title: "Weed & Ant Prevention",
+    title: "Joint Sand Care",
     description:
-      "Sealer hardens joint sand and locks it in place, eliminating the gaps where weeds sprout and ants build colonies between pavers. No more pulling weeds every weekend or dealing with sand washout after rain.",
+      "Where suitable, joint treatment can help retain sand and reduce gaps. Sealing does not guarantee that weeds, ants, erosion or paver movement will stop.",
   },
   {
     icon: Paintbrush,
-    title: "Color Restoration",
+    title: "Finish Options",
     description:
-      "A wet-look sealer deepens and enriches faded paver color back to its original richness — like the difference between a dry and wet river stone. Or choose a natural-look sealer for invisible protection without changing appearance.",
+      "Wet-look and color-enhancing products can deepen the appearance of some pavers. Natural-look products aim for less visual change. Confirm the selected finish on a sample area first.",
   },
 ]
 
@@ -47,12 +47,11 @@ export function PaverSealingBenefits() {
                 Why Seal Your Pavers
               </span>
               <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-                Protection That Pays<br className="hidden sm:block" /> for Itself
+                Sealing Options<br className="hidden sm:block" /> for Your Pavers
               </h2>
               <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-                Unsealed pavers fade, stain, and shift within a couple of Las Vegas seasons.
-                Professional sealing locks in color, hardens joints, and creates a barrier
-                against UV, oil, and water — extending the life of your investment by years.
+                The right treatment depends on your pavers, existing sealer, joint condition and exposure.
+                Compare the preparation, finish and care requirements in your written quote.
               </p>
             </div>
 
@@ -107,8 +106,8 @@ export function PaverSealingBenefits() {
           {/* Image side */}
           <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/paver-sealing/sealed-paver-driveway.webp"
-              alt="Glossy wet-look sealed brick paver driveway"
+              src="/images/paver-sealing/paver-walkway-sealed.webp"
+              alt="Paver walkway finish example"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

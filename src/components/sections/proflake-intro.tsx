@@ -4,10 +4,10 @@ import { useState, useRef, useCallback, useEffect } from "react"
 import { Check, GripVertical } from "lucide-react"
 
 const highlights = [
-  "Polyaspartic topcoat — the only residential system that features it",
-  "UV-stable, chemical resistant, and hot tire resistant",
-  "150+ Torginol color blends for unmatched customization",
-  "Walk-on in 24 hours — drive-on in 48 hours",
+  "Polyurea base, decorative flake and polyaspartic topcoat",
+  "Product-specific UV, chemical and vehicle-use requirements",
+  "150+ Torginol color blend options",
+  "24h walk / 48h park, subject to weather and curing conditions",
 ]
 
 export function ProFlakeIntro() {
@@ -124,7 +124,7 @@ export function ProFlakeIntro() {
               What Is ProFlake?
             </h2>
             <p className="mt-4 sm:mt-5 text-gray-600 text-base sm:text-lg leading-relaxed">
-              ProFlake is a premium, multi-layer polyurea coating system that outperforms traditional epoxy in every way. Built with a polyurea basecoat and polyaspartic topcoat, ProFlake delivers superior UV stability, chemical resistance, and hot tire resistance — everything you need in a garage floor.
+              ProFlake combines a polyurea base, decorative flake and a polyaspartic topcoat over prepared concrete. Choose the blend and texture for your garage, and confirm the product requirements and written warranty in the project quote.
             </p>
 
             {/* Highlight checklist */}

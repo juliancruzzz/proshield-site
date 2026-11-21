@@ -9,28 +9,28 @@ const steps = [
     number: "1",
     title: "Wash & Prep",
     description:
-      "Commercial-grade pressure washing strips dirt, mildew, oil, and debris down to bare paver. Old sealer gets chemically stripped so the new coat bonds properly.",
+      "Inspect existing sealer, contamination and surface condition. Select compatible cleaning and removal methods, then allow the surface to dry as required by the proposed product.",
     icon: <Droplets className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "2",
     title: "Joint Stabilization",
     description:
-      "Polymeric sand fills joints and locks pavers in place. Once water-activated, it hardens — blocking weeds, ants, and erosion. Skipping this step is the #1 reason sealed pavers fail.",
+      "Inspect the joints and identify suitable re-sanding where needed. Joint treatment does not replace repair of paver settlement or a poorly supported base.",
     icon: <Layers className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "3",
     title: "Stain Treatment",
     description:
-      "Targeted treatment of rust, oil, tire marks, and organic discoloration before sealing. Stains trapped under sealer become permanent — treatment first is non-negotiable.",
+      "Assess stains before sealing and choose compatible treatment where suitable. Some discoloration can remain; agree on the expected result before application.",
     icon: <Eraser className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "4",
     title: "Seal & Protect",
     description:
-      "Professional-grade, UV-stable, non-yellowing sealer applied in controlled, even coats. Wet-look gloss or natural matte — same formula, same protection, built for desert heat.",
+      "Apply the selected compatible sealer according to its instructions. Confirm finish, application conditions and walking and vehicle return times for that product.",
     icon: <Paintbrush className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
 ]
@@ -52,7 +52,7 @@ export function PaverSealingProcess() {
             Every Step Matters
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Cutting corners on prep is the #1 reason sealed pavers fail.
+            Preparation and product compatibility are part of the quoted scope.
           </p>
         </div>
 

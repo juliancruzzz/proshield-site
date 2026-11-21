@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "fetch-reviews": "node scripts/fetch-google-reviews.mjs",
-    "prebuild": "node scripts/fetch-google-reviews.mjs",
+    "prebuild": "node scripts/check-known-image-proof.mjs && node scripts/fetch-google-reviews.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:images": "node scripts/check-known-image-proof.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.8",

@@ -54,10 +54,10 @@ export function ProFlakeGallery() {
           <div className="flex items-end justify-between gap-4 mb-10 sm:mb-12">
             <div>
               <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-                Our Work
+                Finish Ideas
               </span>
               <h2 className="mt-2 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-                ProFlake In Action
+                ProFlake Finish Examples
               </h2>
             </div>
             <Link

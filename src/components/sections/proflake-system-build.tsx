@@ -8,28 +8,28 @@ const steps = [
     number: "1",
     title: "Prep & Grinding",
     description:
-      "We diamond-grind the concrete substrate to create an ideal bonding profile. Cracks and imperfections are patched. Moisture is tested. This is the most critical step — a properly prepared surface is what separates floors that last from floors that fail.",
+      "Assess the concrete, moisture, contamination and existing coatings before selecting a system. Diamond grinding is part of ProShield’s preparation process; the required profile and repairs depend on the proposed products and site.",
     icon: <Pickaxe className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "2",
     title: "Polyurea Base Coat",
     description:
-      "A high-build polyurea primer and body coat are applied to the prepped surface. This two-part layer seals the concrete, creates a moisture barrier, and establishes the base color and structural foundation for the entire system.",
+      "The specified polyurea base supports the decorative flake layer. Moisture treatment is assessed separately; a base coat is not automatically a moisture vapor barrier.",
     icon: <PaintBucket className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "3",
     title: "Flake Broadcast",
     description:
-      "While the base coat is still wet, decorative Torginol polymer chips are broadcast across the entire surface. This creates texture, visual depth, and adds slip resistance. Choose from 150+ color blends or create a custom mix.",
+      "Decorative Torginol flake is broadcast into the base. Confirm the selected blend, chip size and finish in the project scope.",
     icon: <Sparkles className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "4",
     title: "Polyaspartic Topcoat",
     description:
-      "The final layer — a UV-stable, fast-curing polyaspartic clear coat that locks everything in. This is the premium finish that sets ProFlake apart: chemical resistant, hot tire resistant, and built to maintain its gloss for years.",
+      "The specified polyaspartic clear coat covers the decorative finish. Follow its coverage, texture and curing requirements, and confirm the written care plan.",
     icon: <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
 ]

@@ -9,35 +9,35 @@ const steps = [
     number: "1",
     title: "Design Consultation",
     description:
-      "We visit your space, discuss your vision, and present metallic color samples and finish options tailored to your architecture and lighting.",
+      "Assess the space, color direction, reference samples and clear-coat options for the intended use.",
     icon: <MessageSquare className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "2",
     title: "Surface Preparation",
     description:
-      "Diamond grinding and moisture-barrier priming ensure a flawless bond. This is the foundation of every lasting metallic floor.",
+      "Assess the concrete, moisture, contamination and existing coatings before selecting a system. Diamond grinding is part of ProShield’s preparation process; the required profile and repairs depend on the proposed products and site.",
     icon: <Pickaxe className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "3",
     title: "Metallic Application",
     description:
-      "Our specialists hand-apply and manipulate metallic pigments to create the flowing, three-dimensional depth unique to your floor.",
+      "Apply the specified base and metallic layers to create flowing color. Pattern and movement vary from samples.",
     icon: <Wand2 className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "4",
     title: "Protective Topcoat",
     description:
-      "A premium polyaspartic or polyurethane clear coat locks in the finish while providing UV stability, scratch resistance, and lasting protection.",
+      "Use the selected protective clear coat and texture specified for the project. Follow its application and cure requirements.",
     icon: <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "5",
     title: "Final Walkthrough",
     description:
-      "We walk you through your finished floor, care instructions, and warranty details. Your space is ready.",
+      "Review the finish, written care and warranty terms, and the return-to-use instructions before traffic resumes.",
     icon: <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
 ]

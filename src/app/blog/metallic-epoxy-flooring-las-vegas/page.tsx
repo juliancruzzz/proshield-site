@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title:
     "Metallic Epoxy Flooring in Las Vegas | Cost, Process & What to Expect",
   description:
-    "What does metallic epoxy flooring really cost in Las Vegas? We break down real pricing ($10–$12/sq ft), our installation process, finish options, and what to expect — from a local crew that installs them every week.",
+    "Metallic epoxy flooring in Las Vegas: compare finishes, concrete preparation, project cost factors and care before requesting a quote.",
   alternates: {
     canonical: "/blog/metallic-epoxy-flooring-las-vegas",
   },
@@ -23,10 +23,10 @@ export const metadata: Metadata = {
 export default function MetallicEpoxyFlooringLasVegasPost() {
   const schema = blogPostingSchema({
     title: "Metallic Epoxy Flooring in Las Vegas: What It Costs, How It's Done & What to Expect",
-    description: "What does metallic epoxy flooring really cost in Las Vegas? We break down real pricing, our installation process, finish options, and what to expect — from a local crew that installs them every week.",
+    description: "Metallic epoxy flooring in Las Vegas: compare finishes, concrete preparation, project cost factors and care before requesting a quote.",
     slug: "metallic-epoxy-flooring-las-vegas",
     datePublished: "2026-05-03",
-    dateModified: "2026-05-03",
+    dateModified: "2026-11-21",
     image: "https://proshieldepoxy.com/images/metallic-hero-poster.jpg",
   })
 
@@ -39,23 +39,23 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
         "name": "Is metallic epoxy slippery?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The high-gloss finish can be slick when wet, which is why we offer a commercial-grade urethane topcoat with aluminum oxide for garages and high-traffic areas. It adds real traction without sacrificing the metallic look."
+          "text": "A smooth finish can be slippery when wet. Texture options must be selected for the expected use and cleaning conditions; no coating eliminates the risk of slipping."
         }
       },
       {
         "@type": "Question",
-        "name": "Can I choose my colors for metallic epoxy?",
+        "name": "Can I choose my colors?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Absolutely. We carry a full range of metallic pigments — silvers, charcoals, coppers, blues, golds, and more. We can also do custom blends to match your space. We'll bring samples to your estimate so you can see them on concrete, not just on a screen."
+          "text": "Color and finish options are discussed during the estimate. Samples and reference images show a direction; the final movement and pattern will vary."
         }
       },
       {
         "@type": "Question",
-        "name": "Will metallic epoxy yellow over time?",
+        "name": "Will it yellow over time?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Not with our system. We use UV-stable clear coats specifically to prevent yellowing, which is a real problem with cheaper epoxy products. Your floor will look the same years from now as it does the day we finish."
+          "text": "Light exposure can affect coating appearance. Compare the selected base and topcoat’s published UV data and intended use; a UV-resistant topcoat is not a promise that the entire floor will never change color."
         }
       },
       {
@@ -63,7 +63,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
         "name": "How do I maintain a metallic epoxy floor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Dust mop or sweep regularly, and damp mop as needed. That's it. No waxing, no sealing, no special cleaners. The surface is non-porous so spills wipe right up — oil, chemicals, whatever. It's one of the lowest-maintenance floors you can own."
+          "text": "Remove loose dirt and follow the installed finish’s cleaning instructions. Confirm the cleaner, dilution, equipment and stain-removal method before use. Do not assume every resin floor accepts the same products."
         }
       },
       {
@@ -71,7 +71,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
         "name": "How much does it cost to epoxy a 2-car garage in Las Vegas?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For a standard 2-car garage (around 400–500 square feet), metallic epoxy runs roughly $4,000 to $6,000 installed. That includes concrete prep, the full metallic epoxy system, and your choice of topcoat. The final price depends on the condition of your slab and any repairs needed."
+          "text": "A project price depends on measured area, existing coatings, concrete repairs, moisture treatment and the selected finish. Compare written quotes for the same preparation and coating scope."
         }
       },
       {
@@ -79,15 +79,15 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
         "name": "Can you coat over an existing epoxy floor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "It depends on the condition. If the existing coating is still bonded and in decent shape, we can prep over it. If it's peeling or failing, it needs to come off first. We'll tell you exactly what's needed at the estimate."
+          "text": "Sound existing coatings may be candidates for preparation and recoating only where compatible with the proposed system. Loose, contaminated or incompatible material may need removal."
         }
       },
       {
         "@type": "Question",
-        "name": "How soon can I schedule a metallic epoxy install?",
+        "name": "How soon can I schedule an install?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We typically book 2–3 weeks out depending on the season. Once your estimate is done and you're ready to move forward, we'll lock in your dates and handle everything from there — including material ordering and scheduling around your timeline."
+          "text": "Availability changes with the project schedule. Confirm current estimate and installation dates directly rather than relying on a fixed booking window."
         }
       }
     ]
@@ -155,7 +155,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
           </div>
           <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
-              <Calendar className="h-3.5 w-3.5" /> May 3, 2026
+              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-21">November 21, 2026</time>
             </span>
             <span className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" /> 10 min read
@@ -167,18 +167,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
       <article className="section-white pb-20 lg:pb-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-gray max-w-none">
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Metallic epoxy flooring takes a plain concrete slab and turns it into
-              something that actually looks high-end &mdash; think deep, rich color
-              with a three-dimensional effect that shifts depending on how the light
-              hits it. Every floor comes out different, and it&apos;s built to hold
-              up, not just look good. But before you pull the trigger, you probably
-              want to know what it actually costs, how the installation works, and
-              whether it&apos;s the right fit for your space. We&apos;re ProShield
-              Epoxy, and we install metallic epoxy floors across the Las Vegas
-              valley every week &mdash; here&apos;s everything we tell our
-              customers before they book.
-            </p>
+            <p className="text-lg text-gray-600 leading-relaxed">Metallic epoxy creates flowing color and an appearance that changes with lighting. ProShield offers metallic finishes for suitable residential and commercial concrete in the Las Vegas area. Compare samples, preparation, clear-coat options and a written project quote before choosing.</p>
 
             {/* Table of Contents */}
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
@@ -201,16 +190,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
             <h2 id="what-is-metallic-epoxy" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               What Is Metallic Epoxy Flooring?
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Metallic epoxy is a multi-layer floor coating system applied directly
-              over concrete. It uses metallic pigments suspended in a high-build
-              epoxy resin to create a three-dimensional finish across the surface.
-              It&apos;s not a topical coating that sits on the concrete &mdash; it
-              bonds to it, which is why it doesn&apos;t peel, crack, or separate
-              the way tiles or stick-on flooring can. The system goes down in
-              stages: surface prep, a moisture vapor barrier base coat, the metallic
-              epoxy layer, and a protective clear coat on top.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Metallic flooring is a layered coating over prepared concrete: primer, pigmented base, metallic layer and protective clear coat. Moisture treatment and the selected products must suit the slab. Decorative coatings do not repair structural damage or guarantee that cracks stay hidden.</p>
 
             {/* What Does It Look Like */}
             <h2 id="what-does-it-look-like" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
@@ -238,8 +218,8 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
               <div className="rounded-xl overflow-hidden">
                 <Image
-                  src="/images/blog/metallic/metallic-showroom-porsche.jpg"
-                  alt="Metallic epoxy showroom floor installed by ProShield Epoxy in Las Vegas with deep silver and charcoal three-dimensional pattern reflecting neon lights and Porsche wall art"
+                  src="/images/metallic/metallic-epoxy-chopshop-porsche.webp"
+                  alt="Real metallic floor application in the ProShield showroom project"
                   width={600}
                   height={800}
                   className="w-full h-72 object-cover"
@@ -248,7 +228,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
               <div className="rounded-xl overflow-hidden">
                 <Image
                   src="/images/blog/metallic/metallic-showroom-neon.jpg"
-                  alt="Metallic epoxy floor in Las Vegas commercial showroom showing swirl pattern and light reflections with neon signage — installed by ProShield Epoxy"
+                  alt="Real metallic floor in the ProShield showroom project with neon signage"
                   width={600}
                   height={800}
                   className="w-full h-72 object-cover"
@@ -256,8 +236,8 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
               </div>
               <div className="rounded-xl overflow-hidden">
                 <Image
-                  src="/images/blog/metallic/metallic-kitchen-silver.jpg"
-                  alt="Metallic epoxy kitchen floor in Las Vegas home with silver swirl pattern, white cabinets and stainless appliances — installed by ProShield Epoxy"
+                  src="/images/metallic/metallic-epoxy-silver-kitchen-real.webp"
+                  alt="Real metallic floor photograph from a ProShield kitchen project"
                   width={600}
                   height={800}
                   className="w-full h-72 object-cover"
@@ -265,8 +245,8 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
               </div>
               <div className="rounded-xl overflow-hidden">
                 <Image
-                  src="/images/blog/metallic/metallic-hallway-silver.jpg"
-                  alt="Metallic epoxy hallway floor showing depth and natural light reflection in a Las Vegas residential install by ProShield Epoxy"
+                  src="/images/metallic/metallic-epoxy-silver-hallway.webp"
+                  alt="Real metallic floor photograph from a ProShield hallway project"
                   width={600}
                   height={800}
                   className="w-full h-72 object-cover"
@@ -278,47 +258,14 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
             <h2 id="cost-in-las-vegas" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               How Much Does Metallic Epoxy Cost in Las Vegas?
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              We&apos;re not going to make you fill out a form just to get a
-              ballpark. For most residential and commercial spaces in the Las Vegas
-              area, metallic epoxy runs between{" "}
-              <strong>$10 and $12 per square foot</strong>, installed. That includes
-              surface prep, the full metallic epoxy system, and your choice of
-              topcoat.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              For a standard 2-car garage around 400&ndash;500 square feet,
-              you&apos;re looking at roughly <strong>$4,000 to $6,000</strong>{" "}
-              depending on the condition of the concrete and any repairs needed
-              before we coat. Larger spaces &mdash; showrooms, commercial floors,
-              full basements &mdash; typically come in on the lower end per square
-              foot since there&apos;s more area to cover.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              What affects the final price? A few things: square footage, how much
-              concrete repair is needed (cracks, pitting, moisture issues), whether
-              it&apos;s an interior living space vs a garage, and which topcoat you
-              go with. Every job gets a free on-site estimate where we look at your
-              actual slab and give you a flat number &mdash; no surprises.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              If you&apos;ve been quoted $3&ndash;5 per square foot for
-              &ldquo;metallic epoxy&rdquo; somewhere else, ask what system
-              they&apos;re using. At that price point, you&apos;re usually getting a
-              DIY-grade kit or a single coat with no real prep work. The difference
-              shows up in about six months.
-            </p>
+            <p className="text-gray-600 leading-relaxed">A project price depends on measured area, existing coatings, concrete repairs, moisture treatment and the selected finish. Compare written quotes for the same preparation and coating scope.</p>
+            <p className="text-gray-600 leading-relaxed">Garage size alone does not establish the price. Removal, repairs, edges, moisture treatment and access can change the scope even for spaces with similar floor area.</p>
+            <p className="text-gray-600 leading-relaxed">Ask which preparation, repairs and topcoat are included and how additional work would be approved and priced.</p>
+            <p className="text-gray-600 leading-relaxed">A low or high price alone does not establish quality. Compare the named products, preparation, layer build, exclusions and warranty for the same work.</p>
 
             {/* Mid-post CTA */}
             <div className="rounded-xl border-l-4 border-accent bg-accent/5 p-5 sm:p-6 my-8">
-              <p className="text-gray-700 font-medium">
-                Want an exact number for your space?{" "}
-                <Link href="/contact" className="text-accent hover:underline font-semibold">
-                  Get a free estimate
-                </Link>{" "}
-                &mdash; we&apos;ll come out, look at your slab, and give you a flat
-                price on the spot.
-              </p>
+              <p className="text-gray-700 font-medium">For a price for your space, <Link href="/contact" className="text-accent hover:underline font-medium">request a free estimate</Link>.</p>
             </div>
 
             {/* Before / After */}
@@ -329,7 +276,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
                   <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Before</p>
                   <Image
                     src="/images/blog/metallic/metallic-before-showroom-1.jpg"
-                    alt="Raw concrete floor before metallic epoxy installation by ProShield Epoxy in Las Vegas commercial showroom"
+                    alt="Showroom concrete floor before metallic epoxy installation"
                     width={600}
                     height={800}
                     className="w-full h-64 object-cover rounded-xl"
@@ -339,7 +286,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
                   <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Before</p>
                   <Image
                     src="/images/blog/metallic/metallic-before-showroom-2.jpg"
-                    alt="Commercial showroom concrete floor with Porsche mural before metallic epoxy coating by ProShield Epoxy in Las Vegas"
+                    alt="Same showroom with Porsche mural before metallic epoxy installation"
                     width={600}
                     height={800}
                     className="w-full h-64 object-cover rounded-xl"
@@ -350,8 +297,8 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
                 <div className="rounded-xl overflow-hidden">
                   <p className="text-xs font-semibold text-accent uppercase tracking-wide mb-2">After</p>
                   <Image
-                    src="/images/blog/metallic/metallic-showroom-porsche.jpg"
-                    alt="Completed metallic epoxy floor in Las Vegas commercial showroom with Porsche mural — installed by ProShield Epoxy"
+                    src="/images/metallic/metallic-epoxy-chopshop-porsche.webp"
+                    alt="Real metallic floor after application in the same showroom"
                     width={600}
                     height={800}
                     className="w-full h-64 object-cover rounded-xl"
@@ -361,7 +308,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
                   <p className="text-xs font-semibold text-accent uppercase tracking-wide mb-2">After</p>
                   <Image
                     src="/images/blog/metallic/metallic-showroom-neon.jpg"
-                    alt="Completed metallic epoxy floor in Las Vegas commercial showroom with neon signage reflecting off surface — installed by ProShield Epoxy"
+                    alt="Real second view of metallic flooring in the same ProShield showroom"
                     width={600}
                     height={800}
                     className="w-full h-64 object-cover rounded-xl"
@@ -374,44 +321,11 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
             <h2 id="installation-process" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               How We Install Metallic Epoxy &mdash; The Actual Process
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Every metallic floor starts with prep. We grind the concrete down with
-              diamond grinders to open up the pores and give the coating something
-              to grab onto. If there are cracks, pitting, or old coatings, we take
-              care of that first. Skipping this step is the number one reason epoxy
-              floors fail &mdash; and it&apos;s where a lot of cheaper companies cut
-              corners.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Once the slab is prepped and clean, we lay down an MVB base coat at
-              around 90 square feet per gallon. This is the foundation &mdash; it
-              seals the concrete, blocks moisture vapor from coming up through the
-              slab, and gives the metallic layer a solid base to bond to.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Then comes the metallic coat, and this is where it all comes together.
-              We apply it heavy &mdash; around 32 square feet per gallon &mdash;
-              because that thickness is what allows the metallic pigments to move and
-              create that depth. We spread it with T-bars, and then we let it do its
-              thing. The pigments settle, shift, and blend on their own as the epoxy
-              levels out. No blowers, no gimmicks. The natural movement is what
-              creates those one-of-a-kind patterns you see in our photos. Every floor
-              turns out different because you can&apos;t force the material &mdash;
-              you work with it.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Once the metallic layer cures, we come back with a UV-stable clear
-              coat &mdash; either a high-gloss finish or a commercial-grade urethane
-              with aluminum oxide, depending on how the space will be used. The clear
-              coat is what protects everything underneath and determines the final
-              look and feel of the floor.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Start to finish, most jobs take <strong>3 to 5 days</strong> depending
-              on the size of the space and how much concrete repair is needed
-              upfront. After that, you can walk on it in about 24 hours and drive on
-              it after 72 hours.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Assess the concrete, moisture, contamination and existing coatings before selecting a system. Diamond grinding is part of ProShield’s preparation process; the required profile and repairs depend on the proposed products and site.</p>
+            <p className="text-gray-600 leading-relaxed">Moisture assessment helps determine the appropriate primer or moisture-treatment system. Application rate and limits must follow the selected product, not one coverage figure for every slab.</p>
+            <p className="text-gray-600 leading-relaxed">Metallic pigments are worked into the resin layer to create movement and depth. Pattern and coverage depend on the product and application; reference photos do not establish an exact match.</p>
+            <p className="text-gray-600 leading-relaxed">The protective clear coat is selected for the intended traffic, appearance and cleaning needs. Confirm the product, finish and any texture additive in the quote.</p>
+            <p className="text-gray-600 leading-relaxed">Application time and return-to-use time are different. Preparation, repairs, product selection and site conditions affect the schedule. Confirm when walking, furniture and vehicles are permitted before using the floor.</p>
 
             {/* Choosing Your Finish */}
             <h2 id="choosing-your-finish" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
@@ -429,17 +343,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
               the floor is the focal point: entertainment rooms, retail showrooms,
               man caves, or anywhere you want that &ldquo;wow&rdquo; reaction.
             </p>
-            <p className="text-gray-600 leading-relaxed">
-              <strong>Commercial-grade urethane with aluminum oxide</strong> is
-              built for spaces that take real abuse. It adds traction and scratch
-              resistance without killing the metallic look &mdash; you still get the
-              depth and movement, just with a more satin finish instead of a mirror.
-              This is what we recommend for garages, commercial spaces, and
-              high-traffic areas. It&apos;s also one of the only topcoats that holds
-              up to daily wheelchair use &mdash; we&apos;ve had clients specifically
-              choose this finish for that reason, and it performs where other
-              coatings wear through.
-            </p>
+            <p className="text-gray-600 leading-relaxed">A high-wear urethane is one topcoat option for suitable spaces. Compare the actual product’s abrasion, chemical and traction information for the expected use. Confirm the finish for the actual rolling loads and cleaning conditions.</p>
             <p className="text-gray-600 leading-relaxed">
               The right choice comes down to how you use the space. We&apos;ll walk
               you through it during your estimate so you&apos;re not guessing.
@@ -448,20 +352,20 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
             {/* Gloss vs Urethane comparison photos */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
               <div className="rounded-xl overflow-hidden">
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">High-Gloss Finish</p>
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Reflected Finish Example</p>
                 <Image
                   src="/images/blog/metallic/metallic-gloss-finish.jpg"
-                  alt="High-gloss metallic epoxy floor with mirror-like finish reflecting light — installed by ProShield Epoxy in Las Vegas"
+                  alt="Finish example showing reflected light on a metallic floor"
                   width={600}
                   height={800}
                   className="w-full h-72 object-cover rounded-xl"
                 />
               </div>
               <div className="rounded-xl overflow-hidden">
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Commercial-Grade Urethane</p>
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Texture Example</p>
                 <Image
                   src="/images/blog/metallic/metallic-urethane-finish.jpg"
-                  alt="Commercial-grade urethane topcoat on metallic epoxy floor showing satin texture for traction — installed by ProShield Epoxy in Las Vegas"
+                  alt="Finish example showing metallic floor texture; topcoat not established by the photograph"
                   width={600}
                   height={800}
                   className="w-full h-72 object-cover rounded-xl"
@@ -473,38 +377,10 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
             <h2 id="where-it-works-best" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Where Does Metallic Epoxy Work Best?
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Metallic epoxy isn&apos;t just for garages &mdash; not even close.
-              Here&apos;s where we install it most often:
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              <strong>Residential garages</strong> are the most common request.
-              Homeowners who want more than a basic flake floor and are willing to
-              invest in something that transforms the space. If your garage doubles
-              as a hangout spot, gym, or workshop, metallic is the upgrade that
-              makes it feel like a real room.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              <strong>Throughout the home &mdash; kitchens, living rooms, hallways,
-              and entryways.</strong> This is where metallic epoxy is starting to
-              replace traditional flooring entirely. It&apos;s seamless, easy to
-              clean, and holds up better than tile or hardwood in the Las Vegas
-              climate. No grout lines trapping dirt, no warping from temperature
-              swings, no cracking. Compared to LVP or laminate, there&apos;s no
-              seams to peel up and no wear layer to scratch through.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              One of our customers had gone through two different flooring types in
-              her home that couldn&apos;t hold up to daily wheelchair use &mdash;
-              the wheels would chew through the surface and she was constantly
-              dealing with scratches, peeling, and slipping. We installed metallic
-              epoxy with the commercial-grade urethane topcoat throughout her main
-              living areas. The texture gives her traction so the chair doesn&apos;t
-              slide, and the surface holds up to the constant rolling without
-              wearing through. She told us it was the first floor she didn&apos;t
-              have to worry about destroying. That&apos;s the kind of job that
-              reminds you why the right floor matters.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Metallic finishes can be considered for these spaces after the concrete and intended use are assessed:</p>
+            <p className="text-gray-600 leading-relaxed">Garages: consider vehicle traffic, equipment, moisture and the texture needed for your use.</p>
+            <p className="text-gray-600 leading-relaxed">Interior rooms: consider color movement, lighting, cleaning, joints and thresholds. Existing concrete condition can remain relevant to the finished appearance.</p>
+            <p className="text-gray-600 leading-relaxed">For mobility equipment or frequent wheel traffic, discuss the actual loads, turning areas, traction needs and cleaning routine before choosing the topcoat. Ask for applicable product information and a sample.</p>
             <p className="text-gray-600 leading-relaxed">
               <strong>Storefronts and commercial showrooms</strong> are where
               metallic really shines. Car dealerships, barbershops, boutiques,
@@ -512,60 +388,18 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
               floor becomes part of the brand. Customers walk in and notice the
               floor before they notice anything else.
             </p>
-            <p className="text-gray-600 leading-relaxed">
-              The only spaces we&apos;d steer you away from are outdoor areas with
-              direct sun exposure all day or industrial floors that see forklift
-              traffic daily. For everything else, there&apos;s a metallic option
-              that fits.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Outdoor exposure, forklifts, heavy impacts and chemical use need a system-specific assessment. A decorative metallic finish is not automatically suitable for every concrete floor.</p>
 
             {/* What Can Go Wrong */}
             <h2 id="what-can-go-wrong" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               What Can Go Wrong With Metallic Epoxy (And How to Avoid It)
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              We&apos;re going to be straight with you &mdash; metallic epoxy is not
-              a DIY project, and it&apos;s not something you want to trust to the
-              cheapest bid. Here&apos;s what we see go wrong and why:
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              <strong>Bad prep work.</strong> This is the biggest one. If the
-              concrete isn&apos;t ground properly, the coating won&apos;t bond.
-              It&apos;ll peel, bubble, or flake off within a year. We see this all
-              the time on jobs where someone hired a company that skipped the grind
-              or just acid-etched and called it good. Grinding with diamonds is the
-              only way to get a proper mechanical bond.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              <strong>Moisture issues.</strong> Las Vegas has dry air, but concrete
-              slabs can still hold moisture &mdash; especially in newer construction
-              or homes with high water tables. If you don&apos;t test for moisture
-              and address it before coating, the epoxy will delaminate from
-              underneath. That&apos;s what the MVB base coat is for, but some
-              installers skip it to save time and material cost.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              <strong>Not accounting for Vegas heat.</strong> Summer garage slab
-              temperatures in Las Vegas can hit 130&deg;F+. That kind of heat
-              affects cure times, pot life, and how the metallic pigments move. If
-              an installer doesn&apos;t adjust their process for the climate, you
-              end up with uneven patterns, hot spots in the finish, or adhesion
-              problems. We work in this heat year-round &mdash; our process and
-              timing are built around it.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              <strong>Cheap materials.</strong> Not all epoxy is the same. Big box
-              store kits and bargain coatings use lower-quality resins that yellow,
-              chip, and wear out fast. Professional-grade metallic systems cost more
-              because they perform. If someone&apos;s quoting metallic at
-              $4&ndash;5 per square foot, ask yourself what they&apos;re cutting.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              <strong>Rushing the job.</strong> Each layer needs proper cure time
-              before the next one goes down. Rushing leads to adhesion failure,
-              trapped solvents, and a floor that looks good for a month and then
-              falls apart. Our 3&ndash;5 day timeline exists for a reason.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Before choosing an installer, compare the preparation, product requirements and written project scope:</p>
+            <p className="text-gray-600 leading-relaxed"><strong>Preparation:</strong> Ask how the substrate will be profiled and existing contamination or coatings addressed. Adhesion depends on the whole system and site condition, not price alone.</p>
+            <p className="text-gray-600 leading-relaxed"><strong>Moisture:</strong> Assess the slab and use the appropriate treatment where required. Dry outdoor air does not establish that a slab meets a coating’s moisture limits.</p>
+            <p className="text-gray-600 leading-relaxed"><strong>Application conditions:</strong> The installer must follow product limits for slab and air temperature, humidity and working time.</p>
+            <p className="text-gray-600 leading-relaxed"><strong>Product selection:</strong> Ask for the primer, base, metallic resin and topcoat by name. Compare intended use and written data rather than assuming a low bid uses a specific type of material.</p>
+            <p className="text-gray-600 leading-relaxed"><strong>Curing:</strong> Each layer and the completed floor need the specified cure time. Confirm the return-to-use instructions before walking, furnishing or parking.</p>
             <p className="text-gray-600 leading-relaxed">
               The best way to avoid all of this? Hire someone who shows you their
               work, explains their process, and doesn&apos;t dodge your questions.
@@ -580,83 +414,42 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Is metallic epoxy slippery?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              The high-gloss finish can be slick when wet, which is why we offer the
-              commercial-grade urethane with aluminum oxide for garages and
-              high-traffic areas. It adds real traction without sacrificing the
-              metallic look.
-            </p>
+            <p className="text-gray-600 leading-relaxed">A smooth finish can be slippery when wet. Texture options must be selected for the expected use and cleaning conditions; no coating eliminates the risk of slipping.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Can I choose my colors?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Absolutely. We carry a full range of metallic pigments &mdash;
-              silvers, charcoals, coppers, blues, golds, and more. We can also do
-              custom blends to match your space. We&apos;ll bring samples to your
-              estimate so you can see them on concrete, not just on a screen.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Color and finish options are discussed during the estimate. Samples and reference images show a direction; the final movement and pattern will vary.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Will it yellow over time?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Not with our system. We use UV-stable clear coats specifically to
-              prevent yellowing, which is a real problem with cheaper epoxy products.
-              Your floor will look the same years from now as it does the day we
-              finish.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Light exposure can affect coating appearance. Compare the selected base and topcoat’s published UV data and intended use; a UV-resistant topcoat is not a promise that the entire floor will never change color.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How do I maintain a metallic epoxy floor?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Dust mop or sweep regularly, and damp mop as needed. That&apos;s it.
-              No waxing, no sealing, no special cleaners. The surface is non-porous
-              so spills wipe right up &mdash; oil, chemicals, whatever. It&apos;s
-              one of the lowest-maintenance floors you can own.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Remove loose dirt and follow the installed finish’s cleaning instructions. Confirm the cleaner, dilution, equipment and stain-removal method before use. Do not assume every resin floor accepts the same products.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Can you coat over an existing epoxy floor?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              It depends on the condition. If the existing coating is still bonded
-              and in decent shape, we can prep over it. If it&apos;s peeling or
-              failing, it needs to come off first. We&apos;ll tell you exactly
-              what&apos;s needed at the estimate.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Sound existing coatings may be candidates for preparation and recoating only where compatible with the proposed system. Loose, contaminated or incompatible material may need removal.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Do you do commercial jobs?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Yes. We do residential and commercial across the Las Vegas valley.
-              Showrooms, restaurants, retail, offices &mdash; if it has a concrete
-              slab, we can coat it.
-            </p>
+            <p className="text-gray-600 leading-relaxed">ProShield offers residential and commercial metallic finishes in the Las Vegas area. Suitability depends on the concrete, exposure and intended use.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How much does it cost to epoxy a 2-car garage in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              For a standard 2-car garage (around 400&ndash;500 square feet),
-              metallic epoxy runs roughly $4,000 to $6,000 installed. That includes
-              concrete prep, the full metallic epoxy system, and your choice of
-              topcoat. The final price depends on the condition of your slab and any
-              repairs needed. We give a flat quote at your free estimate &mdash; no
-              hidden fees.
-            </p>
+            <p className="text-gray-600 leading-relaxed">A project price depends on measured area, existing coatings, concrete repairs, moisture treatment and the selected finish. Compare written quotes for the same preparation and coating scope.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How soon can I schedule an install?
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              We typically book 2&ndash;3 weeks out depending on the season. Once
-              your estimate is done and you&apos;re ready to move forward,
-              we&apos;ll lock in your dates and handle everything from there &mdash;
-              including material ordering and scheduling around your timeline.
-            </p>
+            <p className="text-gray-600 leading-relaxed">Availability changes with the project schedule. Confirm current estimate and installation dates directly rather than relying on a fixed booking window.</p>
 
             {/* Bottom CTA */}
             <div className="mt-14 rounded-2xl bg-gray-50 border border-gray-200 p-8 text-center">
@@ -690,13 +483,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
               <div>
                 <h3 className="font-heading font-semibold text-lg text-gray-900">Julian Cruz</h3>
                 <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">
-                  Julian is the founder of ProShield Epoxy, a professional floor coating company
-                  serving the Las Vegas metro area. He specializes in residential garage coatings,
-                  commercial resinous flooring, and specialty systems including metallic epoxy,
-                  VubaStone, and concrete polishing. Every article is written from hands-on
-                  installation experience &mdash; not recycled from the internet.
-                </p>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian is the founder of ProShield Epoxy, serving the Las Vegas metro area with garage coatings, commercial flooring and specialty surface services.</p>
               </div>
             </div>
           </div>

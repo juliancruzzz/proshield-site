@@ -3,10 +3,10 @@
 import { Shield, Droplets, Sun, Clock } from "lucide-react"
 
 const stats = [
-  { icon: Shield, value: "Sealed", label: "Joint Stabilization" },
-  { icon: Droplets, value: "Water", label: "Repellent Protection" },
-  { icon: Sun, value: "UV", label: "Color Preservation" },
-  { icon: Clock, value: "24 hrs", label: "Walk-On Ready" },
+  { icon: Shield, value: "Joint", label: "Care Options" },
+  { icon: Droplets, value: "Surface", label: "Preparation" },
+  { icon: Sun, value: "Finish", label: "Options" },
+  { icon: Clock, value: "Cure", label: "Product-Specific Timing" },
 ]
 
 export function PaverSealingStats() {

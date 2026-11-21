@@ -6,8 +6,8 @@ import { Check } from "lucide-react"
 const highlights = [
   "Hand-manipulated metallic pigments — every floor is unique",
   "Genuine 3D depth and movement in high-build epoxy",
-  "UV-stable polyaspartic or polyurethane topcoat included",
-  "Custom color blending for your exact design vision",
+  "Protective clear coat specified for the intended use",
+  "Custom color and finish direction; patterns vary",
 ]
 
 export function MetallicIntro() {
@@ -35,10 +35,10 @@ export function MetallicIntro() {
               Where Craftsmanship Meets Custom Design
             </h2>
             <p className="mt-4 text-gray-500 text-base sm:text-lg leading-relaxed">
-              Metallic epoxy isn&apos;t a coating &mdash; it&apos;s a transformation. Flowing metallic pigments are hand-manipulated into high-build epoxy to create a floor with genuine three-dimensional depth and movement. Every installation is a custom original built for your space.
+              Metallic epoxy is a decorative resin coating. Flowing metallic pigments are hand-manipulated into high-build epoxy to create a floor with genuine three-dimensional depth and movement. Every installation is a custom original built for your space.
             </p>
             <ul className="mt-6 space-y-3">
-              {highlights.map((item, i) => (
+              {highlights.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-teal-subtle">
                     <Check className="h-3 w-3 text-teal" />
