@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "Are you licensed to perform commercial work in Nevada?",
-    a: "Yes. ProShield Epoxy & Concrete LLC is a licensed Nevada contractor — License #0094652, C-5 Concrete Contracting classification — fully bonded and insured. Our $200,000 bid limit covers most commercial projects; for larger jobs we partner with licensed GCs. License is verifiable at nvcontractorsboard.com.",
+    a: "Yes. ProShield Epoxy & Concrete LLC is a licensed Nevada contractor — License #0094652, C-5 Concrete Contracting classification, limited to epoxy coatings and sealants only — fully bonded and insured. The license has a $200,000 monetary limit. Project scope must fit the license classification and limits. License is verifiable at nvcontractorsboard.com.",
   },
 ]
 
@@ -100,7 +100,7 @@ export default function CommercialFlooringPage() {
               "hasCredential": {
                 "@type": "EducationalOccupationalCredential",
                 "credentialCategory": "license",
-                "name": "Nevada State Contractor's License #0094652 (C-5 Concrete Contracting)"
+                "name": "Nevada State Contractor's License #0094652 (C-5 Concrete Contracting — limited to epoxy coatings and sealants only)"
               }
             },
             "areaServed": [

@@ -48,7 +48,7 @@ const hendersonFaqs = [
   },
   {
     q: "Are you licensed and bonded in Henderson?",
-    a: "Yes. ProShield is licensed by the State of Nevada (License #0094652, C-5 Concrete Contracting classification). We're bonded, insured, and carry a limited lifetime warranty on qualifying residential systems.",
+    a: "Yes. ProShield is licensed by the State of Nevada (License #0094652, C-5 Concrete Contracting classification, limited to epoxy coatings and sealants only). We're bonded, insured, and carry a limited lifetime warranty on qualifying residential systems.",
   },
   {
     q: "Can you serve Green Valley, Anthem, and Lake Las Vegas?",
@@ -426,7 +426,7 @@ export default function HendersonPage() {
                 Licensed & Insured
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Nevada License #0094652, C-5 Concrete Contracting. Fully bonded and insured for your protection.
+                Nevada License #0094652, C-5 Concrete Contracting — limited to epoxy coatings and sealants only. Fully bonded and insured for your protection.
               </p>
             </div>
           </div>

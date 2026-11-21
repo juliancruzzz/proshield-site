@@ -53,7 +53,7 @@ const garageFaqs = [
   },
   {
     q: "Are you licensed to install epoxy flooring in Nevada?",
-    a: "Yes. ProShield Epoxy & Concrete LLC holds Nevada State Contractor's License #0094652 with a C-5 Concrete Contracting classification. We are fully bonded and insured, with a $200,000 bid limit. License status is verifiable at nvcontractorsboard.com.",
+    a: "Yes. ProShield Epoxy & Concrete LLC holds Nevada State Contractor's License #0094652 with a C-5 Concrete Contracting classification, limited to epoxy coatings and sealants only. We are fully bonded and insured, with a $200,000 bid limit. License status is verifiable at nvcontractorsboard.com.",
   },
 ]
 
@@ -108,7 +108,7 @@ export default function GaragePage() {
               "hasCredential": {
                 "@type": "EducationalOccupationalCredential",
                 "credentialCategory": "license",
-                "name": "Nevada State Contractor's License #0094652 (C-5 Concrete Contracting)"
+                "name": "Nevada State Contractor's License #0094652 (C-5 Concrete Contracting — limited to epoxy coatings and sealants only)"
               }
             },
             "areaServed": [
@@ -269,7 +269,7 @@ export default function GaragePage() {
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
                   <p className="font-semibold text-gray-900">Licensed Nevada Contractor</p>
-                  <p className="text-gray-600 mt-1">NV State License #0094652, C-5 Concrete Contracting. Fully bonded and insured. Verifiable at nvcontractorsboard.com.</p>
+                  <p className="text-gray-600 mt-1">NV State License #0094652, C-5 Concrete Contracting — limited to epoxy coatings and sealants only. Fully bonded and insured. Verifiable at nvcontractorsboard.com.</p>
                 </div>
               </div>
               <div className="flex gap-3">

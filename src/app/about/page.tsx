@@ -165,8 +165,7 @@ export default function AboutPage() {
               Licensed, Bonded &amp; Insured
             </h2>
             <p className="mt-3 text-base sm:text-lg text-gray-500">
-              We&apos;re fully credentialed with the State of Nevada so you can hire with
-              confidence.
+              Nevada license #0094652 covers epoxy coatings and sealants only. Confirm the project scope and current coverage documents before work begins.
             </p>
           </div>
 
@@ -207,7 +206,7 @@ export default function AboutPage() {
                     Classification
                   </div>
                   <div className="text-sm sm:text-base font-semibold text-gray-900">
-                    C-5 Concrete Contracting
+                    C-5 Concrete Contracting — limited to epoxy coatings and sealants only
                   </div>
                 </div>
               </div>
@@ -245,12 +244,12 @@ export default function AboutPage() {
             <div className="rounded-lg sm:rounded-xl lg:rounded-2xl border border-gray-200 bg-white p-4 sm:p-6 text-center">
               <FileText className="h-8 w-8 text-accent mx-auto mb-3" />
               <div className="text-sm font-semibold text-gray-900">NV License #0094652</div>
-              <div className="mt-1 text-xs text-gray-500">C-5 Concrete Contracting</div>
+              <div className="mt-1 text-xs text-gray-500">C-5 Concrete Contracting — limited to epoxy coatings and sealants only</div>
             </div>
             <div className="rounded-lg sm:rounded-xl lg:rounded-2xl border border-gray-200 bg-white p-4 sm:p-6 text-center">
               <Scale className="h-8 w-8 text-accent mx-auto mb-3" />
               <div className="text-sm font-semibold text-gray-900">Bonded &amp; Insured</div>
-              <div className="mt-1 text-xs text-gray-500">Full protection on every job</div>
+              <div className="mt-1 text-xs text-gray-500">Ask for current insurance documents</div>
             </div>
           </div>
         </div>

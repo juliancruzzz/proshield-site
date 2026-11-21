@@ -49,7 +49,7 @@ export function Credentials() {
                     Classification
                   </div>
                   <div className="text-sm sm:text-base font-semibold text-gray-900">
-                    C-5 Concrete Contracting
+                    C-5 Concrete Contracting — limited to epoxy coatings and sealants only
                   </div>
                 </div>
               </div>
@@ -83,8 +83,7 @@ export function Credentials() {
               Licensed, Bonded &amp; Insured
             </h2>
             <p className="mt-3 text-base sm:text-lg text-gray-500 max-w-md">
-              We&apos;re fully credentialed with the State of Nevada so you can hire with
-              confidence.
+              Nevada license #0094652 covers epoxy coatings and sealants only. Confirm the project scope and current coverage documents before work begins.
             </p>
 
             <div className="mt-8 flex flex-col gap-4">
@@ -104,7 +103,7 @@ export function Credentials() {
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-gray-900">NV License #0094652</div>
-                  <div className="mt-0.5 text-xs text-gray-500">C-5 Concrete Contracting</div>
+                  <div className="mt-0.5 text-xs text-gray-500">C-5 Concrete Contracting — limited to epoxy coatings and sealants only</div>
                 </div>
               </div>
 
@@ -114,7 +113,7 @@ export function Credentials() {
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-gray-900">Bonded &amp; Insured</div>
-                  <div className="mt-0.5 text-xs text-gray-500">Full protection on every job</div>
+                  <div className="mt-0.5 text-xs text-gray-500">Ask for current insurance documents</div>
                 </div>
               </div>
             </div>

@@ -11,7 +11,7 @@ const BASE_URL = "https://proshieldepoxy.com"
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [
     // Core pages
-    { url: `${BASE_URL}/`, lastModified: "2026-11-17", priority: 1.0, changeFrequency: "weekly" },
+    { url: `${BASE_URL}/`, lastModified: "2026-11-21", priority: 1.0, changeFrequency: "weekly" },
     { url: `${BASE_URL}/contact`, lastModified: "2026-11-17", priority: 0.9, changeFrequency: "monthly" },
 
     // Service pages
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/metallic-epoxy`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/vubastone`, lastModified: "2026-11-17", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/concrete-polishing`, lastModified: "2026-04-10", priority: 0.9, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/commercial-flooring`, lastModified: "2026-05-12", priority: 0.9, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/commercial-flooring`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/concrete-overlay`, lastModified: "2026-11-17", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/cool-deck`, lastModified: "2026-11-18", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/rubber-pool-deck`, lastModified: "2026-11-18", priority: 0.8, changeFrequency: "monthly" },
@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/airplane-hangar`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
 
     // Area pages
-    { url: `${BASE_URL}/areas/garage`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/areas/garage`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/areas/exterior`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/areas/interior`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/areas/commercial`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
@@ -38,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Supporting pages
     { url: `${BASE_URL}/services`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/gallery`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "weekly" },
-    { url: `${BASE_URL}/about`, lastModified: "2026-11-17", priority: 0.6, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/about`, lastModified: "2026-11-21", priority: 0.6, changeFrequency: "monthly" },
     { url: `${BASE_URL}/faq`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" },
 
     // Blog (lastmod = the post's actual dateModified or datePublished from its schema)
@@ -55,10 +55,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Service areas
     { url: `${BASE_URL}/service-areas`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/service-areas/henderson`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/service-areas/henderson`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/service-areas/summerlin`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/service-areas/north-las-vegas`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/service-areas/boulder-city`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/service-areas/boulder-city`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/service-areas/pahrump`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
   ]
 

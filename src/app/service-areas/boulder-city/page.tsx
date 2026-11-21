@@ -51,7 +51,7 @@ const boulderCityFaqs = [
   },
   {
     q: "Are you licensed to work in Boulder City?",
-    a: "Yes. ProShield is licensed by the State of Nevada (License #0094652, C-5 Concrete Contracting classification). We're fully bonded and insured, and we carry a limited lifetime warranty on qualifying residential systems.",
+    a: "Yes. ProShield is licensed by the State of Nevada (License #0094652, C-5 Concrete Contracting classification, limited to epoxy coatings and sealants only). We're fully bonded and insured, and we carry a limited lifetime warranty on qualifying residential systems.",
   },
 ]
 
