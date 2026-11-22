@@ -9,7 +9,7 @@ export const faqCategories = [
       { question: 'How long before I can walk on or drive on my new floor?', answer: "For ProFlake, plan on 24 hours before walking and 48 hours before parking. Weather can change that timing. I’ll let you know when your floor is ready." },
       { question: 'Do you offer free estimates?', answer: "Yes. Call 702-728-5484 or use the quote form. Tell me the size of the space and what you’d like to change." },
       { question: 'What areas do you serve?', answer: "I work in Las Vegas, Henderson, North Las Vegas, Summerlin, Boulder City and Pahrump. If you’re farther out, call to check your address." },
-      { question: 'What is your warranty coverage?', answer: "Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. It covers adhesion under the written terms. Normal wear, stains and moisture-related failure are excluded. Commercial jobs have their own terms." },
+      { question: 'What is your warranty coverage?', answer: "Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. It covers adhesion under the written terms. Normal wear, stains from improper care, chemical spill damage and moisture-related failure are excluded. Commercial jobs have their own terms." },
       { question: 'Can I customize colors and finishes?', answer: "Yes. You can choose the flake blend for a garage or pick the colors that swirl together in a metallic floor. I can show you samples." },
     ],
   },

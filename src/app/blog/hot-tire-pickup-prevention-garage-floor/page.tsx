@@ -197,7 +197,7 @@ export default function HotTirePickupPost() {
             <p className="text-gray-600 leading-relaxed"><strong>Coating system:</strong> Compare the named base and topcoat products and their intended vehicle use. A chemistry label or purchase location alone does not establish heat performance.</p>
             <p className="text-gray-600 leading-relaxed"><strong>Topcoat:</strong> Ask for applicable tire-contact and chemical-resistance information. Tire marks and damage depend on the actual product, cure and exposure.</p>
             <p className="text-gray-600 leading-relaxed"><strong>Layer build:</strong> Follow the selected system’s specified coverage and thickness. Do not infer an exact film build or heat resistance from price alone.</p>
-            <p className="text-gray-600 leading-relaxed"><strong>Preparation:</strong> Assess the substrate, contamination and moisture, then prepare to the chosen system’s requirements. Assess the concrete, moisture, contamination and existing coatings before selecting a system. Diamond grinding is part of ProShield’s preparation process; the required profile and repairs depend on the proposed products and site.</p>
+            <p className="text-gray-600 leading-relaxed"><strong>Preparation:</strong> I check for moisture, oil and loose paint before diamond-grinding the concrete and making the repairs the slab needs.</p>
 
             <h2 id="how-to-prevent-it-the-right-system" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               How to Prevent It: The Right System
