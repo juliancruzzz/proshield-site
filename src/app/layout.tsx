@@ -1,3 +1,4 @@
+import { VisitSource } from "@/components/visit-source"
 import type { Metadata } from "next"
 import localFont from "next/font/local"
 import "./globals.css"
@@ -205,6 +206,7 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+        <VisitSource />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

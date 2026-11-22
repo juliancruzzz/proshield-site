@@ -17,7 +17,8 @@ export const metadata: Metadata = {
   },
 }
 
-export default function ContactPage() {
+export default async function ContactPage({ searchParams }: { searchParams: Promise<{ project?: string }> }) {
+  const poolDeck = (await searchParams).project === "pool-deck"
   return (
     <>
       <PageHero
@@ -34,11 +35,11 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
             {/* Form — takes more space */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-3 scroll-mt-24" id="request-quote">
               <h2 className="font-heading font-semibold text-2xl text-gray-900 mb-6">
                 Request a Quote
               </h2>
-              <QuoteForm />
+              <QuoteForm key={String(poolDeck)} poolDeck={poolDeck} />
             </div>
 
             {/* Contact Info Sidebar */}

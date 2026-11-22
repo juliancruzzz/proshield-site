@@ -6,7 +6,7 @@ import { useHydrated } from "@/hooks/use-hydrated"
 import { submitForm } from "@/lib/submit-form"
 import { PROJECT_TYPE_GROUPS } from "@/lib/cta-data"
 
-export function QuoteForm() {
+export function QuoteForm({ poolDeck = false }: { poolDeck?: boolean }) {
   const ready = useHydrated()
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
   const sending = useRef(false)
@@ -15,7 +15,7 @@ export function QuoteForm() {
     if (status === "success") confirmation.current?.focus()
   }, [status])
   const [error, setError] = useState<string | null>(null)
-  const [selectedTypes, setSelectedTypes] = useState<string[]>([])
+  const [selectedTypes, setSelectedTypes] = useState<string[]>(poolDeck ? ["Patio / Pool Deck"] : [])
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -152,7 +152,7 @@ export function QuoteForm() {
                   return (
                     <button
                       key={type}
-                      type="button" data-project-type disabled={!ready || status === "loading"}
+                      type="button" aria-pressed={active} data-project-type disabled={!ready || status === "loading"}
                       onClick={() => toggleType(type)}
                       className={`rounded-full px-3.5 py-1.5 text-sm border transition-all duration-150 ${
                         active
@@ -170,7 +170,7 @@ export function QuoteForm() {
           {/* Other */}
           <div>
             <button
-              type="button" data-project-type disabled={!ready || status === "loading"}
+              type="button" aria-pressed={selectedTypes.includes("Other")} data-project-type disabled={!ready || status === "loading"}
               onClick={() => toggleType("Other")}
               className={`rounded-full px-3.5 py-1.5 text-sm border transition-all duration-150 ${
                 selectedTypes.includes("Other")

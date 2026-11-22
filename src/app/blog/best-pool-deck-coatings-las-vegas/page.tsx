@@ -25,7 +25,7 @@ export default function BestPoolDeckCoatingsPost() {
     description: "Compare pool deck coatings for Las Vegas: textured finishes, rubber surfacing, preparation, project cost factors and product-specific care.",
     slug: "best-pool-deck-coatings-las-vegas",
     datePublished: "2026-04-06",
-    dateModified: "2026-11-18",
+    dateModified: "2026-11-21",
     image: "https://proshieldepoxy.com/images/cool-deck/cool-deck-pool-spa-vegas.webp",
   })
 
@@ -59,10 +59,10 @@ export default function BestPoolDeckCoatingsPost() {
       },
       {
         "@type": "Question",
-        "name": "Can you resurface a pool deck without removing the old coating?",
+        "name": "Does an old knockdown pool deck need to be ground down before repainting?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair."
+          "text": "Age alone does not tell you whether grinding is needed. Check whether the old texture is bonded to the slab and whether the new coating can go over it. Ask the installer to list loose areas that need removal, the preparation for the remaining surface and any separate crack repairs in the estimate."
         }
       },
       {
@@ -138,7 +138,7 @@ export default function BestPoolDeckCoatingsPost() {
           </div>
           <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
-              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-18">November 18, 2026</time>
+              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-21">November 21, 2026</time>
             </span>
             <span className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" /> 5 min read
@@ -281,10 +281,7 @@ export default function BestPoolDeckCoatingsPost() {
               What to Look for in a Pool Deck Contractor
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Pool deck coating is one of those trades where the application
-              skill matters as much as the product. A great product applied
-              poorly will fail. Here&apos;s what separates a quality contractor
-              from a weekend crew:
+              ProShield quotes repainting and full resurfacing separately. Repainting refreshes the color of an existing finish. A full system includes a new surface finish. Ask which areas need each treatment and where removal or repairs are included.
             </p>
             <p className="text-gray-600 leading-relaxed"><strong>Surface preparation:</strong> Ask how existing coatings and contamination will be addressed and how the substrate will be prepared for the chosen system.</p>
             <p className="text-gray-600 leading-relaxed"><strong>Cracks and joints:</strong> Ask which repairs are included and how joints and movement will be handled. Structural problems need assessment before a decorative finish.</p>
@@ -311,9 +308,9 @@ export default function BestPoolDeckCoatingsPost() {
             <p className="text-gray-600 leading-relaxed">Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
-              Can you resurface a pool deck without removing the old coating?
+              Does an old knockdown pool deck need to be ground down before repainting?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair.</p>
+            <p className="text-gray-600 leading-relaxed">Age alone does not tell you whether grinding is needed. Check whether the old texture is bonded to the slab and whether the new coating can go over it. Ask the installer to list loose areas that need removal, the preparation for the remaining surface and any separate crack repairs in the estimate.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               What&apos;s the difference between cool deck and knockdown texture?
@@ -330,10 +327,10 @@ export default function BestPoolDeckCoatingsPost() {
                 obligation.
               </p>
               <Link
-                href="/contact"
+                href="/contact?project=pool-deck#request-quote"
                 className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
               >
-                Get a Free Quote <ArrowRight className="h-4 w-4" />
+                Get a Pool Deck Quote <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </div>
