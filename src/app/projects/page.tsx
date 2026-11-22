@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return <>
-    <PageHero badge="Our Work" title="Completed Projects" subtitle="See the floor, the finish and the details from real ProShield installations." ctaText="Get a Free Quote" ctaHref="/contact" />
+    <PageHero badge="Our Work" title="Completed Projects" subtitle="Take a closer look at two flake garages and a silver and charcoal showroom floor." ctaText="Get a Free Quote" ctaHref="/contact" />
     <Breadcrumbs items={[{ label: "Projects" }]} />
     <ProjectCards heading="Garage & Metallic Floors" />
     <CtaSection />

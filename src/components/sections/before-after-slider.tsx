@@ -53,15 +53,14 @@ export function BeforeAfterSlider() {
           <div>
             <span className="inline-flex items-center gap-2 text-sm font-semibold tracking-widest uppercase text-accent">
               <Star className="h-3.5 w-3.5 fill-accent text-accent" />
-              Our Flagship System
+              Garage Floors
             </span>
             <h2 className="mt-4 font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900 tracking-tight">
-              The ProFlake{" "}
-              <span className="text-accent">Difference</span>
+              Before and{" "}
+              <span className="text-accent">after</span>
             </h2>
             <p className="mt-5 text-gray-500 text-lg leading-relaxed">
-              Drag the slider to see a raw concrete floor transformed with our
-              Torginol ProFlake system. One floor. Complete transformation.
+              Drag the slider to compare bare concrete with the flake finish.
             </p>
 
             {/* Stats row */}

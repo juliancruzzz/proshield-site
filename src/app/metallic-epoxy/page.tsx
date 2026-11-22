@@ -107,7 +107,7 @@ export default function MetallicEpoxyPage() {
         badge="Custom Luxury Flooring"
         title="Metallic Epoxy Floors"
         highlight="Las Vegas"
-        subtitle="Hand-crafted liquid-metal floors with real depth and movement. Every pour is an original — designed, blended, and installed specifically for your Las Vegas space."
+        subtitle="The colors swirl together as I pour the epoxy. You choose the colors, and the pattern takes shape on the floor."
         ctaText="Book a Design Consultation"
         backgroundImage="/images/gallery/metallic-epoxy-vegas-room.webp"
         backgroundAlt="Metallic epoxy floor with 3D liquid-metal depth and swirl patterns"
@@ -214,7 +214,7 @@ export default function MetallicEpoxyPage() {
                 Metallic Installations
               </h2>
               <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-                Every metallic floor is one-of-a-kind. See how we transform real spaces.
+                See how the silver and charcoal finish looks across a showroom floor.
               </p>
             </div>
           </ScrollReveal>

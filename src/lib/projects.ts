@@ -38,10 +38,9 @@ export const floorProjects: FloorProject[] = [
     location: "Henderson, NV",
     finish: "Shoreline flake",
     service: { label: "ProFlake Garage Floors", href: "/proflake" },
-    intro: "This Henderson garage has a lighter Shoreline flake finish. The full-floor photograph shows how the blend looks across the garage, while the close-up shows the individual flakes and surface texture.",
+    intro: "I used Shoreline in this Henderson garage. The dark flakes break up the lighter background.",
     details: [
-      "Light and dark flakes create a different overall look from the darker Nightfall project. Compare the wide view with the close-up when choosing a blend for your garage.",
-      "Lighting changes how a floor looks in a photograph. The two views show the same installed finish at different distances, including a closer look at its texture.",
+      "Shoreline looks lighter across a full garage than the Nightfall blend.",
     ],
     photos: [
       { src: "/images/service-areas/henderson/henderson-proflake-garage.jpg", width: 1200, height: 1200, alt: "Completed Shoreline ProFlake garage floor in Henderson", caption: "The finished Shoreline garage floor in Henderson." },
@@ -54,10 +53,9 @@ export const floorProjects: FloorProject[] = [
     description: "A ProShield metallic epoxy showroom project with real installation photographs. Compare the exposed floor during work with the completed silver and charcoal finish.",
     finish: "Silver and charcoal metallic epoxy",
     service: { label: "Metallic Epoxy Floors", href: "/metallic-epoxy" },
-    intro: "Silver and charcoal movement gives this showroom floor its reflective finish. The installation photographs show the exposed floor during the work and the metallic surface after application.",
+    intro: "I blended silver and charcoal epoxy on this showroom floor. You can see the bare surface in the second photo.",
     details: [
-      "The finished photograph shows flowing metallic patterns across the floor and reflections from the room above. The pattern belongs to this installation; each metallic floor has its own appearance.",
-      "The two views show the exposed floor and the metallic surface from different positions in the same showroom.",
+      "The darker swirls stand out against the silver when the overhead light hits the floor.",
     ],
     photos: [
       { src: "/images/metallic/metallic-epoxy-chopshop-porsche.webp", width: 1500, height: 1999, alt: "Silver and charcoal metallic epoxy floor in a showroom during installation", caption: "Metallic epoxy after application in the showroom." },

@@ -7,7 +7,7 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "Hot Tire Pickup Prevention | Garage Floor Guide",
+    "Why is my garage floor peeling under the tires? | ProShield",
   description:
     "Tire-related garage floor damage: compare coating requirements, cure instructions and repair options before choosing a system in Las Vegas.",
   alternates: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function HotTirePickupPost() {
   const schema = blogPostingSchema({
-    title: "Hot Tire Pickup: Garage Floor Coatings and Repair",
+    title: "Why is my garage floor peeling under the tires?",
     description: "Tire-related garage floor damage: compare coating requirements, cure instructions and repair options before choosing a system in Las Vegas.",
     slug: "hot-tire-pickup-prevention-garage-floor",
     datePublished: "2026-03-28",
@@ -46,7 +46,7 @@ export default function HotTirePickupPost() {
         "name": "Will parking on mats or tire pads prevent hot tire pickup?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Check mat and floor-coating compatibility before use. Backing materials, trapped dirt or moisture can affect some finishes. A mat is not a substitute for a sound, properly cured coating."
+          "text": "Check which mat backings are safe for your finish. Wait until the coating has cured, and lift the mat regularly to clear out grit and moisture."
         }
       },
       {
@@ -121,7 +121,7 @@ export default function HotTirePickupPost() {
             Garage Floors
           </span>
           <h1 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Hot Tire Pickup: Garage Floor Coatings and Repair
+            Why is my garage floor peeling under the tires?
           </h1>
           <div className="flex items-center gap-3 mt-4 text-sm text-gray-400">
             <span>By <span className="font-medium text-gray-200">Julian Cruz</span></span>
@@ -142,7 +142,7 @@ export default function HotTirePickupPost() {
       <article className="section-white pb-20 lg:pb-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-gray max-w-none">
-            <p className="text-lg text-gray-600 leading-relaxed">Coating damage near parked tires can involve heat, tire contact, incomplete cure or poor adhesion. This guide explains what to check before selecting a garage system or repairing an existing floor. Location alone does not establish the cause of a failure.</p>
+            <p className="text-lg text-gray-600 leading-relaxed">If a tire leaves a dark mark, check whether the coating is still there. A black scuff on a smooth floor is different from a patch where the coating lifted and bare concrete shows.</p>
 
             {/* Table of Contents */}
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
@@ -235,7 +235,7 @@ export default function HotTirePickupPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Will parking on mats or tire pads prevent hot tire pickup?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Check mat and floor-coating compatibility before use. Backing materials, trapped dirt or moisture can affect some finishes. A mat is not a substitute for a sound, properly cured coating.</p>
+            <p className="text-gray-600 leading-relaxed">Check which mat backings are safe for your finish. Wait until the coating has cured, and lift the mat regularly to clear out grit and moisture.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How quickly can hot tire pickup happen with a cheap coating?
@@ -274,7 +274,7 @@ export default function HotTirePickupPost() {
               <div>
                 <h3 className="font-heading font-semibold text-lg text-gray-900">Julian Cruz</h3>
                 <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian is the founder of ProShield Epoxy, serving the Las Vegas metro area with garage coatings, commercial flooring and specialty surface services.</p>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian Cruz owns ProShield Epoxy in Las Vegas.</p>
               </div>
             </div>
           </div>

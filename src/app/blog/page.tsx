@@ -21,82 +21,82 @@ export const metadata: Metadata = {
 const posts = [
   {
     slug: "rubber-pool-deck-las-vegas",
-    title: "Rubber Pool Deck Flooring in Las Vegas: What It Costs, How It's Installed & What to Expect",
+    title: "What to know before resurfacing a pool deck with rubber",
     excerpt:
-      "Compare rubber pool deck preparation, color blends, project cost factors and product-specific care in Las Vegas.",
+      "How rubber feels underfoot, what goes beneath it and which repairs can change the quote.",
     date: "May 3, 2026",
     category: "Pool Deck Flooring",
     image: "/images/blog/rubber-deck/rubber-deck-pool-wide.jpg",
   },
   {
     slug: "metallic-epoxy-flooring-las-vegas",
-    title: "Metallic Epoxy Flooring in Las Vegas: What It Costs, How It's Done & What to Expect",
+    title: "How metallic epoxy gets its swirled finish",
     excerpt:
-      "Compare metallic finishes, concrete preparation, project quotes and care.",
+      "What the pigments look like in different light and how to compare finish samples.",
     date: "May 3, 2026",
     category: "Metallic Epoxy",
     image: "/images/metallic-hero-poster.jpg",
   },
   {
     slug: "coolest-pool-deck-flooring-las-vegas",
-    title: "Coolest Pool Deck Flooring for Las Vegas: Every Option Compared",
+    title: "Which pool deck feels cooler in the sun?",
     excerpt:
-      "Compare pool deck surfaces, product test conditions, preparation, project quotes and care requirements for Las Vegas.",
+      "Why color and shade matter, and what to ask before relying on a temperature claim.",
     date: "May 1, 2026",
     category: "Pool Deck Flooring",
     image: "/images/vubastone/vubastone-pool-deck-mansion.webp",
   },
   {
     slug: "epoxy-floor-maintenance-tips",
-    title: "Epoxy Floor Maintenance Tips: Keep Your Coating Looking New",
+    title: "How to clean a coated floor",
     excerpt:
-      "Product-compatible cleaning, equipment and care for your installed finish.",
+      "What to use for dust and spills, and when to ask about a worn topcoat.",
     date: "April 7, 2026",
     category: "Maintenance Guide",
     image: "/images/proflake/flake-garage-residential.webp",
   },
   {
     slug: "best-pool-deck-coatings-las-vegas",
-    title: "Best Pool Deck Coatings for Las Vegas Heat: 2026 Guide",
+    title: "How to choose a finish for your pool deck",
     excerpt:
-      "Compare textured coatings, rubber surfacing, preparation and product-specific maintenance for your Las Vegas pool deck.",
+      "Compare the texture and upkeep of a coated deck with poured rubber surfacing.",
     date: "April 6, 2026",
     category: "Pool Deck Coatings",
     image: "/images/cool-deck/cool-deck-pool-spa-vegas.webp",
   },
   {
     slug: "epoxy-garage-floor-cost-las-vegas",
-    title: "Epoxy Garage Floor Cost in Las Vegas: 2026 Pricing Guide",
+    title: "What goes into a garage floor quote?",
     excerpt:
-      "Compare measured area, preparation, repairs and coating scope in a garage quote.",
+      "A two-car garage with peeling paint can cost more to prep than a bare slab the same size.",
     date: "April 3, 2026",
     category: "Pricing Guide",
     image: "/images/proflake/flake-garage-residential.webp",
   },
   {
     slug: "epoxy-garage-floor-vs-polyaspartic",
-    title: "Epoxy vs. Polyaspartic Garage Floor Coatings — What's the Difference?",
+    title: "Epoxy or polyaspartic for a garage floor?",
     excerpt:
-      "Compare named coating products, layer builds, cure requirements and intended use.",
+      "What each coat does and what to ask before parking on a new floor.",
     date: "April 1, 2026",
     category: "Garage Floors",
     image: "/images/proflake/flake-garage-wide-clean.webp",
   },
   {
     slug: "hot-tire-pickup-prevention-garage-floor",
-    title: "How to Prevent Hot Tire Pickup on Your Garage Floor",
+    title: "Why is my garage floor peeling under the tires?",
     excerpt:
-      "Assess tire-related coating damage, preparation, cure and repair options.",
-    date: "April 3, 2026",
+      "How to tell a tire mark from a coating that has lifted off the concrete.",
+    date: "March 28, 2026",
     category: "Garage Floors",
     image: "/images/proflake/flake-garage-porsche-bikes.webp",
   },
   {
     slug: "polished-concrete-vs-epoxy",
-    title: "Polished Concrete vs. Epoxy Flooring: Which Is Right for Your Space?",
+    title: "Should you polish the concrete or coat it?",
     excerpt:
-      "Compare the slab, finish, traffic, care requirements and written project scope.",
-    date: "April 4, 2026",
+      "How the slab, the look you want and the traffic it gets affect the choice.",
+    date: "March 18, 2026",
     category: "Flooring Comparison",
     image: "/images/concrete-polishing/polished-floor-showroom.webp",
   },
@@ -108,8 +108,8 @@ export default function BlogPage() {
       <PageHero
         badge="Blog"
         title="Flooring Tips &"
-        highlight="Expert Guides"
-        subtitle="Practical advice from the crew that installs floors every day. No fluff — just what you need to know before, during, and after your flooring project."
+        highlight="Project Guides"
+        subtitle="How to compare finishes, read a quote and take care of your floor."
       />
 
       <Breadcrumbs items={[{ label: "Blog" }]} />

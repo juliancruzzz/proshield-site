@@ -8,7 +8,7 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "Rubber Pool Deck Flooring in Las Vegas | Cost, Process & What to Expect | ProShield",
+    "What to know before resurfacing a pool deck with rubber | ProShield",
   description:
     "Rubber pool deck surfacing in Las Vegas: review installation steps, color options, maintenance and costs, plus questions to ask before resurfacing.",
   alternates: {
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
 
 export default function RubberPoolDeckLasVegasPost() {
   const schema = blogPostingSchema({
-    title: "Rubber Pool Deck Flooring in Las Vegas: What It Costs, How It's Installed & What to Expect",
+    title: "What to know before resurfacing a pool deck with rubber",
     description:
       "Rubber pool deck surfacing in Las Vegas: review installation steps, color options, maintenance and costs, plus questions to ask before resurfacing.",
     slug: "rubber-pool-deck-las-vegas",
     datePublished: "2026-05-03",
-    dateModified: "2026-11-18",
+    dateModified: "2026-11-21",
     image: "https://proshieldepoxy.com/images/blog/rubber-deck/rubber-deck-pool-wide.jpg",
   })
 
@@ -40,7 +40,7 @@ export default function RubberPoolDeckLasVegasPost() {
         name: "How much does a rubber pool deck cost in Las Vegas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.",
+          text: "The size of the deck is only part of the price. Check whether your estimate includes stripping the old finish, fixing the concrete and getting materials around the pool.",
         },
       },
       {
@@ -48,7 +48,7 @@ export default function RubberPoolDeckLasVegasPost() {
         name: "How long does rubber pool decking last in Las Vegas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.",
+          text: "Wear depends on the finish, the condition of the concrete and how much use and sun the deck gets. Ask what the warranty covers and how to care for the finish.",
         },
       },
       {
@@ -64,7 +64,7 @@ export default function RubberPoolDeckLasVegasPost() {
         name: "How hot does rubber pool decking get in Las Vegas summer?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.",
+          text: "Any deck can get too hot for bare feet. If a finish comes with a temperature claim, ask which color was tested and whether it was in full sun.",
         },
       },
       {
@@ -96,7 +96,7 @@ export default function RubberPoolDeckLasVegasPost() {
         name: "Is rubber pool decking better than cool deck?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Compare the proposed products, texture, color, preparation, care requirements and written prices. Rubber and textured coatings have different finishes; neither is always cooler, safer or lower maintenance than the other.",
+          text: "Ask to feel a sample of each finish. Rubber and textured coatings feel different underfoot, and both can get hot in the sun. Compare the care instructions and quotes for your deck.",
         },
       },
     ],
@@ -150,7 +150,7 @@ export default function RubberPoolDeckLasVegasPost() {
             Pool Deck Flooring
           </span>
           <h1 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Rubber Pool Deck Flooring in Las Vegas: What It Costs, How It&apos;s Installed &amp; What to Expect
+            What to know before resurfacing a pool deck with rubber
           </h1>
           <div className="flex items-center gap-3 mt-4 text-sm text-gray-400">
             <span>
@@ -190,7 +190,7 @@ export default function RubberPoolDeckLasVegasPost() {
               </div>
             </div>
 
-            <p className="text-lg text-gray-600 leading-relaxed">ProShield Epoxy offers rubber pool deck surfacing across the Las Vegas valley. This guide explains what to compare before resurfacing: the existing concrete, selected product, color, preparation, price and maintenance.</p>
+            <p className="text-lg text-gray-600 leading-relaxed">Rubber surfacing gives a pool deck a softer feel. Before choosing a blend, look at where water sits, how much sun the deck gets and whether the old surface is sound.</p>
 
             {/* TOC */}
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
@@ -238,7 +238,7 @@ export default function RubberPoolDeckLasVegasPost() {
             </h2>
             <p className="text-gray-600 leading-relaxed">Sun exposure, pool water, wear and the condition of the concrete all matter when choosing a pool-deck finish. Compare the proposed system against the conditions at your home.</p>
 
-            <p className="text-gray-600 leading-relaxed"><strong>Heat:</strong> Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.</p>
+            <p className="text-gray-600 leading-relaxed"><strong>Heat:</strong> Any deck can get too hot for bare feet. If a finish comes with a temperature claim, ask which color was tested and whether it was in full sun.</p>
             <p className="text-gray-600 leading-relaxed"><strong>Cracks:</strong> Existing cracks and movement need assessment. A flexible finish does not repair structural damage or guarantee that cracks will stay hidden.</p>
             <p className="text-gray-600 leading-relaxed"><strong>Wet traction:</strong> Texture can help provide traction, but wet surfaces can still be slippery. Compare the proposed finish’s slip-resistance information and keep the deck clean. Cushioning does not prevent falls or guarantee protection from injury.</p>
             <p className="text-gray-600 leading-relaxed"><strong>Underfoot feel:</strong> Rubber has a softer feel than a hard finish. Ask to see a sample; comfort is not a safety certification.</p>
@@ -248,7 +248,7 @@ export default function RubberPoolDeckLasVegasPost() {
             <h2 id="cost-in-las-vegas" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               How Much Does Rubber Pool Decking Cost in Las Vegas?
             </h2>
-            <p className="text-gray-600 leading-relaxed">The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.</p>
+            <p className="text-gray-600 leading-relaxed">The size of the deck is only part of the price. Check whether your estimate includes stripping the old finish, fixing the concrete and getting materials around the pool.</p>
             <p className="text-gray-600 leading-relaxed">A square-foot rate alone does not show the full job cost. Compare quotes for the same measured area and scope, including coating removal, crack repairs, edges and drainage work.</p>
             <p className="text-gray-600 leading-relaxed">Ask which repairs and preparation are included, what is excluded and how any additional work would be priced before it starts.</p>
             <p className="text-gray-600 leading-relaxed">Comparing <Link href="/cool-deck" className="text-accent hover:underline font-medium">cool deck resurfacing</Link> with rubber, pavers or stone? Use written quotes for the same site and compare future care requirements. This guide does not publish a verified current market price range.</p>
@@ -328,7 +328,7 @@ export default function RubberPoolDeckLasVegasPost() {
             <p className="text-gray-600 leading-relaxed"><strong>Debris:</strong> Keep the deck clear of loose dirt and leaves.</p>
             <p className="text-gray-600 leading-relaxed"><strong>Cleaning:</strong> Use the cleaners, tools and methods allowed by the product manufacturer. Ask how to handle stains and pool-chemical spills.</p>
             <p className="text-gray-600 leading-relaxed"><strong>Inspection and refresh coats:</strong> Ask which signs of wear need attention and whether the proposed system requires a refresh coat. Do not assume a universal resealing interval.</p>
-            <p className="text-gray-600 leading-relaxed"><strong>Service life:</strong> Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.</p>
+            <p className="text-gray-600 leading-relaxed"><strong>Service life:</strong> Wear depends on the finish, the condition of the concrete and how much use and sun the deck gets. Ask what the warranty covers and how to care for the finish.</p>
 
             {/* -------- Existing Deck Assessment -------- */}
             <div className="my-10 rounded-xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
@@ -347,7 +347,7 @@ export default function RubberPoolDeckLasVegasPost() {
             </h2>
             <p className="text-gray-600 leading-relaxed">ProShield offers rubber surfacing and textured pool-deck coatings. Compare the actual proposed systems before choosing.</p>
             <p className="text-gray-600 leading-relaxed"><Link href="/cool-deck" className="text-accent hover:underline font-medium">Cool deck resurfacing</Link> provides a textured finish. Confirm the named product, color, surface preparation and care requirements in the estimate.</p>
-            <p className="text-gray-600 leading-relaxed">Compare the proposed products, texture, color, preparation, care requirements and written prices. Rubber and textured coatings have different finishes; neither is always cooler, safer or lower maintenance than the other.</p>
+            <p className="text-gray-600 leading-relaxed">Ask to feel a sample of each finish. Rubber and textured coatings feel different underfoot, and both can get hot in the sun. Compare the care instructions and quotes for your deck.</p>
             <p className="text-gray-600 leading-relaxed">Ask for the price and maintenance requirements for each suitable option for your deck.</p>
 
             {/* -------- Honest Downsides -------- */}
@@ -371,12 +371,12 @@ export default function RubberPoolDeckLasVegasPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How much does a rubber pool deck cost in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.</p>
+            <p className="text-gray-600 leading-relaxed">The size of the deck is only part of the price. Check whether your estimate includes stripping the old finish, fixing the concrete and getting materials around the pool.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How long does rubber pool decking last in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.</p>
+            <p className="text-gray-600 leading-relaxed">Wear depends on the finish, the condition of the concrete and how much use and sun the deck gets. Ask what the warranty covers and how to care for the finish.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Is rubber pool decking slippery when wet?
@@ -386,7 +386,7 @@ export default function RubberPoolDeckLasVegasPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How hot does rubber pool decking get in Las Vegas summer?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.</p>
+            <p className="text-gray-600 leading-relaxed">Any deck can get too hot for bare feet. If a finish comes with a temperature claim, ask which color was tested and whether it was in full sun.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Can you install rubber decking over existing concrete or cool deck?
@@ -406,7 +406,7 @@ export default function RubberPoolDeckLasVegasPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Is rubber pool decking better than cool deck?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Compare the proposed products, texture, color, preparation, care requirements and written prices. Rubber and textured coatings have different finishes; neither is always cooler, safer or lower maintenance than the other.</p>
+            <p className="text-gray-600 leading-relaxed">Ask to feel a sample of each finish. Rubber and textured coatings feel different underfoot, and both can get hot in the sun. Compare the care instructions and quotes for your deck.</p>
 
             {/* CTA Box */}
             <div className="mt-14 rounded-2xl bg-gray-50 border border-gray-200 p-8 text-center">

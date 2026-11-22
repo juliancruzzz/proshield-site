@@ -16,7 +16,7 @@ import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Airplane Hangar Floor Coating | Las Vegas | ProShield Epoxy",
-  description: "Airplane hangar floor coating in Las Vegas — Skydrol resistant, jet fuel resistant. Aviation-grade systems. 24-48hr return to service.",
+  description: "Compare coating options for a Las Vegas hangar based on aircraft traffic, fluid exposure and when you need to reopen.",
   keywords: "airplane hangar floor coating Las Vegas, hangar floor coating near me, aircraft hangar floor coating, Skydrol resistant floor coating, hangar floor coating service Nevada, FBO floor coating",
   openGraph: {
     url: "https://proshieldepoxy.com/airplane-hangar",
@@ -30,31 +30,31 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is Skydrol and why does it matter for hangar floors?",
-    a: "Skydrol is a phosphate ester-based hydraulic fluid used in commercial and military aircraft. It’s extremely aggressive — it destroys standard epoxy and polyaspartic coatings on contact. If a coating can’t handle Skydrol, it has no place in a hangar. Our systems are specifically formulated for phosphate ester hydraulic fluid resistance.",
+    a: "Skydrol is an aircraft hydraulic fluid. If you use it, I check the proposed coating’s resistance to the specific fluid before recommending a system.",
   },
   {
     q: "Why can’t I just use a standard garage floor coating in my hangar?",
-    a: "Standard residential coatings — including polyaspartic — are not formulated for the chemical exposure in hangars. Skydrol, jet fuel, and hydraulic oils will soften, blister, or delaminate standard coatings within months. Hangar floors require a purpose-built, multi-layer system with a chemical-resistant urethane topcoat.",
+    a: "A hangar may see hydraulic fluids, fuel, jacks and heavier wheel loads. A product suitable for a home garage may be a poor fit for that work.",
   },
   {
     q: "How long does installation take?",
-    a: "Typically 2–5 days depending on hangar size, substrate condition, and your operational requirements. We phase the installation to minimize disruption — part of the hangar stays operational while we coat the other. Foot traffic is typically possible within hours; full aircraft loading in 24–48 hours.",
+    a: "The schedule depends on the slab, the system and when aircraft need access. I can check whether phasing is possible and give you separate times for walking and aircraft traffic.",
   },
   {
     q: "What warranty do you offer for hangar floors?",
-    a: "Hangar floors receive a system-specific warranty tied to the exact system installed, substrate condition, and exposure environment. This is not a blanket consumer lifetime warranty — it’s a professional warranty covering adhesion and workmanship under the documented conditions of your facility.",
+    a: "I’ll go over the written warranty for the proposed system, including which conditions and uses it covers.",
   },
   {
     q: "Do you offer ESD (electrostatic dissipative) flooring?",
-    a: "Yes. For avionics bays, instrument repair areas, and any space where sensitive electronics are being handled, we install ESD-control coating systems that prevent static discharge damage. This is a specialized five-coat system with conductive properties built into the coating layers.",
+    a: "Tell me which equipment you handle and the electrical requirements for the bay so I can check suitable static-control flooring options.",
   },
   {
     q: "Can you add safety line striping and markings?",
-    a: "Absolutely. We install custom taxi lines, equipment zones, hazard area markings, walkways, and OSHA color-coded safety demarcation. Line striping is applied between topcoat layers for maximum durability and chemical resistance.",
+    a: "Yes. Mark the taxi lines, walkways and equipment zones on the plan so I can include the striping in the quote.",
   },
   {
-    q: "What makes your system different from competitors?",
-    a: "Most competitors in the Las Vegas area use standard epoxy for hangars. Our systems use a high-build, multi-layer approach with a moisture-tolerant primer, high-build body coats, and a chemical-resistant aliphatic urethane topcoat — not a standard residential coating. The result is superior chemical resistance, flexibility to handle thermal cycling, UV stability, and a significantly longer lifespan.",
+    q: "What coating details will I see in the quote?",
+    a: "The proposal lists the primer, body coats and topcoat so you can check the build and chemical resistance for your hangar.",
   },
   {
     q: "How do I get started?",

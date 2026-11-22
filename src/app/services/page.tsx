@@ -25,7 +25,7 @@ export default function ServicesPage() {
         badge="Our Services"
         title="Floor Coating Services"
         highlight="Las Vegas"
-        subtitle="From residential garages to airplane hangars — we match the right professional-grade system to your space."
+        subtitle="What are you working on? Start with your space to see the finishes that fit."
       />
 
       <Breadcrumbs items={[{ label: "Services" }]} />

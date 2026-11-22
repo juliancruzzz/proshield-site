@@ -111,7 +111,7 @@ export default function ConcretePolishingPage() {
         badge="Mechanical Refinement — Not a Coating"
         title="Concrete Polishing"
         highlight="Las Vegas"
-        subtitle="Transform your existing concrete slab into a high-performance, mirror-finish floor. From industrial warehouses to sleek retail showrooms — no coatings, no overlays, just refined concrete built to last decades."
+        subtitle="I grind and polish the concrete you already have. Choose a low sheen for a workshop or a higher gloss for a showroom."
         backgroundImage="/images/concrete-polishing/polished-concrete-aci.webp"
         backgroundAlt="Polished commercial warehouse floor with high-gloss finish"
       />

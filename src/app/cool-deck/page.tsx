@@ -84,7 +84,7 @@ export default function CoolDeckPage() {
         badge="Exterior Pool Deck Coating"
         title="Cool Deck & Pool Deck Coating"
         highlight="Las Vegas"
-        subtitle="Textured resurfacing for suitable pool decks, patios and walkways. Compare the proposed finish, preparation and care requirements."
+        subtitle="A textured overlay can give worn concrete a fresh surface. I check the slab first to see whether it can be resurfaced."
         backgroundImage="/images/cool-deck/pool-deck-spa.webp"
         backgroundAlt="Pool deck with cool deck knockdown texture coating around pool and spa"
       />

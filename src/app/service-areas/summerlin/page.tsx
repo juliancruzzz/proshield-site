@@ -31,14 +31,14 @@ export const metadata: Metadata = {
 const summerlinFaqs = [
   {
     q: "Does ProShield serve all of Summerlin?",
-    a: "Yes, we serve all Summerlin neighborhoods including The Ridges, Summerlin South, Downtown Summerlin, Centennial, Canyon Gate, and all surrounding areas. Summerlin's architectural precision and luxury properties demand expert installation—that's our specialty.",
+    a: "Yes. I work throughout Summerlin, including The Ridges, Summerlin South and Downtown Summerlin.",
   },
   {
-    q: "What epoxy finishes work best for Summerlin luxury homes?",
-    a: "Metallic epoxy offers a decorative finish for Summerlin interiors. The flowing pearlescent finish complements modern architecture and creates stunning visual depth. For a more understated look, ProFlake with premium color blends offers timeless elegance. Limited lifetime warranty coverage applies to qualifying residential systems; moisture-related failures are excluded.",
+    q: "What is the difference between metallic and flake?",
+    a: "Metallic epoxy has a swirled, reflective finish. Flake gives a more even, speckled look. Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty that excludes moisture-related failures.",
   },
   {
-    q: "How do you match epoxy to Summerlin architecture?",
+    q: "Can I see colors before choosing?",
     a: "We can discuss color samples and finish options during your consultation. The right choice depends on your home's style, the condition of the slab and how the space is used.",
   },
   {
@@ -51,7 +51,7 @@ const summerlinFaqs = [
   },
   {
     q: "How long does installation take in Summerlin?",
-    a: "Timelines depend on substrate condition, weather, and how much repair the slab needs. Metallic epoxy typically takes 2–3 days due to multi-layer application and curing. We work around your schedule and minimize disruption to your luxury home.",
+    a: "Timelines depend on substrate condition, weather, and how much repair the slab needs. Metallic epoxy typically takes 2–3 days due to multi-layer application and curing. I’ll confirm when you can use the floor again.",
   },
 ]
 
@@ -80,7 +80,7 @@ export default function SummerlinPage() {
         badge="Summerlin, NV"
         title="Premium Epoxy Flooring &"
         highlight="Coatings in Summerlin"
-        subtitle="High-end residential and commercial coatings for Summerlin's luxury properties. Metallic epoxy, ProFlake, VubaStone resin driveways, and concrete polishing for homes and businesses."
+        subtitle="I coat garages, refinish pool decks and polish concrete in Summerlin. Choose a flake floor for a speckled look or metallic epoxy for a flowing pattern."
       />
 
       <Breadcrumbs items={[{ label: "Service Areas", href: "/service-areas" }, { label: "Summerlin" }]} />
@@ -90,14 +90,12 @@ export default function SummerlinPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-12">
             <span className="text-sm font-semibold tracking-widest uppercase text-accent">
-              Premium Communities Served
+              Neighborhoods
             </span>
             <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
               Summerlin & The Ridges
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              ProShield specializes in luxury residential and commercial properties throughout Summerlin. From The Ridges to Summerlin South, we provide premium coatings that match the architectural excellence of these communities.
-            </p>
+
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -126,11 +124,9 @@ export default function SummerlinPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-gray-900">
-              Premium Finishes for Luxury Properties
+              Floor finishes
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              Summerlin demands excellence. Our high-end coating systems deliver showroom-quality results that complement your home's architecture and lifestyle.
-            </p>
+
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -146,7 +142,7 @@ export default function SummerlinPage() {
                 Metallic Epoxy
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Premium showroom finish with flowing pearlescent depth. Each installation is one-of-a-kind. Perfect for Summerlin's architectural excellence and modern luxury homes.
+                Metallic pigments spread as the floor is poured, leaving a different pattern each time.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Premium Finish <span>→</span>
@@ -165,7 +161,7 @@ export default function SummerlinPage() {
                 ProFlake Garage Floors
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Elegant decorative chip system with 150+ premium color blends. Timeless aesthetic that enhances any Summerlin home style.
+                Choose from more than 150 decorative flake blends.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -184,7 +180,7 @@ export default function SummerlinPage() {
                 VubaStone Resin Driveways
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Luxurious resin-bound stone driveways. Decorative, durable, and stunning curb appeal for Summerlin's premium properties.
+                Stone mixed with clear resin gives a driveway a textured surface.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Premium Driveway <span>→</span>
@@ -203,7 +199,7 @@ export default function SummerlinPage() {
                 Concrete Polishing
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Polished concrete for retail, offices, and commercial spaces in Downtown Summerlin. High-tech, modern aesthetic.
+                Polishing brings out the natural variation in a shop or office floor.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -222,7 +218,7 @@ export default function SummerlinPage() {
                 Cool Deck & Pool Decks
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Reflective UV-resistant coatings for pool decks and outdoor entertaining spaces. Keep surfaces cooler and safer.
+                Choose a texture intended for wet pool decks and a color suited to the amount of sun.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -238,7 +234,7 @@ export default function SummerlinPage() {
                 Paver Sealing
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Protect natural stone pavers from desert dust, UV fading, and staining. Maintains color and enhances appearance for years.
+                A sealer helps keep spills from soaking into the pavers.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Maintenance <span>→</span>
@@ -256,7 +252,7 @@ export default function SummerlinPage() {
               Investment Protection
             </span>
             <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
-              Protect Your Summerlin Property Investment
+              Choosing a finish
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
               A coating can improve the appearance and cleanability of your floor. Preparation, the selected system and ongoing care determine how it performs.
@@ -289,10 +285,10 @@ export default function SummerlinPage() {
 
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 lg:p-8">
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">
-                Architectural Harmony
+                Matching the color
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Summerlin homes demand precision and quality. Our color consultations and design expertise ensure your coating matches your home's architectural style and personal aesthetic perfectly.
+                I can show you samples next to your walls and trim so you can see the colors together.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -312,7 +308,7 @@ export default function SummerlinPage() {
 
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 lg:p-8">
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">
-                Desert Climate Resilience
+                Outdoor surfaces
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 Summerlin outdoor surfaces face desert sun and heat. UV resistance depends on the selected system and topcoat; choose an outdoor finish for exposed areas. Coatings do not stop slab movement or thermal cracking.
@@ -338,7 +334,7 @@ export default function SummerlinPage() {
                 Minimal Disruption
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                For Summerlin luxury homes, we understand the importance of minimal disruption. Most projects are completed in 1–3 days with professional, considerate service that respects your lifestyle.
+                I’ll tell you when I need the space clear and when you can use it again.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -364,7 +360,7 @@ export default function SummerlinPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-gray-900">
-              Why Summerlin Homeowners Choose ProShield
+              Planning your project
             </h2>
           </div>
 
@@ -372,20 +368,20 @@ export default function SummerlinPage() {
             <div className="rounded-xl border border-gray-200 bg-white p-6 lg:p-8">
               <Award className="h-8 w-8 text-accent mb-4" />
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
-                Premium Quality Standards
+                Checking the concrete
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We use professional-grade materials and techniques that match Summerlin's high standards. No shortcuts, no compromises.
+                Before coating, I check for moisture, cracks and old finishes.
               </p>
             </div>
 
             <div className="rounded-xl border border-gray-200 bg-white p-6 lg:p-8">
               <Clock className="h-8 w-8 text-accent mb-4" />
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
-                Efficient Project Management
+                Scheduling
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We respect your time. Most projects completed in 1–3 days with professional scheduling and minimal disruption.
+                I’ll give you the installation schedule after I see the slab.
               </p>
             </div>
 
@@ -395,7 +391,7 @@ export default function SummerlinPage() {
                 Warranty Protection
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Limited lifetime warranty on qualifying residential systems, backed by professional craftsmanship and genuine care.
+                Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. Moisture-related failures are excluded.
               </p>
             </div>
 

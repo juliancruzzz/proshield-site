@@ -46,19 +46,19 @@ const values = [
     icon: <Wrench className="h-5 w-5" />,
     title: "Craftsmanship",
     description:
-      "Every floor is installed with precision. We don't cut corners — we cut concrete.",
+      "I check the slab and explain what needs to be repaired before coating it.",
   },
   {
     icon: <Award className="h-5 w-5" />,
     title: "Professional-Grade Materials",
     description:
-      "We prioritize professional-grade materials from trusted U.S. manufacturers where applicable.",
+      "I match the base coat and finish to the way you use the floor.",
   },
   {
     icon: <Heart className="h-5 w-5" />,
     title: "Local & Reliable",
     description:
-      "We're your neighbor. We show up on time, do the work right, and stand behind it.",
+      "You can reach me with questions about the finish, care or warranty.",
   },
 ]
 
@@ -67,9 +67,9 @@ export default function AboutPage() {
     <>
       <PageHero
         badge="About Us"
-        title="Built on Quality,"
-        highlight="Backed by Results"
-        subtitle="ProShield Epoxy is a premium floor coating company founded by Julian Cruz. We prioritize professional-grade materials from trusted U.S. manufacturers where applicable."
+        title="Meet"
+        highlight="Julian Cruz"
+        subtitle="I’m Julian Cruz, the owner of ProShield Epoxy. I install floor coatings and refinish concrete here in Las Vegas."
       />
 
       <Breadcrumbs items={[{ label: "About" }]} />
@@ -79,27 +79,19 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-              Our Story
+              ProShield Epoxy
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              Why ProShield Exists
+              How I approach a job
             </h2>
             <div className="mt-6 space-y-4 text-base sm:text-lg text-gray-600 leading-relaxed">
               <p>
-                ProShield Epoxy was founded with a simple goal: deliver floor coatings that
-                actually last. Too many companies use basic epoxy that yellows, cracks, and
-                fails within a few years. We saw an opportunity to do it right.
+                I start by looking at the concrete. In a garage, I check for cracks and old coatings.
+                In a shop, I also want to know what rolls across the floor and what might spill on it.
               </p>
               <p>
-                We match the right professional-grade system to every space — from polyaspartic
-                topcoats on residential garages to chemical-resistant systems for airplane
-                hangars, resin-bound VubaStone for driveways, and concrete polishing for
-                commercial floors.
-              </p>
-              <p>
-                We&apos;re not a franchise. We&apos;re not a fly-by-night operation. We&apos;re
-                a local business that takes pride in every floor we install — and we stand
-                behind our work with a real warranty.
+                Once I know what the floor needs, I can explain the prep, show you finish options
+                and walk you through the estimate.
               </p>
             </div>
 
@@ -130,7 +122,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
             <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              What Drives Us
+              What to expect
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">

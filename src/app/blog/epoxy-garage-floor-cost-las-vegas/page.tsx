@@ -7,7 +7,7 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "Epoxy Garage Floor Cost Las Vegas (2026) | ProShield",
+    "What goes into a garage floor quote? | ProShield",
   description:
     "Compare garage floor coating quotes in Las Vegas: measured area, concrete preparation, repairs, moisture treatment and the selected system.",
   alternates: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function EpoxyGarageFloorCostPost() {
   const schema = blogPostingSchema({
-    title: "Epoxy Garage Floor Cost in Las Vegas: 2026 Pricing Guide",
+    title: "What goes into a garage floor quote?",
     description: "Compare garage floor coating quotes in Las Vegas: measured area, concrete preparation, repairs, moisture treatment and the selected system.",
     slug: "epoxy-garage-floor-cost-las-vegas",
     datePublished: "2026-04-03",
@@ -38,7 +38,7 @@ export default function EpoxyGarageFloorCostPost() {
         "name": "How much does it cost to epoxy a 2-car garage in Las Vegas?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A project price depends on measured area, existing coatings, concrete repairs, moisture treatment and the selected finish. Compare written quotes for the same preparation and coating scope."
+          "text": "I measure the floor and check for old coatings, cracks and moisture. If you’re comparing quotes, make sure they include the same repairs and finish."
         }
       },
       {
@@ -46,7 +46,7 @@ export default function EpoxyGarageFloorCostPost() {
         "name": "Is epoxy flooring worth the cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Compare the complete work and the care each product requires. A lower cost over a fixed number of years cannot be established without credible service-life, labor and maintenance assumptions."
+          "text": "Look at what the price includes and how you use the garage. Paying for a decorative finish makes more sense if you want that look and are willing to care for it."
         }
       },
       {
@@ -62,7 +62,7 @@ export default function EpoxyGarageFloorCostPost() {
         "name": "Does the price include concrete repair?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Repair and removal inclusions vary by project. Ask which crack repairs, coating removal and moisture treatment are included, and how additional work would be priced."
+          "text": "Read the repair line on the quote. Ask whether it covers crack repair, stripping an old coating or treating moisture, and what happens if more work shows up during preparation."
         }
       },
       {
@@ -137,7 +137,7 @@ export default function EpoxyGarageFloorCostPost() {
             Pricing Guide
           </span>
           <h1 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Epoxy Garage Floor Cost in Las Vegas: 2026 Pricing Guide
+            What goes into a garage floor quote?
           </h1>
           <div className="flex items-center gap-3 mt-4 text-sm text-gray-400">
             <span>By <span className="font-medium text-gray-200">Julian Cruz</span></span>
@@ -158,7 +158,7 @@ export default function EpoxyGarageFloorCostPost() {
       <article className="section-white pb-20 lg:pb-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-gray max-w-none">
-            <p className="text-lg text-gray-600 leading-relaxed">Garage floor coating prices depend on the measured floor area, concrete preparation and selected system. This guide explains how to compare a written quote without assuming that every garage of the same size needs the same work.</p>
+            <p className="text-lg text-gray-600 leading-relaxed">Two garages can have the same square footage and different prices. If one has peeling paint or cracks to repair, that extra work goes into the quote before the first coat goes down.</p>
 
             {/* Key Takeaways — featured snippet target */}
             <div className="rounded-xl border-l-4 border-accent bg-accent/5 p-5 sm:p-6 my-8">
@@ -239,26 +239,25 @@ export default function EpoxyGarageFloorCostPost() {
             <p className="text-sm text-gray-400 italic">The Peel-Free Lifetime Guarantee applies to qualifying systems under the written terms. Moisture-driven failure is excluded; a flagged moisture condition requires an appropriate moisture vapor barrier before coating. Confirm coverage for the proposed system.</p>
 
             <h2 id="epoxy-vs-polyaspartic-vs-polyurea" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
-              Epoxy vs. Polyaspartic vs. Polyurea: Which Costs More &amp; Why?
+              What do the coating names on a quote mean?
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              These three chemistries are often lumped together, but they perform
-              differently and carry different price tags. Understanding the
-              distinctions helps you evaluate quotes and avoid overpaying for the
-              wrong system.
+              The name on the can tells you only part of the story. A floor may use one coating against the concrete and a different one on top.
             </p>
 
-            <div className="overflow-x-auto -mx-4 sm:mx-0 my-8">
-              <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden"><thead><tr className="bg-gray-50"><th className="text-left px-5 py-3.5 font-semibold text-gray-900">Compare</th><th className="text-left px-5 py-3.5 font-semibold text-gray-900">Epoxy</th><th className="text-left px-5 py-3.5 font-semibold text-gray-900">Polyaspartic</th><th className="text-left px-5 py-3.5 font-semibold text-gray-900">Polyurea</th></tr></thead><tbody><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Layer role</td><td className="px-5 py-3 text-gray-600">Primer, body or finish as specified</td><td className="px-5 py-3 text-gray-600">Layer role specified by product</td><td className="px-5 py-3 text-gray-600">Layer role specified by product</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Working and cure time</td><td className="px-5 py-3 text-gray-600">Product and conditions</td><td className="px-5 py-3 text-gray-600">Product and conditions</td><td className="px-5 py-3 text-gray-600">Product and conditions</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">UV and chemical exposure</td><td className="px-5 py-3 text-gray-600">Check named product data</td><td className="px-5 py-3 text-gray-600">Check named product data</td><td className="px-5 py-3 text-gray-600">Check named product data</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Film build</td><td className="px-5 py-3 text-gray-600">Specified coverage and thickness</td><td className="px-5 py-3 text-gray-600">Specified coverage and thickness</td><td className="px-5 py-3 text-gray-600">Specified coverage and thickness</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Price</td><td className="px-5 py-3 text-gray-600">Written complete-system quote</td><td className="px-5 py-3 text-gray-600">Written complete-system quote</td><td className="px-5 py-3 text-gray-600">Written complete-system quote</td></tr></tbody></table>
-            </div>
-            <p className="text-gray-600 leading-relaxed">ProFlake uses a polyurea base, decorative flake and a polyaspartic topcoat. Confirm the named products and preparation in the project quote. For ProFlake, allow 24 hours before walking and 48 hours before parking, subject to actual weather and curing conditions. Other systems have different return-to-use requirements; follow the project instructions.</p>
-            <p className="text-gray-600 leading-relaxed">Light exposure can affect coating appearance. Compare the selected base and topcoat’s published UV data and intended use; a UV-resistant topcoat is not a promise that the entire floor will never change color. <Link href="/projects" className="text-accent hover:underline font-medium">View completed projects</Link> to see documented examples; project photos are not long-term performance tests.</p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-600">
+              <li><strong>Epoxy</strong> can be a primer, a colored coat or a finish. Check which layer the quote includes.</li>
+              <li><strong>Polyurea</strong> forms the base of a ProFlake floor. The flakes go into it while it is wet.</li>
+              <li><strong>Polyaspartic</strong> is the clear topcoat on ProFlake. It covers the flakes and takes the wear from tires and traffic.</li>
+            </ul>
+            <p className="text-gray-600 leading-relaxed">For ProFlake, plan on 24 hours before walking and 48 hours before parking. Weather can change the cure time, so follow the instructions for your floor.</p>
+            <p className="text-gray-600 leading-relaxed">For an example of a flake finish, see the <Link href="/projects/nightfall-garage-las-vegas" className="text-accent hover:underline font-medium">Nightfall garage I coated in Las Vegas</Link>. The close view shows where the finish continues up the edges.</p>
 
             <h2 id="why-las-vegas-pricing-can-be-different" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Why Las Vegas Pricing Can Be Different
             </h2>
             <p className="text-gray-600 leading-relaxed">Sun exposure, slab temperature, moisture and use affect product selection and application. Ask how the proposed system suits the conditions at your garage.</p>
-            <p className="text-gray-600 leading-relaxed">Light exposure can affect coating appearance. Compare the selected base and topcoat’s published UV data and intended use; a UV-resistant topcoat is not a promise that the entire floor will never change color.</p>
+            <p className="text-gray-600 leading-relaxed">Sunlight can change the color over time. If the garage gets direct sun, ask how the base coat and topcoat hold up to UV light.</p>
 
             <h2 id="how-to-get-an-accurate-quote" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               How to Get an Accurate Quote
@@ -273,12 +272,12 @@ export default function EpoxyGarageFloorCostPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How much does it cost to epoxy a 2-car garage in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">A project price depends on measured area, existing coatings, concrete repairs, moisture treatment and the selected finish. Compare written quotes for the same preparation and coating scope.</p>
+            <p className="text-gray-600 leading-relaxed">I measure the floor and check for old coatings, cracks and moisture. If you’re comparing quotes, make sure they include the same repairs and finish.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Is epoxy flooring worth the cost?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Compare the complete work and the care each product requires. A lower cost over a fixed number of years cannot be established without credible service-life, labor and maintenance assumptions.</p>
+            <p className="text-gray-600 leading-relaxed">Look at what the price includes and how you use the garage. Paying for a decorative finish makes more sense if you want that look and are willing to care for it.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How long does the installation take?
@@ -288,7 +287,7 @@ export default function EpoxyGarageFloorCostPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Does the price include concrete repair?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Repair and removal inclusions vary by project. Ask which crack repairs, coating removal and moisture treatment are included, and how additional work would be priced.</p>
+            <p className="text-gray-600 leading-relaxed">Read the repair line on the quote. Ask whether it covers crack repair, stripping an old coating or treating moisture, and what happens if more work shows up during preparation.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               What&apos;s the difference between epoxy and polyaspartic coatings?
@@ -330,7 +329,7 @@ export default function EpoxyGarageFloorCostPost() {
               <div>
                 <h3 className="font-heading font-semibold text-lg text-gray-900">Julian Cruz</h3>
                 <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian is the founder of ProShield Epoxy, serving the Las Vegas metro area with garage coatings, commercial flooring and specialty surface services.</p>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian Cruz owns ProShield Epoxy in Las Vegas.</p>
               </div>
             </div>
           </div>

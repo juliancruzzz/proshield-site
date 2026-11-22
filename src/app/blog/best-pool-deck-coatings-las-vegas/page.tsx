@@ -7,7 +7,7 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "Best Pool Deck Coatings for Las Vegas Heat (2026) | ProShield",
+    "How to choose a finish for your pool deck | ProShield",
   description:
     "Compare pool deck coatings for Las Vegas: textured finishes, rubber surfacing, preparation, project cost factors and product-specific care.",
   alternates: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function BestPoolDeckCoatingsPost() {
   const schema = blogPostingSchema({
-    title: "Best Pool Deck Coatings for Las Vegas Heat: 2026 Guide",
+    title: "How to choose a finish for your pool deck",
     description: "Compare pool deck coatings for Las Vegas: textured finishes, rubber surfacing, preparation, project cost factors and product-specific care.",
     slug: "best-pool-deck-coatings-las-vegas",
     datePublished: "2026-04-06",
@@ -38,7 +38,7 @@ export default function BestPoolDeckCoatingsPost() {
         "name": "How much does pool deck resurfacing cost in Las Vegas?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work."
+          "text": "The size of the deck is only part of the price. Check whether your estimate includes stripping the old finish, fixing the concrete and getting materials around the pool."
         }
       },
       {
@@ -46,7 +46,7 @@ export default function BestPoolDeckCoatingsPost() {
         "name": "How hot does an uncoated pool deck get in Las Vegas?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet."
+          "text": "Any deck can get too hot for bare feet. If a finish comes with a temperature claim, ask which color was tested and whether it was in full sun."
         }
       },
       {
@@ -54,7 +54,7 @@ export default function BestPoolDeckCoatingsPost() {
         "name": "How long does a pool deck coating last in Las Vegas?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck."
+          "text": "Wear depends on the finish, the condition of the concrete and how much use and sun the deck gets. Ask what the warranty covers and how to care for the finish."
         }
       },
       {
@@ -129,7 +129,7 @@ export default function BestPoolDeckCoatingsPost() {
             Pool Deck Coatings
           </span>
           <h1 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Best Pool Deck Coatings for Las Vegas Heat: 2026 Guide
+            How to choose a finish for your pool deck
           </h1>
           <div className="flex items-center gap-3 mt-4 text-sm text-gray-400">
             <span>By <span className="font-medium text-gray-200">Julian Cruz</span></span>
@@ -150,7 +150,7 @@ export default function BestPoolDeckCoatingsPost() {
       <article className="section-white pb-20 lg:pb-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-gray max-w-none">
-            <p className="text-lg text-gray-600 leading-relaxed">Choosing a pool-deck coating in Las Vegas starts with the existing concrete, the finish you want and the conditions around your pool. Compare the named products, preparation, written price and maintenance requirements. No coating makes every deck cool or safe for bare feet.</p>
+            <p className="text-lg text-gray-600 leading-relaxed">Start with the part of the deck you use most. Around the steps, texture matters when the floor is wet. In full sun, the color and amount of shade matter too. Any deck can get hot enough to hurt bare feet.</p>
 
             {/* Table of Contents */}
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
@@ -188,7 +188,7 @@ export default function BestPoolDeckCoatingsPost() {
             <h2 id="why-pool-deck-coatings-matter-in-las-vegas" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Why Pool Deck Coatings Matter in Las Vegas
             </h2>
-            <p className="text-gray-600 leading-relaxed">Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.</p>
+            <p className="text-gray-600 leading-relaxed">Any deck can get too hot for bare feet. If a finish comes with a temperature claim, ask which color was tested and whether it was in full sun.</p>
             <p className="text-gray-600 leading-relaxed">Before resurfacing, assess cracks, drainage, existing coatings and exposure to pool water and chemicals. A decorative overlay is not a substitute for structural or drainage repairs.</p>
 
             <h2 id="pool-deck-coating-systems-compared" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
@@ -228,7 +228,7 @@ export default function BestPoolDeckCoatingsPost() {
             <h2 id="cost-breakdown-by-system" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Cost Breakdown by System
             </h2>
-            <p className="text-gray-600 leading-relaxed">The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.</p>
+            <p className="text-gray-600 leading-relaxed">The size of the deck is only part of the price. Check whether your estimate includes stripping the old finish, fixing the concrete and getting materials around the pool.</p>
 
             <div className="overflow-x-auto -mx-4 sm:mx-0 my-8">
               <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
@@ -263,7 +263,7 @@ export default function BestPoolDeckCoatingsPost() {
             <h2 id="how-long-pool-deck-coatings-last" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               How Long Pool Deck Coatings Last in Desert Heat
             </h2>
-            <p className="text-gray-600 leading-relaxed">Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.</p>
+            <p className="text-gray-600 leading-relaxed">Wear depends on the finish, the condition of the concrete and how much use and sun the deck gets. Ask what the warranty covers and how to care for the finish.</p>
             <p className="text-gray-600 leading-relaxed"><strong>Condition:</strong> Check for worn texture, loose areas, staining and cracks. Ask whether an issue needs cleaning, a compatible refresh coat, local repair or removal.</p>
             <p className="text-gray-600 leading-relaxed"><strong>Product requirements:</strong> A maintenance schedule should match the installed finish and exposure, not a generic lifespan table.</p>
             <p className="text-gray-600 leading-relaxed"><strong>Warranty:</strong> Compare written coverage, exclusions and required care before choosing a system.</p>
@@ -295,17 +295,17 @@ export default function BestPoolDeckCoatingsPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How much does pool deck resurfacing cost in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.</p>
+            <p className="text-gray-600 leading-relaxed">The size of the deck is only part of the price. Check whether your estimate includes stripping the old finish, fixing the concrete and getting materials around the pool.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How hot does an uncoated pool deck get in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.</p>
+            <p className="text-gray-600 leading-relaxed">Any deck can get too hot for bare feet. If a finish comes with a temperature claim, ask which color was tested and whether it was in full sun.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How long does a pool deck coating last in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.</p>
+            <p className="text-gray-600 leading-relaxed">Wear depends on the finish, the condition of the concrete and how much use and sun the deck gets. Ask what the warranty covers and how to care for the finish.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Does an old knockdown pool deck need to be ground down before repainting?

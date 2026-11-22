@@ -7,7 +7,7 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "Epoxy Floor Maintenance Tips: Keep Your Coating Looking New | ProShield",
+    "How to clean a coated floor | ProShield",
   description:
     "Care for your garage floor coating with product-compatible cleaners, equipment and mats. Learn what to check before repair or a topcoat refresh.",
   alternates: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function EpoxyMaintenancePost() {
   const schema = blogPostingSchema({
-    title: "Epoxy Floor Maintenance Tips: Keep Your Coating Looking New",
+    title: "How to clean a coated floor",
     description: "Care for your garage floor coating with product-compatible cleaners, equipment and mats. Learn what to check before repair or a topcoat refresh.",
     slug: "epoxy-floor-maintenance-tips",
     datePublished: "2026-04-07",
@@ -121,7 +121,7 @@ export default function EpoxyMaintenancePost() {
             Maintenance Guide
           </span>
           <h1 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Epoxy Floor Maintenance Tips: Keep Your Coating Looking New
+            How to clean a coated floor
           </h1>
           <div className="flex items-center gap-3 mt-4 text-sm text-gray-400">
             <span>By <span className="font-medium text-gray-200">Julian Cruz</span></span>
@@ -142,7 +142,7 @@ export default function EpoxyMaintenancePost() {
       <article className="section-white pb-20 lg:pb-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-gray max-w-none">
-            <p className="text-lg text-gray-600 leading-relaxed">A care plan should match the installed floor, topcoat, traffic and spills. This guide covers routine cleaning, compatible equipment and signs that need assessment; it does not assign a fixed lifespan or refresh interval to every epoxy floor.</p>
+            <p className="text-lg text-gray-600 leading-relaxed">Sweep up grit before mopping so you don’t drag it across the finish. For oil, tire marks or a stubborn spill, check which cleaner is safe for your topcoat.</p>
 
             {/* Table of Contents */}
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
@@ -259,7 +259,7 @@ export default function EpoxyMaintenancePost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Summer: Protect Hot Spots
             </h3>
-            <p className="text-gray-600 leading-relaxed">Check mat and floor-coating compatibility before use. Backing materials, trapped dirt or moisture can affect some finishes. A mat is not a substitute for a sound, properly cured coating.</p>
+            <p className="text-gray-600 leading-relaxed">Check which mat backings are safe for your finish. Wait until the coating has cured, and lift the mat regularly to clear out grit and moisture.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Dust &amp; Debris Control
@@ -336,7 +336,7 @@ export default function EpoxyMaintenancePost() {
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
                 Pro Tip: Protective Mats in High-Wear Areas
               </h3>
-              <p className="text-gray-600 leading-relaxed">Check mat and floor-coating compatibility before use. Backing materials, trapped dirt or moisture can affect some finishes. A mat is not a substitute for a sound, properly cured coating.</p>
+              <p className="text-gray-600 leading-relaxed">Check which mat backings are safe for your finish. Wait until the coating has cured, and lift the mat regularly to clear out grit and moisture.</p>
             </div>
 
             <h2 id="frequently-asked-questions" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
@@ -392,7 +392,7 @@ export default function EpoxyMaintenancePost() {
               <div>
                 <h3 className="font-heading font-semibold text-lg text-gray-900">Julian Cruz</h3>
                 <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian is the founder of ProShield Epoxy, serving the Las Vegas metro area with garage coatings, commercial flooring and specialty surface services.</p>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian Cruz owns ProShield Epoxy in Las Vegas.</p>
               </div>
             </div>
           </div>

@@ -28,16 +28,14 @@ export function OverlayIntro() {
           {/* Content side */}
           <div>
             <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-              Don't Replace It — Resurface It
+              Don’t Replace It — Resurface It
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight leading-tight">
-              Transform Your{" "}
-              <span className="text-accent">Existing Concrete</span>
+              Resurfacing{" "}
+              <span className="text-accent">a Concrete Slab</span>
             </h2>
             <p className="mt-4 sm:mt-5 text-gray-500 text-base sm:text-lg leading-relaxed">
-              A concrete overlay is a thin cementitious coating applied directly over existing concrete
-              to restore, repair, and transform the surface. No need to tear out old concrete &mdash;
-              saves time, money, and mess.
+              An overlay is a thin, cement-based layer that bonds to an existing slab. If the concrete is sound, you can change the texture and color without replacing it.
             </p>
 
             {/* Highlight checklist */}

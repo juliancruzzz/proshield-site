@@ -8,7 +8,7 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "Coolest Pool Deck Flooring for Las Vegas (2026) | Compare Every Option | ProShield",
+    "Which pool deck feels cooler in the sun? | ProShield",
   description:
     "Compare pool deck surfaces for Las Vegas: textured coatings, rubber surfacing, pavers and travertine. Review heat, costs, lifespan and maintenance.",
   alternates: {
@@ -79,12 +79,12 @@ function CostBreakdownChart() {
 
 export default function CoolestPoolDeckFlooringPost() {
   const schema = blogPostingSchema({
-    title: "Coolest Pool Deck Flooring for Las Vegas: 2026 Comparison Guide",
+    title: "Which pool deck feels cooler in the sun?",
     description:
       "Compare pool deck surfaces for Las Vegas: textured coatings, rubber surfacing, pavers and travertine. Review heat, costs, lifespan and maintenance.",
     slug: "coolest-pool-deck-flooring-las-vegas",
     datePublished: "2026-05-01",
-    dateModified: "2026-11-18",
+    dateModified: "2026-11-21",
     image: "https://proshieldepoxy.com/images/blog/rubber-deck/rubber-deck-pool-wide.jpg",
   })
 
@@ -97,7 +97,7 @@ export default function CoolestPoolDeckFlooringPost() {
         name: "What is the coolest pool deck surface for Las Vegas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.",
+          text: "Any deck can get too hot for bare feet. If a finish comes with a temperature claim, ask which color was tested and whether it was in full sun.",
         },
       },
       {
@@ -105,7 +105,7 @@ export default function CoolestPoolDeckFlooringPost() {
         name: "How much does pool deck resurfacing cost in Las Vegas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.",
+          text: "The size of the deck is only part of the price. Check whether your estimate includes stripping the old finish, fixing the concrete and getting materials around the pool.",
         },
       },
       {
@@ -113,7 +113,7 @@ export default function CoolestPoolDeckFlooringPost() {
         name: "How long does cool deck last in Las Vegas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.",
+          text: "Wear depends on the finish, the condition of the concrete and how much use and sun the deck gets. Ask what the warranty covers and how to care for the finish.",
         },
       },
       {
@@ -121,7 +121,7 @@ export default function CoolestPoolDeckFlooringPost() {
         name: "Is rubber pool decking worth the cost?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Compare the proposed products, texture, color, preparation, care requirements and written prices. Rubber and textured coatings have different finishes; neither is always cooler, safer or lower maintenance than the other.",
+          text: "Ask to feel a sample of each finish. Rubber and textured coatings feel different underfoot, and both can get hot in the sun. Compare the care instructions and quotes for your deck.",
         },
       },
       {
@@ -137,7 +137,7 @@ export default function CoolestPoolDeckFlooringPost() {
         name: "Does travertine get hot around a pool in Las Vegas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.",
+          text: "Any deck can get too hot for bare feet. If a finish comes with a temperature claim, ask which color was tested and whether it was in full sun.",
         },
       },
     ],
@@ -191,7 +191,7 @@ export default function CoolestPoolDeckFlooringPost() {
             Pool Deck Flooring
           </span>
           <h1 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Coolest Pool Deck Flooring for Las Vegas: Every Option Compared
+            Which pool deck feels cooler in the sun?
           </h1>
           <div className="flex items-center gap-3 mt-4 text-sm text-gray-400">
             <span>
@@ -231,7 +231,7 @@ export default function CoolestPoolDeckFlooringPost() {
               </div>
             </div>
 
-            <p className="text-lg text-gray-600 leading-relaxed">Looking for a cooler pool-deck surface in Las Vegas? Compare the actual product and color, not a material-wide temperature ranking. ProShield offers <Link href="/cool-deck" className="text-accent hover:underline font-medium">cool deck resurfacing</Link> and <Link href="/rubber-pool-deck" className="text-accent hover:underline font-medium">rubber surfacing</Link>. This guide covers preparation, cost factors and care requirements.</p>
+            <p className="text-lg text-gray-600 leading-relaxed">A light pool deck in afternoon shade can feel very different from a dark one in full sun. Two options I install are <Link href="/cool-deck" className="text-accent hover:underline font-medium">cool deck resurfacing</Link> and <Link href="/rubber-pool-deck" className="text-accent hover:underline font-medium">rubber surfacing</Link>. Ask for temperature test results for the finish and color you’re considering.</p>
 
             {/* TOC */}
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
@@ -257,7 +257,7 @@ export default function CoolestPoolDeckFlooringPost() {
               Why Surface Temperature Matters in Las Vegas
             </h2>
             <p className="text-gray-600 leading-relaxed">Sun exposure, shade, surface color and weather affect how hot a deck gets. A product’s test conditions matter when comparing heat claims.</p>
-            <p className="text-gray-600 leading-relaxed">Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.</p>
+            <p className="text-gray-600 leading-relaxed">Any deck can get too hot for bare feet. If a finish comes with a temperature claim, ask which color was tested and whether it was in full sun.</p>
 
             {/* -------- Temp Comparison -------- */}
             <h2 id="temperature-comparison" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
@@ -282,7 +282,7 @@ export default function CoolestPoolDeckFlooringPost() {
               Cool Deck Coatings
             </h2>
             <p className="text-gray-600 leading-relaxed"><Link href="/cool-deck" className="text-accent hover:underline font-medium">Cool deck resurfacing</Link> covers a range of textured pool-deck finishes. Confirm the product name and application requirements; generic acrylic coatings and branded cement-based toppings are not the same system.</p>
-            <p className="text-gray-600 leading-relaxed">The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work. Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.</p>
+            <p className="text-gray-600 leading-relaxed">The size of the deck is only part of the price. Check whether your estimate includes stripping the old finish, fixing the concrete and getting materials around the pool. Wear depends on the finish, the condition of the concrete and how much use and sun the deck gets. Ask what the warranty covers and how to care for the finish.</p>
             <p className="text-gray-600 leading-relaxed">Ask whether the proposed coating suits the existing concrete and how it should be maintained.</p>
 
             {/* -------- Travertine -------- */}
@@ -322,8 +322,8 @@ export default function CoolestPoolDeckFlooringPost() {
               </div>
             </div>
 
-            <p className="text-gray-600 leading-relaxed">Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.</p>
-            <p className="text-gray-600 leading-relaxed">Texture can help provide traction, but wet surfaces can still be slippery. Compare the proposed finish’s slip-resistance information and keep the deck clean. Cushioning does not prevent falls or guarantee protection from injury. Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.</p>
+            <p className="text-gray-600 leading-relaxed">Any deck can get too hot for bare feet. If a finish comes with a temperature claim, ask which color was tested and whether it was in full sun.</p>
+            <p className="text-gray-600 leading-relaxed">Texture can help provide traction, but wet surfaces can still be slippery. Compare the proposed finish’s slip-resistance information and keep the deck clean. Cushioning does not prevent falls or guarantee protection from injury. Wear depends on the finish, the condition of the concrete and how much use and sun the deck gets. Ask what the warranty covers and how to care for the finish.</p>
             <p className="text-gray-600 leading-relaxed">Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair. Installation and return-to-use times depend on preparation, product, weather and curing conditions. The written project schedule should state when walking, furniture and normal pool use can resume.</p>
 
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden my-8 shadow-lg">
@@ -357,7 +357,7 @@ export default function CoolestPoolDeckFlooringPost() {
 
             <CostBreakdownChart />
 
-            <p className="text-gray-600 leading-relaxed">The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.</p>
+            <p className="text-gray-600 leading-relaxed">The size of the deck is only part of the price. Check whether your estimate includes stripping the old finish, fixing the concrete and getting materials around the pool.</p>
 
             {/* -------- Our Recommendation -------- */}
             <h2 id="our-recommendation" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
@@ -367,7 +367,7 @@ export default function CoolestPoolDeckFlooringPost() {
               Compare cool deck coatings with{" "}
               <Link href="/rubber-pool-deck" className="text-accent hover:underline font-semibold">rubber aggregate pool decking</Link>.
             </p>
-            <p className="text-gray-600 leading-relaxed">Compare the proposed products, texture, color, preparation, care requirements and written prices. Rubber and textured coatings have different finishes; neither is always cooler, safer or lower maintenance than the other.</p>
+            <p className="text-gray-600 leading-relaxed">Ask to feel a sample of each finish. Rubber and textured coatings feel different underfoot, and both can get hot in the sun. Compare the care instructions and quotes for your deck.</p>
             <p className="text-gray-600 leading-relaxed">For <Link href="/cool-deck" className="text-accent hover:underline font-medium">cool deck resurfacing</Link>, ask which finish is proposed, how the concrete will be prepared and what cleaning or future refresh work it needs.</p>
 
             {/* Mid-article CTA */}
@@ -391,22 +391,22 @@ export default function CoolestPoolDeckFlooringPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               What is the coolest pool deck surface for Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.</p>
+            <p className="text-gray-600 leading-relaxed">Any deck can get too hot for bare feet. If a finish comes with a temperature claim, ask which color was tested and whether it was in full sun.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How much does pool deck resurfacing cost in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.</p>
+            <p className="text-gray-600 leading-relaxed">The size of the deck is only part of the price. Check whether your estimate includes stripping the old finish, fixing the concrete and getting materials around the pool.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How long does cool deck last in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.</p>
+            <p className="text-gray-600 leading-relaxed">Wear depends on the finish, the condition of the concrete and how much use and sun the deck gets. Ask what the warranty covers and how to care for the finish.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Is rubber pool decking worth the cost?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Compare the proposed products, texture, color, preparation, care requirements and written prices. Rubber and textured coatings have different finishes; neither is always cooler, safer or lower maintenance than the other.</p>
+            <p className="text-gray-600 leading-relaxed">Ask to feel a sample of each finish. Rubber and textured coatings feel different underfoot, and both can get hot in the sun. Compare the care instructions and quotes for your deck.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Can you resurface a pool deck without removing existing concrete?
@@ -416,7 +416,7 @@ export default function CoolestPoolDeckFlooringPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Does travertine get hot around a pool in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.</p>
+            <p className="text-gray-600 leading-relaxed">Any deck can get too hot for bare feet. If a finish comes with a temperature claim, ask which color was tested and whether it was in full sun.</p>
 
             {/* CTA Box */}
             <div className="mt-14 rounded-2xl bg-gray-50 border border-gray-200 p-8 text-center">

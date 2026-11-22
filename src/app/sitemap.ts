@@ -12,35 +12,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [
     // Core pages
     { url: `${BASE_URL}/`, lastModified: "2026-11-21", priority: 1.0, changeFrequency: "weekly" },
-    { url: `${BASE_URL}/contact`, lastModified: "2026-11-17", priority: 0.9, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/contact`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
 
     // Service pages
     { url: `${BASE_URL}/proflake`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/metallic-epoxy`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/vubastone`, lastModified: "2026-11-17", priority: 0.9, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/concrete-polishing`, lastModified: "2026-04-10", priority: 0.9, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/vubastone`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/concrete-polishing`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
     { url: `${BASE_URL}/commercial-flooring`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/concrete-overlay`, lastModified: "2026-11-17", priority: 0.9, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/cool-deck`, lastModified: "2026-11-18", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/rubber-pool-deck`, lastModified: "2026-11-18", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/concrete-overlay`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/cool-deck`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/rubber-pool-deck`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/paver-sealing`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/airplane-hangar`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/airplane-hangar`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
 
     // Area pages
     { url: `${BASE_URL}/areas/garage`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/areas/exterior`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/areas/interior`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/areas/commercial`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/areas/exterior`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/areas/interior`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/areas/commercial`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
 
     // Verified project pages
     { url: `${BASE_URL}/projects/nightfall-garage-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
-    ...["projects", "projects/shoreline-garage-henderson", "projects/metallic-showroom-floor"].map(path => ({ url: `${BASE_URL}/${path}`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" as const })),
+    ...["projects", "projects/shoreline-garage-henderson", "projects/metallic-showroom-floor"].map(path => ({ url: `${BASE_URL}/${path}`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" as const })),
 
     // Supporting pages
-    { url: `${BASE_URL}/services`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/services`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/gallery`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "weekly" },
     { url: `${BASE_URL}/about`, lastModified: "2026-11-21", priority: 0.6, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/faq`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/faq`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
 
     // Blog (lastmod = the post's actual dateModified or datePublished from its schema)
     { url: `${BASE_URL}/blog`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "weekly" },
@@ -51,16 +51,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/best-pool-deck-coatings-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/blog/epoxy-floor-maintenance-tips`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/blog/metallic-epoxy-flooring-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/blog/coolest-pool-deck-flooring-las-vegas`, lastModified: "2026-11-18", priority: 0.7, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/blog/rubber-pool-deck-las-vegas`, lastModified: "2026-11-18", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/blog/coolest-pool-deck-flooring-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/blog/rubber-pool-deck-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
 
     // Service areas
-    { url: `${BASE_URL}/service-areas`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/service-areas`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/service-areas/henderson`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/service-areas/summerlin`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/service-areas/north-las-vegas`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/service-areas/summerlin`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/service-areas/north-las-vegas`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/service-areas/boulder-city`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/service-areas/pahrump`, lastModified: "2026-11-17", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/service-areas/pahrump`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
   ]
 
   return routes

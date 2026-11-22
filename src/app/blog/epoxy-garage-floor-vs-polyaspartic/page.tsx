@@ -7,7 +7,7 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "Epoxy vs Polyaspartic Coatings | ProShield Epoxy",
+    "Epoxy or polyaspartic for a garage floor? | ProShield",
   description:
     "Compare epoxy, polyurea and polyaspartic floor systems: product specifications, layer build, preparation, curing and use in a Las Vegas garage.",
   alternates: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function EpoxyVsPolyasparticPost() {
   const schema = blogPostingSchema({
-    title: "Epoxy vs. Polyaspartic Garage Floor Coatings — What's the Difference?",
+    title: "Epoxy or polyaspartic for a garage floor?",
     description: "Compare epoxy, polyurea and polyaspartic floor systems: product specifications, layer build, preparation, curing and use in a Las Vegas garage.",
     slug: "epoxy-garage-floor-vs-polyaspartic",
     datePublished: "2026-04-01",
@@ -121,8 +121,7 @@ export default function EpoxyVsPolyasparticPost() {
             Garage Floors
           </span>
           <h1 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Epoxy vs. Polyaspartic Garage Floor Coatings — What&apos;s the
-            Difference?
+            Epoxy or polyaspartic for a garage floor?
           </h1>
           <div className="flex items-center gap-3 mt-4 text-sm text-gray-400">
             <span>By <span className="font-medium text-gray-200">Julian Cruz</span></span>
@@ -143,14 +142,7 @@ export default function EpoxyVsPolyasparticPost() {
       <article className="section-white pb-20 lg:pb-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-gray max-w-none">
-            <p className="text-lg text-gray-600 leading-relaxed">
-              If you&apos;re shopping for a garage floor coating in Las Vegas,
-              you&apos;ll hear two terms constantly: epoxy and polyaspartic. Both
-              are resinous coatings that go over concrete. Both look great when
-              done right. But they&apos;re different chemistries with different
-              strengths — and in the Las Vegas climate, those differences
-              actually matter.
-            </p>
+            <p className="text-lg text-gray-600 leading-relaxed">A garage floor can use more than one type of coating. Ask what goes directly on the concrete, what forms the topcoat and how long that finish needs to cure before you park.</p>
 
             {/* Table of Contents */}
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
@@ -284,7 +276,7 @@ export default function EpoxyVsPolyasparticPost() {
               <div>
                 <h3 className="font-heading font-semibold text-lg text-gray-900">Julian Cruz</h3>
                 <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian is the founder of ProShield Epoxy, serving the Las Vegas metro area with garage coatings, commercial flooring and specialty surface services.</p>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian Cruz owns ProShield Epoxy in Las Vegas.</p>
               </div>
             </div>
           </div>

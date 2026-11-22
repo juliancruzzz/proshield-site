@@ -79,7 +79,7 @@ export default function CommercialFlooringPage() {
         badge="Commercial Resinous Flooring"
         title="Commercial Flooring"
         highlight="Las Vegas"
-        subtitle="Seamless resinous flooring systems matched to your facility's specific demands — from thermal shock resistance to chemical exposure to heavy rolling loads."
+        subtitle="Will the floor see forklift traffic, hot washdowns or chemical spills? That helps me narrow down which coating to use."
         backgroundImage="/images/commercial/commercial-grey-yellow-stripe.webp"
         backgroundAlt="Commercial warehouse with solid color epoxy floor and safety line markings"
       />

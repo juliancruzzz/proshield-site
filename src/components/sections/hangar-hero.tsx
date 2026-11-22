@@ -50,7 +50,7 @@ export function HangarHero({ title = "Airplane Hangar Floor Coating", highlight 
           transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
           className="mt-4 sm:mt-5 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed text-text-light-secondary"
         >
-          High-performance coating systems engineered to resist Skydrol, jet fuel, and the extreme demands of aviation environments. Not a residential product — built for hangars.
+          Tell me which fuels, hydraulic fluids and equipment your hangar floor will see. I use that information to select a coating.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

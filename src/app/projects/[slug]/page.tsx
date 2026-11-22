@@ -40,6 +40,7 @@ export default async function ProjectPage({ params }: Props) {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <Link href="/projects" className="text-sm font-medium text-accent-text underline">All Projects</Link>
         <dl className="mt-7 flex flex-wrap gap-x-12 gap-y-4 border-y border-gray-200 py-5">
+          <div><dt className="text-sm text-gray-600">Installer</dt><dd className="mt-1 font-semibold text-gray-900">ProShield Epoxy</dd></div>
           {project.location && <div><dt className="text-sm text-gray-600">Location</dt><dd className="mt-1 font-semibold text-gray-900">{project.location}</dd></div>}
           <div><dt className="text-sm text-gray-600">Finish</dt><dd className="mt-1 font-semibold text-gray-900">{project.finish}</dd></div>
         </dl>

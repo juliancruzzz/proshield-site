@@ -103,7 +103,7 @@ export default function VubaStonePage() {
         badge="Vuba Stone Certified Installers — Las Vegas"
         title="VubaStone Resin-Bound Stone"
         highlight="Las Vegas"
-        subtitle="Natural Spanish marble bound in UV-stable polyurethane resin. Fully permeable, color-stable, and engineered to last. The premium outdoor surface for driveways, patios, pool decks, and walkways."
+        subtitle="VubaStone combines small pieces of marble with a clear resin. You can use it on driveways, patios, walkways and around pools."
         backgroundImage="/images/vubastone/vubastone-driveway-stone-columns.webp"
         backgroundAlt="VubaStone resin-bound stone driveway with grand stone column entrance"
       />

@@ -9,7 +9,7 @@ const applications = [
     icon: Building2,
     title: "Retail & Showrooms",
     description:
-      "High-gloss finishes that showcase products beautifully. Reflective floors elevate customer experience and reduce lighting costs.",
+      "A polished floor reflects overhead light. Choose the sheen to suit the displays and lighting in your store.",
   },
   {
     icon: Warehouse,

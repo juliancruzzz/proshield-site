@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const northLasVegasFaqs = [
   {
     q: "What makes North Las Vegas industrial coatings different?",
-    a: "North Las Vegas' industrial and warehouse operations need chemical-resistant, heavy-duty systems that residential coatings can't handle. We specialize in epoxy and polyurethane systems designed for high-traffic, chemical-exposure, and durability demands of commercial facilities.",
+    a: "A warehouse floor may need to handle forklift turns, oils and frequent cleaning. I check each of those before choosing a coating.",
   },
   {
     q: "Do you work with warehouse and manufacturing facilities?",
@@ -39,7 +39,7 @@ const northLasVegasFaqs = [
   },
   {
     q: "Can you customize coatings for chemical exposure?",
-    a: "Absolutely. We assess your facility's specific chemical exposure (solvents, oils, cleaners, etc.) and recommend appropriate epoxy or polyurethane systems. Each commercial project is engineered for your facility's specific requirements.",
+    a: "Yes. Tell me which solvents, oils or cleaners you use so I can check the product specifications.",
   },
   {
     q: "How quickly can you complete a large warehouse or commercial project?",
@@ -80,7 +80,7 @@ export default function NorthLasVegasPage() {
         badge="North Las Vegas, NV"
         title="Commercial & Industrial"
         highlight="Epoxy Flooring Solutions"
-        subtitle="Professional-grade chemical-resistant epoxy systems for warehouses, manufacturing facilities, and industrial operations. Aliante, Apex Industrial Park, and all North Las Vegas commercial corridors."
+        subtitle="A forklift aisle, a shop floor and a loading bay take different kinds of wear. I help North Las Vegas businesses choose a floor for the traffic and spills they see."
       />
 
       <Breadcrumbs items={[{ label: "Service Areas", href: "/service-areas" }, { label: "North Las Vegas" }]} />
@@ -93,11 +93,9 @@ export default function NorthLasVegasPage() {
               Industrial & Commercial Corridors
             </span>
             <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
-              North Las Vegas Industrial Focus
+              Facilities and areas I serve
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              North Las Vegas is the industrial and logistics hub of Southern Nevada. Our commercial-grade coating systems are engineered for heavy-duty operations, chemical exposure, and long-term durability.
-            </p>
+
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -128,9 +126,7 @@ export default function NorthLasVegasPage() {
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-gray-900">
               Commercial-Grade Coating Systems
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              Engineered for heavy-duty industrial and commercial operations. Chemical-resistant, durable, and built for North Las Vegas' demanding industrial environment.
-            </p>
+
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -146,7 +142,7 @@ export default function NorthLasVegasPage() {
                 Industrial Epoxy
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Heavy-duty epoxy systems for warehouses, manufacturing, and industrial operations. Chemical-resistant formulations engineered for demanding environments.
+                Epoxy coatings for warehouse aisles, work bays and production floors.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -165,7 +161,7 @@ export default function NorthLasVegasPage() {
                 Concrete Polishing
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                High-performance polished concrete for retail, offices, and light-industrial spaces. Professional appearance with durability for commercial environments.
+                Polishing leaves the concrete itself as the finished surface.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -181,7 +177,7 @@ export default function NorthLasVegasPage() {
                 Chemical-Resistant Coatings
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Specialized epoxy and polyurethane systems for facilities with chemical exposure. Customized for your facility's specific requirements.
+                I check the chemicals you use against the coating manufacturer’s specifications.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Consult <span>→</span>
@@ -197,7 +193,7 @@ export default function NorthLasVegasPage() {
                 Polyurethane Flooring
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                High-performance polyurethane systems for maximum durability. Superior abrasion resistance for heavy-traffic warehouses and manufacturing.
+                A polyurethane topcoat can help protect high-traffic areas from wear.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Industrial Grade <span>→</span>
@@ -213,7 +209,7 @@ export default function NorthLasVegasPage() {
                 Slip-Resistant Coatings
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Safety-focused systems with high slip resistance. Critical for food processing, medical facilities, and safety-sensitive operations.
+                A textured finish can add grip in work areas that get wet.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Safety First <span>→</span>
@@ -232,7 +228,7 @@ export default function NorthLasVegasPage() {
                 Specialty Industrial
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Custom solutions for unique industrial applications. Food processing, pharmaceutical, automotive, and other specialized requirements.
+                Food processing rooms, repair shops and production lines each need a finish suited to the work.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Custom Solutions <span>→</span>
@@ -250,11 +246,9 @@ export default function NorthLasVegasPage() {
               Industrial Environment
             </span>
             <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
-              Why Industrial Facilities Need Professional Coatings
+              What to check on a facility floor
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              North Las Vegas' industrial operations face harsh demands that basic concrete can't handle. Professional commercial-grade coatings are essential for safety, durability, and operational efficiency.
-            </p>
+
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -263,7 +257,7 @@ export default function NorthLasVegasPage() {
                 Chemical Resistance
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Industrial and manufacturing operations expose concrete to solvents, oils, cleaners, and harsh chemicals. Professional epoxy and polyurethane systems provide superior chemical resistance that protects your facility investment.
+                Solvents, oils and cleaners affect coatings differently. A list of what you use helps me check the product before I quote it.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -286,7 +280,7 @@ export default function NorthLasVegasPage() {
                 Heavy-Traffic Durability
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Warehouses, manufacturing plants, and distribution centers experience constant heavy foot traffic, forklifts, and equipment. Professional coatings resist abrasion and wear that bare concrete can't withstand.
+                Forklifts and carts wear down turning lanes and loading areas first. Point those out during the site visit.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -332,7 +326,7 @@ export default function NorthLasVegasPage() {
                 Operational Efficiency
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Professional coatings reduce downtime, maintenance costs, and safety risks. A coated floor is easier to clean, maintain, and operate, improving overall facility efficiency and productivity.
+                Tell me how you wash the floor and how long it can be out of service.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -369,7 +363,7 @@ export default function NorthLasVegasPage() {
                 Industrial Experience
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We specialize in warehouse, manufacturing, and industrial operations. We understand the demands of heavy-duty commercial environments.
+                I work with warehouses and manufacturing facilities.
               </p>
             </div>
 
@@ -379,27 +373,27 @@ export default function NorthLasVegasPage() {
                 Scheduled Around Operations
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We work with facility management to schedule projects during off-hours or closures, minimizing business disruption.
+                I can discuss installation during an off shift or planned closure.
               </p>
             </div>
 
             <div className="rounded-xl border border-gray-200 bg-white p-6 lg:p-8">
               <Shield className="h-8 w-8 text-accent mb-4" />
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
-                Engineered Solutions
+                Choosing a coating
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Each project is custom-engineered for your facility's specific chemical exposure, traffic demands, and operational requirements.
+                I match the coating to the traffic and chemicals in each part of the building.
               </p>
             </div>
 
             <div className="rounded-xl border border-gray-200 bg-white p-6 lg:p-8">
               <TrendingUp className="h-8 w-8 text-accent mb-4" />
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
-                Professional-Grade Materials
+                Coating options
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We use professional-grade epoxy, polyurethane, and polyaspartic systems designed for demanding industrial environments.
+                Options include epoxy, polyurethane and polyaspartic coatings.
               </p>
             </div>
           </div>

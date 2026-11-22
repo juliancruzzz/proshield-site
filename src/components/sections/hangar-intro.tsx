@@ -3,10 +3,10 @@
 import { Check } from "lucide-react"
 
 const highlights = [
-  "Resists Skydrol, Hyjet, Jet-A, hydraulic fluids, and aggressive solvents",
-  "Handles multi-ton aircraft, tow tractors, jacks, and rolling ground support",
-  "UV-stable finish that won't yellow from open hangar door sunlight",
-  "Full aircraft loading in 24–48 hours, phased around your operations",
+  "Check the coating against the fuels and hydraulic fluids you use",
+  "Account for aircraft, jacks and rolling equipment",
+  "Consider sunlight at open hangar doors",
+  "Set a reopening schedule for foot traffic and aircraft",
 ]
 
 export function HangarIntro() {
@@ -28,17 +28,14 @@ export function HangarIntro() {
           {/* Content side */}
           <div>
             <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-              Aviation-Grade Protection
+              Floor selection
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight leading-tight">
-              Not a Garage Floor Coating.{" "}
-              <span className="text-accent">An Aviation Floor System.</span>
+              What your hangar{" "}
+              <span className="text-accent">floor needs</span>
             </h2>
             <p className="mt-4 sm:mt-5 text-gray-500 text-base sm:text-lg leading-relaxed">
-              Standard coatings crack, peel, and delaminate under the extreme chemical and
-              mechanical demands of an aircraft hangar. ProShield installs high-performance,
-              multi-layer systems engineered specifically for aviation environments &mdash;
-              built to resist the chemicals, loads, and conditions that destroy ordinary floors.
+              When I look at a hangar, I check where the aircraft parks, where fluids spill and which equipment crosses the slab. Those details help determine the prep and topcoat.
             </p>
 
             {/* Highlight checklist */}

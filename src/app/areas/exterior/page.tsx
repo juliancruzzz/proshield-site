@@ -86,7 +86,7 @@ export default function ExteriorPage() {
         badge="Exterior Surfaces"
         title="Exterior Coatings"
         highlight="Las Vegas"
-        subtitle="From driveways to patios and pool decks — ProShield transforms outdoor surfaces with durable, decorative systems built to handle the elements."
+        subtitle="Compare finishes for your driveway, patio or pool deck. The best fit depends on the concrete and how you use it."
       />
 
       <ExteriorAreas />

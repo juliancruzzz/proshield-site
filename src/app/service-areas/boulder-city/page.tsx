@@ -31,10 +31,10 @@ export const metadata: Metadata = {
 const boulderCityFaqs = [
   {
     q: "Does ProShield serve Boulder City?",
-    a: "Yes, we serve all of Boulder City, including historic downtown, residential neighborhoods, and surrounding areas. We understand the unique character of this small-town community and are committed to providing the same professional service we offer throughout the Las Vegas Valley.",
+    a: "Yes. I work throughout Boulder City, including historic downtown and homes near Lake Mead.",
   },
   {
-    q: "Why would a Boulder City homeowner choose professional epoxy?",
+    q: "What do you check before coating older concrete?",
     a: "The right coating depends on your slab, sun exposure and how you use the space. Moisture and existing cracks need assessment before installation. Outdoor areas need a suitable UV-resistant finish.",
   },
   {
@@ -43,7 +43,7 @@ const boulderCityFaqs = [
   },
   {
     q: "How do you handle historic properties in Boulder City?",
-    a: "Historic properties require care and respect. We'll work with you to understand the character of your home, recommend finishes that complement the original architecture, and ensure our work respects the property's historical significance.",
+    a: "If there are original finishes you want to keep, show me before we look at samples or plan the prep.",
   },
   {
     q: "What's the timeline for a Boulder City project?",
@@ -80,7 +80,7 @@ export default function BoulderCityPage() {
         badge="Boulder City, NV"
         title="Epoxy Flooring &"
         highlight="Coatings in Boulder City"
-        subtitle="Professional-grade epoxy and resin systems for historic and residential Boulder City properties. Near Hoover Dam and Lake Mead, serving this unique small-town community with care and expertise."
+        subtitle="I refinish garages, driveways and pool decks in Boulder City, including homes near Lake Mead and businesses downtown."
       />
 
       <Breadcrumbs items={[{ label: "Service Areas", href: "/service-areas" }, { label: "Boulder City" }]} />
@@ -93,11 +93,9 @@ export default function BoulderCityPage() {
               A Unique Community
             </span>
             <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
-              Boulder City: Character & Heritage
+              Around Boulder City
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              Boulder City is a unique small-town community with genuine character. Founded as a New Deal project during the construction of Hoover Dam, Boulder City has maintained its distinctive heritage while embracing modern amenities. We&apos;re proud to serve this community with the same professionalism and care we provide throughout Southern Nevada.
-            </p>
+
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -128,9 +126,7 @@ export default function BoulderCityPage() {
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-gray-900">
               Flooring Solutions for Boulder City
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              From residential garages to historic property restoration, we provide professional epoxy coatings customized for Boulder City&apos;s unique environment.
-            </p>
+
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -146,7 +142,7 @@ export default function BoulderCityPage() {
                 ProFlake Garage Floors
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Decorative, durable residential garage coatings. 150+ color options to match your home&apos;s style, backed by a limited lifetime warranty.
+                Flake gives a garage a speckled finish, with more than 150 blends to choose from.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -165,7 +161,7 @@ export default function BoulderCityPage() {
                 Metallic Epoxy
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Premium showroom finish with flowing pearlescent depth. Creates stunning visual impact for showcase garages and luxury homes.
+                Metallic pigments give the floor a flowing pattern.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Premium Option <span>→</span>
@@ -184,7 +180,7 @@ export default function BoulderCityPage() {
                 VubaStone Resin Driveways
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Beautiful resin-bound stone driveways with natural stone appearance. Perfect for curb appeal and durability.
+                Resin holds the stone together to create a textured driveway.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Driveway System <span>→</span>
@@ -203,7 +199,7 @@ export default function BoulderCityPage() {
                 Concrete Polishing
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Polished concrete for retail, offices, and community spaces in Boulder City. Modern, professional appearance.
+                Polishing brings out the stone in an existing concrete floor.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Commercial <span>→</span>
@@ -222,7 +218,7 @@ export default function BoulderCityPage() {
                 Cool Deck & Pool Decks
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Reflective, UV-resistant coatings for pool and patio areas. Keep surfaces cooler and safer for family enjoyment.
+                Texture, color and the amount of shade all matter around a pool.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Outdoor <span>→</span>
@@ -238,7 +234,7 @@ export default function BoulderCityPage() {
                 Paver Sealing
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Protect natural stone pavers from dust, UV fading, and staining. Maintains beauty and longevity of your outdoor spaces.
+                Sealing can help keep spills from soaking into pavers.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Maintenance <span>→</span>
@@ -256,7 +252,7 @@ export default function BoulderCityPage() {
               Environmental Factors
             </span>
             <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
-              Unique Boulder City Environmental Conditions
+              What I check before coating
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
               Sun exposure, moisture and the condition of the slab help determine which coating and preparation are appropriate for a Boulder City property.
@@ -338,7 +334,7 @@ export default function BoulderCityPage() {
                 Historic Property Preservation
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Boulder City&apos;s historic properties deserve care and respect. We work with property owners to recommend finishes that preserve character while providing modern protection.
+                For an older home, I can show you finishes that work with the original stone and concrete.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -364,7 +360,7 @@ export default function BoulderCityPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-gray-900">
-              Why Boulder City Homeowners Trust ProShield
+              Planning the job
             </h2>
           </div>
 
@@ -382,10 +378,10 @@ export default function BoulderCityPage() {
             <div className="rounded-xl border border-gray-200 bg-white p-6 lg:p-8">
               <Shield className="h-8 w-8 text-accent mb-4" />
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
-                Warranty Backed
+                Warranty
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Limited lifetime warranty on qualifying residential systems. Real protection for your investment.
+                Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. Moisture-related failures are excluded.
               </p>
             </div>
 
@@ -395,7 +391,7 @@ export default function BoulderCityPage() {
                 Local Commitment
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We&apos;re proud to serve Boulder City. We show up on time, do the work right, and genuinely care about your satisfaction.
+                I work on homes and businesses in town.
               </p>
             </div>
 

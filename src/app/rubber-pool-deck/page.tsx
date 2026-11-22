@@ -111,7 +111,7 @@ export default function RubberPoolDeckPage() {
         badge="Premium Pool Deck Surfacing"
         title="Rubber Pool Deck Surfacing"
         highlight="Las Vegas"
-        subtitle="Rubber aggregate resurfacing for suitable concrete. Compare color blends, preparation and care requirements with a free project estimate."
+        subtitle="If you want a softer surface around the pool, I can check whether your concrete is a good base for a rubber deck."
         backgroundImage="/images/blog/rubber-deck/rubber-deck-pool-wide.jpg"
         backgroundAlt="Surface example of rubber aggregate around a landscaped pool"
       />

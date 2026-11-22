@@ -79,7 +79,7 @@ export default function InteriorPage() {
         badge="Interior Spaces"
         title="Interior Flooring"
         highlight="Las Vegas"
-        subtitle="Metallic epoxy, polished concrete and decorative overlays matched to your interior space, style and budget."
+        subtitle="See how a metallic coating, polished concrete and a decorative overlay look indoors."
       />
 
       <InteriorAreas />
@@ -157,7 +157,7 @@ export default function InteriorPage() {
               Design Flexibility: Match Your Style & Budget
             </h3>
             <p className="text-gray-600 mb-6">
-              Your interior flooring should reflect your home's personality and withstand everyday life. ProShield offers solutions across every style and price point:
+              Your interior flooring should reflect your home’s personality and withstand everyday life. ProShield offers solutions across every style and price point:
             </p>
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
@@ -218,7 +218,7 @@ export default function InteriorPage() {
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
                   <p className="font-semibold text-gray-900">Tailored Options for Every Space</p>
-                  <p className="text-gray-600 mt-1">Whether it's a stunning kitchen centerpiece or a practical bathroom floor, we have the right solution.</p>
+                  <p className="text-gray-600 mt-1">Whether it’s a stunning kitchen centerpiece or a practical bathroom floor, we have the right solution.</p>
                 </div>
               </div>
             </div>

@@ -32,11 +32,11 @@ export const metadata: Metadata = {
 const hendersonFaqs = [
   {
     q: "Does ProShield serve all of Henderson?",
-    a: "Yes, we serve the entire Henderson area including Green Valley, Anthem, MacDonald Highlands, Lake Las Vegas, Inspirada, and all neighborhoods throughout the city. We also specialize in airplane hangar coatings at Henderson Executive Airport.",
+    a: "Yes. I work throughout Henderson, including Green Valley, Anthem, Inspirada and Lake Las Vegas.",
   },
   {
-    q: "Why does Henderson need professional epoxy coatings?",
-    a: "Henderson experiences extreme summer heat (115°F+), intense UV exposure, and occasional thermal shock from temperature swings. The right system depends on whether the surface is indoors or outdoors, its condition, and moisture in the slab. We assess those conditions before recommending a coating.",
+    q: "Can I use a garage coating on a patio?",
+    a: "A patio gets direct sunlight and rain. I check the exposure and the slab before recommending an outdoor finish.",
   },
   {
     q: "What services do you offer in Henderson?",
@@ -52,7 +52,7 @@ const hendersonFaqs = [
   },
   {
     q: "Can you serve Green Valley, Anthem, and Lake Las Vegas?",
-    a: "Absolutely. We regularly serve all these Henderson neighborhoods. These communities demand premium finishes, and we specialize in high-end residential coatings that match the quality of those neighborhoods.",
+    a: "Yes. I work in all three neighborhoods.",
   },
 ]
 
@@ -81,7 +81,7 @@ export default function HendersonPage() {
         badge="Henderson, NV"
         title="Epoxy Flooring &"
         highlight="Coatings in Henderson"
-        subtitle="Professional-grade epoxy and polyaspartic systems for residential, commercial, and specialized applications throughout Henderson, including Green Valley, Anthem, MacDonald Highlands, and Lake Las Vegas."
+        subtitle="I coat garage floors, pool decks and hangar floors in Henderson. The Shoreline garage below shows how a light flake blend looks across a whole floor."
       />
 
       <Breadcrumbs items={[{ label: "Service Areas", href: "/service-areas" }, { label: "Henderson" }]} />
@@ -96,9 +96,7 @@ export default function HendersonPage() {
             <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
               Henderson & Surrounding Communities
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              From MacDonald Highlands to the family-friendly communities of Anthem, ProShield serves all of Henderson&apos;s diverse residential and commercial properties.
-            </p>
+
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -141,11 +139,9 @@ export default function HendersonPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-gray-900">
-              Services for Every Space
+              Floors and outdoor finishes
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              ProShield offers comprehensive coating solutions for residential, commercial, and specialized applications throughout Henderson.
-            </p>
+
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -161,7 +157,7 @@ export default function HendersonPage() {
                 ProFlake Garage Floors
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Decorative, durable residential garage coatings with 150+ color options, backed by a limited lifetime warranty.
+                Choose from more than 150 flake blends for a speckled garage floor.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -180,7 +176,7 @@ export default function HendersonPage() {
                 Metallic Epoxy
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Showroom-quality pearlescent finishes with flowing depth. Premium option for showcase garages in luxury neighborhoods like Anthem and MacDonald Highlands.
+                Metallic pigments make swirls in the floor. Each pour has a different pattern.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -199,7 +195,7 @@ export default function HendersonPage() {
                 VubaStone Resin Driveways
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Decorative resin-bound stone driveways and patios. Perfect for curb appeal in Green Valley, Lake Las Vegas, and other premium communities.
+                Natural stone mixed with resin gives driveways and patios a textured finish.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -218,7 +214,7 @@ export default function HendersonPage() {
                 Concrete Polishing
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Polished concrete flooring for retail, offices, and showrooms. High-tech and modern aesthetic for Henderson&apos;s commercial districts.
+                I can polish the existing concrete in a shop, office or showroom.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -237,7 +233,7 @@ export default function HendersonPage() {
                 Cool Deck & Pool Decks
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Reflective, UV-resistant coatings for pool decks and patios. Keep surfaces cooler and safer in Henderson&apos;s extreme desert heat.
+                For a pool deck or patio, I look at the texture, color and hours of direct sun.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -256,7 +252,7 @@ export default function HendersonPage() {
                 Airplane Hangar Coatings
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Chemical-resistant, professional-grade systems for Henderson Executive Airport hangars. Industrial durability and performance.
+                For a hangar at Henderson Executive Airport, the coating needs to suit the fluids and traffic on the floor.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -274,11 +270,9 @@ export default function HendersonPage() {
               Desert Climate Protection
             </span>
             <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
-              Why Henderson Concrete Needs Protection
+              What I look for in the slab
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              Henderson&apos;s extreme desert climate poses unique challenges to unprotected concrete. Professional epoxy and polyaspartic coatings are essential.
-            </p>
+
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -287,7 +281,7 @@ export default function HendersonPage() {
                 Extreme Heat & UV Damage
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Henderson summers regularly exceed 115°F with intense UV radiation. Unprotected concrete absorbs this heat, expanding and contracting, which causes cracks and spalling. System choice matters: outdoor surfaces need a finish suited to sunlight and heat, while garage coatings are selected for the conditions inside the space.
+                A pool deck in direct sun needs a different finish from a shaded garage. I check where the sun falls before recommending an outdoor coating.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -310,7 +304,7 @@ export default function HendersonPage() {
                 Moisture & Efflorescence
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Concrete wicks moisture from groundwater and subsurface sources. In Henderson&apos;s dry climate, this often leads to efflorescence—white salt deposits that degrade surface integrity. We assess the slab before recommending a coating. Moisture-related conditions may require a moisture vapor barrier before installation.
+                White salt deposits can point to moisture moving through the slab. I check for moisture before deciding whether the floor needs a vapor barrier.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -333,7 +327,7 @@ export default function HendersonPage() {
                 Staining & Chemical Damage
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Desert dust, pollen, automotive fluids, and harsh pool chemicals stain and damage bare concrete. Professional epoxy systems are resistant to tire marks, oil stains, pool chlorine, and cleaning chemicals.
+                Tell me which cleaners, oils or pool chemicals touch the concrete so I can check that the finish can handle them.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -356,7 +350,7 @@ export default function HendersonPage() {
                 Long-Term Durability
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Properly coated concrete lasts decades in Henderson&apos;s climate. Unprotected concrete deteriorates rapidly. Professional-grade epoxy and polyaspartic systems withstand extreme conditions and come with real warranties.
+                The topcoat takes most of the wear. How you clean it and how much traffic it gets both matter.
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
@@ -385,7 +379,7 @@ export default function HendersonPage() {
               Why Henderson Homeowners Trust ProShield
             </span>
             <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
-              Local Expertise, Professional Standards
+              Planning your project
             </h2>
           </div>
 
@@ -403,10 +397,10 @@ export default function HendersonPage() {
             <div className="rounded-xl border border-gray-200 bg-white p-6 lg:p-8">
               <Shield className="h-8 w-8 text-accent mb-4" />
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
-                Warranty Backed
+                Warranty
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Limited lifetime warranty on qualifying residential systems, backed by our professional workmanship.
+                Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. Moisture-related failures are excluded.
               </p>
             </div>
 
@@ -416,7 +410,7 @@ export default function HendersonPage() {
                 Local Business
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Founded by Julian Cruz. We&apos;re your neighbor. We show up on time and stand behind every floor.
+                I’m Julian Cruz, the owner of ProShield Epoxy.
               </p>
             </div>
 

@@ -7,7 +7,7 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "Polished Concrete vs Epoxy Flooring | ProShield Epoxy",
+    "Should you polish the concrete or coat it? | ProShield",
   description:
     "Compare polished concrete and resin floor coatings for your Las Vegas space: slab condition, finish, traffic, preparation, care and project quotes.",
   alternates: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function PolishedConcreteVsEpoxyPost() {
   const schema = blogPostingSchema({
-    title: "Polished Concrete vs. Epoxy Flooring: Which Is Right for Your Space?",
+    title: "Should you polish the concrete or coat it?",
     description: "Compare polished concrete and resin floor coatings for your Las Vegas space: slab condition, finish, traffic, preparation, care and project quotes.",
     slug: "polished-concrete-vs-epoxy",
     datePublished: "2026-03-18",
@@ -46,7 +46,7 @@ export default function PolishedConcreteVsEpoxyPost() {
         "name": "Which is cheaper: polished concrete or epoxy?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A project price depends on measured area, existing coatings, concrete repairs, moisture treatment and the selected finish. Compare written quotes for the same preparation and coating scope. Future cleaning, repair and refresh costs must be assessed separately; no fixed ownership-cost saving is promised."
+          "text": "I measure the floor and check for old coatings, cracks and moisture. If you’re comparing quotes, make sure they include the same repairs and finish. Future cleaning, repair and refresh costs must be assessed separately; no fixed ownership-cost saving is promised."
         }
       },
       {
@@ -137,8 +137,7 @@ export default function PolishedConcreteVsEpoxyPost() {
             Flooring Comparison
           </span>
           <h1 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Polished Concrete vs. Epoxy Flooring: Which Is Right for Your
-            Space?
+            Should you polish the concrete or coat it?
           </h1>
           <div className="flex items-center gap-3 mt-4 text-sm text-gray-400">
             <span>By <span className="font-medium text-gray-200">Julian Cruz</span></span>
@@ -159,7 +158,7 @@ export default function PolishedConcreteVsEpoxyPost() {
       <article className="section-white pb-20 lg:pb-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-gray max-w-none">
-            <p className="text-lg text-gray-600 leading-relaxed">Polished concrete refines the concrete surface; resinous flooring adds a coating system over prepared concrete. Compare the actual slab, appearance, traffic, chemical exposure and care needs before choosing. Neither option has one universal cost or lifespan.</p>
+            <p className="text-lg text-gray-600 leading-relaxed">Polishing brings out the stone already in your concrete. Epoxy covers it with a new surface. Start with which look you want, then check what the slab and the traffic will allow.</p>
 
             {/* Table of Contents */}
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
@@ -271,7 +270,7 @@ export default function PolishedConcreteVsEpoxyPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Epoxy Flooring
             </h3>
-            <p className="text-gray-600 leading-relaxed">Light exposure can affect coating appearance. Compare the selected base and topcoat’s published UV data and intended use; a UV-resistant topcoat is not a promise that the entire floor will never change color. Chemical resistance depends on the actual coating, chemical, concentration, temperature and contact time. Confirm compatibility for expected spills and follow the product’s cleanup instructions.</p>
+            <p className="text-gray-600 leading-relaxed">Sunlight can change the color over time. If the garage gets direct sun, ask how the base coat and topcoat hold up to UV light. Chemical resistance depends on the actual coating, chemical, concentration, temperature and contact time. Confirm compatibility for expected spills and follow the product’s cleanup instructions.</p>
 
             <h2 id="frequently-asked-questions" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               Frequently Asked Questions
@@ -285,7 +284,7 @@ export default function PolishedConcreteVsEpoxyPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Which is cheaper: polished concrete or epoxy?
             </h3>
-            <p className="text-gray-600 leading-relaxed">A project price depends on measured area, existing coatings, concrete repairs, moisture treatment and the selected finish. Compare written quotes for the same preparation and coating scope. Future cleaning, repair and refresh costs must be assessed separately; no fixed ownership-cost saving is promised.</p>
+            <p className="text-gray-600 leading-relaxed">I measure the floor and check for old coatings, cracks and moisture. If you’re comparing quotes, make sure they include the same repairs and finish. Future cleaning, repair and refresh costs must be assessed separately; no fixed ownership-cost saving is promised.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Can you polish over old epoxy?
@@ -338,7 +337,7 @@ export default function PolishedConcreteVsEpoxyPost() {
               <div>
                 <h3 className="font-heading font-semibold text-lg text-gray-900">Julian Cruz</h3>
                 <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian is the founder of ProShield Epoxy, serving the Las Vegas metro area with garage coatings, commercial flooring and specialty surface services.</p>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian Cruz owns ProShield Epoxy in Las Vegas.</p>
               </div>
             </div>
           </div>

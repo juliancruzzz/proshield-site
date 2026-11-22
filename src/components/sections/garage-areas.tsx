@@ -67,7 +67,7 @@ const systems: System[] = [
   {
     name: "Solid Color Coating",
     description:
-      "Professional-grade solid color coating for utility garages and workspaces. Clean, uniform finish that's easy to maintain. Great for basic protection at an affordable price.",
+      "One color across the whole floor. A simple finish for a utility garage or workshop.",
     highlights: [
       "Most affordable option",
       "Clean professional finish",

@@ -6,13 +6,13 @@ import { FaqPageContent } from '@/components/sections/faq-page-content'
 import { faqCategories } from '@/data/faq-data'
 
 export const metadata: Metadata = {
-  title: 'Epoxy Flooring FAQ Las Vegas | Common Questions Answered | ProShield Epoxy',
+  title: 'Floor Coating Questions | ProShield Epoxy',
   description: 'Epoxy flooring FAQ — answers about garage coatings, metallic epoxy, VubaStone, concrete polishing, cool deck & more in Las Vegas. 702-728-5484.',
   alternates: {
     canonical: '/faq',
   },
   openGraph: {
-    title: 'Epoxy Flooring FAQ Las Vegas | Common Questions Answered | ProShield Epoxy',
+    title: 'Floor Coating Questions | ProShield Epoxy',
     description: 'Epoxy flooring FAQ — answers about garage coatings, metallic epoxy, VubaStone, concrete polishing, cool deck & more in Las Vegas. 702-728-5484.',
     url: 'https://proshieldepoxy.com/faq',
     images: ['/og-image.webp'],
@@ -31,8 +31,7 @@ export default function FaqPage() {
 
       <PageHero
         title="Frequently Asked Questions"
-        subtitle="Find answers to common questions about epoxy flooring, coatings, and specialty systems"
-        backgroundImage="linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%)"
+        subtitle="How soon can you park on a new floor? What does the warranty cover? Find those answers and care instructions below."
       />
 
       <FaqPageContent />

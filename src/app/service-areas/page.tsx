@@ -6,9 +6,9 @@ import { CtaSection } from "@/components/sections/cta-section"
 import { MapPin, Phone, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Epoxy Flooring Near Me Las Vegas | Henderson, Summerlin, NLV | ProShield Epoxy",
+  title: "Where I Work | ProShield Epoxy",
   description:
-    "Epoxy flooring near you in Las Vegas — serving Henderson, Summerlin, North Las Vegas, Boulder City & Pahrump. Local contractor · Free estimates · 702-728-5484.",
+    "Floor coatings for homes and businesses in Las Vegas, Henderson, Summerlin, North Las Vegas, Boulder City and Pahrump.",
   alternates: {
     canonical: "/service-areas",
   },
@@ -23,7 +23,7 @@ const serviceAreas = [
     name: "Henderson",
     slug: "henderson",
     description:
-      "Green Valley, Anthem, MacDonald Highlands, and Lake Las Vegas. We serve all of Henderson, including specialized hangar services at Henderson Executive Airport.",
+      "Garage floors, pool decks and hangar coatings near Henderson Executive Airport.",
     highlights: ["Green Valley & Anthem", "MacDonald Highlands", "Lake Las Vegas", "Henderson Executive Airport hangar coatings"],
     neighborhoods: "Green Valley, Anthem, MacDonald Highlands, Lake Las Vegas, Inspirada",
   },
@@ -31,15 +31,15 @@ const serviceAreas = [
     name: "Summerlin",
     slug: "summerlin",
     description:
-      "Red Rock Canyon proximity, The Ridges, Summerlin South, and Downtown Summerlin. Premium coatings for Summerlin's luxury properties.",
-    highlights: ["The Ridges", "Summerlin South", "Downtown Summerlin", "Red Rock proximity"],
+      "Garage coatings, polished concrete and resin-bound stone for homes and shops.",
+    highlights: ["The Ridges", "Summerlin South", "Downtown Summerlin", "Near Red Rock Canyon"],
     neighborhoods: "The Ridges, Summerlin South, Downtown Summerlin, Centennial, Canyon Gate",
   },
   {
     name: "North Las Vegas",
     slug: "north-las-vegas",
     description:
-      "Aliante, commercial district, and Apex Industrial Park. We specialize in commercial flooring, warehouse coatings, and industrial applications.",
+      "Warehouse floors, work bays and concrete polishing for businesses.",
     highlights: ["Aliante", "Apex Industrial Park", "Commercial warehouse spaces", "Industrial facilities"],
     neighborhoods: "Aliante, Las Vegas Motor Speedway area, North Valley, Commercial corridors",
   },
@@ -47,16 +47,16 @@ const serviceAreas = [
     name: "Boulder City",
     slug: "boulder-city",
     description:
-      "Historic small-town character near Hoover Dam and Lake Mead. We serve residential and commercial properties throughout Boulder City.",
-    highlights: ["Hoover Dam area", "Lake Mead proximity", "Historic properties", "Small-town community"],
+      "Garage floors, driveways and pool decks for homes around town.",
+    highlights: ["Hoover Dam area", "Lake Mead area", "Historic downtown", "Lakeview"],
     neighborhoods: "Historic downtown, Lakeview, Boulder Ridge, all Boulder City residential",
   },
   {
     name: "Pahrump",
     slug: "pahrump",
     description:
-      "Growing retirement and relocation community 60 miles from Vegas. Professional coatings for homes and businesses in Nye County.",
-    highlights: ["Nye County", "Retirement community", "Residential properties", "Growing commercial"],
+      "Residential and commercial floors in Pahrump and Nye County.",
+    highlights: ["Nye County", "Downtown Pahrump", "Rural homes", "Commercial properties"],
     neighborhoods: "Downtown Pahrump, residential areas, commercial properties, all Nye County",
   },
 ]
@@ -82,7 +82,7 @@ export default function ServiceAreasPage() {
         badge="Service Areas"
         title="Epoxy Flooring &"
         highlight="Coatings Across Southern Nevada"
-        subtitle="ProShield serves Henderson, Summerlin, North Las Vegas, Boulder City, and Pahrump. Professional-grade systems for residential, commercial, and specialized applications throughout the Las Vegas Valley."
+        subtitle="I’m based in Las Vegas and travel as far as Boulder City and Pahrump for garage floors, outdoor concrete and commercial work."
       />
 
       <Breadcrumbs items={[{ label: "Service Areas" }]} />
@@ -92,10 +92,10 @@ export default function ServiceAreasPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-gray-900">
-              Where We Serve
+              Where I Work
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Each community has unique needs. We customize our approach to match local climate, architectural styles, and lifestyle requirements.
+              Choose your area to see the services available.
             </p>
           </div>
 
@@ -150,20 +150,15 @@ export default function ServiceAreasPage() {
               Local Expertise
             </span>
             <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight mb-6">
-              Why Local Service Matters
+              Garage floors in Las Vegas
             </h2>
 
             <div className="space-y-6 text-gray-600 leading-relaxed">
               <p>
-                Every area in Southern Nevada faces different challenges. Desert heat, intense UV exposure, and mineral-rich groundwater require systems tailored to local conditions. That's why we don't just apply a generic coating—we engineer solutions specific to your community.
+                I installed a dark flake floor in a Las Vegas garage. In the <Link href="/projects/nightfall-garage-las-vegas" className="text-accent-text hover:underline">Nightfall project photos</Link>, you can see how the blend looks from the driveway and how the finish wraps up the edges.
               </p>
-
               <p>
-                Henderson's growing tech and luxury residential market demands premium finishes. Summerlin's architectural precision calls for exacting workmanship. North Las Vegas' industrial operations need chemical-resistant, commercial-grade systems. Boulder City's historic character and Pahrump's rural growth require attention to local building practices and customer preferences.
-              </p>
-
-              <p>
-                We're based here, we know these communities, and we show up when we say we will. You get a local contractor who understands your neighborhood and stands behind every floor we install.
+                If you’re choosing between flake, metallic or solid color, the <Link href="/areas/garage" className="text-accent-text hover:underline">garage floor guide</Link> shows the differences.
               </p>
             </div>
           </div>
@@ -190,7 +185,7 @@ export default function ServiceAreasPage() {
                 <Phone className="h-6 w-6 text-accent" />
               </div>
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-2">
-                Same-Day Consultation
+                Call for a Quote
               </h3>
               <p className="text-gray-600 text-sm">
                 Call 702-728-5484 for a free quote in your area

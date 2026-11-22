@@ -3,10 +3,10 @@
 import { FlaskConical, Clock, ShieldCheck, Gauge } from "lucide-react"
 
 const stats = [
-  { icon: FlaskConical, value: "Skydrol", label: "Chemical Resistance" },
-  { icon: Clock, value: "24–48 hr", label: "Return to Service" },
-  { icon: ShieldCheck, value: "NFPA 409", label: "Code Compliant" },
-  { icon: Gauge, value: "10-15+", label: "Year Lifespan" },
+  { icon: FlaskConical, value: "Fluids", label: "Chemical exposure" },
+  { icon: Clock, value: "Cure time", label: "Reopening schedule" },
+  { icon: ShieldCheck, value: "Texture", label: "Walking areas" },
+  { icon: Gauge, value: "Loads", label: "Aircraft and equipment" },
 ]
 
 export function HangarStats() {

@@ -51,7 +51,7 @@ export function OverlayComparison() {
             Why Overlay Instead of Replace?
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Save time, money, and disruption — overlay is the smart choice for transforming concrete without the hassle.
+            An overlay uses the slab you already have. Replacement starts with removing it.
           </p>
         </div>
 

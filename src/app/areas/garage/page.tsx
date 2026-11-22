@@ -21,35 +21,35 @@ export const metadata: Metadata = {
 const garageFaqs = [
   {
     q: "How long does a garage floor coating take to install?",
-    a: "Timelines depend on substrate condition, weather, and how much repair the slab needs \u2014 we confirm the schedule for your garage during the consultation. For metallic epoxy, the number of coats and cure time affect the installation schedule.",
+    a: "I check the slab for cracks, moisture and old coatings before I give you a schedule. A metallic floor needs extra time between coats.",
   },
   {
     q: "When can I park on my new garage floor?",
-    a: "For ProFlake, allow 24 hours before walking and 48 hours before parking, subject to weather and curing conditions. Follow the return-to-use instructions for your installed system.",
+    a: "For ProFlake, plan on 24 hours before walking and 48 hours before parking. Weather affects curing, so check with me before moving the car back in.",
   },
   {
     q: "Will epoxy stick to my old, cracked garage floor?",
-    a: "The condition of the slab and any existing coating determines the preparation. Ask which cracks can be repaired, which joints will stay visible and whether moisture needs testing before the floor is coated.",
+    a: "Often, yes. I check for loose coatings and moisture first. I’ll point out which cracks can be repaired and which joints will still show.",
   },
   {
     q: "What\u2019s the difference between ProFlake and metallic epoxy?",
-    a: "ProFlake is a chip-based system \u2014 durable, decorative, and fast to install. Metallic epoxy creates a one-of-a-kind flowing finish with pearlescent depth. ProFlake is our most popular for everyday garages; metallic is the premium option for showroom-level aesthetics.",
+    a: "ProFlake has a speckled finish. Metallic epoxy has swirls and a smoother look. The project photos show what the flakes look like across a whole garage.",
   },
   {
     q: "Is garage floor coating worth it?",
-    a: "A flake coating changes the appearance of the garage and gives you a finished surface to clean. Compare the cost of preparation, repairs and the finish against how you use the garage.",
+    a: "A sealed floor is easier to sweep and mop than bare concrete. The estimate will show what the prep, repairs and finish cost.",
   },
   {
     q: "Do you offer a warranty?",
-    a: "The Peel-Free Lifetime Guarantee applies to qualifying residential ProFlake systems under the written terms. Moisture-driven failure is excluded. Ask for the coverage and preparation requirements for your slab in writing.",
+    a: "Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. Moisture-related failure is excluded. I’ll explain the written terms for your floor.",
   },
   {
     q: "How do I maintain my new garage floor?",
-    a: "Just sweep and mop. Our coated surfaces are sealed and smooth, so dirt, dust, and spills wipe right up. No special cleaners needed \u2014 mild soap and water is all it takes.",
+    a: "Sweep out grit, clean up spills promptly and mop with a cleaner approved for your topcoat.",
   },
   {
     q: "Can you match my garage floor to my home\u2019s style?",
-    a: "Yes! ProFlake offers 150+ Torginol color blends, and metallic epoxy comes in dozens of pearlescent tones. We provide color samples and digital mockups during your consultation to help you find the perfect match.",
+    a: "Yes. I can show you flake samples or help you pick the colors for a metallic floor.",
   },
   {
     q: "Are you licensed to install epoxy flooring in Nevada?",
@@ -292,7 +292,7 @@ export default function GaragePage() {
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
                   <p className="font-semibold text-gray-900">Limited Lifetime Warranty</p>
-                  <p className="text-gray-600 mt-1">On qualifying residential systems. 150+ color blends to match your home — modern minimalist to showroom-grade.</p>
+                  <p className="text-gray-600 mt-1">Qualifying residential ProFlake floors have limited lifetime coverage against peeling.</p>
                 </div>
               </div>
             </div>
@@ -301,11 +301,11 @@ export default function GaragePage() {
             <div className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6">
               <p className="text-sm sm:text-base text-gray-700">
                 <span className="font-semibold text-gray-900">Need a commercial garage floor?</span>{" "}
-                For warehouses, auto shops, aircraft hangars and retail spaces, see our{" "}
+                For a shop, warehouse or hangar, compare the{" "}
                 <Link href="/commercial-flooring" className="text-teal font-semibold underline-offset-2 hover:underline">
-                  commercial epoxy flooring services in Las Vegas
+                  commercial floor finishes
                 </Link>
-                {" "}— resin quartz, urethane cement, and ProFlake systems engineered for industrial use.
+                .
               </p>
             </div>
           </div>

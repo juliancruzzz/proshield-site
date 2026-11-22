@@ -24,7 +24,7 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
       <PageHero
         badge="Contact Us"
         title="Get a Free Quote"
-        subtitle="Tell us about your project and we'll recommend the right system. Free estimates, no obligation."
+        subtitle="Tell me what you’d like to do with your floor. I can help you choose a finish and give you a free estimate."
         ctaText=""
         ctaHref=""
       />

@@ -8,7 +8,7 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
-    "Metallic Epoxy Flooring in Las Vegas | Cost, Process & What to Expect",
+    "How metallic epoxy gets its swirled finish | ProShield",
   description:
     "Metallic epoxy flooring in Las Vegas: compare finishes, concrete preparation, project cost factors and care before requesting a quote.",
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function MetallicEpoxyFlooringLasVegasPost() {
   const schema = blogPostingSchema({
-    title: "Metallic Epoxy Flooring in Las Vegas: What It Costs, How It's Done & What to Expect",
+    title: "How metallic epoxy gets its swirled finish",
     description: "Metallic epoxy flooring in Las Vegas: compare finishes, concrete preparation, project cost factors and care before requesting a quote.",
     slug: "metallic-epoxy-flooring-las-vegas",
     datePublished: "2026-05-03",
@@ -55,7 +55,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
         "name": "Will it yellow over time?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Light exposure can affect coating appearance. Compare the selected base and topcoat’s published UV data and intended use; a UV-resistant topcoat is not a promise that the entire floor will never change color."
+          "text": "Sunlight can change the color over time. If the garage gets direct sun, ask how the base coat and topcoat hold up to UV light."
         }
       },
       {
@@ -71,7 +71,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
         "name": "How much does it cost to epoxy a 2-car garage in Las Vegas?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A project price depends on measured area, existing coatings, concrete repairs, moisture treatment and the selected finish. Compare written quotes for the same preparation and coating scope."
+          "text": "I measure the floor and check for old coatings, cracks and moisture. If you’re comparing quotes, make sure they include the same repairs and finish."
         }
       },
       {
@@ -146,7 +146,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
             Metallic Epoxy
           </span>
           <h1 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Metallic Epoxy Flooring in Las Vegas: What It Costs, How It&apos;s Done &amp; What to Expect
+            How metallic epoxy gets its swirled finish
           </h1>
           <div className="flex items-center gap-3 mt-4 text-sm text-gray-400">
             <span>By <span className="font-medium text-gray-200">Julian Cruz</span></span>
@@ -167,7 +167,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
       <article className="section-white pb-20 lg:pb-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-gray max-w-none">
-            <p className="text-lg text-gray-600 leading-relaxed">Metallic epoxy creates flowing color and an appearance that changes with lighting. ProShield offers metallic finishes for suitable residential and commercial concrete in the Las Vegas area. Compare samples, preparation, clear-coat options and a written project quote before choosing.</p>
+            <p className="text-lg text-gray-600 leading-relaxed">The swirls in a metallic floor form as the pigments move through wet resin. A sample helps you choose colors, but the pattern on your floor will be its own.</p>
 
             {/* Table of Contents */}
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
@@ -258,7 +258,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
             <h2 id="cost-in-las-vegas" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               How Much Does Metallic Epoxy Cost in Las Vegas?
             </h2>
-            <p className="text-gray-600 leading-relaxed">A project price depends on measured area, existing coatings, concrete repairs, moisture treatment and the selected finish. Compare written quotes for the same preparation and coating scope.</p>
+            <p className="text-gray-600 leading-relaxed">I measure the floor and check for old coatings, cracks and moisture. If you’re comparing quotes, make sure they include the same repairs and finish.</p>
             <p className="text-gray-600 leading-relaxed">Garage size alone does not establish the price. Removal, repairs, edges, moisture treatment and access can change the scope even for spaces with similar floor area.</p>
             <p className="text-gray-600 leading-relaxed">Ask which preparation, repairs and topcoat are included and how additional work would be approved and priced.</p>
             <p className="text-gray-600 leading-relaxed">A low or high price alone does not establish quality. Compare the named products, preparation, layer build, exclusions and warranty for the same work.</p>
@@ -424,7 +424,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Will it yellow over time?
             </h3>
-            <p className="text-gray-600 leading-relaxed">Light exposure can affect coating appearance. Compare the selected base and topcoat’s published UV data and intended use; a UV-resistant topcoat is not a promise that the entire floor will never change color.</p>
+            <p className="text-gray-600 leading-relaxed">Sunlight can change the color over time. If the garage gets direct sun, ask how the base coat and topcoat hold up to UV light.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How do I maintain a metallic epoxy floor?
@@ -444,7 +444,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How much does it cost to epoxy a 2-car garage in Las Vegas?
             </h3>
-            <p className="text-gray-600 leading-relaxed">A project price depends on measured area, existing coatings, concrete repairs, moisture treatment and the selected finish. Compare written quotes for the same preparation and coating scope.</p>
+            <p className="text-gray-600 leading-relaxed">I measure the floor and check for old coatings, cracks and moisture. If you’re comparing quotes, make sure they include the same repairs and finish.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How soon can I schedule an install?
@@ -483,7 +483,7 @@ export default function MetallicEpoxyFlooringLasVegasPost() {
               <div>
                 <h3 className="font-heading font-semibold text-lg text-gray-900">Julian Cruz</h3>
                 <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian is the founder of ProShield Epoxy, serving the Las Vegas metro area with garage coatings, commercial flooring and specialty surface services.</p>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian Cruz owns ProShield Epoxy in Las Vegas.</p>
               </div>
             </div>
           </div>

@@ -73,7 +73,7 @@ export default function ConcreteOverlayPage() {
         badge="Concrete Overlay & Resurfacing"
         title="Concrete Overlay & Resurfacing"
         highlight="Las Vegas"
-        subtitle="No demolition required. Stamped, stenciled, or smooth finishes sealed with polyaspartic topcoat. For driveways, patios, pool decks, walkways, and more."
+        subtitle="If the slab is in good shape, I can resurface it with a stamped, stenciled or smooth finish."
         backgroundImage="/images/cool-deck/pool-deck-hero.webp"
         backgroundAlt="Stamped concrete overlay around pool deck and patio area"
       />

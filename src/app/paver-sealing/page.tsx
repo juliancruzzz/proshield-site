@@ -98,7 +98,7 @@ export default function PaverSealingPage() {
         badge="Paver Sealing & Restoration"
         title="Paver Sealing & Restoration"
         highlight="Las Vegas"
-        subtitle="Paver cleaning, restoration, joint care and sealing options for Las Vegas homes and businesses."
+        subtitle="I clean the pavers, check the joint sand and help you choose a natural or wet-look finish."
         backgroundImage="/images/paver-sealing/paver-driveway-sealed.webp"
         backgroundAlt="Paver walkway finish example"
       />

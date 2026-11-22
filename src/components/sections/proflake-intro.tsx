@@ -118,7 +118,7 @@ export function ProFlakeIntro() {
           {/* Content side */}
           <div>
             <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-              Premium Garage Floor System
+              How the finish works
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight leading-tight">
               What Is ProFlake?

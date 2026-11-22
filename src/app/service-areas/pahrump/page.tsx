@@ -31,10 +31,10 @@ export const metadata: Metadata = {
 const pahrumpFaqs = [
   {
     q: "Does ProShield serve Pahrump?",
-    a: "Yes, we serve all of Pahrump and Nye County. While Pahrump is about 60 miles from Las Vegas, we're committed to providing the same professional service and quality we deliver throughout Southern Nevada.",
+    a: "Yes. I travel to Pahrump and other parts of Nye County.",
   },
   {
-    q: "Why should Pahrump homeowners choose professional epoxy?",
+    q: "Can the same coating go inside and outside?",
     a: "For Pahrump garages and outdoor areas, the right finish depends on sun exposure, slab condition and how the space is used. Outdoor systems need a suitable UV-resistant finish; coatings do not prevent underlying concrete from moving or cracking.",
   },
   {
@@ -43,7 +43,7 @@ const pahrumpFaqs = [
   },
   {
     q: "How do you handle projects in remote areas?",
-    a: "We treat Pahrump and Nye County projects with the same professionalism and attention as any Las Vegas Valley project. We provide detailed consultations, clear timelines, and professional installation. We may request a travel fee for projects 60+ miles from Las Vegas, which we'll discuss upfront.",
+    a: "For projects 60 miles or more from Las Vegas, a travel fee may apply. I’ll discuss that with you up front.",
   },
   {
     q: "Is Pahrump a good market for property improvements?",
@@ -80,7 +80,7 @@ export default function PahrumpPage() {
         badge="Pahrump, NV"
         title="Epoxy Flooring &"
         highlight="Coatings in Pahrump"
-        subtitle="Professional epoxy and resin systems for Pahrump and all of Nye County. Premium coatings for growing residential and commercial properties 60 miles west of Las Vegas."
+        subtitle="I travel to Pahrump for garage floors, pool decks, driveways and commercial floors. I’ll confirm any travel charge when I quote the job."
       />
 
       <Breadcrumbs items={[{ label: "Service Areas", href: "/service-areas" }, { label: "Pahrump" }]} />
@@ -90,14 +90,12 @@ export default function PahrumpPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-12">
             <span className="text-sm font-semibold tracking-widest uppercase text-accent">
-              Growing Community
+              Service area
             </span>
             <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
-              Pahrump & Nye County: A Growing Community
+              Pahrump & Nye County: A Service area
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              Pahrump is a thriving rural community about 60 miles west of Las Vegas. Known for its retirement community appeal, natural beauty, and growing commercial development, Pahrump is attracting families, retirees, and entrepreneurs seeking a quieter lifestyle while still being within reach of Las Vegas amenities. ProShield is proud to serve this dynamic community with professional-grade epoxy coatings.
-            </p>
+
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -128,9 +126,7 @@ export default function PahrumpPage() {
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-gray-900">
               Flooring Solutions for Pahrump Properties
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              Whether you're a homeowner looking to upgrade your garage or a business owner seeking commercial solutions, we provide professional epoxy coatings customized for Pahrump's unique environment.
-            </p>
+
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -146,7 +142,7 @@ export default function PahrumpPage() {
                 ProFlake Garage Floors
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Decorative, durable residential garage coatings with 150+ color blends. Perfect for Pahrump homes, backed by a limited lifetime warranty.
+                Choose from more than 150 flake blends, from light mixes to charcoal.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 View System <span>→</span>
@@ -165,7 +161,7 @@ export default function PahrumpPage() {
                 Metallic Epoxy
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Premium showroom finish with flowing pearlescent depth. Creates stunning visual impact for showcase garages and premium homes.
+                Metallic epoxy has a flowing pattern that changes with the light.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Premium Option <span>→</span>
@@ -203,7 +199,7 @@ export default function PahrumpPage() {
                 Concrete Polishing
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Polished concrete for retail, offices, and commercial spaces in Pahrump. Professional, modern appearance.
+                Polishing keeps the original concrete visible in a shop or office.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Commercial <span>→</span>
@@ -222,7 +218,7 @@ export default function PahrumpPage() {
                 Cool Deck & Pool Decks
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Reflective, UV-resistant coatings for pool and patio areas. Essential for Pahrump's extreme desert heat.
+                A textured outdoor coating can give an existing pool deck a new finish.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Outdoor <span>→</span>
@@ -238,7 +234,7 @@ export default function PahrumpPage() {
                 Paver Sealing
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Protect natural stone pavers from dust, UV fading, and staining. Maintains beauty for years.
+                A sealer helps keep spills from soaking into the pavers.
               </p>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
                 Maintenance <span>→</span>
@@ -258,9 +254,7 @@ export default function PahrumpPage() {
             <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
               Why Pahrump Concrete Needs Professional Protection
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              Pahrump's extreme rural desert environment presents unique challenges to unprotected concrete. Professional epoxy and polyaspartic coatings are essential investments in your property.
-            </p>
+
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -375,7 +369,7 @@ export default function PahrumpPage() {
                 Willing to Travel
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We're one of the few contractors willing to serve Pahrump and Nye County. We believe in expanding our service area to help growing communities.
+                I travel from Las Vegas to Pahrump and across Nye County.
               </p>
             </div>
 
@@ -385,27 +379,27 @@ export default function PahrumpPage() {
                 Warranty Protection
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Limited lifetime warranty on qualifying residential systems, backed by professional craftsmanship and genuine commitment.
+                Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. Moisture-related failures are excluded.
               </p>
             </div>
 
             <div className="rounded-xl border border-gray-200 bg-white p-6 lg:p-8">
               <TrendingUp className="h-8 w-8 text-accent mb-4" />
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
-                Professional Quality
+                Checking the slab
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We bring Las Vegas-quality workmanship and materials to Pahrump. Same professional standards, regardless of distance.
+                I check the existing slab before quoting preparation and repairs.
               </p>
             </div>
 
             <div className="rounded-xl border border-gray-200 bg-white p-6 lg:p-8">
               <Heart className="h-8 w-8 text-accent mb-4" />
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
-                Local Support
+                Using the floor afterward
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We treat Pahrump with the same respect and commitment we give every market. You're not an afterthought—you're valued.
+                If your floor needs time to cure, I’ll tell you when you can walk or park on it.
               </p>
             </div>
           </div>

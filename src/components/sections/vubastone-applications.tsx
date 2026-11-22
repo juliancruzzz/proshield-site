@@ -31,7 +31,7 @@ const applications = [
     tagline: "Seamless outdoor living surfaces",
     tags: ["Entertaining", "Outdoor Dining", "Fire Pits"],
     description:
-      "A seamless, low-maintenance surface that elevates outdoor living and entertaining areas. VubaStone patios create a smooth, continuous finish that flows naturally with your landscape design.",
+      "The small stones form a continuous surface around patio furniture and planting beds.",
     benefits: [
       "Seamless finish",
       "Low maintenance",

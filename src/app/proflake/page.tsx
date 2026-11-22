@@ -28,31 +28,31 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What makes ProFlake different from epoxy?",
-    a: "ProFlake uses a polyurea base, decorative flake and a polyaspartic topcoat. Confirm the named products and preparation in the project quote. Compare its flake and clear-coat finish with the actual epoxy system proposed, not a generic chemistry ranking.",
+    a: "I use a polyurea base with colored flakes and a clear polyaspartic topcoat. If you’re comparing quotes, check which layers and prep each one includes.",
   },
   {
     q: "What is polyaspartic topcoat and why does it matter?",
-    a: "Polyaspartic describes a coating chemistry used in floor systems. Component count, mixing, coverage, curing and intended use must follow the named product’s data sheet.",
+    a: "It’s the clear layer over the flakes. It seals the surface and takes the wear from tires and shoes.",
   },
   {
     q: "When can I use my garage after installation?",
-    a: "For ProFlake, allow 24 hours before walking and 48 hours before parking, subject to actual weather and curing conditions. Other systems have different return-to-use requirements; follow the project instructions.",
+    a: "Plan on 24 hours before walking and 48 hours before parking. Weather can change that timing. I’ll tell you when your floor is ready.",
   },
   {
     q: "What is the warranty on ProFlake?",
-    a: "The Peel-Free Lifetime Guarantee applies to qualifying systems under the written terms. Moisture-driven failure is excluded; a flagged moisture condition requires an appropriate moisture vapor barrier before coating. Confirm coverage for the proposed system.",
+    a: "Qualifying residential floors have a limited lifetime no-peel warranty. Moisture-related failure is excluded. If testing flags moisture, the slab needs a suitable vapor barrier before coating. I’ll explain the written terms.",
   },
   {
     q: "How do I choose a color from 150+ options?",
-    a: "Compare the available Torginol blends and physical samples during the consultation. Confirm the selected blend, chip size and finish before installation.",
+    a: "Look at physical Torginol samples in your garage light. Once you pick a blend, we can settle on the flake size and texture.",
   },
   {
     q: "Is ProFlake resistant to hot tires and chemicals?",
-    a: "Compare the named topcoat’s vehicle-use and chemical-resistance information for expected exposure. Resistance is not immunity; follow the curing and cleanup instructions.",
+    a: "Let the floor cure before parking. Tell me if it will regularly see oil, solvents or other chemicals so I can check the topcoat’s resistance and give you the right cleanup instructions.",
   },
   {
     q: "What does the installation process involve?",
-    a: "Assess the concrete, moisture, contamination and existing coatings before selecting a system. Diamond grinding is part of ProShield’s preparation process; the required profile and repairs depend on the proposed products and site. ProFlake uses a polyurea base, decorative flake and a polyaspartic topcoat. Confirm the named products and preparation in the project quote.",
+    a: "I check for moisture, old paint and cracks, then diamond-grind the slab and make the repairs it needs. After that come the base coat, flakes and clear coat.",
   },
 ]
 
@@ -77,10 +77,10 @@ export default function ProFlakePage() {
         }}
       />
       <PageHero
-        badge="Our Most Popular System"
-        title="ProFlake Floors."
-        highlight="Las Vegas Garage Coating"
-        subtitle="The upgrade from epoxy. Polyurea basecoat, polyaspartic topcoat, and 150+ Torginol color blends for residential garages in Las Vegas."
+        badge="Flake Finish"
+        title="ProFlake"
+        highlight="Garage Floors"
+        subtitle="Choose from over 150 flake blends. I spread the flakes over a polyurea base, then seal them with a clear polyaspartic coat."
         backgroundImage="/images/proflake/flake-garage-porsche-bikes.webp"
         backgroundAlt="Garage with ProFlake flake floor coating and motorcycles"
       />
@@ -95,6 +95,7 @@ export default function ProFlakePage() {
             "description": "ProFlake polyurea flake garage floor coating with 150+ Torginol color blends and a polyaspartic topcoat in Las Vegas.",
             "provider": {
               "@type": "LocalBusiness",
+              "@id": "https://proshieldepoxy.com/#business",
               "name": "ProShield Epoxy",
               "telephone": "+1-702-728-5484",
               "url": "https://proshieldepoxy.com"
@@ -112,13 +113,13 @@ export default function ProFlakePage() {
       <ProFlakeStats />
 
       <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: "ProFlake" }]} />
+      <ProjectCards service="/proflake" heading="Two garages I’ve finished" />
       <ProFlakeIntro />
       <ProFlakeWhyChoose />
       <ProFlakeComparison />
       <ProFlakeSystemBuild />
       <FlakeColorShowcase />
       <ProFlakeGallery />
-      <ProjectCards service="/proflake" />
 
       {/* FAQ */}
       <section className="section-white py-10 sm:py-16 lg:py-24">

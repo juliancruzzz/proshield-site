@@ -82,7 +82,7 @@ export default function CommercialPage() {
         badge="Commercial & Industrial"
         title="Commercial Flooring"
         highlight="Las Vegas"
-        subtitle="Heavy-duty floor systems for warehouses, retail, manufacturing, and more. Systems matched to your specific environment — with slip-resistant textures to support safer walking-working surfaces."
+        subtitle="A shop floor takes different wear than a retail aisle. Compare finishes for foot traffic, equipment and spills."
       />
 
       <CommercialAreas />
@@ -216,7 +216,7 @@ export default function CommercialPage() {
               <div className="rounded-lg bg-gray-50 p-6">
                 <h4 className="font-heading font-semibold text-lg text-gray-900 mb-3">Aircraft Hangars & Industrial Garages</h4>
                 <p className="text-gray-600 text-sm mb-4">
-                  Large-scale projects with heavy equipment and vehicles. We've coated entire hangars and can phase installations around operations and maintenance schedules.
+                  Large-scale projects with heavy equipment and vehicles. We’ve coated entire hangars and can phase installations around operations and maintenance schedules.
                 </p>
               </div>
 
@@ -272,14 +272,14 @@ export default function CommercialPage() {
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
                   <p className="font-semibold text-gray-900">Proven Track Record on Large Projects</p>
-                  <p className="text-gray-600 mt-1">We've completed warehouses, hangars, retail locations, and manufacturing facilities across Las Vegas. We understand the scale and complexity of commercial work.</p>
+                  <p className="text-gray-600 mt-1">We’ve completed warehouses, hangars, retail locations, and manufacturing facilities across Las Vegas. We understand the scale and complexity of commercial work.</p>
                 </div>
               </div>
               <div className="flex gap-3">
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
                   <p className="font-semibold text-gray-900">System Expertise & Industry-Specific Solutions</p>
-                  <p className="text-gray-600 mt-1">We match the right system to your environment—whether it's chemical exposure, heavy traffic, or aesthetic requirements.</p>
+                  <p className="text-gray-600 mt-1">We match the right system to your environment—whether it’s chemical exposure, heavy traffic, or aesthetic requirements.</p>
                 </div>
               </div>
               <div className="flex gap-3">
