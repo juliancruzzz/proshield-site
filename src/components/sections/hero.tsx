@@ -86,7 +86,7 @@ export function Hero() {
             className="mt-5 sm:mt-6 text-base sm:text-lg lg:text-xl text-white/70 max-w-xl leading-relaxed animate-hero-fade-in"
             style={{ animationDelay: "0.15s" }}
           >
-            ProShield Epoxy installs <Link href="/areas/garage" className="underline underline-offset-4">garage floor coatings in Las Vegas</Link>, including flake and metallic finishes. Other services include commercial floor coatings, polished concrete and VubaStone.
+            I coat garage floors, refinish pool decks and polish concrete for homes and businesses across the valley.
           </p>
 
           {/* CTAs */}

@@ -128,7 +128,7 @@ export default function GaragePage() {
         badge="Garage Floors"
         title="Garage Floor Coatings"
         highlight="Las Vegas"
-        subtitle="ProShield Epoxy installs flake, metallic and solid-color coatings for residential garages in Las Vegas. Qualifying residential ProFlake systems carry a limited lifetime no-peel warranty."
+        subtitle="Choose a flake finish, a metallic swirl or one solid color for your garage. Qualifying residential ProFlake floors come with a limited lifetime no-peel warranty."
       />
 
       <GarageAreas />
@@ -138,10 +138,10 @@ export default function GaragePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              Garage Coating Systems: What Works Best?
+              Which finish fits your garage?
             </h2>
             <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-              Every garage is different. ProShield offers three main systems, each with unique benefits.
+              Flake helps hide dust and tire marks. Metallic gives the floor a marbled look. Solid color keeps it simple.
             </p>
           </div>
 
@@ -277,8 +277,8 @@ export default function GaragePage() {
               <div className="flex gap-3">
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
-                  <p className="font-semibold text-gray-900">Finished Las Vegas Garage</p>
-                  <p className="text-gray-600 mt-1">See the <Link href="/projects/nightfall-garage-las-vegas" className="text-teal underline">Nightfall garage floor in Las Vegas</Link> in two finished-floor photos. Compare the darker flakes with the <Link href="/projects/shoreline-garage-henderson" className="text-teal underline">Shoreline finish in Henderson</Link>.</p>
+                  <p className="font-semibold text-gray-900">Two finished garages</p>
+                  <p className="text-gray-600 mt-1">Compare the dark <Link href="/projects/nightfall-garage-las-vegas" className="text-teal underline">Nightfall floor in Las Vegas</Link> with the lighter <Link href="/projects/shoreline-garage-henderson" className="text-teal underline">Shoreline floor in Henderson</Link>.</p>
                 </div>
               </div>
               <div className="flex gap-3">

@@ -21,10 +21,10 @@ export const floorProjects: FloorProject[] = [
     location: "Las Vegas, NV",
     finish: "Nightfall flake",
     service: { label: "ProFlake Garage Floors", href: "/proflake" },
-    intro: "ProShield Epoxy installed this Nightfall flake floor in Las Vegas. The dark blend continues along the coated edges. These photographs show the completed Nightfall floor from inside the garage and at the entrance.",
+    intro: "I used Nightfall in this garage and carried the same flake finish up the edges.",
     details: [
-      "The black, gray and white flake blend reads as a dark gray floor from a distance. The closer view shows the individual flakes and the finish around the perimeter.",
-      "The photographs show the joints in the slab remaining visible. A garage coating follows the existing space; the final layout and preparation depend on the condition of your concrete.",
+      "From the driveway, the floor looks dark gray. Up close, you can see the black, gray and white flakes.",
+      "You can still see the original joints in the concrete.",
     ],
     photos: [
       { src: "/images/projects/nightfall-garage.webp", width: 1800, height: 1350, alt: "Completed Nightfall flake garage floor in Las Vegas viewed toward the open garage door", caption: "Finished Nightfall floor, looking toward the driveway." },
