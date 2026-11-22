@@ -8,7 +8,7 @@ import { Credentials } from "@/components/sections/credentials"
 
 export const metadata: Metadata = {
   title: "Epoxy Garage Floor Coatings Las Vegas | ProShield Epoxy",
-  description: "Epoxy garage floor coatings in Las Vegas — ProFlake, metallic & solid color systems. NV Licensed #0094652 · Limited lifetime warranty · Call 702-728-5484.",
+  description: "Epoxy garage floor coatings in Las Vegas — ProFlake, metallic & solid color systems. See finished Las Vegas and Henderson garages and request an estimate.",
   alternates: {
     canonical: "/areas/garage",
   },
@@ -21,15 +21,15 @@ export const metadata: Metadata = {
 const garageFaqs = [
   {
     q: "How long does a garage floor coating take to install?",
-    a: "Timelines depend on substrate condition, weather, and how much repair the slab needs \u2014 we confirm the schedule for your garage during the consultation. Metallic epoxy systems typically take 2\u20133 days due to the multi-layer application and curing process.",
+    a: "Timelines depend on substrate condition, weather, and how much repair the slab needs \u2014 we confirm the schedule for your garage during the consultation. For metallic epoxy, the number of coats and cure time affect the installation schedule.",
   },
   {
     q: "When can I park on my new garage floor?",
-    a: "Walk-on traffic is allowed after 24 hours. Drive-on is recommended after 48 hours. We\u2019ll provide specific guidelines based on weather and curing conditions.",
+    a: "For ProFlake, allow 24 hours before walking and 48 hours before parking, subject to weather and curing conditions. Follow the return-to-use instructions for your installed system.",
   },
   {
     q: "Will epoxy stick to my old, cracked garage floor?",
-    a: "In most cases, yes. We prep every surface with professional diamond grinding and repair any cracks, spalls, or damage before coating. We assess your substrate during the free consultation and will let you know if there are any concerns.",
+    a: "The condition of the slab and any existing coating determines the preparation. Ask which cracks can be repaired, which joints will stay visible and whether moisture needs testing before the floor is coated.",
   },
   {
     q: "What\u2019s the difference between ProFlake and metallic epoxy?",
@@ -37,7 +37,7 @@ const garageFaqs = [
   },
   {
     q: "Is garage floor coating worth it?",
-    a: "Absolutely. A coated garage floor protects your concrete from stains, cracks, and moisture damage. It\u2019s easier to clean, looks incredible, and adds real value to your home. Most homeowners wish they\u2019d done it sooner.",
+    a: "A flake coating changes the appearance of the garage and gives you a finished surface to clean. Compare the cost of preparation, repairs and the finish against how you use the garage.",
   },
   {
     q: "Do you offer a warranty?",
@@ -115,7 +115,7 @@ export default function GaragePage() {
               { "@type": "City", "name": "Las Vegas", "addressRegion": "NV" },
               { "@type": "City", "name": "Henderson", "addressRegion": "NV" },
               { "@type": "City", "name": "North Las Vegas", "addressRegion": "NV" },
-              { "@type": "City", "name": "Summerlin", "addressRegion": "NV" }
+              { "@type": "Place", "name": "Summerlin", "addressRegion": "NV" }
             ],
             "url": "https://proshieldepoxy.com/areas/garage"
           })
@@ -126,7 +126,7 @@ export default function GaragePage() {
         badge="Garage Floors"
         title="Garage Floor Coatings"
         highlight="Las Vegas"
-        subtitle="Turn your garage into a showroom-quality space. Polyurea base, full flake broadcast, and a polyaspartic topcoat, backed by our peel-free lifetime guarantee."
+        subtitle="Compare flake, metallic and solid-color finishes for your Las Vegas garage. Qualifying residential ProFlake systems carry a limited lifetime no-peel warranty."
       />
 
       <GarageAreas />
@@ -165,7 +165,7 @@ export default function GaragePage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
-                  <span>Slip-resistant textures for safety</span>
+                  <span>Texture options for added traction</span>
                 </li>
               </ul>
             </div>
@@ -183,7 +183,7 @@ export default function GaragePage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
-                  <span>2–3 days typical installation</span>
+                  <span>Installation schedule confirmed in the estimate</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
@@ -226,34 +226,34 @@ export default function GaragePage() {
           {/* Las Vegas Heat & UV Section */}
           <div className="border-t border-gray-200 pt-12">
             <h3 className="font-heading font-semibold text-xl text-gray-900 mb-4">
-              Protecting Your Garage from Las Vegas Heat & UV
+              Choosing a Coating for a Las Vegas Garage
             </h3>
             <p className="text-gray-600 mb-6">
-              Las Vegas summers exceed 115°F, and intense UV exposure can damage unprotected concrete. Professional epoxy and polyurea coatings provide:
+              Before choosing a finish, look at where sunlight reaches the slab, where tires sit, and whether the concrete shows moisture or loose patches.
             </p>
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">UV & Heat Protection</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Sunlight at the Garage Door</h4>
                 <p className="text-gray-600 text-sm">
-                  Our polyaspartic topcoats resist fading and yellowing from the desert sun. The sealed surface prevents heat damage, thermal shock, and concrete spalling that occurs when moisture beneath the surface freezes and thaws.
+                  If the garage door stays open during the day, ask which topcoat will cover the sunlit part of the floor and how it holds up to UV exposure.
                 </p>
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Tire Stain & Chemical Resistance</h4>
                 <p className="text-gray-600 text-sm">
-                  Hot tires release oils that stain uncoated concrete. Our coatings resist tire marks, oil stains, and the harsh chemicals in modern automotive fluids—so your garage stays pristine year-round.
+                  Wait for the installer’s go-ahead before parking. For dark tire marks or oil spills, use a cleaner approved for the installed topcoat.
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Moisture & Efflorescence Prevention</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">White Deposits or Damp Spots</h4>
                 <p className="text-gray-600 text-sm">
-                  Concrete in Las Vegas can trap moisture beneath the surface, leading to efflorescence (white salt deposits). Our sealed coatings stop this process, protecting your investment.
+                  Point out white deposits, damp spots or peeling paint during the estimate. The cause matters when deciding whether the slab needs moisture testing or additional preparation.
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Easy Las Vegas Lifestyle Maintenance</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Dust and Grit</h4>
                 <p className="text-gray-600 text-sm">
-                  Dust storms are common in Vegas. A coated garage floor is sealed against dust infiltration and easy to clean. Just sweep and mop—no special treatments needed.
+                  Sweep up sand and grit before mopping so abrasive particles are lifted off the finish.
                 </p>
               </div>
             </div>
@@ -275,8 +275,8 @@ export default function GaragePage() {
               <div className="flex gap-3">
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
-                  <p className="font-semibold text-gray-900">Proven Las Vegas Track Record</p>
-                  <p className="text-gray-600 mt-1">5 years of garage floor installs across Las Vegas, Henderson, North LV, Summerlin and Spring Valley — withstanding the harshest desert conditions.</p>
+                  <p className="font-semibold text-gray-900">Finished Las Vegas Garage</p>
+                  <p className="text-gray-600 mt-1">See the <Link href="/projects/nightfall-garage-las-vegas" className="text-teal underline">Nightfall garage floor in Las Vegas</Link> from the driveway and inside the garage. Compare the darker flakes with the <Link href="/projects/shoreline-garage-henderson" className="text-teal underline">Shoreline finish in Henderson</Link>.</p>
                 </div>
               </div>
               <div className="flex gap-3">
