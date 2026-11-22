@@ -50,7 +50,7 @@ const systems: System[] = [
   {
     name: "Metallic Epoxy",
     description:
-      "Flowing, pearlescent finish — every floor is unique. Metallic pigments create a 3D liquid-metal effect with stunning depth. 2–3 day installation.",
+      "Flowing, pearlescent finish — every floor is unique. Metallic pigments create a 3D liquid-metal effect with stunning depth. The quote specifies the installation schedule.",
     highlights: [
       "One-of-a-kind design",
       "3D liquid-metal depth",
