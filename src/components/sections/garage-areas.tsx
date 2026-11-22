@@ -31,11 +31,11 @@ const systems: System[] = [
   {
     name: "ProFlake System",
     description:
-      "Premium multi-layer system with 150+ Torginol color blends. Polyurea base, full decorative flake broadcast, and polyaspartic topcoat. Walk-on in 24 hours.",
+      "Premium multi-layer system with 150+ Torginol color blends. Polyurea base, full decorative flake broadcast, and polyaspartic topcoat. Allow 24 hours before walking, subject to weather and curing conditions.",
     highlights: [
       "150+ color blends",
       "Polyaspartic topcoat",
-      "Peel-free lifetime guarantee",
+      "Limited lifetime no-peel warranty on qualifying systems",
       "Chemical & hot tire resistant",
       "UV-stable finish",
     ],
@@ -43,7 +43,7 @@ const systems: System[] = [
     image: "/images/proflake/flake-garage-porsche-bikes.webp",
     tag: "Best Value",
     tagColor: "bg-accent",
-    categories: ["Peel-Free Guarantee", "150+ Colors"],
+    categories: ["Residential Flake", "150+ Colors"],
     stat: "150+",
     statLabel: "Color Blends",
   },
@@ -60,7 +60,7 @@ const systems: System[] = [
     ],
     href: "/metallic-epoxy",
     image: "/images/metallic/metallic-epoxy-red-black-swirl.webp",
-    categories: ["One-of-a-Kind", "2–3 Day Install"],
+    categories: ["Pearlescent Finish"],
     stat: "Unique",
     statLabel: "Every Floor",
   },
