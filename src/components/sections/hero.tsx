@@ -86,8 +86,7 @@ export function Hero() {
             className="mt-5 sm:mt-6 text-base sm:text-lg lg:text-xl text-white/70 max-w-xl leading-relaxed animate-hero-fade-in"
             style={{ animationDelay: "0.15s" }}
           >
-            Metallic epoxy, flake systems, VubaStone, polished concrete, and
-            specialty coatings for garages, commercial spaces, and beyond.
+            ProShield Epoxy installs <Link href="/areas/garage" className="underline underline-offset-4">garage floor coatings in Las Vegas</Link>, including flake and metallic finishes. Other services include commercial floor coatings, polished concrete and VubaStone.
           </p>
 
           {/* CTAs */}

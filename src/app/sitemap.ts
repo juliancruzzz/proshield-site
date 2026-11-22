@@ -33,7 +33,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/areas/commercial`, lastModified: "2026-04-10", priority: 0.8, changeFrequency: "monthly" },
 
     // Verified project pages
-    ...["projects", "projects/nightfall-garage-las-vegas", "projects/shoreline-garage-henderson", "projects/metallic-showroom-floor"].map(path => ({ url: `${BASE_URL}/${path}`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" as const })),
+    { url: `${BASE_URL}/projects/nightfall-garage-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
+    ...["projects", "projects/shoreline-garage-henderson", "projects/metallic-showroom-floor"].map(path => ({ url: `${BASE_URL}/${path}`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" as const })),
 
     // Supporting pages
     { url: `${BASE_URL}/services`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "monthly" },

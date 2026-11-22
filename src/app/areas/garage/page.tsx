@@ -101,8 +101,10 @@ export default function GaragePage() {
             "name": "Garage Floor Coatings",
             "description": "Epoxy garage floor coatings in Las Vegas — ProFlake, metallic epoxy, and solid color systems. Nevada licensed contractor.",
             "provider": {
+              "@id": "https://proshieldepoxy.com/#business",
               "@type": "LocalBusiness",
-              "name": "ProShield Epoxy & Concrete LLC",
+              "name": "ProShield Epoxy",
+              "legalName": "ProShield Epoxy & Concrete LLC",
               "telephone": "+1-702-728-5484",
               "url": "https://proshieldepoxy.com",
               "hasCredential": {
@@ -126,7 +128,7 @@ export default function GaragePage() {
         badge="Garage Floors"
         title="Garage Floor Coatings"
         highlight="Las Vegas"
-        subtitle="Compare flake, metallic and solid-color finishes for your Las Vegas garage. Qualifying residential ProFlake systems carry a limited lifetime no-peel warranty."
+        subtitle="ProShield Epoxy installs flake, metallic and solid-color coatings for residential garages in Las Vegas. Qualifying residential ProFlake systems carry a limited lifetime no-peel warranty."
       />
 
       <GarageAreas />

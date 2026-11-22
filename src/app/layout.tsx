@@ -99,7 +99,10 @@ const websiteSchema = {
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://proshieldepoxy.com/#business",
   name: "ProShield Epoxy",
+  legalName: "ProShield Epoxy & Concrete LLC",
+  hasMap: "https://www.google.com/maps/search/?api=1&query=ProShield+Epoxy&query_place_id=ChIJvXhYdp2O-wMRo-6hOlRBlUQ",
   description:
     "Professional floor coatings for residential and commercial spaces in the Las Vegas metro. Metallic epoxy, flake systems, VubaStone, concrete polishing, airplane hangar flooring, and more.",
   telephone: "702-728-5484",

@@ -13,7 +13,8 @@ const areas = [
     href: "/areas/garage",
     icon: Home,
     systems: ["ProFlake Epoxy", "Metallic Epoxy", "Solid Color"],
-    image: "/images/proflake/flake-garage-porsche-bikes.webp",
+    image: "/images/projects/nightfall-garage.webp",
+    imageAlt: "Nightfall flake floor installed by ProShield Epoxy in a Las Vegas garage",
   },
   {
     title: "Exterior",
@@ -82,7 +83,7 @@ export function AreaChooser() {
                 <div className="aspect-[4/3] sm:aspect-[3/4] relative overflow-hidden">
                   <Image
                     src={area.image}
-                    alt={area.title}
+                    alt={area.imageAlt ?? area.title}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
