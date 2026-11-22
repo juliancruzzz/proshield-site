@@ -41,7 +41,7 @@ const garageFaqs = [
   },
   {
     q: "Do you offer a warranty?",
-    a: "ProFlake comes with a limited lifetime warranty on qualifying residential systems. This covers material defects and workmanship \u2014 not wear from abuse, neglect, or incompatible chemicals. We\u2019ll explain the full warranty details during your consultation.",
+    a: "The Peel-Free Lifetime Guarantee applies to qualifying residential ProFlake systems under the written terms. Moisture-driven failure is excluded. Ask for the coverage and preparation requirements for your slab in writing.",
   },
   {
     q: "How do I maintain my new garage floor?",
@@ -276,7 +276,7 @@ export default function GaragePage() {
                 <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
                 <div>
                   <p className="font-semibold text-gray-900">Finished Las Vegas Garage</p>
-                  <p className="text-gray-600 mt-1">See the <Link href="/projects/nightfall-garage-las-vegas" className="text-teal underline">Nightfall garage floor in Las Vegas</Link> from the driveway and inside the garage. Compare the darker flakes with the <Link href="/projects/shoreline-garage-henderson" className="text-teal underline">Shoreline finish in Henderson</Link>.</p>
+                  <p className="text-gray-600 mt-1">See the <Link href="/projects/nightfall-garage-las-vegas" className="text-teal underline">Nightfall garage floor in Las Vegas</Link> in two finished-floor photos. Compare the darker flakes with the <Link href="/projects/shoreline-garage-henderson" className="text-teal underline">Shoreline finish in Henderson</Link>.</p>
                 </div>
               </div>
               <div className="flex gap-3">
