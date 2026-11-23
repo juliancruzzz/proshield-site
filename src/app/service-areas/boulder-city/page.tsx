@@ -4,21 +4,12 @@ import { PageHero } from "@/components/sections/page-hero"
 import { Breadcrumbs } from "@/components/sections/breadcrumbs"
 import { CtaSection } from "@/components/sections/cta-section"
 import { FaqAccordion } from "@/components/sections/faq-accordion"
-import {
-  Sparkles,
-  Shield,
-  Clock,
-  MapPin,
-  Zap,
-  Home,
-  Mountain,
-  Heart
-} from "lucide-react"
+import { Sparkles, Shield, Zap, Home, Mountain, Heart } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Epoxy Flooring Boulder City NV | Garage & Driveway Coatings | ProShield",
+  title: "Garage Floors and Concrete Coatings in Boulder City | ProShield Epoxy",
   description:
-    "Boulder City epoxy flooring & coatings — garage floors, VubaStone driveways, metallic epoxy & concrete polishing. Serving Hoover Dam & Lake Mead areas. Free estimates: 702-728-5484.",
+    "Garage floors, driveways and pool decks for Boulder City homes and businesses. Compare ways to refinish existing concrete, including older slabs.",
   alternates: {
     canonical: "/service-areas/boulder-city",
   },
@@ -30,28 +21,20 @@ export const metadata: Metadata = {
 
 const boulderCityFaqs = [
   {
-    q: "Does ProShield serve Boulder City?",
-    a: "Yes. I work throughout Boulder City, including historic downtown and homes near Lake Mead.",
+    q: "Do you work near Lake Mead?",
+    a: "Yes. Our Boulder City service area includes homes near Lake Mead, Lakeview, Boulder Ridge and historic downtown.",
   },
   {
-    q: "What do you check before coating older concrete?",
-    a: "The right coating depends on your slab, sun exposure and how you use the space. Moisture and existing cracks need assessment before installation. Outdoor areas need a suitable UV-resistant finish.",
+    q: "Can you polish the concrete instead of coating it?",
+    a: "If the slab is suitable, yes. Polishing leaves the concrete visible. A coating gives it a new color or finish and can cover differences in the original concrete.",
   },
   {
-    q: "What services do you offer in Boulder City?",
-    a: "We offer ProFlake garage coatings, metallic epoxy showroom finishes, VubaStone resin-bound driveways, concrete polishing, commercial flooring for local businesses, cool deck and pool deck coatings, and paver sealing.",
+    q: "What warranty is available for a garage?",
+    a: "Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. Moisture-related failures are excluded.",
   },
   {
-    q: "How do you handle historic properties in Boulder City?",
-    a: "If there are original finishes you want to keep, show me before we look at samples or plan the prep.",
-  },
-  {
-    q: "What's the timeline for a Boulder City project?",
-    a: "Timelines depend on substrate condition, weather, and how much repair the slab needs. Metallic epoxy typically takes 2–3 days. We'll provide a specific timeline during your free consultation and work with your schedule.",
-  },
-  {
-    q: "Are you licensed to work in Boulder City?",
-    a: "Yes. ProShield is licensed by the State of Nevada (License #0094652, C-5 Concrete Contracting classification, limited to epoxy coatings and sealants only). We're fully bonded and insured, and we carry a limited lifetime warranty on qualifying residential systems.",
+    q: "What is your Nevada contractor license?",
+    a: "ProShield’s Nevada license is #0094652. Its C-5 classification is limited to epoxy coatings and sealants. Ask for current bond and insurance documents for your project.",
   },
 ]
 
@@ -77,54 +60,18 @@ export default function BoulderCityPage() {
       />
 
       <PageHero
-        badge="Boulder City, NV"
-        title="Epoxy Flooring &"
-        highlight="Coatings in Boulder City"
-        subtitle="I refinish garages, driveways and pool decks in Boulder City, including homes near Lake Mead and businesses downtown."
+        title="Garage Floors and Driveways"
+        highlight="in Boulder City"
+        subtitle="We install epoxy garage floors and refinish driveways and pool decks in Boulder City, from homes near Lake Mead to businesses downtown. If you’re keeping the original stone or concrete, we can plan the new finish around it."
       />
 
       <Breadcrumbs items={[{ label: "Service Areas", href: "/service-areas" }, { label: "Boulder City" }]} />
 
-      {/* About Boulder City */}
-      <section className="section-white py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mb-12">
-            <span className="text-sm font-semibold tracking-widest uppercase text-accent">
-              A Unique Community
-            </span>
-            <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
-              Around Boulder City
-            </h2>
-
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              "Historic Downtown",
-              "Lakeview Properties",
-              "Boulder Ridge",
-              "Residential Neighborhoods",
-              "Local Commercial",
-              "Historic Homes",
-              "Lakefront Properties",
-              "Community Centers",
-              "All Boulder City Areas",
-            ].map((area) => (
-              <div key={area} className="flex items-center gap-3 p-4 rounded-lg bg-gray-50 border border-gray-200">
-                <MapPin className="h-5 w-5 text-accent shrink-0" />
-                <span className="font-medium text-gray-900">{area}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Services */}
       <section className="bg-gray-50 py-20 lg:py-28 border-t border-gray-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-gray-900">
-              Flooring Solutions for Boulder City
+              Options for existing concrete
             </h2>
 
           </div>
@@ -144,9 +91,7 @@ export default function BoulderCityPage() {
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 Flake gives a garage a speckled finish, with more than 150 blends to choose from.
               </p>
-              <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
-                View System <span>→</span>
-              </span>
+              <span aria-hidden="true" className="text-accent-text">→</span>
             </Link>
 
             {/* Metallic Epoxy */}
@@ -161,11 +106,9 @@ export default function BoulderCityPage() {
                 Metallic Epoxy
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Metallic pigments give the floor a flowing pattern.
+                Metallic epoxy blends two or more colors across a seamless floor.
               </p>
-              <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
-                Premium Option <span>→</span>
-              </span>
+              <span aria-hidden="true" className="text-accent-text">→</span>
             </Link>
 
             {/* VubaStone Driveways */}
@@ -182,9 +125,7 @@ export default function BoulderCityPage() {
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 Resin holds the stone together to create a textured driveway.
               </p>
-              <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
-                Driveway System <span>→</span>
-              </span>
+              <span aria-hidden="true" className="text-accent-text">→</span>
             </Link>
 
             {/* Concrete Polishing */}
@@ -201,9 +142,7 @@ export default function BoulderCityPage() {
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 Polishing brings out the stone in an existing concrete floor.
               </p>
-              <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
-                Commercial <span>→</span>
-              </span>
+              <span aria-hidden="true" className="text-accent-text">→</span>
             </Link>
 
             {/* Cool Deck */}
@@ -220,9 +159,7 @@ export default function BoulderCityPage() {
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 Texture, color and the amount of shade all matter around a pool.
               </p>
-              <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
-                Outdoor <span>→</span>
-              </span>
+              <span aria-hidden="true" className="text-accent-text">→</span>
             </Link>
 
             {/* Paver Sealing */}
@@ -236,187 +173,43 @@ export default function BoulderCityPage() {
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 Sealing can help keep spills from soaking into pavers.
               </p>
-              <span className="inline-flex items-center gap-2 text-accent font-medium text-sm group-hover:gap-3 transition-all">
-                Maintenance <span>→</span>
-              </span>
+              <span aria-hidden="true" className="text-accent-text">→</span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Boulder City Environment */}
       <section className="section-white py-20 lg:py-28 border-t border-gray-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto mb-12">
-            <span className="text-sm font-semibold tracking-widest uppercase text-accent">
-              Environmental Factors
-            </span>
-            <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
-              What I check before coating
-            </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              Sun exposure, moisture and the condition of the slab help determine which coating and preparation are appropriate for a Boulder City property.
-            </p>
-          </div>
-
+          <h2 className="font-heading font-bold text-3xl sm:text-4xl text-gray-900 mb-12">
+            Refinishing an older slab
+          </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 lg:p-8">
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">
-                Moisture Testing & Preparation
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Moisture can affect coating adhesion. The slab needs moisture testing and, where required, a compatible moisture vapor barrier. Moisture-related failures are excluded from the limited lifetime warranty.
-              </p>
-              <ul className="space-y-2 text-sm">
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Slab moisture testing</span>
-                </li>
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Moisture vapor barrier where required</span>
-                </li>
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">System chosen for slab conditions</span>
-                </li>
-              </ul>
+              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">Original stone and trim</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Identify the borders, stonework or exposed concrete you’d like to keep. That sets the edges of the work before grinding begins.</p>
             </div>
-
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 lg:p-8">
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">
-                Temperature Fluctuations
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Concrete expands and contracts as temperatures change. Existing cracks and joints need assessment before coating. A coating does not prevent structural movement or guarantee that cracks will not return.
-              </p>
-              <ul className="space-y-2 text-sm">
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Crack and joint assessment</span>
-                </li>
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Preparation for the selected system</span>
-                </li>
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Long-lasting protection</span>
-                </li>
-              </ul>
+              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">Old paint and cracks</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Loose coatings need to come off. We check cracks and joints before quoting repairs because movement underneath can show through a new finish.</p>
             </div>
-
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 lg:p-8">
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">
-                Desert Climate & UV Exposure
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Boulder City outdoor surfaces face desert heat and sun. UV resistance depends on the selected system and topcoat. Choose a finish intended for outdoor exposure rather than assuming every epoxy is UV stable.
-              </p>
-              <ul className="space-y-2 text-sm">
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">UV-resistant topcoats</span>
-                </li>
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Finish chosen for sun exposure</span>
-                </li>
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Care suited to the selected finish</span>
-                </li>
-              </ul>
+              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">Moisture beneath the floor</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">A slab can look dry at the surface and still have moisture below. Testing helps determine whether a coating needs a moisture vapor barrier.</p>
             </div>
-
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 lg:p-8">
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">
-                Historic Property Preservation
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                For an older home, I can show you finishes that work with the original stone and concrete.
-              </p>
-              <ul className="space-y-2 text-sm">
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Respect historic character</span>
-                </li>
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Period-appropriate finishes</span>
-                </li>
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Preservation expertise</span>
-                </li>
-              </ul>
+              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-4">Sun on a driveway or pool deck</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Choose a finish intended for the amount of sun and water the area receives. Lighter colors generally stay cooler than darker ones under the same conditions.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why ProShield */}
-      <section className="bg-gray-50 py-20 lg:py-28 border-t border-gray-200">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-14">
-            <h2 className="font-heading font-bold text-3xl sm:text-4xl text-gray-900">
-              Planning the job
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="rounded-xl border border-gray-200 bg-white p-6 lg:p-8">
-              <Clock className="h-8 w-8 text-accent mb-4" />
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
-                Quick, Professional Service
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Installation and return-to-use timing depend on your chosen system and slab. We confirm both before work begins.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-gray-200 bg-white p-6 lg:p-8">
-              <Shield className="h-8 w-8 text-accent mb-4" />
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
-                Warranty
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. Moisture-related failures are excluded.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-gray-200 bg-white p-6 lg:p-8">
-              <Mountain className="h-8 w-8 text-accent mb-4" />
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
-                Local Commitment
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                I work on homes and businesses in town.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-gray-200 bg-white p-6 lg:p-8">
-              <Zap className="h-8 w-8 text-accent mb-4" />
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
-                Licensed & Insured
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Nevada License #0094652. Fully bonded and insured for your peace of mind.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
       <section className="section-white py-20 lg:py-28 border-t border-gray-200">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold tracking-widest uppercase text-accent">
-              Common Questions
-            </span>
             <h2 className="mt-3 font-heading font-bold text-3xl sm:text-4xl text-gray-900 tracking-tight">
-              Boulder City Service Area FAQ
+              Questions about your project
             </h2>
           </div>
           <FaqAccordion faqs={boulderCityFaqs} />
@@ -426,13 +219,10 @@ export default function BoulderCityPage() {
       {/* Internal links */}
       <section className="section-gray py-8 sm:py-12 border-t border-gray-200">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gray-600 leading-relaxed">
-            See our full{" "}
-            <Link href="/services" className="text-accent hover:underline font-medium">flooring services</Link>{" "}
-            available in Boulder City, or{" "}
-            <Link href="/contact" className="text-accent hover:underline font-medium">get a free estimate</Link>{" "}
-            for your project.
-          </p>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
+            <Link href="/services" className="text-accent hover:underline font-medium">All flooring services</Link>
+            <Link href="/contact" className="text-accent hover:underline font-medium">Request a free estimate</Link>
+          </div>
         </div>
       </section>
 

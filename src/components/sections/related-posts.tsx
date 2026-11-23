@@ -23,7 +23,7 @@ const ALL_POSTS: Record<string, Omit<RelatedPost, 'href'> & { slug: string }> = 
   'best-pool-deck-coatings-las-vegas': {
     slug: 'best-pool-deck-coatings-las-vegas',
     title: "How to choose a finish for your pool deck",
-    description: "Compare the texture and upkeep of a coated deck with poured rubber surfacing.",
+    description: "When a repaint makes sense, when to resurface, and what to compare in two pool deck estimates.",
     date: "April 6, 2026",
   },
   'epoxy-garage-floor-cost-las-vegas': {

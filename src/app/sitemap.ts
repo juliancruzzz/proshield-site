@@ -43,24 +43,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/faq`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
 
     // Blog (lastmod = the post's actual dateModified or datePublished from its schema)
-    { url: `${BASE_URL}/blog`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "weekly" },
+    { url: `${BASE_URL}/blog`, lastModified: "2026-11-23", priority: 0.7, changeFrequency: "weekly" },
     { url: `${BASE_URL}/blog/epoxy-garage-floor-cost-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/blog/epoxy-garage-floor-vs-polyaspartic`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/blog/hot-tire-pickup-prevention-garage-floor`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/blog/polished-concrete-vs-epoxy`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/blog/best-pool-deck-coatings-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/blog/best-pool-deck-coatings-las-vegas`, lastModified: "2026-11-23", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/blog/epoxy-floor-maintenance-tips`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/blog/metallic-epoxy-flooring-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/blog/coolest-pool-deck-flooring-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/blog/rubber-pool-deck-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/blog/coolest-pool-deck-flooring-las-vegas`, lastModified: "2026-11-23", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/blog/rubber-pool-deck-las-vegas`, lastModified: "2026-11-23", priority: 0.7, changeFrequency: "monthly" },
 
     // Service areas
     { url: `${BASE_URL}/service-areas`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/service-areas/henderson`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/service-areas/summerlin`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/service-areas/north-las-vegas`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/service-areas/boulder-city`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/service-areas/pahrump`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/service-areas/henderson`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/service-areas/summerlin`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/service-areas/north-las-vegas`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/service-areas/boulder-city`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/service-areas/pahrump`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
   ]
 
   return routes
