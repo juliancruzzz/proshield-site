@@ -74,7 +74,7 @@ const systems: System[] = [
     categories: ["Pool Decks", "Patios"],
   },
   {
-    name: "ProFlake Epoxy",
+    name: "ProFlake Floors",
     description:
       "Polyurea base with full flake broadcast and polyaspartic topcoat. Works on any exterior concrete surface for a durable, decorative finish.",
     highlights: [

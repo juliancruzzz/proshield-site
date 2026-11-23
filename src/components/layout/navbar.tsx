@@ -25,7 +25,7 @@ const systemGroups = [
   {
     heading: "Epoxy & Coatings",
     items: [
-      { label: "ProFlake Epoxy", href: "/proflake" },
+      { label: "ProFlake Floors", href: "/proflake" },
       { label: "Metallic Epoxy", href: "/metallic-epoxy" },
       { label: "Commercial Flooring", href: "/commercial-flooring" },
       { label: "Airplane Hangar", href: "/airplane-hangar" },

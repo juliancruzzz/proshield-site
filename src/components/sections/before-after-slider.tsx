@@ -107,7 +107,7 @@ export function BeforeAfterSlider() {
               {/* "After" image — full background (finished floor) */}
               <Image
                 src="/images/proflake/flake-garage-after-coated.webp"
-                alt="Finished garage floor with ProFlake epoxy coating"
+                alt="Finished garage floor with a ProFlake coating"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -120,7 +120,7 @@ export function BeforeAfterSlider() {
               >
                 <Image
                   src="/images/proflake/flake-garage-before-concrete.webp"
-                  alt="Raw concrete garage floor before ProFlake epoxy installation"
+                  alt="Raw concrete garage floor before the ProFlake coating"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"

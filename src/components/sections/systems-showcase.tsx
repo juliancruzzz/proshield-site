@@ -8,7 +8,7 @@ import { useMounted } from "@/hooks/use-mounted"
 
 const systems = [
   {
-    title: "ProFlake Epoxy",
+    title: "ProFlake Floors",
     tag: "Most Popular",
     description:
       "Polyurea base + full flake broadcast + polyaspartic topcoat. 150+ Torginol color blends.",

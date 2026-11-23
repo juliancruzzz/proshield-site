@@ -17,7 +17,7 @@ interface RelatedServicesProps {
 // Complete service map with all ProShield offerings
 const allServices: Record<string, ServiceItem> = {
   proflake: {
-    title: "ProFlake Epoxy",
+    title: "ProFlake Floors",
     href: "/proflake",
     description: "Multi-layer flake system with polyaspartic topcoat.",
   },

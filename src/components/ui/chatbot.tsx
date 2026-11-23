@@ -23,7 +23,7 @@ interface Service {
 
 const SERVICES: Record<string, Service> = {
   proflake: {
-    name: "ProFlake Epoxy System",
+    name: "ProFlake Floor Coating",
     desc: "Signature garage floor coating — polyurea base with full flake broadcast and polyaspartic topcoat. Walk on in 24 hrs, drive on in 48 hrs. Limited lifetime warranty on qualifying residential.",
     best: "garages, workshops, utility rooms",
   },
@@ -574,7 +574,7 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
                     style={{ background: "#0e1826", border: "1px solid #1a2c48", color: "#94A3B8" }}
                   >
                     <option value="">What service interests you?</option>
-                    <option>ProFlake Epoxy (Garage)</option>
+                    <option value="ProFlake Epoxy (Garage)">ProFlake garage floor</option>
                     <option>Metallic Epoxy</option>
                     <option>VubaStone</option>
                     <option>Concrete Polishing</option>

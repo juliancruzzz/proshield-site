@@ -12,7 +12,7 @@ const areas = [
       "ProFlake, metallic epoxy, and solid color systems for residential garages.",
     href: "/areas/garage",
     icon: Home,
-    systems: ["ProFlake Epoxy", "Metallic Epoxy", "Solid Color"],
+    systems: ["ProFlake Floors", "Metallic Epoxy", "Solid Color"],
     image: "/images/projects/nightfall-garage.webp",
     imageAlt: "Nightfall flake floor installed by ProShield Epoxy in a Las Vegas garage",
   },

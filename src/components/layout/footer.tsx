@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react"
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/phone"
 
 const systemLinks = [
-  { label: "ProFlake Epoxy", href: "/proflake" },
+  { label: "ProFlake Floors", href: "/proflake" },
   { label: "Metallic Epoxy", href: "/metallic-epoxy" },
   { label: "VubaStone", href: "/vubastone" },
   { label: "Concrete Polishing", href: "/concrete-polishing" },

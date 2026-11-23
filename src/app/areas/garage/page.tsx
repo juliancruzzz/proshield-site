@@ -150,9 +150,9 @@ export default function GaragePage() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* ProFlake */}
             <div className="rounded-xl border border-gray-200 p-6 bg-gray-50">
-              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">ProFlake Epoxy</h3>
+              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">ProFlake</h3>
               <p className="text-gray-600 text-sm mb-4">
-                Our most popular residential system. Decorative flakes create a timeless, speckled finish that hides dust and marks naturally.
+                I spread colored flakes over a polyurea base, then seal them with a clear polyaspartic topcoat. The speckled finish helps hide dust.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
