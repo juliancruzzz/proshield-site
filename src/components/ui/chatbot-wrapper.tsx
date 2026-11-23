@@ -23,7 +23,7 @@ export function ChatbotWrapper() {
   return (
     <button
       onClick={() => setActivated(true)}
-      className="fixed bottom-6 right-6 z-[9999] flex h-[62px] w-[62px] items-center justify-center rounded-full border-0 shadow-lg cursor-pointer"
+      className="fixed bottom-[calc(1.5rem+var(--mobile-call-bar-height,0px))] right-6 z-[9999] flex h-[62px] w-[62px] items-center justify-center rounded-full border-0 shadow-lg cursor-pointer"
       style={{
         background: "linear-gradient(135deg, #DE8614 0%, #B86E0A 100%)",
         boxShadow: "0 4px 20px rgba(222,134,20,0.4), 0 2px 8px rgba(0,0,0,0.2)",

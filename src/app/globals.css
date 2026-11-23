@@ -416,3 +416,11 @@ p, li {
 :is(.section-white, .section-gray, section.bg-white, section.bg-gray-50) .text-accent {
   color: var(--color-accent-text);
 }
+
+/* Keep both chat states above the mobile quote/call bar while it is on screen. */
+@media (width < 64rem) {
+  body:has([data-mobile-call-bar]) {
+    /* 48px button, 12px top padding, 1px border, and bottom safe-area padding. */
+    --mobile-call-bar-height: calc(3.75rem + 1px + max(0.75rem, env(safe-area-inset-bottom)));
+  }
+}

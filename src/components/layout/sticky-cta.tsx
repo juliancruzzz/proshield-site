@@ -19,7 +19,7 @@ export function StickyCta() {
   if (!visible) return null
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden">
+    <div data-mobile-call-bar className="fixed bottom-0 left-0 right-0 z-40 lg:hidden">
       <div className="bg-white/95 backdrop-blur-xl border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] flex items-center gap-3">
         <Link
           href="/contact"
