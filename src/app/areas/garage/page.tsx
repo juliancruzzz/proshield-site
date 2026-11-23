@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { PageHero } from "@/components/sections/page-hero"
+import { ProjectCards } from "@/components/sections/project-cards"
 import { GarageAreas } from "@/components/sections/garage-areas"
 import { FaqAccordion } from "@/components/sections/faq-accordion"
 import { CtaSection } from "@/components/sections/cta-section"
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: "https://proshieldepoxy.com/areas/garage",
-    images: ["/images/proflake/flake-garage-residential.webp"],
+    images: [{ url: "/images/projects/nightfall-garage.webp", alt: "Nightfall flake floor in a Las Vegas garage" }],
   },
 }
 
@@ -131,6 +132,7 @@ export default function GaragePage() {
         subtitle="Choose a flake finish, a metallic swirl or one solid color for your garage. Qualifying residential ProFlake floors come with a limited lifetime no-peel warranty."
       />
 
+      <ProjectCards service="/proflake" heading="Two garages I’ve finished" />
       <GarageAreas />
 
       {/* Garage Systems & Las Vegas Content */}
@@ -272,13 +274,6 @@ export default function GaragePage() {
                 <div>
                   <p className="font-semibold text-gray-900">Licensed Nevada Contractor</p>
                   <p className="text-gray-600 mt-1">NV State License #0094652, C-5 Concrete Contracting — limited to epoxy coatings and sealants only. Fully bonded and insured. Verifiable at nvcontractorsboard.com.</p>
-                </div>
-              </div>
-              <div className="flex gap-3">
-                <div className="flex-shrink-0 text-teal font-bold text-lg">→</div>
-                <div>
-                  <p className="font-semibold text-gray-900">Two finished garages</p>
-                  <p className="text-gray-600 mt-1">Compare the dark <Link href="/projects/nightfall-garage-las-vegas" className="text-teal underline">Nightfall floor in Las Vegas</Link> with the lighter <Link href="/projects/shoreline-garage-henderson" className="text-teal underline">Shoreline floor in Henderson</Link>.</p>
                 </div>
               </div>
               <div className="flex gap-3">

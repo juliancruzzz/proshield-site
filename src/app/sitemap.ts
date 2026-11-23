@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/airplane-hangar`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
 
     // Area pages
-    { url: `${BASE_URL}/areas/garage`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/areas/garage`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/areas/exterior`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/areas/interior`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/areas/commercial`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
