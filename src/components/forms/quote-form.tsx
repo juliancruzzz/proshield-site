@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { Send, CheckCircle, Loader2 } from "lucide-react"
 import { useHydrated } from "@/hooks/use-hydrated"
 import { submitForm } from "@/lib/submit-form"
-import { PROJECT_TYPE_GROUPS } from "@/lib/cta-data"
+import { analyticsProjectType, PROJECT_TYPE_GROUPS } from "@/lib/cta-data"
 
 export function QuoteForm({ poolDeck = false }: { poolDeck?: boolean }) {
   const ready = useHydrated()
@@ -57,7 +57,7 @@ export function QuoteForm({ poolDeck = false }: { poolDeck?: boolean }) {
       ;(window as Window & { dataLayer?: Record<string, unknown>[] }).dataLayer?.push({
         event: "form_submission",
         form_name: "Quote Request",
-        project_type: projectType,
+        project_type: analyticsProjectType(selectedTypes),
       })
     }
   }

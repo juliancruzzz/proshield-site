@@ -76,9 +76,9 @@ export function Hero() {
 
           {/* Headline */}
           <h1 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-[68px] xl:text-[76px] text-white leading-[1.06] tracking-[-0.03em] animate-hero-fade-in">
-            Professional-Grade
+            Garage Floors
             <br />
-            <span className="text-accent">Floor Coatings</span>
+            <span className="text-accent">and Concrete Coatings</span>
           </h1>
 
           {/* Subheading */}
@@ -86,7 +86,7 @@ export function Hero() {
             className="mt-5 sm:mt-6 text-base sm:text-lg lg:text-xl text-white/70 max-w-xl leading-relaxed animate-hero-fade-in"
             style={{ animationDelay: "0.15s" }}
           >
-            I coat garage floors, refinish pool decks and polish concrete for homes and businesses across the valley.
+            We install epoxy and polyurea garage floors, refinish pool decks and polish concrete throughout the Las Vegas Valley.
           </p>
 
           {/* CTAs */}

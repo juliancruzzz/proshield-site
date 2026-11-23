@@ -18,20 +18,20 @@ export const metadata: Metadata = {
 
 const exteriorFaqs = [
   {
-    q: "Can epoxy flooring be installed outdoors?",
-    a: "Yes — our ProFlake system (polyurea base + polyaspartic topcoat) can be applied to any exterior concrete surface, including patios, pool decks, driveways, and walkways. It provides a durable, decorative finish that holds up to the elements.",
+    q: "Can ProFlake be used on an outdoor patio?",
+    a: "Yes, on suitable concrete. We check the condition of the patio, its sun exposure and how it will be used. ProFlake uses a polyurea base and a clear polyaspartic topcoat.",
   },
   {
     q: "What's the best option for a pool deck in Las Vegas?",
-    a: "Cool Deck (knockdown texture) is the most popular choice for pool decks. It's an acrylic-based texture with lighter color options that help reduce surface temperature. VubaStone is another great option — it's fully permeable so water drains through rather than pooling on the surface.",
+    a: "Cool Deck gives concrete a textured acrylic finish. Lighter colors generally stay cooler than darker ones under the same conditions. VubaStone offers a natural stone finish. Drainage depends on the base beneath it.",
   },
   {
-    q: "How long does VubaStone last?",
-    a: "VubaStone is built to last 15–20 years with regular maintenance. It's a polyurethane resin-bound natural stone system — not an epoxy or paint — designed to handle UV exposure, foot traffic, and vehicle traffic depending on the application.",
+    q: "What affects wear on a VubaStone surface?",
+    a: "Traffic, the condition of the base and regular maintenance all affect how the surface wears. A driveway sees different wear from a patio.",
   },
   {
     q: "Is Cool Deck the same as epoxy?",
-    a: "No. Cool Deck (knockdown texture) is an acrylic or acrylic-modified texture system — not epoxy. It's specifically designed for exterior use around pools and patios where heat reduction and slip resistance matter most.",
+    a: "No. Cool Deck (knockdown texture) is an acrylic or acrylic-modified texture system — not epoxy. It gives concrete a textured finish for pool decks and patios. Wet surfaces can still be slippery.",
   },
   {
     q: "Do I need to reseal my pavers?",
@@ -99,7 +99,7 @@ export default function ExteriorPage() {
               Outdoor Coating Systems for Every Application
             </h2>
             <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-              Las Vegas outdoor spaces face intense UV exposure and extreme heat. ProShield offers systems designed for maximum durability and aesthetics.
+              Compare finishes for pool decks, patios and driveways.
             </p>
           </div>
 
@@ -108,24 +108,16 @@ export default function ExteriorPage() {
             <div className="rounded-xl border border-gray-200 p-6 bg-gray-50">
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">ProFlake Exterior (Polyurea Base)</h3>
               <p className="text-gray-600 text-sm mb-4">
-                Decorative flaked finish for driveways, patios, and walkways. Polyurea base provides superior UV stability and quick curing.
+                Decorative flakes cover a polyurea base for a speckled finish.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
-                  <span>Peel-free lifetime guarantee on qualifying systems</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal font-bold">✓</span>
-                  <span>Slip-resistant textures for safety</span>
+                  <span>Clear polyaspartic topcoat</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
                   <span>150+ color options</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal font-bold">✓</span>
-                  <span>Excellent UV and weather resistance</span>
                 </li>
               </ul>
             </div>
@@ -134,16 +126,12 @@ export default function ExteriorPage() {
             <div className="rounded-xl border border-gray-200 p-6 bg-gray-50">
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">VubaStone (Driveways & Patios)</h3>
               <p className="text-gray-600 text-sm mb-4">
-                Polyurethane resin-bound natural stone system. Fully permeable, eco-friendly, and long-lasting.
+                Natural stone bound with a clear polyurethane resin.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
-                  <span>15–20 years lifespan with maintenance</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal font-bold">✓</span>
-                  <span>Fully permeable for water drainage</span>
+                  <span>Drainage depends on the base underneath</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
@@ -160,24 +148,16 @@ export default function ExteriorPage() {
             <div className="rounded-xl border border-gray-200 p-6 bg-gray-50">
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">Cool Deck (Pool Decks & Patios)</h3>
               <p className="text-gray-600 text-sm mb-4">
-                Acrylic-based knockdown texture coating. Designed to reduce surface temperature and provide superior slip resistance.
+                An acrylic knockdown finish gives concrete pool decks and patios a textured surface.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
-                  <span>Reduces surface temperature by 20+ degrees</span>
+                  <span>Lighter colors generally stay cooler in the sun.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-teal font-bold">✓</span>
-                  <span>High slip resistance for water areas</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal font-bold">✓</span>
-                  <span>Light colors reflect heat and UV</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal font-bold">✓</span>
-                  <span>Most popular pool deck choice in Las Vegas</span>
+                  <span>Wet decks can still be slippery.</span>
                 </li>
               </ul>
             </div>
@@ -212,7 +192,7 @@ export default function ExteriorPage() {
           {/* Las Vegas Climate Section */}
           <div className="border-t border-gray-200 pt-12">
             <h3 className="font-heading font-semibold text-xl text-gray-900 mb-4">
-              Built for Las Vegas: 115°F Summers, UV Exposure & Monsoon Rains
+              Sun, Rain and Wear on Outdoor Concrete
             </h3>
             <p className="text-gray-600 mb-6">
               Outdoor coatings in Las Vegas must handle extreme conditions. Our systems are engineered for:
@@ -221,13 +201,13 @@ export default function ExteriorPage() {
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Extreme Heat & UV Degradation</h4>
                 <p className="text-gray-600 text-sm">
-                  Surface temperatures exceed 150°F in summer. Standard coatings fade, crack, and peel. Our polyurea and polyurethane systems resist UV damage and maintain color and flexibility year after year.
+                  Any deck can get hot in direct sun. Color and shade both affect how hot the surface feels.
                 </p>
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Thermal Shock & Expansion</h4>
                 <p className="text-gray-600 text-sm">
-                  Vegas days hit 115°F while nights cool dramatically. This causes concrete to expand and contract. Our flexible coatings move with the substrate, preventing cracks and peeling.
+                  Concrete expands and contracts as temperatures change. Existing cracks and moving joints need assessment before resurfacing.
                 </p>
               </div>
               <div>

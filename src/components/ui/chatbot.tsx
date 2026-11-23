@@ -24,7 +24,7 @@ interface Service {
 const SERVICES: Record<string, Service> = {
   proflake: {
     name: "ProFlake Floor Coating",
-    desc: "Signature garage floor coating — polyurea base with full flake broadcast and polyaspartic topcoat. Walk on in 24 hrs, drive on in 48 hrs. Limited lifetime warranty on qualifying residential.",
+    desc: "Signature garage floor coating — polyurea base with full flake broadcast and polyaspartic topcoat. We’ll confirm when your floor is ready for foot traffic and when you can park on it. Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty.",
     best: "garages, workshops, utility rooms",
   },
   metallic: {
@@ -74,7 +74,7 @@ const SERVICE_KEYWORDS: [RegExp, string][] = [
   [/metallic|3d|swirl|shimmer|reflective/i, "metallic"],
   [/vuba|stone|pebble|aggregate|resin.?bound/i, "vubastone"],
   [/polish|grind|refinish|shine/i, "polishing"],
-  [/pool|patio|deck|exterior|outdoor|cool.?deck|knockdown|driveway coating/i, "exterior"],
+  [/pool|patio|deck|exterior|outdoor|cool.?deck|knockdown|driveways?/i, "exterior"],
   [/paver|brick|hardscape|seal/i, "pavers"],
   [/hangar|airplane|aviation|skydrol|jet/i, "hangar"],
   [/commercial|warehouse|restaurant|retail|industrial/i, "commercial"],
@@ -89,7 +89,7 @@ const FAQ_PATTERNS: [RegExp, string, boolean?][] = [
   ],
   [
     /warranty|guarantee|last|durable|durability/i,
-    "Qualifying residential systems include a limited lifetime warranty against delamination under normal use on properly prepared substrate. Exclusions apply for substrate failure, impact damage, improper cleaning, and certain other conditions. Full warranty details are provided with your estimate.",
+    "Qualifying residential ProFlake floors include a limited lifetime warranty against delamination under normal use on properly prepared substrate. Exclusions apply for substrate failure, impact damage, improper cleaning, and certain other conditions. Full warranty details are provided with your estimate.",
   ],
   [
     /how long|time|day|install|quick|fast|duration/i,
@@ -104,17 +104,13 @@ const FAQ_PATTERNS: [RegExp, string, boolean?][] = [
     "We handle all the prep work! Our team grinds and profiles the concrete, repairs cracks, and ensures the surface is ready. All you need to do is clear your garage floor before we arrive.",
   ],
   [
-    /walk|drive|cure|dry|ready to use/i,
-    "For ProFlake, you can walk on it after 24 hours and drive on it after 48 hours. Other systems have different cure times — we provide specific instructions with every installation.",
-  ],
-  [
     /contact|call|reach|phone|email|talk|speak|schedule/i,
     `You can reach us at <strong>${COMPANY.phone}</strong>, email <strong>${COMPANY.email}</strong>, or fill out the form below and our team will reach out to schedule a free estimate!`,
     true,
   ],
   [
     /difference|compare|vs|versus|better|which/i,
-    "Great question! Each system has its strengths — ProFlake is our most popular garage option, with 150+ color blends and a peel-free lifetime guarantee. Metallic epoxy creates unique 3D reflective patterns (2-3 days). VubaStone is resin-bound stone for outdoor surfaces. Exterior coatings use acrylic texture for pool decks. Want details on a specific one?",
+    "Great question! Each system has its strengths — ProFlake is our most popular garage option, with 150+ color blends. Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. Metallic epoxy creates unique 3D reflective patterns (2-3 days). VubaStone is resin-bound stone for outdoor surfaces. Exterior coatings use acrylic texture for pool decks. Want details on a specific one?",
   ],
   [
     /usa|american|domestic|made in/i,
@@ -152,6 +148,10 @@ function getResponse(input: string): ChatResponse {
       text: "Hey! Welcome to ProShield Epoxy. I'm here to help you learn about our concrete coating services in Las Vegas. What are you interested in?",
       chips: ["Your services", "Free estimate", "Garage floors", "Pool deck options"],
     }
+  }
+
+  if (/\b(walk|park|drive|cure|curing|dry|drying)\b|ready to use/i.test(lower)) {
+    return { text: "Cure time depends on the coating and conditions. We’ll confirm when your floor is ready for foot traffic and when you can park on it." }
   }
 
   // All services

@@ -48,7 +48,7 @@ const hendersonFaqs = [
   },
   {
     q: "Are you licensed and bonded in Henderson?",
-    a: "Yes. ProShield is licensed by the State of Nevada (License #0094652, C-5 Concrete Contracting classification, limited to epoxy coatings and sealants only). We're bonded, insured, and carry a limited lifetime warranty on qualifying residential systems.",
+    a: "Nevada license #0094652 is active under C-5, limited to epoxy coatings and sealants only. Ask for current bond and insurance documents for your project.",
   },
   {
     q: "Can you serve Green Valley, Anthem, and Lake Las Vegas?",
@@ -286,11 +286,7 @@ export default function HendersonPage() {
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Prevents UV yellowing and fading</span>
-                </li>
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Reduces surface temperature</span>
+                  <span className="text-gray-700">Lighter colors generally stay cooler in direct sun</span>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
@@ -355,15 +351,7 @@ export default function HendersonPage() {
               <ul className="space-y-2 text-sm">
                 <li className="flex gap-2 items-start">
                   <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Limited lifetime warranty on residential</span>
-                </li>
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Proven performance in desert climates</span>
-                </li>
-                <li className="flex gap-2 items-start">
-                  <span className="text-accent font-bold">✓</span>
-                  <span className="text-gray-700">Low maintenance for 10+ years</span>
+                  <span className="text-gray-700">Limited lifetime no-peel warranty on qualifying residential ProFlake floors</span>
                 </li>
               </ul>
             </div>
@@ -417,10 +405,10 @@ export default function HendersonPage() {
             <div className="rounded-xl border border-gray-200 bg-white p-6 lg:p-8">
               <Zap className="h-8 w-8 text-accent mb-4" />
               <h3 className="font-heading font-semibold text-lg text-gray-900 mb-3">
-                Licensed & Insured
+                Nevada contractor license
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Nevada License #0094652, C-5 Concrete Contracting — limited to epoxy coatings and sealants only. Fully bonded and insured for your protection.
+                Nevada License #0094652, C-5 Concrete Contracting — limited to epoxy coatings and sealants only.
               </p>
             </div>
           </div>

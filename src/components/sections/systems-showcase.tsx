@@ -19,9 +19,10 @@ const systems = [
   {
     title: "Metallic Epoxy",
     description:
-      "One-of-a-kind flowing metallic finishes with stunning pearlescent depth.",
+      "The metallic floor in our showroom project pairs silver and charcoal.",
     href: "/metallic-epoxy",
-    image: "/images/metallic/metallic-epoxy-red-black-swirl.webp",
+    image: "/images/metallic/metallic-epoxy-chopshop-porsche.webp",
+    imageAlt: "Silver and charcoal metallic epoxy on a showroom floor",
     locations: ["Garages", "Interior"],
   },
   {
@@ -94,7 +95,7 @@ function SystemCard({
           {sys.image && !imgErrors[index] ? (
             <Image
               src={sys.image}
-              alt={sys.title}
+              alt={sys.imageAlt ?? sys.title}
               fill
               sizes="(max-width: 640px) 280px, 200px"
               className="object-cover pointer-events-none"

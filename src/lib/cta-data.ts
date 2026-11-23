@@ -32,7 +32,7 @@ export const PROJECT_TYPE_GROUPS: ProjectTypeGroup[] = [
   {
     label: "Coatings & Epoxy",
     types: [
-      "Garage Floor Coatings (ProFlake)",
+      "Garage floors",
       "Metallic Epoxy",
       "Concrete Polishing",
       "Commercial Flooring",
@@ -47,6 +47,11 @@ export const PROJECT_TYPE_GROUPS: ProjectTypeGroup[] = [
     ],
   },
 ]
+
+// Keep historical garage inquiries together in analytics. The lead itself uses the selected label.
+export function analyticsProjectType(types: string[]) {
+  return types.map(type => type === "Garage floors" ? "Garage Floor Coatings (ProFlake)" : type).join(", ")
+}
 
 /** Flat list of all project types (for validation, etc.) */
 export const PROJECT_TYPES = PROJECT_TYPE_GROUPS.flatMap((g) => g.types)

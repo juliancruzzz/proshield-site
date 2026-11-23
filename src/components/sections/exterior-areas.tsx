@@ -29,29 +29,24 @@ const systems: System[] = [
   {
     name: "VubaStone",
     description:
-      "Resin-bound natural crushed Spanish marble. Fully permeable at 850 L/min — water drains through, not around. Beautiful natural stone finish with a 15–20 year lifespan.",
+      "Resin-bound natural crushed Spanish marble. Water can pass through the stone surface. Drainage depends on the base underneath.",
     highlights: [
       "Fully permeable surface",
       "Natural stone aesthetic",
-      "15–20 year lifespan",
-      "Slip-resistant texture",
       "Dozens of color blends",
     ],
     href: "/vubastone",
     image: "/images/vubastone/vubastone-exterior-real.webp",
-    tag: "Most Popular",
     tagColor: "bg-accent",
     categories: ["Pool Decks", "Patios & Driveways"],
   },
   {
     name: "Cool Deck / Knockdown Texture",
     description:
-      "Acrylic-based knockdown texture that reduces surface temperature with lighter color options. Sealed with acrylic or acrylic/urethane blend for lasting protection.",
+      "A textured acrylic finish for concrete pool decks and patios. Light and dark colors can feel different in direct sun.",
     highlights: [
-      "Heat-reflective lighter colors",
-      "Slip-resistant texture",
+      "Light color options",
       "Acrylic/urethane sealer",
-      "Comfortable underfoot",
       "Classic textured look",
     ],
     href: "/cool-deck",
@@ -61,12 +56,9 @@ const systems: System[] = [
   {
     name: "Rubber Pool Deck",
     description:
-      "Poured-in-place EPDM rubber aggregate over existing concrete. Slip-resistant, cushioned, crack-bridging, and built for Las Vegas summers.",
+      "Poured-in-place EPDM rubber aggregate over existing concrete. The rubber gives the deck a softer feel underfoot.",
     highlights: [
-      "Textured, slip-resistant surface",
-      "Cushioned fall protection",
-      "Bridges concrete cracks",
-      "UV & chemical resistant",
+      "Textured rubber surface",
       "Low maintenance",
     ],
     href: "/rubber-pool-deck",
@@ -76,17 +68,15 @@ const systems: System[] = [
   {
     name: "ProFlake Floors",
     description:
-      "Polyurea base with full flake broadcast and polyaspartic topcoat. Works on any exterior concrete surface for a durable, decorative finish.",
+      "Polyurea base with full flake broadcast and polyaspartic topcoat. Suitability depends on the slab and its exposure.",
     highlights: [
-      "Works on any concrete surface",
       "Full flake broadcast",
       "Polyaspartic topcoat",
-      "Slip-resistant flake texture",
       "150+ color options",
     ],
     href: "/proflake",
     image: "/images/proflake/flake-garage-porsche-bikes.webp",
-    categories: ["Any Exterior", "Decorative"],
+    categories: ["Exterior concrete", "Decorative"],
   },
   {
     name: "Paver Sealing",
