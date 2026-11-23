@@ -4,7 +4,7 @@ const stats = [
   { icon: Star, value: "4.9", label: "Google Rating" },
   { icon: Layers, value: "10", label: "Floor Systems" },
   { icon: Palette, value: "150+", label: "Flake Colors" },
-  { icon: ShieldCheck, value: "Lifetime", label: "Warranty†" },
+  { icon: ShieldCheck, value: "Limited lifetime", label: "No-peel warranty on qualifying residential ProFlake floors" },
 ]
 
 export function HeroStats() {
@@ -12,7 +12,7 @@ export function HeroStats() {
     <section className="bg-gray-50 border-b border-gray-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-          {stats.map((stat, i) => {
+          {stats.map((stat) => {
             const Icon = stat.icon
             return (
               <div key={stat.label} className="flex items-center gap-3 sm:gap-4 group">

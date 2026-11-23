@@ -15,7 +15,7 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Cool Deck Coating Las Vegas | Pool Deck Resurfacing | ProShield Epoxy",
   description:
-    "Pool deck resurfacing in Las Vegas for suitable patios and walkways. Compare textured finishes, preparation and care. Free estimates · 702-728-5484.",
+    "Resurface an existing pool deck with a textured acrylic finish. See when repainting is enough and when worn texture needs repair.",
   openGraph: {
     url: "https://proshieldepoxy.com/cool-deck",
     images: ["/images/cool-deck/cool-deck-knockdown-pool.webp"],
@@ -28,35 +28,35 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What's the difference between cool deck and epoxy?",
-    a: "Pool-deck resurfacing can use acrylic coatings or cement-based toppings. Epoxy is a different material. Confirm the exact system, texture and exterior-use requirements in the estimate.",
+    a: "Our knockdown finish is an acrylic coating for outdoor concrete. The texture is formed by flattening the peaks as it sets. Garage epoxy uses a different resin and gives a different finish.",
   },
   {
     q: "Does cool deck actually keep the surface cold?",
-    a: "Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.",
+    a: "A light color can feel cooler than a dark one in the same sun. Even a pale deck can get hot in the afternoon, especially along the unshaded walk to the pool.",
   },
   {
     q: "Is the knockdown texture slippery when wet?",
-    a: "Texture can help provide traction, but wet surfaces can still be slippery. Compare the proposed finish’s slip-resistance information and keep the deck clean. Cushioning does not prevent falls or guarantee protection from injury.",
+    a: "Wet concrete can still be slippery. Texture, surface wear and the sealer all affect grip around the pool.",
   },
   {
     q: "How long does cool deck last?",
-    a: "Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.",
+    a: "Sun, foot traffic and pool use wear the finish gradually. If the color has faded but the texture is still firmly attached, a repaint may be enough. Loose patches need attention first.",
   },
   {
     q: "How long does installation take?",
-    a: "Installation and return-to-use times depend on preparation, product, weather and curing conditions. The written project schedule should state when walking, furniture and normal pool use can resume.",
+    a: "Repairs and drying time affect the schedule. We’ll give you separate times for walking on the deck and putting furniture back.",
   },
   {
     q: "Can cool deck be applied over existing concrete?",
-    a: "Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair.",
+    a: "Yes, when the slab and any texture that will stay are sound. Loose coatings need removal. Movement or drainage problems should be addressed before the new finish goes down.",
   },
   {
     q: "What colors are available?",
-    a: "Ask about current product colors and compare samples outdoors. Color, shade and the selected product affect surface heat.",
+    a: "Light and dark colors look different beside the pool than they do indoors. A sample in the sun and shade helps narrow the choice.",
   },
   {
     q: "Does cool deck need maintenance?",
-    a: "Remove loose debris and follow the selected product’s cleaning instructions. Ask which cleaners and equipment are allowed and when the surface should be inspected or refreshed. Resealing needs vary by system and condition.",
+    a: "Sweep away debris and clean the deck with a cleaner approved for its sealer. If the texture starts lifting, have it assessed before adding a new coat.",
   },
 ]
 
@@ -84,7 +84,7 @@ export default function CoolDeckPage() {
         badge="Exterior Pool Deck Coating"
         title="Cool Deck & Pool Deck Coating"
         highlight="Las Vegas"
-        subtitle="A textured overlay can give worn concrete a fresh surface. I check the slab first to see whether it can be resurfaced."
+        subtitle="Keep the texture you like or give worn concrete a new knockdown finish. We resurface pool decks, patios and the paths between them."
         backgroundImage="/images/cool-deck/pool-deck-spa.webp"
         backgroundAlt="Pool deck with cool deck knockdown texture coating around pool and spa"
       />

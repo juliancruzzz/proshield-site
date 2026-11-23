@@ -5,8 +5,8 @@ import { FlaskConical, Palette, ShieldCheck, Sparkles } from "lucide-react"
 const stats = [
   { icon: FlaskConical, value: "Full", label: "Flake Coverage" },
   { icon: Palette, value: "150+", label: "Torginol Color Blends" },
-  { icon: ShieldCheck, value: "Lifetime", label: "Limited Warranty" },
-  { icon: Sparkles, value: "Polyaspartic", label: "UV-Stable Topcoat" },
+  { icon: ShieldCheck, value: "No-peel", label: "Qualifying residential warranty" },
+  { icon: Sparkles, value: "Polyaspartic", label: "Clear topcoat" },
 ]
 
 export function ProFlakeStats() {

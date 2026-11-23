@@ -8,27 +8,27 @@ import { Sun, ShieldCheck, Bug, Paintbrush, ChevronDown } from "lucide-react"
 const benefits = [
   {
     icon: Sun,
-    title: "UV & Fade Protection",
+    title: "Color in the sun",
     description:
-      "Compare the selected sealer’s published UV and outdoor-use information. Sun exposure, the paver material and maintenance affect how the surface looks over time.",
+      "Sun and traffic can change the way pavers look. Consider how much color you want to bring back before choosing a sealer.",
   },
   {
     icon: ShieldCheck,
     title: "Stain & Spill Resistance",
     description:
-      "A compatible sealer may reduce absorption and make some spills easier to clean. Remove spills promptly and follow the selected product’s care instructions; sealing does not make pavers stain-proof.",
+      "Some sealers slow absorption, giving you more time to clean up a spill. Oil can still leave a stain if it sits on the surface.",
   },
   {
     icon: Bug,
     title: "Joint Sand Care",
     description:
-      "Where suitable, joint treatment can help retain sand and reduce gaps. Sealing does not guarantee that weeds, ants, erosion or paver movement will stop.",
+      "Replacing missing joint sand can fill gaps. If the pavers rock or settle, sealing the surface won’t correct the base.",
   },
   {
     icon: Paintbrush,
     title: "Finish Options",
     description:
-      "Wet-look and color-enhancing products can deepen the appearance of some pavers. Natural-look products aim for less visual change. Confirm the selected finish on a sample area first.",
+      "Wet-look products can deepen the color. For less visible change, compare a natural finish on a small area of the same pavers.",
   },
 ]
 
@@ -50,8 +50,7 @@ export function PaverSealingBenefits() {
                 Sealing Options<br className="hidden sm:block" /> for Your Pavers
               </h2>
               <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-                The right treatment depends on your pavers, existing sealer, joint condition and exposure.
-                Compare the preparation, finish and care requirements in your written quote.
+                The paver itself affects the result. The same sealer can look different on a pale walkway and a dark driveway.
               </p>
             </div>
 

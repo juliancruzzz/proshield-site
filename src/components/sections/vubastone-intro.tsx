@@ -4,10 +4,10 @@ import Image from "next/image"
 import { Check } from "lucide-react"
 
 const highlights = [
-  "UV-stable polyurethane resin — won't yellow or discolor",
-  "Drains at 850 L/min per m² — fully permeable, no puddles",
-  "Natural crushed Spanish marble with binding quartz",
-  "Up to 10-year manufacturer warranty with VubaMac base",
+  "Clear polyurethane binder",
+  "Drainage planned around the existing slope",
+  "Natural stone blends",
+  "Base selected for foot or vehicle traffic",
 ]
 
 export function VubaStoneIntro() {
@@ -29,13 +29,13 @@ export function VubaStoneIntro() {
           {/* Content */}
           <div>
             <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-              Not Epoxy — Resin-Bound Stone
+              Materials
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
               What Is VubaStone?
             </h2>
             <p className="mt-4 text-gray-500 text-base sm:text-lg leading-relaxed">
-              VubaStone is a polyurethane resin-bound surfacing system that combines UV-stable resin, natural crushed Spanish marble, and translucent binding quartz into a fully permeable outdoor surface. Unlike loose gravel it stays put, unlike concrete it won&apos;t crack or flood, and unlike standard resin systems it includes binding quartz that increases surface strength by up to 30%.
+              Small stones are mixed with resin and troweled in place. On a driveway the stone forms a continuous wearing surface. On a patio the same blend can follow the edge of a planting bed or a curved path.
             </p>
             <ul className="mt-6 space-y-3">
               {highlights.map((item, i) => (

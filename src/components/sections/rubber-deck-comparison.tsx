@@ -132,9 +132,9 @@ export function RubberDeckComparison() {
             How It Compares
           </span>
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-white tracking-tight">
-            Rubber Decking vs. Every Other Option
+            Rubber, textured coatings, pavers and stone
           </h2>
-          <p className="mt-3 text-white/60 text-base sm:text-lg leading-relaxed">Compare the actual proposed products, preparation and maintenance requirements. These entries are a checklist, not a tested performance ranking.</p>
+          <p className="mt-3 text-white/60 text-base sm:text-lg leading-relaxed">Compare how each surface feels underfoot and how it meets the joints in your deck.</p>
         </div>
 
         {/* Table */}

@@ -9,25 +9,25 @@ const industries = [
     icon: Warehouse,
     title: "Warehouses & Manufacturing",
     description:
-      "Heavy-duty polyaspartic systems that withstand forklift traffic, pallet jacks, and constant impact without cracking or delaminating.",
+      "Wheel material, loaded weight and tight turns affect the coating specified for a forklift aisle. Mark high-wear routes on the plan.",
   },
   {
     icon: CookingPot,
     title: "Commercial Kitchens & Food Processing",
     description:
-      "USDA-compliant, non-porous surfaces that resist thermal shock, grease, and aggressive cleaning chemicals. Seamless for sanitation.",
+      "Washdown temperature, grease, drains and cleaning products matter when choosing a kitchen floor. Share any facility specifications with the estimate request.",
   },
   {
     icon: FlaskConical,
     title: "Healthcare & Laboratories",
     description:
-      "Chemical-resistant flooring that handles harsh disinfectants and reagents. ESD options available for sensitive equipment areas.",
+      "List the disinfectants or reagents that contact the floor. Include electrical or other facility requirements if the room has them.",
   },
   {
     icon: Building2,
     title: "Retail & Showrooms",
     description:
-      "High-gloss metallic and decorative flake systems that create stunning customer-facing spaces while handling heavy foot traffic.",
+      "Solid colors, flake and metallic finishes create different looks in customer areas. Decide how the finish will meet adjoining rooms and entrances.",
   },
 ]
 
@@ -98,10 +98,10 @@ export function CommercialIndustries() {
               Industries Served
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              Built for Every Commercial Environment
+              How the Space Is Used
             </h2>
             <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-              From thermal shock in kitchens to chemical exposure in labs, we tailor the system to your facility&apos;s unique demands.
+              Choose a facility type for examples of what belongs in the flooring scope.
             </p>
 
             <div className="mt-6 divide-y divide-gray-100">

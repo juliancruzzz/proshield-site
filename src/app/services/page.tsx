@@ -6,9 +6,9 @@ import { ServicesGrid } from "@/components/sections/services-grid"
 import { SpecialtyServices } from "@/components/sections/specialty-services"
 
 export const metadata: Metadata = {
-  title: "Epoxy Flooring Services Las Vegas | Garage, Commercial & Pool Deck | ProShield",
+  title: "Garage Floors, Pool Decks and Concrete Finishes | ProShield Epoxy",
   description:
-    "Epoxy flooring services in Las Vegas — garage coatings, metallic epoxy, commercial systems, polished concrete, pool deck & more. Free estimates · 702-728-5484.",
+    "Explore garage and commercial floor coatings, concrete polishing and pool deck resurfacing in Las Vegas.",
   alternates: {
     canonical: "/services",
   },
@@ -25,7 +25,7 @@ export default function ServicesPage() {
         badge="Our Services"
         title="Floor Coating Services"
         highlight="Las Vegas"
-        subtitle="What are you working on? Start with your space to see the finishes that fit."
+        subtitle="Explore epoxy and polyurea garage floors, pool deck finishes and coatings for commercial spaces."
       />
 
       <Breadcrumbs items={[{ label: "Services" }]} />

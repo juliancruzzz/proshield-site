@@ -31,27 +31,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How much does rubber pool deck surfacing cost in Las Vegas?",
-    a: "The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.",
+    a: "We price the measured area, repairs and rubber finish together. Steps, curves around the pool and removal of loose coatings can change the amount of work.",
   },
   {
     q: "Is rubber pool decking slippery when wet?",
-    a: "Texture can help provide traction, but wet surfaces can still be slippery. Compare the proposed finish’s slip-resistance information and keep the deck clean. Cushioning does not prevent falls or guarantee protection from injury.",
+    a: "The rubber has a textured finish. Water, dirt and pool residue can still make it slippery, so regular cleaning matters.",
   },
   {
     q: "How long does rubber pool deck surfacing last?",
-    a: "Service life depends on the selected product, substrate, installation, exposure and maintenance. Ask for the product warranty and care instructions; there is no single lifespan that applies to every pool deck.",
+    a: "The installation, traffic and care all affect wear. A high-use step may need attention sooner than a sheltered corner. Your quote should name the binder and the coverage that applies.",
   },
   {
     q: "Can you install rubber decking over existing concrete or cool deck?",
-    a: "Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair.",
+    a: "Often, yes. The existing surface needs to be firmly attached, and there must be room for the rubber at drains, coping and door thresholds. Loose material comes off before resurfacing.",
   },
   {
     q: "How do you maintain a rubber pool deck?",
-    a: "Remove loose debris and follow the selected product’s cleaning instructions. Ask which cleaners and equipment are allowed and when the surface should be inspected or refreshed. Resealing needs vary by system and condition.",
+    a: "Sweep off debris and rinse away dirt before it builds up between the granules. Use the cleaning instructions for your binder when treating spills.",
   },
   {
     q: "Is rubber pool decking better than cool deck?",
-    a: "Compare the proposed products, texture, color, preparation, care requirements and written prices. Rubber and textured coatings have different finishes; neither is always cooler, safer or lower maintenance than the other.",
+    a: "Rubber has some give underfoot. A knockdown finish keeps the firm feel of concrete. The added height of rubber also matters where the deck meets steps or pool coping.",
   },
 ]
 
@@ -108,10 +108,10 @@ export default function RubberPoolDeckPage() {
       />
 
       <PageHero
-        badge="Premium Pool Deck Surfacing"
+        badge="Poured rubber surfacing"
         title="Rubber Pool Deck Surfacing"
         highlight="Las Vegas"
-        subtitle="If you want a softer surface around the pool, I can check whether your concrete is a good base for a rubber deck."
+        subtitle="A poured rubber finish gives a concrete pool deck a softer feel underfoot. Choose one blend for the whole deck or use a second color around the pool edge."
         backgroundImage="/images/blog/rubber-deck/rubber-deck-pool-wide.jpg"
         backgroundAlt="Surface example of rubber aggregate around a landscaped pool"
       />
@@ -146,7 +146,7 @@ export default function RubberPoolDeckPage() {
             <Link href="/blog/rubber-pool-deck-las-vegas" className="text-accent hover:underline font-medium">
               rubber pool deck specs and installation details
             </Link>,{" "}
-            or browse finished projects in our{" "}
+            or see more finish ideas in our{" "}
             <Link href="/gallery" className="text-accent hover:underline font-medium">gallery</Link>.
           </p>
         </div>

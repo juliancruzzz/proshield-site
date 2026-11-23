@@ -9,21 +9,21 @@ const steps = [
     number: "1",
     title: "Substrate Preparation",
     description:
-      "Your existing concrete or asphalt is assessed, repaired if needed, and prepared to receive the system. Proper prep is the foundation of every lasting installation.",
+      "We check slopes, movement and the condition of the base. Doorways, steps and the garage threshold set limits on the finished height.",
     icon: <Pickaxe className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "2",
-    title: "VubaMac Permeable Base",
+    title: "Base preparation",
     description:
-      "An eco-friendly, permeable base layer engineered for drainage and structural support. VubaMac uses waste aggregates and a polyurethane elastomeric binder — superior to traditional tarmac or no-fines concrete bases.",
+      "Sound concrete or asphalt may be suitable as the base. Where the design calls for drainage through the full system, VubaMac is a permeable base option.",
     icon: <Layers className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "3",
     title: "VubaStone Topcoat",
     description:
-      "UV-stable polyurethane resin, natural Spanish marble aggregates, and translucent binding quartz are mixed in a forced-action mixer and hand-troweled to the correct depth for your application.",
+      "We mix the selected blend with resin and hand-trowel the stone to the depth required for the site.",
     icon: <PaintBucket className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
 ]
@@ -44,7 +44,7 @@ export function VubaStoneProcess() {
             How VubaStone Works
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            A multi-layer system engineered from the ground up — substrate, permeable base, and resin-bound stone topcoat.
+            The work below the stone depends on what’s there now and where rainwater needs to go.
           </p>
         </div>
 

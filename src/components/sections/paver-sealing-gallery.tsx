@@ -7,27 +7,27 @@ import { ArrowRight } from "lucide-react"
 const galleryImages = [
   {
     src: "/images/paver-sealing/paver-walkway-after.webp",
-    alt: "Paver walkway finish example",
+    alt: "Brown and charcoal pavers beside a curved planting bed",
     span: "col-span-2 row-span-2",
   },
   {
     src: "/images/paver-sealing/paver-driveway-sealed.webp",
-    alt: "Paver walkway finish example",
+    alt: "Mixed-color pavers around a palm near the driveway",
     span: "",
   },
   {
     src: "/images/paver-sealing/paver-sealing-before-after.jpg",
-    alt: "Paver surface appearance comparison",
+    alt: "Red-brown and pale pavers shown side by side",
     span: "",
   },
   {
     src: "/images/paver-sealing/paver-sealing-driveway-closeup.webp",
-    alt: "Paver driveway detail example",
+    alt: "Gray rectangular pavers on a driveway",
     span: "col-span-2",
   },
   {
     src: "/images/paver-sealing/paver-sealed-closeup.webp",
-    alt: "Paver surface detail example",
+    alt: "Brown pavers and their joint pattern in sunlight and shade",
     span: "",
   },
 ]
@@ -44,7 +44,7 @@ export function PaverSealingGallery() {
             Paver Finish Examples
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Driveways, pool decks, patios, and walkways in different settings.
+            Compare the color across an entire walkway with the detail in individual pavers.
           </p>
         </div>
 

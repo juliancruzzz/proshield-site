@@ -8,37 +8,37 @@ const benefits = [
     icon: ShieldCheck,
     title: "Wet Traction",
     description:
-      "Texture can help provide traction, but wet surfaces can still be slippery. Compare the proposed finish’s slip-resistance information and keep the deck clean. Cushioning does not prevent falls or guarantee protection from injury.",
+      "The textured surface still needs cleaning. Water and pool residue can make the deck slippery.",
   },
   {
     icon: Footprints,
     title: "Surface Heat",
     description:
-      "Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.",
+      "Rubber can get hot in direct sun. Compare colors where the deck gets the most afternoon sun.",
   },
   {
     icon: Baby,
     title: "Underfoot Feel",
     description:
-      "Rubber has a softer underfoot feel than a hard finish. Cushioning does not guarantee protection from injury.",
+      "Rubber has more give than a hard coating or paver. A sample helps you decide whether you like that feel for your pool surround.",
   },
   {
     icon: Zap,
     title: "Existing Cracks",
     description:
-      "Existing cracks and substrate movement need assessment. Resurfacing is not a structural repair and does not guarantee cracks stay hidden.",
+      "A rubber layer follows the existing deck. Movement underneath can show through, so loose coatings and moving cracks need attention first.",
   },
   {
     icon: Wrench,
     title: "Product-Specific Care",
     description:
-      "Remove loose debris and follow the selected product’s cleaning instructions. Ask which cleaners and equipment are allowed and when the surface should be inspected or refreshed. Resealing needs vary by system and condition.",
+      "Sweep off leaves and rinse dirt from between the granules. Check the binder’s care instructions before choosing a cleaner.",
   },
   {
     icon: FlaskConical,
     title: "Sun & Pool Chemicals",
     description:
-      "Confirm the selected binder and topcoat’s exterior-use and chemical-exposure requirements. Follow product instructions for spills and cleaning.",
+      "Use cleaners suited to the binder and rinse away spills. Concentrated pool chemicals need different handling from ordinary splashed water.",
   },
 ]
 
@@ -52,9 +52,9 @@ export function RubberDeckBenefits() {
             Why Rubber Decking
           </span>
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-            Engineered for Las Vegas Pool Decks
+            Choosing rubber for your deck
           </h2>
-          <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">Compare the proposed finish against the sun exposure, wear and existing concrete at your pool.</p>
+          <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">Start with how you want the surface to feel, then check the details at the drains, steps and coping.</p>
         </div>
 
         {/* Benefit grid — 3x2 cards */}

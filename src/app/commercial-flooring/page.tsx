@@ -16,10 +16,10 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Commercial Epoxy Flooring Las Vegas | Warehouse, Retail & Industrial | ProShield",
   description:
-    "Commercial epoxy flooring in Las Vegas — resin quartz, urethane cement & ProFlake for warehouses, kitchens, hangars & retail. NV Licensed #0094652. Call 702-728-5484.",
+    "Compare resin quartz, solid-color urethane, urethane cement and decorative flake for Las Vegas warehouses, kitchens and shops.",
   openGraph: {
     title: "Commercial Epoxy Flooring Las Vegas | Warehouse, Retail & Industrial | ProShield",
-    description: "Commercial epoxy flooring in Las Vegas — resin quartz, urethane cement & ProFlake for warehouses, kitchens, hangars & retail. NV Licensed #0094652. Call 702-728-5484.",
+    description: "Compare resin quartz, solid-color urethane, urethane cement and decorative flake for Las Vegas warehouses, kitchens and shops.",
     url: "https://proshieldepoxy.com/commercial-flooring",
     images: ["/images/commercial/commercial-floor-solid.webp"],
   },
@@ -30,28 +30,28 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "How do I know which commercial system is right for my facility?",
-    a: "It depends on your environment — temperature exposure, chemical contact, traffic type, and regulatory requirements all factor in. Urethane cement handles thermal shock (kitchens, food processing). Resin quartz is ideal for heavy impact zones. Solid color urethane works for UV-exposed or branded spaces. We assess your facility and recommend the right system.",
+    q: "Which systems should we compare?",
+    a: "Start with how the floor is used. A retail aisle and a washdown area have different needs. We compare the wheel traffic, spills, cleaning routine and finish before specifying a system.",
   },
   {
-    q: "What's the difference between commercial epoxy and urethane cement?",
-    a: "Epoxy systems (like ProFlake) are excellent for general commercial use — retail, offices, light industrial. Urethane cement is engineered specifically for extreme conditions: thermal shock from -100°F to 220°F+, steam cleaning, aggressive chemicals. Urethane cement expands and contracts with the concrete substrate, preventing cracks that standard epoxy can't withstand.",
+    q: "When should we consider urethane cement?",
+    a: "Urethane cement is worth considering for kitchens and processing areas with hot washdowns. Give us the water temperature, cleaning products and equipment loads so we can check the proposed product.",
   },
   {
-    q: "How long does commercial installation take?",
-    a: "Typical commercial installations take 2–5 days depending on system type, square footage, and substrate condition. We can phase installations to minimize business disruption — working in sections or during off-hours.",
+    q: "Can the facility stay open during installation?",
+    a: "In some spaces the crew can work in sections. Access routes, prep dust, equipment moves and curing time determine which areas can remain open. We’ll put the agreed sequence in the proposal.",
   },
   {
-    q: "Are these systems compliant with food safety regulations?",
-    a: "Urethane cement and resin quartz systems can meet FDA and USDA requirements for food processing and commercial kitchen environments. Specific compliance depends on the system configuration — we'll specify the right products for your regulatory needs.",
+    q: "What if our facility has a written flooring specification?",
+    a: "Send the specification with the scope. The proposed materials, details at drains and walls, and cleaning procedure need to match the requirements for that space.",
   },
   {
-    q: "What kind of warranty do commercial systems carry?",
-    a: "Commercial systems carry a system-specific warranty covering material defects and workmanship. Warranty terms vary by system type and environment — urethane cement systems have different parameters than decorative ProFlake systems. We'll detail your warranty coverage during the proposal.",
+    q: "What is covered by warranty?",
+    a: "Coverage depends on the specified commercial system and its use. Ask for the written terms with the proposal.",
   },
   {
-    q: "Are you licensed to perform commercial work in Nevada?",
-    a: "Yes. ProShield Epoxy & Concrete LLC is a licensed Nevada contractor — License #0094652, C-5 Concrete Contracting classification, limited to epoxy coatings and sealants only — fully bonded and insured. The license has a $200,000 monetary limit. Project scope must fit the license classification and limits. License is verifiable at nvcontractorsboard.com.",
+    q: "What does your Nevada contractor license cover?",
+    a: "Nevada license #0094652 is C-5, limited to epoxy coatings and sealants only, with a $200,000 monetary limit. Ask for current bond and insurance documents for your project.",
   },
 ]
 
@@ -79,7 +79,7 @@ export default function CommercialFlooringPage() {
         badge="Commercial Resinous Flooring"
         title="Commercial Flooring"
         highlight="Las Vegas"
-        subtitle="Will the floor see forklift traffic, hot washdowns or chemical spills? That helps me narrow down which coating to use."
+        subtitle="We specify floor coatings for warehouses, kitchens, workshops and retail spaces. The equipment that crosses the floor and the way it gets cleaned guide the choice."
         backgroundImage="/images/commercial/commercial-grey-yellow-stripe.webp"
         backgroundAlt="Commercial warehouse with solid color epoxy floor and safety line markings"
       />

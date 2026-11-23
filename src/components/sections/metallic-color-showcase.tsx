@@ -6,26 +6,25 @@ import { X } from "lucide-react"
 
 interface Pigment {
   name: string
-  code: string
   color: string
   description: string
 }
 
 const metallicPigments: Pigment[] = [
-  { name: "Pearl White", code: "MP-101", color: "#E8E4DF", description: "Clean pearl finish with soft iridescent shimmer" },
-  { name: "Champagne", code: "MP-102", color: "#D4B896", description: "Warm golden champagne with subtle sparkle" },
-  { name: "Silver", code: "MP-103", color: "#B8BFC6", description: "Classic brushed silver with cool metallic depth" },
-  { name: "Titanium", code: "MP-104", color: "#8A8D91", description: "Industrial titanium gray with fine metallic grain" },
-  { name: "Gunmetal", code: "MP-105", color: "#52565A", description: "Deep gunmetal with dark reflective undertones" },
-  { name: "Onyx", code: "MP-106", color: "#2C2E30", description: "Rich black with metallic flake highlights" },
-  { name: "Copper", code: "MP-107", color: "#C07A4E", description: "Warm copper with red-bronze highlights" },
-  { name: "Bronze", code: "MP-108", color: "#8B6B3D", description: "Classic bronze with deep amber undertones" },
-  { name: "Gold", code: "MP-109", color: "#C5A55A", description: "Rich gold with warm reflective shimmer" },
-  { name: "Ocean Blue", code: "MP-110", color: "#4A6E8B", description: "Deep ocean blue with metallic pearlescence" },
-  { name: "Emerald", code: "MP-111", color: "#3D6B5E", description: "Dark emerald with subtle green metallic shift" },
-  { name: "Espresso", code: "MP-112", color: "#5C4033", description: "Deep espresso brown with warm metallic depth" },
-  { name: "Rose Gold", code: "MP-113", color: "#C4907A", description: "Soft rose gold with pink-copper finish" },
-  { name: "Midnight Blue", code: "MP-114", color: "#2A3A5C", description: "Deep navy with blue metallic shimmer" },
+  { name: "Pearl White", color: "#E8E4DF", description: "Pearl white" },
+  { name: "Champagne", color: "#D4B896", description: "Warm beige with a gold tint" },
+  { name: "Silver", color: "#B8BFC6", description: "Cool silver gray" },
+  { name: "Titanium", color: "#8A8D91", description: "Medium gray" },
+  { name: "Gunmetal", color: "#52565A", description: "Dark charcoal gray" },
+  { name: "Onyx", color: "#2C2E30", description: "Near black" },
+  { name: "Copper", color: "#C07A4E", description: "Reddish copper" },
+  { name: "Bronze", color: "#8B6B3D", description: "Warm bronze brown" },
+  { name: "Gold", color: "#C5A55A", description: "Muted gold" },
+  { name: "Ocean Blue", color: "#4A6E8B", description: "Gray blue" },
+  { name: "Emerald", color: "#3D6B5E", description: "Dark green" },
+  { name: "Espresso", color: "#5C4033", description: "Dark brown" },
+  { name: "Rose Gold", color: "#C4907A", description: "Muted pink with copper tones" },
+  { name: "Midnight Blue", color: "#2A3A5C", description: "Deep navy blue" },
 ]
 
 export function MetallicColorShowcase() {
@@ -37,13 +36,13 @@ export function MetallicColorShowcase() {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-            Torginol Metallic Pigments
+            Color ideas
           </span>
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[40px] text-gray-900 tracking-tight">
-            Choose Your Palette
+            Metallic Color Options
           </h2>
           <p className="mt-3 sm:mt-4 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Premium metallic pigments from Torginol. Each pigment creates a unique flow when applied — colors can be blended for custom effects.
+            These on-screen colors illustrate possible combinations. The finished floor also picks up light and reflections in the room.
           </p>
         </div>
 
@@ -84,7 +83,6 @@ export function MetallicColorShowcase() {
                         <X className="h-4 w-4" />
                       </button>
                     </div>
-                    <span className="text-sm text-accent font-medium">{selected.code}</span>
                     <p className="mt-3 text-gray-500 text-sm leading-relaxed">{selected.description}</p>
                   </div>
                 </div>
@@ -96,9 +94,9 @@ export function MetallicColorShowcase() {
         {/* Pigment swatch grid — 5 per row, flake-matched sizing */}
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 sm:gap-4 max-w-3xl mx-auto">
           {metallicPigments.map((pigment, i) => {
-            const isSelected = selected?.code === pigment.code
+            const isSelected = selected?.name === pigment.name
             return (
-              <button key={pigment.code} className="group text-left cursor-pointer" onClick={() => setSelected(isSelected ? null : pigment)}>
+              <button key={pigment.name} className="group text-left cursor-pointer" onClick={() => setSelected(isSelected ? null : pigment)}>
                 <div
                   className={`aspect-square rounded-xl overflow-hidden border-2 bg-white shadow-sm transition-all duration-200 ${
                     isSelected

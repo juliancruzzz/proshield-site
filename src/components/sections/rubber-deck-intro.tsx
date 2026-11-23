@@ -29,10 +29,10 @@ export function RubberDeckIntro() {
               What Is Rubber Pool Deck Surfacing?
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              A Premium Surface Built for{" "}
-              <span className="text-accent">Las Vegas Pools</span>
+              Rubber surfacing{" "}
+              <span className="text-accent">over concrete</span>
             </h2>
-            <p className="mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">Rubber pool deck surfacing combines rubber granules and a binder over a suitable prepared substrate. Confirm the proposed blend, thickness and finish in the estimate. The existing concrete, coatings and drainage need assessment first.</p>
+            <p className="mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">The deck gets its texture from small rubber granules held together with a binder. Because the mix is troweled in place, it can follow a curved pool edge or continue around a corner without cutting tiles to fit.</p>
 
             <ul className="mt-6 space-y-3">
               {highlights.map((item) => (
@@ -57,8 +57,8 @@ export function RubberDeckIntro() {
 
           {/* Image stack — two overlapping images for depth */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="relative"

@@ -9,21 +9,21 @@ const steps = [
     title: "Surface Preparation",
     time: "Assess first",
     description:
-      "Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair.",
+      "We inspect the slab and remove material that won’t stay bonded. The slope and the space at the coping help determine whether rubber will fit.",
   },
   {
     number: "02",
     title: "Primer & Rubber Pour",
     time: "Product-specific",
     description:
-      "Use the specified primer, rubber blend, binder and application thickness. Detail drains, edges and joints for the selected system and site.",
+      "We mix the granules with binder and trowel them to the specified depth. The edge work includes the pool coping, steps and drain openings.",
   },
   {
     number: "03",
     title: "Topcoat & Cure",
     time: "Confirm cure time",
     description:
-      "Installation and return-to-use times depend on preparation, product, weather and curing conditions. The written project schedule should state when walking, furniture and normal pool use can resume.",
+      "The binder needs time to cure. We’ll tell you when the deck is ready for walking and when you can put furniture back.",
   },
 ]
 
@@ -61,11 +61,11 @@ export function RubberDeckProcess() {
               Installation Process
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              Prepare the Concrete.<br className="hidden sm:block" />
-              <span className="text-accent">Confirm the System.</span>
+              How we install<br className="hidden sm:block" />
+              <span className="text-accent">a rubber deck</span>
             </h2>
             <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-              Assess the existing concrete and coatings before choosing a finish. Confirm preparation and return-to-use times in the project schedule.
+              Here’s how the granules become a continuous surface around the pool.
             </p>
 
             <div className="mt-8 space-y-6">

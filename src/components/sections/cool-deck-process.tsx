@@ -9,35 +9,35 @@ const steps = [
     number: "1",
     title: "Surface Preparation",
     description:
-      "Resurfacing may be possible over sound, properly prepared concrete. Existing coatings, cracks, drainage and movement must be assessed first. Unsuitable material may need removal or repair; resurfacing is not a structural repair.",
+      "We check the old coating for loose areas, remove material that won’t hold and prepare the concrete for the new finish.",
     icon: <Pickaxe className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "2",
     title: "Primer & Base Coat",
     description:
-      "Use the primer and base layer required by the selected system. Confirm the product and color before application.",
+      "We apply the base layers specified for the chosen coating.",
     icon: <PaintBucket className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "3",
     title: "Knockdown Texture",
     description:
-      "Create the specified texture using the selected product’s application method. Texture alone does not establish safe wet traction.",
+      "While the coating is workable, we flatten the high spots with a trowel to leave the knockdown texture.",
     icon: <Hand className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "4",
     title: "Detail & Touch-Up",
     description:
-      "Finish edges, drains and transitions according to the project scope and product requirements.",
+      "We finish the edges around coping, steps and drains.",
     icon: <Sparkles className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "5",
     title: "Finish & Cure",
     description:
-      "Apply a compatible finish only where the selected system specifies it. Confirm cure times, cleaning and future refresh requirements before use.",
+      "Once the finish is down, we’ll confirm when the deck can take foot traffic and when furniture can go back.",
     icon: <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
 ]
@@ -59,7 +59,7 @@ export function CoolDeckProcess() {
             How We Apply Cool Deck
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Preparation, application and curing follow the selected system and site requirements.
+            The condition of the old texture determines how much preparation your deck needs.
           </p>
         </div>
 

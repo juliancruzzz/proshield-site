@@ -33,16 +33,13 @@ export function RubberDeckColors() {
             Colors & Design
           </span>
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-            Dozens of Color Blends Available
+            Rubber colors and borders
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            From classic desert earth tones — sandstone, tan, warm gray — to bolder options like
-            terracotta, slate blue, and custom multi-color blends. Multi-zone designs, borders,
-            and accent bands are all possible because every pour is hand-troweled.
+            A single blend gives the pool surround a consistent color. A second blend can outline the pool or separate a seating area from the walkway.
           </p>
           <p className="mt-3 text-gray-500 text-sm leading-relaxed">
-            We bring physical samples to your estimate so you can see the actual colors on
-            your concrete in your lighting — screens don&apos;t do them justice.
+            These examples show how a blend looks across a whole deck.
           </p>
         </div>
 
@@ -77,7 +74,7 @@ export function RubberDeckColors() {
             href="/contact"
             className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
           >
-            See Color Samples at Your Estimate <ArrowRight className="h-4 w-4" />
+            Ask About Rubber Colors <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </div>

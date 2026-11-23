@@ -12,14 +12,14 @@ export function RubberDeckPricing() {
           {/* Left — pricing info */}
           <div>
             <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-              Transparent Pricing
+              Project pricing
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              What It Actually Costs
+              What goes into a rubber deck estimate?
             </h2>
-            <p className="mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">The price depends on measured area, concrete condition, removal of old coatings, repairs, access and the selected finish. Request a written project estimate that lists preparation, materials and any additional work.</p>
-            <p className="mt-3 text-gray-600 text-base leading-relaxed">Compare the same measured area and full preparation scope. Ask which repairs are included and how additional work would be priced.</p>
-            <p className="mt-3 text-gray-500 text-sm leading-relaxed">A deck with loose coatings, cracks or drainage problems needs assessment before a finish is selected.</p>
+            <p className="mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">Two decks with the same square footage can need different amounts of work. Loose coatings need removal, and steps and curved edges take extra detailing.</p>
+            <p className="mt-3 text-gray-600 text-base leading-relaxed">The quote should identify which areas stay, which need repairs and where the rubber will meet the existing coping.</p>
+            <p className="mt-3 text-gray-500 text-sm leading-relaxed">Check how drains and door thresholds will sit once the rubber layer is in place.</p>
           </div>
 
           {/* Right — pricing card */}
@@ -62,7 +62,7 @@ export function RubberDeckPricing() {
                 href="/contact"
                 className="mt-6 w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
               >
-                Get Your Exact Price <ArrowRight className="h-4 w-4" />
+                Get a Rubber Deck Quote <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
 

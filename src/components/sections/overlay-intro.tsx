@@ -3,9 +3,9 @@
 import { Check } from "lucide-react"
 
 const highlights = [
-  "No demolition or tear-out required",
+  "Uses suitable existing concrete",
   "Stamped, stenciled, or smooth finishes",
-  "Sealed with polyaspartic topcoat",
+  "Color and sealer matched to the finish",
   "Driveways, patios, pool decks, walkways",
 ]
 
@@ -19,7 +19,7 @@ export function OverlayIntro() {
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10">
               <img
                 src="/images/concrete-overlay/stamped-patio.webp"
-                alt="Stamped concrete overlay patio transformation before and after"
+                alt="Textured concrete patio surface example"
                 className="h-full w-full object-cover"
               />
             </div>
@@ -28,7 +28,7 @@ export function OverlayIntro() {
           {/* Content side */}
           <div>
             <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-              Don’t Replace It — Resurface It
+              Decorative overlays
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight leading-tight">
               Resurfacing{" "}

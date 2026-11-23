@@ -12,27 +12,27 @@ interface StoneBlend {
 }
 
 const blends: StoneBlend[] = [
-  { name: "Alaskan Tundra Blend", image: "/images/vubastone/colors/alaskan-tundra-blend.webp", tones: "Cool gray and white marble with icy silver undertones" },
-  { name: "Arc de Triomphe", image: "/images/vubastone/colors/arc-de-triomphe.webp", tones: "Warm cream and gold with soft brown accents" },
-  { name: "Big Sur", image: "/images/vubastone/colors/big-sur.webp", tones: "Deep ocean blue with gray and charcoal tones" },
-  { name: "Breckenridge", image: "/images/vubastone/colors/breckenridge.webp", tones: "Earthy brown and tan with warm copper highlights" },
-  { name: "Cano Cristales", image: "/images/vubastone/colors/cano-cristales.webp", tones: "Vibrant multi-color blend inspired by Colombia's river of five colors" },
-  { name: "China Town", image: "/images/vubastone/colors/china-town.webp", tones: "Rich terracotta red with warm earth accents" },
-  { name: "Coral Springs", image: "/images/vubastone/colors/coral-springs.webp", tones: "Soft white, grey, and warm brown — coastal-inspired finish" },
-  { name: "Ellis Island", image: "/images/vubastone/colors/ellis-island.webp", tones: "Classic gray blend with subtle warm undertones" },
-  { name: "Idaho Falls", image: "/images/vubastone/colors/idaho-falls.webp", tones: "Natural river stone with gray and tan variation" },
-  { name: "Ipanema Beach", image: "/images/vubastone/colors/ipanema-beach.webp", tones: "Warm sand and golden tones with tropical character" },
-  { name: "Juneau", image: "/images/vubastone/colors/juneau.webp", tones: "Cool slate gray with blue-green mineral undertones" },
-  { name: "Kaimu Beach", image: "/images/vubastone/colors/kaimu-beach.webp", tones: "Dark volcanic stone with charcoal and black tones" },
-  { name: "Key West", image: "/images/vubastone/colors/key-west.webp", tones: "Warm coral and cream with sunset-inspired tones" },
-  { name: "Lake Tahoe", image: "/images/vubastone/colors/lake-tahoe.webp", tones: "Clear blue-gray with cool alpine undertones" },
-  { name: "Manhattan", image: "/images/vubastone/colors/manhattan.webp", tones: "Sophisticated gray blend with urban character" },
-  { name: "Milano Marble", image: "/images/vubastone/colors/milano-marble.webp", tones: "Classic white and silver marble with refined elegance" },
-  { name: "Monticello", image: "/images/vubastone/colors/monticello.webp", tones: "Warm heritage cream with soft gray accents" },
-  { name: "Monument Valley", image: "/images/vubastone/colors/monument-valley.webp", tones: "Red and coshel aggregates — rugged desert landscape tones" },
-  { name: "Nevada", image: "/images/vubastone/colors/nevada.webp", tones: "Desert sand with warm neutral tones — local favorite" },
-  { name: "Palazzo", image: "/images/vubastone/colors/palazzo.webp", tones: "Warm Italian stone with golden and beige marble" },
-  { name: "Pont du Gard", image: "/images/vubastone/colors/pont-du-gard.webp", tones: "French limestone tones — warm honey and cream" },
+  { name: "Alaskan Tundra Blend", image: "/images/vubastone/colors/alaskan-tundra-blend.webp", tones: "Pale gray with white and dark flecks" },
+  { name: "Arc de Triomphe", image: "/images/vubastone/colors/arc-de-triomphe.webp", tones: "Gold, cream and charcoal" },
+  { name: "Big Sur", image: "/images/vubastone/colors/big-sur.webp", tones: "Gray, gold and cream" },
+  { name: "Breckenridge", image: "/images/vubastone/colors/breckenridge.webp", tones: "Tan and gray with small dark flecks" },
+  { name: "Cano Cristales", image: "/images/vubastone/colors/cano-cristales.webp", tones: "Reddish brown with cream flecks" },
+  { name: "China Town", image: "/images/vubastone/colors/china-town.webp", tones: "Terracotta red and cream" },
+  { name: "Coral Springs", image: "/images/vubastone/colors/coral-springs.webp", tones: "Gray and cream with dark accents" },
+  { name: "Ellis Island", image: "/images/vubastone/colors/ellis-island.webp", tones: "Brown with pale and dark flecks" },
+  { name: "Idaho Falls", image: "/images/vubastone/colors/idaho-falls.webp", tones: "Light and dark grays" },
+  { name: "Ipanema Beach", image: "/images/vubastone/colors/ipanema-beach.webp", tones: "Gray and beige" },
+  { name: "Juneau", image: "/images/vubastone/colors/juneau.webp", tones: "Blue-gray and charcoal" },
+  { name: "Kaimu Beach", image: "/images/vubastone/colors/kaimu-beach.webp", tones: "Deep charcoal with flecks of gray" },
+  { name: "Key West", image: "/images/vubastone/colors/key-west.webp", tones: "Pale beige with warm brown accents" },
+  { name: "Lake Tahoe", image: "/images/vubastone/colors/lake-tahoe.webp", tones: "Gray with cream and dark accents" },
+  { name: "Manhattan", image: "/images/vubastone/colors/manhattan.webp", tones: "Charcoal with small silver-gray flecks" },
+  { name: "Milano Marble", image: "/images/vubastone/colors/milano-marble.webp", tones: "Terracotta, charcoal and cream" },
+  { name: "Monticello", image: "/images/vubastone/colors/monticello.webp", tones: "Gray with touches of gold" },
+  { name: "Monument Valley", image: "/images/vubastone/colors/monument-valley.webp", tones: "Red-brown and tan" },
+  { name: "Nevada", image: "/images/vubastone/colors/nevada.webp", tones: "Tan, rust and cream" },
+  { name: "Palazzo", image: "/images/vubastone/colors/palazzo.webp", tones: "White, gray and charcoal" },
+  { name: "Pont du Gard", image: "/images/vubastone/colors/pont-du-gard.webp", tones: "Sand and light gray" },
 ]
 
 const INITIAL_VISIBLE = 12
@@ -53,10 +53,10 @@ export function VubaStoneColorShowcase() {
             Stone Palette
           </span>
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[40px] text-gray-900 tracking-tight">
-            Natural Spanish Marble Blends
+            Stone blends
           </h2>
           <p className="mt-3 sm:mt-4 text-gray-500 text-base sm:text-lg leading-relaxed">
-            21 crushed marble blends — from warm desert tones to cool coastal grays. Tap any swatch to see details.
+            Compare 21 blends. Open a swatch for a closer view of the individual stones.
           </p>
         </div>
 
@@ -97,7 +97,7 @@ export function VubaStoneColorShowcase() {
                         <X className="h-4 w-4" />
                       </button>
                     </div>
-                    <span className="text-sm text-accent font-medium">Natural Spanish Marble</span>
+                    <span className="text-sm text-accent font-medium">Stone blend</span>
                     <p className="mt-3 text-gray-500 text-sm leading-relaxed">{selectedBlend.tones}</p>
                   </div>
                 </div>

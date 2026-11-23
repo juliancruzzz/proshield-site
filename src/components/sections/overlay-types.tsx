@@ -9,60 +9,45 @@ const overlayTypes = [
   {
     icon: <Layers className="h-5 w-5" />,
     title: "Microtoppings / Skim Coats",
-    tagline: "Ultra-thin, modern polished-concrete look",
+    tagline: "A smooth, thin finish",
     tags: ["Interior Floors", "Retail", "Showrooms"],
     description:
-      "Ultra-thin cementitious application for a smooth, modern polished-concrete aesthetic. Bonds directly to existing concrete with minimal thickness. Can be colored, stained, or polished to match any design vision.",
+      "A skim coat gives sound concrete an even surface for color or stain. Its low profile can be useful where the floor meets a door or a neighboring room.",
     benefits: [
       "Smooth, polished finish",
       "Minimal floor height change",
       "Colorable and stainable",
-      "Ideal for interior spaces",
-    ],
-    stats: [
-      { value: "No", label: "Tear-out needed" },
-      { value: "10–15", label: "Year lifespan" },
-      { value: "24hr", label: "Walk-on time" },
+      "Smooth interior surfaces",
     ],
     image: "/images/concrete-overlay/micro-topping-flooring.webp",
   },
   {
     icon: <Stamp className="h-5 w-5" />,
     title: "Stampable Overlays",
-    tagline: "Natural stone & brick patterns without tear-out",
+    tagline: "Imprinted stone and brick patterns",
     tags: ["Patios", "Driveways", "Pool Decks"],
     description:
-      "Stamped with patterns that mimic natural stone, brick, slate, tile, or wood planks. Applied at 1/4\" to 3/4\" thickness for deep, realistic pattern imprints. Wide range of patterns and integral colors available.",
+      "Texture mats pressed into the fresh overlay give it a stone, brick or tile pattern. The mix needs enough depth for the impression as well as room at adjoining doors and edges.",
     benefits: [
       "Realistic stone & brick patterns",
       "Deep texture imprints",
       "Wide color selection",
-      "Exterior UV-rated",
-    ],
-    stats: [
-      { value: "15–20", label: "Year lifespan" },
-      { value: "50%+", label: "Less vs. real stone" },
-      { value: "1–2 Day", label: "Typical install" },
+      "Patterned borders",
     ],
     image: "/images/concrete-overlay/concrete-overlay-commercial-palms.webp",
   },
   {
     icon: <AlignHorizontalDistributeCenter className="h-5 w-5" />,
     title: "Polishable Overlay",
-    tagline: "High-gloss, grind-and-polish finish over existing concrete",
+    tagline: "A topping that can be ground and polished",
     tags: ["Commercial", "Retail", "Showrooms"],
     description:
-      "A thin-bonded cementitious topping applied over existing concrete and then ground and polished to a high-gloss finish. Achieves the look of polished concrete without tearing out the existing slab — ideal for covering stained, patched, or uneven floors. Compressive strength of 4,000–6,500 PSI when cured, with the option for integral color, dyes, or scored patterns.",
+      "We install a topping made for polishing, then grind and polish the new surface. This can give a showroom or retail floor a consistent appearance where the existing concrete has patchwork or old stains.",
     benefits: [
       "Polishes to high-gloss finish",
-      "Covers damaged substrates",
-      "4,000–6,500 PSI strength",
+      "Covers visible patchwork",
+      "Choice of sheen",
       "Colorable and dyeable",
-    ],
-    stats: [
-      { value: "24hr", label: "Polish-ready" },
-      { value: "No", label: "Tear-out needed" },
-      { value: "15–20", label: "Year lifespan" },
     ],
     image: "/images/concrete-overlay/polishable-overlay.webp",
   },
@@ -72,17 +57,12 @@ const overlayTypes = [
     tagline: "Logos, stencils, and multi-color designs",
     tags: ["Commercial", "Branding", "Custom Design"],
     description:
-      "Stenciled patterns, custom colors, embedded logos, multi-color blends, and faux finishes. Perfect for commercial branding, restaurant floors, themed spaces, and any project requiring a one-of-a-kind design.",
+      "Stencils and contrasting colors can mark a border, lay out a tile pattern or place a design in an entry. The size of the design and the joints in the slab guide the layout.",
     benefits: [
-      "130+ stencil patterns",
+      "Stencil patterns",
       "Custom logo embedding",
       "Multi-color blending",
       "Commercial branding",
-    ],
-    stats: [
-      { value: "130+", label: "Pattern options" },
-      { value: "Custom", label: "Logo embedding" },
-      { value: "10–15", label: "Year lifespan" },
     ],
     image: "/images/concrete-overlay/stamped-patio.webp",
   },
@@ -107,7 +87,7 @@ export function OverlayTypes() {
             Types of Overlays We Offer
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Each overlay system serves a different purpose. We help you pick the right one for your surface and style.
+            Choose the texture first. A skim coat stays smooth, a stamp leaves an impression and a polishable topping can be ground to a sheen.
           </p>
         </div>
 
@@ -225,24 +205,7 @@ export function OverlayTypes() {
                               {overlay.description}
                             </p>
 
-                            {/* Stats row */}
-                            <div className="mt-4 grid grid-cols-3 gap-3">
-                              {overlay.stats.map((stat) => (
-                                <div
-                                  key={stat.label}
-                                  className="bg-gray-50 rounded-lg px-3 py-2.5 text-center"
-                                >
-                                  <div className="font-heading font-bold text-lg sm:text-xl text-gray-900 leading-tight">
-                                    {stat.value}
-                                  </div>
-                                  <div className="text-[10px] sm:text-[11px] font-medium uppercase tracking-wider text-gray-500 mt-0.5">
-                                    {stat.label}
-                                  </div>
-                                </div>
-                              ))}
-                            </div>
-
-                            {/* Benefits check list */}
+                            {/* Finish details */}
                             <div className="mt-4 grid grid-cols-2 gap-x-4 gap-y-1.5">
                               {overlay.benefits.map((b) => (
                                 <span

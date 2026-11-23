@@ -31,18 +31,14 @@ const systems: System[] = [
   {
     name: "ProFlake System",
     description:
-      "Premium multi-layer system with 150+ Torginol color blends. Polyurea base, full decorative flake broadcast, and polyaspartic topcoat. Allow 24 hours before walking, subject to weather and curing conditions.",
+      "Our ProFlake floor has a polyurea base covered with decorative flakes and finished with a clear polyaspartic topcoat.",
     highlights: [
-      "150+ color blends",
-      "Polyaspartic topcoat",
-      "Limited lifetime no-peel warranty on qualifying systems",
-      "Chemical & hot tire resistant",
-      "UV-stable finish",
+      "150+ flake blends",
+      "Full flake coverage",
+      "Clear topcoat",
     ],
     href: "/proflake",
     image: "/images/proflake/flake-garage-porsche-bikes.webp",
-    tag: "Best Value",
-    tagColor: "bg-accent",
     categories: ["Residential Flake", "150+ Colors"],
     stat: "150+",
     statLabel: "Color Blends",
@@ -50,13 +46,11 @@ const systems: System[] = [
   {
     name: "Metallic Epoxy",
     description:
-      "Flowing, pearlescent finish — every floor is unique. Metallic pigments create a 3D liquid-metal effect with stunning depth. The quote specifies the installation schedule.",
+      "Metallic pigments blend as the floor is poured. The same pair of colors can look different from one garage to the next.",
     highlights: [
-      "One-of-a-kind design",
-      "3D liquid-metal depth",
-      "Protective topcoat",
-      "Pearlescent flowing finish",
-      "Stunning visual depth",
+      "Custom color combinations",
+      "Pigmented epoxy",
+      "Installation schedule in the estimate",
     ],
     href: "/metallic-epoxy",
     image: "/images/metallic/metallic-epoxy-red-black-swirl.webp",
@@ -67,13 +61,10 @@ const systems: System[] = [
   {
     name: "Solid Color Coating",
     description:
-      "One color across the whole floor. A simple finish for a utility garage or workshop.",
+      "A single color gives the garage a uniform finish. This is an option for a workshop where you want dropped parts to stand out.",
     highlights: [
-      "Most affordable option",
-      "Clean professional finish",
-      "Protects your concrete",
-      "Easy to maintain",
-      "Fast installation",
+      "Solid color",
+      "Continuous finish",
     ],
     href: "/services",
     image: "/images/commercial/commercial-solid-grey-epoxy.jpg",
@@ -106,7 +97,7 @@ export function GarageAreas() {
             Garage Floor Systems
           </h2>
           <p className="mt-4 text-gray-500 text-lg leading-relaxed">
-            Three proven systems — tap any to see the details.
+            Choose a finish to see its materials and color options.
           </p>
         </div>
 

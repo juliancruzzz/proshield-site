@@ -14,7 +14,7 @@ import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Concrete Overlay & Resurfacing | Las Vegas | ProShield Epoxy",
-  description: "Concrete overlay and resurfacing in Las Vegas. Transform cracked concrete without tear-out. Stamped, stenciled, and decorative overlays. Free estimates.",
+  description: "Resurface suitable concrete with a smooth, stamped or stenciled overlay. Explore patterns for patios, walkways, driveways and indoor floors.",
   keywords: "concrete overlay Las Vegas, concrete resurfacing, stamped concrete overlay, decorative concrete overlay, concrete polishing",
   openGraph: {
     url: "https://proshieldepoxy.com/concrete-overlay",
@@ -28,23 +28,23 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What exactly is a concrete overlay?",
-    a: "A concrete overlay is a thin cementitious coating applied directly over existing concrete. It's not a coating like epoxy or polyaspartic — it's a resurfacing system that bonds chemically to the old concrete and becomes part of the surface. It can be as thin as 1/16 inch (microtopping) or as thick as 3/4 inch (stampable overlay).",
+    a: "An overlay is a thin cement-based layer applied over sound concrete. A smooth skim coat changes the surface with little added height. A thicker stampable mix can take the impression of stone, brick or tile.",
   },
   {
     q: "Will the overlay crack if the existing concrete is cracked?",
-    a: "We repair all significant cracks before applying the overlay system. Minor hairline cracks are addressed during surface prep. The bonding agent and primer create adhesion, and the overlay itself adds structural rigidity. Most overlays perform well even over older concrete if prep is done correctly.",
+    a: "A crack can show through again if the slab keeps moving. We assess the cracks and joints before quoting an overlay. Settlement or structural damage may need a different repair.",
   },
   {
     q: "How long does an overlay installation take?",
-    a: "Most residential overlays complete in 1–2 days. Larger commercial projects might take 2–4 days depending on size and complexity. Once the overlay is applied and cured, we seal it with a polyaspartic topcoat for maximum durability and protection.",
+    a: "Surface prep, repairs and the finish determine the schedule. A polished overlay includes grinding after the topping sets. We’ll confirm when the space can take foot or vehicle traffic.",
   },
   {
     q: "What finish options do you offer?",
-    a: "We offer microtoppings (smooth, polished look), stampable overlays (stone/brick/tile patterns), polishable overlays (high-gloss grind-and-polish finish), and custom decorative overlays (stencils, logos, multi-color blends, faux finishes). Colors and patterns are customizable.",
+    a: "We offer smooth, stamped, stenciled and polishable overlays. Stamps add texture. Stencils and scoring let you add a border or lay out a repeating pattern.",
   },
   {
-    q: "How much longer does an overlay last than plain concrete?",
-    a: "Plain sealed concrete might last 2–5 years before the sealer wears off. Our overlays, finished with a polyaspartic topcoat, typically last 10–15+ years depending on traffic and exposure. Interior floors last longer than exterior. Maintenance (resealing every 2–3 years) extends lifespan.",
+    q: "Can an overlay change the height at a doorway?",
+    a: "Yes. The topping adds height to the slab. We check thresholds, steps and drains before recommending a finish or thickness.",
   },
 ]
 
@@ -73,9 +73,9 @@ export default function ConcreteOverlayPage() {
         badge="Concrete Overlay & Resurfacing"
         title="Concrete Overlay & Resurfacing"
         highlight="Las Vegas"
-        subtitle="If the slab is in good shape, I can resurface it with a stamped, stenciled or smooth finish."
+        subtitle="Keep the concrete you have and change its finish. A suitable slab can take a smooth skim coat, a stamped stone pattern or a stenciled border."
         backgroundImage="/images/cool-deck/pool-deck-hero.webp"
-        backgroundAlt="Stamped concrete overlay around pool deck and patio area"
+        backgroundAlt="Textured concrete beside a pool and patio"
       />
 
       <OverlayStats />

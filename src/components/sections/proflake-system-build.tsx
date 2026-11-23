@@ -8,28 +8,28 @@ const steps = [
     number: "1",
     title: "Prep & Grinding",
     description:
-      "Assess the concrete, moisture, contamination and existing coatings before selecting a system. Diamond grinding is part of ProShield’s preparation process; the required profile and repairs depend on the proposed products and site.",
+      "We diamond-grind the slab and repair damaged areas. If moisture testing flags an issue, the quote identifies the treatment the slab needs.",
     icon: <Pickaxe className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "2",
     title: "Polyurea Base Coat",
     description:
-      "The specified polyurea base supports the decorative flake layer. Moisture treatment is assessed separately; a base coat is not automatically a moisture vapor barrier.",
+      "The polyurea base bonds to the prepared slab and holds the flakes as we spread them.",
     icon: <PaintBucket className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "3",
     title: "Flake Broadcast",
     description:
-      "Decorative Torginol flake is broadcast into the base. Confirm the selected blend, chip size and finish in the project scope.",
+      "We cover the fresh base with your selected blend, then remove loose flakes before sealing.",
     icon: <Sparkles className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "4",
     title: "Polyaspartic Topcoat",
     description:
-      "The specified polyaspartic clear coat covers the decorative finish. Follow its coverage, texture and curing requirements, and confirm the written care plan.",
+      "A clear polyaspartic coat seals the flakes. We confirm when it has cured enough for walking and parking.",
     icon: <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
 ]

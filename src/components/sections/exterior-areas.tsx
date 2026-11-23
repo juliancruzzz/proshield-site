@@ -81,12 +81,10 @@ const systems: System[] = [
   {
     name: "Paver Sealing",
     description:
-      "Already have pavers? We'll seal and protect them — enhancing color and defending against stains, fading, and weed growth between joints.",
+      "Sealing can deepen the color of existing pavers. The finish depends on the stone, its condition and the sealer.",
     highlights: [
       "Enhances existing pavers",
       "Color & stain protection",
-      "Helps reduce weed growth",
-      "UV protection",
       "Periodic reapplication available",
     ],
     href: "/paver-sealing",
@@ -118,7 +116,7 @@ export function ExteriorAreas() {
             Exterior Surface Systems
           </h2>
           <p className="mt-4 text-gray-500 text-lg leading-relaxed">
-            Five proven systems for every outdoor surface — tap any to see the details.
+            Compare finishes for a pool surround, patio or driveway.
           </p>
         </div>
 

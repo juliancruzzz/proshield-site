@@ -3,10 +3,10 @@
 import { Check } from "lucide-react"
 
 const highlights = [
-  "Densified & hardened at a molecular level",
-  "25–40 year performance with regular maintenance",
-  "Up to 70–90% light reflectance",
-  "No coating to peel, chip, or delaminate",
+  "Select the amount of stone exposed",
+  "Choose a matte, satin or glossy finish",
+  "Review existing repairs and joints",
+  "Compare the finish in your own lighting",
 ]
 
 export function PolishingIntro() {
@@ -31,11 +31,11 @@ export function PolishingIntro() {
               What Is Concrete Polishing?
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight leading-tight">
-              A permanent floor, not a{" "}
-              <span className="text-accent">temporary coating</span>
+              How Grinding Reveals{" "}
+              <span className="text-accent">the Stone</span>
             </h2>
             <p className="mt-4 sm:mt-5 text-gray-500 text-base sm:text-lg leading-relaxed">
-              Concrete polishing is a mechanical refinement of your existing slab using progressively finer diamond-impregnated tooling. The result is a dense, hardened surface with a customizable sheen — from matte to mirror-like high gloss.
+              We grind the surface with diamonds, then refine it in finer passes. A shallow grind leaves more of the original surface visible. A deeper grind can reveal larger pieces of stone within the concrete.
             </p>
 
             {/* Highlight checklist */}

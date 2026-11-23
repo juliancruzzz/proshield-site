@@ -16,7 +16,7 @@ import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "VubaStone Resin-Bound Stone Las Vegas | ProShield Epoxy",
-  description: "VubaStone certified installers in Las Vegas. Resin-bound Spanish marble for driveways, patios, and pool decks. 850 L/min drainage, UV-stable. Free estimates.",
+  description: "Resin-bound stone for driveways, patios and pool surrounds in Las Vegas. Compare stone blends and see how the base affects drainage and installation depth.",
   openGraph: {
     url: "https://proshieldepoxy.com/vubastone",
     images: ["/images/vubastone/vubastone-driveway-craftsman.webp"],
@@ -27,52 +27,52 @@ export const metadata: Metadata = {
 }
 
 const depths = [
-  { use: "Pedestrian Areas", depth: "3/8\"", detail: "Walkways, paths, patios" },
+  { use: "Pedestrian Areas", depth: "1/2\"", detail: "Walkways, paths, patios" },
   { use: "Driveways", depth: "5/8\"", detail: "Light vehicle access" },
   { use: "Heavy Traffic", depth: "3/4\"", detail: "Turning areas, frequent use" },
 ]
 
 const galleryImages = [
-  { src: "/images/vubastone/vubastone-driveway-stone-columns.webp", alt: "VubaStone driveway with grand stone column entrance", span: "md:col-span-2 md:row-span-2" },
-  { src: "/images/vubastone/vubastone-pool-deck-pergola.webp", alt: "VubaStone pool deck with pergola shade structure", span: "" },
-  { src: "/images/vubastone/vubastone-patio-firepit.webp", alt: "VubaStone patio surrounding a fire pit", span: "" },
-  { src: "/images/vubastone/vubastone-steps-contrast.webp", alt: "VubaStone steps with contrast color borders", span: "md:col-span-2" },
-  { src: "/images/vubastone/vubastone-pool-deck-closeup.webp", alt: "VubaStone surface close-up — natural marble texture detail", span: "" },
-  { src: "/images/vubastone/vubastone-driveway-landscaping.webp", alt: "VubaStone driveway integrated with landscaping", span: "" },
+  { src: "/images/vubastone/vubastone-driveway-stone-columns.webp", alt: "Stone driveway between entrance columns", span: "md:col-span-2 md:row-span-2" },
+  { src: "/images/vubastone/vubastone-pool-deck-pergola.webp", alt: "Stone pool surround beneath a pergola", span: "" },
+  { src: "/images/vubastone/vubastone-patio-firepit.webp", alt: "Stone patio around a fire pit", span: "" },
+  { src: "/images/vubastone/vubastone-steps-contrast.webp", alt: "Steps with contrasting stone borders", span: "md:col-span-2" },
+  { src: "/images/vubastone/vubastone-pool-deck-closeup.webp", alt: "Close-up of the stone texture", span: "" },
+  { src: "/images/vubastone/vubastone-driveway-landscaping.webp", alt: "Stone driveway beside planted beds", span: "" },
 ]
 
 const faqs = [
   {
     q: "Is VubaStone epoxy?",
-    a: "No. VubaStone is a polyurethane resin-bound stone system — not epoxy. The UV-stable polyurethane resin binds natural crushed Spanish marble into a permeable, durable outdoor surface. It's a completely different product from interior epoxy coatings.",
+    a: "VubaStone uses a clear polyurethane resin to hold small stones together. The individual stones stay visible in the finished surface.",
   },
   {
-    q: "How permeable is VubaStone?",
-    a: "VubaStone drains at 850 litres per minute per square metre, making it fully permeable and SUDS compliant. Water passes through the surface into the VubaMac base layer — no standing water, no puddles.",
+    q: "Will water drain through a resin-bound driveway?",
+    a: "Water can pass between the stones. Where it goes next depends on the base and the slope. A stone layer over existing concrete still needs a route for runoff.",
   },
   {
     q: "What warranty does VubaStone come with?",
-    a: "VubaStone carries a 5-year manufacturer's warranty as standard. When installed over Vuba's patented VubaMac permeable base, the warranty is upgraded to 10 years.",
+    a: "The base matters. Vuba publishes different warranty terms for installations over existing concrete or asphalt and installations over its VubaMac base. Confirm the coverage that applies to your installation in writing.",
   },
   {
-    q: "How long does VubaStone last?",
-    a: "When professionally installed and properly maintained, VubaStone surfaces can last 15–20+ years. The polyurethane resin is flexible and UV-stable, resisting cracking and color fade better than concrete or traditional paving.",
+    q: "Can VubaStone go over an existing driveway?",
+    a: "Yes, over suitable concrete or asphalt. We check movement, drainage and the height at the garage door before recommending a build.",
   },
   {
-    q: "What is binding quartz and why does it matter?",
-    a: "Binding quartz is a translucent additive mixed into the VubaStone system. It increases the surface strength by up to 30% without discoloring the finished stone — something standard resin-bound systems don't include.",
+    q: "What gives the finish its color?",
+    a: "The blend of stones gives the surface its color. Compare a blend next to the pavers, walls or pool edge it will meet.",
   },
   {
     q: "How long until I can walk or drive on it?",
-    a: "Do not walk on your new VubaStone surface for 24–48 hours after installation. Do not drive on it for 48–72 hours. Curing times may vary with temperature and humidity.",
+    a: "Foot traffic and vehicles have different return times. We’ll confirm both for the resin and weather conditions on your job.",
   },
   {
     q: "What maintenance does VubaStone require?",
-    a: "VubaStone is low-maintenance. Regular sweeping and occasional rinsing with a garden hose is typically all that's needed. Avoid high-pressure washing and harsh chemicals.",
+    a: "Sweep away leaves and loose debris. Use Vuba’s cleaning instructions for your finish before pressure washing or treating a stain.",
   },
   {
-    q: "What makes ProShield different from other VubaStone installers?",
-    a: "ProShield Epoxy is a Vuba Stone certified installer. We've completed hands-on training directly with Vuba's team and follow their manufacturer-specified installation process. Your warranty is backed by both Vuba and our commitment to quality.",
+    q: "What should my estimate include?",
+    a: "Look for the stone blend, base preparation, finished depth and how the edges meet the garage or patio doors.",
   },
 ]
 
@@ -100,12 +100,12 @@ export default function VubaStonePage() {
 
       {/* Hero — hangar-style image background */}
       <PageHero
-        badge="Vuba Stone Certified Installers — Las Vegas"
+        badge="Outdoor stone surfacing"
         title="VubaStone Resin-Bound Stone"
         highlight="Las Vegas"
         subtitle="VubaStone combines small pieces of marble with a clear resin. You can use it on driveways, patios, walkways and around pools."
         backgroundImage="/images/vubastone/vubastone-driveway-stone-columns.webp"
-        backgroundAlt="VubaStone resin-bound stone driveway with grand stone column entrance"
+        backgroundAlt="Stone driveway between entrance columns"
       />
 
       {/* Stats bar */}
@@ -134,23 +134,22 @@ export default function VubaStonePage() {
                 Specifications
               </span>
               <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-white tracking-tight">
-                Built to Spec
+                Recommended stone depths
               </h2>
+              <p className="mt-3 text-gray-300">
+                These depths come from <a href="https://vuba-stone.com/pages/vuba-stone" className="underline">Vuba’s US installation guidance</a>. The base and traffic on your site determine the final specification.
+              </p>
             </div>
           </ScrollReveal>
 
           {/* Specs row — responsive grid: 1 col mobile, 3 tablet, 5 desktop */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 max-w-5xl mx-auto mt-8 sm:mt-10">
-            {[
-              ...depths.map((d) => ({ label: d.use, detail: d.detail, value: d.depth })),
-              { label: "Binding Quartz", detail: "Increases surface strength", value: "30%" },
-              { label: "UV-Stable Resin", detail: "Won\u2019t yellow or discolor", value: "\u2713" },
-            ].map((item) => (
-              <ScrollReveal key={item.label} delay={0.2}>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 max-w-5xl mx-auto mt-8 sm:mt-10">
+            {depths.map((item) => (
+              <ScrollReveal key={item.use} delay={0.2}>
                 <div className="rounded-xl sm:rounded-2xl border border-white/[0.08] bg-white/[0.04] p-4 sm:p-5 lg:p-6 flex sm:flex-col items-center sm:items-center gap-4 sm:gap-0 sm:text-center hover:border-accent/20 hover:bg-white/[0.06] transition-all duration-300 h-full">
-                  <span className="font-heading font-bold text-2xl sm:text-3xl text-accent shrink-0">{item.value}</span>
+                  <span className="font-heading font-bold text-2xl sm:text-3xl text-accent shrink-0">{item.depth}</span>
                   <div className="sm:mt-3">
-                    <p className="text-sm font-medium text-white/80">{item.label}</p>
+                    <p className="text-sm font-medium text-white/80">{item.use}</p>
                     <p className="mt-0.5 sm:mt-1 text-xs text-white/35">{item.detail}</p>
                   </div>
                 </div>
@@ -166,13 +165,13 @@ export default function VubaStonePage() {
           <ScrollReveal direction="up" delay={0}>
             <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
               <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-                Our Work
+                Finish ideas
               </span>
               <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-                VubaStone Installations
+                Stone finishes outdoors
               </h2>
               <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-                Real projects across Las Vegas — driveways, pool decks, walkways, and outdoor living spaces.
+                Compare the stone in a broad driveway with the narrow borders on a set of steps.
               </p>
             </div>
           </ScrollReveal>
@@ -197,21 +196,21 @@ export default function VubaStonePage() {
             <div className="rounded-xl sm:rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 lg:p-10 flex flex-col md:flex-row items-center gap-6 md:gap-10">
               <img
                 src="/images/logos/vubastone-logo-teal-bg.webp"
-                alt="VubaStone Certified Installer"
+                alt="Vuba Stone"
                 className="h-24 sm:h-28 md:h-32 rounded-xl shrink-0"
               />
               <div>
                 <h2 className="font-heading font-bold text-xl sm:text-2xl text-gray-900 tracking-tight">
-                  Vuba Stone Certified Installers
+                  Planning a driveway or patio?
                 </h2>
                 <p className="mt-3 text-sm sm:text-base text-gray-500 leading-relaxed">
-                  ProShield Epoxy is a Vuba Stone certified installer in Las Vegas. We&apos;ve completed hands-on training directly with Vuba&apos;s team and follow their manufacturer-specified installation process. Your warranty is backed by Vuba — one of over 270+ certified installers across the Americas.
+                  Tell us how you use the space and what’s there now. We’ll price the base preparation and stone finish together.
                 </p>
                 <Link
                   href="/contact"
                   className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent-hover transition-colors"
                 >
-                  Schedule Your Consultation <ArrowRight className="h-4 w-4" />
+                  Get a stone surfacing estimate <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
             </div>
@@ -223,12 +222,12 @@ export default function VubaStonePage() {
       <section className="section-white py-8 sm:py-12">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gray-600 leading-relaxed">
-            VubaStone is one of several outdoor coating options we install.{" "}
+            Planning a pool surround?{" "}
             <Link href="/blog/best-pool-deck-coatings-las-vegas" className="text-accent hover:underline font-medium">
               Compare pool deck coating options
             </Link>{" "}
-            or explore our full{" "}
-            <Link href="/services" className="text-accent hover:underline font-medium">services lineup</Link>.
+            or see our other{" "}
+            <Link href="/services" className="text-accent hover:underline font-medium">concrete finishes</Link>.
           </p>
         </div>
       </section>

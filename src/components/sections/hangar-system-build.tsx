@@ -9,28 +9,28 @@ const steps = [
     number: "1",
     title: "Surface Prep",
     description:
-      "Diamond grinding or shot blasting to create the proper adhesion profile. We test for moisture vapor transmission and repair cracks, spalls, and damaged areas before any coating goes down.",
+      "We inspect the concrete for oil, moisture and damaged areas. The preparation method depends on the slab and the primer being used.",
     icon: <Pickaxe className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "2",
     title: "Primer",
     description:
-      "A moisture-tolerant primer seals the concrete and establishes adhesion. This layer is critical in hangar environments where the substrate has been exposed to years of oils, fuels, and chemicals.",
+      "The primer must suit both the prepared concrete and the body coats. Moisture or fluid contamination may change the preparation included in the quote.",
     icon: <Droplets className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "3",
     title: "Body Coats",
     description:
-      "One or more high-build body coats create the structural foundation, chemical barrier, and base color. These layers are formulated for chemical resistance far beyond anything used in residential or standard commercial applications.",
+      "The body coats provide color and build up the floor to the thickness specified for the bay.",
     icon: <Layers className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "4",
     title: "Topcoat",
     description:
-      "A high-performance aliphatic urethane topcoat engineered for aviation-grade exposure. Formulated to resist Skydrol, Hyjet, jet fuel, hydraulic fluids, and aggressive solvents while maintaining UV stability and gloss.",
+      "The clear or pigmented topcoat is selected for the wheel traffic, fluids and cleaning routine. The crew confirms when aircraft can return.",
     icon: <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
 ]
@@ -51,7 +51,7 @@ export function HangarSystemBuild() {
             How We Build Your Hangar Floor
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Four stages from raw concrete to an aviation-grade finish. Typically 2–5 days, phased around your operations.
+            Plan the coating schedule around the dates the hangar can be cleared and returned to service.
           </p>
         </div>
 
@@ -149,13 +149,13 @@ export function HangarSystemBuild() {
         {/* Safety & Compliance — compact badges */}
         <div className="max-w-3xl mx-auto mt-6 sm:mt-8">
           <p className="text-center text-xs font-semibold tracking-widest uppercase text-teal mb-3 sm:mb-4">
-            Safety & Compliance Built In
+            Details to include in the plan
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
             {[
-              { icon: <ShieldCheck className="h-4 w-4" />, label: "NFPA 409 Compliant" },
-              { icon: <Ruler className="h-4 w-4" />, label: "Slip-Resistant Finishes" },
-              { icon: <PaintBucket className="h-4 w-4" />, label: "Safety Line Striping" },
+              { icon: <ShieldCheck className="h-4 w-4" />, label: "Facility requirements" },
+              { icon: <Ruler className="h-4 w-4" />, label: "Walking surface texture" },
+              { icon: <PaintBucket className="h-4 w-4" />, label: "Floor markings" },
               { icon: <Eye className="h-4 w-4" />, label: "Light-Reflective Finish" },
             ].map((item) => (
               <div

@@ -9,80 +9,56 @@ const systems = [
   {
     icon: <Droplets className="h-5 w-5" />,
     title: "Resin Quartz Floors",
-    tagline: "Heavy-duty impact & chemical resistance",
+    tagline: "Quartz texture underfoot",
     tags: ["Warehouses", "Manufacturing", "Healthcare"],
     description:
-      "Seamless systems combining epoxy or urethane resin with colored quartz granules. Extremely durable against impacts and heavy loads with a naturally slip-resistant textured surface.",
-    benefits: [
-      "Impact and abrasion resistant",
-      "Slip-resistant quartz texture",
-      "Seamless and sanitary",
-      "Chemical resistant",
-    ],
+      "Colored quartz granules are set into resin. The amount and size of the quartz influence both the texture and the cleaning routine.",
+    benefits: ["Colored quartz aggregate", "Texture selection", "Wall and drain details"],
     stats: [
-      { value: "25–40", label: "Year lifespan" },
-      { value: "2–3 Day", label: "Install time" },
-      { value: "100%", label: "Seamless surface" },
+      { value: "Quartz", label: "Surface texture" },
+      { value: "Resin", label: "Binder" },
     ],
     image: "/images/commercial/commercial-resin-quartz.webp",
   },
   {
     icon: <Shield className="h-5 w-5" />,
     title: "Solid Color Urethane Floors",
-    tagline: "UV-stable color for branded spaces",
+    tagline: "One continuous color",
     tags: ["Retail", "Offices", "Clean Rooms"],
     description:
-      "Polyurethane-based systems offering excellent UV resistance and color retention. Available in unlimited solid colors for branding or design requirements.",
-    benefits: [
-      "UV-stable color retention",
-      "Fast cure (12–24 hrs)",
-      "Chemical resistant",
-      "Custom color matching",
-    ],
+      "A solid-color coating suits stockrooms, retail aisles and work areas where striping or clear aisle markings are part of the plan.",
+    benefits: ["Solid-color finish", "Aisle markings", "Topcoat selection"],
     stats: [
-      { value: "24hr", label: "Return to service" },
-      { value: "0%", label: "UV yellowing" },
-      { value: "10+", label: "Year lifespan" },
+      { value: "Solid", label: "Color finish" },
+      { value: "Optional", label: "Floor markings" },
     ],
     image: "/images/commercial/commercial-solid-grey-epoxy.jpg",
   },
   {
     icon: <Thermometer className="h-5 w-5" />,
     title: "Urethane Cement",
-    tagline: "Extreme thermal shock resistance",
+    tagline: "For wet process areas",
     tags: ["Kitchens", "Food Processing", "Breweries"],
     description:
-      "High-performance cementitious urethane engineered for extreme environments. Handles thermal shock from steam cleaning to freezer temperatures without cracking or delaminating.",
-    benefits: [
-      "Thermal shock resistant",
-      "Steam-cleanable",
-      "Bonds to green concrete",
-      "FDA/USDA compliant",
-    ],
+      "Urethane cement is an option for commercial kitchens and processing rooms. Compare each product’s limits with the wash temperature, cleaning chemicals and equipment in the room.",
+    benefits: ["Washdown conditions", "Cove and drain details", "Cleaning products"],
     stats: [
-      { value: "-100°F", label: "to 220°F rated" },
-      { value: "Extreme", label: "Chemical resistance" },
-      { value: "12hr", label: "Return to service" },
+      { value: "Washdown", label: "Temperature" },
+      { value: "Drains", label: "Edge details" },
     ],
     image: "/images/commercial/commercial-urethane-cement.webp",
   },
   {
     icon: <Layers className="h-5 w-5" />,
     title: "ProFlake System",
-    tagline: "Decorative durability, fastest cure",
+    tagline: "A decorative flake finish",
     tags: ["Showrooms", "Retail", "Commercial Garages"],
     description:
-      "Our signature polyurea flake system adapted for commercial environments. Polyurea base coat with decorative chip broadcast and polyaspartic topcoat in 150+ Torginol color blends.",
-    benefits: [
-      "150+ color options",
-      "Polyaspartic topcoat",
-      "UV-stable finish",
-      "Fast return to service",
-    ],
+      "ProFlake pairs a polyurea base with decorative flakes and a clear polyaspartic coat. The blend sets the color across the floor.",
+    benefits: ["Full flake coverage", "Clear polyaspartic topcoat", "Choice of flake blend"],
     stats: [
       { value: "150+", label: "Color blends" },
-      { value: "Next Day", label: "Walk-on ready" },
-      { value: "Phased", label: "Install scheduling" },
+      { value: "Polyurea", label: "Base coat" },
     ],
     image: "/images/commercial/commercial-warehouse-flake.webp",
   },
@@ -107,7 +83,7 @@ export function CommercialSystems() {
             Commercial Flooring Systems
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Each system is engineered for different conditions. We match the right one to your environment.
+            Compare the texture, appearance and typical uses of each system.
           </p>
         </div>
 

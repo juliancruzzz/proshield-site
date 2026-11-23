@@ -39,7 +39,7 @@ const rows: Row[] = [
   {
     "feature": "Warranty",
     "epoxy": "Read proposed terms",
-    "proflake": "Qualifying systems; written moisture exclusions"
+    "proflake": "Limited lifetime no-peel on qualifying residential ProFlake floors"
   },
   {
     "feature": "Price",
@@ -62,7 +62,7 @@ export function ProFlakeComparison() {
             Side-By-Side
           </span>
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-            Standard Epoxy vs. ProFlake
+            Epoxy and ProFlake Garage Floors
           </h2>
         </div>
 
@@ -73,7 +73,7 @@ export function ProFlakeComparison() {
             <div className="grid grid-cols-[1.2fr_1fr_1fr]">
               <div className="px-4 py-3 sm:px-5 sm:py-3.5 bg-gray-50 border-b border-gray-200" />
               <div className="px-3 py-3 sm:px-5 sm:py-3.5 text-center bg-gray-100 border-b border-gray-200 border-l border-gray-200">
-                <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">Std. Epoxy</span>
+                <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">Epoxy</span>
               </div>
               <div className="px-3 py-3 sm:px-5 sm:py-3.5 text-center bg-accent/8 border-b border-accent/15 border-l border-gray-200">
                 <span className="text-xs font-bold text-accent uppercase tracking-wider">ProFlake</span>

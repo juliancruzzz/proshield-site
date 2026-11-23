@@ -9,28 +9,28 @@ const steps = [
     number: "1",
     title: "Wash & Prep",
     description:
-      "Inspect existing sealer, contamination and surface condition. Select compatible cleaning and removal methods, then allow the surface to dry as required by the proposed product.",
+      "We check for old sealer and stains, then clean the pavers and let them dry before the next step.",
     icon: <Droplets className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "2",
     title: "Joint Stabilization",
     description:
-      "Inspect the joints and identify suitable re-sanding where needed. Joint treatment does not replace repair of paver settlement or a poorly supported base.",
+      "We check the depth and condition of the joints. Where sand has washed out, the quote identifies any re-sanding. Pavers that move underfoot need a separate repair.",
     icon: <Layers className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "3",
     title: "Stain Treatment",
     description:
-      "Assess stains before sealing and choose compatible treatment where suitable. Some discoloration can remain; agree on the expected result before application.",
+      "We assess stains before sealing. Oil that has soaked in can leave a mark even after cleaning.",
     icon: <Eraser className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "4",
     title: "Seal & Protect",
     description:
-      "Apply the selected compatible sealer according to its instructions. Confirm finish, application conditions and walking and vehicle return times for that product.",
+      "We apply a sealer suited to the pavers and the finish you chose. Walking and vehicle traffic can return at different times.",
     icon: <Paintbrush className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
 ]
@@ -49,10 +49,10 @@ export function PaverSealingProcess() {
             Our Process
           </span>
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-            Every Step Matters
+            How we seal pavers
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Preparation and product compatibility are part of the quoted scope.
+            Stripping and joint work are included when your pavers need them.
           </p>
         </div>
 

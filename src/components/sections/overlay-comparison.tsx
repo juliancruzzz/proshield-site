@@ -8,35 +8,12 @@ interface Row {
 }
 
 const rows: Row[] = [
-  { feature: "Cost", replace: "Full tear-out + repour", overlay: "Fraction of replacement cost" },
-  { feature: "Time", replace: "1 week+", overlay: "1–2 days" },
-  { feature: "Disruption", replace: "Jackhammers & heavy equipment", overlay: "Minimal — no demolition" },
-  { feature: "Durability", replace: "Standard concrete", overlay: "Polished or sealed for lasting protection" },
-  { feature: "Customization", replace: "Plain poured concrete", overlay: "Stamps, colors, stencils, logos" },
+  { feature: "Existing slab", replace: "Remove and repour", overlay: "Retain sound concrete" },
+  { feature: "Finished height", replace: "Set by new slab design", overlay: "Adds a layer at doors and drains" },
+  { feature: "Cracks and movement", replace: "Assess the slab and underlying base", overlay: "Address movement before resurfacing" },
+  { feature: "Pattern options", replace: "Finish the new pour", overlay: "Stamp or stencil the topping" },
+  { feature: "Project scope", replace: "Removal, base work and new concrete", overlay: "Preparation, repairs and overlay" },
 ]
-
-function isPositive(val: string) {
-  const lower = val.toLowerCase()
-  return (
-    lower.includes("fraction") ||
-    lower.includes("1–2") ||
-    lower.includes("minimal") ||
-    lower.includes("sealed") ||
-    lower.includes("stamps") ||
-    lower.includes("polished")
-  )
-}
-
-function isNegative(val: string) {
-  const lower = val.toLowerCase()
-  return (
-    lower.includes("tear-out") ||
-    lower.includes("1 week") ||
-    lower.includes("jackhammers") ||
-    lower.includes("standard concrete") ||
-    lower.includes("plain")
-  )
-}
 
 export function OverlayComparison() {
   return (
@@ -48,7 +25,7 @@ export function OverlayComparison() {
             Side-By-Side
           </span>
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-            Why Overlay Instead of Replace?
+            Resurface or replace the concrete?
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
             An overlay uses the slab you already have. Replacement starts with removing it.
@@ -78,16 +55,12 @@ export function OverlayComparison() {
                   <span className="text-sm sm:text-base text-gray-700 font-medium">{row.feature}</span>
                 </div>
                 <div className="px-3 py-3.5 sm:px-6 sm:py-4 flex items-center justify-center border-l border-gray-100 bg-gray-50/50">
-                  <span className={`text-sm sm:text-base font-medium text-center ${
-                    isNegative(row.replace) ? "text-gray-500" : "text-gray-600"
-                  }`}>
+                  <span className="text-sm sm:text-base font-medium text-center text-gray-600">
                     {row.replace}
                   </span>
                 </div>
                 <div className="px-3 py-3.5 sm:px-6 sm:py-4 flex items-center justify-center border-l border-gray-100 bg-accent/[0.02]">
-                  <span className={`text-sm sm:text-base font-semibold text-center ${
-                    isPositive(row.overlay) ? "text-gray-900" : "text-gray-500"
-                  }`}>
+                  <span className="text-sm sm:text-base font-semibold text-center text-gray-900">
                     {row.overlay}
                   </span>
                 </div>
@@ -96,7 +69,7 @@ export function OverlayComparison() {
           </div>
 
           <p className="mt-5 text-center text-sm text-gray-500">
-            Overlay systems cost a fraction of full tear-out and replacement, with minimal disruption to your property.
+            If the slab has shifted or settled, assess the underlying cause before spending money on a new finish.
           </p>
         </div>
       </div>

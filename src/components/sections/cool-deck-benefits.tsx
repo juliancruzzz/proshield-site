@@ -10,25 +10,25 @@ const benefits = [
     icon: Thermometer,
     title: "Surface Heat",
     description:
-      "Any pool deck can become hot in direct sun. Temperature depends on product, color, shade and weather. Ask for test results for the proposed finish under comparable conditions; no material is guaranteed safe for bare feet.",
+      "A light color can absorb less heat than a dark one in the same spot. Shade still makes a difference, particularly on the path from the house to the pool.",
   },
   {
     icon: ShieldCheck,
     title: "Wet Traction",
     description:
-      "Texture can help provide traction, but wet surfaces can still be slippery. Compare the proposed finish’s slip-resistance information and keep the deck clean. Cushioning does not prevent falls or guarantee protection from injury.",
+      "A knockdown finish adds texture. Water and pool residue can still make it slippery.",
   },
   {
     icon: Droplets,
     title: "Outdoor Exposure",
     description:
-      "Confirm the product is specified for the site and exposure. Ask how existing cracks, substrate movement and the written product warranty apply to your project.",
+      "Edges, steps and high-traffic areas can wear differently from the rest of a deck. Check those areas before deciding between repainting and resurfacing.",
   },
   {
     icon: Clock,
     title: "Maintenance",
     description:
-      "Remove loose debris and follow the selected product’s cleaning instructions. Ask which cleaners and equipment are allowed and when the surface should be inspected or refreshed. Resealing needs vary by system and condition.",
+      "Clean with products suited to the sealer. Peeling or loose texture needs attention before a fresh coat goes on.",
   },
 ]
 
@@ -44,13 +44,13 @@ export function CoolDeckBenefits() {
           <div>
             <div>
               <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-                Why Cool Deck
+                Pool deck finishes
               </span>
               <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-                Built for Las Vegas<br className="hidden sm:block" /> Outdoor Living
+                How the finish wears<br className="hidden sm:block" /> around a pool
               </h2>
               <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-                Compare the selected product, color, texture and care requirements for your deck.
+                Compare color and texture where the deck gets the most sun and foot traffic.
               </p>
             </div>
 
@@ -106,7 +106,7 @@ export function CoolDeckBenefits() {
           <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
             <Image
               src="/images/cool-deck/cool-deck-knockdown-pool.webp"
-              alt="Cool deck knockdown texture coating around pool in Las Vegas"
+              alt="Knockdown texture beside a pool and spa"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

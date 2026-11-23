@@ -19,12 +19,12 @@ const allServices: Record<string, ServiceItem> = {
   proflake: {
     title: "ProFlake Floors",
     href: "/proflake",
-    description: "Multi-layer flake system with polyaspartic topcoat.",
+    description: "Decorative flake over a polyurea base with a clear topcoat.",
   },
   "metallic-epoxy": {
     title: "Metallic Epoxy",
     href: "/metallic-epoxy",
-    description: "One-of-a-kind liquid-metal floors with 3D depth.",
+    description: "Pigmented epoxy for a marbled floor in custom colors.",
   },
   vubastone: {
     title: "VubaStone",
@@ -34,37 +34,37 @@ const allServices: Record<string, ServiceItem> = {
   "concrete-polishing": {
     title: "Concrete Polishing",
     href: "/concrete-polishing",
-    description: "Mechanical polish — Levels 1-4, Classes A-D.",
+    description: "The existing slab, ground and polished to your choice of sheen.",
   },
   "concrete-overlay": {
     title: "Decorative Overlay",
     href: "/concrete-overlay",
-    description: "Resurface damaged concrete with decorative finishes.",
+    description: "Add texture or a stamped pattern to sound concrete.",
   },
   "airplane-hangar": {
     title: "Hangar Flooring",
     href: "/airplane-hangar",
-    description: "Chemical-resistant systems for aviation facilities.",
+    description: "Floor coatings for aircraft parking and maintenance bays.",
   },
   "cool-deck": {
     title: "Cool Deck",
     href: "/cool-deck",
-    description: "Heat-reflective coatings for patios and pool decks.",
+    description: "Acrylic knockdown texture for patios and pool surrounds.",
   },
   "rubber-pool-deck": {
     title: "Rubber Pool Deck",
     href: "/rubber-pool-deck",
-    description: "Cushioned, slip-resistant rubber aggregate surfacing.",
+    description: "Bound rubber granules for a softer pool surround.",
   },
   "paver-sealing": {
     title: "Paver Sealing",
     href: "/paver-sealing",
-    description: "Protect and enhance pavers with professional sealing.",
+    description: "Clean and reseal existing pavers in a natural or wet-look finish.",
   },
   "commercial-flooring": {
     title: "Commercial Flooring",
     href: "/commercial-flooring",
-    description: "Heavy-duty systems for commercial environments.",
+    description: "Resin flooring for shops, kitchens and warehouses.",
   },
 }
 

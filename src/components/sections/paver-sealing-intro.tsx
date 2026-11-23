@@ -4,7 +4,7 @@ import { useRef, useState, useCallback } from "react"
 import { Check, GripVertical } from "lucide-react"
 
 const highlights = [
-  "Full pressure wash and surface prep before sealing",
+  "Cleaning before sealing",
   "Joint inspection and re-sanding options",
   "Wet-look, matte, and color-enhancing sealer options",
   "Stain removal and old sealer stripping available",
@@ -49,7 +49,7 @@ function PaverBeforeAfter() {
       {/* After — sealed pavers (full bg, right side) */}
       <img
         src="/images/paver-sealing/paver-walkway-after.webp"
-        alt="After — sealed and color-enhanced paver walkway"
+        alt="Mixed brown pavers with a sheen near the gate"
         className="absolute inset-0 h-full w-full object-cover"
       />
       {/* Before — unsealed pavers (clipped, left side) */}
@@ -58,18 +58,18 @@ function PaverBeforeAfter() {
         style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
       >
         <img
-          src="/images/paver-sealing/paver-walkway-before.webp"
-          alt="Before — faded, unsealed paver walkway"
+          src="/images/paver-sealing/paver-walkway-sealed.webp"
+          alt="The same paver path with a matte appearance near the gate"
           className="absolute inset-0 h-full w-full object-cover"
         />
       </div>
 
       {/* Labels */}
       <div className="absolute top-3 sm:top-4 left-3 sm:left-4 rounded-full bg-black/50 backdrop-blur-sm px-3 py-1 text-[10px] sm:text-xs font-semibold text-white uppercase tracking-wider">
-        Before
+        Matte appearance
       </div>
       <div className="absolute top-3 sm:top-4 right-3 sm:right-4 rounded-full bg-accent/80 backdrop-blur-sm px-3 py-1 text-[10px] sm:text-xs font-semibold text-white uppercase tracking-wider">
-        After
+        More sheen
       </div>
 
       {/* Slider handle */}
@@ -106,16 +106,14 @@ export function PaverSealingIntro() {
           {/* Content */}
           <div>
             <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-              Professional Paver Care
+              Paver finishes
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              Protect, Restore & Seal{" "}
+              Cleaning and sealing{" "}
               <span className="text-accent">Your Pavers</span>
             </h2>
             <p className="mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">
-              Paver care starts with the condition of the surface and any existing sealer.
-              The estimate can include cleaning, stain treatment, joint care and sealing
-              where suitable. The selected finish and preparation are set out in your quote.
+              Sealer can bring out the color of a paver or leave it close to its dry appearance. Existing sealer, stains and loose joint sand affect the work we include in your estimate.
             </p>
 
             <ul className="mt-6 space-y-3">

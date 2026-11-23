@@ -35,7 +35,7 @@ export function HangarIntro() {
               <span className="text-accent">floor needs</span>
             </h2>
             <p className="mt-4 sm:mt-5 text-gray-500 text-base sm:text-lg leading-relaxed">
-              When I look at a hangar, I check where the aircraft parks, where fluids spill and which equipment crosses the slab. Those details help determine the prep and topcoat.
+              The area beneath a maintenance stand sees different wear from a walkway. Mark the equipment routes and spill areas on the floor plan so the quote can address each one.
             </p>
 
             {/* Highlight checklist */}

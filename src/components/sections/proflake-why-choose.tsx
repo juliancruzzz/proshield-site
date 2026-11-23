@@ -7,12 +7,12 @@ import { Sun, ThermometerSun, Droplets, ChevronDown, Check } from "lucide-react"
 const advantages = [
   {
     icon: <Sun className="h-5 w-5" />,
-    title: "UV-Stable Finish",
+    title: "Sunlight at the garage door",
     badge: "UV data",
     badgeStyle: "bg-teal-subtle text-teal border border-teal/20",
     activeBadgeStyle: "bg-teal text-white border border-teal",
     description:
-      "Light exposure can affect coating appearance. Compare the selected base and topcoat’s published UV data and intended use; a UV-resistant topcoat is not a promise that the entire floor will never change color.",
+      "Tell us which parts of the floor get direct sun so we can check the proposed coating for that exposure.",
     features: [
   "Confirm the named topcoat",
   "Check intended light exposure",
@@ -22,12 +22,12 @@ const advantages = [
   },
   {
     icon: <ThermometerSun className="h-5 w-5" />,
-    title: "Hot Tire Resistant",
+    title: "Parking on the new floor",
     badge: "Vehicle use",
     badgeStyle: "bg-accent-subtle text-accent border border-accent/20",
     activeBadgeStyle: "bg-accent text-white border border-accent",
     description:
-      "Confirm the selected topcoat’s vehicle-use requirements and follow the return-to-use instructions. Marks or coating damage need assessment; resistance is not immunity to every tire exposure.",
+      "Wait for the coating to cure before you park on it. If a tire leaves a mark later, check whether the mark is on the surface or whether any coating has lifted.",
     features: [
   "Confirm vehicle-use suitability",
   "Allow the specified cure time",
@@ -37,12 +37,12 @@ const advantages = [
   },
   {
     icon: <Droplets className="h-5 w-5" />,
-    title: "Chemical Resistant",
+    title: "Oil and workshop spills",
     badge: "Exposure limits",
     badgeStyle: "bg-teal-subtle text-teal border border-teal/20",
     activeBadgeStyle: "bg-teal text-white border border-teal",
     description:
-      "Chemical resistance depends on the actual coating, chemical, concentration, temperature and contact time. Confirm compatibility for expected spills and follow the product’s cleanup instructions.",
+      "Clean up spills promptly using the instructions for the clear coat. If you use solvents or degreasers regularly, identify them before choosing the coating.",
     features: [
   "Identify expected chemicals",
   "Check concentration and contact time",
@@ -64,10 +64,10 @@ export function ProFlakeWhyChoose() {
             Why ProFlake
           </span>
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-            The Polyaspartic Advantage
+            Living With a ProFlake Floor
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Compare the named coating products, intended use and care requirements. Our polyaspartic topcoat is what sets ProFlake apart.
+            The clear coat takes the traffic on a finished floor. Here’s what to consider if you leave the garage open, park daily or use the space as a workshop.
           </p>
         </div>
 

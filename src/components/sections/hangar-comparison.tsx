@@ -3,45 +3,16 @@
 
 interface Row {
   feature: string
-  standard: string
-  proshield: string
+  use: string
+  scope: string
 }
 
 const rows: Row[] = [
-  { feature: "Base System", standard: "Standard Epoxy", proshield: "High-Build Multi-Layer" },
-  { feature: "Skydrol Resistance", standard: "No", proshield: "Yes" },
-  { feature: "Jet Fuel Resistance", standard: "Limited", proshield: "Yes" },
-  { feature: "Flexibility", standard: "Rigid — Cracks", proshield: "Flexible — Absorbs Movement" },
-  { feature: "UV Stability", standard: "Yellows Over Time", proshield: "UV-Stable" },
-  { feature: "Expected Lifespan", standard: "1–2 Years", proshield: "10–15+ Years" },
-  { feature: "Thermal Cycling", standard: "Cracks & Delaminates", proshield: "Handles Expansion" },
+  { feature: "Aircraft loads", use: "Parking and tug routes", scope: "Wheel and jack loads" },
+  { feature: "Spills", use: "Maintenance bays", scope: "Fluid type and contact time" },
+  { feature: "Sunlight", use: "Open doors", scope: "Topcoat exposure rating" },
+  { feature: "Access", use: "Occupied hangars", scope: "Work zones and reopening dates" },
 ]
-
-function isPositive(val: string) {
-  const lower = val.toLowerCase()
-  return (
-    lower === "yes" ||
-    lower.includes("uv-stable") ||
-    lower.includes("flexible") ||
-    lower.includes("10–15") ||
-    lower.includes("high-build") ||
-    lower.includes("multi-layer") ||
-    lower.includes("handles")
-  )
-}
-
-function isNegative(val: string) {
-  const lower = val.toLowerCase()
-  return (
-    lower === "no" ||
-    lower.includes("yellows") ||
-    lower.includes("rigid") ||
-    lower.includes("1–2") ||
-    lower.includes("cracks") ||
-    lower.includes("standard epoxy") ||
-    lower === "limited"
-  )
-}
 
 export function HangarComparison() {
   return (
@@ -53,10 +24,10 @@ export function HangarComparison() {
             Side-By-Side
           </span>
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-            Standard Epoxy vs. ProShield
+            What to Include in a Hangar Floor Quote
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Most competitors still use standard epoxy in hangars. Our high-performance system is a different class of protection entirely.
+            The loads at an aircraft parking position differ from those in a walkway. Match the scope to each part of the hangar.
           </p>
         </div>
 
@@ -67,10 +38,10 @@ export function HangarComparison() {
             <div className="grid grid-cols-[1fr_1fr_1fr] sm:grid-cols-[1.2fr_1fr_1fr]">
               <div className="px-4 py-4 sm:px-6 bg-gray-50 border-b border-gray-200" />
               <div className="px-4 py-4 sm:px-6 text-center bg-gray-100 border-b border-gray-200 border-l border-gray-200">
-                <span className="text-xs sm:text-sm font-bold text-gray-500 uppercase tracking-wider">Standard Epoxy</span>
+                <span className="text-xs sm:text-sm font-bold text-gray-500 uppercase tracking-wider">Where</span>
               </div>
               <div className="px-4 py-4 sm:px-6 text-center bg-accent/8 border-b border-accent/20 border-l border-gray-200">
-                <span className="text-xs sm:text-sm font-bold text-accent uppercase tracking-wider">ProShield</span>
+                <span className="text-xs sm:text-sm font-bold text-accent uppercase tracking-wider">What to specify</span>
               </div>
             </div>
 
@@ -83,17 +54,13 @@ export function HangarComparison() {
                   <span className="text-sm sm:text-base text-gray-700 font-medium">{row.feature}</span>
                 </div>
                 <div className="px-3 py-3.5 sm:px-6 sm:py-4 flex items-center justify-center border-l border-gray-100 bg-gray-50/50">
-                  <span className={`text-sm sm:text-base font-medium text-center ${
-                    isNegative(row.standard) ? "text-gray-500" : "text-gray-600"
-                  }`}>
-                    {row.standard}
+                  <span className="text-sm sm:text-base font-medium text-center text-gray-700">
+                    {row.use}
                   </span>
                 </div>
                 <div className="px-3 py-3.5 sm:px-6 sm:py-4 flex items-center justify-center border-l border-gray-100 bg-accent/[0.02]">
-                  <span className={`text-sm sm:text-base font-semibold text-center ${
-                    isPositive(row.proshield) ? "text-gray-900" : "text-gray-500"
-                  }`}>
-                    {row.proshield}
+                  <span className="text-sm sm:text-base font-semibold text-center text-gray-700">
+                    {row.scope}
                   </span>
                 </div>
               </div>

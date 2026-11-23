@@ -29,30 +29,23 @@ const systems: System[] = [
   {
     name: "Metallic Epoxy",
     description:
-      "Seamless, waterproof floor with stunning visual depth. Flowing pearlescent finishes that turn floors into art — every installation is unique.",
+      "Metallic epoxy gives an indoor floor a marbled finish. The silver and charcoal floor in our showroom project is one example.",
     highlights: [
-      "Seamless & waterproof",
-      "Unique 3D depth",
-      "Easy to clean",
-      "One-of-a-kind design",
-      "Protective topcoat",
+      "Pigmented epoxy",
+      "Custom color combinations",
     ],
     href: "/metallic-epoxy",
     image: "/images/metallic/metallic-epoxy-red-black-swirl.webp",
-    tag: "Most Popular",
-    tagColor: "bg-accent",
     categories: ["Showrooms", "Kitchens & Baths"],
   },
   {
     name: "Concrete Polishing",
     description:
-      "Mechanical refinement for a sleek, modern industrial look. Low maintenance with a professional finish — no coatings to wear off. Levels 1–4.",
+      "Polishing brings out the concrete beneath your feet. A light grind reveals less aggregate than a deeper one.",
     highlights: [
-      "Modern industrial look",
-      "Ultra-low maintenance",
-      "No coatings to wear off",
-      "Multiple sheen levels",
-      "Highly durable",
+      "Existing concrete",
+      "Choice of sheen",
+      "Visible aggregate",
     ],
     href: "/concrete-polishing",
     image: "/images/concrete-polishing/polished-concrete-aci.webp",
@@ -61,13 +54,10 @@ const systems: System[] = [
   {
     name: "Decorative Overlays",
     description:
-      "Thin-section coatings over existing concrete. Cover imperfections and create beautiful finishes — microtoppings, stampable overlays, and polishable systems.",
+      "An overlay adds a new cement-based surface to a sound slab. It can be finished smooth or given a stamped pattern.",
     highlights: [
-      "Covers imperfections",
-      "Multiple finish styles",
-      "10–20+ year lifespan",
-      "Microtoppings available",
-      "Stampable options",
+      "Textured or smooth",
+      "Stamped patterns",
     ],
     href: "/concrete-overlay",
     image: "/images/concrete-overlay/micro-topping-flooring.webp",

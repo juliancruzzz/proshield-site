@@ -80,7 +80,7 @@ export function Credentials() {
               Credentials
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              Licensed, Bonded &amp; Insured
+              Nevada contractor license
             </h2>
             <p className="mt-3 text-base sm:text-lg text-gray-500 max-w-md">
               Nevada license #0094652 covers epoxy coatings and sealants only. Confirm the project scope and current coverage documents before work begins.
@@ -93,7 +93,7 @@ export function Credentials() {
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-gray-900">Limited Lifetime Warranty</div>
-                  <div className="mt-0.5 text-xs text-gray-500">On qualifying residential systems. Moisture-driven failure is excluded; slabs flagged by moisture testing need a moisture vapor barrier first.</div>
+                  <div className="mt-0.5 text-xs text-gray-500">No-peel coverage on qualifying residential ProFlake floors. Moisture-driven failure is excluded; slabs flagged by moisture testing need a moisture vapor barrier first.</div>
                 </div>
               </div>
 
@@ -112,8 +112,8 @@ export function Credentials() {
                   <Scale className="h-6 w-6 text-accent" />
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-gray-900">Bonded &amp; Insured</div>
-                  <div className="mt-0.5 text-xs text-gray-500">Ask for current insurance documents</div>
+                  <div className="text-sm font-semibold text-gray-900">Project documents</div>
+                  <div className="mt-0.5 text-xs text-gray-500">Ask for current bond and insurance documents.</div>
                 </div>
               </div>
             </div>

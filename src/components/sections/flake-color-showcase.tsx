@@ -68,7 +68,7 @@ export function FlakeColorShowcase() {
             Choose Your Blend
           </h2>
           <p className="mt-3 sm:mt-4 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Premium decorative flake blends from Torginol. Click any swatch to see details.
+            Select a blend for a closer look at its colors.
           </p>
         </div>
 

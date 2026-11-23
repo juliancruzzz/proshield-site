@@ -9,25 +9,25 @@ const applications = [
     icon: Building2,
     title: "Retail & Showrooms",
     description:
-      "A polished floor reflects overhead light. Choose the sheen to suit the displays and lighting in your store.",
+      "Choose the sheen in the lighting used for your displays. A sample area on your slab shows both the reflection and the amount of exposed stone.",
   },
   {
     icon: Warehouse,
     title: "Warehouses & Distribution",
     description:
-      "Seamless, densified surfaces that withstand pallet jacks, forklifts, and constant heavy traffic without deterioration.",
+      "Identify forklift aisles and loading areas. Existing joint repairs may stay visible after polishing.",
   },
   {
     icon: UtensilsCrossed,
     title: "Restaurants & Hospitality",
     description:
-      "Non-porous, food-safe surfaces that meet health standards. Easy to clean and maintain in demanding kitchen environments.",
+      "Wet service areas need different traction and care considerations from a dining room. Review the proposed finish for each area.",
   },
   {
     icon: Car,
     title: "Auto Dealerships",
     description:
-      "Mirror-finish floors that enhance vehicle presentation. Resistant to hot-tire pickup, oils, and automotive chemicals.",
+      "Compare the finish beneath a display vehicle with the entrance and service lanes. Include wheel traffic and spill cleanup in the scope.",
   },
 ]
 
@@ -87,7 +87,7 @@ export function PolishingApplications() {
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10">
             <img
               src="/images/concrete-polishing/polished-aggregate-closeup.webp"
-              alt="Large warehouse with polished concrete flooring and reflective surface"
+              alt="Exposed aggregate in a polished concrete surface"
               className="h-full w-full object-cover"
             />
           </div>
@@ -98,10 +98,10 @@ export function PolishingApplications() {
               Applications
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              Built for Every <span className="text-accent">Environment</span>
+              Polished Concrete <span className="text-accent">by Use</span>
             </h2>
             <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-              Polished concrete performs across industries. We tailor the finish level and aggregate exposure to match your space&apos;s specific demands.
+              Select a space to see how traffic, lighting and cleaning affect the choice of finish.
             </p>
 
             <div className="mt-6 divide-y divide-gray-100">

@@ -1,12 +1,12 @@
 "use client"
 
-import { Layers, Clock, DollarSign, Palette } from "lucide-react"
+import { Layers, Paintbrush, Grid2X2, Palette } from "lucide-react"
 
 const stats = [
   { icon: Layers, value: "4 Types", label: "Overlay Options" },
-  { icon: Clock, value: "1–2 Days", label: "Typical Install" },
-  { icon: DollarSign, value: "Fraction", label: "vs. Full Replacement" },
-  { icon: Palette, value: "Unlimited", label: "Color Options" },
+  { icon: Paintbrush, value: "Smooth", label: "Skim coats" },
+  { icon: Grid2X2, value: "Stamped", label: "Textured patterns" },
+  { icon: Palette, value: "Stenciled", label: "Borders and detail" },
 ]
 
 export function OverlayStats() {

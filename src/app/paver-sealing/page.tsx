@@ -39,35 +39,35 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How long does paver sealing last?",
-    a: "How often resealing is needed depends on the selected product, paver condition, traffic, exposure and care. Inspect the surface periodically and confirm the maintenance guidance for the installed sealer.",
+    a: "The sealer on a sunny driveway may wear differently from the same finish on a covered patio. Check high-traffic spots against a sheltered area before deciding whether to reseal.",
   },
   {
     q: "What's the difference between wet-look and natural-look sealer?",
-    a: "Wet-look and color-enhancing products can deepen color or add sheen. Natural-look products aim for less visible change. Formulas and protection vary; compare the selected products and approve a sample area.",
+    a: "A wet-look sealer can deepen the color of the stone. A natural-look product stays closer to the original appearance. A small test area shows how the finish looks on your own pavers.",
   },
   {
     q: "Can you fix pavers that were sealed badly by someone else?",
-    a: "Existing sealer and stains need inspection first. Removal, cleaning and resealing may be possible, but the scope depends on compatibility and surface condition. Some stains or damage may remain visible.",
+    a: "We check the old sealer before applying anything new. A cloudy or peeling coat may need stripping. Stains that have soaked into the pavers can remain visible.",
   },
   {
     q: "Do I need polymeric sand?",
-    a: "Joint sand needs to suit the paver system and proposed treatment. The quote should identify whether re-sanding is needed and which joint material will be used. It does not replace repairs to a moving or poorly supported surface.",
+    a: "Some joints need fresh sand before sealing. We check the gaps and the paver system first. If pavers are sinking or rocking, the base needs attention too.",
   },
   {
     q: "How long does the process take?",
-    a: "The schedule depends on area, cleaning, existing sealer removal, drying conditions and the selected product. Confirm the project schedule and separate walking and vehicle return times in writing.",
+    a: "Cleaning, drying and stripping old sealer all affect the schedule. We’ll confirm when you can walk on the pavers and when to bring a vehicle back.",
   },
   {
-    q: "Why not use sealer from the hardware store?",
-    a: "Compare compatibility, intended use, preparation, UV information, slip considerations and care requirements for the actual products. Where a product is sold does not establish how it will perform on your pavers.",
+    q: "Can you seal pavers that have oil spots?",
+    a: "Oil can keep a sealer from bonding. We assess the stain before cleaning and discuss any marks that may show through the finish.",
   },
   {
     q: "Is paver sealing the same as epoxy coating?",
-    a: "Paver sealing treats an existing paver surface. It differs from a layered decorative epoxy floor system. Confirm the selected sealer’s purpose and compatibility rather than assuming it has the same properties as a garage coating.",
+    a: "Sealing leaves the original pavers and joints visible. A garage coating builds a new finish over a concrete slab.",
   },
   {
-    q: "Do you offer maintenance plans?",
-    a: "Ask about current inspection, cleaning and resealing options when requesting an estimate. The written quote should identify what is included and any future maintenance work.",
+    q: "What will my estimate cover?",
+    a: "Your estimate identifies the areas to clean, any stripping or joint work, and the sealer we’ll apply.",
   },
 ]
 
@@ -98,9 +98,9 @@ export default function PaverSealingPage() {
         badge="Paver Sealing & Restoration"
         title="Paver Sealing & Restoration"
         highlight="Las Vegas"
-        subtitle="I clean the pavers, check the joint sand and help you choose a natural or wet-look finish."
+        subtitle="Keep the natural color of your pavers or deepen it with a wet-look sealer. We clean the surface and check the joints before sealing."
         backgroundImage="/images/paver-sealing/paver-driveway-sealed.webp"
-        backgroundAlt="Paver walkway finish example"
+        backgroundAlt="Brown and gray pavers around a palm"
       />
 
       <PaverSealingStats />

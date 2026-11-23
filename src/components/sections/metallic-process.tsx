@@ -9,35 +9,35 @@ const steps = [
     number: "1",
     title: "Design Consultation",
     description:
-      "Assess the space, color direction, reference samples and clear-coat options for the intended use.",
+      "Choose the main color and accent. Reference floors help narrow down how much contrast you want.",
     icon: <MessageSquare className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "2",
     title: "Surface Preparation",
     description:
-      "Assess the concrete, moisture, contamination and existing coatings before selecting a system. Diamond grinding is part of ProShield’s preparation process; the required profile and repairs depend on the proposed products and site.",
+      "We inspect the concrete and prepare it for the primer. Old coatings, moisture and damaged areas can affect the scope.",
     icon: <Pickaxe className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "3",
     title: "Metallic Application",
     description:
-      "Apply the specified base and metallic layers to create flowing color. Pattern and movement vary from samples.",
+      "We apply the base and work the metallic pigments across the wet floor. The pattern forms during this pour.",
     icon: <Wand2 className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "4",
     title: "Protective Topcoat",
     description:
-      "Use the selected protective clear coat and texture specified for the project. Follow its application and cure requirements.",
+      "The clear coat goes over the metallic layer. Its texture and sheen are chosen for the room.",
     icon: <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "5",
     title: "Final Walkthrough",
     description:
-      "Review the finish, written care and warranty terms, and the return-to-use instructions before traffic resumes.",
+      "Before the floor goes back into use, we confirm when it can take furniture or vehicles and how to clean the finish.",
     icon: <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
 ]

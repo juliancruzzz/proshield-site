@@ -4,10 +4,9 @@ import Image from "next/image"
 import { Check } from "lucide-react"
 
 const highlights = [
-  "Hand-manipulated metallic pigments — every floor is unique",
-  "Genuine 3D depth and movement in high-build epoxy",
-  "Protective clear coat specified for the intended use",
-  "Custom color and finish direction; patterns vary",
+  "Choose the main color and accent",
+  "Adjust the contrast between shades",
+  "Specify the clear coat for the room",
 ]
 
 export function MetallicIntro() {
@@ -19,7 +18,7 @@ export function MetallicIntro() {
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
             <Image
               src="/images/metallic/metallic-epoxy-red-black-swirl.webp"
-              alt="Metallic epoxy floor with red and black custom swirl finish — 3D liquid metal effect"
+              alt="Red and silver streaks across a black floor"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -29,13 +28,13 @@ export function MetallicIntro() {
           {/* Content */}
           <div>
             <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-              Custom Craftsmanship
+              Metallic finish
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              Where Craftsmanship Meets Custom Design
+              How the Pattern Forms
             </h2>
             <p className="mt-4 text-gray-500 text-base sm:text-lg leading-relaxed">
-              Metallic epoxy is a decorative resin coating. Flowing metallic pigments are hand-manipulated into high-build epoxy to create a floor with genuine three-dimensional depth and movement. Every installation is a custom original built for your space.
+              We work the metallic pigments into wet resin as we pour. Two similar shades blend quietly across the floor. A dark pigment next to a light one makes the markings stand out.
             </p>
             <ul className="mt-6 space-y-3">
               {highlights.map((item) => (

@@ -6,38 +6,38 @@ import { Check, Timer, DollarSign, Shield, ChevronDown } from "lucide-react"
 
 const serviceTypes = [
   {
-    badge: "Budget-Friendly",
+    badge: "Surface sealer",
     badgeStyle: "bg-teal-subtle text-teal border border-teal/20",
     activeBadgeStyle: "bg-teal text-white border border-teal",
     title: "Grind & Seal",
     description:
-      "Surface grinding followed by a protective topical sealer. A great option for lighter-traffic spaces or budget-conscious projects.",
+      "After the initial grind, a sealer supplies the final sheen. Choose the sealer for the traffic, sunlight and cleaning products in the room.",
     features: [
-      "Ground to 100–200 grit, then sealed",
-      "Faster turnaround",
+      "Surface ground before sealing",
+      "Sheen set by the sealer",
       "Sealer can be refreshed",
-      "Ideal for residential or light commercial",
+      "Confirm suitability for traffic",
     ],
-    timeline: "1–2 Day Install",
-    cost: "Lower Cost",
+    timeline: "Grind and coat",
+    cost: "Sealer specified",
     durability: "Reseal Periodically",
   },
   {
-    badge: "Maximum Durability",
+    badge: "Mechanical finish",
     badgeStyle: "bg-accent-subtle text-accent border border-accent/20",
     activeBadgeStyle: "bg-accent text-white border border-accent",
     title: "Mechanically Polished",
     description:
-      "Full progressive diamond polishing up to 3,000 grit. The shine comes from the concrete itself after densification — no coating to scratch or peel.",
+      "Finer diamond passes develop the sheen in the slab itself. The finished look depends on the original concrete, the grind depth and the final polish.",
     features: [
-      "Full grit progression: 30 → 3,000 grit",
-      "Lithium silicate densifier for permanent hardening",
+      "Progressively finer diamond passes",
+      "Densifier selected for the slab",
       "Shine is inherent to the slab",
-      "Best for retail, warehouses, showrooms",
+      "Choice of aggregate exposure",
     ],
-    timeline: "3–5 Day Install",
-    cost: "Higher Upfront",
-    durability: "25–40 Year Life",
+    timeline: "Grind and polish",
+    cost: "Sheen specified",
+    durability: "Maintain the guard",
   },
 ]
 

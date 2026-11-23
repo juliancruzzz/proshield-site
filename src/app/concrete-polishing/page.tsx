@@ -37,28 +37,28 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "How is polished concrete different from epoxy?",
-    a: "Epoxy is a coating that sits on top of concrete and can eventually peel, chip, or wear through. Polished concrete is a mechanical refinement of the slab itself — there's no coating to fail. The shine and hardness come from the concrete, enhanced by a chemical densifier that permanently hardens the surface at a molecular level.",
+    q: "How does polished concrete differ from epoxy?",
+    a: "Polishing uses diamonds to refine the concrete itself. Epoxy adds a resin coating over the concrete. If you want to see the stone already in the slab, polishing is the option to explore.",
   },
   {
-    q: "How long does concrete polishing take?",
-    a: "Timeline depends on the scope: a grind-and-seal project can take 1–2 days, while a full mechanical polish (3,000 grit) typically takes 3–5 days for a standard commercial space. Factors include slab condition, existing coatings that need removal, the finish level, and square footage.",
+    q: "What affects the schedule?",
+    a: "Existing floor coverings, adhesive removal, repairs and the number of grinding passes all affect the time on site. The estimate should also say when the space can reopen.",
   },
   {
-    q: "What maintenance does polished concrete need?",
-    a: "Day-to-day: dust mop regularly to remove grit that can scratch the surface, and clean periodically with a pH-neutral cleaner. Avoid abrasive tools and harsh chemicals. The protective guard should be reapplied every 1–2 years for commercial spaces or 3–5 years for residential. Burnishing may be needed every 6–12 months in heavy-traffic commercial areas.",
+    q: "How do you care for a polished floor?",
+    a: "Remove loose grit and use a cleaner suited to the installed finish. Traffic lanes may need attention sooner than the rest of the room. The recommended guard and maintenance schedule depend on use.",
   },
   {
-    q: "Can any concrete slab be polished?",
-    a: "Most slabs can be polished, but results depend on the concrete's condition, age, and strength. The slab should ideally have a compressive strength of 3,500 psi or higher. We assess every floor before starting — factors like cracks, moisture levels, existing coatings, and slab thickness all influence the approach and expected outcome.",
+    q: "Can my existing slab be polished?",
+    a: "Old repairs, cracks and variations in the concrete can remain visible. A test area on the slab is the best way to judge its color and how much stone grinding will expose.",
   },
   {
-    q: "Is polished concrete slippery?",
-    a: "Polished concrete meets the ANSI A326.3 standard requiring a minimum wet DCOF of 0.42 for interior spaces. It also meets OSHA slip-resistance requirements. With a properly applied guard, polished floors provide traction comparable to other commercial flooring. For areas with higher slip risk, we can apply guards with additional grit additives.",
+    q: "Is polished concrete slippery when wet?",
+    a: "Water, oil and cleaners can affect footing. For a space with traction requirements, check test data for the proposed finish and guard under the conditions that apply there.",
   },
   {
-    q: "Does ProShield offer a warranty on polished concrete?",
-    a: "Yes. We provide a workmanship warranty covering the polishing process and installation quality. Because concrete polishing is a refinement of your existing slab (not a coating), the warranty covers our process and craftsmanship — we cannot guarantee the slab itself won't crack or shift due to substrate conditions, settlement, or seismic activity.",
+    q: "What if the slab cracks later?",
+    a: "Polishing follows the slab and cannot prevent movement or new cracks. Ask for written coverage for the work included in your estimate.",
   },
 ]
 
@@ -108,10 +108,10 @@ export default function ConcretePolishingPage() {
       />
 
       <PageHero
-        badge="Mechanical Refinement — Not a Coating"
+        badge="Existing concrete"
         title="Concrete Polishing"
         highlight="Las Vegas"
-        subtitle="I grind and polish the concrete you already have. Choose a low sheen for a workshop or a higher gloss for a showroom."
+        subtitle="Polishing brings out the stone in your existing slab. Choose how much aggregate you want to see and whether the surface has a matte, satin or glossy finish."
         backgroundImage="/images/concrete-polishing/polished-concrete-aci.webp"
         backgroundAlt="Polished commercial warehouse floor with high-gloss finish"
       />

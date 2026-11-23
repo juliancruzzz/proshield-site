@@ -66,7 +66,7 @@ export function ProFlakeIntro() {
               {/* After image (full, underneath) */}
               <img
                 src="/images/proflake/flake-garage-after-coated.webp"
-                alt="Finished garage floor with ProFlake polyurea coating and decorative flakes"
+                alt="Garage floor with a decorative flake finish"
                 className="absolute inset-0 w-full h-full object-cover"
                 draggable={false}
               />
@@ -78,7 +78,7 @@ export function ProFlakeIntro() {
               >
                 <img
                   src="/images/proflake/flake-garage-before-concrete.webp"
-                  alt="Raw concrete garage floor before ProFlake coating installation"
+                  alt="Uncoated concrete garage floor"
                   className="absolute inset-0 w-full h-full object-cover"
                   style={{
                     width: containerWidth
@@ -107,10 +107,10 @@ export function ProFlakeIntro() {
 
               {/* Labels */}
               <span className="absolute top-4 left-4 z-10 rounded-full bg-black/50 backdrop-blur-sm px-3 py-1 text-xs font-bold uppercase tracking-wider text-white/90">
-                Before
+                Bare concrete
               </span>
               <span className="absolute top-4 right-4 z-10 rounded-full bg-accent/80 backdrop-blur-sm px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
-                After
+                Flake finish
               </span>
             </div>
           </div>
@@ -124,7 +124,7 @@ export function ProFlakeIntro() {
               What Is ProFlake?
             </h2>
             <p className="mt-4 sm:mt-5 text-gray-600 text-base sm:text-lg leading-relaxed">
-              ProFlake combines a polyurea base, decorative flake and a polyaspartic topcoat over prepared concrete. Choose the blend and texture for your garage, and confirm the product requirements and written warranty in the project quote.
+              The colored flakes cover the entire base coat. That gives the garage floor its speckled appearance. A clear topcoat seals the flakes and becomes the surface you walk and park on.
             </p>
 
             {/* Highlight checklist */}

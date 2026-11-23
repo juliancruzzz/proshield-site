@@ -15,8 +15,8 @@ import { ScrollReveal } from "@/components/ui/scroll-reveal"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Metallic Epoxy Flooring Las Vegas | Stunning 3D Finishes | ProShield Epoxy",
-  description: "Metallic epoxy flooring in Las Vegas — custom 3D liquid-metal floors for showrooms, luxury homes & designer garages. Free design consultation · 702-728-5484.",
+  title: "Metallic Epoxy Floors in Las Vegas | ProShield Epoxy",
+  description: "See a silver and charcoal showroom floor, compare metallic colors and plan a custom epoxy finish for your space.",
   openGraph: {
     url: "https://proshieldepoxy.com/metallic-epoxy",
     images: ["/images/metallic/metallic-epoxy-blue-ocean-garage.webp"],
@@ -28,55 +28,55 @@ export const metadata: Metadata = {
 
 const idealSpaces = [
   {
-    title: "Luxury Showrooms",
-    description: "Automotive, retail, and product display spaces where the floor becomes part of the brand experience.",
+    title: "Showrooms",
+    description: "Silver and charcoal give the showroom pictured here a neutral floor beneath the displays.",
     image: "/images/metallic/metallic-epoxy-chopshop-porsche.webp",
   },
   {
-    title: "High-End Residences",
-    description: "Living rooms, entertainment spaces, and custom home builds that demand flooring as distinctive as the home itself.",
+    title: "Homes",
+    description: "Related colors give an open room a quieter look. Contrasting pigments make the markings easier to see.",
     image: "/images/metallic/metallic-epoxy-silver-kitchen-real.webp",
   },
   {
-    title: "Designer Garages",
-    description: "Collector garages and personal showrooms — where your vehicles deserve a floor that matches.",
+    title: "Garages",
+    description: "For a garage used for both display and parking, plan for vehicle traffic when choosing the clear coat.",
     image: "/images/metallic/metallic-epoxy-red-black-swirl.webp",
   },
 ]
 
 const metallicGallery = [
-  { src: "/images/metallic/metallic-epoxy-red-black-swirl.webp", alt: "Metallic epoxy garage — red and black swirl custom pour", span: "md:col-span-2 md:row-span-2" },
-  { src: "/images/metallic/metallic-epoxy-red-black-angle2.webp", alt: "Metallic epoxy — red and black angle view detail", span: "" },
-  { src: "/images/metallic/metallic-epoxy-silver-kitchen-real.webp", alt: "Metallic epoxy kitchen — silver finish residential application", span: "" },
-  { src: "/images/metallic/metallic-epoxy-blue-ocean-garage.webp", alt: "Metallic epoxy garage — deep blue ocean wave design", span: "md:col-span-2" },
-  { src: "/images/metallic/metallic-epoxy-chopshop-porsche.webp", alt: "Metallic epoxy showroom — Porsche collector showroom space", span: "" },
-  { src: "/images/metallic/metallic-epoxy-pink-magenta-salon.webp", alt: "Metallic epoxy salon — custom pink and magenta commercial floor", span: "" },
+  { src: "/images/metallic/metallic-epoxy-red-black-swirl.webp", alt: "Red and silver streaks across a black floor", span: "md:col-span-2 md:row-span-2" },
+  { src: "/images/metallic/metallic-epoxy-red-black-angle2.webp", alt: "Silver streaks through dark metallic epoxy", span: "" },
+  { src: "/images/metallic/metallic-epoxy-silver-kitchen-real.webp", alt: "Silver and charcoal in a white kitchen", span: "" },
+  { src: "/images/metallic/metallic-epoxy-blue-ocean-garage.webp", alt: "Blue and white metallic garage floor", span: "md:col-span-2" },
+  { src: "/images/metallic/metallic-epoxy-chopshop-porsche.webp", alt: "Silver and charcoal showroom floor", span: "" },
+  { src: "/images/metallic/metallic-epoxy-pink-magenta-salon.webp", alt: "Pink and burgundy with white accents", span: "" },
 ]
 
 const faqs = [
   {
-    q: "What makes metallic epoxy different from flake or standard epoxy?",
-    a: "Metallic epoxy uses pigments in resin to create flowing color and visual depth. Flake systems use decorative chips for a different finish. Samples and reference images show a direction; the installed pattern varies.",
+    q: "How does metallic epoxy differ from a flake floor?",
+    a: "Flake floors have a speckled finish. In metallic epoxy the color comes from pigments worked into wet resin, so the pattern changes across the room.",
   },
   {
-    q: "Can I choose my exact colors and design?",
-    a: "Discuss pigment colors, movement and clear-coat finish before installation. The final pattern is hand-worked and will not exactly duplicate a sample or reference photo.",
+    q: "Can you match a floor in a photo?",
+    a: "A photo helps us match the overall color and contrast you like. The markings form during the pour and will vary from one floor to the next.",
   },
   {
-    q: "Is metallic epoxy suitable for high-traffic commercial spaces?",
-    a: "Suitability depends on the intended traffic, slab and selected clear coat. Confirm the named products and their abrasion, chemical and traction information for the project.",
+    q: "Can metallic epoxy go in a showroom or shop?",
+    a: "Yes, where the coating suits the traffic and materials used there. Let us know if the floor will see vehicles, cleaning chemicals or wheeled equipment so we can specify the clear coat.",
   },
   {
-    q: "How long does installation take?",
-    a: "Application time and return-to-use time are different. Preparation, repairs, product selection and site conditions affect the schedule. Confirm when walking, furniture and vehicles are permitted before using the floor.",
+    q: "When can we move furniture or vehicles back?",
+    a: "The installation schedule includes preparation, repairs, coating and cure time. We’ll confirm when people, furniture and vehicles can return to your floor.",
   },
   {
-    q: "What about UV stability and long-term care?",
-    a: "Light exposure can affect coating appearance. Compare the selected base and topcoat’s published UV data and intended use; a UV-resistant topcoat is not a promise that the entire floor will never change color. Remove loose dirt and follow the installed finish’s cleaning instructions. Confirm the cleaner, dilution, equipment and stain-removal method before use. Do not assume every resin floor accepts the same products.",
+    q: "How should I clean the finish?",
+    a: "Sweep away loose grit before mopping. Use the cleaner and dilution recommended for the clear coat on your floor.",
   },
   {
-    q: "What warranty is included?",
-    a: "The Peel-Free Lifetime Guarantee applies to qualifying systems under the written terms. Moisture-driven failure is excluded; a flagged moisture condition requires an appropriate moisture vapor barrier before coating. Confirm coverage for the proposed system.",
+    q: "What warranty comes with metallic epoxy?",
+    a: "Check the written terms for the metallic system in your estimate. The limited lifetime no-peel warranty shown for qualifying residential ProFlake floors applies to that system.",
   },
 ]
 
@@ -104,13 +104,13 @@ export default function MetallicEpoxyPage() {
 
       {/* Hero with image background */}
       <PageHero
-        badge="Custom Luxury Flooring"
+        badge="Custom epoxy"
         title="Metallic Epoxy Floors"
         highlight="Las Vegas"
-        subtitle="The colors swirl together as I pour the epoxy. You choose the colors, and the pattern takes shape on the floor."
+        subtitle="Our silver and charcoal showroom project shows how two colors look across an entire room. We also pour metallic epoxy for homes, shops and garages."
         ctaText="Book a Design Consultation"
-        backgroundImage="/images/gallery/metallic-epoxy-vegas-room.webp"
-        backgroundAlt="Metallic epoxy floor with 3D liquid-metal depth and swirl patterns"
+        backgroundImage="/images/metallic/metallic-epoxy-chopshop-porsche.webp"
+        backgroundAlt="Silver and charcoal metallic epoxy on a showroom floor"
       />
 
       <script
@@ -120,7 +120,7 @@ export default function MetallicEpoxyPage() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Metallic Epoxy Flooring",
-            "description": "Custom metallic epoxy floors with 3D liquid-metal finishes for luxury showrooms, residences, and designer spaces in Las Vegas.",
+            "description": "Custom metallic epoxy floors for homes, garages and showrooms in Las Vegas.",
             "provider": {
               "@type": "LocalBusiness",
               "name": "ProShield Epoxy",
@@ -157,7 +157,7 @@ export default function MetallicEpoxyPage() {
                 Showrooms, Residences, and Custom Spaces
               </h2>
               <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-                Metallic epoxy is the floor of choice for clients who treat their space as a reflection of their standards.
+                A change in color or contrast can make the same finish look quite different in a kitchen, showroom or garage.
               </p>
             </div>
           </ScrollReveal>
@@ -211,10 +211,10 @@ export default function MetallicEpoxyPage() {
                 Finish Ideas
               </span>
               <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-                Metallic Installations
+                Metallic Finish Examples
               </h2>
               <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-                See how the silver and charcoal finish looks across a showroom floor.
+                Compare the color combinations across kitchens, garages and showrooms.
               </p>
             </div>
           </ScrollReveal>

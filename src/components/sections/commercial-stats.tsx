@@ -3,10 +3,10 @@
 import { Shield, Clock, Layers, Building2 } from "lucide-react"
 
 const stats = [
-  { icon: Shield, value: "Chemical", label: "Resistance" },
-  { icon: Clock, value: "12–24 hr", label: "Fast Cure Times" },
-  { icon: Layers, value: "4 Systems", label: "Purpose-Built" },
-  { icon: Building2, value: "All Industries", label: "From Retail to MFG" },
+  { icon: Shield, value: "Spills", label: "Chemical exposure" },
+  { icon: Clock, value: "Access", label: "Reopening schedule" },
+  { icon: Layers, value: "Four", label: "Floor systems" },
+  { icon: Building2, value: "Loads", label: "Equipment traffic" },
 ]
 
 export function CommercialStats() {

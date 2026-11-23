@@ -29,30 +29,24 @@ const systems: System[] = [
   {
     name: "Commercial Resinous Flooring",
     description:
-      "Seamless resinous flooring systems — resin quartz, solid color urethane, and urethane cement. System-matched to your specific environment and chemical exposure.",
+      "Compare resin quartz, urethane cement and solid color for the way the floor will be used. A loading aisle and a retail counter see different wear.",
     highlights: [
-      "Chemical resistant",
-      "Forklift & heavy traffic rated",
-      "Seamless & sanitary",
-      "Custom color options",
-      "System-matched to environment",
+      "Equipment traffic",
+      "Cleaning method",
+      "Spill exposure",
     ],
     href: "/commercial-flooring",
     image: "/images/commercial/commercial-grey-yellow-stripe.webp",
-    tag: "Most Popular",
-    tagColor: "bg-accent",
     categories: ["Warehouses", "Retail & Showroom"],
   },
   {
     name: "Airplane Hangar Flooring",
     description:
-      "Purpose-built system that resists Skydrol, jet fuel, oils, abrasion, and rolling loads. Chemical-resistant topcoat with non-slip safety finish.",
+      "The proposed coating should suit the fuels, fluids and wheels that will come across your hangar floor.",
     highlights: [
-      "Skydrol & jet fuel resistant",
-      "Non-slip safety finish",
-      "Heavy rolling load rated",
-      "Chemical-resistant topcoat",
-      "Abrasion resistant",
+      "Aircraft parking",
+      "Maintenance bays",
+      "Aisle markings",
     ],
     href: "/airplane-hangar",
     image: "/images/hangar/hangar-floor-drone-desert.webp",
@@ -61,13 +55,11 @@ const systems: System[] = [
   {
     name: "ProFlake System",
     description:
-      "Polyurea base with full flake broadcast and polyaspartic topcoat. Durable, decorative, and fast — a great option for lighter-duty commercial spaces.",
+      "Decorative flakes give a shop or showroom a speckled finish. A clear topcoat covers the flakes.",
     highlights: [
-      "Fast installation",
-      "Decorative finish",
-      "Chemical resistant topcoat",
-      "150+ color options",
-      "Polyaspartic topcoat",
+      "Polyurea base",
+      "150+ flake blends",
+      "Clear topcoat",
     ],
     href: "/proflake",
     image: "/images/proflake/flake-garage-porsche-bikes.webp",
@@ -76,13 +68,11 @@ const systems: System[] = [
   {
     name: "Urethane Cement",
     description:
-      "The gold standard for commercial kitchens, breweries, and food processing. Thermal shock resistant, antimicrobial compatible, and seamless.",
+      "For washdown areas, the water temperature and cleaning chemicals help determine which urethane cement system to specify.",
     highlights: [
-      "Thermal shock resistant",
-      "Antimicrobial compatible",
-      "FDA/USDA compliant options",
-      "Seamless finish",
-      "Built for wet environments",
+      "Washdown areas",
+      "Floor drains",
+      "Cleaning chemicals",
     ],
     href: "/commercial-flooring",
     image: "/images/commercial/commercial-urethane-cement.webp",
@@ -91,13 +81,10 @@ const systems: System[] = [
   {
     name: "Concrete Polishing",
     description:
-      "Sleek, modern polished concrete for a clean retail aesthetic. Low maintenance and extremely durable under foot traffic — no coatings to wear off.",
+      "Polishing exposes the aggregate already in the slab. The amount of grinding and the final sheen change how it looks under store lighting.",
     highlights: [
-      "Modern aesthetic",
-      "Ultra-low maintenance",
-      "Highly durable",
-      "Multiple sheen levels",
-      "No coatings to wear off",
+      "Concrete finish",
+      "Choice of sheen",
     ],
     href: "/concrete-polishing",
     image: "/images/concrete-polishing/polished-concrete-aci.webp",
@@ -106,13 +93,10 @@ const systems: System[] = [
   {
     name: "Resin Quartz",
     description:
-      "Broadcast quartz aggregate in a resinous matrix. Slip-resistant, chemical resistant, and built for constant wet environments.",
+      "Quartz granules give resin flooring color and texture. The texture and topcoat can be selected for the cleaning routine in the room.",
     highlights: [
-      "Superior slip resistance",
-      "Chemical resistant",
-      "Textured safety surface",
-      "Built for wet areas",
-      "Extremely durable",
+      "Quartz aggregate",
+      "Textured finish",
     ],
     href: "/commercial-flooring",
     image: "/images/commercial/commercial-resin-quartz.webp",
@@ -143,7 +127,7 @@ export function CommercialAreas() {
             Commercial Flooring Systems
           </h2>
           <p className="mt-4 text-gray-500 text-lg leading-relaxed">
-            Six systems for every commercial environment — tap any to see the details.
+            Select a system to compare finishes and uses.
           </p>
         </div>
 

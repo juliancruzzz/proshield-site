@@ -3,10 +3,10 @@
 import { Check } from "lucide-react"
 
 const highlights = [
-  "Chemical and impact resistant across 4 purpose-built systems",
-  "Fast return to service — minimal business downtime",
-  "FDA/USDA compliant options for food processing environments",
-  "Licensed, insured, and commercially experienced installations",
+  "Wheel loads and turning areas",
+  "Washdown temperature and cleaning products",
+  "Floor drains, joints and transitions",
+  "Access during preparation and curing",
 ]
 
 export function CommercialIntro() {
@@ -28,14 +28,14 @@ export function CommercialIntro() {
           {/* Content */}
           <div>
             <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-              Engineered for Business
+              Facility planning
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight leading-tight">
-              Not Residential Coatings.{" "}
-              <span className="text-accent">Commercial Systems.</span>
+              Flooring for{" "}
+              <span className="text-accent">Commercial Workspaces</span>
             </h2>
             <p className="mt-4 sm:mt-5 text-gray-500 text-base sm:text-lg leading-relaxed">
-              Every commercial environment demands different protection. We don't adapt residential coatings — we install purpose-built systems engineered for warehouses, manufacturing, food processing, healthcare, and retail. Each system is matched to your facility's specific demands.
+              A kitchen floor may see hot water several times a shift. A distribution aisle sees loaded wheels turning in the same spots all day. Identifying those conditions helps us choose the finish and detail the work around drains, joints and doors.
             </p>
 
             {/* Highlight checklist */}

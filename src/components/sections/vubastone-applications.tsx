@@ -8,82 +8,66 @@ const applications = [
   {
     icon: <Car className="h-5 w-5" />,
     title: "Driveways",
-    tagline: "Vehicle-rated & fully permeable",
-    tags: ["Residential", "Grand Entrances", "Motor Courts"],
+    tagline: "Stone for vehicle traffic",
+    tags: ["Residential", "Driveway entrances", "Motor Courts"],
     description:
-      "VubaStone driveways are vehicle-rated, fully permeable, and engineered for Las Vegas heat. The resin-bound surface handles daily traffic without cracking or fading — and eliminates standing water entirely.",
+      "The turn into a garage puts different loads on a driveway than a straight run. Traffic, the existing base and the height of the garage threshold help determine the build.",
     benefits: [
-      "Handles vehicle weight",
-      "No cracking or settling",
-      "Zero standing water",
-      "UV-stable color",
-    ],
-    stats: [
-      { value: "5/8\"", label: "Min. depth" },
-      { value: "850 L/min", label: "Drainage per m²" },
-      { value: "15–20yr", label: "Expected lifespan" },
+      "Garage threshold height",
+      "Base condition",
+      "Direction of runoff",
+      "Vehicle turning areas",
     ],
     image: "/images/vubastone/vubastone-driveway-stone-columns.webp",
+    alt: "Stone driveway meeting the garage threshold",
   },
   {
     icon: <Sun className="h-5 w-5" />,
     title: "Patios & Terraces",
-    tagline: "Seamless outdoor living surfaces",
+    tagline: "Stone around outdoor seating",
     tags: ["Entertaining", "Outdoor Dining", "Fire Pits"],
     description:
       "The small stones form a continuous surface around patio furniture and planting beds.",
     benefits: [
-      "Seamless finish",
-      "Low maintenance",
-      "Weed-free surface",
-      "Natural stone aesthetic",
-    ],
-    stats: [
-      { value: "3/8\"", label: "Min. depth" },
-      { value: "21+", label: "Color blends" },
-      { value: "1–2 Day", label: "Install time" },
+      "Stone borders",
+      "Patio thresholds",
+      "Water runoff",
+      "Aggregate color blends",
     ],
     image: "/images/vubastone/vubastone-patio-firepit.webp",
+    alt: "Stone patio surrounding a raised fire pit",
   },
   {
     icon: <Footprints className="h-5 w-5" />,
     title: "Walkways & Paths",
-    tagline: "Slip-resistant & weed-free",
+    tagline: "Paths between planting beds",
     tags: ["Landscaping", "Garden Paths", "Side Yards"],
     description:
-      "Non-slip, weed-resistant, and permeable. VubaStone walkways are designed to complement your landscape architecture while providing a stable, attractive surface year-round.",
+      "A resin-bound path can follow a curve without loose gravel spilling into the planting bed. Edging and the change in height where the path meets a patio are part of the layout.",
     benefits: [
-      "Naturally slip-resistant",
-      "No weed growth",
-      "Permeable drainage",
-      "Complements landscaping",
-    ],
-    stats: [
-      { value: "3/8\"", label: "Min. depth" },
-      { value: "100%", label: "Permeable" },
-      { value: "0", label: "Weed growth" },
+      "Curved borders",
+      "Garden edging",
+      "Path slope",
+      "Connections to existing paving",
     ],
     image: "/images/vubastone/vubastone-walkway-wood-inlay.webp",
+    alt: "Light stone path with a dark crosswise border",
   },
   {
     icon: <Waves className="h-5 w-5" />,
     title: "Pool Surrounds",
-    tagline: "Fast-draining & cool underfoot",
+    tagline: "Stone at the pool edge",
     tags: ["Pool Decks", "Spas", "Water Features"],
     description:
-      "Fast-draining and slip-resistant — the ideal surface around water. VubaStone pool surrounds stay cool underfoot, drain immediately, and eliminate the safety hazard of standing water.",
+      "The stone border needs to meet the coping and drains at the right height. Plan around those edges before choosing the blend. Wet surfaces can still be slippery.",
     benefits: [
-      "Slip-resistant surface",
-      "Fast water drainage",
-      "Cool underfoot",
-      "No standing water",
+      "Coping height",
+      "Drain access",
+      "Sun and shade",
+      "Border color",
     ],
-    stats: [
-      { value: "850 L", label: "Drain rate/min/m²" },
-      { value: "Safe", label: "Slip-resistant" },
-      { value: "10yr", label: "Warranty w/ VubaMac" },
-    ],
-    image: "/images/cool-deck/cool-deck-pool-spa-vegas.webp",
+    image: "/images/vubastone/vubastone-pool-deck-closeup.webp",
+    alt: "Mixed stone colors beside a pool",
   },
 ]
 
@@ -106,7 +90,7 @@ export function VubaStoneApplications() {
             Driveways, Patios, Pool Decks & More
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            VubaStone is designed for any outdoor surface that needs to look premium, drain properly, and hold up to real use.
+            Where you plan to walk, park or turn a vehicle makes a difference to the base and the depth of stone.
           </p>
         </div>
 
@@ -207,7 +191,7 @@ export function VubaStoneApplications() {
                           <div className="sm:w-2/5 h-48 sm:h-56 rounded-xl bg-gray-100 overflow-hidden shrink-0">
                             <img
                               src={app.image}
-                              alt={`VubaStone ${app.title}`}
+                              alt={app.alt}
                               className="h-full w-full object-cover"
                               loading="lazy"
                             />
@@ -224,24 +208,7 @@ export function VubaStoneApplications() {
                               {app.description}
                             </p>
 
-                            {/* Stats row */}
-                            <div className="mt-4 grid grid-cols-3 gap-3">
-                              {app.stats.map((stat) => (
-                                <div
-                                  key={stat.label}
-                                  className="bg-gray-50 rounded-lg px-3 py-2.5 text-center"
-                                >
-                                  <div className="font-heading font-bold text-lg sm:text-xl text-gray-900 leading-tight">
-                                    {stat.value}
-                                  </div>
-                                  <div className="text-[10px] sm:text-[11px] font-medium uppercase tracking-wider text-gray-500 mt-0.5">
-                                    {stat.label}
-                                  </div>
-                                </div>
-                              ))}
-                            </div>
-
-                            {/* Benefits checklist */}
+                            {/* Finish details */}
                             <div className="mt-4 grid grid-cols-2 gap-x-4 gap-y-1.5">
                               {app.benefits.map((b) => (
                                 <span

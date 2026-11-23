@@ -11,34 +11,34 @@ const BASE_URL = "https://proshieldepoxy.com"
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [
     // Core pages
-    { url: `${BASE_URL}/`, lastModified: "2026-11-21", priority: 1.0, changeFrequency: "weekly" },
+    { url: `${BASE_URL}/`, lastModified: "2026-11-23", priority: 1.0, changeFrequency: "weekly" },
     { url: `${BASE_URL}/contact`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
 
     // Service pages
-    { url: `${BASE_URL}/proflake`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/metallic-epoxy`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/vubastone`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/concrete-polishing`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/commercial-flooring`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/concrete-overlay`, lastModified: "2026-11-21", priority: 0.9, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/cool-deck`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/rubber-pool-deck`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/paver-sealing`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/airplane-hangar`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/proflake`, lastModified: "2026-11-23", priority: 0.9, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/metallic-epoxy`, lastModified: "2026-11-23", priority: 0.9, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/vubastone`, lastModified: "2026-11-23", priority: 0.9, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/concrete-polishing`, lastModified: "2026-11-23", priority: 0.9, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/commercial-flooring`, lastModified: "2026-11-23", priority: 0.9, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/concrete-overlay`, lastModified: "2026-11-23", priority: 0.9, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/cool-deck`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/rubber-pool-deck`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/paver-sealing`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/airplane-hangar`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
 
     // Area pages
     { url: `${BASE_URL}/areas/garage`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/areas/exterior`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/areas/interior`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/areas/commercial`, lastModified: "2026-11-21", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/areas/exterior`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/areas/interior`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/areas/commercial`, lastModified: "2026-11-23", priority: 0.8, changeFrequency: "monthly" },
 
     // Verified project pages
     { url: `${BASE_URL}/projects/nightfall-garage-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
     ...["projects", "projects/shoreline-garage-henderson", "projects/metallic-showroom-floor"].map(path => ({ url: `${BASE_URL}/${path}`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" as const })),
 
     // Supporting pages
-    { url: `${BASE_URL}/services`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/gallery`, lastModified: "2026-11-17", priority: 0.7, changeFrequency: "weekly" },
+    { url: `${BASE_URL}/services`, lastModified: "2026-11-23", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/gallery`, lastModified: "2026-11-23", priority: 0.7, changeFrequency: "weekly" },
     { url: `${BASE_URL}/about`, lastModified: "2026-11-21", priority: 0.6, changeFrequency: "monthly" },
     { url: `${BASE_URL}/faq`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
 

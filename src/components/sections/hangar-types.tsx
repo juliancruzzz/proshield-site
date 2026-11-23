@@ -18,37 +18,37 @@ const hangarTypes = [
     icon: Plane,
     title: "Private & Corporate",
     description:
-      "Premium high-gloss polyaspartic systems for executive hangars. Resistant to jet fuel, hydraulic fluid, and Skydrol while delivering a showroom-quality finish.",
+      "A parking bay might also double as a display space. Choose the color and gloss alongside the wheel loads and fluids the floor will see.",
   },
   {
     icon: Building2,
     title: "FBO Facilities",
     description:
-      "Durable, chemical-resistant coatings designed for high-traffic FBO environments with constant aircraft movement, fuel exposure, and heavy ground support equipment.",
+      "For a busy flight operation, mark the tug routes, fueling areas and lanes that need to stay accessible during the work.",
   },
   {
     icon: Shield,
     title: "Military & Government",
     description:
-      "Mil-spec compliant floor systems engineered for extreme chemical resistance, anti-static performance, and compliance with government facility standards.",
+      "These projects can have a written floor specification. Include it with the scope so product and testing requirements can be checked before bidding.",
   },
   {
     icon: Wrench,
     title: "Maintenance & MRO",
     description:
-      "Heavy-duty systems built for repair bays and overhaul facilities. Withstands dropped tools, rolling loads, and constant exposure to oils, solvents, and degreasers.",
+      "List the solvents and hydraulic fluids used at the work stations, and identify the spots where jacks and stands carry concentrated loads.",
   },
   {
     icon: RotateCcw,
     title: "Helicopter & Rotor",
     description:
-      "Specialized coatings for rotorcraft facilities with superior resistance to hydraulic fluids, turbine oils, and the unique abrasion patterns of rotor operations.",
+      "Identify parking positions, fluid service areas and the paths used to move ground equipment.",
   },
   {
     icon: Cpu,
     title: "Avionics & ESD Bays",
     description:
-      "Electrostatic-dissipative (ESD) flooring that protects sensitive avionics and electronic components from static discharge while maintaining chemical resistance.",
+      "Where a static-control floor is specified, the required electrical range, grounding detail and acceptance test belong in the proposal.",
   },
 ]
 
@@ -116,14 +116,13 @@ export function HangarTypes() {
           {/* Content */}
           <div>
             <span className="text-sm font-semibold tracking-widest uppercase text-teal">
-              Hangar Types We Serve
+              Hangar uses
             </span>
             <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-              Every Hangar. Every Mission.
+              Plan Around the Work in Each Bay
             </h2>
             <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-              We tailor the coating system to your specific facility type, traffic
-              patterns, and chemical exposure profile.
+              Select a bay type to see which details affect the floor specification.
             </p>
 
             <div className="mt-6 divide-y divide-gray-100">

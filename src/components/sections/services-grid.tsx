@@ -7,57 +7,57 @@ import { ArrowRight } from "lucide-react"
 const services = [
   {
     title: "Garage Floor Coatings",
-    subtitle: "ProFlake System",
+    subtitle: "Flake finish",
     description:
-      "Polyurea base coat, full flake broadcast, and polyaspartic topcoat. 150+ Torginol color blends.",
+      "Our ProFlake garage floor has a polyurea base, a full layer of decorative flakes and a clear polyaspartic topcoat.",
     image: "/images/proflake/flake-garage-porsche-bikes.webp",
     href: "/proflake",
-    tags: ["Peel-free guarantee", "Hot tire resistant", "150+ colors"],
+    tags: ["150+ flake blends", "Clear topcoat"],
   },
   {
     title: "Metallic Epoxy",
-    subtitle: "Flowing Metallic Finishes",
+    subtitle: "Custom color",
     description:
-      "One-of-a-kind pearlescent depth with 3D liquid-metal effect. Every floor is unique. 2–3 day installation.",
+      "Here, white and gray run through a blue metallic finish. The pigments blend as the epoxy is poured.",
     image: "/images/metallic/metallic-epoxy-blue-ocean.webp",
     href: "/metallic-epoxy",
-    tags: ["Unique every time", "3D depth", "Custom combos"],
+    tags: ["Custom colors", "Marbled finish"],
   },
   {
     title: "VubaStone",
-    subtitle: "Resin-Bound Natural Stone",
+    subtitle: "Resin-bound stone",
     description:
-      "Polyurethane resin-bound crushed Spanish marble. Fully permeable at 850 L/min. 15–20 year lifespan with regular maintenance.",
+      "Small pieces of stone are bound with clear resin. Choose a single blend or a contrasting border.",
     image: "/images/vubastone/vubastone-driveway-landscaping.webp",
     href: "/vubastone",
-    tags: ["Fully permeable", "Natural stone", "15–20 years"],
+    tags: ["Driveways", "Paths", "Pool surrounds"],
   },
   {
     title: "Commercial Flooring",
-    subtitle: "Resinous Systems",
+    subtitle: "Floors for working spaces",
     description:
-      "Resin quartz, urethane cement, and ProFlake for commercial environments. Engineered for heavy traffic and chemical exposure.",
+      "Compare finishes for customer areas, equipment aisles and rooms that see frequent washdowns.",
     image: "/images/commercial/commercial-warehouse-flake.webp",
     href: "/commercial-flooring",
-    tags: ["Resin quartz", "Urethane cement", "Chemical rated"],
+    tags: ["Resin quartz", "Urethane cement"],
   },
   {
     title: "Airplane Hangar",
-    subtitle: "Specialty Chemical-Resistant",
+    subtitle: "Aircraft storage and maintenance",
     description:
-      "Systems built to resist Skydrol, jet fuel, oils, and rolling loads. Chemical-resistant polyurethane topcoat.",
-    image: "/images/commercial/commercial-floor-solid.webp",
+      "Choose a finish around the aircraft, ground equipment and fluids used in the hangar.",
+    image: "/images/hangar/hangar-floor-drone-desert.webp",
     href: "/airplane-hangar",
-    tags: ["Skydrol resistant", "Impact rated", "Non-slip"],
+    tags: ["Parking bays", "Line markings"],
   },
   {
     title: "Concrete Polishing",
-    subtitle: "Mechanical Refinement",
+    subtitle: "Ground and polished concrete",
     description:
-      "Not a coating — a mechanical refinement process. Levels 1–4, Classes A–D. Low maintenance, professional finish.",
+      "Polishing brings out the stone already in the slab. Choose how much aggregate shows and how glossy the floor looks.",
     image: "/images/concrete-polishing/polished-floor-showroom.webp",
     href: "/concrete-polishing",
-    tags: ["Not a coating", "Multiple levels", "Low maintenance"],
+    tags: ["Sheen", "Aggregate exposure"],
   },
 ]
 
@@ -71,11 +71,10 @@ export function ServicesGrid() {
             Our Systems
           </span>
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-            Professional-Grade Floor Coatings
+            Floor finishes
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Every system is matched to your space, traffic, and performance
-            requirements.
+            Compare materials, colors and uses.
           </p>
         </div>
 

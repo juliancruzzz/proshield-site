@@ -15,17 +15,17 @@ interface RubarocColor {
 
 const baseColors: RubarocColor[] = [
   { name: "Eggshell", slug: "eggshell", image: "/images/rubaroc/base/eggshell.jpg", tones: "Warm off-white with creamy undertones" },
-  { name: "Beige", slug: "beige", image: "/images/rubaroc/base/beige.jpg", tones: "Classic warm tan — the most popular neutral" },
+  { name: "Beige", slug: "beige", image: "/images/rubaroc/base/beige.jpg", tones: "Warm tan" },
   { name: "Brown", slug: "brown", image: "/images/rubaroc/base/brown.jpg", tones: "Rich chocolate brown" },
-  { name: "Red", slug: "red", image: "/images/rubaroc/base/red.jpg", tones: "Deep brick red — bold accent color" },
+  { name: "Red", slug: "red", image: "/images/rubaroc/base/red.jpg", tones: "Brick red" },
   { name: "Light Grey", slug: "light-grey", image: "/images/rubaroc/base/light-grey.jpg", tones: "Soft neutral silver-gray" },
   { name: "Medium Grey", slug: "medium-grey", image: "/images/rubaroc/base/medium-grey.jpg", tones: "Mid-tone blue-gray" },
   { name: "Dark Grey", slug: "dark-grey", image: "/images/rubaroc/base/dark-grey.jpg", tones: "Charcoal with cool undertones" },
   { name: "Black", slug: "black", image: "/images/rubaroc/base/black.jpg", tones: "Deep matte black" },
-  { name: "Light Blue", slug: "light-blue", image: "/images/rubaroc/base/light-blue.jpg", tones: "Sky blue — great for pool-adjacent areas" },
+  { name: "Light Blue", slug: "light-blue", image: "/images/rubaroc/base/light-blue.jpg", tones: "Sky blue" },
   { name: "Medium Blue", slug: "medium-blue", image: "/images/rubaroc/base/medium-blue.png", imageSize: 264, tones: "Vivid cobalt blue" },
   { name: "Dark Blue", slug: "dark-blue", image: "/images/rubaroc/base/dark-blue.jpg", tones: "Deep navy" },
-  { name: "Teal", slug: "teal", image: "/images/rubaroc/base/teal.jpg", tones: "Soft aqua-teal — coastal feel" },
+  { name: "Teal", slug: "teal", image: "/images/rubaroc/base/teal.jpg", tones: "Aqua-teal" },
   { name: "Light Green", slug: "light-green", image: "/images/rubaroc/base/light-green.jpg", tones: "Sage green" },
   { name: "Dark Green", slug: "dark-green", image: "/images/rubaroc/base/dark-green.jpg", tones: "Forest green" },
   { name: "Yellow", slug: "yellow", image: "/images/rubaroc/base/yellow.jpg", tones: "Bright citrus yellow" },
@@ -33,23 +33,23 @@ const baseColors: RubarocColor[] = [
 ]
 
 const blendColors: RubarocColor[] = [
-  { name: "Platinum", slug: "platinum", image: "/images/rubaroc/blends/platinum.jpg", tones: "Light, airy silver — clean modern look", recipe: "50% Light Grey · 50% Eggshell" },
-  { name: "Nickel", slug: "nickel", image: "/images/rubaroc/blends/nickel.jpg", tones: "Balanced three-tone gray with depth", recipe: "33% Light Grey · 33% Eggshell · 33% Black" },
-  { name: "Slate", slug: "slate", image: "/images/rubaroc/blends/slate.jpg", tones: "Cool dark gray — dramatic and refined", recipe: "50% Black · 50% Light Grey" },
+  { name: "Platinum", slug: "platinum", image: "/images/rubaroc/blends/platinum.jpg", tones: "Light silver-gray", recipe: "50% Light Grey · 50% Eggshell" },
+  { name: "Nickel", slug: "nickel", image: "/images/rubaroc/blends/nickel.jpg", tones: "Three shades of gray", recipe: "33% Light Grey · 33% Eggshell · 33% Black" },
+  { name: "Slate", slug: "slate", image: "/images/rubaroc/blends/slate.jpg", tones: "Cool dark gray", recipe: "50% Black · 50% Light Grey" },
   { name: "Brownstone", slug: "brownstone", image: "/images/rubaroc/blends/brownstone.jpg", tones: "Warm multi-tone natural stone appearance", recipe: "33% Brown · 33% Eggshell · 33% Light Grey" },
-  { name: "Sandstone", slug: "sandstone", image: "/images/rubaroc/blends/sandstone.jpg", tones: "Desert earth blend — classic Las Vegas choice", recipe: "33% Light Grey · 33% Beige · 33% Brown" },
-  { name: "Limestone", slug: "limestone", image: "/images/rubaroc/blends/limestone.jpg", tones: "Warm cream and tan — soft natural palette", recipe: "33% Eggshell · 33% Beige · 33% Brown" },
+  { name: "Sandstone", slug: "sandstone", image: "/images/rubaroc/blends/sandstone.jpg", tones: "Gray, beige and brown", recipe: "33% Light Grey · 33% Beige · 33% Brown" },
+  { name: "Limestone", slug: "limestone", image: "/images/rubaroc/blends/limestone.jpg", tones: "Cream, gray and tan", recipe: "33% Eggshell · 33% Beige · 33% Brown" },
   { name: "Sandalwood", slug: "sandalwood", image: "/images/rubaroc/blends/sandalwood.jpg", tones: "Warm beige-dominant with subtle brown accent", recipe: "75% Beige · 25% Brown" },
-  { name: "Mocha", slug: "mocha", image: "/images/rubaroc/blends/mocha.png", imageSize: 264, tones: "Dark rich coffee blend — sophisticated accent", recipe: "33% Black · 33% Brown · 33% Beige" },
-  { name: "Terracotta", slug: "terracotta", image: "/images/rubaroc/blends/terracotta.jpg", tones: "Warm copper-red — Southwestern character", recipe: "50% Red · 50% Brown" },
-  { name: "Santa Fe", slug: "santa-fe", image: "/images/rubaroc/blends/santa-fe.jpg", tones: "Adobe red-brown with cream — desert sunset", recipe: "33% Red · 33% Brown · 33% Beige" },
-  { name: "Caspian", slug: "caspian", image: "/images/rubaroc/blends/caspian.jpg", tones: "Cool blue-gray — coastal pool deck favorite", recipe: "33% Light Blue · 33% Light Grey · 33% Eggshell" },
-  { name: "Lily Pad", slug: "lily-pad", image: "/images/rubaroc/blends/lily-pad.png", imageSize: 264, tones: "Soft green and cream — garden-inspired", recipe: "50% Light Green · 50% Beige" },
+  { name: "Mocha", slug: "mocha", image: "/images/rubaroc/blends/mocha.png", imageSize: 264, tones: "Dark brown and black", recipe: "33% Black · 33% Brown · 33% Beige" },
+  { name: "Terracotta", slug: "terracotta", image: "/images/rubaroc/blends/terracotta.jpg", tones: "Copper-red", recipe: "50% Red · 50% Brown" },
+  { name: "Santa Fe", slug: "santa-fe", image: "/images/rubaroc/blends/santa-fe.jpg", tones: "Red-brown with beige", recipe: "33% Red · 33% Brown · 33% Beige" },
+  { name: "Caspian", slug: "caspian", image: "/images/rubaroc/blends/caspian.jpg", tones: "Blue, gray and eggshell", recipe: "33% Light Blue · 33% Light Grey · 33% Eggshell" },
+  { name: "Lily Pad", slug: "lily-pad", image: "/images/rubaroc/blends/lily-pad.png", imageSize: 264, tones: "Green and beige", recipe: "50% Light Green · 50% Beige" },
 ]
 
 const collections = [
   { name: "Base Colors", description: "16 individual EPDM rubber granule colors — mix and match for custom blends.", colors: baseColors },
-  { name: "Signature Blends", description: "12 pre-mixed recipes — our most requested combinations, ready to pour.", colors: blendColors },
+  { name: "Signature Blends", description: "Compare 12 blends and see the base colors in each mix.", colors: blendColors },
 ]
 
 export function RubarocColorShowcase() {
@@ -74,7 +74,7 @@ export function RubarocColorShowcase() {
             Choose Your Color
           </h2>
           <p className="mt-3 sm:mt-4 text-gray-500 text-base sm:text-lg leading-relaxed">
-            16 base colors and 12 signature blends — plus unlimited custom mixes. Tap any swatch to see details.
+            Open a color or blend to see the granules up close.
           </p>
         </div>
 
@@ -212,7 +212,7 @@ export function RubarocColorShowcase() {
 
         {/* Note about samples */}
         <p className="mt-8 text-center text-xs text-gray-400 max-w-lg mx-auto">
-          We bring physical samples to every estimate — screens don&apos;t do them justice. Custom blends available on request.
+          A small swatch shows the proportions of each color. The finished deck shows how the blend reads over a larger area.
         </p>
       </div>
     </section>

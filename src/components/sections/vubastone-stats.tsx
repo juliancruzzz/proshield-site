@@ -3,10 +3,10 @@
 import { Droplets, FlaskConical, Palette, ShieldCheck } from "lucide-react"
 
 const stats = [
-  { icon: Droplets, value: "850 L/min", label: "Drainage per m²" },
-  { icon: FlaskConical, value: "30%", label: "Stronger w/ Quartz" },
-  { icon: Palette, value: "24+", label: "Color Blends" },
-  { icon: ShieldCheck, value: "5–10 yr", label: "Manufacturer Warranty" },
+  { icon: Droplets, value: "Stone", label: "Aggregate" },
+  { icon: FlaskConical, value: "Polyurethane", label: "Binder" },
+  { icon: Palette, value: "21", label: "Featured blends" },
+  { icon: ShieldCheck, value: "Troweled", label: "Application" },
 ]
 
 export function VubaStoneStats() {

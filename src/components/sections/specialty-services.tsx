@@ -9,7 +9,7 @@ const specialties = [
     title: "Concrete Overlay & Resurfacing",
     badge: "Resurfacing",
     description:
-      "Stamped and textured overlays that transform existing concrete. Custom patterns and colors — no tear-out required.",
+      "A cement-based overlay can give sound concrete a new texture, from a smooth finish to a stamped pattern.",
     image: "/images/concrete-overlay/stamped-patio.webp",
     href: "/concrete-overlay",
   },
@@ -17,7 +17,7 @@ const specialties = [
     title: "Patio / Pool Deck / Exterior",
     badge: "Exterior",
     description:
-      "Cool-to-the-touch acrylic coatings for pool decks, patios, and walkways. Slip-resistant and UV-stable.",
+      "Acrylic knockdown adds texture around a pool. For a softer surface, consider poured rubber.",
     image: "/images/cool-deck/pool-deck-hero.webp",
     href: "/cool-deck",
   },
@@ -25,7 +25,7 @@ const specialties = [
     title: "Paver Sealing & Restoration",
     badge: "Maintenance",
     description:
-      "Professional sealing, stripping, re-sanding, and color enhancement. UV-stable, non-yellowing sealer built for desert heat.",
+      "Refresh existing pavers with cleaning, joint sand where needed and a compatible sealer. Choose a natural look or a deeper color.",
     image: "/images/paver-sealing/paver-driveway-sealed.webp",
     href: "/paver-sealing",
   },

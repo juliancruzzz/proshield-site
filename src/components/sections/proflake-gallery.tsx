@@ -7,38 +7,38 @@ import { ArrowRight, Expand, X } from "lucide-react"
 const photos = [
   {
     src: "/images/proflake/flake-garage-porsche-bikes.webp",
-    alt: "ProFlake motorcycle showroom garage floor",
-    label: "Motorcycle Showroom",
+    alt: "Light gray flake beneath a car and motorcycles",
+    label: "Light gray flake beneath a car and motorcycles",
     tag: "Garage",
   },
   {
     src: "/images/proflake/flake-garage-dark-grey.webp",
-    alt: "ProFlake dark grey residential garage floor",
-    label: "Dark Grey Residential",
+    alt: "Charcoal flake with a light perimeter",
+    label: "Charcoal flake with a light perimeter",
     tag: "Garage",
   },
   {
     src: "/images/proflake/flake-garage-blue-paver-border.webp",
-    alt: "ProFlake garage with blue paver border",
-    label: "Blue Paver Border",
+    alt: "Blue-gray flake at the garage threshold",
+    label: "Blue-gray flake at the garage threshold",
     tag: "Garage",
   },
   {
     src: "/images/proflake/flake-garage-sunlight-paver.webp",
-    alt: "ProFlake garage with sunlit paver design",
-    label: "Sunlight Paver",
+    alt: "Light flake beside a paver driveway",
+    label: "Light flake beside a paver driveway",
     tag: "Garage",
   },
   {
     src: "/images/proflake/flake-garage-wide-clean.webp",
-    alt: "ProFlake wide clean garage installation",
-    label: "Wide Clean Finish",
+    alt: "Gray flake across an open garage bay",
+    label: "Gray flake across an open garage bay",
     tag: "Garage",
   },
   {
     src: "/images/proflake/flake-garage-open-door-shelving.webp",
-    alt: "ProFlake garage with open door and shelving",
-    label: "Open Door Display",
+    alt: "Warm gray flake beneath garage shelving",
+    label: "Warm gray flake beneath garage shelving",
     tag: "Garage",
   },
 ]
@@ -57,7 +57,7 @@ export function ProFlakeGallery() {
                 Finish Ideas
               </span>
               <h2 className="mt-2 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-                ProFlake Finish Examples
+                Flake Finish Examples
               </h2>
             </div>
             <Link

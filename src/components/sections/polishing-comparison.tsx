@@ -3,46 +3,10 @@
 import { Check, X } from "lucide-react"
 
 const comparisonRows = [
-  {
-    feature: "Lifespan",
-    polished: "25–40+ years",
-    grindSeal: "2–5 years",
-  },
-  {
-    feature: "Maintenance",
-    polished: "Dust mop only",
-    grindSeal: "Periodic resealing",
-  },
-  {
-    feature: "Peeling",
-    polished: "None — no coating",
-    grindSeal: "Sealer can yellow",
-  },
-  {
-    feature: "Reflectivity",
-    polished: "Up to 70–90%",
-    grindSeal: "Low–moderate",
-  },
-  {
-    feature: "Durability",
-    polished: "Permanent",
-    grindSeal: "Depends on sealer",
-  },
-  {
-    feature: "Heavy Traffic",
-    polished: "Excellent",
-    grindSeal: "Good",
-  },
-  {
-    feature: "Upfront Cost",
-    polished: "Higher",
-    grindSeal: "Lower",
-  },
-  {
-    feature: "Long-Term Cost",
-    polished: "Lower",
-    grindSeal: "Higher (reseal 2–5 yrs)",
-  },
+  { feature: "Finish", polished: "Refined concrete", grindSeal: "Surface sealer" },
+  { feature: "Appearance", polished: "Sheen from polishing passes", grindSeal: "Sheen from the sealer" },
+  { feature: "Care", polished: "Clean and maintain the specified guard", grindSeal: "Clean and refresh the sealer as it wears" },
+  { feature: "Estimate", polished: "Grinding depth, polishing and guard", grindSeal: "Preparation, grinding and sealer" },
 ]
 
 export function PolishingComparison() {
@@ -72,7 +36,7 @@ export function PolishingComparison() {
             Polished vs. Grind & Seal
           </h2>
           <p className="hidden sm:block mt-3 text-white/60 text-base sm:text-lg leading-relaxed">
-            Both start with diamond grinding — the difference is how the finish is achieved and how long it lasts.
+            Both methods begin with grinding. One develops the sheen in the concrete; the other gets its finish from a surface sealer.
           </p>
         </div>
 

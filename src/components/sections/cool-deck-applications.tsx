@@ -7,19 +7,19 @@ const applications = [
   {
     icon: Droplets,
     title: "Pool Decks",
-    description: "Textured resurfacing for suitable pool surrounds. Compare the product, color, wet traction and care requirements.",
+    description: "A textured finish around the pool can continue around curves and steps. Existing joints and drains need to stay functional.",
     image: "/images/cool-deck/pool-deck-lounge.webp",
   },
   {
     icon: Sun,
     title: "Patios & Porches",
-    description: "Choose a specified exterior finish for suitable prepared patio concrete. Assess wear, existing cracks and drainage first.",
+    description: "A patio can carry the same color as the pool deck or use a contrasting border to mark the seating area.",
     image: "/images/cool-deck/patio-backyard.webp",
   },
   {
     icon: Footprints,
     title: "Walkways",
-    description: "Consider texture, drainage, transitions and cleaning requirements for exterior concrete paths.",
+    description: "A textured path can connect the pool and patio. Changes in level at either end help determine which finish will fit.",
     image: "/images/cool-deck/pool-deck-spa.webp",
   },
 ]
@@ -34,10 +34,10 @@ export function CoolDeckApplications() {
             Applications
           </span>
           <h2 className="mt-3 font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 tracking-tight">
-            Where Cool Deck Works Best
+            Pool decks, patios and paths
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Textured finishes for suitable exterior concrete, with preparation specified for the site.
+            One color can carry across adjoining concrete areas, or a border can define the pool edge.
           </p>
         </div>
 

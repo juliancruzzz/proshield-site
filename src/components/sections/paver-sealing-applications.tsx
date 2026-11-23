@@ -8,22 +8,25 @@ const applications = [
     icon: Car,
     title: "Driveways",
     description:
-      "For paver driveways, compare vehicle exposure, surface condition, stain treatment and the selected sealer’s return-to-traffic instructions.",
-    image: "/images/paver-sealing/paver-driveway-sealed.webp",
+      "Tire paths and oil spots can show where the driveway needs extra cleaning. Vehicle traffic must wait until the sealer is ready.",
+    image: "/images/paver-sealing/paver-sealing-driveway-closeup.webp",
+    alt: "Gray driveway pavers with visible joints",
   },
   {
     icon: Waves,
     title: "Pool Decks",
     description:
-      "For pavers around pools, assess wet traction, drainage and compatibility with pool chemicals before selecting a finish.",
+      "Around pools, choose the finish with wet traction and drainage in mind. Gloss alone tells you little about how the surface will feel when wet.",
     image: "/images/paver-sealing/paver-sealed-closeup.webp",
+    alt: "Brown paver texture in sunlight and shade",
   },
   {
     icon: Armchair,
     title: "Patios & Walkways",
     description:
-      "For paver patios and walkways, compare the desired appearance, foot traffic and cleaning requirements. Confirm a sample area before application.",
+      "A test area at the edge of the patio shows how the sealer changes the paver color beside your house and landscaping.",
     image: "/images/paver-sealing/paver-walkway-sealed.webp",
+    alt: "Paved walkway edged by a curved planting bed",
   },
 ]
 
@@ -54,7 +57,7 @@ export function PaverSealingApplications() {
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <Image
                     src={app.image}
-                    alt={app.title}
+                    alt={app.alt}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, 33vw"

@@ -14,8 +14,8 @@ import { RelatedServices } from "@/components/sections/related-services"
 import { CtaSection } from "@/components/sections/cta-section"
 
 export const metadata: Metadata = {
-  title: "Epoxy Garage Floor Coating Las Vegas | ProFlake Flake System | ProShield",
-  description: "Epoxy garage floor coating in Las Vegas — ProFlake flake system with 150+ Torginol colors and a UV-stable polyaspartic topcoat. Free quote · 702-728-5484.",
+  title: "ProFlake Garage Floors in Las Vegas | ProShield Epoxy",
+  description: "Explore more than 150 flake blends, see two finished garages and find out what the ProFlake system includes.",
   openGraph: {
     url: "https://proshieldepoxy.com/proflake",
     images: ["/images/proflake/flake-garage-residential.webp"],
@@ -27,32 +27,32 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "What makes ProFlake different from epoxy?",
-    a: "I use a polyurea base with colored flakes and a clear polyaspartic topcoat. If you’re comparing quotes, check which layers and prep each one includes.",
+    q: "How does ProFlake differ from an epoxy floor?",
+    a: "ProFlake uses a polyurea base, a full layer of decorative flakes and a clear polyaspartic topcoat. We also install epoxy. When comparing quotes, look at the base, finish and preparation each one includes.",
   },
   {
-    q: "What is polyaspartic topcoat and why does it matter?",
-    a: "It’s the clear layer over the flakes. It seals the surface and takes the wear from tires and shoes.",
+    q: "What does the clear coat do?",
+    a: "It seals the flakes and takes the everyday wear from shoes and tires.",
   },
   {
-    q: "When can I use my garage after installation?",
-    a: "Plan on 24 hours before walking and 48 hours before parking. Weather can change that timing. I’ll tell you when your floor is ready.",
+    q: "When can I walk or park on the floor?",
+    a: "For planning, allow about 24 hours for walking and 48 hours for parking. Temperature and curing conditions can change both times. We’ll confirm when your floor is ready.",
   },
   {
-    q: "What is the warranty on ProFlake?",
-    a: "Qualifying residential floors have a limited lifetime no-peel warranty. Moisture-related failure is excluded. If testing flags moisture, the slab needs a suitable vapor barrier before coating. I’ll explain the written terms.",
+    q: "What does the ProFlake warranty cover?",
+    a: "Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. Moisture-related failures are excluded. If testing flags a moisture problem, the slab needs a suitable vapor barrier before coating. See the written terms for your floor.",
   },
   {
-    q: "How do I choose a color from 150+ options?",
-    a: "Look at physical Torginol samples in your garage light. Once you pick a blend, we can settle on the flake size and texture.",
+    q: "How do I choose a flake color?",
+    a: "Look at the blend in your garage with the door both open and closed. Daylight can bring out colors that look more muted under garage lights.",
   },
   {
-    q: "Is ProFlake resistant to hot tires and chemicals?",
-    a: "Let the floor cure before parking. Tell me if it will regularly see oil, solvents or other chemicals so I can check the topcoat’s resistance and give you the right cleanup instructions.",
+    q: "What if my garage doubles as a workshop?",
+    a: "Tell us which oils, cleaners and solvents you use. We can check the proposed topcoat against those products and explain how to clean up spills.",
   },
   {
-    q: "What does the installation process involve?",
-    a: "I check for moisture, old paint and cracks, then diamond-grind the slab and make the repairs it needs. After that come the base coat, flakes and clear coat.",
+    q: "What happens to the existing concrete?",
+    a: "We check the slab for moisture, cracks and old coatings, then prepare and repair it before applying the base coat.",
   },
 ]
 
@@ -80,9 +80,9 @@ export default function ProFlakePage() {
         badge="Flake Finish"
         title="ProFlake"
         highlight="Garage Floors"
-        subtitle="Choose from over 150 flake blends. I spread the flakes over a polyurea base, then seal them with a clear polyaspartic coat."
+        subtitle="Our ProFlake garage floor pairs a polyurea base with full flake coverage and a clear polyaspartic topcoat. Choose from more than 150 flake blends."
         backgroundImage="/images/proflake/flake-garage-porsche-bikes.webp"
-        backgroundAlt="Garage with ProFlake flake floor coating and motorcycles"
+        backgroundAlt="Light gray flake beneath a car and motorcycles"
       />
 
       <script
@@ -113,7 +113,7 @@ export default function ProFlakePage() {
       <ProFlakeStats />
 
       <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: "ProFlake" }]} />
-      <ProjectCards service="/proflake" heading="Two garages I’ve finished" />
+      <ProjectCards service="/proflake" heading="Two finished ProFlake garages" />
       <ProFlakeIntro />
       <ProFlakeWhyChoose />
       <ProFlakeComparison />

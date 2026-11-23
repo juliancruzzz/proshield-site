@@ -9,7 +9,6 @@ import { useMounted } from "@/hooks/use-mounted"
 const systems = [
   {
     title: "ProFlake Floors",
-    tag: "Most Popular",
     description:
       "Polyurea base + full flake broadcast + polyaspartic topcoat. 150+ Torginol color blends.",
     href: "/proflake",
@@ -28,7 +27,7 @@ const systems = [
   {
     title: "VubaStone",
     description:
-      "Resin-bound natural crushed Spanish marble. Fully permeable, 15\u201320 year lifespan with regular maintenance.",
+      "Stone pieces bound with clear resin, with the option of a contrasting border.",
     href: "/vubastone",
     image: "/images/vubastone/vubastone-driveway-stone-columns.webp",
     locations: ["Exterior"],
@@ -36,7 +35,7 @@ const systems = [
   {
     title: "Concrete Polishing",
     description:
-      "Mechanical refinement process \u2014 not a coating. Levels 1\u20134, Classes A\u2013D.",
+      "The original slab, ground and polished to your choice of sheen.",
     href: "/concrete-polishing",
     image: "/images/concrete-polishing/polished-concrete-aci.webp",
     locations: ["Interior", "Commercial"],
@@ -44,15 +43,15 @@ const systems = [
   {
     title: "Cool Deck / Patio",
     description:
-      "Acrylic-based knockdown texture for pool decks and patios. Reduces surface temperature.",
+      "A textured acrylic finish for concrete patios and pool surrounds.",
     href: "/cool-deck",
-    image: "/images/vubastone/vubastone-pool-deck-pergola.webp",
+    image: "/images/cool-deck/cool-deck-knockdown-pool.webp",
     locations: ["Exterior"],
   },
   {
     title: "Rubber Pool Deck",
     description:
-      "Poured-in-place EPDM rubber aggregate over existing concrete. Slip-resistant, cushioned, and crack-bridging.",
+      "Rubber granules bound together over concrete give a pool surround a softer feel underfoot.",
     href: "/rubber-pool-deck",
     image: "/images/blog/rubber-deck/rubber-deck-pool-wide.jpg",
     locations: ["Exterior"],
@@ -60,7 +59,7 @@ const systems = [
   {
     title: "Airplane Hangar",
     description:
-      "High-performance coatings engineered for aircraft hangars. Resists jet fuel, hydraulic fluid, and heavy loads.",
+      "Coatings for aircraft storage and maintenance bays, selected for the traffic and fluids used on site.",
     href: "/airplane-hangar",
     image: "/images/hangar/hangar-floor-drone-desert.webp",
     locations: ["Commercial"],
@@ -104,11 +103,6 @@ function SystemCard({
             />
           ) : (
             <div className="h-full w-full bg-gray-100" />
-          )}
-          {sys.tag && (
-            <span className="absolute top-3 left-3 rounded-full bg-accent px-3 py-1 text-xs font-bold text-navy uppercase tracking-wider shadow-lg z-10">
-              {sys.tag}
-            </span>
           )}
         </div>
 

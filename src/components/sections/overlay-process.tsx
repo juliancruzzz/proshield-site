@@ -9,28 +9,28 @@ const steps = [
     number: "1",
     title: "Surface Prep",
     description:
-      "Diamond grind or shot blast existing concrete to create the proper adhesion profile. We repair cracks, spalls, and damaged areas before any overlay system goes down.",
+      "We profile the existing concrete for a good bond and remove coatings that would interfere with the new layer.",
     icon: <Pickaxe className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "2",
     title: "Repair & Prime",
     description:
-      "Apply bonding agent and primer to establish adhesion between old concrete and new overlay system. This critical layer ensures the overlay stays bonded for the long term.",
+      "We address the repairs in the estimate and use the primer specified for the topping. Existing joints need to carry through the finish.",
     icon: <Droplets className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "3",
     title: "Apply Overlay",
     description:
-      "Pour or trowel the overlay system to specified thickness — from thin microtoppings (1/16 inch) to thicker polishable or stampable systems (1/4 to 3/4 inch). System depends on your finish choice.",
+      "We apply the topping at the depth the finish needs. A skim coat is thin, while a stamped pattern needs more material to take the impression.",
     icon: <PaintBucket className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "4",
     title: "Color & Seal",
     description:
-      "Add color, texture, stamps, or stencils. Finish with polyaspartic topcoat for maximum durability, chemical resistance, and UV stability.",
+      "We add the selected color or pattern and finish with the sealer or polishing steps suited to the overlay.",
     icon: <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
 ]
@@ -51,7 +51,7 @@ export function OverlayProcess() {
             The ProShield Overlay Process
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Four stages from existing concrete to finished overlay. Most projects complete in 1–2 days.
+            The finish you choose determines the application, color and final surface treatment.
           </p>
         </div>
 

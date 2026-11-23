@@ -9,28 +9,28 @@ const steps = [
     number: "1",
     title: "Assessment & Prep",
     description:
-      "We evaluate your slab's condition, hardness, and existing coatings. Surface is cleared and any cracks or divots are repaired before grinding begins.",
+      "We check for old coatings, adhesive, cracks and previous repairs. A small test area shows how the slab will look after grinding.",
     icon: <Pickaxe className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "2",
     title: "Grinding & Shaping",
     description:
-      "30–80 grit metal-bond diamonds remove imperfections and level the surface, followed by progressive honing (100–400 grit) to refine the surface and begin developing sheen.",
+      "The first passes remove surface material. Grinding depth affects how much of the stone in the concrete becomes visible.",
     icon: <Hammer className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "3",
     title: "Densification",
     description:
-      "Lithium silicate densifier is applied and kept wet for 10–20 minutes. It reacts chemically with the concrete, permanently hardening the surface at a molecular level.",
+      "A densifier is worked into the concrete as specified for the slab and polishing system.",
     icon: <Droplets className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
   {
     number: "4",
     title: "Polish & Protect",
     description:
-      "Fine polishing (800–3,000 grit) brings the surface to its final sheen. A protective guard is applied and burnished with high-speed pads for gloss retention and long-term durability.",
+      "Progressively finer passes develop the agreed sheen. The finish and protective guard determine the cleaning routine.",
     icon: <Sparkles className="h-5 w-5 sm:h-6 sm:w-6" />,
   },
 ]
@@ -51,7 +51,7 @@ export function PolishingProcess() {
             How We Polish Your Floor
           </h2>
           <p className="mt-3 text-gray-500 text-base sm:text-lg leading-relaxed">
-            Four stages from raw concrete to a high-gloss finish. Typically 3–5 days for a full mechanical polish.
+            The final sheen depends on how far the concrete is refined. The amount of stone exposed is set earlier, during grinding.
           </p>
         </div>
 
