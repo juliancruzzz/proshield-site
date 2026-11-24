@@ -68,3 +68,14 @@ export function rememberLandingPage(publicPaths: readonly string[]): void {
 export function getQuoteLandingPage(): string {
   return isAuditVisit() ? "Internal audit" : documentLanding ?? "Unknown"
 }
+
+// Report the fixed origin path for the guide's own form or tagged contact link.
+export function getQuoteOriginPage(): string | undefined {
+  if (typeof window === "undefined" || isAuditVisit()) return
+  const here = new URL(window.location.href)
+  const path = here.pathname.replace(/\/$/, "")
+  const guide = "/blog/epoxy-garage-floor-cost-las-vegas"
+  if (path === guide || (path === "/contact" && here.searchParams.get("from") === "garage-cost-guide")) {
+    return guide
+  }
+}

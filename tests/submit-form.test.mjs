@@ -67,6 +67,14 @@ test('only the first public entry path reaches a quote, without campaign or priv
  try {
   mock('sessionStorage', {getItem: k => store.get(k), setItem: (k,v) => store.set(k,v)})
   const base = 'https://proshieldepoxy.com'
+  const guidePath = '/blog/epoxy-garage-floor-cost-las-vegas'
+  const query = '?from=garage-cost-guide'
+  assert.equal((await open(base + guidePath)).getQuoteOriginPage(), guidePath)
+  assert.equal((await open(base + '/contact' + query)).getQuoteOriginPage(), guidePath)
+  assert.equal((await open(base + '/contact' + query, '', 'navigate', 'ps_audit=1')).getQuoteOriginPage(), undefined)
+  assert.equal((await open(base + '/areas/garage' + query)).getQuoteOriginPage(), undefined)
+  assert.equal((await open(base + '/contact?from=private-value')).getQuoteOriginPage(), undefined)
+
   const garage = await open(base + '/areas/garage/?gclid=test#private')
   window.location = new URL(base + '/contact')
   garage.rememberLandingPage(paths)

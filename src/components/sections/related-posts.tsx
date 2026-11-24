@@ -28,8 +28,8 @@ const ALL_POSTS: Record<string, Omit<RelatedPost, 'href'> & { slug: string }> = 
   },
   'epoxy-garage-floor-cost-las-vegas': {
     slug: 'epoxy-garage-floor-cost-las-vegas',
-    title: "What goes into a garage floor quote?",
-    description: "A two-car garage with peeling paint can cost more to prep than a bare slab the same size.",
+    title: "What does a garage floor coating cost in Las Vegas?",
+    description: "Two Las Vegas Valley garage floors, what each homeowner paid and what the work included.",
     date: "April 3, 2026",
   },
   'epoxy-garage-floor-vs-polyaspartic': {
