@@ -21,7 +21,7 @@ export const floorProjects: FloorProject[] = [
     location: "Las Vegas, NV",
     finish: "Nightfall flake",
     service: { label: "ProFlake Garage Floors", href: "/proflake" },
-    intro: "I used Nightfall in this garage and carried the same flake finish up the edges.",
+    intro: "The Nightfall flake continues up the concrete edge along the wall.",
     details: [
       "From the driveway, the floor looks dark gray. Up close, you can see the black, gray and white flakes.",
       "You can still see the original joints in the concrete.",
@@ -38,7 +38,7 @@ export const floorProjects: FloorProject[] = [
     location: "Henderson, NV",
     finish: "Shoreline flake",
     service: { label: "ProFlake Garage Floors", href: "/proflake" },
-    intro: "I used Shoreline in this Henderson garage. The dark flakes break up the lighter background.",
+    intro: "The Shoreline blend has a light background with dark flakes.",
     details: [
       "Shoreline looks lighter across a full garage than the Nightfall blend.",
     ],
@@ -50,10 +50,10 @@ export const floorProjects: FloorProject[] = [
   {
     slug: "metallic-showroom-floor",
     title: "Metallic Epoxy Showroom Floor",
-    description: "A ProShield metallic epoxy showroom project with real installation photographs. Compare the exposed floor during work with the completed silver and charcoal finish.",
+    description: "See the showroom floor before coating and after the silver and charcoal metallic epoxy was applied.",
     finish: "Silver and charcoal metallic epoxy",
     service: { label: "Metallic Epoxy Floors", href: "/metallic-epoxy" },
-    intro: "I blended silver and charcoal epoxy on this showroom floor. You can see the bare surface in the second photo.",
+    intro: "The first photo shows the silver and charcoal epoxy finish. The second shows the same showroom floor before we applied it.",
     details: [
       "The darker swirls stand out against the silver when the overhead light hits the floor.",
     ],
