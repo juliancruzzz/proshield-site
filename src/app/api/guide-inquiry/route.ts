@@ -44,13 +44,14 @@ export async function POST(request: Request) {
         endpoint.username || endpoint.password) return status(503)
     const response = await fetch(endpoint, {
       method: "POST", redirect: "error", cache: "no-store", signal: AbortSignal.timeout(5000),
-      headers: { Authorization: "Bearer " + token, "Content-Type": "application/json" },
+      headers: { Authorization: "Bearer " + token, "Content-Type": "application/json", "User-Agent": "ProShield-Guide-Intake/1.0" },
       body: JSON.stringify({
         "Inquiry ID": inquiryId, "Received at": new Date().toISOString(), "Landing page": landing,
         "Quote origin page": origin, "Discovery source": source, "Project type": project,
         "Phone hash": phoneHash, "Evidence": "Browser-reported website submission",
       }),
     })
+    if (!response.ok) console.warn("Guide capture unavailable", response.status)
     return status(response.ok ? 204 : 503)
-  } catch { return status(503) }
+  } catch { console.warn("Guide capture transport unavailable"); return status(503) }
 }
