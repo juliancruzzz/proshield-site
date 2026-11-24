@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title:
     "Epoxy or polyaspartic for a garage floor? | ProShield",
   description:
-    "Compare epoxy, polyurea and polyaspartic floor systems: product specifications, layer build, preparation, curing and use in a Las Vegas garage.",
+    "Comparing garage floor quotes? See where epoxy, polyurea and polyaspartic go on a floor, what to look for in the estimate and when you can park again.",
   alternates: {
     canonical: "/blog/epoxy-garage-floor-vs-polyaspartic",
   },
@@ -19,53 +19,35 @@ export const metadata: Metadata = {
   },
 }
 
+const questions = [
+  {
+    question: "Will cracks or joints show through the finish?",
+    answer: "Some cracks can be repaired before coating. A joint that moves may still be visible. Ask which repairs are included if a particular spot concerns you.",
+  },
+  {
+    question: "How long will a coated garage floor last?",
+    answer: "That depends on the condition of the concrete, how the floor was installed and how you use it. If a quote mentions a lifetime warranty, ask for the written terms so you can see which failures it covers.",
+  },
+]
+
 export default function EpoxyVsPolyasparticPost() {
   const schema = blogPostingSchema({
     title: "Epoxy or polyaspartic for a garage floor?",
-    description: "Compare epoxy, polyurea and polyaspartic floor systems: product specifications, layer build, preparation, curing and use in a Las Vegas garage.",
+    description: "Comparing garage floor quotes? See where epoxy, polyurea and polyaspartic go on a floor, what to look for in the estimate and when you can park again.",
     slug: "epoxy-garage-floor-vs-polyaspartic",
     datePublished: "2026-04-01",
-    dateModified: "2026-11-21",
+    dateModified: "2026-11-23",
     image: "https://proshieldepoxy.com/images/proflake/flake-garage-wide-clean.webp",
   })
 
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is polyaspartic better than epoxy?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Neither chemistry is universally better. Compare the actual products, layer build, substrate preparation, curing and intended use."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does a polyaspartic garage floor last?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Service life depends on the specified products, concrete condition, installation, traffic and care. Ask for the written product and installation warranty rather than treating a lifespan estimate as a guarantee."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you apply polyaspartic without an epoxy base?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Some systems use polyaspartic in more than one layer. Compare the manufacturer’s specified build and substrate requirements instead of assuming that the chemistry name establishes bond strength or thickness."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why do some \"one-day epoxy\" companies use polyaspartic instead?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "An installation-duration claim is separate from the product’s cure and return-to-use requirements. Ask which products are applied and when walking and vehicles are permitted."
-        }
-      }
-    ]
+    mainEntity: questions.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer },
+    })),
   }
 
   const breadcrumbSchema = {
@@ -130,10 +112,10 @@ export default function EpoxyVsPolyasparticPost() {
           </div>
           <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
-              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-21">November 21, 2026</time>
+              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-23">November 23, 2026</time>
             </span>
             <span className="flex items-center gap-1">
-              <Clock className="h-3.5 w-3.5" /> 6 min read
+              <Clock className="h-3.5 w-3.5" /> 2 min read
             </span>
           </div>
         </div>
@@ -142,124 +124,39 @@ export default function EpoxyVsPolyasparticPost() {
       <article className="section-white pb-20 lg:pb-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-gray max-w-none">
-            <p className="text-lg text-gray-600 leading-relaxed">A garage floor can use more than one type of coating. Ask what goes directly on the concrete, what forms the topcoat and how long that finish needs to cure before you park.</p>
+            <p className="text-lg text-gray-600 leading-relaxed">If one garage floor quote says “epoxy” and another says “polyaspartic,” ask which coat each installer means. An epoxy floor can have a clear polyaspartic coat on top. The two quotes may have more in common than their names suggest.</p>
 
-            {/* Table of Contents */}
-            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
-              <p className="font-heading font-semibold text-base text-gray-900 mb-3">In This Article</p>
-              <nav>
-                <ul className="space-y-2 text-sm">
-                  <li>
-                    <a href="#what-is-epoxy" className="text-accent hover:underline">What Is Epoxy?</a>
-                  </li>
-                  <li>
-                    <a href="#what-is-polyaspartic" className="text-accent hover:underline">What Is Polyaspartic?</a>
-                  </li>
-                  <li>
-                    <a href="#head-to-head-comparison" className="text-accent hover:underline">Head-to-Head Comparison</a>
-                  </li>
-                  <li>
-                    <a href="#why-we-use-both-together" className="text-accent hover:underline">The ProFlake Layer Build</a>
-                  </li>
-                  <li>
-                    <a href="#what-about-one-day-epoxy-companies" className="text-accent-text hover:underline">What About &quot;One-Day Epoxy&quot; Companies?</a>
-                  </li>
-                  <li>
-                    <a href="#the-bottom-line" className="text-accent hover:underline">The Bottom Line</a>
-                  </li>
-                  <li>
-                    <a href="#frequently-asked-questions" className="text-accent hover:underline">Frequently Asked Questions</a>
-                  </li>
-                </ul>
-              </nav>
+            <h2 id="head-to-head-comparison" className="font-heading font-bold text-2xl text-gray-900 mt-10 mb-4">What goes on the concrete?</h2>
+            <p id="what-is-epoxy" className="text-gray-600 leading-relaxed">Epoxy is a resin mixed with a hardener. It can form the base coat or give the floor its color. At ProShield, we install both solid-color and metallic epoxy garage floors.</p>
+            <p id="what-is-polyaspartic" className="mt-4 text-gray-600 leading-relaxed">Polyaspartic is often the clear topcoat. It seals the finish underneath. Seeing it on an estimate tells you about that coat, but you still need to know what the installer will put down first.</p>
+
+            <div id="why-we-use-both-together" className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6 my-8">
+              <h3 className="font-heading font-semibold text-lg text-gray-900 mb-2">How we build a ProFlake floor</h3>
+              <p className="text-gray-600 leading-relaxed">For our upgraded flake finish, we start with a polyurea base. We cover the wet base with decorative flakes, then seal them with a clear polyaspartic topcoat.</p>
+              <Link href="/proflake" className="inline-flex items-center gap-1 mt-3 font-semibold text-accent-text hover:underline">See ProFlake finishes <ArrowRight className="size-4" /></Link>
             </div>
 
-            <h2 id="what-is-epoxy" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
-              What Is Epoxy?
-            </h2>
-            <p className="text-gray-600 leading-relaxed">Epoxy coatings combine resin and hardener and are applied to a prepared substrate. Formulations and system layers vary; compare the named products and their intended use.</p>
-            <p className="text-gray-600 leading-relaxed">Working time, recoating and return to traffic depend on the product, thickness, temperature and other conditions. Use the specified schedule rather than a universal cure time for all epoxy.</p>
+            <h2 id="the-bottom-line" className="font-heading font-bold text-2xl text-gray-900 mt-10 mb-4">What’s included in the price?</h2>
+            <p className="text-gray-600 leading-relaxed">Look for the work on the concrete itself. If your garage has cracks or an old coating, does the price include repairs or removal? If removal is extra, ask for that price before you compare totals.</p>
 
-            <h2 id="what-is-polyaspartic" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
-              What Is Polyaspartic?
-            </h2>
-            <p className="text-gray-600 leading-relaxed">Polyaspartic floor coatings are used in a range of resinous systems, including topcoats. Component count, cure time and performance must be checked for the actual product.</p>
-            <p className="text-gray-600 leading-relaxed">ProFlake uses a polyurea base, decorative flake and a polyaspartic topcoat. Confirm the named products and preparation in the project quote. For ProFlake, allow 24 hours before walking and 48 hours before parking, subject to actual weather and curing conditions. Other systems have different return-to-use requirements; follow the project instructions.</p>
+            <h2 id="what-about-one-day-epoxy-companies" className="font-heading font-bold text-2xl text-gray-900 mt-10 mb-4">When can you park again?</h2>
+            <p className="text-gray-600 leading-relaxed">“One-day installation” describes the crew’s time in your garage. The floor still needs to cure after the last coat. For ProFlake, plan on about 24 hours before walking on it and 48 hours before parking. Temperature can change that timing. We’ll confirm when your floor is ready for the car.</p>
 
-            <h2 id="head-to-head-comparison" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
-              Head-to-Head Comparison
-            </h2>
+            <h2 id="frequently-asked-questions" className="font-heading font-bold text-2xl text-gray-900 mt-10 mb-4">Garage floor questions</h2>
+            {questions.map(({ question, answer }) => (
+              <div key={question}>
+                <h3 className="font-heading font-semibold text-lg text-gray-900 mt-6 mb-2">{question}</h3>
+                <p className="text-gray-600 leading-relaxed">{answer}</p>
+              </div>
+            ))}
 
-            {/* Comparison table */}
-            <div className="overflow-x-auto -mx-4 sm:mx-0 my-8">
-              <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden"><thead><tr className="bg-gray-50"><th className="text-left px-5 py-3.5 font-semibold text-gray-900">Compare</th><th className="text-left px-5 py-3.5 font-semibold text-gray-900">Epoxy</th><th className="text-left px-5 py-3.5 font-semibold text-gray-900">Polyaspartic</th></tr></thead><tbody><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Formulation</td><td className="px-5 py-3 text-gray-600">Check resin and hardener requirements</td><td className="px-5 py-3 text-gray-600">Check components and mixing requirements</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">System role</td><td className="px-5 py-3 text-gray-600">Primer, body or finish as specified</td><td className="px-5 py-3 text-gray-600">Layer role as specified</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Cure and working time</td><td className="px-5 py-3 text-gray-600">Product and conditions</td><td className="px-5 py-3 text-gray-600">Product and conditions</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">UV, abrasion and chemicals</td><td className="px-5 py-3 text-gray-600">Check product-specific tests</td><td className="px-5 py-3 text-gray-600">Check product-specific tests</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Vehicle use</td><td className="px-5 py-3 text-gray-600">Complete system and cure requirements</td><td className="px-5 py-3 text-gray-600">Complete system and cure requirements</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Price</td><td className="px-5 py-3 text-gray-600">Compare complete written scope</td><td className="px-5 py-3 text-gray-600">Compare complete written scope</td></tr></tbody></table>
-            </div>
-
-            <h2 id="why-we-use-both-together" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
-              The ProFlake Layer Build
-            </h2>
-            <p className="text-gray-600 leading-relaxed">ProFlake uses a polyurea base, decorative flake and a polyaspartic topcoat. Confirm the named products and preparation in the project quote.</p>
-            <p className="text-gray-600 leading-relaxed">The flake is broadcast into the base layer and the clear coat covers the decorative finish. Texture and appearance depend on the chosen build; product data and site conditions determine performance.</p>
-
-            <h2 id="what-about-one-day-epoxy-companies" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
-              What About &quot;One-Day Epoxy&quot; Companies?
-            </h2>
-            <p className="text-gray-600 leading-relaxed">An advertised installation speed does not identify the products used or when traffic can resume. Ask for the complete layer build and curing instructions.</p>
-            <p className="text-gray-600 leading-relaxed">
-              Ask your installer what products they use — brand, chemistry, and
-              number of coats. A reputable company will tell you exactly what
-              goes on your floor.
-            </p>
-
-            <h2 id="the-bottom-line" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
-              The Bottom Line
-            </h2>
-            <p className="text-gray-600 leading-relaxed">Choose a complete system suited to the slab, intended traffic, light exposure and care needs. ProFlake uses a polyurea base, decorative flake and a polyaspartic topcoat. Confirm the named products and preparation in the project quote.</p>
-
-            <p className="text-sm text-gray-400 italic mt-8">
-              *Subject to substrate condition, weather, and repair
-              requirements.
-            </p>
-
-            <h2 id="frequently-asked-questions" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
-              Frequently Asked Questions
-            </h2>
-
-            <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
-              Is polyaspartic better than epoxy?
-            </h3>
-            <p className="text-gray-600 leading-relaxed">Neither chemistry is universally better. Compare the actual products, layer build, substrate preparation, curing and intended use.</p>
-
-            <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
-              How long does a polyaspartic garage floor last?
-            </h3>
-            <p className="text-gray-600 leading-relaxed">Service life depends on the specified products, concrete condition, installation, traffic and care. Ask for the written product and installation warranty rather than treating a lifespan estimate as a guarantee.</p>
-
-            <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
-              Can you apply polyaspartic without an epoxy base?
-            </h3>
-            <p className="text-gray-600 leading-relaxed">Some systems use polyaspartic in more than one layer. Compare the manufacturer’s specified build and substrate requirements instead of assuming that the chemistry name establishes bond strength or thickness.</p>
-
-            <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
-              Why do some &quot;one-day epoxy&quot; companies use polyaspartic
-              instead?
-            </h3>
-            <p className="text-gray-600 leading-relaxed">An installation-duration claim is separate from the product’s cure and return-to-use requirements. Ask which products are applied and when walking and vehicles are permitted.</p>
-
-            <div className="mt-14 rounded-2xl bg-gray-50 border border-gray-200 p-8 text-center">
-              <h3 className="font-heading font-bold text-xl text-gray-900 mb-3">
-                Ready to Coat Your Garage Floor?
-              </h3>
-              <p className="text-gray-500 mb-6 max-w-lg mx-auto">
-                Get a free consultation and see our ProFlake system options —
-                150+ color blends available.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-navy hover:bg-accent-hover transition-colors shadow-lg shadow-accent/15"
-              >
-                Get a Free Quote <ArrowRight className="h-4 w-4" />
-              </Link>
+            <div className="mt-10 rounded-2xl bg-gray-50 border border-gray-200 p-6 sm:p-8">
+              <h3 className="font-heading font-bold text-xl text-gray-900 mb-3">Garage floors we install</h3>
+              <p className="text-gray-600 mb-4">See finished garages and compare flake, metallic and solid-color floors.</p>
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
+                <Link href="/areas/garage" className="inline-flex items-center gap-2 font-semibold text-accent-text hover:underline">Explore garage floors <ArrowRight className="h-4 w-4" /></Link>
+                <Link href="/contact" className="inline-flex items-center rounded-lg bg-accent px-5 py-3 font-semibold text-navy hover:bg-accent-hover">Get a Free Quote</Link>
+              </div>
             </div>
           </div>
         </div>
@@ -276,7 +173,6 @@ export default function EpoxyVsPolyasparticPost() {
               <div>
                 <h3 className="font-heading font-semibold text-lg text-gray-900">Julian Cruz</h3>
                 <p className="text-sm text-accent font-medium">Founder, ProShield Epoxy</p>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">Julian Cruz owns ProShield Epoxy in Las Vegas.</p>
               </div>
             </div>
           </div>

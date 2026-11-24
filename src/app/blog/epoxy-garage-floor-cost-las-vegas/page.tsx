@@ -25,7 +25,7 @@ export default function EpoxyGarageFloorCostPost() {
     description: "Compare garage floor coating quotes in Las Vegas: measured area, concrete preparation, repairs, moisture treatment and the selected system.",
     slug: "epoxy-garage-floor-cost-las-vegas",
     datePublished: "2026-04-03",
-    dateModified: "2026-11-21",
+    dateModified: "2026-11-23",
     image: "https://proshieldepoxy.com/images/proflake/flake-garage-residential.webp",
   })
 
@@ -146,7 +146,7 @@ export default function EpoxyGarageFloorCostPost() {
           </div>
           <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
-              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-21">November 21, 2026</time>
+              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-23">November 23, 2026</time>
             </span>
             <span className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" /> 10 min read
@@ -236,7 +236,7 @@ export default function EpoxyGarageFloorCostPost() {
             <div className="overflow-x-auto -mx-4 sm:mx-0 my-8">
               <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden"><thead><tr className="bg-gray-50"><th className="text-left px-5 py-3.5 font-semibold text-gray-900">Compare</th><th className="text-left px-5 py-3.5 font-semibold text-gray-900">Retail kit</th><th className="text-left px-5 py-3.5 font-semibold text-gray-900">Installed project</th></tr></thead><tbody><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Full price</td><td className="px-5 py-3 text-gray-600">Materials plus tools and own labor</td><td className="px-5 py-3 text-gray-600">Written preparation and installation quote</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Preparation</td><td className="px-5 py-3 text-gray-600">Follow named kit instructions</td><td className="px-5 py-3 text-gray-600">Specified substrate preparation</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Layer build</td><td className="px-5 py-3 text-gray-600">Check stated coverage and thickness</td><td className="px-5 py-3 text-gray-600">Named products and specified layers</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Service life</td><td className="px-5 py-3 text-gray-600">Product, substrate and use dependent</td><td className="px-5 py-3 text-gray-600">Product, substrate and use dependent</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Warranty</td><td className="px-5 py-3 text-gray-600">Read product terms</td><td className="px-5 py-3 text-gray-600">Confirm qualifying system and written exclusions</td></tr><tr className="border-b border-gray-200"><td className="px-5 py-3 text-gray-600">Vehicle use</td><td className="px-5 py-3 text-gray-600">Follow cure and use instructions</td><td className="px-5 py-3 text-gray-600">Follow project return-to-use instructions</td></tr></tbody></table>
             </div>
-            <p className="text-sm text-gray-400 italic">The Peel-Free Lifetime Guarantee applies to qualifying systems under the written terms. Moisture-driven failure is excluded; a flagged moisture condition requires an appropriate moisture vapor barrier before coating. Confirm coverage for the proposed system.</p>
+            <p className="text-sm text-gray-400 italic">Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. The written terms exclude moisture-related failures. If testing finds a moisture problem, the concrete needs a suitable vapor barrier before coating.</p>
 
             <h2 id="epoxy-vs-polyaspartic-vs-polyurea" className="font-heading font-bold text-2xl text-gray-900 mt-12 mb-4">
               What do the coating names on a quote mean?

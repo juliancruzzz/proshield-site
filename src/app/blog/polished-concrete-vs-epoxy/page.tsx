@@ -25,7 +25,7 @@ export default function PolishedConcreteVsEpoxyPost() {
     description: "Compare polished concrete and resin floor coatings for your Las Vegas space: slab condition, finish, traffic, preparation, care and project quotes.",
     slug: "polished-concrete-vs-epoxy",
     datePublished: "2026-03-18",
-    dateModified: "2026-11-21",
+    dateModified: "2026-11-23",
     image: "https://proshieldepoxy.com/images/concrete-polishing/polished-floor-showroom.webp",
   })
 
@@ -62,7 +62,7 @@ export default function PolishedConcreteVsEpoxyPost() {
         "name": "Which is better for a garage?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "ProFlake uses a polyurea base, decorative flake and a polyaspartic topcoat. Confirm the named products and preparation in the project quote. Compare the desired look and care requirements with polished concrete. The Peel-Free Lifetime Guarantee applies to qualifying systems under the written terms. Moisture-driven failure is excluded; a flagged moisture condition requires an appropriate moisture vapor barrier before coating. Confirm coverage for the proposed system."
+          "text": "Choose polished concrete if you like the look of the slab itself. For a decorative flake finish, we install ProFlake. Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. The written terms exclude moisture-related failures. If testing finds a moisture problem, the concrete needs a suitable vapor barrier before coating."
         }
       },
       {
@@ -146,7 +146,7 @@ export default function PolishedConcreteVsEpoxyPost() {
           </div>
           <div className="flex items-center gap-4 mt-6 text-sm text-gray-500">
             <span className="flex items-center gap-1">
-              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-21">November 21, 2026</time>
+              <Calendar className="h-3.5 w-3.5" /> Updated <time dateTime="2026-11-23">November 23, 2026</time>
             </span>
             <span className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" /> 10 min read
@@ -294,7 +294,7 @@ export default function PolishedConcreteVsEpoxyPost() {
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               Which is better for a garage?
             </h3>
-            <p className="text-gray-600 leading-relaxed">ProFlake uses a polyurea base, decorative flake and a polyaspartic topcoat. Confirm the named products and preparation in the project quote. Compare the desired look and care requirements with polished concrete. The Peel-Free Lifetime Guarantee applies to qualifying systems under the written terms. Moisture-driven failure is excluded; a flagged moisture condition requires an appropriate moisture vapor barrier before coating. Confirm coverage for the proposed system.</p>
+            <p className="text-gray-600 leading-relaxed">Choose polished concrete if you like the look of the slab itself. For a decorative flake finish, we install ProFlake. Qualifying residential ProFlake floors carry a limited lifetime no-peel warranty. The written terms exclude moisture-related failures. If testing finds a moisture problem, the concrete needs a suitable vapor barrier before coating.</p>
 
             <h3 className="font-heading font-semibold text-lg text-gray-900 mt-8 mb-3">
               How long does polished concrete take to install?

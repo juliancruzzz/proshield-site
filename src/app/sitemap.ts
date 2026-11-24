@@ -44,10 +44,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Blog (lastmod = the post's actual dateModified or datePublished from its schema)
     { url: `${BASE_URL}/blog`, lastModified: "2026-11-23", priority: 0.7, changeFrequency: "weekly" },
-    { url: `${BASE_URL}/blog/epoxy-garage-floor-cost-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/blog/epoxy-garage-floor-vs-polyaspartic`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/blog/epoxy-garage-floor-cost-las-vegas`, lastModified: "2026-11-23", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/blog/epoxy-garage-floor-vs-polyaspartic`, lastModified: "2026-11-23", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/blog/hot-tire-pickup-prevention-garage-floor`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/blog/polished-concrete-vs-epoxy`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/blog/polished-concrete-vs-epoxy`, lastModified: "2026-11-23", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/blog/best-pool-deck-coatings-las-vegas`, lastModified: "2026-11-23", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/blog/epoxy-floor-maintenance-tips`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/blog/metallic-epoxy-flooring-las-vegas`, lastModified: "2026-11-21", priority: 0.7, changeFrequency: "monthly" },
