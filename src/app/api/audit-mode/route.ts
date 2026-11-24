@@ -13,7 +13,11 @@ export function GET(request: NextRequest) {
   if (mode !== "on" && mode !== "off") {
     return new Response("Use mode=on or mode=off.", { status: 400, headers })
   }
-  const response = new NextResponse(null, { status: 303, headers: { ...headers, Location: "/" } })
+  const response = mode === "on"
+    ? new NextResponse(null, { status: 303, headers: { ...headers, Location: "/" } })
+    : new NextResponse("Audit mode is off. You can close this tab.", {
+        headers: { ...headers, "Content-Type": "text/plain; charset=utf-8" },
+      })
   response.cookies.set(AUDIT_COOKIE, mode === "on" ? "1" : "", {
     path: "/",
     secure: request.nextUrl.protocol === "https:",
