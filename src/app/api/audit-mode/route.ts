@@ -10,8 +10,12 @@ const headers = {
 
 export function GET(request: NextRequest) {
   const mode = request.nextUrl.searchParams.get("mode")
+  if (mode === "status") {
+    const enabled = request.cookies.get(AUDIT_COOKIE)?.value === "1"
+    return new Response(enabled ? "Audit mode is on." : "Audit mode is off.", { headers })
+  }
   if (mode !== "on" && mode !== "off") {
-    return new Response("Use mode=on or mode=off.", { status: 400, headers })
+    return new Response("Use mode=on, mode=off or mode=status.", { status: 400, headers })
   }
   const response = mode === "on"
     ? new NextResponse(null, { status: 303, headers: { ...headers, Location: "/" } })
