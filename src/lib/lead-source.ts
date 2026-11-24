@@ -42,3 +42,29 @@ export function getQuoteSource(): string {
   } catch { /* Use the current page if storage is disabled. */ }
   return rememberVisitSource()
 }
+
+const landingKey = "proshield-landing-page"
+let documentLanding: string | undefined
+
+export function rememberLandingPage(publicPaths: readonly string[]): void {
+  if (typeof window === "undefined" || isAuditVisit() || documentLanding !== undefined) return
+  const navigation = performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming | undefined
+  const initial = new URL(navigation?.name || window.location.href)
+  const path = initial.pathname.replace(/\/+$/, "") || "/"
+  documentLanding = publicPaths.includes(path) ? path : "Unknown"
+  try {
+    const referrer = document.referrer && new URL(document.referrer)
+    const newOpenerTab = window.opener && window.history.length === 1 && navigation?.type === "navigate"
+    const continuesVisit = navigation?.type === "reload" || navigation?.type === "back_forward" ||
+      (!newOpenerTab && referrer && referrer.origin === initial.origin)
+    const saved = sessionStorage.getItem(landingKey)
+    if (continuesVisit && saved && (saved === "Unknown" || publicPaths.includes(saved))) {
+      documentLanding = saved
+    }
+    sessionStorage.setItem(landingKey, documentLanding)
+  } catch { /* Keep the first page in memory when storage is unavailable. */ }
+}
+
+export function getQuoteLandingPage(): string {
+  return isAuditVisit() ? "Internal audit" : documentLanding ?? "Unknown"
+}

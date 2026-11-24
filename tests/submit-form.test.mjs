@@ -30,6 +30,7 @@ test('quote details use the free form payload and failures never report success'
   globalThis.fetch = async (_, options) => { payload = options.body; headers = options.headers; return { ok: true, json: async () => ({ success: true }) } }
   assert.deepEqual(await submitForm({ name: 'Test', subject: 'untrusted', access_key: 'untrusted' }, 'Quote Request'), { ok: true })
   assert.equal(payload.get('Visit source'), 'Unknown')
+  assert.equal(payload.get('Landing page'), 'Unknown')
   assert.match(payload.get('Website inquiry ID'), /^[a-f0-9-]{36}$/)
   assert.equal(payload.get('access_key'), 'test-only')
   assert.equal(payload.get('subject'), 'New Quote Request — ProShield Epoxy Website')
@@ -46,4 +47,44 @@ test('quote details use the free form payload and failures never report success'
   delete process.env.NEXT_PUBLIC_WEB3FORMS_KEY
   assert.deepEqual(await submitForm({}, 'Quote Request'), {ok:false})
  } finally { globalThis.fetch = fetchBefore; if(keyBefore===undefined) delete process.env.NEXT_PUBLIC_WEB3FORMS_KEY; else process.env.NEXT_PUBLIC_WEB3FORMS_KEY=keyBefore }
+})
+
+test('only the first public entry path reaches a quote, without campaign or private URL data', async () => {
+ const original = ['window', 'document', 'sessionStorage', 'performance'].map(key =>
+  [key, Object.getOwnPropertyDescriptor(globalThis, key)])
+ const store = new Map()
+ const mock = (key, value) => Object.defineProperty(globalThis, key, {configurable:true, value})
+ const paths = ['/', '/areas/garage', '/contact']
+ let sequence = 0
+ async function open(href, referrer = '', type = 'navigate', cookie = '', opener = null) {
+  mock('window', {location: new URL(href), opener, history: {length: 1}})
+  mock('document', {referrer, cookie})
+  mock('performance', {getEntriesByType: () => [{name: href, type}]})
+  const source = await import(sourceModule + '#' + ++sequence)
+  source.rememberLandingPage(paths)
+  return source
+ }
+ try {
+  mock('sessionStorage', {getItem: k => store.get(k), setItem: (k,v) => store.set(k,v)})
+  const base = 'https://proshieldepoxy.com'
+  const garage = await open(base + '/areas/garage/?gclid=test#private')
+  window.location = new URL(base + '/contact')
+  garage.rememberLandingPage(paths)
+  assert.equal(garage.getQuoteLandingPage(), '/areas/garage')
+  assert.equal((await open(base + '/contact', base + '/areas/garage')).getQuoteLandingPage(), '/areas/garage')
+  assert.equal((await open(base + '/contact', '', 'reload')).getQuoteLandingPage(), '/areas/garage')
+  assert.equal((await open(base + '/contact', base + '/areas/garage', 'navigate', '', {})).getQuoteLandingPage(), '/contact')
+  assert.equal((await open(base + '/secret/token')).getQuoteLandingPage(), 'Unknown')
+  assert.equal((await open(base + '/contact', base + '/secret/token')).getQuoteLandingPage(), 'Unknown')
+  const audit = await open(base + '/areas/garage', '', 'navigate', 'ps_audit=1')
+  assert.equal(audit.getQuoteLandingPage(), 'Internal audit')
+  assert.equal(store.get('proshield-landing-page'), 'Unknown')
+  mock('sessionStorage', {getItem: () => {throw Error('disabled')}})
+  assert.equal((await open(base + '/areas/garage')).getQuoteLandingPage(), '/areas/garage')
+ } finally {
+  for (const [key, descriptor] of original) {
+   if (descriptor) Object.defineProperty(globalThis,key,descriptor)
+   else delete globalThis[key]
+  }
+ }
 })

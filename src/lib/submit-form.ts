@@ -1,4 +1,4 @@
-import { getQuoteSource } from "./lead-source"
+import { getQuoteLandingPage, getQuoteSource } from "./lead-source"
 
 const WEB3FORMS_URL = "https://api.web3forms.com/submit"
 
@@ -14,6 +14,7 @@ export async function submitForm(
   for (const [name, value] of Object.entries(data)) body.set(name, value)
   // A stored entry source survives client-side navigation to the quote form.
   body.set("Visit source", getQuoteSource())
+  body.set("Landing page", getQuoteLandingPage())
   if (typeof crypto.randomUUID === "function") body.set("Website inquiry ID", crypto.randomUUID())
   body.set("access_key", key)
   body.set("subject", `New ${formName} — ProShield Epoxy Website`)

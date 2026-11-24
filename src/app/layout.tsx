@@ -1,3 +1,4 @@
+import sitemap from "./sitemap"
 import { VisitSource } from "@/components/visit-source"
 import type { Metadata } from "next"
 import localFont from "next/font/local"
@@ -216,7 +217,7 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <VisitSource />
+        <VisitSource publicPaths={sitemap().map(({ url }) => new URL(url).pathname)} />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

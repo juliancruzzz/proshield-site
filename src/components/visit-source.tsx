@@ -1,9 +1,12 @@
 "use client"
 
 import { useEffect } from "react"
-import { rememberVisitSource } from "@/lib/lead-source"
+import { rememberLandingPage, rememberVisitSource } from "@/lib/lead-source"
 
-export function VisitSource() {
-  useEffect(() => { rememberVisitSource() }, [])
+export function VisitSource({ publicPaths }: { publicPaths: string[] }) {
+  useEffect(() => {
+    rememberLandingPage(publicPaths)
+    rememberVisitSource()
+  }, [publicPaths])
   return null
 }
