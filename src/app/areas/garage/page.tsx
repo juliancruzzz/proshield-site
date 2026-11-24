@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/phone"
 import { PageHero } from "@/components/sections/page-hero"
 import { ProjectCards } from "@/components/sections/project-cards"
@@ -122,7 +123,12 @@ export default function GaragePage() {
         subtitle="We install epoxy and polyurea garage floors in Las Vegas. Choose a flake, metallic or solid-color finish."
       />
 
-      <ProjectCards service="/proflake" heading="Completed garage floors" />
+      <ProjectCards service="/proflake" heading="Completed garage floors">
+        <Link href="/blog/epoxy-garage-floor-cost-las-vegas" className="mt-5 inline-flex min-h-11 items-center gap-2 font-semibold text-accent-text hover:underline">
+          What does a garage floor coating cost in Las Vegas?
+          <ArrowRight aria-hidden="true" className="h-4 w-4 shrink-0" />
+        </Link>
+      </ProjectCards>
       <GarageAreas />
 
       <section className="section-white py-14 sm:py-20 lg:py-28">

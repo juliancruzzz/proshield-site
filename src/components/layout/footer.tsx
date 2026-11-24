@@ -17,7 +17,7 @@ const systemLinks = [
 ]
 
 const areaLinks = [
-  { label: "Garage", href: "/areas/garage" },
+  { label: "Garage Floors", href: "/areas/garage" },
   { label: "Exterior", href: "/areas/exterior" },
   { label: "Interior", href: "/areas/interior" },
   { label: "Commercial", href: "/areas/commercial" },

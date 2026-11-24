@@ -7,7 +7,7 @@ import { Menu, X, ChevronDown, Phone } from "lucide-react"
 import { PHONE_HREF } from "@/lib/phone"
 
 const areaLinks = [
-  { label: "Garage", href: "/areas/garage" },
+  { label: "Garage Floors", href: "/areas/garage" },
   { label: "Exterior", href: "/areas/exterior" },
   { label: "Interior", href: "/areas/interior" },
   { label: "Commercial", href: "/areas/commercial" },

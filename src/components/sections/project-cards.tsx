@@ -1,9 +1,10 @@
+import type { ReactNode } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { floorProjects } from "@/lib/projects"
 
-export function ProjectCards({ service, heading = "Completed Projects" }: { service?: string; heading?: string }) {
+export function ProjectCards({ service, heading = "Completed Projects", children }: { service?: string; heading?: string; children?: ReactNode }) {
   const projects = service ? floorProjects.filter(project => project.service.href === service) : floorProjects
 
   return (
@@ -24,6 +25,7 @@ export function ProjectCards({ service, heading = "Completed Projects" }: { serv
             </Link>
           ))}
         </div>
+        {children}
       </div>
     </section>
   )
