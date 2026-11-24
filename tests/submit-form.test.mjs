@@ -96,3 +96,39 @@ test('only the first public entry path reaches a quote, without campaign or priv
   }
  }
 })
+
+test('guide capture minimizes data, retries under its original inquiry ID, and preserves successful delivery', async () => {
+ const guide = '/blog/epoxy-garage-floor-cost-las-vegas'
+ const source = 'data:text/javascript,' + encodeURIComponent(`export const GARAGE_COST_GUIDE = ${JSON.stringify(guide)};
+ export const getQuoteOriginPage = () => GARAGE_COST_GUIDE;
+ export const getQuoteSource = () => 'Search referral';
+ export const getQuoteLandingPage = () => '/blog';`)
+ const {submitForm: send} = await import(asModule('../src/lib/submit-form.ts', {'./lead-source':source}))
+ const original = globalThis.fetch, key = process.env.NEXT_PUBLIC_WEB3FORMS_KEY
+ process.env.NEXT_PUBLIC_WEB3FORMS_KEY = 'test-key'
+ try {
+  let providerCalls = 0, accepted = false, id
+  const captures = []
+  globalThis.fetch = async (url, options) => {
+   if (url === '/api/guide-inquiry') {
+    captures.push(JSON.parse(options.body))
+    return new Response(null, {status: captures.length === 1 ? 503 : 204})
+   }
+   providerCalls++
+   id = options.body.get('Website inquiry ID')
+   return Response.json({success:accepted})
+  }
+  const input = {name:'Synthetic',email:'synthetic@example.invalid',message:'Private note',projectType:'Garage floors',phone:'2025550100'}
+  assert.deepEqual(await send(input, 'Quote Request'), {ok:false})
+  assert.equal(captures.length, 0)
+  accepted = true
+  assert.deepEqual(await send(input, 'Quote Request'), {ok:true})
+  await new Promise(r=>setImmediate(r))
+  assert.equal(providerCalls, 2)
+  const expected = {inquiryId:id, landing:'/blog', origin:guide, source:'Search referral', project:'Garage floors', phone:'2025550100'}
+  assert.deepEqual(captures,[expected, expected])
+ } finally {
+  globalThis.fetch = original
+  if(key===undefined) delete process.env.NEXT_PUBLIC_WEB3FORMS_KEY; else process.env.NEXT_PUBLIC_WEB3FORMS_KEY=key
+ }
+})

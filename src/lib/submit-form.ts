@@ -1,6 +1,19 @@
-import { getQuoteLandingPage, getQuoteOriginPage, getQuoteSource } from "./lead-source"
+import { GARAGE_COST_GUIDE, getQuoteLandingPage, getQuoteOriginPage, getQuoteSource } from "./lead-source"
 
 const WEB3FORMS_URL = "https://api.web3forms.com/submit"
+
+// A capture failure must never retry or delay the customer's actual quote.
+async function reportGuideRequest(payload: string) {
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const response = await fetch("/api/guide-inquiry", {
+        method: "POST", body: payload, keepalive: true, signal: AbortSignal.timeout(8000),
+        headers: { "Content-Type": "application/json" },
+      })
+      if (response.ok || response.status < 500) return
+    } catch { /* Retry this receipt once using the same inquiry ID. */ }
+  }
+}
 
 export async function submitForm(
   data: Record<string, string>,
@@ -31,7 +44,16 @@ export async function submitForm(
     })
     if (!res.ok) return { ok: false }
     const json = await res.json()
-    return { ok: json.success === true }
+    if (json.success !== true) return { ok: false }
+    const inquiryId = body.get("Website inquiry ID")
+    const landing = body.get("Landing page")
+    if (formName === "Quote Request" && inquiryId && (landing === GARAGE_COST_GUIDE || quoteOrigin === GARAGE_COST_GUIDE)) {
+      void reportGuideRequest(JSON.stringify({
+        inquiryId, landing, origin: quoteOrigin || "", source: body.get("Visit source"),
+        project: data.projectType, phone: data.phone,
+      }))
+    }
+    return { ok: true }
   } catch {
     return { ok: false }
   }
