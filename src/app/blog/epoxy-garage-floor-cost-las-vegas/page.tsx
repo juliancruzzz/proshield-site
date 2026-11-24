@@ -102,7 +102,7 @@ export default function EpoxyGarageFloorCostPost() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-gray max-w-none">
             <p className="text-lg text-gray-600 leading-relaxed">
-              Two homeowners in the Las Vegas Valley chose our ProFlake garage floor in August 2026.
+              Two homeowners in the Las Vegas Valley chose our ProFlake <Link href="/areas/garage" className="text-accent-text hover:underline font-medium">garage floor</Link> in August 2026.
               One paid $2,310 for 440 square feet. The other paid $3,126.75 for 567 square feet
               with a premium flake blend. Here’s what each price covered.
             </p>
