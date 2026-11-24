@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/phone"
 import { PageHero } from "@/components/sections/page-hero"
 import { ProjectCards } from "@/components/sections/project-cards"
 import { GarageAreas } from "@/components/sections/garage-areas"
@@ -111,6 +112,11 @@ export default function GaragePage() {
 
       <PageHero
         badge="Garage Floors"
+        secondaryAction={
+          <a href={PHONE_HREF} className="inline-flex min-h-11 items-center rounded-lg px-2 text-sm font-semibold text-white underline decoration-white/50 underline-offset-4 hover:decoration-white sm:text-base">
+            Call {PHONE_DISPLAY}
+          </a>
+        }
         title="Garage Floor Coatings"
         highlight="Las Vegas"
         subtitle="We install epoxy and polyurea garage floors in Las Vegas. Choose a flake, metallic or solid-color finish."

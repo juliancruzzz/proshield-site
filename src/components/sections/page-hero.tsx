@@ -1,3 +1,4 @@
+import type { ReactNode } from "react"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
@@ -8,6 +9,7 @@ interface PageHeroProps {
   subtitle: string
   ctaText?: string
   ctaHref?: string
+  secondaryAction?: ReactNode
   dark?: boolean
   /** Path to a background image — when provided, renders a full-bleed photo hero like the hangar page */
   backgroundImage?: string
@@ -27,10 +29,24 @@ export function PageHero({
   subtitle,
   ctaText = "Get a Free Quote",
   ctaHref = "/contact",
+  secondaryAction,
   dark = true,
   backgroundImage,
   backgroundAlt = "",
 }: PageHeroProps) {
+  const actions = ctaText && (
+    <div className={`mt-6 sm:mt-8 animate-reveal${secondaryAction ? " flex flex-wrap items-center justify-center gap-x-4 gap-y-2" : ""}`}>
+      <Link
+        href={ctaHref}
+        className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-navy hover:bg-accent-hover transition-all duration-200 shadow-xl shadow-accent/25"
+      >
+        {ctaText}
+        <ArrowRight className="h-4 w-4" />
+      </Link>
+      {secondaryAction}
+    </div>
+  )
+
   /* ── Image hero (hangar-style) ── */
   if (backgroundImage) {
     return (
@@ -66,17 +82,7 @@ export function PageHero({
           <p className="mt-4 sm:mt-5 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed text-text-light-secondary animate-reveal">
             {subtitle}
           </p>
-          {ctaText && (
-            <div className="mt-6 sm:mt-8 animate-reveal">
-              <Link
-                href={ctaHref}
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-navy hover:bg-accent-hover transition-all duration-200 shadow-xl shadow-accent/25"
-              >
-                {ctaText}
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
-          )}
+          {actions}
         </div>
       </section>
     )
@@ -121,17 +127,7 @@ export function PageHero({
         >
           {subtitle}
         </p>
-        {ctaText && (
-          <div className="mt-6 sm:mt-8 animate-reveal">
-            <Link
-              href={ctaHref}
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-navy hover:bg-accent-hover transition-all duration-200 shadow-xl shadow-accent/25"
-            >
-              {ctaText}
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-        )}
+        {actions}
       </div>
     </section>
   )
