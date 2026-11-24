@@ -6,8 +6,8 @@ import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
 import { StickyCta } from "@/components/layout/sticky-cta"
 import { ChatbotWrapper } from "@/components/ui/chatbot-wrapper"
-import { Analytics } from "@vercel/analytics/next"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { VisitorAnalytics } from "@/components/visitor-analytics"
+import { AUDIT_COOKIE_PAIR } from "@/lib/audit-mode"
 
 const spaceGrotesk = localFont({
   src: [
@@ -164,9 +164,22 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){
+  function isAudit(){return document.cookie.split(/;\\s*/).includes(${JSON.stringify(AUDIT_COOKIE_PAIR)});}
+  var initialAudit=isAudit();
+  function refreshMode(){if(initialAudit!==isAudit())window.location.reload();}
+  window.addEventListener('pageshow',refreshMode);
+  document.addEventListener('visibilitychange',function(){if(!document.hidden)refreshMode();});
+  if(initialAudit)return;
+  document.addEventListener('click',function(e){
+    var link=e.target.closest && e.target.closest('a[href^="tel:"]');
+    if(link && !isAudit()){
+      window.dataLayer=window.dataLayer||[];
+      window.dataLayer.push({event:'phone_click',phone_number:link.href.replace('tel:','')});
+    }
+  });
   var loaded=false;
   function loadTracking(){
-    if(loaded)return;loaded=true;
+    if(loaded || isAudit())return;loaded=true;
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -178,12 +191,6 @@ export default function RootLayout({
   });
   setTimeout(loadTracking,5000);
 })();`,
-          }}
-        />
-        {/* Track phone link clicks */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `document.addEventListener('click',function(e){var a=e.target.closest('a[href^="tel:"]');if(a){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',phone_number:a.href.replace('tel:','')});}});`,
           }}
         />
         <script
@@ -203,7 +210,7 @@ export default function RootLayout({
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KGDCHW6C"
+            src="/api/gtm-noscript"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
@@ -215,8 +222,7 @@ export default function RootLayout({
         <Footer />
         <StickyCta />
         <ChatbotWrapper />
-        <Analytics />
-        <SpeedInsights />
+        <VisitorAnalytics />
       </body>
     </html>
   )

@@ -1,3 +1,5 @@
+import { isAuditVisit } from "./audit-mode"
+
 // Store only a channel label for this tab. Never store referrer URLs or search terms.
 export function getVisitSource(url: URL, referrer: string): string | undefined {
   const tags = url.searchParams
@@ -18,6 +20,7 @@ export function getVisitSource(url: URL, referrer: string): string | undefined {
 
 const key = "proshield-visit-source"
 export function rememberVisitSource(): string {
+  if (isAuditVisit()) return "Internal audit"
   if (typeof window === "undefined") return "Unknown"
   const source = getVisitSource(new URL(window.location.href), document.referrer)
   try {
@@ -32,6 +35,7 @@ export function rememberVisitSource(): string {
 }
 
 export function getQuoteSource(): string {
+  if (isAuditVisit()) return "Internal audit"
   try {
     const saved = sessionStorage.getItem(key)
     if (saved) return saved

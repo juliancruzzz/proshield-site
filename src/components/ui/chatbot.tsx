@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from "react"
 import { MessageCircle, X, Send, ChevronRight } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import { trackQuoteSubmission } from "@/lib/audit-mode"
 import { submitForm } from "@/lib/submit-form"
 
 /* ═══════════════════════════════════════════
@@ -348,10 +349,7 @@ export function Chatbot({ startOpen = false }: { startOpen?: boolean }) {
           text: "Your estimate request was sent. We will contact you to discuss your project.",
         }])
         setChips(["Tell me about ProFlake", "What's your warranty?", "Service area?"])
-        ;(window as Window & { dataLayer?: Record<string, unknown>[] }).dataLayer?.push({
-          event: "form_submission",
-          form_name: "Chatbot Lead",
-        })
+        trackQuoteSubmission("Chatbot Lead")
       } catch {
         setLeadError("We could not confirm delivery. Your details are still here. Call (702) 728-5484 before resending if you are unsure whether it arrived.")
       } finally {

@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /api/audit-mode
+Disallow: /api/gtm-noscript
 Sitemap: https://proshieldepoxy.com/sitemap.xml

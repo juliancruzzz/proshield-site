@@ -6,6 +6,7 @@ import {
   Loader2, MessageSquare, FileText,
 } from "lucide-react"
 import { useHydrated } from "@/hooks/use-hydrated"
+import { trackQuoteSubmission } from "@/lib/audit-mode"
 import { submitForm } from "@/lib/submit-form"
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/phone"
 import { analyticsProjectType, PROJECT_TYPE_GROUPS } from "@/lib/cta-data"
@@ -54,7 +55,7 @@ function InlineCTAForm() {
     sending.current = false
     setStatus(result.ok ? "success" : "error")
     if (!result.ok) setError("We could not confirm delivery. Your details are still here. Call (702) 728-5484 before resending if you are unsure whether it arrived.")
-    if (result.ok) (window as Window & { dataLayer?: Record<string, unknown>[] }).dataLayer?.push({ event: "form_submission", form_name: "Quote Request", project_type: analyticsProjectType(selectedTypes) })
+    if (result.ok) trackQuoteSubmission("Quote Request", analyticsProjectType(selectedTypes))
   }
 
   if (status === "success") return (

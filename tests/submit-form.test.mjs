@@ -8,7 +8,8 @@ function asModule(path, dependencies = {}) {
  const js = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ES2022 } }).outputText
  return 'data:text/javascript;base64,' + Buffer.from(js).toString('base64')
 }
-const sourceModule = asModule('../src/lib/lead-source.ts')
+const auditModule = asModule('../src/lib/audit-mode.ts')
+const sourceModule = asModule('../src/lib/lead-source.ts', { './audit-mode': auditModule })
 const { getVisitSource } = await import(sourceModule)
 const { submitForm } = await import(asModule('../src/lib/submit-form.ts', { './lead-source': sourceModule }))
 
